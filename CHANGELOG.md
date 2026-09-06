@@ -9,6 +9,16 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.1.1 — 2026-09-06
+
+**Values:** none. Documentation only.
+
+`baseline/README.md`: what each of the 55 charts is for, what each of the
+13 settings profiles changes and which sections it exports, the whole
+provenance the manifest records, and what every section of a fixture
+holds, field by field. It was written where the corpus was assembled and
+belonged with the corpus rather than with its first consumer.
+
 ## 0.1.0 — 2026-09-06
 
 **Values:** the first release; every value is new.

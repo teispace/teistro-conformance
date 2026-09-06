@@ -4,7 +4,7 @@ A corpus of recorded astrological and astronomical answers, with the
 settings each was computed under, so that an implementation can be
 measured against something other than its own opinion.
 
-Version 0.1.0. Dedicated to the public domain under
+Version 0.1.1. Dedicated to the public domain under
 [CC0-1.0](LICENSE) — there is no attribution requirement, because
 attribution is friction for an implementation checking itself, and a
 standard nobody can use freely is not a standard.
@@ -13,7 +13,7 @@ standard nobody can use freely is not a standard.
 
 | directory | what it holds | evidence rank |
 |---|---|---|
-| [`baseline/`](baseline) | 115 fixtures over 55 charts under 13 settings profiles, from an established open-source engine over Swiss Ephemeris 2.10.03: positions, houses, vargas, panchanga and dashas, each with the complete profile and its hash | 2 |
+| [`baseline/`](baseline) | 115 fixtures over 55 charts under 13 settings profiles, from an established open-source engine over Swiss Ephemeris 2.10.03: positions, houses, vargas, panchanga and dashas, each with the complete profile and its hash. [What each chart is for, what each profile changes and what every section holds](baseline/README.md) | 2 |
 | [`baseline/names.json`](baseline/names.json) | the same engine's entity name tables: 40 types, 383 entities, four languages | 2 |
 | [`official/`](official) | what Nepal's national panchanga committee printed in its Rashtriya Panchangam for BS 2082 and 2083 — 24 sankranti instants, four rows of places at sunrise, 22 days of sunrise and sunset, eight tithi ends — read from the published page images, with the file URLs and page numbers | 1 |
 | [`teimeris/`](teimeris) | Teimeris 0.1.0 in its corrected profile: 1044 ayanamsha rows, 1260 house rows, 128 star records, 176 phenomena rows, 49 sidereal-time rows, each with the geometry it was read from | 2 |
@@ -52,7 +52,7 @@ Pin it. As a submodule:
 
 ```sh
 git submodule add https://github.com/teispace/teistro-conformance fixtures
-git -C fixtures checkout v0.1.0
+git -C fixtures checkout v0.1.1
 ```
 
 or read [`corpus.json`](corpus.json), which names the version, what each

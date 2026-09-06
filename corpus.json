@@ -1,6 +1,6 @@
 {
   "schema": "teistro-conformance/corpus/1",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "released": "2026-09-06",
   "licence": "CC0-1.0",
   "repository": "https://github.com/teispace/teistro-conformance",
