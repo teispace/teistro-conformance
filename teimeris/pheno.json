@@ -1,0 +1,4378 @@
+{
+  "schema": "teistro-conformance/pheno-table/1",
+  "tool": "teimeris 0.1.0",
+  "profile": "max",
+  "scale": "TT",
+  "rows": [
+    {
+      "body": "SUN",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5422077563035476,
+      "magnitude": -26.896638517423188,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 265.29736754306845,
+        "lat_deg": 0.46150516596948765,
+        "dist_au": 0.0024765261880682213
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": {
+        "lon_deg": 99.67950305225091,
+        "lat_deg": 0.0011137603595070239,
+        "dist_au": 0.9808705910557073
+      },
+      "phase_angle_deg": 165.6105817822148,
+      "illuminated_fraction": 0.0156854628080485,
+      "elongation_deg": 14.35336021651581,
+      "diameter_deg": 0.5374161291524072,
+      "magnitude": -4.4512930937225565,
+      "horizontal_parallax_deg": 0.9864374843114417
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 258.36290635905794,
+        "lat_deg": 1.1970002699547597,
+        "dist_au": 1.1334205571568732
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": {
+        "lon_deg": 199.6568310352085,
+        "lat_deg": 3.245717247132288,
+        "dist_au": 0.41829940270695437
+      },
+      "phase_angle_deg": 58.69022476733427,
+      "illuminated_fraction": 0.7598324417673294,
+      "elongation_deg": 21.312633127641085,
+      "diameter_deg": 0.0016486146327502674,
+      "magnitude": -0.35831514411715365,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 305.75267427825014,
+        "lat_deg": -1.6794646610407025,
+        "dist_au": 1.4667736973044243
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": {
+        "lon_deg": 342.32486941841313,
+        "lat_deg": -3.38759522700124,
+        "dist_au": 0.7274729031453582
+      },
+      "phase_angle_deg": 36.57372264708657,
+      "illuminated_fraction": 0.9015454175872379,
+      "elongation_deg": 26.15938855460913,
+      "diameter_deg": 0.003160448149490051,
+      "magnitude": -3.909771490165408,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 283.4826297468764,
+        "lat_deg": -0.9225633739857219,
+        "dist_au": 2.4012138052303467
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": {
+        "lon_deg": 286.1382778593687,
+        "lat_deg": -1.55801919077117,
+        "dist_au": 1.42189919422491
+      },
+      "phase_angle_deg": 2.7299988591329383,
+      "illuminated_fraction": 0.9994325370529563,
+      "elongation_deg": 3.948304554037452,
+      "diameter_deg": 0.001081264694726915,
+      "magnitude": 1.1264169057424942,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 241.03799784137414,
+        "lat_deg": 0.8141602189956022,
+        "dist_au": 6.11825532329767
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": {
+        "lon_deg": 234.49719316823968,
+        "lat_deg": 0.9251156526084658,
+        "dist_au": 5.38504371760395
+      },
+      "phase_angle_deg": 6.5409905744166945,
+      "illuminated_fraction": 0.9967453067585621,
+      "elongation_deg": 38.612708715280974,
+      "diameter_deg": 0.008752762291092982,
+      "magnitude": -1.7819807282888682,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 267.65859850316593,
+        "lat_deg": 1.008051981920885,
+        "dist_au": 11.026452632877794
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": {
+        "lon_deg": 266.5001268213017,
+        "lat_deg": 1.1042411527864164,
+        "dist_au": 10.066848974264028
+      },
+      "phase_angle_deg": 1.1622618919115235,
+      "illuminated_fraction": 0.9998971302111844,
+      "elongation_deg": 12.02656315869134,
+      "diameter_deg": 0.004045322092816879,
+      "magnitude": 0.5115530536553727,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 250.11158696725846,
+        "lat_deg": 0.06345706894275369,
+        "dist_au": 19.84202230841881
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": {
+        "lon_deg": 248.65302294767105,
+        "lat_deg": 0.06631428759468218,
+        "dist_au": 18.992669972778675
+      },
+      "phase_angle_deg": 1.4585658826303867,
+      "illuminated_fraction": 0.9998379968751699,
+      "elongation_deg": 29.531938267087963,
+      "diameter_deg": 0.0009790948826174115,
+      "magnitude": 5.73068966497377,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 85.23233497434069,
+        "lat_deg": -1.2998098452158744,
+        "dist_au": 28.918012169273336
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": {
+        "lon_deg": 85.6955340996666,
+        "lat_deg": -1.2583242907914796,
+        "dist_au": 29.871057892337337
+      },
+      "phase_angle_deg": 0.46493823710493476,
+      "illuminated_fraction": 0.999983537988912,
+      "elongation_deg": 165.53161176636462,
+      "diameter_deg": 0.0006522019708746254,
+      "magnitude": 7.792095198454939,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 75.26010877508607,
+        "lat_deg": -9.778060489423204,
+        "dist_au": 46.07562735054283
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": {
+        "lon_deg": 75.75652935829069,
+        "lat_deg": -9.591920217990273,
+        "dist_au": 46.960209298520866
+      },
+      "phase_angle_deg": 0.5235521326927555,
+      "illuminated_fraction": 0.9999791257159917,
+      "elongation_deg": 153.84079429007633,
+      "diameter_deg": 0.00001975522843953487,
+      "magnitude": 15.676006405035917,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2415020.0,
+      "body_position": {
+        "lon_deg": 259.18775865042534,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999907
+      },
+      "sun_position": {
+        "lon_deg": 279.64346327825626,
+        "lat_deg": 0.00003287108003765602,
+        "dist_au": 0.9832690070729695
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 20.455704627856292,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421911939082522,
+      "magnitude": -26.89657218614462,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 19.932084448292013,
+        "lat_deg": -1.2596471208508557,
+        "dist_au": 0.0027026631570377883
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": {
+        "lon_deg": 105.13731159782863,
+        "lat_deg": -0.003430562369649337,
+        "dist_au": 0.9835180673503637
+      },
+      "phase_angle_deg": 85.2063128956206,
+      "illuminated_fraction": 0.5417840242151646,
+      "elongation_deg": 94.63674192875857,
+      "diameter_deg": 0.49244920957847077,
+      "magnitude": -10.219769443981361,
+      "horizontal_parallax_deg": 0.9038932223179339
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 282.016818157258,
+        "lat_deg": -1.6518880033881438,
+        "dist_au": 1.4373927960125863
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": {
+        "lon_deg": 274.973366562235,
+        "lat_deg": -5.162550271950343,
+        "dist_au": 0.460436639484097
+      },
+      "phase_angle_deg": 7.857726878984482,
+      "illuminated_fraction": 0.9953053004637443,
+      "elongation_deg": 3.6697500333140423,
+      "diameter_deg": 0.0012999743151266216,
+      "magnitude": -1.0978345893938222,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 260.14893166525036,
+        "lat_deg": 0.8619369384611137,
+        "dist_au": 1.4806560923753074
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": {
+        "lon_deg": 224.85928755655232,
+        "lat_deg": 1.7643341882747767,
+        "dist_au": 0.7236162141817942
+      },
+      "phase_angle_deg": 35.29124346398603,
+      "illuminated_fraction": 0.9081129473757152,
+      "elongation_deg": 25.15909600565336,
+      "diameter_deg": 0.0031308162923362097,
+      "magnitude": -3.92164877850569,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 240.79297225451464,
+        "lat_deg": 0.33567998737537297,
+        "dist_au": 2.1277085771466275
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": {
+        "lon_deg": 215.00225761012925,
+        "lat_deg": 0.45102318340551806,
+        "dist_au": 1.5842240475146914
+      },
+      "phase_angle_deg": 25.79034994546783,
+      "illuminated_fraction": 0.950196031263904,
+      "elongation_deg": 44.50224741274087,
+      "diameter_deg": 0.0012202553206693506,
+      "magnitude": 1.5357094533732207,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 35.73754297267823,
+        "lat_deg": -1.1503425405810275,
+        "dist_au": 4.5553667821161765
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": {
+        "lon_deg": 46.38742288214188,
+        "lat_deg": -1.051220878796352,
+        "dist_au": 4.9845230679430905
+      },
+      "phase_angle_deg": 10.648368821554794,
+      "illuminated_fraction": 0.9913898540351537,
+      "elongation_deg": 110.43901935261924,
+      "diameter_deg": 0.011755723981027408,
+      "magnitude": -2.548358233201268,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 37.905403840692415,
+        "lat_deg": -2.4437986885726124,
+        "dist_au": 8.77156893902176
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": {
+        "lon_deg": 43.57225246735713,
+        "lat_deg": -2.3312387598321784,
+        "dist_au": 9.194102624513288
+      },
+      "phase_angle_deg": 5.663043216849774,
+      "illuminated_fraction": 0.9975597129714363,
+      "elongation_deg": 112.58948312313002,
+      "diameter_deg": 0.0050852421906097,
+      "magnitude": 0.15710263935628488,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 52.4026438027109,
+        "lat_deg": -0.26075466511727224,
+        "dist_au": 18.942136005965356
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": {
+        "lon_deg": 54.69688513291978,
+        "lat_deg": -0.2526296335411153,
+        "dist_au": 19.551007574621355
+      },
+      "phase_angle_deg": 2.2942326882678423,
+      "illuminated_fraction": 0.9995992148308217,
+      "elongation_deg": 127.10797587721993,
+      "diameter_deg": 0.0010256088593629698,
+      "magnitude": 5.698652619484909,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 177.68359867036276,
+        "lat_deg": 1.2635426842714808,
+        "dist_au": 29.923058131286016
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": {
+        "lon_deg": 175.90414795841477,
+        "lat_deg": 1.2505968796213518,
+        "dist_au": 30.235126923876248
+      },
+      "phase_angle_deg": 1.7790695114363522,
+      "illuminated_fraction": 0.9997589841055209,
+      "elongation_deg": 107.6061983843364,
+      "diameter_deg": 0.0006302960228136005,
+      "magnitude": 7.892588861743351,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 123.58749835468261,
+        "lat_deg": 4.257582234451309,
+        "dist_au": 37.69905622628255
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": {
+        "lon_deg": 123.12242918708118,
+        "lat_deg": 4.154516148498135,
+        "dist_au": 38.631592462791076
+      },
+      "phase_angle_deg": 0.4751298824575753,
+      "illuminated_fraction": 0.9999828083743396,
+      "elongation_deg": 161.23432503160083,
+      "diameter_deg": 0.000024144756790231557,
+      "magnitude": 14.816365444688735,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2430000.5,
+      "body_position": {
+        "lon_deg": 185.9083604885597,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999903
+      },
+      "sun_position": {
+        "lon_deg": 285.2942189603202,
+        "lat_deg": -0.000014440938688928267,
+        "dist_au": 0.9832990429138809
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 99.38585847176024,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421846864170806,
+      "magnitude": -26.896546123525944,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 190.69321397355426,
+        "lat_deg": -2.287344526481418,
+        "dist_au": 0.0026202827406367458
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": {
+        "lon_deg": 100.30837769861834,
+        "lat_deg": -0.0060683187176836665,
+        "dist_au": 0.9832929933369865
+      },
+      "phase_angle_deg": 90.38428744544956,
+      "illuminated_fraction": 0.49664648454449306,
+      "elongation_deg": 89.46302377228047,
+      "diameter_deg": 0.5079316733414612,
+      "magnitude": -10.096743924766285,
+      "horizontal_parallax_deg": 0.9323136562633576
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 299.02120679313475,
+        "lat_deg": -0.5086902972613837,
+        "dist_au": 0.8893003728698645
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": {
+        "lon_deg": 36.4035322815442,
+        "lat_deg": -1.4119354184707014,
+        "dist_au": 0.32071029371480775
+      },
+      "phase_angle_deg": 97.36714039776442,
+      "illuminated_fraction": 0.4358865780826354,
+      "elongation_deg": 18.87200387943842,
+      "diameter_deg": 0.0021011727562858743,
+      "magnitude": -0.2048452039387394,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 274.45268176039013,
+        "lat_deg": -0.2605618751698124,
+        "dist_au": 1.6986685819778795
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": {
+        "lon_deg": 266.7252541383205,
+        "lat_deg": -0.6085549971201215,
+        "dist_au": 0.7268467917484791
+      },
+      "phase_angle_deg": 7.735025088711094,
+      "illuminated_fraction": 0.9954505541929594,
+      "elongation_deg": 5.709057183817621,
+      "diameter_deg": 0.0027289974432913294,
+      "magnitude": -3.9135284578383613,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 342.23590333395174,
+        "lat_deg": -0.8108546978629433,
+        "dist_au": 1.578601204471526
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": {
+        "lon_deg": 20.086160993115612,
+        "lat_deg": -0.9039846636890054,
+        "dist_au": 1.4160551636119585
+      },
+      "phase_angle_deg": 37.845968796753745,
+      "illuminated_fraction": 0.8948315092934851,
+      "elongation_deg": 62.083133532963885,
+      "diameter_deg": 0.0016447141334889886,
+      "magnitude": 0.8172434022276708,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 212.32495695926409,
+        "lat_deg": 1.209251862894988,
+        "dist_au": 5.74463720115029
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": {
+        "lon_deg": 202.70430321874412,
+        "lat_deg": 1.274687514332141,
+        "dist_au": 5.450353194507581
+      },
+      "phase_angle_deg": 9.6186103415413,
+      "illuminated_fraction": 0.99297090830646,
+      "elongation_deg": 67.83605262184545,
+      "diameter_deg": 0.009322022020347832,
+      "magnitude": -1.86313174074669,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 32.062313511667995,
+        "lat_deg": -2.5245563666759265,
+        "dist_au": 8.802815052855076
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": {
+        "lon_deg": 37.745673163681666,
+        "lat_deg": -2.411491514247909,
+        "dist_au": 9.214505840159632
+      },
+      "phase_angle_deg": 5.679208164497247,
+      "illuminated_fraction": 0.9975457730941464,
+      "elongation_deg": 111.88414260365195,
+      "diameter_deg": 0.005067191822005172,
+      "magnitude": 0.2337259187462024,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 188.7206253333489,
+        "lat_deg": 0.7196809146562175,
+        "dist_au": 18.26569173473013
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": {
+        "lon_deg": 185.6425314322487,
+        "lat_deg": 0.7177518399697601,
+        "dist_au": 18.316810762957157
+      },
+      "phase_angle_deg": 3.0778522796597487,
+      "illuminated_fraction": 0.9992787499620917,
+      "elongation_deg": 91.43507157329168,
+      "diameter_deg": 0.0010635908447998873,
+      "magnitude": 5.4836936722139,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 239.88585140203463,
+        "lat_deg": 1.6523912614458587,
+        "dist_au": 31.066826736057447
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": {
+        "lon_deg": 238.68763227886342,
+        "lat_deg": 1.6930256742395842,
+        "dist_au": 30.323551191816364
+      },
+      "phase_angle_deg": 1.198397590853526,
+      "illuminated_fraction": 0.9998906343935557,
+      "elongation_deg": 40.29807497850052,
+      "diameter_deg": 0.0006070907946537303,
+      "magnitude": 7.980384777420336,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 177.39217432101717,
+        "lat_deg": 15.810614285634271,
+        "dist_au": 31.4542674150152
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": {
+        "lon_deg": 175.58770358784517,
+        "lat_deg": 15.69746212849862,
+        "dist_au": 31.67807321460222
+      },
+      "phase_angle_deg": 1.7403644054010459,
+      "illuminated_fraction": 0.9997693562255332,
+      "elongation_deg": 102.27307929249146,
+      "diameter_deg": 0.000028938348230941302,
+      "magnitude": 13.992191664643869,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2440587.5,
+      "body_position": {
+        "lon_deg": 345.2868907054304,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999903
+      },
+      "sun_position": {
+        "lon_deg": 280.15581000301927,
+        "lat_deg": -0.000011384325264809291,
+        "dist_au": 0.9833108447265303
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 65.13108070241164,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5422032294483885,
+      "magnitude": -26.896620387874133,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 83.15008791210165,
+        "lat_deg": -4.71550775821142,
+        "dist_au": 0.00257369938363404
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": {
+        "lon_deg": 99.67165788877634,
+        "lat_deg": -0.012135072598744714,
+        "dist_au": 0.985734907297062
+      },
+      "phase_angle_deg": 17.15990581650026,
+      "illuminated_fraction": 0.977742528732382,
+      "elongation_deg": 162.79564126369277,
+      "diameter_deg": 0.5171251797069301,
+      "magnitude": -12.300747863464892,
+      "horizontal_parallax_deg": 0.9491898456101424
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 267.95537070701636,
+        "lat_deg": -0.5789504843290849,
+        "dist_au": 1.3795858331063309
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": {
+        "lon_deg": 242.2802576791032,
+        "lat_deg": -1.7250523171861696,
+        "dist_au": 0.462742557291335
+      },
+      "phase_angle_deg": 25.694978112560374,
+      "illuminated_fraction": 0.950557513708184,
+      "elongation_deg": 11.773038161821082,
+      "diameter_deg": 0.0013544454217542048,
+      "magnitude": -0.6006923694000076,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 311.39671293215764,
+        "lat_deg": -1.8015365385431368,
+        "dist_au": 1.3469759813942155
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": {
+        "lon_deg": 356.77763401857055,
+        "lat_deg": -3.3401383563646263,
+        "dist_au": 0.7267242218271
+      },
+      "phase_angle_deg": 45.35742129856494,
+      "illuminated_fraction": 0.8513409965263926,
+      "elongation_deg": 31.728185109425727,
+      "diameter_deg": 0.0034415329460272897,
+      "magnitude": -3.943935567560371,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 163.97121835110818,
+        "lat_deg": 3.12987892558561,
+        "dist_au": 0.9667846633431478
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": {
+        "lon_deg": 131.50909553305982,
+        "lat_deg": 1.83226087186073,
+        "dist_au": 1.651146182374785
+      },
+      "phase_angle_deg": 32.45610170195713,
+      "illuminated_fraction": 0.9219014304918354,
+      "elongation_deg": 115.70196169350167,
+      "diameter_deg": 0.0026855491307727184,
+      "magnitude": 0.013203721319905826,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 160.1980683486394,
+        "lat_deg": 1.127752713661314,
+        "dist_au": 4.825992021317185
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": {
+        "lon_deg": 151.03887167650794,
+        "lat_deg": 1.011891707289709,
+        "dist_au": 5.3789425863826565
+      },
+      "phase_angle_deg": 9.1583280160102,
+      "illuminated_fraction": 0.993626143845614,
+      "elongation_deg": 119.51002639817125,
+      "diameter_deg": 0.011096502910927567,
+      "magnitude": -2.27530405702672,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 176.9869941411168,
+        "lat_deg": 2.1611608302946586,
+        "dist_au": 9.153603019335884
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": {
+        "lon_deg": 171.1357205837007,
+        "lat_deg": 2.100385207963093,
+        "dist_au": 9.419138581164443
+      },
+      "phase_angle_deg": 5.847539852116501,
+      "illuminated_fraction": 0.9973982586222186,
+      "elongation_deg": 102.7181818705081,
+      "diameter_deg": 0.004873004908682908,
+      "magnitude": 0.9037100141367644,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 234.04756485684854,
+        "lat_deg": 0.2801905968656011,
+        "dist_au": 19.3997077632933
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": {
+        "lon_deg": 231.89768604962845,
+        "lat_deg": 0.2903207226151578,
+        "dist_au": 18.72578957876914
+      },
+      "phase_angle_deg": 2.1498760233639485,
+      "illuminated_fraction": 0.9996480583863243,
+      "elongation_deg": 45.667479713071224,
+      "diameter_deg": 0.0010014183069150678,
+      "magnitude": 5.65582086240132,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 260.92277280815205,
+        "lat_deg": 1.3405911246089974,
+        "dist_au": 31.209445228762558
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": {
+        "lon_deg": 260.32769258300993,
+        "lat_deg": 1.381795787416377,
+        "dist_au": 30.280502594093225
+      },
+      "phase_angle_deg": 0.5963375303467433,
+      "illuminated_fraction": 0.9999729183508009,
+      "elongation_deg": 18.837648887651785,
+      "diameter_deg": 0.0006043165584109895,
+      "magnitude": 7.987245640540356,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 201.6073490588299,
+        "lat_deg": 17.032095539929898,
+        "dist_au": 30.365408418021545
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": {
+        "lon_deg": 199.69592157839458,
+        "lat_deg": 17.13745679802115,
+        "dist_au": 30.187179327434595
+      },
+      "phase_angle_deg": 1.8301060623974532,
+      "illuminated_fraction": 0.999744958802581,
+      "elongation_deg": 78.63580813722038,
+      "diameter_deg": 0.000029976034943256217,
+      "magnitude": 13.811008307496857,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2444239.5,
+      "body_position": {
+        "lon_deg": 151.89619639685245,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999907
+      },
+      "sun_position": {
+        "lon_deg": 279.7143740818529,
+        "lat_deg": -0.0001690658361832021,
+        "dist_au": 0.9832772163253639
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 127.81817768480684,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421707785758113,
+      "magnitude": -26.89649042132391,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 326.54853515412356,
+        "lat_deg": 0.8761759163478705,
+        "dist_au": 0.0025451690812107316
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": {
+        "lon_deg": 100.19668494375311,
+        "lat_deg": 0.002260844768325027,
+        "dist_au": 0.981575528259416
+      },
+      "phase_angle_deg": 133.641712028991,
+      "illuminated_fraction": 0.15492671653955908,
+      "elongation_deg": 46.251104433808045,
+      "diameter_deg": 0.5229219810752602,
+      "magnitude": -8.03002198637535,
+      "horizontal_parallax_deg": 0.9598308647333066
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 295.7955794894463,
+        "lat_deg": 0.4747447736557118,
+        "dist_au": 0.7822432947653649
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": {
+        "lon_deg": 57.98986572647524,
+        "lat_deg": 1.1949349173809674,
+        "dist_au": 0.3104545461226424
+      },
+      "phase_angle_deg": 122.17350679870988,
+      "illuminated_fraction": 0.23375752758970975,
+      "elongation_deg": 15.498829445499608,
+      "diameter_deg": 0.0023887372741496393,
+      "magnitude": 0.5681005614744595,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 306.281919189124,
+        "lat_deg": 1.7785572533395166,
+        "dist_au": 0.3076557632673891
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": {
+        "lon_deg": 89.51496045149065,
+        "lat_deg": 0.7598036212366395,
+        "dist_au": 0.719678938013716
+      },
+      "phase_angle_deg": 143.1500449467413,
+      "illuminated_fraction": 0.09989560506120476,
+      "elongation_deg": 26.034666030230632,
+      "diameter_deg": 0.015067691828376509,
+      "magnitude": -4.753461118129359,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 249.64781153877468,
+        "lat_deg": -0.02744467090323189,
+        "dist_au": 2.310455166837667
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": {
+        "lon_deg": 230.74933621557724,
+        "lat_deg": -0.040813995512174246,
+        "dist_au": 1.5480156984820224
+      },
+      "phase_angle_deg": 18.898476625641013,
+      "illuminated_fraction": 0.9730469853882584,
+      "elongation_deg": 30.65604432034909,
+      "diameter_deg": 0.0011237386249061765,
+      "magnitude": 1.5482917514111811,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 95.21618871695082,
+        "lat_deg": -0.11820393205706277,
+        "dist_au": 4.170578264915372
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": {
+        "lon_deg": 96.18016240698853,
+        "lat_deg": -0.09576475490906733,
+        "dist_au": 5.1507517683957245
+      },
+      "phase_angle_deg": 0.9642331356836701,
+      "illuminated_fraction": 0.9999291974992017,
+      "elongation_deg": 174.91097443683364,
+      "diameter_deg": 0.012840337991383535,
+      "magnitude": -2.734449563646315,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 285.598296433889,
+        "lat_deg": 0.2939200038806014,
+        "dist_au": 11.005867900282833
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": {
+        "lon_deg": 286.12077305577753,
+        "lat_deg": 0.32268068370507946,
+        "dist_au": 10.0271558880216
+      },
+      "phase_angle_deg": 0.5232600573350783,
+      "illuminated_fraction": 0.999979148999713,
+      "elongation_deg": 5.3025809974170155,
+      "diameter_deg": 0.004052888227021858,
+      "magnitude": 0.5050390440379533,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 275.7553864375951,
+        "lat_deg": -0.27002422084181865,
+        "dist_au": 20.36009169497932
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": {
+        "lon_deg": 275.5293465618269,
+        "lat_deg": -0.2836636482077933,
+        "dist_au": 19.380000832104894
+      },
+      "phase_angle_deg": 0.22644837448606273,
+      "illuminated_fraction": 0.9999960948960973,
+      "elongation_deg": 4.556449219601841,
+      "diameter_deg": 0.00095418148375688,
+      "magnitude": 5.8221645788171825,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 282.0191252651431,
+        "lat_deg": 0.8474050966454939,
+        "dist_au": 31.19322766929158
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": {
+        "lon_deg": 282.0796403677617,
+        "lat_deg": 0.8749691873340966,
+        "dist_au": 30.21046164698899
+      },
+      "phase_angle_deg": 0.06649082195820546,
+      "illuminated_fraction": 0.9999996633193953,
+      "elongation_deg": 1.913133380944954,
+      "diameter_deg": 0.0006046307464722356,
+      "magnitude": 7.926080854908806,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 227.07937996569436,
+        "lat_deg": 15.281357089867365,
+        "dist_au": 30.213180000602183
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": {
+        "lon_deg": 225.50177193027406,
+        "lat_deg": 15.576973040414517,
+        "dist_au": 29.65618812179945
+      },
+      "phase_angle_deg": 1.5492115337110122,
+      "illuminated_fraction": 0.9998172363901006,
+      "elongation_deg": 54.72410907733948,
+      "diameter_deg": 0.000030127068510720105,
+      "magnitude": 13.761558830146493,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2447892.5,
+      "body_position": {
+        "lon_deg": 318.46149673403147,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999903
+      },
+      "sun_position": {
+        "lon_deg": 280.3038447758363,
+        "lat_deg": -6.680179340093842e-6,
+        "dist_au": 0.9833360685667613
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 38.157651958195586,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421754310433332,
+      "magnitude": -26.896509055049506,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 223.31487041022828,
+        "lat_deg": 5.170872009510337,
+        "dist_au": 0.0026899754322547574
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": {
+        "lon_deg": 100.49945508477862,
+        "lat_deg": 0.013922735669504041,
+        "dist_au": 0.9818759724936905
+      },
+      "phase_angle_deg": 122.66369132930699,
+      "illuminated_fraction": 0.23014652913410832,
+      "elongation_deg": 57.20425858362929,
+      "diameter_deg": 0.49477194409178094,
+      "magnitude": -8.564986970635225,
+      "horizontal_parallax_deg": 0.9081569440421988
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 271.8881271515047,
+        "lat_deg": -0.9947565691670603,
+        "dist_au": 1.4154660372639793
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": {
+        "lon_deg": 253.74914620205487,
+        "lat_deg": -3.0194621225745184,
+        "dist_au": 0.46646757212569456
+      },
+      "phase_angle_deg": 18.239536334840164,
+      "illuminated_fraction": 0.9748781510162792,
+      "elongation_deg": 8.53778695574411,
+      "diameter_deg": 0.001320112010018627,
+      "magnitude": -0.7341397339242344,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 241.56489498714026,
+        "lat_deg": 2.066369817042532,
+        "dist_au": 1.1375744244518002
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": {
+        "lon_deg": 182.58159365371137,
+        "lat_deg": 3.2648940948721106,
+        "dist_au": 0.7202118053949437
+      },
+      "phase_angle_deg": 58.92427416656203,
+      "illuminated_fraction": 0.7580852564358509,
+      "elongation_deg": 38.8495678573861,
+      "diameter_deg": 0.0040750408220453305,
+      "magnitude": -4.066128451592656,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 327.9627293044355,
+        "lat_deg": -1.0677946563275422,
+        "dist_au": 1.8496838335320178
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": {
+        "lon_deg": 359.431725497405,
+        "lat_deg": -1.4199164618279119,
+        "dist_au": 1.3911979688300977
+      },
+      "phase_angle_deg": 31.463309337801466,
+      "illuminated_fraction": 0.9264872917036426,
+      "elongation_deg": 47.603656117506176,
+      "diameter_deg": 0.001403671084238788,
+      "magnitude": 1.0358152347735747,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 25.25305690798685,
+        "lat_deg": -1.2621916732221332,
+        "dist_au": 4.621163605650278
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": {
+        "lon_deg": 36.28568982092354,
+        "lat_deg": -1.1746364888402754,
+        "dist_au": 4.9653737874671195
+      },
+      "phase_angle_deg": 11.030477132612912,
+      "illuminated_fraction": 0.9907627741269778,
+      "elongation_deg": 104.88120165484685,
+      "diameter_deg": 0.011588344211567327,
+      "magnitude": -2.52061522026597,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 40.39567811891063,
+        "lat_deg": -2.444858236733628,
+        "dist_au": 8.652785706244167
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": {
+        "lon_deg": 45.71464490220173,
+        "lat_deg": -2.303255570705531,
+        "dist_au": 9.183869803243622
+      },
+      "phase_angle_deg": 5.316282991097179,
+      "illuminated_fraction": 0.9978492035054787,
+      "elongation_deg": 119.99738395876592,
+      "diameter_deg": 0.005155051096986112,
+      "magnitude": 0.10224969075901358,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 314.80915042516625,
+        "lat_deg": -0.6583350430369224,
+        "dist_au": 20.727163388790814
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": {
+        "lon_deg": 316.41221353617027,
+        "lat_deg": -0.6848384830262529,
+        "dist_au": 19.924001291905164
+      },
+      "phase_angle_deg": 1.6031720581316828,
+      "illuminated_fraction": 0.9998042838433485,
+      "elongation_deg": 34.446504523761476,
+      "diameter_deg": 0.0009372832229150951,
+      "magnitude": 5.930410836680271,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 303.19298682620695,
+        "lat_deg": 0.2349920128827144,
+        "dist_au": 31.02449266692766
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": {
+        "lon_deg": 303.9228814860473,
+        "lat_deg": 0.24205887299683318,
+        "dist_au": 30.12059055268309
+      },
+      "phase_angle_deg": 0.7299225446531186,
+      "illuminated_fraction": 0.9999594265044406,
+      "elongation_deg": 22.825964062109584,
+      "diameter_deg": 0.0006079191925245701,
+      "magnitude": 7.8528408543409345,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 251.4547531757479,
+        "lat_deg": 10.855230629234429,
+        "dist_au": 31.064366847351543
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": {
+        "lon_deg": 250.54004331371453,
+        "lat_deg": 11.161973920673285,
+        "dist_au": 30.22314079422351
+      },
+      "phase_angle_deg": 0.948827336114947,
+      "illuminated_fraction": 0.999931441833313,
+      "elongation_deg": 30.71834861213773,
+      "diameter_deg": 0.00002930156433825607,
+      "magnitude": 13.86301050287953,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2451545.0,
+      "body_position": {
+        "lon_deg": 125.04068504368107,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999907
+      },
+      "sun_position": {
+        "lon_deg": 280.368165329509,
+        "lat_deg": 0.00022738954185568783,
+        "dist_au": 0.9833276305138312
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 155.32748028484565,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421587181181612,
+      "magnitude": -26.89644211690885,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 294.55775507426887,
+        "lat_deg": 0.8356186925286541,
+        "dist_au": 0.002697049264667076
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": {
+        "lon_deg": 106.46377447015901,
+        "lat_deg": 0.002242190566462004,
+        "dist_au": 0.9806875001617955
+      },
+      "phase_angle_deg": 171.86305375433693,
+      "illuminated_fraction": 0.005033702980753452,
+      "elongation_deg": 8.114885929046288,
+      "diameter_deg": 0.49347424607619345,
+      "magnitude": -2.4096052771553467,
+      "horizontal_parallax_deg": 0.9057748273952234
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 281.3272228494537,
+        "lat_deg": -1.5178184919218847,
+        "dist_au": 1.433373971748685
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": {
+        "lon_deg": 270.2933075615048,
+        "lat_deg": -4.6971458035378575,
+        "dist_au": 0.4635953457055307
+      },
+      "phase_angle_deg": 11.46582253721783,
+      "illuminated_fraction": 0.99002172754595,
+      "elongation_deg": 5.376596169763289,
+      "diameter_deg": 0.0013036191199181655,
+      "magnitude": -0.9445919222320287,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 248.83795653206104,
+        "lat_deg": 1.876247610132788,
+        "dist_au": 1.175968596086443
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": {
+        "lon_deg": 192.2813758038965,
+        "lat_deg": 3.0618562333540362,
+        "dist_au": 0.7208870062074452
+      },
+      "phase_angle_deg": 56.51076691476281,
+      "illuminated_fraction": 0.7758901366587971,
+      "elongation_deg": 37.687553752880724,
+      "diameter_deg": 0.003941994907959507,
+      "magnitude": -4.040928883294144,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 332.61663275250294,
+        "lat_deg": -0.9922627903096048,
+        "dist_au": 1.8822533077327819
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": {
+        "lon_deg": 3.1785360120215547,
+        "lat_deg": -1.3394089027541525,
+        "dist_au": 1.3945335993439725
+      },
+      "phase_angle_deg": 30.557347308922875,
+      "illuminated_fraction": 0.9305603670574802,
+      "elongation_deg": 46.13918015229194,
+      "diameter_deg": 0.0013793827331550711,
+      "magnitude": 1.0656958788003854,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 25.557777939402822,
+        "lat_deg": -1.231431742079644,
+        "dist_au": 4.715399081044064
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": {
+        "lon_deg": 36.83278596854994,
+        "lat_deg": -1.169165009424663,
+        "dist_au": 4.966165909317163
+      },
+      "phase_angle_deg": 11.272697407673999,
+      "illuminated_fraction": 0.9903539597452511,
+      "elongation_deg": 99.06995356341078,
+      "diameter_deg": 0.01135675551448214,
+      "magnitude": -2.473195100324334,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 40.30925520343796,
+        "lat_deg": -2.4159458034332895,
+        "dist_au": 8.741659914443197
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": {
+        "lon_deg": 45.93188744823917,
+        "lat_deg": -2.2997051759506553,
+        "dist_au": 9.182580164918042
+      },
+      "phase_angle_deg": 5.6190696962256395,
+      "illuminated_fraction": 0.9975974332207905,
+      "elongation_deg": 113.80106050137256,
+      "diameter_deg": 0.0051026410182071855,
+      "magnitude": 0.131046575371913,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 315.11875340294233,
+        "lat_deg": -0.6570077311874396,
+        "dist_au": 20.78207250433217
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": {
+        "lon_deg": 316.47782686589557,
+        "lat_deg": -0.6852466446393409,
+        "dist_au": 19.92458749173658
+      },
+      "phase_angle_deg": 1.359273574661125,
+      "illuminated_fraction": 0.9998593019356805,
+      "elongation_deg": 28.639940854890217,
+      "diameter_deg": 0.0009348067907511499,
+      "magnitude": 5.93453758384677,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 303.40995367180466,
+        "lat_deg": 0.2336549264428184,
+        "dist_au": 31.05977602516761
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": {
+        "lon_deg": 303.9589773625337,
+        "lat_deg": 0.24096424414603052,
+        "dist_au": 30.120379985767308
+      },
+      "phase_angle_deg": 0.5490676349709772,
+      "illuminated_fraction": 0.9999770415211497,
+      "elongation_deg": 16.92580527863253,
+      "diameter_deg": 0.0006072286070343977,
+      "magnitude": 7.855293830515404,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 251.6608555719824,
+        "lat_deg": 10.865598136732102,
+        "dist_au": 31.012120921215
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": {
+        "lon_deg": 250.57944155420066,
+        "lat_deg": 11.153050230553903,
+        "dist_au": 30.22491259978326
+      },
+      "phase_angle_deg": 1.0997418611746232,
+      "illuminated_fraction": 0.9999078993015623,
+      "elongation_deg": 36.27517551379028,
+      "diameter_deg": 0.000029350928500416752,
+      "magnitude": 13.859482611931682,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2451551.0,
+      "body_position": {
+        "lon_deg": 124.72308873543912,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999907
+      },
+      "sun_position": {
+        "lon_deg": 286.48571303063045,
+        "lat_deg": 0.00007263782629427922,
+        "dist_au": 0.9833579429628038
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 161.76262429505158,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421890551402391,
+      "magnitude": -26.896563620374938,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 103.23288871134656,
+        "lat_deg": 0.7242598539501602,
+        "dist_au": 0.0024022133310096306
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": {
+        "lon_deg": 100.45692424363358,
+        "lat_deg": 0.0017777334258843819,
+        "dist_au": 0.9857024896626654
+      },
+      "phase_angle_deg": 2.8683702029732356,
+      "illuminated_fraction": 0.9993735672678153,
+      "elongation_deg": 177.1248509654285,
+      "diameter_deg": 0.5540413114373327,
+      "magnitude": -12.822476993839881,
+      "horizontal_parallax_deg": 1.0169562438780466
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 288.99666568133455,
+        "lat_deg": 1.6349968500305734,
+        "dist_au": 0.7027629208973489
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": {
+        "lon_deg": 80.56031935063046,
+        "lat_deg": 3.7365654394016325,
+        "dist_au": 0.30757877975925435
+      },
+      "phase_angle_deg": 151.07584750596035,
+      "illuminated_fraction": 0.062369636947969154,
+      "elongation_deg": 8.700130400171119,
+      "diameter_deg": 0.0026588962794252637,
+      "magnitude": 2.7299488780362093,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 277.84900461140484,
+        "lat_deg": -0.4365562013756525,
+        "dist_au": 1.7080943275746419
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": {
+        "lon_deg": 274.3293214304941,
+        "lat_deg": -1.0250276946537906,
+        "dist_au": 0.727242134445118
+      },
+      "phase_angle_deg": 3.5682409643243345,
+      "illuminated_fraction": 0.9990306899370858,
+      "elongation_deg": 2.637732066736817,
+      "diameter_deg": 0.0027139380667544227,
+      "magnitude": -3.9122028092301564,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 138.81761838456785,
+        "lat_deg": 3.7574476209232093,
+        "dist_au": 0.7388357068196564
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": {
+        "lon_deg": 116.78270442946564,
+        "lat_deg": 1.7045422061887698,
+        "dist_au": 1.6277813536986838
+      },
+      "phase_angle_deg": 22.103925175791538,
+      "illuminated_fraction": 0.9632514273056374,
+      "elongation_deg": 141.47745582978868,
+      "diameter_deg": 0.00351410697735621,
+      "magnitude": -0.7627978620891149,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 326.35870733415146,
+        "lat_deg": -0.9346111496664532,
+        "dist_au": 5.637399479356166
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": {
+        "lon_deg": 334.4757667427131,
+        "lat_deg": -1.0529460606322794,
+        "dist_au": 5.00338865439138
+      },
+      "phase_angle_deg": 8.116697645223336,
+      "illuminated_fraction": 0.9949912764931319,
+      "elongation_deg": 45.91570767432585,
+      "diameter_deg": 0.009499350664504776,
+      "magnitude": -2.105705364946754,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 184.50656209172502,
+        "lat_deg": 2.2878257050372266,
+        "dist_au": 9.322628114164138
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": {
+        "lon_deg": 178.57496575987423,
+        "lat_deg": 2.2511844886205696,
+        "dist_au": 9.475073901428354
+      },
+      "phase_angle_deg": 5.927052669068545,
+      "illuminated_fraction": 0.9973270859545587,
+      "elongation_deg": 95.93906673174014,
+      "diameter_deg": 0.004784654273305708,
+      "magnitude": 0.8578238118413362,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 353.0900741700781,
+        "lat_deg": -0.7461720359889505,
+        "dist_au": 20.368426291997807
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": {
+        "lon_deg": 355.7673704128265,
+        "lat_deg": -0.7561846524167222,
+        "dist_au": 20.096913836223997
+      },
+      "phase_angle_deg": 2.677084829965007,
+      "illuminated_fraction": 0.9994543175347121,
+      "elongation_deg": 72.64120922473589,
+      "diameter_deg": 0.0009537910403305794,
+      "magnitude": 5.918817118089947,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 324.58207283947445,
+        "lat_deg": -0.418271724338771,
+        "dist_au": 30.722434633328376
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": {
+        "lon_deg": 325.89186396931734,
+        "lat_deg": -0.42793422388087615,
+        "dist_au": 30.02448942584987
+      },
+      "phase_angle_deg": 1.3097910557503014,
+      "illuminated_fraction": 0.9998693588870593,
+      "elongation_deg": 44.133262653514656,
+      "diameter_deg": 0.0006138961562019143,
+      "magnitude": 7.824656298592962,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 273.3087966999619,
+        "lat_deg": 5.0991090962010635,
+        "dist_au": 32.73432602365622
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": {
+        "lon_deg": 273.09205577606497,
+        "lat_deg": 5.25586067203436,
+        "dist_au": 31.762771353473195
+      },
+      "phase_angle_deg": 0.2667678788660221,
+      "illuminated_fraction": 0.9999945804774142,
+      "elongation_deg": 8.767454240909297,
+      "diameter_deg": 0.00002780672933809778,
+      "magnitude": 14.08460895922928,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2455197.5,
+      "body_position": {
+        "lon_deg": 291.6355132728662,
+        "lat_deg": 0.0,
+        "dist_au": 0.002569555289799991
+      },
+      "sun_position": {
+        "lon_deg": 280.45038395268546,
+        "lat_deg": 6.451570506302457e-6,
+        "dist_au": 0.9833029216953255
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 11.18512932018255,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5255983140484336,
+      "magnitude": -26.829079705359035,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 214.8226275249889,
+        "lat_deg": 4.272995081451851,
+        "dist_au": 0.002435877349965173
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": {
+        "lon_deg": 252.80193660425874,
+        "lat_deg": 0.010079063650404046,
+        "dist_au": 1.016251426358569
+      },
+      "phase_angle_deg": 38.18162997910726,
+      "illuminated_fraction": 0.8930275626202917,
+      "elongation_deg": 141.7331373333912,
+      "diameter_deg": 0.5463843579595277,
+      "magnitude": -11.799335561768158,
+      "horizontal_parallax_deg": 1.002900382001623
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 96.35653034926598,
+        "lat_deg": 1.7587060058641502,
+        "dist_au": 0.8515091358275148
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": {
+        "lon_deg": 197.46177857054582,
+        "lat_deg": 3.6325080509260173,
+        "dist_au": 0.4125018711363614
+      },
+      "phase_angle_deg": 100.96386611544578,
+      "illuminated_fraction": 0.40490505543546673,
+      "elongation_deg": 23.532050084800066,
+      "diameter_deg": 0.0021944259163145787,
+      "magnitude": 0.3824623606127521,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 74.05978657717438,
+        "lat_deg": 0.6613021414507384,
+        "dist_au": 0.288655971926239
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": {
+        "lon_deg": 252.4189986552387,
+        "lat_deg": 0.2631620803750235,
+        "dist_au": 0.7257960016952607
+      },
+      "phase_angle_deg": 178.11672407959048,
+      "illuminated_fraction": 0.0002700744807518918,
+      "elongation_deg": 1.3466710031222962,
+      "diameter_deg": 0.016059471075616383,
+      "magnitude": -3.2834287776127784,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 344.0221252607529,
+        "lat_deg": -2.4265392914967663,
+        "dist_au": 0.9959705732077561
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": {
+        "lon_deg": 297.89207867008423,
+        "lat_deg": -1.717041669864101,
+        "dist_au": 1.4074974032071021
+      },
+      "phase_angle_deg": 46.103312697677055,
+      "illuminated_fraction": 0.8466800833331153,
+      "elongation_deg": 88.86545160854166,
+      "diameter_deg": 0.002606851830882629,
+      "magnitude": -0.09910946525863004,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 296.6511405238452,
+        "lat_deg": -0.2179668856686353,
+        "dist_au": 4.390640324107822
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": {
+        "lon_deg": 288.8479929369983,
+        "lat_deg": -0.18505821735811026,
+        "dist_au": 5.171111387209261
+      },
+      "phase_angle_deg": 7.803168537538775,
+      "illuminated_fraction": 0.9953701668468073,
+      "elongation_deg": 136.23497905286777,
+      "diameter_deg": 0.012196770989425315,
+      "magnitude": -2.5798205058587973,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 301.54174185866924,
+        "lat_deg": -0.15651836057740795,
+        "dist_au": 9.317836990966216
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": {
+        "lon_deg": 297.1769703719459,
+        "lat_deg": -0.14554531778547358,
+        "dist_au": 10.017007375132398
+      },
+      "phase_angle_deg": 4.364770101541368,
+      "illuminated_fraction": 0.9985498682825653,
+      "elongation_deg": 131.34462217456692,
+      "diameter_deg": 0.004787114486777829,
+      "magnitude": 0.3838699483894723,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 38.660050634050094,
+        "lat_deg": -0.4469434374629645,
+        "dist_au": 20.62986152475214
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": {
+        "lon_deg": 37.012121578067934,
+        "lat_deg": -0.4657367666316352,
+        "dist_au": 19.799456153301094
+      },
+      "phase_angle_deg": 1.6479839381607777,
+      "illuminated_fraction": 0.9997931903726747,
+      "elongation_deg": 34.229065614064346,
+      "diameter_deg": 0.0009417039702194062,
+      "magnitude": 5.90688694747156,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 350.8495322241709,
+        "lat_deg": -1.0581805490348162,
+        "dist_au": 30.053989484047367
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": {
+        "lon_deg": 348.92556426873705,
+        "lat_deg": -1.0626319175830832,
+        "dist_au": 29.930443536810063
+      },
+      "phase_angle_deg": 1.9236435748284126,
+      "illuminated_fraction": 0.9997182245441989,
+      "elongation_deg": 82.03838921742462,
+      "diameter_deg": 0.0006275501141231181,
+      "magnitude": 7.770076413875797,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 294.6602617510934,
+        "lat_deg": -0.9275824446031607,
+        "dist_au": 33.288526389884844
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": {
+        "lon_deg": 293.518115385253,
+        "lat_deg": -0.9065558841628708,
+        "dist_au": 34.05159511325603
+      },
+      "phase_angle_deg": 1.1421936101883845,
+      "illuminated_fraction": 0.9999006518432862,
+      "elongation_deg": 138.2178891127776,
+      "diameter_deg": 0.000027343792066489476,
+      "magnitude": 14.272160155687374,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2459003.5,
+      "body_position": {
+        "lon_deg": 90.0839556732659,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999903
+      },
+      "sun_position": {
+        "lon_deg": 72.88655154737047,
+        "lat_deg": 0.00016411067652664785,
+        "dist_au": 1.0143410812108629
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 17.197404126654753,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5251233935137906,
+      "magnitude": -26.827116717632606,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 312.451819745809,
+        "lat_deg": -3.6263196914770632,
+        "dist_au": 0.0026047964809707553
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": {
+        "lon_deg": 259.699297746257,
+        "lat_deg": -0.009186429937286994,
+        "dist_au": 1.016831719249461
+      },
+      "phase_angle_deg": 52.83896931923619,
+      "illuminated_fraction": 0.8020286104357176,
+      "elongation_deg": 127.04401658944046,
+      "diameter_deg": 0.5109514922867827,
+      "magnitude": -11.248734321801509,
+      "horizontal_parallax_deg": 0.9378570210846817
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 102.23342798072802,
+        "lat_deg": 0.6192305704057354,
+        "dist_au": 0.7290764716746772
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": {
+        "lon_deg": 220.23436911305174,
+        "lat_deg": 1.0204742622046474,
+        "dist_au": 0.4428903768812444
+      },
+      "phase_angle_deg": 117.98184159856952,
+      "illuminated_fraction": 0.26540414398695067,
+      "elongation_deg": 22.658796144944006,
+      "diameter_deg": 0.00256293240596288,
+      "magnitude": 0.956401889854067,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 69.81720150662234,
+        "lat_deg": -0.9739750029957336,
+        "dist_au": 0.2947413609062004
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": {
+        "lon_deg": 263.5266553343471,
+        "lat_deg": -0.39458890757544113,
+        "dist_au": 0.726568129637523
+      },
+      "phase_angle_deg": 166.2229060188613,
+      "illuminated_fraction": 0.01438521774760293,
+      "elongation_deg": 9.81342304196896,
+      "diameter_deg": 0.01572789857887812,
+      "magnitude": -4.068224781374954,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 348.6115994194799,
+        "lat_deg": -2.6038176155165287,
+        "dist_au": 0.949843261774041
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": {
+        "lon_deg": 302.1915277173561,
+        "lat_deg": -1.7637140176137533,
+        "dist_au": 1.4020736425718687
+      },
+      "phase_angle_deg": 46.3915732209977,
+      "illuminated_fraction": 0.844863021940697,
+      "elongation_deg": 90.97004556402723,
+      "diameter_deg": 0.0027334485770261607,
+      "magnitude": -0.20740276275936753,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 296.1651851962794,
+        "lat_deg": -0.23744657353962878,
+        "dist_au": 4.317661743504983
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": {
+        "lon_deg": 289.4368065271339,
+        "lat_deg": -0.19829552927735158,
+        "dist_au": 5.168547745212339
+      },
+      "phase_angle_deg": 6.728443743514803,
+      "illuminated_fraction": 0.9965563037448365,
+      "elongation_deg": 143.4168027744555,
+      "diameter_deg": 0.012402924942900732,
+      "magnitude": -2.626516259305933,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 301.25965751180564,
+        "lat_deg": -0.16791953874429563,
+        "dist_au": 9.234942132796808
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": {
+        "lon_deg": 297.3898639522316,
+        "lat_deg": -0.15474892350276925,
+        "dist_au": 10.016129974056518
+      },
+      "phase_angle_deg": 3.869800616539859,
+      "illuminated_fraction": 0.9988599948294152,
+      "elongation_deg": 138.32271718972126,
+      "diameter_deg": 0.004830084672291699,
+      "magnitude": 0.3506768434881651,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 38.99848450926313,
+        "lat_deg": -0.4476851411535194,
+        "dist_au": 20.558536607337967
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": {
+        "lon_deg": 37.08961573792737,
+        "lat_deg": -0.4649089088803049,
+        "dist_au": 19.79857237951358
+      },
+      "phase_angle_deg": 1.9088859314391002,
+      "illuminated_fraction": 0.9997225309633,
+      "elongation_deg": 40.58620764773919,
+      "diameter_deg": 0.0009449710781458551,
+      "magnitude": 5.901084979452972,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 350.91296006675753,
+        "lat_deg": -1.0633781886811875,
+        "dist_au": 29.93658377467798
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": {
+        "lon_deg": 348.96837490839994,
+        "lat_deg": -1.0636760223815576,
+        "dist_au": 29.930331273950404
+      },
+      "phase_angle_deg": 1.944250155529629,
+      "illuminated_fraction": 0.999712155885134,
+      "elongation_deg": 88.66991899173712,
+      "diameter_deg": 0.0006300112488627648,
+      "magnitude": 7.761568814280308,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 294.5374095128848,
+        "lat_deg": -0.9405984768450376,
+        "dist_au": 33.219267802158804
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": {
+        "lon_deg": 293.5533362786398,
+        "lat_deg": -0.9172274839495337,
+        "dist_au": 34.056207832214746
+      },
+      "phase_angle_deg": 0.9842214152155868,
+      "illuminated_fraction": 0.9999262317152642,
+      "elongation_deg": 145.0341964834502,
+      "diameter_deg": 0.0000274008009214973,
+      "magnitude": 14.267931716463618,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2459010.5,
+      "body_position": {
+        "lon_deg": 89.71349066853521,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999907
+      },
+      "sun_position": {
+        "lon_deg": 79.58265147228526,
+        "lat_deg": -0.00008419334968194959,
+        "dist_au": 1.0152584428021818
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 10.130839196596147,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421600159761585,
+      "magnitude": -26.89644731512732,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 255.46781782022026,
+        "lat_deg": -1.279818908943791,
+        "dist_au": 0.0023989447665117374
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": {
+        "lon_deg": 100.58763522170774,
+        "lat_deg": -0.002987451352045596,
+        "dist_au": 0.9811850563284248
+      },
+      "phase_angle_deg": 154.84955766343253,
+      "illuminated_fraction": 0.04740250531554485,
+      "elongation_deg": 25.090849402322554,
+      "diameter_deg": 0.5547961991388628,
+      "magnitude": -6.338478358378309,
+      "horizontal_parallax_deg": 1.018341993536305
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 298.18164758904817,
+        "lat_deg": -1.8211416508434397,
+        "dist_au": 1.1417340636978097
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": {
+        "lon_deg": 353.7881212586666,
+        "lat_deg": -5.733782343308096,
+        "dist_au": 0.363198866215646
+      },
+      "phase_angle_deg": 55.601964595014,
+      "illuminated_fraction": 0.7824693555318324,
+      "elongation_deg": 17.744221211102353,
+      "diameter_deg": 0.0016366102886831396,
+      "magnitude": -0.7399113726880036,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 293.29520714677477,
+        "lat_deg": 2.8843428210726425,
+        "dist_au": 0.2737608926154059
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": {
+        "lon_deg": 95.70829205385071,
+        "lat_deg": 1.0970150709286266,
+        "dist_au": 0.7193758040534067
+      },
+      "phase_angle_deg": 161.97362392072577,
+      "illuminated_fraction": 0.02454292013542625,
+      "elongation_deg": 13.083592782224596,
+      "diameter_deg": 0.016933252187199706,
+      "magnitude": -4.214391887603213,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 253.09855990980998,
+        "lat_deg": -0.1319876646916295,
+        "dist_au": 2.3411572582999454
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": {
+        "lon_deg": 235.95365314305,
+        "lat_deg": -0.20087406973993982,
+        "dist_au": 1.536661924298218
+      },
+      "phase_angle_deg": 17.144971245639738,
+      "illuminated_fraction": 0.9777809646216139,
+      "elongation_deg": 27.429855901972427,
+      "diameter_deg": 0.0011090018420948835,
+      "magnitude": 1.529448788681063,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 330.5457811177055,
+        "lat_deg": -0.9966554264924313,
+        "dist_au": 5.567351278145469
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": {
+        "lon_deg": 339.2283279070158,
+        "lat_deg": -1.1112290965580884,
+        "dist_au": 4.992762234618211
+      },
+      "phase_angle_deg": 8.681829665044239,
+      "illuminated_fraction": 0.9942709033862058,
+      "elongation_deg": 50.0249233170831,
+      "diameter_deg": 0.0096188711321432,
+      "magnitude": -2.1318342453671812,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 311.9026979556289,
+        "lat_deg": -0.8235001678899491,
+        "dist_au": 10.746130604005318
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": {
+        "lon_deg": 314.8645086123768,
+        "lat_deg": -0.8919674838612893,
+        "dist_au": 9.91987726272724
+      },
+      "phase_angle_deg": 2.9622698806408714,
+      "illuminated_fraction": 0.9993318911153198,
+      "elongation_deg": 31.384274450151963,
+      "diameter_deg": 0.004150847787485814,
+      "magnitude": 0.767744355340283,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 40.95269313349453,
+        "lat_deg": -0.4050901849154492,
+        "dist_au": 19.206673599021535
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": {
+        "lon_deg": 43.41285829704772,
+        "lat_deg": -0.39446462310579855,
+        "dist_au": 19.722762831238
+      },
+      "phase_angle_deg": 2.460128211629229,
+      "illuminated_fraction": 0.9995391670724924,
+      "elongation_deg": 120.42372762853175,
+      "diameter_deg": 0.0010114829308058306,
+      "magnitude": 5.748936864057753,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 350.6691509020466,
+        "lat_deg": -1.1347236398338023,
+        "dist_au": 30.240019355211626
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": {
+        "lon_deg": 352.44174761325854,
+        "lat_deg": -1.1467144073215645,
+        "dist_au": 29.92027271483516
+      },
+      "phase_angle_deg": 1.7722859437958438,
+      "illuminated_fraction": 0.9997608184357503,
+      "elongation_deg": 70.14508303959846,
+      "diameter_deg": 0.0006236895654406163,
+      "magnitude": 7.782738062413494,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 295.9344633236139,
+        "lat_deg": -1.727919463143064,
+        "dist_au": 35.38033303610342
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": {
+        "lon_deg": 296.3739567176007,
+        "lat_deg": -1.7750881246239012,
+        "dist_au": 34.43361393055969
+      },
+      "phase_angle_deg": 0.44181316024113887,
+      "illuminated_fraction": 0.9999851348297366,
+      "elongation_deg": 15.500589345863498,
+      "diameter_deg": 0.000025727133288316425,
+      "magnitude": 14.428722612353559,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2459580.5,
+      "body_position": {
+        "lon_deg": 59.53068147116641,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999907
+      },
+      "sun_position": {
+        "lon_deg": 280.52812351306994,
+        "lat_deg": -0.00012303673793730624,
+        "dist_au": 0.9833555889540059
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 139.00255795794445,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5386769018185897,
+      "magnitude": -26.88245165611386,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 38.637230697312205,
+        "lat_deg": 0.24766537172600192,
+        "dist_au": 0.002553291163324882
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": {
+        "lon_deg": 155.97493650629104,
+        "lat_deg": 0.0006716243077996283,
+        "dist_au": 0.9885348430648753
+      },
+      "phase_angle_deg": 117.33742581667741,
+      "illuminated_fraction": 0.2703850476582681,
+      "elongation_deg": 62.531372106032755,
+      "diameter_deg": 0.5212585418749262,
+      "magnitude": -8.949368159966667,
+      "horizontal_parallax_deg": 0.9567773348107161
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 320.16783585859747,
+        "lat_deg": -1.9791334049615448,
+        "dist_au": 1.3146106852775483
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": {
+        "lon_deg": 283.27961575555014,
+        "lat_deg": -5.725274529502486,
+        "dist_au": 0.45507352875470325
+      },
+      "phase_angle_deg": 36.9853976224898,
+      "illuminated_fraction": 0.8993944312121519,
+      "elongation_deg": 16.057541868031795,
+      "diameter_deg": 0.0014213894170331755,
+      "magnitude": -0.4526720561987284,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 5.737209420284033,
+        "lat_deg": -0.8421288160835366,
+        "dist_au": 1.3919390378414407
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": {
+        "lon_deg": 48.36942361719161,
+        "lat_deg": -1.6222517809442727,
+        "dist_au": 0.7227290535550978
+      },
+      "phase_angle_deg": 42.628680681967424,
+      "illuminated_fraction": 0.867879084764166,
+      "elongation_deg": 29.64194929739639,
+      "diameter_deg": 0.00333036296231775,
+      "magnitude": -3.9339936675169613,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 77.55497568068668,
+        "lat_deg": 2.4542076131203205,
+        "dist_au": 1.1046691622346865
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": {
+        "lon_deg": 114.27953762431004,
+        "lat_deg": 1.6702451994268679,
+        "dist_au": 1.622704501135961
+      },
+      "phase_angle_deg": 36.708011345344914,
+      "illuminated_fraction": 0.9008460369281741,
+      "elongation_deg": 101.4381976110694,
+      "diameter_deg": 0.002350339631983285,
+      "magnitude": 0.32308732554714137,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 10.981225471273786,
+        "lat_deg": -1.1176350970748774,
+        "dist_au": 5.73072617910281
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": {
+        "lon_deg": 17.54763636200111,
+        "lat_deg": -1.2935003893130514,
+        "dist_au": 4.951377187736017
+      },
+      "phase_angle_deg": 6.567308362292764,
+      "illuminated_fraction": 0.9967190921792903,
+      "elongation_deg": 34.89072314620487,
+      "diameter_deg": 0.009344650715226352,
+      "magnitude": -2.10618376161385,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 328.7407167005881,
+        "lat_deg": -1.2688747889605108,
+        "dist_au": 10.802087118315201
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": {
+        "lon_deg": 328.00425431342,
+        "lat_deg": -1.3955105310591842,
+        "dist_au": 9.821638442183206
+      },
+      "phase_angle_deg": 0.7470743397503037,
+      "illuminated_fraction": 0.9999574973283265,
+      "elongation_deg": 7.473316300223061,
+      "diameter_deg": 0.004129345741522345,
+      "magnitude": 0.868792388212547,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 45.41184910951058,
+        "lat_deg": -0.33339540125038547,
+        "dist_au": 19.98962499555129
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": {
+        "lon_deg": 48.11155061993856,
+        "lat_deg": -0.3389378269410608,
+        "dist_au": 19.661650368067512
+      },
+      "phase_angle_deg": 2.699660722702369,
+      "illuminated_fraction": 0.999445076942792,
+      "elongation_deg": 69.30607810961266,
+      "diameter_deg": 0.0009718652804779203,
+      "magnitude": 5.830667358104175,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 354.405281738681,
+        "lat_deg": -1.168695034918971,
+        "dist_au": 30.849129853912775
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": {
+        "lon_deg": 355.00504501504184,
+        "lat_deg": -1.2052787837919716,
+        "dist_au": 29.91128358888589
+      },
+      "phase_angle_deg": 0.6007495163194219,
+      "illuminated_fraction": 0.9999725161465105,
+      "elongation_deg": 18.335148327233778,
+      "diameter_deg": 0.0006113749275872022,
+      "magnitude": 7.825389845051351,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 299.3871049672591,
+        "lat_deg": -2.339759594010934,
+        "dist_au": 35.50178433647092
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": {
+        "lon_deg": 298.41321162150496,
+        "lat_deg": -2.392722623480334,
+        "dist_au": 34.714049781864226
+      },
+      "phase_angle_deg": 0.9745031828761728,
+      "illuminated_fraction": 0.9999276812687679,
+      "elongation_deg": 36.783021045731246,
+      "diameter_deg": 0.000025639120985526786,
+      "magnitude": 14.453777316907932,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2460000.5,
+      "body_position": {
+        "lon_deg": 37.291518571916725,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999907
+      },
+      "sun_position": {
+        "lon_deg": 336.1061371090247,
+        "lat_deg": -0.00004935722447796488,
+        "dist_au": 0.9897139724070328
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 61.185381462903706,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421617004051075,
+      "magnitude": -26.896454061632404,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 238.40987675956868,
+        "lat_deg": -2.410170729666584,
+        "dist_au": 0.0024365193185355194
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": {
+        "lon_deg": 100.69712162366986,
+        "lat_deg": -0.005924501441039078,
+        "dist_au": 0.9815525084551218
+      },
+      "phase_angle_deg": 137.65668773024743,
+      "illuminated_fraction": 0.13043893726801714,
+      "elongation_deg": 42.24753321585797,
+      "diameter_deg": 0.546240396760612,
+      "magnitude": -7.860037622945437,
+      "horizontal_parallax_deg": 1.002636113109779
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 279.4580450571728,
+        "lat_deg": 2.6450001484197165,
+        "dist_au": 0.6734133108806221
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": {
+        "lon_deg": 103.06952280087425,
+        "lat_deg": 5.704274672777461,
+        "dist_au": 0.3126244233156728
+      },
+      "phase_angle_deg": 170.90490563013668,
+      "illuminated_fraction": 0.006286327734921104,
+      "elongation_deg": 2.881500658389071,
+      "diameter_deg": 0.0027747798944802466,
+      "magnitude": 5.442870813555461,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 289.54752115213955,
+        "lat_deg": 3.1560124658922244,
+        "dist_au": 0.2690892503568207
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": {
+        "lon_deg": 97.27002173663548,
+        "lat_deg": 1.179843620674538,
+        "dist_au": 0.719307323142482
+      },
+      "phase_angle_deg": 166.98387145345094,
+      "illuminated_fraction": 0.012846648347353273,
+      "elongation_deg": 9.482116874878528,
+      "diameter_deg": 0.017227229360122734,
+      "magnitude": -4.305580986073606,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 314.700705032214,
+        "lat_deg": -1.165028403593862,
+        "dist_au": 2.0806934690407664
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": {
+        "lon_deg": 338.2316422728484,
+        "lat_deg": -1.754790345692279,
+        "dist_au": 1.3814412200662303
+      },
+      "phase_angle_deg": 23.530477508559404,
+      "illuminated_fraction": 0.9584239184576828,
+      "elongation_deg": 34.11666218109131,
+      "diameter_deg": 0.0012478280682527384,
+      "magnitude": 1.1530489227717138,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 230.5743801110004,
+        "lat_deg": 1.000135332236364,
+        "dist_au": 6.0007851283855445
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": {
+        "lon_deg": 222.58442274255844,
+        "lat_deg": 1.1070745797987318,
+        "dist_au": 5.421825784414162
+      },
+      "phase_angle_deg": 7.989318885339133,
+      "illuminated_fraction": 0.9951469981348886,
+      "elongation_deg": 50.034469029277474,
+      "diameter_deg": 0.008924104652536525,
+      "magnitude": -1.7968690770106803,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 48.39781261327293,
+        "lat_deg": -2.330234991424969,
+        "dist_au": 8.488263673792561
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": {
+        "lon_deg": 53.28221792405451,
+        "lat_deg": -2.167772332732634,
+        "dist_au": 9.123493903469996
+      },
+      "phase_angle_deg": 4.88334223721937,
+      "illuminated_fraction": 0.998185043792011,
+      "elongation_deg": 127.75954129114531,
+      "diameter_deg": 0.005254967819304184,
+      "magnitude": -0.028215183073783123,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 75.55765340817861,
+        "lat_deg": 0.037340482264923626,
+        "dist_au": 18.324746813895416
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": {
+        "lon_deg": 76.7926153677204,
+        "lat_deg": 0.035585976636043314,
+        "dist_au": 19.22010077227269
+      },
+      "phase_angle_deg": 1.2349629557073647,
+      "illuminated_fraction": 0.9998838589384772,
+      "elongation_deg": 154.95609690364134,
+      "diameter_deg": 0.0010601632153663773,
+      "magnitude": 5.582262293666706,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 8.378147626745731,
+        "lat_deg": -1.5004757665921569,
+        "dist_au": 29.877867926919947
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": {
+        "lon_deg": 10.264011291477294,
+        "lat_deg": -1.501413351311203,
+        "dist_au": 29.85581220460347
+      },
+      "phase_angle_deg": 1.885216786997316,
+      "illuminated_fraction": 0.9997293686159092,
+      "elongation_deg": 87.7773778817572,
+      "diameter_deg": 0.0006312493440529882,
+      "magnitude": 7.751892467458947,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 309.1648446342971,
+        "lat_deg": -5.658087910394241,
+        "dist_au": 37.30093319084605
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": {
+        "lon_deg": 309.9119840592981,
+        "lat_deg": -5.790937734419692,
+        "dist_au": 36.444450227315706
+      },
+      "phase_angle_deg": 0.7551902224551263,
+      "illuminated_fraction": 0.9999565688655697,
+      "elongation_deg": 29.071932372370295,
+      "diameter_deg": 0.000024402460366011318,
+      "magnitude": 14.666755501315727,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2462502.5,
+      "body_position": {
+        "lon_deg": 264.8086941126109,
+        "lat_deg": 0.0,
+        "dist_au": 0.00256955528979999
+      },
+      "sun_position": {
+        "lon_deg": 280.6015305764267,
+        "lat_deg": -0.00007374349286694551,
+        "dist_au": 0.9833525338133334
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 15.792836463983482,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421634669160151,
+      "magnitude": -26.89646113687111,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 18.664784255255665,
+        "lat_deg": 3.3919492257957233,
+        "dist_au": 0.0025314894427092257
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": {
+        "lon_deg": 100.60175638399195,
+        "lat_deg": 0.008633192234629734,
+        "dist_au": 0.9836973102780219
+      },
+      "phase_angle_deg": 81.95067529023972,
+      "illuminated_fraction": 0.5700127749300068,
+      "elongation_deg": 97.90326005721869,
+      "diameter_deg": 0.5257477616623986,
+      "magnitude": -10.476522481848928,
+      "horizontal_parallax_deg": 0.9650180787941757
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 270.06024849242584,
+        "lat_deg": 3.135699685002049,
+        "dist_au": 0.7014859529693265
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": {
+        "lon_deg": 124.50329137230295,
+        "lat_deg": 6.7870935016693315,
+        "dist_au": 0.3246581176790671
+      },
+      "phase_angle_deg": 144.21519128573027,
+      "illuminated_fraction": 0.09439055751986786,
+      "elongation_deg": 11.132666298533007,
+      "diameter_deg": 0.0026637364693948605,
+      "magnitude": 2.111493103890011,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 281.2470236525155,
+        "lat_deg": -0.606043645643424,
+        "dist_au": 1.7106918524930932
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": {
+        "lon_deg": 281.92130240188,
+        "lat_deg": -1.4247436378280274,
+        "dist_au": 0.7275594561744484
+      },
+      "phase_angle_deg": 1.0605522100005451,
+      "illuminated_fraction": 0.9999143462364175,
+      "elongation_deg": 0.7854097881368891,
+      "diameter_deg": 0.002709817206678676,
+      "magnitude": -3.909494475718081,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 227.7141784515939,
+        "lat_deg": 0.7726813011730645,
+        "dist_au": 2.0120052072596435
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": {
+        "lon_deg": 198.76580268381298,
+        "lat_deg": 0.957700259452413,
+        "dist_au": 1.6235658469464784
+      },
+      "phase_angle_deg": 28.945582033006527,
+      "illuminated_fraction": 0.9375398857635496,
+      "elongation_deg": 53.03730056825772,
+      "diameter_deg": 0.0012904279286826616,
+      "magnitude": 1.5166037387315314,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 121.69163727845833,
+        "lat_deg": 0.45807942728548523,
+        "dist_au": 4.311138563279575
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": {
+        "lon_deg": 117.8402825875049,
+        "lat_deg": 0.37672063959617497,
+        "dist_au": 5.241339290277521
+      },
+      "phase_angle_deg": 3.8521113988937707,
+      "illuminated_fraction": 0.9988703892308058,
+      "elongation_deg": 159.05113621508983,
+      "diameter_deg": 0.012421691798536163,
+      "magnitude": -2.617113325425832,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 297.57417355190864,
+        "lat_deg": -0.2035889519064939,
+        "dist_au": 10.922005723610255
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": {
+        "lon_deg": 299.21160024312405,
+        "lat_deg": -0.22262582928342087,
+        "dist_au": 9.984829675667095
+      },
+      "phase_angle_deg": 1.6375260160345528,
+      "illuminated_fraction": 0.9997958066479093,
+      "elongation_deg": 16.82781123069692,
+      "diameter_deg": 0.004084007422275286,
+      "magnitude": 0.6323774683091292,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 170.7325209969802,
+        "lat_deg": 0.7867320825585487,
+        "dist_au": 17.92399539335762
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": {
+        "lon_deg": 167.8324494140763,
+        "lat_deg": 0.7713086941215461,
+        "dist_au": 18.284016353937215
+      },
+      "phase_angle_deg": 2.899844478037379,
+      "illuminated_fraction": 0.9993597472542406,
+      "elongation_deg": 110.01306957428221,
+      "diameter_deg": 0.0010838667426909807,
+      "magnitude": 5.437512149769854,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 53.603438219714896,
+        "lat_deg": -1.7627887015753494,
+        "dist_au": 29.139633445174084
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": {
+        "lon_deg": 54.9846357950525,
+        "lat_deg": -1.722627737125409,
+        "dist_au": 29.81675127789378
+      },
+      "phase_angle_deg": 1.3811426948747096,
+      "illuminated_fraction": 0.9998547384027023,
+      "elongation_deg": 132.8307299282577,
+      "diameter_deg": 0.0006472416534017335,
+      "magnitude": 7.694722034772047,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 337.5330335555819,
+        "lat_deg": -12.691379280070961,
+        "dist_au": 41.95117207790563
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": {
+        "lon_deg": 338.7023565193965,
+        "lat_deg": -12.851251488555203,
+        "dist_au": 41.433826199127715
+      },
+      "phase_angle_deg": 1.1515444486921966,
+      "illuminated_fraction": 0.9998990185652609,
+      "elongation_deg": 57.69734659179067,
+      "diameter_deg": 0.000021697475868242725,
+      "magnitude": 15.200495695626028,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2469807.5,
+      "body_position": {
+        "lon_deg": 237.9811296414352,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999916
+      },
+      "sun_position": {
+        "lon_deg": 280.74755956036825,
+        "lat_deg": 0.00010275422139949859,
+        "dist_au": 0.9833493298165291
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 42.766429919032646,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421617854783093,
+      "magnitude": -26.896454402368565,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 152.7230012632618,
+        "lat_deg": -4.354068271892826,
+        "dist_au": 0.00256203293864755
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": {
+        "lon_deg": 101.00557675587585,
+        "lat_deg": -0.011161358296040603,
+        "dist_au": 0.9849358039642164
+      },
+      "phase_angle_deg": 51.846742128331755,
+      "illuminated_fraction": 0.808883542207364,
+      "elongation_deg": 128.03601698600124,
+      "diameter_deg": 0.51947997132726,
+      "magnitude": -11.381960359184033,
+      "horizontal_parallax_deg": 0.953512464200464
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 263.3690603361015,
+        "lat_deg": 3.077314401635157,
+        "dist_au": 0.7733582987790819
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": {
+        "lon_deg": 144.15719631511263,
+        "lat_deg": 6.979894449228802,
+        "dist_au": 0.3416689032279786
+      },
+      "phase_angle_deg": 118.50277072942785,
+      "illuminated_fraction": 0.2613993710758803,
+      "elongation_deg": 17.77970877615498,
+      "diameter_deg": 0.002416181113738273,
+      "magnitude": 0.5484290167776881,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 269.87550379914114,
+        "lat_deg": 4.177777994910305,
+        "dist_au": 0.2722164306449846
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": {
+        "lon_deg": 105.02617246133805,
+        "lat_deg": 1.5804075428869502,
+        "dist_au": 0.719007373058056
+      },
+      "phase_angle_deg": 163.80162966226192,
+      "illuminated_fraction": 0.019849189687617286,
+      "elongation_deg": 11.770053889735394,
+      "diameter_deg": 0.01702932560998576,
+      "magnitude": -4.142214466594712,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 61.19518779415728,
+        "lat_deg": 2.4737655089264377,
+        "dist_au": 0.6657681143464113
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": {
+        "lon_deg": 85.02480046322137,
+        "lat_deg": 1.059079879282823,
+        "dist_au": 1.5545503262524436
+      },
+      "phase_angle_deg": 23.859491186753228,
+      "illuminated_fraction": 0.9572700833696937,
+      "elongation_deg": 140.24202972963448,
+      "diameter_deg": 0.0038997778004101905,
+      "magnitude": -1.0595860920036098,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 347.5118268398832,
+        "lat_deg": -1.191762827447465,
+        "dist_au": 5.266380432308006
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": {
+        "lon_deg": 358.0010430050295,
+        "lat_deg": -1.265462559876038,
+        "dist_au": 4.959079286751987
+      },
+      "phase_angle_deg": 10.487056191960761,
+      "illuminated_fraction": 0.9916480258386047,
+      "elongation_deg": 66.6282965000617,
+      "diameter_deg": 0.010168584512186146,
+      "magnitude": -2.246567146875795,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 198.86258619003348,
+        "lat_deg": 2.415875378663016,
+        "dist_au": 9.687036757394777
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": {
+        "lon_deg": 193.0341818122862,
+        "lat_deg": 2.4379461029061607,
+        "dist_au": 9.600340357047926
+      },
+      "phase_angle_deg": 5.823213883051082,
+      "illuminated_fraction": 0.997419841668088,
+      "elongation_deg": 82.03343791069658,
+      "diameter_deg": 0.004604664311804962,
+      "magnitude": 0.7795565443058441,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 260.62012691831364,
+        "lat_deg": -0.06763820668801673,
+        "dist_au": 20.02740339479251
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": {
+        "lon_deg": 259.602710531313,
+        "lat_deg": -0.07086919899702314,
+        "dist_au": 19.107961959130765
+      },
+      "phase_angle_deg": 1.0174207739349956,
+      "illuminated_fraction": 0.9999211712692802,
+      "elongation_deg": 20.26886465584715,
+      "diameter_deg": 0.0009700320166317942,
+      "magnitude": 5.7610049909459216,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 99.54496985753225,
+        "lat_deg": -0.9927283762441871,
+        "dist_au": 28.93450994896182
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": {
+        "lon_deg": 99.58269077230274,
+        "lat_deg": -0.9601282262256418,
+        "dist_au": 29.917448718908418
+      },
+      "phase_angle_deg": 0.04985202058342573,
+      "illuminated_fraction": 0.9999998107393846,
+      "elongation_deg": 178.32914484083037,
+      "diameter_deg": 0.0006518301005907679,
+      "magnitude": 7.686703432958028,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 1.3656598891303768,
+        "lat_deg": -16.23614701316766,
+        "dist_au": 45.656896520510145
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": {
+        "lon_deg": 2.6379255628077254,
+        "lat_deg": -16.287977928836852,
+        "dist_au": 45.51084555079942
+      },
+      "phase_angle_deg": 1.2224607550195496,
+      "illuminated_fraction": 0.9998861984649552,
+      "elongation_deg": 80.85986460584995,
+      "diameter_deg": 0.000019936408586071024,
+      "magnitude": 15.588106459157423,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2477112.5,
+      "body_position": {
+        "lon_deg": 211.15287133479669,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999907
+      },
+      "sun_position": {
+        "lon_deg": 280.8888840186567,
+        "lat_deg": -0.0001625563822649567,
+        "dist_au": 0.9833523795119301
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 69.73601268394519,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SUN",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 0.0,
+      "diameter_deg": 0.5421623515152754,
+      "magnitude": -26.896456669464932,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MOON",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 164.41246391233113,
+        "lat_deg": 0.47931047360545376,
+        "dist_au": 0.0024810181353076334
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": {
+        "lon_deg": 101.24168009762498,
+        "lat_deg": 0.0011670591872447798,
+        "dist_au": 0.984471757038157
+      },
+      "phase_angle_deg": 63.17178687421818,
+      "illuminated_fraction": 0.7256585029607985,
+      "elongation_deg": 116.69931288591758,
+      "diameter_deg": 0.5364431162936223,
+      "magnitude": -11.123507624277165,
+      "horizontal_parallax_deg": 0.9846513378355959
+    },
+    {
+      "body": "MERCURY",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 288.8162875107722,
+        "lat_deg": -2.1234851407803017,
+        "dist_au": 1.3815456910453368
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": {
+        "lon_deg": 306.7956670756522,
+        "lat_deg": -6.836470886202403,
+        "dist_au": 0.43004472528595244
+      },
+      "phase_angle_deg": 18.528274603012218,
+      "illuminated_fraction": 0.9740834773395329,
+      "elongation_deg": 7.989128462242305,
+      "diameter_deg": 0.0013525240082026269,
+      "magnitude": -0.9547631238828773,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "VENUS",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 320.67068868531834,
+        "lat_deg": -1.841155195565914,
+        "dist_au": 1.122565225922187
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": {
+        "lon_deg": 20.513048624480636,
+        "lat_deg": -2.850990146574965,
+        "dist_au": 0.725150929048301
+      },
+      "phase_angle_deg": 59.794824129419915,
+      "illuminated_fraction": 0.7515490098458587,
+      "elongation_deg": 39.59370143719349,
+      "diameter_deg": 0.004129525938213447,
+      "magnitude": -4.062317739506725,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MARS",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 29.728964899640918,
+        "lat_deg": 0.9613909965421085,
+        "dist_au": 0.8744353703107942
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": {
+        "lon_deg": 67.83300916436812,
+        "lat_deg": 0.5564598650872564,
+        "dist_au": 1.5100595392785259
+      },
+      "phase_angle_deg": 38.102644566653595,
+      "illuminated_fraction": 0.893453270485637,
+      "elongation_deg": 108.61346128062404,
+      "diameter_deg": 0.0029691705076106837,
+      "magnitude": -0.32262997100705615,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "JUPITER",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 201.25904288652825,
+        "lat_deg": 1.2784440325883868,
+        "dist_au": 5.5379108663420915
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": {
+        "lon_deg": 191.02703393838544,
+        "lat_deg": 1.2988449714699877,
+        "dist_au": 5.451435148084892
+      },
+      "phase_angle_deg": 10.229434523147258,
+      "illuminated_fraction": 0.992052252236308,
+      "elongation_deg": 79.85629385911503,
+      "diameter_deg": 0.009670006575583695,
+      "magnitude": -1.935041774216774,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "SATURN",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 205.66037874469484,
+        "lat_deg": 2.424279050025626,
+        "dist_au": 9.86598676050023
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": {
+        "lon_deg": 200.00360913213208,
+        "lat_deg": 2.474630033711855,
+        "dist_au": 9.666245238711953
+      },
+      "phase_angle_deg": 5.651821005217036,
+      "illuminated_fraction": 0.9975693671783954,
+      "elongation_deg": 75.46571132792089,
+      "diameter_deg": 0.004521144567320043,
+      "magnitude": 0.7456074692122698,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "URANUS",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 17.743550881368456,
+        "lat_deg": -0.6291536739392748,
+        "dist_au": 19.833295425390073
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": {
+        "lon_deg": 20.545322461561,
+        "lat_deg": -0.624777315787374,
+        "dist_au": 19.97063914260555
+      },
+      "phase_angle_deg": 2.801607222754668,
+      "illuminated_fraction": 0.9994023833237535,
+      "elongation_deg": 96.63036429340046,
+      "diameter_deg": 0.0009795256958701553,
+      "magnitude": 5.84820863375971,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "NEPTUNE",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 167.2868404047383,
+        "lat_deg": 0.964225330826115,
+        "dist_au": 29.79703766491491
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": {
+        "lon_deg": 165.57688670221285,
+        "lat_deg": 0.9511735850344049,
+        "dist_au": 30.207735260466094
+      },
+      "phase_angle_deg": 1.7097646303382277,
+      "illuminated_fraction": 0.9997773948676572,
+      "elongation_deg": 113.82236149489925,
+      "diameter_deg": 0.0006329617307152003,
+      "magnitude": 7.771456282086291,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "PLUTO",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 32.40031668020621,
+        "lat_deg": -16.9183610551694,
+        "dist_au": 48.582589952822545
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": {
+        "lon_deg": 33.518149791855514,
+        "lat_deg": -16.79218930992353,
+        "dist_au": 48.932672261242544
+      },
+      "phase_angle_deg": 1.0772240971975027,
+      "illuminated_fraction": 0.9999116321943601,
+      "elongation_deg": 110.32446906910347,
+      "diameter_deg": 0.000018735817598212907,
+      "magnitude": 15.880397985570468,
+      "horizontal_parallax_deg": 0.0
+    },
+    {
+      "body": "MEAN_NODE",
+      "jd_tt": 2488070.0,
+      "body_position": {
+        "lon_deg": 350.91122148708496,
+        "lat_deg": 0.0,
+        "dist_au": 0.0025695552897999903
+      },
+      "sun_position": {
+        "lon_deg": 281.11278568565587,
+        "lat_deg": 0.00005881042309666611,
+        "dist_au": 0.9833513528643906
+      },
+      "body_from_sun": null,
+      "phase_angle_deg": 0.0,
+      "illuminated_fraction": 0.0,
+      "elongation_deg": 69.79843580144023,
+      "diameter_deg": 0.0,
+      "magnitude": null,
+      "horizontal_parallax_deg": 0.0
+    }
+  ],
+  "solar": [
+    {
+      "jd_ut1": 2415020.0,
+      "sun_ra_deg": 280.4932324500176,
+      "sun_dec_deg": -23.10085841740962,
+      "equation_of_time_seconds": -191.46738839267073
+    },
+    {
+      "jd_ut1": 2430000.5,
+      "sun_ra_deg": 286.5978853820058,
+      "sun_dec_deg": -22.567151296109806,
+      "equation_of_time_seconds": -339.87723204225404
+    },
+    {
+      "jd_ut1": 2440587.5,
+      "sun_ra_deg": 281.0486632310842,
+      "sun_dec_deg": -23.056735386502027,
+      "equation_of_time_seconds": -196.28359322136018
+    },
+    {
+      "jd_ut1": 2444239.5,
+      "sun_ra_deg": 280.56985135105185,
+      "sun_dec_deg": -23.083851680690707,
+      "equation_of_time_seconds": -181.92808447000974
+    },
+    {
+      "jd_ut1": 2447892.5,
+      "sun_ra_deg": 281.209020202728,
+      "sun_dec_deg": -23.04225239533624,
+      "equation_of_time_seconds": -197.36980900839626
+    },
+    {
+      "jd_ut1": 2451545.0,
+      "sun_ra_deg": 281.2783853442663,
+      "sun_dec_deg": -23.032430501463814,
+      "equation_of_time_seconds": -197.11512646899791
+    },
+    {
+      "jd_ut1": 2451551.0,
+      "sun_ra_deg": 287.87817842579415,
+      "sun_dec_deg": -22.420261768288864,
+      "equation_of_time_seconds": -361.70544825941306
+    },
+    {
+      "jd_ut1": 2455197.5,
+      "sun_ra_deg": 281.3675888680135,
+      "sun_dec_deg": -23.027292729651695,
+      "equation_of_time_seconds": -198.18563265303055
+    },
+    {
+      "jd_ut1": 2459003.5,
+      "sun_ra_deg": 71.44996391610655,
+      "sun_dec_deg": 22.34155488364594,
+      "equation_of_time_seconds": 109.66458280473489
+    },
+    {
+      "jd_ut1": 2459010.5,
+      "sun_ra_deg": 78.67006769554952,
+      "sun_dec_deg": 23.027706093222665,
+      "equation_of_time_seconds": 32.773764077142005
+    },
+    {
+      "jd_ut1": 2459580.5,
+      "sun_ra_deg": 281.4517460709876,
+      "sun_dec_deg": -23.020113935199493,
+      "equation_of_time_seconds": -198.08759603603903
+    },
+    {
+      "jd_ut1": 2460000.5,
+      "sun_ra_deg": 337.8811394883471,
+      "sun_dec_deg": -9.271163733063128,
+      "equation_of_time_seconds": -787.5771930077508
+    },
+    {
+      "jd_ut1": 2462502.5,
+      "sun_ra_deg": 281.53103083865443,
+      "sun_dec_deg": -23.011748850555467,
+      "equation_of_time_seconds": -200.38410967841173
+    },
+    {
+      "jd_ut1": 2469807.5,
+      "sun_ra_deg": 281.6889021085262,
+      "sun_dec_deg": -22.9962501996524,
+      "equation_of_time_seconds": -201.43880910773987
+    },
+    {
+      "jd_ut1": 2477112.5,
+      "sun_ra_deg": 281.84171944890323,
+      "sun_dec_deg": -22.981664465826437,
+      "equation_of_time_seconds": -201.4609644597931
+    },
+    {
+      "jd_ut1": 2488070.0,
+      "sun_ra_deg": 282.08428864773276,
+      "sun_dec_deg": -22.963780781858592,
+      "equation_of_time_seconds": -204.58493775048282
+    }
+  ]
+}

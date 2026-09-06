@@ -1,0 +1,1503 @@
+{
+  "schema": "teistro-conformance/baseline-manifest/1",
+  "exported_on": "2026-09-04",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "ephemeris": {
+      "library": "Swiss Ephemeris",
+      "library_version": "2.10.03",
+      "binding": "sweph 2.10.3-5",
+      "files": {
+        "sepl_18.se1": "ca1393ceab3a44fbc895887cf789c68819ae6a1cbc9b22225872dbe4ccd99a66",
+        "semo_18.se1": "1ca07bd67c24374d77226180c20a4f9996cba013697894810518e7eb582ca4f7",
+        "seas_18.se1": "a2cd8fc33807c78ca9a700c91c2e042258b12fc4796519e00781440b5ad8b2e2"
+      },
+      "file_range_years": [1800, 2399],
+      "calc_flags": "SEFLG_SWIEPH | SEFLG_SPEED | SEFLG_SIDEREAL (+ SEFLG_TOPOCTR when topocentric)",
+      "delta_t": "library default (swe_deltat)"
+    },
+    "time_zones": {
+      "tzdb": "2026a",
+      "icu": "78.3",
+      "geo_tz": "8.1.8",
+      "date_fns_tz": "3.2.0"
+    },
+    "runtime": {
+      "node": "26.8.1",
+      "decimal_js": "10.6.0"
+    },
+    "conventions": {
+      "angles": "degrees, f64 as computed, no rounding; sidereal unless named tropical",
+      "instants": "Julian Day in UT (UT1 as the library defines it); dates as ISO-8601 UTC strings",
+      "sign_index": "0 = Aries",
+      "nakshatra_index": "0 = Ashwini",
+      "pada": "1 to 4",
+      "house": "1 to 12, whole-sign from the Lagna sign unless named",
+      "weekday_swe": "0 = Monday to 6 = Sunday (swe_day_of_week)",
+      "dasha_year_days": 365.25,
+      "classification": "decimal.js division of the f64 longitude, floor, lower-inclusive boundaries"
+    }
+  },
+  "profiles": {
+    "default": {
+      "settings": {
+        "profile": "default",
+        "ayanamsha": "lahiri",
+        "ayanamsha_id": 1,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "drik",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "6e17c95f2c153a32"
+      },
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"]
+    },
+    "temporal": {
+      "settings": {
+        "profile": "temporal",
+        "ayanamsha": "lahiri",
+        "ayanamsha_id": 1,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "drik",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "temporal",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=1|dashaBalanceMethod=temporal|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "5eaa987c076a3f34"
+      },
+      "sections": ["foundation", "dashas"]
+    },
+    "true-node": {
+      "settings": {
+        "profile": "true-node",
+        "ayanamsha": "lahiri",
+        "ayanamsha_id": 1,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "drik",
+        "node": "true",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=true|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "bde4cb97877bc3c8"
+      },
+      "sections": ["positions", "vargas"]
+    },
+    "geocentric": {
+      "settings": {
+        "profile": "geocentric",
+        "ayanamsha": "lahiri",
+        "ayanamsha_id": 1,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "drik",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": false,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=false|zodiacMode=sidereal",
+        "value": "551233b17280011b"
+      },
+      "sections": ["positions", "vargas", "dashas"]
+    },
+    "placidus": {
+      "settings": {
+        "profile": "placidus",
+        "ayanamsha": "lahiri",
+        "ayanamsha_id": 1,
+        "zodiac": "sidereal",
+        "house_system": "placidus",
+        "siddhanta": "drik",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=placidus|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "4ae30710c4c7e7eb"
+      },
+      "sections": ["houses"]
+    },
+    "raman": {
+      "settings": {
+        "profile": "raman",
+        "ayanamsha": "raman",
+        "ayanamsha_id": 3,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "drik",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=3|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "856332f8f227e69f"
+      },
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"]
+    },
+    "krishnamurti": {
+      "settings": {
+        "profile": "krishnamurti",
+        "ayanamsha": "krishnamurti",
+        "ayanamsha_id": 5,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "drik",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=5|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "dc47513d5e6aa5a7"
+      },
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"]
+    },
+    "true-chitra": {
+      "settings": {
+        "profile": "true-chitra",
+        "ayanamsha": "true-chitra",
+        "ayanamsha_id": 27,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "drik",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=27|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "bcb17af15fa4e734"
+      },
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"]
+    },
+    "fagan-bradley": {
+      "settings": {
+        "profile": "fagan-bradley",
+        "ayanamsha": "fagan-bradley",
+        "ayanamsha_id": 0,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "drik",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=0|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "67259a5f2043382a"
+      },
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"]
+    },
+    "tropical": {
+      "settings": {
+        "profile": "tropical",
+        "ayanamsha": "lahiri",
+        "ayanamsha_id": 1,
+        "zodiac": "tropical",
+        "house_system": "whole-sign",
+        "siddhanta": "drik",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=tropical",
+        "value": "d7e21131f378a555"
+      },
+      "sections": ["positions", "houses", "vargas"]
+    },
+    "surya-bija": {
+      "settings": {
+        "profile": "surya-bija",
+        "ayanamsha": "lahiri",
+        "ayanamsha_id": 1,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "surya",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": true
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=surya|sunriseMode=apparent-refraction|suryaBija=true|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "6fe383b64b4e19b2"
+      },
+      "sections": ["foundation", "positions", "vargas", "panchanga", "dashas"]
+    },
+    "surya": {
+      "settings": {
+        "profile": "surya",
+        "ayanamsha": "lahiri",
+        "ayanamsha_id": 1,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "surya",
+        "node": "mean",
+        "sunrise_mode": "apparent-refraction",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": false
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=surya|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "f6665510322811a1"
+      },
+      "sections": ["foundation", "positions", "vargas", "panchanga", "dashas"]
+    },
+    "sunrise-geometric": {
+      "settings": {
+        "profile": "sunrise-geometric",
+        "ayanamsha": "lahiri",
+        "ayanamsha_id": 1,
+        "zodiac": "sidereal",
+        "house_system": "whole-sign",
+        "siddhanta": "drik",
+        "node": "mean",
+        "sunrise_mode": "geometric",
+        "dasha_balance": "spatial",
+        "dasha_max_level": 3,
+        "chara_karaka": 8,
+        "ekadhipatya": "classical",
+        "topocentric": true,
+        "surya_bija": null
+      },
+      "settings_hash": {
+        "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=geometric|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+        "value": "7235179ed952f83f"
+      },
+      "sections": ["foundation"]
+    }
+  },
+  "fixtures": [
+    {
+      "id": "c001",
+      "chart": "c001",
+      "profile": "default",
+      "file": "charts/c001-kathmandu-1990-04-14.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c001--temporal",
+      "chart": "c001",
+      "profile": "temporal",
+      "file": "variants/c001-kathmandu-1990-04-14--temporal.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["foundation", "dashas"],
+      "settings_hash": "5eaa987c076a3f34"
+    },
+    {
+      "id": "c001--true-node",
+      "chart": "c001",
+      "profile": "true-node",
+      "file": "variants/c001-kathmandu-1990-04-14--true-node.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["positions", "vargas"],
+      "settings_hash": "bde4cb97877bc3c8"
+    },
+    {
+      "id": "c001--geocentric",
+      "chart": "c001",
+      "profile": "geocentric",
+      "file": "variants/c001-kathmandu-1990-04-14--geocentric.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["positions", "vargas", "dashas"],
+      "settings_hash": "551233b17280011b"
+    },
+    {
+      "id": "c001--placidus",
+      "chart": "c001",
+      "profile": "placidus",
+      "file": "variants/c001-kathmandu-1990-04-14--placidus.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["houses"],
+      "settings_hash": "4ae30710c4c7e7eb"
+    },
+    {
+      "id": "c001--raman",
+      "chart": "c001",
+      "profile": "raman",
+      "file": "variants/c001-kathmandu-1990-04-14--raman.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "856332f8f227e69f"
+    },
+    {
+      "id": "c001--krishnamurti",
+      "chart": "c001",
+      "profile": "krishnamurti",
+      "file": "variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "dc47513d5e6aa5a7"
+    },
+    {
+      "id": "c001--true-chitra",
+      "chart": "c001",
+      "profile": "true-chitra",
+      "file": "variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "bcb17af15fa4e734"
+    },
+    {
+      "id": "c001--fagan-bradley",
+      "chart": "c001",
+      "profile": "fagan-bradley",
+      "file": "variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "67259a5f2043382a"
+    },
+    {
+      "id": "c001--tropical",
+      "chart": "c001",
+      "profile": "tropical",
+      "file": "variants/c001-kathmandu-1990-04-14--tropical.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["positions", "houses", "vargas"],
+      "settings_hash": "d7e21131f378a555"
+    },
+    {
+      "id": "c001--surya-bija",
+      "chart": "c001",
+      "profile": "surya-bija",
+      "file": "variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["foundation", "positions", "vargas", "panchanga", "dashas"],
+      "settings_hash": "6fe383b64b4e19b2"
+    },
+    {
+      "id": "c001--surya",
+      "chart": "c001",
+      "profile": "surya",
+      "file": "variants/c001-kathmandu-1990-04-14--surya.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["foundation", "positions", "vargas", "panchanga", "dashas"],
+      "settings_hash": "f6665510322811a1"
+    },
+    {
+      "id": "c001--sunrise-geometric",
+      "chart": "c001",
+      "profile": "sunrise-geometric",
+      "file": "variants/c001-kathmandu-1990-04-14--sunrise-geometric.json",
+      "title": "Kathmandu 1990-04-14 05:30:00",
+      "tags": ["nepal", "pre-sunrise"],
+      "sections": ["foundation"],
+      "settings_hash": "7235179ed952f83f"
+    },
+    {
+      "id": "c002",
+      "chart": "c002",
+      "profile": "default",
+      "file": "charts/c002-kathmandu-1985-12-25.json",
+      "title": "Kathmandu 1985-12-25 23:59:30",
+      "tags": ["nepal", "historical-offset", "midnight"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c003",
+      "chart": "c003",
+      "profile": "default",
+      "file": "charts/c003-kathmandu-1986-01-01.json",
+      "title": "Kathmandu 1986-01-01 00:20:00",
+      "tags": ["nepal", "zone-change"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c004",
+      "chart": "c004",
+      "profile": "default",
+      "file": "charts/c004-kathmandu-2000-02-29.json",
+      "title": "Kathmandu 2000-02-29 12:00:00",
+      "tags": ["nepal", "leap-day"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c004--surya-bija",
+      "chart": "c004",
+      "profile": "surya-bija",
+      "file": "variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "title": "Kathmandu 2000-02-29 12:00:00",
+      "tags": ["nepal", "leap-day"],
+      "sections": ["foundation", "positions", "vargas", "panchanga", "dashas"],
+      "settings_hash": "6fe383b64b4e19b2"
+    },
+    {
+      "id": "c005",
+      "chart": "c005",
+      "profile": "default",
+      "file": "charts/c005-kathmandu-1910-03-21.json",
+      "title": "Kathmandu 1910-03-21 06:00:00",
+      "tags": ["nepal", "lmt-era"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c006",
+      "chart": "c006",
+      "profile": "default",
+      "file": "charts/c006-pokhara-2012-07-15.json",
+      "title": "Pokhara 2012-07-15 19:45:00",
+      "tags": ["nepal", "post-sunset"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c007",
+      "chart": "c007",
+      "profile": "default",
+      "file": "charts/c007-biratnagar-1975-11-02.json",
+      "title": "Biratnagar 1975-11-02 03:30:00",
+      "tags": ["nepal", "pre-sunrise", "historical-offset"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c007--temporal",
+      "chart": "c007",
+      "profile": "temporal",
+      "file": "variants/c007-biratnagar-1975-11-02--temporal.json",
+      "title": "Biratnagar 1975-11-02 03:30:00",
+      "tags": ["nepal", "pre-sunrise", "historical-offset"],
+      "sections": ["foundation", "dashas"],
+      "settings_hash": "5eaa987c076a3f34"
+    },
+    {
+      "id": "c008",
+      "chart": "c008",
+      "profile": "default",
+      "file": "charts/c008-delhi-1947-08-15.json",
+      "title": "Delhi 1947-08-15 00:00:00",
+      "tags": ["india", "midnight"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c009",
+      "chart": "c009",
+      "profile": "default",
+      "file": "charts/c009-mumbai-1969-07-20.json",
+      "title": "Mumbai 1969-07-20 21:17:00",
+      "tags": ["india"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c009--true-node",
+      "chart": "c009",
+      "profile": "true-node",
+      "file": "variants/c009-mumbai-1969-07-20--true-node.json",
+      "title": "Mumbai 1969-07-20 21:17:00",
+      "tags": ["india"],
+      "sections": ["positions", "vargas"],
+      "settings_hash": "bde4cb97877bc3c8"
+    },
+    {
+      "id": "c009--placidus",
+      "chart": "c009",
+      "profile": "placidus",
+      "file": "variants/c009-mumbai-1969-07-20--placidus.json",
+      "title": "Mumbai 1969-07-20 21:17:00",
+      "tags": ["india"],
+      "sections": ["houses"],
+      "settings_hash": "4ae30710c4c7e7eb"
+    },
+    {
+      "id": "c009--raman",
+      "chart": "c009",
+      "profile": "raman",
+      "file": "variants/c009-mumbai-1969-07-20--raman.json",
+      "title": "Mumbai 1969-07-20 21:17:00",
+      "tags": ["india"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "856332f8f227e69f"
+    },
+    {
+      "id": "c009--krishnamurti",
+      "chart": "c009",
+      "profile": "krishnamurti",
+      "file": "variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "title": "Mumbai 1969-07-20 21:17:00",
+      "tags": ["india"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "dc47513d5e6aa5a7"
+    },
+    {
+      "id": "c009--true-chitra",
+      "chart": "c009",
+      "profile": "true-chitra",
+      "file": "variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "title": "Mumbai 1969-07-20 21:17:00",
+      "tags": ["india"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "bcb17af15fa4e734"
+    },
+    {
+      "id": "c009--fagan-bradley",
+      "chart": "c009",
+      "profile": "fagan-bradley",
+      "file": "variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "title": "Mumbai 1969-07-20 21:17:00",
+      "tags": ["india"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "67259a5f2043382a"
+    },
+    {
+      "id": "c009--surya-bija",
+      "chart": "c009",
+      "profile": "surya-bija",
+      "file": "variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "title": "Mumbai 1969-07-20 21:17:00",
+      "tags": ["india"],
+      "sections": ["foundation", "positions", "vargas", "panchanga", "dashas"],
+      "settings_hash": "6fe383b64b4e19b2"
+    },
+    {
+      "id": "c009--surya",
+      "chart": "c009",
+      "profile": "surya",
+      "file": "variants/c009-mumbai-1969-07-20--surya.json",
+      "title": "Mumbai 1969-07-20 21:17:00",
+      "tags": ["india"],
+      "sections": ["foundation", "positions", "vargas", "panchanga", "dashas"],
+      "settings_hash": "f6665510322811a1"
+    },
+    {
+      "id": "c010",
+      "chart": "c010",
+      "profile": "default",
+      "file": "charts/c010-chennai-2023-01-14.json",
+      "title": "Chennai 2023-01-14 10:30:00",
+      "tags": ["india", "sankranti-season"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c010--temporal",
+      "chart": "c010",
+      "profile": "temporal",
+      "file": "variants/c010-chennai-2023-01-14--temporal.json",
+      "title": "Chennai 2023-01-14 10:30:00",
+      "tags": ["india", "sankranti-season"],
+      "sections": ["foundation", "dashas"],
+      "settings_hash": "5eaa987c076a3f34"
+    },
+    {
+      "id": "c011",
+      "chart": "c011",
+      "profile": "default",
+      "file": "charts/c011-kolkata-1880-06-10.json",
+      "title": "Kolkata 1880-06-10 05:45:00",
+      "tags": ["india", "historical-offset"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c012",
+      "chart": "c012",
+      "profile": "default",
+      "file": "charts/c012-varanasi-1850-02-05.json",
+      "title": "Varanasi 1850-02-05 12:00:00",
+      "tags": ["india", "lmt"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c013",
+      "chart": "c013",
+      "profile": "default",
+      "file": "charts/c013-colombo-1996-08-01.json",
+      "title": "Colombo 1996-08-01 09:15:00",
+      "tags": ["unusual-offset"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c014",
+      "chart": "c014",
+      "profile": "default",
+      "file": "charts/c014-dhaka-2009-06-20.json",
+      "title": "Dhaka 2009-06-20 02:00:00",
+      "tags": ["dst"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c015",
+      "chart": "c015",
+      "profile": "default",
+      "file": "charts/c015-kabul-1999-09-09.json",
+      "title": "Kabul 1999-09-09 09:09:09",
+      "tags": ["unusual-offset"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c016",
+      "chart": "c016",
+      "profile": "default",
+      "file": "charts/c016-tokyo-2011-03-11.json",
+      "title": "Tokyo 2011-03-11 14:46:18",
+      "tags": ["east-asia"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c017",
+      "chart": "c017",
+      "profile": "default",
+      "file": "charts/c017-singapore-1965-08-09.json",
+      "title": "Singapore 1965-08-09 12:00:00",
+      "tags": ["equator", "historical-offset"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c018",
+      "chart": "c018",
+      "profile": "default",
+      "file": "charts/c018-sydney-2000-09-15.json",
+      "title": "Sydney 2000-09-15 20:00:00",
+      "tags": ["southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c018--true-node",
+      "chart": "c018",
+      "profile": "true-node",
+      "file": "variants/c018-sydney-2000-09-15--true-node.json",
+      "title": "Sydney 2000-09-15 20:00:00",
+      "tags": ["southern"],
+      "sections": ["positions", "vargas"],
+      "settings_hash": "bde4cb97877bc3c8"
+    },
+    {
+      "id": "c018--placidus",
+      "chart": "c018",
+      "profile": "placidus",
+      "file": "variants/c018-sydney-2000-09-15--placidus.json",
+      "title": "Sydney 2000-09-15 20:00:00",
+      "tags": ["southern"],
+      "sections": ["houses"],
+      "settings_hash": "4ae30710c4c7e7eb"
+    },
+    {
+      "id": "c018--raman",
+      "chart": "c018",
+      "profile": "raman",
+      "file": "variants/c018-sydney-2000-09-15--raman.json",
+      "title": "Sydney 2000-09-15 20:00:00",
+      "tags": ["southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "856332f8f227e69f"
+    },
+    {
+      "id": "c018--krishnamurti",
+      "chart": "c018",
+      "profile": "krishnamurti",
+      "file": "variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "title": "Sydney 2000-09-15 20:00:00",
+      "tags": ["southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "dc47513d5e6aa5a7"
+    },
+    {
+      "id": "c018--true-chitra",
+      "chart": "c018",
+      "profile": "true-chitra",
+      "file": "variants/c018-sydney-2000-09-15--true-chitra.json",
+      "title": "Sydney 2000-09-15 20:00:00",
+      "tags": ["southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "bcb17af15fa4e734"
+    },
+    {
+      "id": "c018--fagan-bradley",
+      "chart": "c018",
+      "profile": "fagan-bradley",
+      "file": "variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "title": "Sydney 2000-09-15 20:00:00",
+      "tags": ["southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "67259a5f2043382a"
+    },
+    {
+      "id": "c018--tropical",
+      "chart": "c018",
+      "profile": "tropical",
+      "file": "variants/c018-sydney-2000-09-15--tropical.json",
+      "title": "Sydney 2000-09-15 20:00:00",
+      "tags": ["southern"],
+      "sections": ["positions", "houses", "vargas"],
+      "settings_hash": "d7e21131f378a555"
+    },
+    {
+      "id": "c019",
+      "chart": "c019",
+      "profile": "default",
+      "file": "charts/c019-auckland-2019-12-31.json",
+      "title": "Auckland 2019-12-31 23:59:59",
+      "tags": ["southern", "date-line", "dst"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c019--temporal",
+      "chart": "c019",
+      "profile": "temporal",
+      "file": "variants/c019-auckland-2019-12-31--temporal.json",
+      "title": "Auckland 2019-12-31 23:59:59",
+      "tags": ["southern", "date-line", "dst"],
+      "sections": ["foundation", "dashas"],
+      "settings_hash": "5eaa987c076a3f34"
+    },
+    {
+      "id": "c020",
+      "chart": "c020",
+      "profile": "default",
+      "file": "charts/c020-apia-2011-12-31.json",
+      "title": "Apia 2011-12-31 06:00:00",
+      "tags": ["date-line", "zone-change"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c021",
+      "chart": "c021",
+      "profile": "default",
+      "file": "charts/c021-kiritimati-2000-01-01.json",
+      "title": "Kiritimati 2000-01-01 00:00:01",
+      "tags": ["date-line"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c022",
+      "chart": "c022",
+      "profile": "default",
+      "file": "charts/c022-honolulu-1941-12-07.json",
+      "title": "Honolulu 1941-12-07 07:48:00",
+      "tags": ["historical-offset"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c023",
+      "chart": "c023",
+      "profile": "default",
+      "file": "charts/c023-london-1830-06-26.json",
+      "title": "London 1830-06-26 04:30:00",
+      "tags": ["lmt", "historical"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c024",
+      "chart": "c024",
+      "profile": "default",
+      "file": "charts/c024-london-1947-05-18.json",
+      "title": "London 1947-05-18 03:30:00",
+      "tags": ["double-summer-time"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c025",
+      "chart": "c025",
+      "profile": "default",
+      "file": "charts/c025-paris-1900-01-01.json",
+      "title": "Paris 1900-01-01 00:00:00",
+      "tags": ["historical-offset", "century"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c026",
+      "chart": "c026",
+      "profile": "default",
+      "file": "charts/c026-berlin-1945-05-08.json",
+      "title": "Berlin 1945-05-08 23:01:00",
+      "tags": ["historical", "dst"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c027",
+      "chart": "c027",
+      "profile": "default",
+      "file": "charts/c027-reykjavik-1975-06-21.json",
+      "title": "Reykjavik 1975-06-21 00:30:00",
+      "tags": ["high-latitude", "midnight"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c027--temporal",
+      "chart": "c027",
+      "profile": "temporal",
+      "file": "variants/c027-reykjavik-1975-06-21--temporal.json",
+      "title": "Reykjavik 1975-06-21 00:30:00",
+      "tags": ["high-latitude", "midnight"],
+      "sections": ["foundation", "dashas"],
+      "settings_hash": "5eaa987c076a3f34"
+    },
+    {
+      "id": "c027--placidus",
+      "chart": "c027",
+      "profile": "placidus",
+      "file": "variants/c027-reykjavik-1975-06-21--placidus.json",
+      "title": "Reykjavik 1975-06-21 00:30:00",
+      "tags": ["high-latitude", "midnight"],
+      "sections": ["houses"],
+      "settings_hash": "4ae30710c4c7e7eb"
+    },
+    {
+      "id": "c027--tropical",
+      "chart": "c027",
+      "profile": "tropical",
+      "file": "variants/c027-reykjavik-1975-06-21--tropical.json",
+      "title": "Reykjavik 1975-06-21 00:30:00",
+      "tags": ["high-latitude", "midnight"],
+      "sections": ["positions", "houses", "vargas"],
+      "settings_hash": "d7e21131f378a555"
+    },
+    {
+      "id": "c027--sunrise-geometric",
+      "chart": "c027",
+      "profile": "sunrise-geometric",
+      "file": "variants/c027-reykjavik-1975-06-21--sunrise-geometric.json",
+      "title": "Reykjavik 1975-06-21 00:30:00",
+      "tags": ["high-latitude", "midnight"],
+      "sections": ["foundation"],
+      "settings_hash": "7235179ed952f83f"
+    },
+    {
+      "id": "c028",
+      "chart": "c028",
+      "profile": "default",
+      "file": "charts/c028-troms-1988-06-21.json",
+      "title": "Tromsø 1988-06-21 12:00:00",
+      "tags": ["polar-day"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c028--placidus",
+      "chart": "c028",
+      "profile": "placidus",
+      "file": "variants/c028-troms-1988-06-21--placidus.json",
+      "title": "Tromsø 1988-06-21 12:00:00",
+      "tags": ["polar-day"],
+      "sections": ["houses"],
+      "settings_hash": "4ae30710c4c7e7eb"
+    },
+    {
+      "id": "c029",
+      "chart": "c029",
+      "profile": "default",
+      "file": "charts/c029-troms-1988-12-21.json",
+      "title": "Tromsø 1988-12-21 12:00:00",
+      "tags": ["polar-night"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c030",
+      "chart": "c030",
+      "profile": "default",
+      "file": "charts/c030-istanbul-2016-09-07.json",
+      "title": "Istanbul 2016-09-07 03:00:00",
+      "tags": ["zone-change"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c031",
+      "chart": "c031",
+      "profile": "default",
+      "file": "charts/c031-cairo-2023-04-28.json",
+      "title": "Cairo 2023-04-28 01:30:00",
+      "tags": ["dst-start"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c032",
+      "chart": "c032",
+      "profile": "default",
+      "file": "charts/c032-nairobi-1963-12-12.json",
+      "title": "Nairobi 1963-12-12 00:00:00",
+      "tags": ["equator", "midnight", "southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c033",
+      "chart": "c033",
+      "profile": "default",
+      "file": "charts/c033-cape-town-1990-02-11.json",
+      "title": "Cape Town 1990-02-11 16:15:00",
+      "tags": ["southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c033--true-node",
+      "chart": "c033",
+      "profile": "true-node",
+      "file": "variants/c033-cape-town-1990-02-11--true-node.json",
+      "title": "Cape Town 1990-02-11 16:15:00",
+      "tags": ["southern"],
+      "sections": ["positions", "vargas"],
+      "settings_hash": "bde4cb97877bc3c8"
+    },
+    {
+      "id": "c033--tropical",
+      "chart": "c033",
+      "profile": "tropical",
+      "file": "variants/c033-cape-town-1990-02-11--tropical.json",
+      "title": "Cape Town 1990-02-11 16:15:00",
+      "tags": ["southern"],
+      "sections": ["positions", "houses", "vargas"],
+      "settings_hash": "d7e21131f378a555"
+    },
+    {
+      "id": "c034",
+      "chart": "c034",
+      "profile": "default",
+      "file": "charts/c034-tehran-1979-02-11.json",
+      "title": "Tehran 1979-02-11 12:00:00",
+      "tags": ["unusual-offset"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c035",
+      "chart": "c035",
+      "profile": "default",
+      "file": "charts/c035-new-york-2021-03-14.json",
+      "title": "New York 2021-03-14 01:30:00",
+      "tags": ["dst-gap-edge"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c036",
+      "chart": "c036",
+      "profile": "default",
+      "file": "charts/c036-new-york-2021-11-07.json",
+      "title": "New York 2021-11-07 01:30:00",
+      "tags": ["dst-ambiguous"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c037",
+      "chart": "c037",
+      "profile": "default",
+      "file": "charts/c037-new-york-2021-11-07.json",
+      "title": "New York 2021-11-07 01:30:00",
+      "tags": ["dst-ambiguous"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c038",
+      "chart": "c038",
+      "profile": "default",
+      "file": "charts/c038-new-york-1880-04-01.json",
+      "title": "New York 1880-04-01 12:00:00",
+      "tags": ["lmt-era"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c039",
+      "chart": "c039",
+      "profile": "default",
+      "file": "charts/c039-mexico-city-1985-09-19.json",
+      "title": "Mexico City 1985-09-19 07:17:47",
+      "tags": ["altitude"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c040",
+      "chart": "c040",
+      "profile": "default",
+      "file": "charts/c040-buenos-aires-1986-06-22.json",
+      "title": "Buenos Aires 1986-06-22 16:00:00",
+      "tags": ["southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c040--true-node",
+      "chart": "c040",
+      "profile": "true-node",
+      "file": "variants/c040-buenos-aires-1986-06-22--true-node.json",
+      "title": "Buenos Aires 1986-06-22 16:00:00",
+      "tags": ["southern"],
+      "sections": ["positions", "vargas"],
+      "settings_hash": "bde4cb97877bc3c8"
+    },
+    {
+      "id": "c041",
+      "chart": "c041",
+      "profile": "default",
+      "file": "charts/c041-la-paz-2010-07-10.json",
+      "title": "La Paz 2010-07-10 10:00:00",
+      "tags": ["altitude", "southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c041--temporal",
+      "chart": "c041",
+      "profile": "temporal",
+      "file": "variants/c041-la-paz-2010-07-10--temporal.json",
+      "title": "La Paz 2010-07-10 10:00:00",
+      "tags": ["altitude", "southern"],
+      "sections": ["foundation", "dashas"],
+      "settings_hash": "5eaa987c076a3f34"
+    },
+    {
+      "id": "c041--geocentric",
+      "chart": "c041",
+      "profile": "geocentric",
+      "file": "variants/c041-la-paz-2010-07-10--geocentric.json",
+      "title": "La Paz 2010-07-10 10:00:00",
+      "tags": ["altitude", "southern"],
+      "sections": ["positions", "vargas", "dashas"],
+      "settings_hash": "551233b17280011b"
+    },
+    {
+      "id": "c042",
+      "chart": "c042",
+      "profile": "default",
+      "file": "charts/c042-quito-2001-01-01.json",
+      "title": "Quito 2001-01-01 00:00:01",
+      "tags": ["equator", "midnight"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c043",
+      "chart": "c043",
+      "profile": "default",
+      "file": "charts/c043-fairbanks-2015-06-21.json",
+      "title": "Fairbanks 2015-06-21 01:00:00",
+      "tags": ["high-latitude", "dst"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c043--placidus",
+      "chart": "c043",
+      "profile": "placidus",
+      "file": "variants/c043-fairbanks-2015-06-21--placidus.json",
+      "title": "Fairbanks 2015-06-21 01:00:00",
+      "tags": ["high-latitude", "dst"],
+      "sections": ["houses"],
+      "settings_hash": "4ae30710c4c7e7eb"
+    },
+    {
+      "id": "c043--sunrise-geometric",
+      "chart": "c043",
+      "profile": "sunrise-geometric",
+      "file": "variants/c043-fairbanks-2015-06-21--sunrise-geometric.json",
+      "title": "Fairbanks 2015-06-21 01:00:00",
+      "tags": ["high-latitude", "dst"],
+      "sections": ["foundation"],
+      "settings_hash": "7235179ed952f83f"
+    },
+    {
+      "id": "c044",
+      "chart": "c044",
+      "profile": "default",
+      "file": "charts/c044-ushuaia-1995-12-22.json",
+      "title": "Ushuaia 1995-12-22 03:00:00",
+      "tags": ["high-latitude", "southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c044--placidus",
+      "chart": "c044",
+      "profile": "placidus",
+      "file": "variants/c044-ushuaia-1995-12-22--placidus.json",
+      "title": "Ushuaia 1995-12-22 03:00:00",
+      "tags": ["high-latitude", "southern"],
+      "sections": ["houses"],
+      "settings_hash": "4ae30710c4c7e7eb"
+    },
+    {
+      "id": "c044--sunrise-geometric",
+      "chart": "c044",
+      "profile": "sunrise-geometric",
+      "file": "variants/c044-ushuaia-1995-12-22--sunrise-geometric.json",
+      "title": "Ushuaia 1995-12-22 03:00:00",
+      "tags": ["high-latitude", "southern"],
+      "sections": ["foundation"],
+      "settings_hash": "7235179ed952f83f"
+    },
+    {
+      "id": "c045",
+      "chart": "c045",
+      "profile": "default",
+      "file": "charts/c045-sao-paulo-2019-02-16.json",
+      "title": "São Paulo 2019-02-16 23:30:00",
+      "tags": ["dst-ambiguous", "southern"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c046",
+      "chart": "c046",
+      "profile": "default",
+      "file": "charts/c046-kathmandu-2350-01-01.json",
+      "title": "Kathmandu 2350-01-01 12:00:00",
+      "tags": ["far-future"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c047",
+      "chart": "c047",
+      "profile": "default",
+      "file": "charts/c047-london-1800-01-02.json",
+      "title": "London 1800-01-02 12:00:00",
+      "tags": ["range-start", "lmt"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c048",
+      "chart": "c048",
+      "profile": "default",
+      "file": "charts/c048-kathmandu-2399-12-30.json",
+      "title": "Kathmandu 2399-12-30 12:00:00",
+      "tags": ["range-end"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c049",
+      "chart": "c049",
+      "profile": "default",
+      "file": "charts/c049-kathmandu-2010-06-01.json",
+      "title": "Kathmandu 2010-06-01 18:04:52",
+      "tags": ["searched", "boundary:nakshatra"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c049--temporal",
+      "chart": "c049",
+      "profile": "temporal",
+      "file": "variants/c049-kathmandu-2010-06-01--temporal.json",
+      "title": "Kathmandu 2010-06-01 18:04:52",
+      "tags": ["searched", "boundary:nakshatra"],
+      "sections": ["foundation", "dashas"],
+      "settings_hash": "5eaa987c076a3f34"
+    },
+    {
+      "id": "c049--geocentric",
+      "chart": "c049",
+      "profile": "geocentric",
+      "file": "variants/c049-kathmandu-2010-06-01--geocentric.json",
+      "title": "Kathmandu 2010-06-01 18:04:52",
+      "tags": ["searched", "boundary:nakshatra"],
+      "sections": ["positions", "vargas", "dashas"],
+      "settings_hash": "551233b17280011b"
+    },
+    {
+      "id": "c049--raman",
+      "chart": "c049",
+      "profile": "raman",
+      "file": "variants/c049-kathmandu-2010-06-01--raman.json",
+      "title": "Kathmandu 2010-06-01 18:04:52",
+      "tags": ["searched", "boundary:nakshatra"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "856332f8f227e69f"
+    },
+    {
+      "id": "c049--krishnamurti",
+      "chart": "c049",
+      "profile": "krishnamurti",
+      "file": "variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "title": "Kathmandu 2010-06-01 18:04:52",
+      "tags": ["searched", "boundary:nakshatra"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "dc47513d5e6aa5a7"
+    },
+    {
+      "id": "c049--true-chitra",
+      "chart": "c049",
+      "profile": "true-chitra",
+      "file": "variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "title": "Kathmandu 2010-06-01 18:04:52",
+      "tags": ["searched", "boundary:nakshatra"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "bcb17af15fa4e734"
+    },
+    {
+      "id": "c049--fagan-bradley",
+      "chart": "c049",
+      "profile": "fagan-bradley",
+      "file": "variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "title": "Kathmandu 2010-06-01 18:04:52",
+      "tags": ["searched", "boundary:nakshatra"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "67259a5f2043382a"
+    },
+    {
+      "id": "c049--surya-bija",
+      "chart": "c049",
+      "profile": "surya-bija",
+      "file": "variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "title": "Kathmandu 2010-06-01 18:04:52",
+      "tags": ["searched", "boundary:nakshatra"],
+      "sections": ["foundation", "positions", "vargas", "panchanga", "dashas"],
+      "settings_hash": "6fe383b64b4e19b2"
+    },
+    {
+      "id": "c050",
+      "chart": "c050",
+      "profile": "default",
+      "file": "charts/c050-kathmandu-2015-03-01.json",
+      "title": "Kathmandu 2015-03-01 10:14:05",
+      "tags": ["searched", "boundary:pada"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c050--temporal",
+      "chart": "c050",
+      "profile": "temporal",
+      "file": "variants/c050-kathmandu-2015-03-01--temporal.json",
+      "title": "Kathmandu 2015-03-01 10:14:05",
+      "tags": ["searched", "boundary:pada"],
+      "sections": ["foundation", "dashas"],
+      "settings_hash": "5eaa987c076a3f34"
+    },
+    {
+      "id": "c050--geocentric",
+      "chart": "c050",
+      "profile": "geocentric",
+      "file": "variants/c050-kathmandu-2015-03-01--geocentric.json",
+      "title": "Kathmandu 2015-03-01 10:14:05",
+      "tags": ["searched", "boundary:pada"],
+      "sections": ["positions", "vargas", "dashas"],
+      "settings_hash": "551233b17280011b"
+    },
+    {
+      "id": "c051",
+      "chart": "c051",
+      "profile": "default",
+      "file": "charts/c051-kathmandu-2020-04-13.json",
+      "title": "Kathmandu 2020-04-13 20:41:06",
+      "tags": ["searched", "boundary:sign", "sankranti"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c052",
+      "chart": "c052",
+      "profile": "default",
+      "file": "charts/c052-kathmandu-2020-04-13.json",
+      "title": "Kathmandu 2020-04-13 20:41:07",
+      "tags": ["searched", "boundary:sign", "sankranti"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c052--temporal",
+      "chart": "c052",
+      "profile": "temporal",
+      "file": "variants/c052-kathmandu-2020-04-13--temporal.json",
+      "title": "Kathmandu 2020-04-13 20:41:07",
+      "tags": ["searched", "boundary:sign", "sankranti"],
+      "sections": ["foundation", "dashas"],
+      "settings_hash": "5eaa987c076a3f34"
+    },
+    {
+      "id": "c052--true-node",
+      "chart": "c052",
+      "profile": "true-node",
+      "file": "variants/c052-kathmandu-2020-04-13--true-node.json",
+      "title": "Kathmandu 2020-04-13 20:41:07",
+      "tags": ["searched", "boundary:sign", "sankranti"],
+      "sections": ["positions", "vargas"],
+      "settings_hash": "bde4cb97877bc3c8"
+    },
+    {
+      "id": "c052--geocentric",
+      "chart": "c052",
+      "profile": "geocentric",
+      "file": "variants/c052-kathmandu-2020-04-13--geocentric.json",
+      "title": "Kathmandu 2020-04-13 20:41:07",
+      "tags": ["searched", "boundary:sign", "sankranti"],
+      "sections": ["positions", "vargas", "dashas"],
+      "settings_hash": "551233b17280011b"
+    },
+    {
+      "id": "c053",
+      "chart": "c053",
+      "profile": "default",
+      "file": "charts/c053-kathmandu-2021-01-30.json",
+      "title": "Kathmandu 2021-01-30 23:30:57",
+      "tags": ["searched", "station"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c054",
+      "chart": "c054",
+      "profile": "default",
+      "file": "charts/c054-kathmandu-2020-05-05.json",
+      "title": "Kathmandu 2020-05-05 05:56:14",
+      "tags": ["searched", "boundary:lagna"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c054--temporal",
+      "chart": "c054",
+      "profile": "temporal",
+      "file": "variants/c054-kathmandu-2020-05-05--temporal.json",
+      "title": "Kathmandu 2020-05-05 05:56:14",
+      "tags": ["searched", "boundary:lagna"],
+      "sections": ["foundation", "dashas"],
+      "settings_hash": "5eaa987c076a3f34"
+    },
+    {
+      "id": "c054--placidus",
+      "chart": "c054",
+      "profile": "placidus",
+      "file": "variants/c054-kathmandu-2020-05-05--placidus.json",
+      "title": "Kathmandu 2020-05-05 05:56:14",
+      "tags": ["searched", "boundary:lagna"],
+      "sections": ["houses"],
+      "settings_hash": "4ae30710c4c7e7eb"
+    },
+    {
+      "id": "c055",
+      "chart": "c055",
+      "profile": "default",
+      "file": "charts/c055-kathmandu-2024-04-09.json",
+      "title": "Kathmandu 2024-04-09 00:22:15",
+      "tags": ["searched", "new-moon", "tithi-boundary"],
+      "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+      "settings_hash": "6e17c95f2c153a32"
+    },
+    {
+      "id": "c055--geocentric",
+      "chart": "c055",
+      "profile": "geocentric",
+      "file": "variants/c055-kathmandu-2024-04-09--geocentric.json",
+      "title": "Kathmandu 2024-04-09 00:22:15",
+      "tags": ["searched", "new-moon", "tithi-boundary"],
+      "sections": ["positions", "vargas", "dashas"],
+      "settings_hash": "551233b17280011b"
+    }
+  ],
+  "failures": [],
+  "counts": {
+    "fixtures": 115,
+    "charts": 55,
+    "failures": 0
+  }
+}

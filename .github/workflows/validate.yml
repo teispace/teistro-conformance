@@ -1,0 +1,26 @@
+# The corpus checks itself on every push.
+#
+# A corpus that nobody validates rots quietly: a fixture edited by hand, a
+# manifest that forgot an entry, a settings hash that stopped matching the
+# settings beside it. None of those announce themselves, and every one of
+# them makes a consumer's score meaningless.
+name: validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jsonschema
+      - run: python validate.py

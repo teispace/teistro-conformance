@@ -1,0 +1,752 @@
+{
+  "schema": "teistro-conformance/baseline-chart/1",
+  "id": "c009--true-node",
+  "chart": "c009",
+  "title": "Mumbai 1969-07-20 21:17:00",
+  "tags": ["india"],
+  "why": "an ordinary evening birth",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "ephemeris": {
+      "library": "Swiss Ephemeris",
+      "library_version": "2.10.03",
+      "binding": "sweph 2.10.3-5",
+      "files": {
+        "sepl_18.se1": "ca1393ceab3a44fbc895887cf789c68819ae6a1cbc9b22225872dbe4ccd99a66",
+        "semo_18.se1": "1ca07bd67c24374d77226180c20a4f9996cba013697894810518e7eb582ca4f7",
+        "seas_18.se1": "a2cd8fc33807c78ca9a700c91c2e042258b12fc4796519e00781440b5ad8b2e2"
+      },
+      "file_range_years": [1800, 2399],
+      "calc_flags": "SEFLG_SWIEPH | SEFLG_SPEED | SEFLG_SIDEREAL (+ SEFLG_TOPOCTR when topocentric)",
+      "delta_t": "library default (swe_deltat)"
+    },
+    "time_zones": {
+      "tzdb": "2026a",
+      "icu": "78.3",
+      "geo_tz": "8.1.8",
+      "date_fns_tz": "3.2.0"
+    },
+    "runtime": {
+      "node": "26.8.1",
+      "decimal_js": "10.6.0"
+    },
+    "conventions": {
+      "angles": "degrees, f64 as computed, no rounding; sidereal unless named tropical",
+      "instants": "Julian Day in UT (UT1 as the library defines it); dates as ISO-8601 UTC strings",
+      "sign_index": "0 = Aries",
+      "nakshatra_index": "0 = Ashwini",
+      "pada": "1 to 4",
+      "house": "1 to 12, whole-sign from the Lagna sign unless named",
+      "weekday_swe": "0 = Monday to 6 = Sunday (swe_day_of_week)",
+      "dasha_year_days": 365.25,
+      "classification": "decimal.js division of the f64 longitude, floor, lower-inclusive boundaries"
+    }
+  },
+  "input": {
+    "place": {
+      "name": "Mumbai",
+      "country": "IN",
+      "latitude": 19.076,
+      "longitude": 72.8777,
+      "altitude_m": 14
+    },
+    "local": {
+      "calendar": "gregorian",
+      "date": "1969-07-20",
+      "time": "21:17:00",
+      "is_lmt": false,
+      "dst_choice": null
+    },
+    "search": null,
+    "resolved": {
+      "utc": "1969-07-20T15:47:00.000Z",
+      "jd_ut": 2440423.157638889,
+      "tz_offset_min": 330,
+      "iana": "Asia/Kolkata",
+      "tz_source": "iana",
+      "tz_era": "current",
+      "warnings": []
+    }
+  },
+  "settings": {
+    "profile": "true-node",
+    "ayanamsha": "lahiri",
+    "ayanamsha_id": 1,
+    "zodiac": "sidereal",
+    "house_system": "whole-sign",
+    "siddhanta": "drik",
+    "node": "true",
+    "sunrise_mode": "apparent-refraction",
+    "dasha_balance": "spatial",
+    "dasha_max_level": 3,
+    "chara_karaka": 8,
+    "ekadhipatya": "classical",
+    "topocentric": true,
+    "surya_bija": null
+  },
+  "settings_hash": {
+    "algorithm": "sha256 of the canonical string, first 16 hex characters",
+    "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=true|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+    "value": "bde4cb97877bc3c8"
+  },
+  "sections": ["positions", "vargas"],
+  "positions": {
+    "bodies": {
+      "SUN": {
+        "sidereal_longitude_deg": 94.29768244269478,
+        "tropical_longitude_deg": 117.73017947884429,
+        "latitude_deg": -0.0016238043271113738,
+        "speed_deg_per_day": 0.9636643083865692,
+        "distance_au": 1.0161218458323311,
+        "degrees_in_sign": 4.29768244269478,
+        "sign_index": 3,
+        "house": 6,
+        "nakshatra_index": 7,
+        "nakshatra_lord": "SATURN",
+        "pada": 1,
+        "akshar": "Hu",
+        "is_retrograde": false,
+        "dignity": "GREAT_FRIEND",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": null,
+        "is_vargottama": false,
+        "natural_friendship": "friend",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "GREAT_FRIEND",
+        "avastha_baladi": "MRITA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "SWAPNA",
+          "deeptadi": "MUDITA",
+          "lajjitadi": [],
+          "planetary_war": null
+        }
+      },
+      "MOON": {
+        "sidereal_longitude_deg": 161.4596135325269,
+        "tropical_longitude_deg": 184.89211056867637,
+        "latitude_deg": -1.7732687711600388,
+        "speed_deg_per_day": 10.37264821604822,
+        "distance_au": 0.002592630140615032,
+        "degrees_in_sign": 11.4596135325269,
+        "sign_index": 5,
+        "house": 8,
+        "nakshatra_index": 12,
+        "nakshatra_lord": "MOON",
+        "pada": 1,
+        "akshar": "Pu",
+        "is_retrograde": false,
+        "dignity": "GREAT_FRIEND",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 67.16193108983212,
+        "is_vargottama": false,
+        "natural_friendship": "friend",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "GREAT_FRIEND",
+        "avastha_baladi": "VRIDDHA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "SWAPNA",
+          "deeptadi": "MUDITA",
+          "lajjitadi": ["MUDITA"],
+          "planetary_war": null
+        }
+      },
+      "MARS": {
+        "sidereal_longitude_deg": 219.30974615479207,
+        "tropical_longitude_deg": 242.74224319094154,
+        "latitude_deg": -3.3955274967014146,
+        "speed_deg_per_day": 0.14079372988362593,
+        "distance_au": 0.5903723711467657,
+        "degrees_in_sign": 9.30974615479207,
+        "sign_index": 7,
+        "house": 10,
+        "nakshatra_index": 16,
+        "nakshatra_lord": "SATURN",
+        "pada": 2,
+        "akshar": "Ni",
+        "is_retrograde": false,
+        "dignity": "OWN_SIGN",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 125.01206371209729,
+        "is_vargottama": false,
+        "natural_friendship": "friend",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "GREAT_FRIEND",
+        "avastha_baladi": "VRIDDHA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "JAGRAT",
+          "deeptadi": "SWASTHA",
+          "lajjitadi": [],
+          "planetary_war": null
+        }
+      },
+      "MERCURY": {
+        "sidereal_longitude_deg": 92.00887829803106,
+        "tropical_longitude_deg": 115.44137533418056,
+        "latitude_deg": 1.4402632932110753,
+        "speed_deg_per_day": 2.142769190669469,
+        "distance_au": 1.326611279698535,
+        "degrees_in_sign": 2.00887829803106,
+        "sign_index": 3,
+        "house": 6,
+        "nakshatra_index": 6,
+        "nakshatra_lord": "JUPITER",
+        "pada": 4,
+        "akshar": "Hi",
+        "is_retrograde": false,
+        "dignity": "NEUTRAL",
+        "is_mooltrikona": false,
+        "combust": "deep-combust",
+        "degrees_from_sun": 2.28880414466372,
+        "is_vargottama": true,
+        "natural_friendship": "enemy",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "NEUTRAL",
+        "avastha_baladi": "MRITA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "SWAPNA",
+          "deeptadi": "SHANTA",
+          "lajjitadi": ["TRISHITA", "KSHOBHITA"],
+          "planetary_war": null
+        }
+      },
+      "JUPITER": {
+        "sidereal_longitude_deg": 157.28613158371272,
+        "tropical_longitude_deg": 180.71862861986222,
+        "latitude_deg": 1.2194679397152324,
+        "speed_deg_per_day": 0.14441477702575867,
+        "distance_au": 5.839021685798888,
+        "degrees_in_sign": 7.28613158371272,
+        "sign_index": 5,
+        "house": 8,
+        "nakshatra_index": 11,
+        "nakshatra_lord": "SUN",
+        "pada": 4,
+        "akshar": "Pi",
+        "is_retrograde": false,
+        "dignity": "NEUTRAL",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 62.98844914101794,
+        "is_vargottama": false,
+        "natural_friendship": "enemy",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "NEUTRAL",
+        "avastha_baladi": "VRIDDHA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "SWAPNA",
+          "deeptadi": "SHANTA",
+          "lajjitadi": [],
+          "planetary_war": null
+        }
+      },
+      "VENUS": {
+        "sidereal_longitude_deg": 51.39804553452556,
+        "tropical_longitude_deg": 74.83054257067505,
+        "latitude_deg": -2.463130675462851,
+        "speed_deg_per_day": 1.115161232938533,
+        "distance_au": 0.9631094439086625,
+        "degrees_in_sign": 21.39804553452556,
+        "sign_index": 1,
+        "house": 4,
+        "nakshatra_index": 3,
+        "nakshatra_lord": "MOON",
+        "pada": 4,
+        "akshar": "Vu",
+        "is_retrograde": false,
+        "dignity": "OWN_SIGN",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 42.89963690816922,
+        "is_vargottama": false,
+        "natural_friendship": "friend",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "GREAT_FRIEND",
+        "avastha_baladi": "KUMARA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "JAGRAT",
+          "deeptadi": "SWASTHA",
+          "lajjitadi": [],
+          "planetary_war": null
+        }
+      },
+      "SATURN": {
+        "sidereal_longitude_deg": 14.65557202735428,
+        "tropical_longitude_deg": 38.08806906350378,
+        "latitude_deg": -2.4278439802131415,
+        "speed_deg_per_day": 0.054679419854153366,
+        "distance_au": 9.385103070452006,
+        "degrees_in_sign": 14.65557202735428,
+        "sign_index": 0,
+        "house": 3,
+        "nakshatra_index": 1,
+        "nakshatra_lord": "VENUS",
+        "pada": 1,
+        "akshar": "Li",
+        "is_retrograde": false,
+        "dignity": "DEBILITATED",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 79.6421104153405,
+        "is_vargottama": false,
+        "natural_friendship": "enemy",
+        "temporary_friendship": "enemy",
+        "panchadha_maitri": "GREAT_ENEMY",
+        "avastha_baladi": "YUVA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "SUSHUPTI",
+          "deeptadi": "KHALA",
+          "lajjitadi": [],
+          "planetary_war": null
+        }
+      },
+      "RAHU": {
+        "sidereal_longitude_deg": 329.041386348478,
+        "tropical_longitude_deg": 352.47388338462747,
+        "latitude_deg": 9.932176603760781e-17,
+        "speed_deg_per_day": 0.01585877706276051,
+        "distance_au": 0.002444089329494182,
+        "degrees_in_sign": 29.041386348478,
+        "sign_index": 10,
+        "house": 1,
+        "nakshatra_index": 24,
+        "nakshatra_lord": "JUPITER",
+        "pada": 3,
+        "akshar": "Da",
+        "is_retrograde": false,
+        "dignity": "NEUTRAL",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 125.25629609421678,
+        "is_vargottama": false,
+        "natural_friendship": "friend",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "GREAT_FRIEND",
+        "avastha_baladi": "MRITA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": null
+      },
+      "KETU": {
+        "sidereal_longitude_deg": 149.041386348478,
+        "tropical_longitude_deg": 172.47388338462747,
+        "latitude_deg": -9.932176603760781e-17,
+        "speed_deg_per_day": 0.01585877706276051,
+        "distance_au": 0.002444089329494182,
+        "degrees_in_sign": 29.041386348478,
+        "sign_index": 4,
+        "house": 7,
+        "nakshatra_index": 11,
+        "nakshatra_lord": "SUN",
+        "pada": 1,
+        "akshar": "Te",
+        "is_retrograde": false,
+        "dignity": "NEUTRAL",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 54.74370390578322,
+        "is_vargottama": false,
+        "natural_friendship": "enemy",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "NEUTRAL",
+        "avastha_baladi": "MRITA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": null
+      },
+      "LAGNA": {
+        "sidereal_longitude_deg": 308.69881749992726,
+        "tropical_longitude_deg": 332.13131453607673,
+        "latitude_deg": null,
+        "speed_deg_per_day": null,
+        "distance_au": null,
+        "degrees_in_sign": 8.69881749992726,
+        "sign_index": 10,
+        "house": 1,
+        "nakshatra_index": 23,
+        "nakshatra_lord": "RAHU",
+        "pada": 1,
+        "akshar": "Go",
+        "is_retrograde": false,
+        "dignity": "NEUTRAL",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": null,
+        "is_vargottama": false,
+        "natural_friendship": "neutral",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "NEUTRAL",
+        "avastha_baladi": "KUMARA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": null
+      }
+    },
+    "outer": {
+      "URANUS": {
+        "sidereal_longitude_deg": 157.2507128855512,
+        "latitude_deg": 0.7108240779715301,
+        "speed_deg_per_day": 0.036255320867117545,
+        "frame": "geocentric"
+      },
+      "NEPTUNE": {
+        "sidereal_longitude_deg": 212.59217196681533,
+        "latitude_deg": 1.7300856175955477,
+        "speed_deg_per_day": -0.009375442957302959,
+        "frame": "geocentric"
+      },
+      "PLUTO": {
+        "sidereal_longitude_deg": 149.57022783446638,
+        "latitude_deg": 15.307152953051157,
+        "speed_deg_per_day": 0.023771457125993566,
+        "frame": "geocentric"
+      }
+    }
+  },
+  "vargas": {
+    "D1": {
+      "division": 1,
+      "sign_index": {
+        "SUN": 3,
+        "MOON": 5,
+        "MARS": 7,
+        "MERCURY": 3,
+        "JUPITER": 5,
+        "VENUS": 1,
+        "SATURN": 0,
+        "RAHU": 10,
+        "KETU": 4,
+        "LAGNA": 10
+      }
+    },
+    "D2": {
+      "division": 2,
+      "sign_index": {
+        "SUN": 3,
+        "MOON": 3,
+        "MARS": 3,
+        "MERCURY": 3,
+        "JUPITER": 3,
+        "VENUS": 4,
+        "SATURN": 4,
+        "RAHU": 3,
+        "KETU": 3,
+        "LAGNA": 4
+      }
+    },
+    "D3": {
+      "division": 3,
+      "sign_index": {
+        "SUN": 3,
+        "MOON": 9,
+        "MARS": 7,
+        "MERCURY": 3,
+        "JUPITER": 5,
+        "VENUS": 9,
+        "SATURN": 4,
+        "RAHU": 6,
+        "KETU": 0,
+        "LAGNA": 10
+      }
+    },
+    "D4": {
+      "division": 4,
+      "sign_index": {
+        "SUN": 3,
+        "MOON": 8,
+        "MARS": 10,
+        "MERCURY": 3,
+        "JUPITER": 5,
+        "VENUS": 7,
+        "SATURN": 3,
+        "RAHU": 7,
+        "KETU": 1,
+        "LAGNA": 1
+      }
+    },
+    "D5": {
+      "division": 5,
+      "sign_index": {
+        "SUN": 1,
+        "MOON": 5,
+        "MARS": 5,
+        "MERCURY": 1,
+        "JUPITER": 5,
+        "VENUS": 9,
+        "SATURN": 8,
+        "RAHU": 6,
+        "KETU": 6,
+        "LAGNA": 10
+      }
+    },
+    "D6": {
+      "division": 6,
+      "sign_index": {
+        "SUN": 6,
+        "MOON": 8,
+        "MARS": 7,
+        "MERCURY": 6,
+        "JUPITER": 7,
+        "VENUS": 10,
+        "SATURN": 2,
+        "RAHU": 5,
+        "KETU": 5,
+        "LAGNA": 1
+      }
+    },
+    "D7": {
+      "division": 7,
+      "sign_index": {
+        "SUN": 10,
+        "MOON": 1,
+        "MARS": 3,
+        "MERCURY": 9,
+        "JUPITER": 0,
+        "VENUS": 11,
+        "SATURN": 3,
+        "RAHU": 4,
+        "KETU": 10,
+        "LAGNA": 0
+      }
+    },
+    "D8": {
+      "division": 8,
+      "sign_index": {
+        "SUN": 1,
+        "MOON": 11,
+        "MARS": 6,
+        "MERCURY": 0,
+        "JUPITER": 9,
+        "VENUS": 9,
+        "SATURN": 3,
+        "RAHU": 11,
+        "KETU": 11,
+        "LAGNA": 6
+      }
+    },
+    "D9": {
+      "division": 9,
+      "sign_index": {
+        "SUN": 4,
+        "MOON": 0,
+        "MARS": 5,
+        "MERCURY": 3,
+        "JUPITER": 11,
+        "VENUS": 3,
+        "SATURN": 4,
+        "RAHU": 2,
+        "KETU": 8,
+        "LAGNA": 8
+      }
+    },
+    "D10": {
+      "division": 10,
+      "sign_index": {
+        "SUN": 0,
+        "MOON": 4,
+        "MARS": 6,
+        "MERCURY": 11,
+        "JUPITER": 3,
+        "VENUS": 4,
+        "SATURN": 4,
+        "RAHU": 7,
+        "KETU": 1,
+        "LAGNA": 0
+      }
+    },
+    "D11": {
+      "division": 11,
+      "sign_index": {
+        "SUN": 2,
+        "MOON": 7,
+        "MARS": 8,
+        "MERCURY": 1,
+        "JUPITER": 5,
+        "VENUS": 6,
+        "SATURN": 5,
+        "RAHU": 8,
+        "KETU": 2,
+        "LAGNA": 1
+      }
+    },
+    "D12": {
+      "division": 12,
+      "sign_index": {
+        "SUN": 4,
+        "MOON": 9,
+        "MARS": 10,
+        "MERCURY": 3,
+        "JUPITER": 7,
+        "VENUS": 9,
+        "SATURN": 5,
+        "RAHU": 9,
+        "KETU": 3,
+        "LAGNA": 1
+      }
+    },
+    "D16": {
+      "division": 16,
+      "sign_index": {
+        "SUN": 2,
+        "MOON": 2,
+        "MARS": 8,
+        "MERCURY": 1,
+        "JUPITER": 11,
+        "VENUS": 3,
+        "SATURN": 7,
+        "RAHU": 7,
+        "KETU": 7,
+        "LAGNA": 8
+      }
+    },
+    "D20": {
+      "division": 20,
+      "sign_index": {
+        "SUN": 2,
+        "MOON": 11,
+        "MARS": 2,
+        "MERCURY": 1,
+        "JUPITER": 8,
+        "VENUS": 10,
+        "SATURN": 9,
+        "RAHU": 3,
+        "KETU": 3,
+        "LAGNA": 1
+      }
+    },
+    "D24": {
+      "division": 24,
+      "sign_index": {
+        "SUN": 6,
+        "MOON": 0,
+        "MARS": 10,
+        "MERCURY": 4,
+        "JUPITER": 8,
+        "VENUS": 8,
+        "SATURN": 3,
+        "RAHU": 3,
+        "KETU": 3,
+        "LAGNA": 10
+      }
+    },
+    "D27": {
+      "division": 27,
+      "sign_index": {
+        "SUN": 0,
+        "MOON": 1,
+        "MARS": 5,
+        "MERCURY": 10,
+        "JUPITER": 9,
+        "VENUS": 10,
+        "SATURN": 1,
+        "RAHU": 8,
+        "KETU": 2,
+        "LAGNA": 1
+      }
+    },
+    "D30": {
+      "division": 30,
+      "sign_index": {
+        "SUN": 1,
+        "MOON": 5,
+        "MARS": 5,
+        "MERCURY": 1,
+        "JUPITER": 5,
+        "VENUS": 9,
+        "SATURN": 8,
+        "RAHU": 6,
+        "KETU": 6,
+        "LAGNA": 10
+      }
+    },
+    "D40": {
+      "division": 40,
+      "sign_index": {
+        "SUN": 11,
+        "MOON": 9,
+        "MARS": 6,
+        "MERCURY": 8,
+        "JUPITER": 3,
+        "VENUS": 10,
+        "SATURN": 7,
+        "RAHU": 2,
+        "KETU": 2,
+        "LAGNA": 11
+      }
+    },
+    "D45": {
+      "division": 45,
+      "sign_index": {
+        "SUN": 6,
+        "MOON": 1,
+        "MARS": 5,
+        "MERCURY": 3,
+        "JUPITER": 6,
+        "VENUS": 0,
+        "SATURN": 9,
+        "RAHU": 11,
+        "KETU": 11,
+        "LAGNA": 5
+      }
+    },
+    "D60": {
+      "division": 60,
+      "sign_index": {
+        "SUN": 11,
+        "MOON": 3,
+        "MARS": 1,
+        "MERCURY": 7,
+        "JUPITER": 7,
+        "VENUS": 7,
+        "SATURN": 5,
+        "RAHU": 8,
+        "KETU": 2,
+        "LAGNA": 3
+      }
+    },
+    "D150": {
+      "division": 150,
+      "sign_index": {
+        "SUN": 0,
+        "MOON": 2,
+        "MARS": 5,
+        "MERCURY": 1,
+        "JUPITER": 5,
+        "VENUS": 11,
+        "SATURN": 1,
+        "RAHU": 11,
+        "KETU": 5,
+        "LAGNA": 5
+      }
+    }
+  }
+}

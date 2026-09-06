@@ -1,0 +1,47 @@
+{
+  "schema": "teistro-conformance/corpus/1",
+  "version": "0.1.0",
+  "released": "2026-09-06",
+  "licence": "CC0-1.0",
+  "repository": "https://github.com/teispace/teistro-conformance",
+  "note": "The corpus a conformance report cites. Its version is its own: it moves when the corpus moves, never because a consumer released.",
+  "corpora": [
+    {
+      "path": "baseline",
+      "source": "an established open-source astrology engine over Swiss Ephemeris 2.10.03",
+      "evidence_rank": 2,
+      "schema": "teistro-conformance/baseline-chart/1",
+      "manifest": "baseline/manifest.json",
+      "counts": { "fixtures": 115, "charts": 55, "profiles": 13 },
+      "recorded": "2026-09-04"
+    },
+    {
+      "path": "baseline/names.json",
+      "source": "the same engine's entity name tables",
+      "evidence_rank": 2,
+      "counts": { "types": 40, "entities": 383, "languages": 4 },
+      "recorded": "2026-09-06"
+    },
+    {
+      "path": "official",
+      "source": "Nepal's national panchanga committee (npns.gov.np), read from its published Rashtriya Panchangam for BS 2082 and 2083",
+      "evidence_rank": 1,
+      "counts": { "sankrantis": 24, "printed_place_rows": 4, "sunrise_days": 22, "tithi_ends": 8 },
+      "recorded": "2026-09-05"
+    },
+    {
+      "path": "teimeris",
+      "source": "Teimeris 0.1.0 in its corrected profile",
+      "evidence_rank": 2,
+      "counts": { "ayanamsha_rows": 1044, "house_rows": 1260, "star_rows": 128, "phenomena_rows": 176, "sidereal_rows": 49 },
+      "recorded": "2026-09-05, re-recorded 2026-09-06 after the engine's own corrections"
+    }
+  ],
+  "tolerances": "tolerances.json",
+  "schemas": [
+    "schema/baseline-chart.schema.json",
+    "schema/baseline-manifest.schema.json",
+    "schema/tolerances.schema.json",
+    "schema/report.schema.json"
+  ]
+}

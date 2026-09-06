@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/tolerances.schema.json",
+  "title": "The tolerance bands",
+  "description": "How close an implementation must come, keyed by field and by what class of ephemeris it is using. One file for the whole corpus: a tolerance written beside a fixture is a tolerance that was widened to make that fixture pass.",
+  "type": "object",
+  "required": [
+    "schema",
+    "provider_classes",
+    "fields"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/tolerances/1"
+    },
+    "status": {
+      "enum": [
+        "provisional",
+        "measured"
+      ],
+      "description": "`provisional` until the bands have been measured against real runs; a consumer may report against a provisional band but should not claim conformance to it."
+    },
+    "note": {
+      "type": "string"
+    },
+    "provider_classes": {
+      "type": "object",
+      "description": "What class of ephemeris a run used, because a band that is generous to a low-precision source would be meaningless for a high-precision one.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "units": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "edge_policy": {
+      "type": "string",
+      "description": "What to do at a boundary, where two implementations may legitimately fall on either side of a classification."
+    },
+    "fields": {
+      "type": "object",
+      "description": "Keyed by field path or pattern; a field not listed is compared exactly.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    }
+  }
+}

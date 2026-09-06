@@ -1,0 +1,5229 @@
+{
+  "schema": "teistro-conformance/ayanamsha-table/1",
+  "tool": "teimeris 0.1.0",
+  "profile": "max",
+  "scale": "TT",
+  "basis": "MEAN",
+  "rows": [
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 1465370.0,
+      "mean_deg": 347.2446450982947
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 1538420.0,
+      "mean_deg": 350.00742791638476
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 1611470.0,
+      "mean_deg": 352.77246453824966
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 1684520.0,
+      "mean_deg": 355.5397865491781
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 1757570.0,
+      "mean_deg": 358.3094228258689
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 1830620.0,
+      "mean_deg": 1.081399528403165
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 1903670.0,
+      "mean_deg": 3.85574010116425
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 1976720.0,
+      "mean_deg": 6.632465282118315
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2049770.0,
+      "mean_deg": 9.411593119791709
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2122820.0,
+      "mean_deg": 12.19313899721636
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.977115662053711
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2268920.0,
+      "mean_deg": 17.763533262054704
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2305445.0,
+      "mean_deg": 19.157659882745694
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2341970.0,
+      "mean_deg": 20.552399384969142
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.947752324322515
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2396757.5,
+      "mean_deg": 22.645658964281903
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2415020.0,
+      "mean_deg": 23.343719101981115
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2433282.5,
+      "mean_deg": 24.041932763681984
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2451545.0,
+      "mean_deg": 24.740299966181283
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2460676.25,
+      "mean_deg": 25.089541147902935
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2469807.5,
+      "mean_deg": 25.438820716858174
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2488070.0,
+      "mean_deg": 26.137495013721207
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.933727297889163
+    },
+    {
+      "ayanamsha": "FAGAN_BRADLEY",
+      "jd_tt": 2634170.0,
+      "mean_deg": 31.732413757514678
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 1465370.0,
+      "mean_deg": 346.36143963315016
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 1538420.0,
+      "mean_deg": 349.1242222553866
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 1611470.0,
+      "mean_deg": 351.88925867096515
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 1684520.0,
+      "mean_deg": 354.6565804698026
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 1757570.0,
+      "mean_deg": 357.4262165331526
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 1830620.0,
+      "mean_deg": 0.19819302552157667
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 1903670.0,
+      "mean_deg": 2.972533395533292
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 1976720.0,
+      "mean_deg": 5.7492583851571055
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2049770.0,
+      "mean_deg": 8.528386046635394
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2122820.0,
+      "mean_deg": 11.309931766382425
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.09390829506574
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2268920.0,
+      "mean_deg": 16.880325783027967
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2305445.0,
+      "mean_deg": 18.274452357431077
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2341970.0,
+      "mean_deg": 19.669191820162855
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.064544727014205
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2396757.5,
+      "mean_deg": 21.762451353395644
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2415020.0,
+      "mean_deg": 22.460511479322697
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2433282.5,
+      "mean_deg": 23.158725131072494
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2451545.0,
+      "mean_deg": 23.8570923254552
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2460676.25,
+      "mean_deg": 24.206333503810015
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2469807.5,
+      "mean_deg": 24.555613069861124
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2488070.0,
+      "mean_deg": 25.254287362308162
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.050519647474516
+    },
+    {
+      "ayanamsha": "LAHIRI",
+      "jd_tt": 2634170.0,
+      "mean_deg": 30.84920613798215
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 1465370.0,
+      "mean_deg": 350.3196373979782
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 1538420.0,
+      "mean_deg": 353.0824828860621
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 1611470.0,
+      "mean_deg": 355.8475819626587
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 1684520.0,
+      "mean_deg": 358.61496484383144
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 1757570.0,
+      "mean_deg": 1.3846590972810304
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 1830620.0,
+      "mean_deg": 4.156689650917713
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 1903670.0,
+      "mean_deg": 6.931078809503674
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 1976720.0,
+      "mean_deg": 9.70784625783756
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2049770.0,
+      "mean_deg": 12.487009174196032
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2122820.0,
+      "mean_deg": 15.268582141777358
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2195870.0,
+      "mean_deg": 18.052577272364317
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2268920.0,
+      "mean_deg": 20.839004229867953
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2305445.0,
+      "mean_deg": 22.23313200586591
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2341970.0,
+      "mean_deg": 23.627870277294903
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2378495.0,
+      "mean_deg": 25.02321958486806
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2396757.5,
+      "mean_deg": 25.721123506781282
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2415020.0,
+      "mean_deg": 26.419180325360287
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2433282.5,
+      "mean_deg": 27.117390067963584
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2451545.0,
+      "mean_deg": 27.81575275314532
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2460676.25,
+      "mean_deg": 28.16499145260525
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2469807.5,
+      "mean_deg": 28.514268390701716
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2488070.0,
+      "mean_deg": 29.212936981718315
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2561120.0,
+      "mean_deg": 32.0091405997872
+    },
+    {
+      "ayanamsha": "DELUCE",
+      "jd_tt": 2634170.0,
+      "mean_deg": 34.8077893261588
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 1465370.0,
+      "mean_deg": 344.9151187788933
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 1538420.0,
+      "mean_deg": 347.67790317621353
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 1611470.0,
+      "mean_deg": 350.44294145861915
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 1684520.0,
+      "mean_deg": 353.2102651742076
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 1757570.0,
+      "mean_deg": 355.9799031631038
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 1830620.0,
+      "mean_deg": 358.7518815498855
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 1903670.0,
+      "mean_deg": 1.526223744944482
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 1976720.0,
+      "mean_deg": 4.3029504541888555
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2049770.0,
+      "mean_deg": 7.082079696420597
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2122820.0,
+      "mean_deg": 9.863626827652991
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2195870.0,
+      "mean_deg": 12.647604571575227
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2268920.0,
+      "mean_deg": 15.434023055317338
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2305445.0,
+      "mean_deg": 16.82815003916353
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2341970.0,
+      "mean_deg": 18.22288984962509
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2378495.0,
+      "mean_deg": 19.6182430407757
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2396757.5,
+      "mean_deg": 20.316149785060823
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2415020.0,
+      "mean_deg": 21.014210012518316
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2433282.5,
+      "mean_deg": 21.712423749290963
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2451545.0,
+      "mean_deg": 22.41079101207282
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2460676.25,
+      "mean_deg": 22.76003221836214
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2469807.5,
+      "mean_deg": 23.10931180815652
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2488070.0,
+      "mean_deg": 23.807986135480462
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2561120.0,
+      "mean_deg": 26.604218391210566
+    },
+    {
+      "ayanamsha": "RAMAN",
+      "jd_tt": 2634170.0,
+      "mean_deg": 29.402904581963753
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 1465370.0,
+      "mean_deg": 342.561868766375
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 1538420.0,
+      "mean_deg": 345.32465316369525
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 1611470.0,
+      "mean_deg": 348.08969144610086
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 1684520.0,
+      "mean_deg": 350.8570151616893
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 1757570.0,
+      "mean_deg": 353.62665315058547
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 1830620.0,
+      "mean_deg": 356.3986315373672
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 1903670.0,
+      "mean_deg": 359.17297373242616
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 1976720.0,
+      "mean_deg": 1.9497004416705273
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2049770.0,
+      "mean_deg": 4.728829683902269
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2122820.0,
+      "mean_deg": 7.510376815134664
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2195870.0,
+      "mean_deg": 10.294354559056899
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2268920.0,
+      "mean_deg": 13.08077304279901
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2305445.0,
+      "mean_deg": 14.474900026645203
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2341970.0,
+      "mean_deg": 15.869639837106764
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2378495.0,
+      "mean_deg": 17.264993028257372
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2396757.5,
+      "mean_deg": 17.962899772542496
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2415020.0,
+      "mean_deg": 18.66095999999999
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2433282.5,
+      "mean_deg": 19.359173736772618
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2451545.0,
+      "mean_deg": 20.057540999554476
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2460676.25,
+      "mean_deg": 20.406782205843797
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2469807.5,
+      "mean_deg": 20.756061795638175
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2488070.0,
+      "mean_deg": 21.454736122962117
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2561120.0,
+      "mean_deg": 24.25096837869222
+    },
+    {
+      "ayanamsha": "USHASHASHI",
+      "jd_tt": 2634170.0,
+      "mean_deg": 27.04965456944541
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 1465370.0,
+      "mean_deg": 346.2645677788933
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 1538420.0,
+      "mean_deg": 349.0273521762135
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 1611470.0,
+      "mean_deg": 351.79239045861914
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 1684520.0,
+      "mean_deg": 354.5597141742076
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 1757570.0,
+      "mean_deg": 357.3293521631038
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 1830620.0,
+      "mean_deg": 0.10133054988552889
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 1903670.0,
+      "mean_deg": 2.875672744944475
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 1976720.0,
+      "mean_deg": 5.652399454188848
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2049770.0,
+      "mean_deg": 8.43152869642059
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2122820.0,
+      "mean_deg": 11.213075827652984
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2195870.0,
+      "mean_deg": 13.99705357157522
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2268920.0,
+      "mean_deg": 16.78347205531733
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2305445.0,
+      "mean_deg": 18.17759903916352
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2341970.0,
+      "mean_deg": 19.572338849625083
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2378495.0,
+      "mean_deg": 20.96769204077569
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2396757.5,
+      "mean_deg": 21.665598785060816
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2415020.0,
+      "mean_deg": 22.36365901251831
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2433282.5,
+      "mean_deg": 23.061872749290956
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2451545.0,
+      "mean_deg": 23.760240012072813
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2460676.25,
+      "mean_deg": 24.109481218362134
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2469807.5,
+      "mean_deg": 24.458760808156512
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2488070.0,
+      "mean_deg": 25.157435135480455
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2561120.0,
+      "mean_deg": 27.95366739121056
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI",
+      "jd_tt": 2634170.0,
+      "mean_deg": 30.752353581963746
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 1465370.0,
+      "mean_deg": 350.86400636637507
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 1538420.0,
+      "mean_deg": 353.6267907636953
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 1611470.0,
+      "mean_deg": 356.3918290461009
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 1684520.0,
+      "mean_deg": 359.1591527616893
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 1757570.0,
+      "mean_deg": 1.928790750585506
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 1830620.0,
+      "mean_deg": 4.700769137367245
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 1903670.0,
+      "mean_deg": 7.4751113324261915
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 1976720.0,
+      "mean_deg": 10.251838041670565
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2049770.0,
+      "mean_deg": 13.030967283902307
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2122820.0,
+      "mean_deg": 15.8125144151347
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2195870.0,
+      "mean_deg": 18.596492159056936
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2268920.0,
+      "mean_deg": 21.382910642799047
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2305445.0,
+      "mean_deg": 22.77703762664524
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2341970.0,
+      "mean_deg": 24.1717774371068
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2378495.0,
+      "mean_deg": 25.56713062825741
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2396757.5,
+      "mean_deg": 26.265037372542533
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2415020.0,
+      "mean_deg": 26.963097600000026
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2433282.5,
+      "mean_deg": 27.661311336772656
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2451545.0,
+      "mean_deg": 28.359678599554513
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2460676.25,
+      "mean_deg": 28.708919805843834
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2469807.5,
+      "mean_deg": 29.058199395638212
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2488070.0,
+      "mean_deg": 29.756873722962155
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2561120.0,
+      "mean_deg": 32.55310597869226
+    },
+    {
+      "ayanamsha": "DJWHAL_KHUL",
+      "jd_tt": 2634170.0,
+      "mean_deg": 35.351792169445446
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 1465370.0,
+      "mean_deg": 344.98313076637504
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 1538420.0,
+      "mean_deg": 347.74591516369526
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 1611470.0,
+      "mean_deg": 350.51095344610087
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 1684520.0,
+      "mean_deg": 353.2782771616893
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 1757570.0,
+      "mean_deg": 356.0479151505855
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 1830620.0,
+      "mean_deg": 358.8198935373672
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 1903670.0,
+      "mean_deg": 1.5942357324261667
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 1976720.0,
+      "mean_deg": 4.370962441670541
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2049770.0,
+      "mean_deg": 7.150091683902282
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2122820.0,
+      "mean_deg": 9.931638815134676
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2195870.0,
+      "mean_deg": 12.715616559056912
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2268920.0,
+      "mean_deg": 15.502035042799022
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2305445.0,
+      "mean_deg": 16.896162026645214
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2341970.0,
+      "mean_deg": 18.290901837106777
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2378495.0,
+      "mean_deg": 19.686255028257385
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2396757.5,
+      "mean_deg": 20.38416177254251
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2415020.0,
+      "mean_deg": 21.082222
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2433282.5,
+      "mean_deg": 21.78043573677263
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2451545.0,
+      "mean_deg": 22.47880299955449
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2460676.25,
+      "mean_deg": 22.82804420584381
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2469807.5,
+      "mean_deg": 23.177323795638188
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2488070.0,
+      "mean_deg": 23.87599812296213
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2561120.0,
+      "mean_deg": 26.672230378692234
+    },
+    {
+      "ayanamsha": "YUKTESHWAR",
+      "jd_tt": 2634170.0,
+      "mean_deg": 29.47091656944542
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 1465370.0,
+      "mean_deg": 345.26646476637507
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 1538420.0,
+      "mean_deg": 348.0292491636953
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 1611470.0,
+      "mean_deg": 350.7942874461009
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 1684520.0,
+      "mean_deg": 353.5616111616893
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 1757570.0,
+      "mean_deg": 356.3312491505855
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 1830620.0,
+      "mean_deg": 359.1032275373672
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 1903670.0,
+      "mean_deg": 1.8775697324261915
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 1976720.0,
+      "mean_deg": 4.654296441670565
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2049770.0,
+      "mean_deg": 7.433425683902307
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2122820.0,
+      "mean_deg": 10.2149728151347
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2195870.0,
+      "mean_deg": 12.998950559056937
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2268920.0,
+      "mean_deg": 15.785369042799047
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2305445.0,
+      "mean_deg": 17.17949602664524
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2341970.0,
+      "mean_deg": 18.5742358371068
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2378495.0,
+      "mean_deg": 19.96958902825741
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2396757.5,
+      "mean_deg": 20.667495772542534
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2415020.0,
+      "mean_deg": 21.365556000000026
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2433282.5,
+      "mean_deg": 22.063769736772656
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2451545.0,
+      "mean_deg": 22.762136999554514
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2460676.25,
+      "mean_deg": 23.111378205843835
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2469807.5,
+      "mean_deg": 23.460657795638213
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2488070.0,
+      "mean_deg": 24.159332122962155
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2561120.0,
+      "mean_deg": 26.95556437869226
+    },
+    {
+      "ayanamsha": "JN_BHASIN",
+      "jd_tt": 2634170.0,
+      "mean_deg": 29.754250569445446
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 1465370.0,
+      "mean_deg": 346.03751533022495
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 1538420.0,
+      "mean_deg": 348.80036382943683
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 1611470.0,
+      "mean_deg": 351.5654657222102
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 1684520.0,
+      "mean_deg": 354.33285116157504
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 1757570.0,
+      "mean_deg": 357.1025476572358
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 1830620.0,
+      "mean_deg": 359.87458008490904
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 1903670.0,
+      "mean_deg": 2.648970703665043
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 1976720.0,
+      "mean_deg": 5.42573915757157
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2049770.0,
+      "mean_deg": 8.20490259835367
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2122820.0,
+      "mean_deg": 10.986475584286211
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2195870.0,
+      "mean_deg": 13.77047021289394
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2268920.0,
+      "mean_deg": 16.556896142592166
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2305445.0,
+      "mean_deg": 17.95102320822332
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2341970.0,
+      "mean_deg": 19.345760639816547
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2378495.0,
+      "mean_deg": 20.741108979917158
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2396757.5,
+      "mean_deg": 21.43901237095588
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2415020.0,
+      "mean_deg": 22.137068627691292
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2433282.5,
+      "mean_deg": 22.835277777867475
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2451545.0,
+      "mean_deg": 23.533639840458306
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2460676.25,
+      "mean_deg": 23.882878217451946
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2469807.5,
+      "mean_deg": 24.23215482571402
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2488070.0,
+      "mean_deg": 24.93082273520787
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2561120.0,
+      "mean_deg": 27.727023345887744
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER1",
+      "jd_tt": 2634170.0,
+      "mean_deg": 30.525668644922803
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 1465370.0,
+      "mean_deg": 347.4375153302249
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 1538420.0,
+      "mean_deg": 350.2003638294368
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 1611470.0,
+      "mean_deg": 352.96546572221024
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 1684520.0,
+      "mean_deg": 355.73285116157507
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 1757570.0,
+      "mean_deg": 358.50254765723577
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 1830620.0,
+      "mean_deg": 1.2745800849090188
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 1903670.0,
+      "mean_deg": 4.048970703665077
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 1976720.0,
+      "mean_deg": 6.825739157571547
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2049770.0,
+      "mean_deg": 9.604902598353704
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2122820.0,
+      "mean_deg": 12.386475584286188
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2195870.0,
+      "mean_deg": 15.170470212893918
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2268920.0,
+      "mean_deg": 17.956896142592143
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2305445.0,
+      "mean_deg": 19.351023208223296
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2341970.0,
+      "mean_deg": 20.745760639816524
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2378495.0,
+      "mean_deg": 22.141108979917135
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2396757.5,
+      "mean_deg": 22.839012370955913
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2415020.0,
+      "mean_deg": 23.53706862769127
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2433282.5,
+      "mean_deg": 24.23527777786751
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2451545.0,
+      "mean_deg": 24.933639840458284
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2460676.25,
+      "mean_deg": 25.282878217451923
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2469807.5,
+      "mean_deg": 25.632154825714053
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2488070.0,
+      "mean_deg": 26.330822735207846
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2561120.0,
+      "mean_deg": 29.12702334588772
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER2",
+      "jd_tt": 2634170.0,
+      "mean_deg": 31.92566864492278
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 1465370.0,
+      "mean_deg": 348.28751533022495
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 1538420.0,
+      "mean_deg": 351.05036382943683
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 1611470.0,
+      "mean_deg": 353.8154657222102
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 1684520.0,
+      "mean_deg": 356.58285116157504
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 1757570.0,
+      "mean_deg": 359.3525476572358
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 1830620.0,
+      "mean_deg": 2.1245800849090415
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 1903670.0,
+      "mean_deg": 4.898970703665043
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 1976720.0,
+      "mean_deg": 7.67573915757157
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2049770.0,
+      "mean_deg": 10.45490259835367
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2122820.0,
+      "mean_deg": 13.236475584286211
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2195870.0,
+      "mean_deg": 16.02047021289394
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2268920.0,
+      "mean_deg": 18.806896142592166
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2305445.0,
+      "mean_deg": 20.20102320822332
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2341970.0,
+      "mean_deg": 21.595760639816547
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2378495.0,
+      "mean_deg": 22.991108979917158
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2396757.5,
+      "mean_deg": 23.68901237095588
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2415020.0,
+      "mean_deg": 24.387068627691292
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2433282.5,
+      "mean_deg": 25.085277777867475
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2451545.0,
+      "mean_deg": 25.783639840458306
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2460676.25,
+      "mean_deg": 26.132878217451946
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2469807.5,
+      "mean_deg": 26.48215482571402
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2488070.0,
+      "mean_deg": 27.18082273520787
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2561120.0,
+      "mean_deg": 29.977023345887744
+    },
+    {
+      "ayanamsha": "BABYL_KUGLER3",
+      "jd_tt": 2634170.0,
+      "mean_deg": 32.7756686449228
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 1465370.0,
+      "mean_deg": 347.23751533022494
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 1538420.0,
+      "mean_deg": 350.0003638294368
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 1611470.0,
+      "mean_deg": 352.7654657222102
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 1684520.0,
+      "mean_deg": 355.5328511615751
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 1757570.0,
+      "mean_deg": 358.3025476572358
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 1830620.0,
+      "mean_deg": 1.0745800849090301
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 1903670.0,
+      "mean_deg": 3.8489707036650316
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 1976720.0,
+      "mean_deg": 6.625739157571559
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2049770.0,
+      "mean_deg": 9.404902598353715
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2122820.0,
+      "mean_deg": 12.1864755842862
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.970470212893929
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2268920.0,
+      "mean_deg": 17.756896142592154
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2305445.0,
+      "mean_deg": 19.151023208223307
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2341970.0,
+      "mean_deg": 20.545760639816535
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.941108979917146
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2396757.5,
+      "mean_deg": 22.639012370955925
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2415020.0,
+      "mean_deg": 23.33706862769128
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2433282.5,
+      "mean_deg": 24.03527777786752
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2451545.0,
+      "mean_deg": 24.733639840458295
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2460676.25,
+      "mean_deg": 25.082878217451935
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2469807.5,
+      "mean_deg": 25.432154825714008
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2488070.0,
+      "mean_deg": 26.130822735207857
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.927023345887733
+    },
+    {
+      "ayanamsha": "BABYL_HUBER",
+      "jd_tt": 2634170.0,
+      "mean_deg": 31.72566864492279
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 1465370.0,
+      "mean_deg": 347.02640105358233
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 1538420.0,
+      "mean_deg": 349.7892504172554
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 1611470.0,
+      "mean_deg": 352.554353114714
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 1684520.0,
+      "mean_deg": 355.32173928089173
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 1757570.0,
+      "mean_deg": 358.09143640889175
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 1830620.0,
+      "mean_deg": 0.8634693595440694
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 1903670.0,
+      "mean_deg": 3.637860378947323
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 1976720.0,
+      "mean_deg": 6.414629099643037
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2049770.0,
+      "mean_deg": 9.193792666025729
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2122820.0,
+      "mean_deg": 11.97536562947215
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.759360083739011
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2268920.0,
+      "mean_deg": 17.545785686027557
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2305445.0,
+      "mean_deg": 18.939912530883134
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2341970.0,
+      "mean_deg": 20.334649704156277
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.729997748972835
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2396757.5,
+      "mean_deg": 22.42790097873393
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2415020.0,
+      "mean_deg": 23.125957065241778
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2433282.5,
+      "mean_deg": 23.82416603635852
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2451545.0,
+      "mean_deg": 24.52252791118599
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2460676.25,
+      "mean_deg": 24.871766191076574
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2469807.5,
+      "mean_deg": 25.22104270011215
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2488070.0,
+      "mean_deg": 25.919710404857597
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.715910115646352
+    },
+    {
+      "ayanamsha": "BABYL_ETPSC",
+      "jd_tt": 2634170.0,
+      "mean_deg": 31.51455439437683
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 1465370.0,
+      "mean_deg": 347.2627993502249
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 1538420.0,
+      "mean_deg": 350.02564784943684
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 1611470.0,
+      "mean_deg": 352.7907497422102
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 1684520.0,
+      "mean_deg": 355.55813518157504
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 1757570.0,
+      "mean_deg": 358.3278316772358
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 1830620.0,
+      "mean_deg": 1.0998641049090452
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 1903670.0,
+      "mean_deg": 3.8742547236650466
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 1976720.0,
+      "mean_deg": 6.651023177571574
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2049770.0,
+      "mean_deg": 9.430186618353673
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2122820.0,
+      "mean_deg": 12.211759604286215
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.995754232893944
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2268920.0,
+      "mean_deg": 17.78218016259217
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2305445.0,
+      "mean_deg": 19.176307228223322
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2341970.0,
+      "mean_deg": 20.57104465981655
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.96639299991716
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2396757.5,
+      "mean_deg": 22.664296390955883
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2415020.0,
+      "mean_deg": 23.362352647691296
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2433282.5,
+      "mean_deg": 24.06056179786748
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2451545.0,
+      "mean_deg": 24.75892386045831
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2460676.25,
+      "mean_deg": 25.108162237451893
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2469807.5,
+      "mean_deg": 25.457438845714023
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2488070.0,
+      "mean_deg": 26.156106755207873
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.952307365887748
+    },
+    {
+      "ayanamsha": "ALDEBARAN_15TAU",
+      "jd_tt": 2634170.0,
+      "mean_deg": 31.75095266492275
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 1465370.0,
+      "mean_deg": 342.7516613295908
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 1538420.0,
+      "mean_deg": 345.5145106490436
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 1611470.0,
+      "mean_deg": 348.2796133053819
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 1684520.0,
+      "mean_deg": 351.0469994344649
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 1757570.0,
+      "mean_deg": 353.81669653024466
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 1830620.0,
+      "mean_deg": 356.5887294543115
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 1903670.0,
+      "mean_deg": 359.36312045342595
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 1976720.0,
+      "mean_deg": 2.13988916071753
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2049770.0,
+      "mean_deg": 4.9190527209523225
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2122820.0,
+      "mean_deg": 7.70062568585729
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2195870.0,
+      "mean_deg": 10.484620149378088
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2268920.0,
+      "mean_deg": 13.27104576877423
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2305445.0,
+      "mean_deg": 14.665172625110415
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2341970.0,
+      "mean_deg": 16.059909811788884
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2378495.0,
+      "mean_deg": 17.455257871905246
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2396757.5,
+      "mean_deg": 18.15316111001482
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2415020.0,
+      "mean_deg": 18.851217205329704
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2433282.5,
+      "mean_deg": 19.549426185705897
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2451545.0,
+      "mean_deg": 20.24778807023847
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2460676.25,
+      "mean_deg": 20.597026355146568
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2469807.5,
+      "mean_deg": 20.94630286930834
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2488070.0,
+      "mean_deg": 21.644970584628595
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2561120.0,
+      "mean_deg": 24.441170341856036
+    },
+    {
+      "ayanamsha": "HIPPARCHOS",
+      "jd_tt": 2634170.0,
+      "mean_deg": 27.239814673183332
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 1465370.0,
+      "mean_deg": 342.49692509274433
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 1538420.0,
+      "mean_deg": 345.2597528871145
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 1611470.0,
+      "mean_deg": 348.02483504011377
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 1684520.0,
+      "mean_deg": 350.79220213999594
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 1757570.0,
+      "mean_deg": 353.5618821017075
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 1830620.0,
+      "mean_deg": 356.33390017095485
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 1903670.0,
+      "mean_deg": 359.1082789366703
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 1976720.0,
+      "mean_deg": 1.8850383406287392
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2049770.0,
+      "mean_deg": 4.6641957466077315
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2122820.0,
+      "mean_deg": 7.445765910291243
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2195870.0,
+      "mean_deg": 10.229761059622774
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2268920.0,
+      "mean_deg": 13.01619092671217
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2305445.0,
+      "mean_deg": 14.410321249434105
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2341970.0,
+      "mean_deg": 15.8050627935026
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2378495.0,
+      "mean_deg": 17.200416094183083
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2396757.5,
+      "mean_deg": 17.89832228026546
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2415020.0,
+      "mean_deg": 18.596381539667107
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2433282.5,
+      "mean_deg": 19.294593898185724
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2451545.0,
+      "mean_deg": 19.992959372619907
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2460676.25,
+      "mean_deg": 20.34219953110602
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2469807.5,
+      "mean_deg": 20.691477970817402
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2488070.0,
+      "mean_deg": 21.390149691722797
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2561120.0,
+      "mean_deg": 24.186367472346888
+    },
+    {
+      "ayanamsha": "SASSANIAN",
+      "jd_tt": 2634170.0,
+      "mean_deg": 26.985032848888466
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 1976720.0,
+      "mean_deg": 8.739825445933349
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2049770.0,
+      "mean_deg": 11.518599545131366
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2122820.0,
+      "mean_deg": 14.299823589585685
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2195870.0,
+      "mean_deg": 17.083518100796596
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2268920.0,
+      "mean_deg": 19.86969709930986
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2305445.0,
+      "mean_deg": 21.263721478845525
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2341970.0,
+      "mean_deg": 22.658361479659277
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2378495.0,
+      "mean_deg": 24.053634564320703
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2396757.5,
+      "mean_deg": 24.751505173706335
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2415020.0,
+      "mean_deg": 25.449522503512128
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2433282.5,
+      "mean_deg": 26.14770985982915
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2451545.0,
+      "mean_deg": 26.846047716992075
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2460676.25,
+      "mean_deg": 27.1952752647353
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2469807.5,
+      "mean_deg": 27.544544440541813
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2488070.0,
+      "mean_deg": 28.24319274902888
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2561120.0,
+      "mean_deg": 31.03936451882339
+    },
+    {
+      "ayanamsha": "GALCENT_0SAG",
+      "jd_tt": 2634170.0,
+      "mean_deg": 33.83803118025446
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 1465370.0,
+      "mean_deg": 322.5043627259442
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 1538420.0,
+      "mean_deg": 325.26714397259775
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 1611470.0,
+      "mean_deg": 328.03217893712076
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 1684520.0,
+      "mean_deg": 330.79949924203754
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 1757570.0,
+      "mean_deg": 333.5691338007149
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 1830620.0,
+      "mean_deg": 336.3411088088798
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 1903670.0,
+      "mean_deg": 339.1154477450974
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 1976720.0,
+      "mean_deg": 341.89217137962714
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2049770.0,
+      "mean_deg": 344.6712977909984
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2122820.0,
+      "mean_deg": 347.45284238958067
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2195870.0,
+      "mean_deg": 350.2368179473639
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2268920.0,
+      "mean_deg": 353.02323463310955
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2305445.0,
+      "mean_deg": 354.4173608745638
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2341970.0,
+      "mean_deg": 355.8121000519908
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2378495.0,
+      "mean_deg": 357.2074527225679
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2396757.5,
+      "mean_deg": 357.90535924957226
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2415020.0,
+      "mean_deg": 358.60341928880047
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2433282.5,
+      "mean_deg": 359.30163286664066
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2451545.0,
+      "mean_deg": 0.0
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2460676.25,
+      "mean_deg": 0.34924115270189304
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2469807.5,
+      "mean_deg": 0.6985206963515225
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2488070.0,
+      "mean_deg": 1.3971949537814226
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2561120.0,
+      "mean_deg": 4.193427230114821
+    },
+    {
+      "ayanamsha": "J2000",
+      "jd_tt": 2634170.0,
+      "mean_deg": 6.992113922096394
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 1465370.0,
+      "mean_deg": 323.90090876637504
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 1538420.0,
+      "mean_deg": 326.66369316369526
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 1611470.0,
+      "mean_deg": 329.42873144610087
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 1684520.0,
+      "mean_deg": 332.1960551616893
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 1757570.0,
+      "mean_deg": 334.9656931505855
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 1830620.0,
+      "mean_deg": 337.7376715373672
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 1903670.0,
+      "mean_deg": 340.51201373242617
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 1976720.0,
+      "mean_deg": 343.28874044167054
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2049770.0,
+      "mean_deg": 346.0678696839023
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2122820.0,
+      "mean_deg": 348.84941681513465
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2195870.0,
+      "mean_deg": 351.6333945590569
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2268920.0,
+      "mean_deg": 354.41981304279903
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2305445.0,
+      "mean_deg": 355.81394002664524
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2341970.0,
+      "mean_deg": 357.2086798371068
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2378495.0,
+      "mean_deg": 358.6040330282574
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2396757.5,
+      "mean_deg": 359.3019397725425
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2415020.0,
+      "mean_deg": 0.0
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2433282.5,
+      "mean_deg": 0.6982137367726295
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2451545.0,
+      "mean_deg": 1.3965809995544873
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2460676.25,
+      "mean_deg": 1.7458222058438082
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2469807.5,
+      "mean_deg": 2.095101795638186
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2488070.0,
+      "mean_deg": 2.7937761229621287
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2561120.0,
+      "mean_deg": 5.590008378692232
+    },
+    {
+      "ayanamsha": "J1900",
+      "jd_tt": 2634170.0,
+      "mean_deg": 8.38869456944542
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 1465370.0,
+      "mean_deg": 323.2027152612555
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 1538420.0,
+      "mean_deg": 325.96549807934554
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 1611470.0,
+      "mean_deg": 328.73053470121044
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 1684520.0,
+      "mean_deg": 331.49785671213886
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 1757570.0,
+      "mean_deg": 334.2674929888297
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 1830620.0,
+      "mean_deg": 337.03946969136393
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 1903670.0,
+      "mean_deg": 339.81381026412504
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 1976720.0,
+      "mean_deg": 342.59053544507907
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2049770.0,
+      "mean_deg": 345.36966328275247
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2122820.0,
+      "mean_deg": 348.15120916017713
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2195870.0,
+      "mean_deg": 350.93518582501446
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2268920.0,
+      "mean_deg": 353.7216034250155
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2305445.0,
+      "mean_deg": 355.11573004570647
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2341970.0,
+      "mean_deg": 356.5104695479299
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2378495.0,
+      "mean_deg": 357.9058224872833
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2396757.5,
+      "mean_deg": 358.6037291272427
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2415020.0,
+      "mean_deg": 359.3017892649419
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2433282.5,
+      "mean_deg": 2.9266427645779913e-6
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2451545.0,
+      "mean_deg": 0.698370129142063
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2460676.25,
+      "mean_deg": 1.047611310863715
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2469807.5,
+      "mean_deg": 1.3968908798189545
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2488070.0,
+      "mean_deg": 2.095565176682044
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2561120.0,
+      "mean_deg": 4.8917974608499435
+    },
+    {
+      "ayanamsha": "B1950",
+      "jd_tt": 2634170.0,
+      "mean_deg": 7.690483920475458
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 1465370.0,
+      "mean_deg": 343.399012763643
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 1538420.0,
+      "mean_deg": 346.16184264469945
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 1611470.0,
+      "mean_deg": 348.9269268245499
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 1684520.0,
+      "mean_deg": 351.6942958472692
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 1757570.0,
+      "mean_deg": 354.46397758619315
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 1830620.0,
+      "mean_deg": 357.2359972485203
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 1903670.0,
+      "mean_deg": 0.010377388277220234
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 1976720.0,
+      "mean_deg": 2.787137915389849
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2049770.0,
+      "mean_deg": 5.566296169271936
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2122820.0,
+      "mean_deg": 8.347866883066331
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2195870.0,
+      "mean_deg": 11.131862268319253
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2268920.0,
+      "mean_deg": 13.91829204612884
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2305445.0,
+      "mean_deg": 15.312422200338233
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2341970.0,
+      "mean_deg": 16.70716349299488
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2378495.0,
+      "mean_deg": 18.102516459572996
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2396757.5,
+      "mean_deg": 18.800422447758535
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2415020.0,
+      "mean_deg": 19.498481488831658
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2433282.5,
+      "mean_deg": 20.196693608717
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2451545.0,
+      "mean_deg": 20.895058824362536
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2460676.25,
+      "mean_deg": 21.244298845948947
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2469807.5,
+      "mean_deg": 21.59357714378774
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2488070.0,
+      "mean_deg": 22.29224856613115
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2561120.0,
+      "mean_deg": 25.08846495925792
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA",
+      "jd_tt": 2634170.0,
+      "mean_deg": 27.88712865287107
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 1465370.0,
+      "mean_deg": 343.184378813643
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 1538420.0,
+      "mean_deg": 345.94720869469944
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 1611470.0,
+      "mean_deg": 348.7122928745499
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 1684520.0,
+      "mean_deg": 351.4796618972692
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 1757570.0,
+      "mean_deg": 354.24934363619315
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 1830620.0,
+      "mean_deg": 357.0213632985203
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 1903670.0,
+      "mean_deg": 359.7957434382772
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 1976720.0,
+      "mean_deg": 2.572503965389842
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2049770.0,
+      "mean_deg": 5.35166221927193
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2122820.0,
+      "mean_deg": 8.133232933066324
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2195870.0,
+      "mean_deg": 10.917228318319246
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2268920.0,
+      "mean_deg": 13.703658096128834
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2305445.0,
+      "mean_deg": 15.097788250338226
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2341970.0,
+      "mean_deg": 16.492529542994873
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2378495.0,
+      "mean_deg": 17.88788250957299
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2396757.5,
+      "mean_deg": 18.58578849775853
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2415020.0,
+      "mean_deg": 19.28384753883165
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2433282.5,
+      "mean_deg": 19.98205965871699
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2451545.0,
+      "mean_deg": 20.68042487436253
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2460676.25,
+      "mean_deg": 21.02966489594894
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2469807.5,
+      "mean_deg": 21.378943193787734
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2488070.0,
+      "mean_deg": 22.077614616131143
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2561120.0,
+      "mean_deg": 24.873831009257913
+    },
+    {
+      "ayanamsha": "SURYASIDDHANTA_MSUN",
+      "jd_tt": 2634170.0,
+      "mean_deg": 27.672494702871063
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 1465370.0,
+      "mean_deg": 343.39901365018846
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 1538420.0,
+      "mean_deg": 346.161843531247
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 1611470.0,
+      "mean_deg": 348.92692771109944
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 1684520.0,
+      "mean_deg": 351.6942967338206
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 1757570.0,
+      "mean_deg": 354.4639784727463
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 1830620.0,
+      "mean_deg": 357.23599813507496
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 1903670.0,
+      "mean_deg": 0.010378274833215073
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 1976720.0,
+      "mean_deg": 2.7871388019469236
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2049770.0,
+      "mean_deg": 5.566297055829807
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2122820.0,
+      "mean_deg": 8.34786776962477
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2195870.0,
+      "mean_deg": 11.131863154877806
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2268920.0,
+      "mean_deg": 13.918292932687336
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2305445.0,
+      "mean_deg": 15.312423086896445
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2341970.0,
+      "mean_deg": 16.70716437955292
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2378495.0,
+      "mean_deg": 18.10251734613064
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2396757.5,
+      "mean_deg": 18.800423334316008
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2415020.0,
+      "mean_deg": 19.498482375388903
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2433282.5,
+      "mean_deg": 20.196694495274016
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2451545.0,
+      "mean_deg": 20.89505971091927
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2460676.25,
+      "mean_deg": 21.24429973250551
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2469807.5,
+      "mean_deg": 21.59357803034419
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2488070.0,
+      "mean_deg": 22.2922494526872
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2561120.0,
+      "mean_deg": 25.08846584581272
+    },
+    {
+      "ayanamsha": "ARYABHATA",
+      "jd_tt": 2634170.0,
+      "mean_deg": 27.887129539424166
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 1465370.0,
+      "mean_deg": 343.1613812701885
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 1538420.0,
+      "mean_deg": 345.92421115124694
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 1611470.0,
+      "mean_deg": 348.6892953310994
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 1684520.0,
+      "mean_deg": 351.45666435382054
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 1757570.0,
+      "mean_deg": 354.22634609274627
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 1830620.0,
+      "mean_deg": 356.998365755075
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 1903670.0,
+      "mean_deg": 359.77274589483324
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 1976720.0,
+      "mean_deg": 2.5495064219468873
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2049770.0,
+      "mean_deg": 5.3286646758298275
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2122820.0,
+      "mean_deg": 8.110235389624734
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2195870.0,
+      "mean_deg": 10.894230774877826
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2268920.0,
+      "mean_deg": 13.680660552687357
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2305445.0,
+      "mean_deg": 15.074790706896465
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2341970.0,
+      "mean_deg": 16.469531999552885
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2378495.0,
+      "mean_deg": 17.86488496613066
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2396757.5,
+      "mean_deg": 18.56279095431603
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2415020.0,
+      "mean_deg": 19.260849995388924
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2433282.5,
+      "mean_deg": 19.959062115274037
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2451545.0,
+      "mean_deg": 20.65742733091929
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2460676.25,
+      "mean_deg": 21.00666735250553
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2469807.5,
+      "mean_deg": 21.35594565034421
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2488070.0,
+      "mean_deg": 22.054617072687222
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2561120.0,
+      "mean_deg": 24.85083346581274
+    },
+    {
+      "ayanamsha": "ARYABHATA_MSUN",
+      "jd_tt": 2634170.0,
+      "mean_deg": 27.649497159424186
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 1465370.0,
+      "mean_deg": 342.607342303643
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 1538420.0,
+      "mean_deg": 345.3701721846994
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 1611470.0,
+      "mean_deg": 348.1352563645499
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 1684520.0,
+      "mean_deg": 350.90262538726915
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 1757570.0,
+      "mean_deg": 353.6723071261932
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 1830620.0,
+      "mean_deg": 356.4443267885203
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 1903670.0,
+      "mean_deg": 359.21870692827724
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 1976720.0,
+      "mean_deg": 1.9954674553898144
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2049770.0,
+      "mean_deg": 4.774625709271959
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2122820.0,
+      "mean_deg": 7.556196423066353
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2195870.0,
+      "mean_deg": 10.340191808319219
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2268920.0,
+      "mean_deg": 13.126621586128863
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2305445.0,
+      "mean_deg": 14.520751740338255
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2341970.0,
+      "mean_deg": 15.915493032994846
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2378495.0,
+      "mean_deg": 17.31084599957296
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2396757.5,
+      "mean_deg": 18.008751987758558
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2415020.0,
+      "mean_deg": 18.706811028831623
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2433282.5,
+      "mean_deg": 19.405023148716964
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2451545.0,
+      "mean_deg": 20.10338836436256
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2460676.25,
+      "mean_deg": 20.452628385948913
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2469807.5,
+      "mean_deg": 20.801906683787763
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2488070.0,
+      "mean_deg": 21.500578106131115
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2561120.0,
+      "mean_deg": 24.296794499257942
+    },
+    {
+      "ayanamsha": "SS_REVATI",
+      "jd_tt": 2634170.0,
+      "mean_deg": 27.095458192871092
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 1465370.0,
+      "mean_deg": 345.509717203643
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 1538420.0,
+      "mean_deg": 348.27254708469945
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 1611470.0,
+      "mean_deg": 351.03763126454993
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 1684520.0,
+      "mean_deg": 353.8050002872692
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 1757570.0,
+      "mean_deg": 356.57468202619316
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 1830620.0,
+      "mean_deg": 359.3467016885203
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 1903670.0,
+      "mean_deg": 2.1210818282772266
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 1976720.0,
+      "mean_deg": 4.897842355389855
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2049770.0,
+      "mean_deg": 7.677000609271943
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2122820.0,
+      "mean_deg": 10.458571323066337
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2195870.0,
+      "mean_deg": 13.24256670831926
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2268920.0,
+      "mean_deg": 16.028996486128847
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2305445.0,
+      "mean_deg": 17.42312664033824
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2341970.0,
+      "mean_deg": 18.817867932994886
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2378495.0,
+      "mean_deg": 20.213220899572946
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2396757.5,
+      "mean_deg": 20.91112688775854
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2415020.0,
+      "mean_deg": 21.609185928831664
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2433282.5,
+      "mean_deg": 22.307398048717005
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2451545.0,
+      "mean_deg": 23.005763264362542
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2460676.25,
+      "mean_deg": 23.355003285948897
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2469807.5,
+      "mean_deg": 23.704281583787747
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2488070.0,
+      "mean_deg": 24.4029530061311
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2561120.0,
+      "mean_deg": 27.199169399257926
+    },
+    {
+      "ayanamsha": "SS_CITRA",
+      "jd_tt": 2634170.0,
+      "mean_deg": 29.997833092871076
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 1976720.0,
+      "mean_deg": 5.748421757476507
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2049770.0,
+      "mean_deg": 8.52506248176158
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2122820.0,
+      "mean_deg": 11.304114659476
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.085589836381274
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2268920.0,
+      "mean_deg": 16.869507507164855
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2305445.0,
+      "mean_deg": 18.26238114005409
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2341970.0,
+      "mean_deg": 19.65587157915303
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.049972967964976
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2396757.5,
+      "mean_deg": 21.747250746535997
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2415020.0,
+      "mean_deg": 22.444683659433053
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2433282.5,
+      "mean_deg": 23.14227715799626
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2451545.0,
+      "mean_deg": 23.840017913397247
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2460676.25,
+      "mean_deg": 24.18894764106875
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2469807.5,
+      "mean_deg": 24.537915343571314
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2488070.0,
+      "mean_deg": 25.235958102678467
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.029699332958245
+    },
+    {
+      "ayanamsha": "TRUE_CHITRA",
+      "jd_tt": 2634170.0,
+      "mean_deg": 30.825896263952473
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 1976720.0,
+      "mean_deg": 1.8949198445595243
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2049770.0,
+      "mean_deg": 4.680586146423934
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2122820.0,
+      "mean_deg": 7.468664705551532
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2195870.0,
+      "mean_deg": 10.259171651732004
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2268920.0,
+      "mean_deg": 13.052109655749689
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2305445.0,
+      "mean_deg": 14.449497233029263
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2341970.0,
+      "mean_deg": 15.847491739023269
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2378495.0,
+      "mean_deg": 17.246102020059027
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2396757.5,
+      "mean_deg": 17.945640230062168
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2415020.0,
+      "mean_deg": 18.645329392364204
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2433282.5,
+      "mean_deg": 19.345165792672105
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2451545.0,
+      "mean_deg": 20.045161738878107
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2460676.25,
+      "mean_deg": 20.39521546693021
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2469807.5,
+      "mean_deg": 20.745308207612197
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2488070.0,
+      "mean_deg": 21.44561638124503
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2561120.0,
+      "mean_deg": 24.248350505188967
+    },
+    {
+      "ayanamsha": "TRUE_REVATI",
+      "jd_tt": 2634170.0,
+      "mean_deg": 27.05354105896265
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 1976720.0,
+      "mean_deg": 4.6038120578453885
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2049770.0,
+      "mean_deg": 7.385341402286386
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2122820.0,
+      "mean_deg": 10.169282803653303
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2195870.0,
+      "mean_deg": 12.955640820373588
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2268920.0,
+      "mean_deg": 15.744429708145915
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2305445.0,
+      "mean_deg": 17.13973527714137
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2341970.0,
+      "mean_deg": 18.535663072969058
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2378495.0,
+      "mean_deg": 19.93219104574588
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2396757.5,
+      "mean_deg": 20.630682359971956
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2415020.0,
+      "mean_deg": 21.329338265698013
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2433282.5,
+      "mean_deg": 22.028137642412446
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2451545.0,
+      "mean_deg": 22.727091655940228
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2460676.25,
+      "mean_deg": 23.0766274505728
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2469807.5,
+      "mean_deg": 23.426198514801257
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2488070.0,
+      "mean_deg": 24.125457501027256
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2561120.0,
+      "mean_deg": 26.92403431911717
+    },
+    {
+      "ayanamsha": "TRUE_PUSHYA",
+      "jd_tt": 2634170.0,
+      "mean_deg": 29.72506633904257
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 1976720.0,
+      "mean_deg": 4.362884428933349
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2049770.0,
+      "mean_deg": 7.141658528131366
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2122820.0,
+      "mean_deg": 9.922882572585685
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2195870.0,
+      "mean_deg": 12.706577083796596
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2268920.0,
+      "mean_deg": 15.49275608230986
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2305445.0,
+      "mean_deg": 16.886780461845525
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2341970.0,
+      "mean_deg": 18.281420462659277
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2378495.0,
+      "mean_deg": 19.676693547320703
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2396757.5,
+      "mean_deg": 20.374564156706334
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2415020.0,
+      "mean_deg": 21.072581486512128
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2433282.5,
+      "mean_deg": 21.77076884282915
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2451545.0,
+      "mean_deg": 22.469106699992075
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2460676.25,
+      "mean_deg": 22.8183342477353
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2469807.5,
+      "mean_deg": 23.167603423541813
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2488070.0,
+      "mean_deg": 23.86625173202888
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2561120.0,
+      "mean_deg": 26.66242350182339
+    },
+    {
+      "ayanamsha": "GALCENT_RGILBRAND",
+      "jd_tt": 2634170.0,
+      "mean_deg": 29.46109016325446
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 1976720.0,
+      "mean_deg": 11.817251334071898
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2049770.0,
+      "mean_deg": 14.611628759105457
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2122820.0,
+      "mean_deg": 17.408373879018257
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2195870.0,
+      "mean_deg": 20.207496053870926
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2268920.0,
+      "mean_deg": 23.00900222271133
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2305445.0,
+      "mean_deg": 24.410650811785587
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2341970.0,
+      "mean_deg": 25.812896907568188
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2378495.0,
+      "mean_deg": 27.215740696874093
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2396757.5,
+      "mean_deg": 27.91738674573105
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2415020.0,
+      "mean_deg": 28.61918222147611
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2433282.5,
+      "mean_deg": 29.321127104612827
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2451545.0,
+      "mean_deg": 30.023221367909002
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2460676.25,
+      "mean_deg": 30.374324506259114
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2469807.5,
+      "mean_deg": 30.725464975164982
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2488070.0,
+      "mean_deg": 31.427857879585076
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2561120.0,
+      "mean_deg": 34.23892121528135
+    },
+    {
+      "ayanamsha": "GALEQU_IAU1958",
+      "jd_tt": 2634170.0,
+      "mean_deg": 37.05236719691649
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 1976720.0,
+      "mean_deg": 11.870145553613924
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2049770.0,
+      "mean_deg": 14.664520043466752
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2122820.0,
+      "mean_deg": 17.461261982214666
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2195870.0,
+      "mean_deg": 20.260380732438193
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2268920.0,
+      "mean_deg": 23.061883235717744
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2305445.0,
+      "mean_deg": 24.46352990245802
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2341970.0,
+      "mean_deg": 25.865774016635186
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2378495.0,
+      "mean_deg": 27.268615765385533
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2396757.5,
+      "mean_deg": 27.970260771961364
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2415020.0,
+      "mean_deg": 28.672055190810426
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2433282.5,
+      "mean_deg": 29.373999002478342
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2451545.0,
+      "mean_deg": 30.076092179774378
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2460676.25,
+      "mean_deg": 30.42719476968773
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2469807.5,
+      "mean_deg": 30.77833468653924
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2488070.0,
+      "mean_deg": 31.480726476020124
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2561120.0,
+      "mean_deg": 34.29178520832667
+    },
+    {
+      "ayanamsha": "GALEQU_TRUE",
+      "jd_tt": 2634170.0,
+      "mean_deg": 37.105226358815685
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 1976720.0,
+      "mean_deg": 5.203478886913923
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2049770.0,
+      "mean_deg": 7.997853376766751
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2122820.0,
+      "mean_deg": 10.794595315514666
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2195870.0,
+      "mean_deg": 13.593714065738194
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2268920.0,
+      "mean_deg": 16.395216569017744
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2305445.0,
+      "mean_deg": 17.79686323575802
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2341970.0,
+      "mean_deg": 19.199107349935186
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2378495.0,
+      "mean_deg": 20.601949098685534
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2396757.5,
+      "mean_deg": 21.303594105261364
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2415020.0,
+      "mean_deg": 22.005388524110426
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2433282.5,
+      "mean_deg": 22.707332335778343
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2451545.0,
+      "mean_deg": 23.40942551307438
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2460676.25,
+      "mean_deg": 23.76052810298773
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2469807.5,
+      "mean_deg": 24.11166801983924
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2488070.0,
+      "mean_deg": 24.814059809320124
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2561120.0,
+      "mean_deg": 27.625118541626673
+    },
+    {
+      "ayanamsha": "GALEQU_MULA",
+      "jd_tt": 2634170.0,
+      "mean_deg": 30.438559692115685
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 1465370.0,
+      "mean_deg": 352.5221561516612
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 1538420.0,
+      "mean_deg": 355.2849374382485
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 1611470.0,
+      "mean_deg": 358.04997244495087
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 1684520.0,
+      "mean_deg": 0.8172927933433367
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 1757570.0,
+      "mean_deg": 3.5869273958576344
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 1830620.0,
+      "mean_deg": 6.358902447310728
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 1903670.0,
+      "mean_deg": 9.133241425394628
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 1976720.0,
+      "mean_deg": 11.90996509954323
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2049770.0,
+      "mean_deg": 14.689091547518098
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2122820.0,
+      "mean_deg": 17.4706361789884
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2195870.0,
+      "mean_deg": 20.254611765319773
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2268920.0,
+      "mean_deg": 23.041028474733714
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2305445.0,
+      "mean_deg": 24.43515472604815
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2341970.0,
+      "mean_deg": 25.82989391195427
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2378495.0,
+      "mean_deg": 27.225246589588696
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2396757.5,
+      "mean_deg": 27.92315311957746
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2415020.0,
+      "mean_deg": 28.621213161422098
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2433282.5,
+      "mean_deg": 29.31942674150752
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2451545.0,
+      "mean_deg": 30.017793876737926
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2460676.25,
+      "mean_deg": 30.367035030234263
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2469807.5,
+      "mean_deg": 30.716314574583805
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2488070.0,
+      "mean_deg": 31.41498883312937
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2561120.0,
+      "mean_deg": 34.21122111011181
+    },
+    {
+      "ayanamsha": "GALALIGN_MARDYKS",
+      "jd_tt": 2634170.0,
+      "mean_deg": 37.00990779662658
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 1976720.0,
+      "mean_deg": 6.477485133046457
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2049770.0,
+      "mean_deg": 9.255505306885482
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2122820.0,
+      "mean_deg": 12.03604103514894
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.819112548136161
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2268920.0,
+      "mean_deg": 17.60473404008718
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2305445.0,
+      "mean_deg": 18.998503949227313
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2341970.0,
+      "mean_deg": 20.39290592571666
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.78795708736368
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2396757.5,
+      "mean_deg": 22.48572267611462
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2415020.0,
+      "mean_deg": 23.183639061478118
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2433282.5,
+      "mean_deg": 23.88172988663564
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2451545.0,
+      "mean_deg": 24.57997494818966
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2460676.25,
+      "mean_deg": 24.92915768084447
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2469807.5,
+      "mean_deg": 25.2783830300952
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2488070.0,
+      "mean_deg": 25.976946331663385
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.772819924519865
+    },
+    {
+      "ayanamsha": "TRUE_MULA",
+      "jd_tt": 2634170.0,
+      "mean_deg": 31.571252486399146
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 1976720.0,
+      "mean_deg": 1.1746460122332394
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2049770.0,
+      "mean_deg": 4.062789621718423
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2122820.0,
+      "mean_deg": 6.956475549828525
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2195870.0,
+      "mean_deg": 9.85544458474726
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2268920.0,
+      "mean_deg": 12.759417343424559
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2305445.0,
+      "mean_deg": 14.213188104049607
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2341970.0,
+      "mean_deg": 15.668088192455286
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2378495.0,
+      "mean_deg": 17.12409557780495
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2396757.5,
+      "mean_deg": 17.852498327319267
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2415020.0,
+      "mean_deg": 18.581150551810936
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2433282.5,
+      "mean_deg": 19.31007135864496
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2451545.0,
+      "mean_deg": 20.039235113659004
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2460676.25,
+      "mean_deg": 20.403908735811513
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2469807.5,
+      "mean_deg": 20.768645305013365
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2488070.0,
+      "mean_deg": 21.49828900975467
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2561120.0,
+      "mean_deg": 24.419157478558418
+    },
+    {
+      "ayanamsha": "GALCENT_MULA_WILHELM",
+      "jd_tt": 2634170.0,
+      "mean_deg": 27.34340293346679
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 1465370.0,
+      "mean_deg": 343.0798049942391
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 1538420.0,
+      "mean_deg": 345.84263413796384
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 1611470.0,
+      "mean_deg": 348.60771760252453
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 1684520.0,
+      "mean_deg": 351.3750859475947
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 1757570.0,
+      "mean_deg": 354.144767061191
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 1830620.0,
+      "mean_deg": 356.9167861640858
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 1903670.0,
+      "mean_deg": 359.6911658225968
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 1976720.0,
+      "mean_deg": 2.4679259578566644
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2049770.0,
+      "mean_deg": 5.247083917814564
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2122820.0,
+      "mean_deg": 8.028654443513062
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2195870.0,
+      "mean_deg": 10.812649752213304
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2268920.0,
+      "mean_deg": 13.599079568818354
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2305445.0,
+      "mean_deg": 14.993209786331363
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2341970.0,
+      "mean_deg": 16.38795117165847
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2378495.0,
+      "mean_deg": 17.78330426018755
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2396757.5,
+      "mean_deg": 18.481210320267053
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2415020.0,
+      "mean_deg": 19.179269440464452
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2433282.5,
+      "mean_deg": 19.877481646657714
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2451545.0,
+      "mean_deg": 20.57584695574053
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2460676.25,
+      "mean_deg": 20.925087026699828
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2469807.5,
+      "mean_deg": 21.274365375669902
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2488070.0,
+      "mean_deg": 21.973036905514277
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2561120.0,
+      "mean_deg": 24.769253796936596
+    },
+    {
+      "ayanamsha": "ARYABHATA_522",
+      "jd_tt": 2634170.0,
+      "mean_deg": 27.567918093165247
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 1465370.0,
+      "mean_deg": 347.11963739797824
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 1538420.0,
+      "mean_deg": 349.8824828860621
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 1611470.0,
+      "mean_deg": 352.64758196265865
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 1684520.0,
+      "mean_deg": 355.41496484383146
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 1757570.0,
+      "mean_deg": 358.18465909728104
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 1830620.0,
+      "mean_deg": 0.9566896509177241
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 1903670.0,
+      "mean_deg": 3.7310788095036287
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 1976720.0,
+      "mean_deg": 6.507846257837514
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2049770.0,
+      "mean_deg": 9.287009174196044
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2122820.0,
+      "mean_deg": 12.068582141777313
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.852577272364329
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2268920.0,
+      "mean_deg": 17.639004229867965
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2305445.0,
+      "mean_deg": 19.033132005865923
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2341970.0,
+      "mean_deg": 20.427870277294915
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.823219584868013
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2396757.5,
+      "mean_deg": 22.521123506781294
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2415020.0,
+      "mean_deg": 23.21918032536024
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2433282.5,
+      "mean_deg": 23.917390067963595
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2451545.0,
+      "mean_deg": 24.61575275314533
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2460676.25,
+      "mean_deg": 24.96499145260526
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2469807.5,
+      "mean_deg": 25.314268390701727
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2488070.0,
+      "mean_deg": 26.012936981718326
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.809140599787213
+    },
+    {
+      "ayanamsha": "BABYL_BRITTON",
+      "jd_tt": 2634170.0,
+      "mean_deg": 31.60778932615881
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 1976720.0,
+      "mean_deg": 7.111169841595384
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2049770.0,
+      "mean_deg": 9.892699186036381
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2122820.0,
+      "mean_deg": 12.676640587403298
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2195870.0,
+      "mean_deg": 15.462998604123584
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2268920.0,
+      "mean_deg": 18.25178749189591
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2305445.0,
+      "mean_deg": 19.647093060891365
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2341970.0,
+      "mean_deg": 21.043020856719053
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2378495.0,
+      "mean_deg": 22.439548829495877
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2396757.5,
+      "mean_deg": 23.138040143721952
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2415020.0,
+      "mean_deg": 23.83669604944801
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2433282.5,
+      "mean_deg": 24.53549542616244
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2451545.0,
+      "mean_deg": 25.234449439690223
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2460676.25,
+      "mean_deg": 25.583985234322796
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2469807.5,
+      "mean_deg": 25.933556298551252
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2488070.0,
+      "mean_deg": 26.63281528477725
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2561120.0,
+      "mean_deg": 29.431392102867164
+    },
+    {
+      "ayanamsha": "TRUE_SHEORAN",
+      "jd_tt": 2634170.0,
+      "mean_deg": 32.232424122792565
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 1976720.0,
+      "mean_deg": 338.7398254459333
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2049770.0,
+      "mean_deg": 341.51859954513134
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2122820.0,
+      "mean_deg": 344.2998235895857
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2195870.0,
+      "mean_deg": 347.0835181007966
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2268920.0,
+      "mean_deg": 349.86969709930986
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2305445.0,
+      "mean_deg": 351.2637214788455
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2341970.0,
+      "mean_deg": 352.6583614796593
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2378495.0,
+      "mean_deg": 354.0536345643207
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2396757.5,
+      "mean_deg": 354.75150517370633
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2415020.0,
+      "mean_deg": 355.4495225035121
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2433282.5,
+      "mean_deg": 356.14770985982915
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2451545.0,
+      "mean_deg": 356.8460477169921
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2460676.25,
+      "mean_deg": 357.1952752647353
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2469807.5,
+      "mean_deg": 357.5445444405418
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2488070.0,
+      "mean_deg": 358.2431927490289
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2561120.0,
+      "mean_deg": 1.0393645188233904
+    },
+    {
+      "ayanamsha": "GALCENT_COCHRANE",
+      "jd_tt": 2634170.0,
+      "mean_deg": 3.838031180254461
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 1465370.0,
+      "mean_deg": 347.50438181955957
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 1538420.0,
+      "mean_deg": 350.26716306625593
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 1611470.0,
+      "mean_deg": 353.03219803082413
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 1684520.0,
+      "mean_deg": 355.79951833578747
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 1757570.0,
+      "mean_deg": 358.56915289451183
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 1830620.0,
+      "mean_deg": 1.341127902723104
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 1903670.0,
+      "mean_deg": 4.115466838985536
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 1976720.0,
+      "mean_deg": 6.892190473557706
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2049770.0,
+      "mean_deg": 9.671316884968173
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2122820.0,
+      "mean_deg": 12.452861483585721
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2195870.0,
+      "mean_deg": 15.236837041399511
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2268920.0,
+      "mean_deg": 18.02325372717054
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2305445.0,
+      "mean_deg": 19.417379968635423
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2341970.0,
+      "mean_deg": 20.81211914607144
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2378495.0,
+      "mean_deg": 22.207471816656117
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2396757.5,
+      "mean_deg": 22.90537834366369
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2415020.0,
+      "mean_deg": 23.60343838289468
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2433282.5,
+      "mean_deg": 24.301651960737306
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2451545.0,
+      "mean_deg": 25.00001909409866
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2460676.25,
+      "mean_deg": 25.349260246801407
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2469807.5,
+      "mean_deg": 25.698539790451775
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2488070.0,
+      "mean_deg": 26.39721404788287
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2561120.0,
+      "mean_deg": 29.19344632421695
+    },
+    {
+      "ayanamsha": "GALEQU_FIORENZA",
+      "jd_tt": 2634170.0,
+      "mean_deg": 31.992133016192724
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 1465370.0,
+      "mean_deg": 345.2995106861344
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 1538420.0,
+      "mean_deg": 348.0623515769686
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 1611470.0,
+      "mean_deg": 350.8274463160147
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 1684520.0,
+      "mean_deg": 353.5948252156456
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 1757570.0,
+      "mean_deg": 356.3645159326594
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 1830620.0,
+      "mean_deg": 359.13654347568524
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 1903670.0,
+      "mean_deg": 1.910930220751709
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 1976720.0,
+      "mean_deg": 4.687695916556663
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2049770.0,
+      "mean_deg": 7.466857784851584
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2122820.0,
+      "mean_deg": 10.248430449477269
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2195870.0,
+      "mean_deg": 13.032426047237436
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2268920.0,
+      "mean_deg": 15.818854254058579
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2305445.0,
+      "mean_deg": 17.212982948145452
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2341970.0,
+      "mean_deg": 18.607722331675348
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2378495.0,
+      "mean_deg": 20.003072943105792
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2396757.5,
+      "mean_deg": 20.700977587922466
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2415020.0,
+      "mean_deg": 21.399035176118957
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2433282.5,
+      "mean_deg": 22.09724573453741
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2451545.0,
+      "mean_deg": 22.795609281163593
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2460676.25,
+      "mean_deg": 23.144848428265163
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2469807.5,
+      "mean_deg": 23.494125825174365
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2488070.0,
+      "mean_deg": 24.192795366984967
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2561120.0,
+      "mean_deg": 26.98900321645766
+    },
+    {
+      "ayanamsha": "VALENS_MOON",
+      "jd_tt": 2634170.0,
+      "mean_deg": 29.787656817083075
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 1465370.0,
+      "mean_deg": 346.3466509988934
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 1538420.0,
+      "mean_deg": 349.1094353962136
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 1611470.0,
+      "mean_deg": 351.8744736786192
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 1684520.0,
+      "mean_deg": 354.64179739420763
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 1757570.0,
+      "mean_deg": 357.4114353831038
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 1830620.0,
+      "mean_deg": 0.18341376988555855
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 1903670.0,
+      "mean_deg": 2.9577559649445044
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 1976720.0,
+      "mean_deg": 5.734482674188878
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2049770.0,
+      "mean_deg": 8.51361191642062
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2122820.0,
+      "mean_deg": 11.295159047653014
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.07913679157525
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2268920.0,
+      "mean_deg": 16.86555527531736
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2305445.0,
+      "mean_deg": 18.25968225916355
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2341970.0,
+      "mean_deg": 19.654422069625113
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.04977526077572
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2396757.5,
+      "mean_deg": 21.747682005060845
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2415020.0,
+      "mean_deg": 22.445742232518338
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2433282.5,
+      "mean_deg": 23.14395596929097
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2451545.0,
+      "mean_deg": 23.84232323207283
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2460676.25,
+      "mean_deg": 24.19156443836215
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2469807.5,
+      "mean_deg": 24.540844028156528
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2488070.0,
+      "mean_deg": 25.23951835548047
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.03575061121063
+    },
+    {
+      "ayanamsha": "LAHIRI_1940",
+      "jd_tt": 2634170.0,
+      "mean_deg": 30.83443680196376
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 1465370.0,
+      "mean_deg": 346.3674007358088
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 1538420.0,
+      "mean_deg": 349.1302374091352
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 1611470.0,
+      "mean_deg": 351.8953281308476
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 1684520.0,
+      "mean_deg": 354.66270330184886
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 1757570.0,
+      "mean_deg": 357.432390661324
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 1830620.0,
+      "mean_deg": 0.20441529307385053
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 1903670.0,
+      "mean_deg": 2.9787996400922907
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 1976720.0,
+      "mean_deg": 5.755563526643414
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2049770.0,
+      "mean_deg": 8.534724187027848
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2122820.0,
+      "mean_deg": 11.316296300170336
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.100292029110676
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2268920.0,
+      "mean_deg": 16.886721064439257
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2305445.0,
+      "mean_deg": 18.28085043562038
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2341970.0,
+      "mean_deg": 19.675590670687825
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.070942306569407
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2396757.5,
+      "mean_deg": 21.76884752777022
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2415020.0,
+      "mean_deg": 22.46690573466458
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2433282.5,
+      "mean_deg": 23.16511695369212
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2451545.0,
+      "mean_deg": 23.863481202389664
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2460676.25,
+      "mean_deg": 24.212720715922217
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2469807.5,
+      "mean_deg": 24.561998489438736
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2488070.0,
+      "mean_deg": 25.26066881471297
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.0568801898728
+    },
+    {
+      "ayanamsha": "LAHIRI_VP285",
+      "jd_tt": 2634170.0,
+      "mean_deg": 30.85553790793699
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 1465370.0,
+      "mean_deg": 346.2842853598028
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 1538420.0,
+      "mean_deg": 349.0471218447132
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 1611470.0,
+      "mean_deg": 351.8122123861345
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 1684520.0,
+      "mean_deg": 354.57958738893
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 1757570.0,
+      "mean_deg": 357.349274595981
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 1830620.0,
+      "mean_deg": 0.1212990944720218
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 1903670.0,
+      "mean_deg": 2.8956833304238785
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 1976720.0,
+      "mean_deg": 5.672447130730461
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2049770.0,
+      "mean_deg": 8.451607731888998
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2122820.0,
+      "mean_deg": 11.23317981455682
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.017175543016776
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2268920.0,
+      "mean_deg": 16.803604608592423
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2305445.0,
+      "mean_deg": 18.197734006506153
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2341970.0,
+      "mean_deg": 19.592474276025428
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2378495.0,
+      "mean_deg": 20.98782595402122
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2396757.5,
+      "mean_deg": 21.685731199125712
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2415020.0,
+      "mean_deg": 22.38378943180294
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2433282.5,
+      "mean_deg": 23.082000678475993
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2451545.0,
+      "mean_deg": 23.780364956663277
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2460676.25,
+      "mean_deg": 24.129604485626032
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2469807.5,
+      "mean_deg": 24.47888227502574
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2488070.0,
+      "mean_deg": 25.177552633414393
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2561120.0,
+      "mean_deg": 27.973764158518748
+    },
+    {
+      "ayanamsha": "KRISHNAMURTI_VP291",
+      "jd_tt": 2634170.0,
+      "mean_deg": 30.77242205301195
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 1465370.0,
+      "mean_deg": 346.3611362957271
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 1538420.0,
+      "mean_deg": 349.1239189179636
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 1611470.0,
+      "mean_deg": 351.88895533354207
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 1684520.0,
+      "mean_deg": 354.6562771323795
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 1757570.0,
+      "mean_deg": 357.42591319572955
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 1830620.0,
+      "mean_deg": 0.1978896880985055
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 1903670.0,
+      "mean_deg": 2.9722300581102212
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 1976720.0,
+      "mean_deg": 5.748955047734034
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2049770.0,
+      "mean_deg": 8.528082709212322
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2122820.0,
+      "mean_deg": 11.309628428959353
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2195870.0,
+      "mean_deg": 14.093604957642668
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2268920.0,
+      "mean_deg": 16.880022445604897
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2305445.0,
+      "mean_deg": 18.274149020008007
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2341970.0,
+      "mean_deg": 19.668888482739785
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2378495.0,
+      "mean_deg": 21.064241389591135
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2396757.5,
+      "mean_deg": 21.762148015972574
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2415020.0,
+      "mean_deg": 22.460208141899628
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2433282.5,
+      "mean_deg": 23.158421793649424
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2451545.0,
+      "mean_deg": 23.856788988032122
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2460676.25,
+      "mean_deg": 24.206030166386995
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2469807.5,
+      "mean_deg": 24.555309732438047
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2488070.0,
+      "mean_deg": 25.253984024885085
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2561120.0,
+      "mean_deg": 28.050216310051496
+    },
+    {
+      "ayanamsha": "LAHIRI_ICRC",
+      "jd_tt": 2634170.0,
+      "mean_deg": 30.848902800559074
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "schema": "teistro-conformance/baseline-chart/1",
+  "id": "c043--sunrise-geometric",
+  "chart": "c043",
+  "title": "Fairbanks 2015-06-21 01:00:00",
+  "tags": ["high-latitude", "dst"],
+  "why": "64.8°N at the June solstice",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "ephemeris": {
+      "library": "Swiss Ephemeris",
+      "library_version": "2.10.03",
+      "binding": "sweph 2.10.3-5",
+      "files": {
+        "sepl_18.se1": "ca1393ceab3a44fbc895887cf789c68819ae6a1cbc9b22225872dbe4ccd99a66",
+        "semo_18.se1": "1ca07bd67c24374d77226180c20a4f9996cba013697894810518e7eb582ca4f7",
+        "seas_18.se1": "a2cd8fc33807c78ca9a700c91c2e042258b12fc4796519e00781440b5ad8b2e2"
+      },
+      "file_range_years": [1800, 2399],
+      "calc_flags": "SEFLG_SWIEPH | SEFLG_SPEED | SEFLG_SIDEREAL (+ SEFLG_TOPOCTR when topocentric)",
+      "delta_t": "library default (swe_deltat)"
+    },
+    "time_zones": {
+      "tzdb": "2026a",
+      "icu": "78.3",
+      "geo_tz": "8.1.8",
+      "date_fns_tz": "3.2.0"
+    },
+    "runtime": {
+      "node": "26.8.1",
+      "decimal_js": "10.6.0"
+    },
+    "conventions": {
+      "angles": "degrees, f64 as computed, no rounding; sidereal unless named tropical",
+      "instants": "Julian Day in UT (UT1 as the library defines it); dates as ISO-8601 UTC strings",
+      "sign_index": "0 = Aries",
+      "nakshatra_index": "0 = Ashwini",
+      "pada": "1 to 4",
+      "house": "1 to 12, whole-sign from the Lagna sign unless named",
+      "weekday_swe": "0 = Monday to 6 = Sunday (swe_day_of_week)",
+      "dasha_year_days": 365.25,
+      "classification": "decimal.js division of the f64 longitude, floor, lower-inclusive boundaries"
+    }
+  },
+  "input": {
+    "place": {
+      "name": "Fairbanks",
+      "country": "US",
+      "latitude": 64.8378,
+      "longitude": -147.7164,
+      "altitude_m": 136
+    },
+    "local": {
+      "calendar": "gregorian",
+      "date": "2015-06-21",
+      "time": "01:00:00",
+      "is_lmt": false,
+      "dst_choice": null
+    },
+    "search": null,
+    "resolved": {
+      "utc": "2015-06-21T09:00:00.000Z",
+      "jd_ut": 2457194.875,
+      "tz_offset_min": -480,
+      "iana": "America/Anchorage",
+      "tz_source": "iana",
+      "tz_era": "current",
+      "warnings": []
+    }
+  },
+  "settings": {
+    "profile": "sunrise-geometric",
+    "ayanamsha": "lahiri",
+    "ayanamsha_id": 1,
+    "zodiac": "sidereal",
+    "house_system": "whole-sign",
+    "siddhanta": "drik",
+    "node": "mean",
+    "sunrise_mode": "geometric",
+    "dasha_balance": "spatial",
+    "dasha_max_level": 3,
+    "chara_karaka": 8,
+    "ekadhipatya": "classical",
+    "topocentric": true,
+    "surya_bija": null
+  },
+  "settings_hash": {
+    "algorithm": "sha256 of the canonical string, first 16 hex characters",
+    "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=geometric|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+    "value": "7235179ed952f83f"
+  },
+  "sections": ["foundation"],
+  "foundation": {
+    "jd_ut": 2457194.875,
+    "delta_t_days": 0.0007852819872733437,
+    "ayanamsha": {
+      "id": 1,
+      "key": "lahiri",
+      "value_deg": 24.073733048842783
+    },
+    "ephemeris_source": "swiss-ephemeris",
+    "tz_offset_min": -480,
+    "local_civil_date": "2015-06-21",
+    "sunrise": {
+      "sunrise_jd": 2457194.9745436525,
+      "sunset_jd": 2457195.8485959405,
+      "day_duration_hours": 20.977254912257195,
+      "night_duration_hours": 3.0227450877428055
+    },
+    "previous_day": {
+      "sunrise_jd": 2457193.9744822998,
+      "sunset_jd": 2457194.848463221,
+      "day_duration_hours": 20.97554210945964,
+      "night_duration_hours": 3.0244578905403614
+    },
+    "next_day": {
+      "sunrise_jd": 2457195.974729937,
+      "sunset_jd": 2457196.848602616,
+      "day_duration_hours": 20.972944300621748,
+      "night_duration_hours": 3.027055699378252
+    },
+    "lagna_sunrise_jd": 2457193.9744822998,
+    "lagna": {
+      "sidereal_longitude_deg": 257.0173307248334,
+      "sign_index": 8
+    },
+    "panchanga_day": {
+      "kind": "pre-sunrise",
+      "arc_start_jd": 2457194.848463221,
+      "arc_end_jd": 2457194.9745436525,
+      "weekday_swe": 6
+    },
+    "is_day_birth": false,
+    "hora_lord": "SUN",
+    "abda_lord": "MARS",
+    "upagrahas": [
+      {
+        "key": "DHUMA",
+        "sidereal_longitude_deg": 198.9558027955864,
+        "sign_index": 6,
+        "house": 11
+      },
+      {
+        "key": "VYATIPATA",
+        "sidereal_longitude_deg": 161.0441972044136,
+        "sign_index": 5,
+        "house": 10
+      },
+      {
+        "key": "PARIVESH",
+        "sidereal_longitude_deg": 341.0441972044136,
+        "sign_index": 11,
+        "house": 4
+      },
+      {
+        "key": "INDRACHAPA",
+        "sidereal_longitude_deg": 18.955802795586408,
+        "sign_index": 0,
+        "house": 5
+      },
+      {
+        "key": "UPAKETU",
+        "sidereal_longitude_deg": 35.622469462253406,
+        "sign_index": 1,
+        "house": 6
+      },
+      {
+        "key": "MANDI",
+        "sidereal_longitude_deg": 278.2336258130583,
+        "sign_index": 9,
+        "house": 2
+      },
+      {
+        "key": "GULIKA",
+        "sidereal_longitude_deg": 260.32397052513807,
+        "sign_index": 8,
+        "house": 1
+      }
+    ],
+    "arudha_lagna_sign_index": 10,
+    "navamsha_lagna_sign_index": 5,
+    "birth_timing": {
+      "ishtakaal": {
+        "civil": {
+          "ghati": 54,
+          "pala": 1
+        },
+        "proportional": {
+          "ghati": 36,
+          "pala": 19
+        },
+        "hours_after_sunrise": 21.612424805760384
+      },
+      "bhayat": {
+        "ghati": 9,
+        "pala": 18
+      },
+      "bhabhoga": {
+        "ghati": 66,
+        "pala": 43
+      },
+      "elapsed_fraction": 0.13926885374121695,
+      "day_duration_hours": 20.977254912257195,
+      "night_duration_hours": 3.0227450877428055
+    },
+    "calculation_version": {
+      "engine_version": "1.8.0",
+      "swisseph_version": "2.10.03",
+      "ayanamsa_value": 24.073733048842783,
+      "ephemeris_source": "swiss-ephemeris",
+      "profile_hash": "7235179ed952f83f"
+    }
+  }
+}

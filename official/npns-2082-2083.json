@@ -1,0 +1,517 @@
+{
+ "schema": "teistro-conformance/official-panchanga/1",
+ "publisher": "Nepal Panchanga Nirnayak Bikas Samiti (the national panchanga committee), Government of Nepal",
+ "documents": [
+  {
+   "bs_year": 2082,
+   "title": "Rashtriya Panchangam BS 2082",
+   "page_url": "https://npns.gov.np/pages/the-year-of-2082-bs-3/",
+   "file_url": "https://giwmscdnone.gov.np/media/pages/files/npnbs_2082_ussfian.pdf",
+   "pages": 26,
+   "retrieved": "2026-09-05"
+  },
+  {
+   "bs_year": 2083,
+   "title": "Rashtriya Panchangam BS 2083",
+   "page_url": "https://npns.gov.np/pages/panchanga-of-the-year-2083-5/",
+   "file_url": "https://giwmscdnone.gov.np/media/pages/files/FORMAT-2083-A_7f75xmb.pdf",
+   "pages": 27,
+   "retrieved": "2026-09-05"
+  }
+ ],
+ "how_read": "The PDFs carry no text layer; every value here was read from the page images at 250 dpi and each sankranti line was read twice at two magnifications. Times are Nepal time (+05:45) as printed, hours running past 24 for the small hours after the printed day's midnight, the panchanga day beginning at sunrise. Positions are sidereal, printed as sign:degree:minute:second in the committee's own frame.",
+ "place": {
+  "name": "Kathmandu",
+  "latitude_deg": 27.7172,
+  "longitude_deg": 85.324
+ },
+ "clock": "+05:45",
+ "sankrantis": [
+  {
+   "bs_year": 2082,
+   "printed_month": 1,
+   "printed_gate": 1,
+   "printed_time": "5:51",
+   "sign": "MESHA",
+   "sign_index": 0,
+   "page": 2
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 1,
+   "printed_gate": 31,
+   "printed_time": "28:17",
+   "sign": "VRISHABHA",
+   "sign_index": 1,
+   "page": 4
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 3,
+   "printed_gate": 1,
+   "printed_time": "14:22",
+   "sign": "MITHUNA",
+   "sign_index": 2,
+   "page": 6
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 4,
+   "printed_gate": 1,
+   "printed_time": "5:50",
+   "sign": "KARKA",
+   "sign_index": 3,
+   "page": 8
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 5,
+   "printed_gate": 1,
+   "printed_time": "17:15",
+   "sign": "SIMHA",
+   "sign_index": 4,
+   "page": 10
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 6,
+   "printed_gate": 1,
+   "printed_time": "17:43",
+   "sign": "KANYA",
+   "sign_index": 5,
+   "page": 12
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 6,
+   "printed_gate": 31,
+   "printed_time": "28:19",
+   "sign": "TULA",
+   "sign_index": 6,
+   "page": 14
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 7,
+   "printed_gate": 30,
+   "printed_time": "25:46",
+   "sign": "VRISHCHIKA",
+   "sign_index": 7,
+   "page": 16
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 9,
+   "printed_gate": 1,
+   "printed_time": "13:33",
+   "sign": "DHANU",
+   "sign_index": 8,
+   "page": 18
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 9,
+   "printed_gate": 30,
+   "printed_time": "21:10",
+   "sign": "MAKARA",
+   "sign_index": 9,
+   "page": 20
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 11,
+   "printed_gate": 1,
+   "printed_time": "7:55",
+   "sign": "KUMBHA",
+   "sign_index": 10,
+   "page": 22
+  },
+  {
+   "bs_year": 2082,
+   "printed_month": 11,
+   "printed_gate": 30,
+   "printed_time": "27:36",
+   "sign": "MEENA",
+   "sign_index": 11,
+   "page": 24
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 1,
+   "printed_gate": 1,
+   "printed_time": "12:04",
+   "sign": "MESHA",
+   "sign_index": 0,
+   "page": 2
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 2,
+   "printed_gate": 1,
+   "printed_time": "10:30",
+   "sign": "VRISHABHA",
+   "sign_index": 1,
+   "page": 4
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 3,
+   "printed_gate": 1,
+   "printed_time": "20:35",
+   "sign": "MITHUNA",
+   "sign_index": 2,
+   "page": 6
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 4,
+   "printed_gate": 1,
+   "printed_time": "12:03",
+   "sign": "KARKA",
+   "sign_index": 3,
+   "page": 9
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 5,
+   "printed_gate": 1,
+   "printed_time": "23:28",
+   "sign": "SIMHA",
+   "sign_index": 4,
+   "page": 11
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 6,
+   "printed_gate": 1,
+   "printed_time": "23:55",
+   "sign": "KANYA",
+   "sign_index": 5,
+   "page": 13
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 7,
+   "printed_gate": 1,
+   "printed_time": "10:32",
+   "sign": "TULA",
+   "sign_index": 6,
+   "page": 15
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 8,
+   "printed_gate": 1,
+   "printed_time": "7:59",
+   "sign": "VRISHCHIKA",
+   "sign_index": 7,
+   "page": 17
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 9,
+   "printed_gate": 1,
+   "printed_time": "19:45",
+   "sign": "DHANU",
+   "sign_index": 8,
+   "page": 19
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 9,
+   "printed_gate": 30,
+   "printed_time": "27:23",
+   "sign": "MAKARA",
+   "sign_index": 9,
+   "page": 21
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 11,
+   "printed_gate": 1,
+   "printed_time": "14:07",
+   "sign": "KUMBHA",
+   "sign_index": 10,
+   "page": 23
+  },
+  {
+   "bs_year": 2083,
+   "printed_month": 12,
+   "printed_gate": 1,
+   "printed_time": "9:48",
+   "sign": "MEENA",
+   "sign_index": 11,
+   "page": 25
+  }
+ ],
+ "planets_at_sunrise": [
+  {
+   "bs_year": 2082,
+   "bs_month": 1,
+   "gate": 1,
+   "gregorian": "2025-04-14",
+   "sunrise": "05:43",
+   "velantara_min_sec": "+1:19",
+   "page": 2,
+   "positions": {
+    "SUN": "11:29:59:39",
+    "MOON": "6:11:24:37",
+    "MARS": "3:4:33:34",
+    "MERCURY": "11:5:59:23",
+    "JUPITER": "1:24:7:9",
+    "VENUS": "11:1:21:24",
+    "SATURN": "11:1:47:21",
+    "RAHU": "11:1:49:2"
+   }
+  },
+  {
+   "bs_year": 2082,
+   "bs_month": 1,
+   "gate": 15,
+   "gregorian": "2025-04-28",
+   "sunrise": null,
+   "velantara_min_sec": "-1:32",
+   "page": 3,
+   "positions": {
+    "SUN": "0:13:37:48",
+    "MOON": "0:15:52:16",
+    "MARS": "3:10:38:54",
+    "MERCURY": "11:17:38:2",
+    "JUPITER": "1:26:40:16",
+    "VENUS": "11:4:37:29",
+    "SATURN": "11:3:15:55",
+    "RAHU": "11:1:4:31"
+   }
+  },
+  {
+   "bs_year": 2083,
+   "bs_month": 1,
+   "gate": 1,
+   "gregorian": "2026-04-14",
+   "sunrise": "05:43",
+   "velantara_min_sec": "+1:22",
+   "page": 2,
+   "positions": {
+    "SUN": "11:29:44:27",
+    "MOON": "10:15:40:15",
+    "MARS": "11:9:0:57",
+    "MERCURY": "11:4:17:57",
+    "JUPITER": "2:22:35:19",
+    "VENUS": "0:23:28:53",
+    "SATURN": "11:12:51:8",
+    "RAHU": "10:12:28:28"
+   }
+  },
+  {
+   "bs_year": 2083,
+   "bs_month": 6,
+   "gate": 1,
+   "gregorian": "2026-09-17",
+   "sunrise": null,
+   "velantara_min_sec": "-6:22",
+   "page": 13,
+   "positions": {
+    "SUN": "4:29:15:52",
+    "MOON": "7:9:6:42",
+    "MARS": "2:28:53:50",
+    "MERCURY": "5:16:33:30",
+    "JUPITER": "3:22:51:18",
+    "VENUS": "6:9:10:14",
+    "SATURN": "11:18:16:24",
+    "RAHU": "10:4:12:27"
+   }
+  }
+ ],
+ "day_arcs": [
+  {
+   "gregorian": "2026-04-14",
+   "sunrise": "05:43",
+   "sunset": "18:27",
+   "page": 2
+  },
+  {
+   "gregorian": "2026-04-15",
+   "sunrise": "05:42",
+   "sunset": "18:28",
+   "page": 2
+  },
+  {
+   "gregorian": "2026-04-16",
+   "sunrise": "05:41",
+   "sunset": "18:28",
+   "page": 2
+  },
+  {
+   "gregorian": "2026-04-17",
+   "sunrise": "05:40",
+   "sunset": "18:29",
+   "page": 2
+  },
+  {
+   "gregorian": "2026-04-18",
+   "sunrise": "05:39",
+   "sunset": "18:30",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-19",
+   "sunrise": "05:38",
+   "sunset": "18:30",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-20",
+   "sunrise": "05:37",
+   "sunset": "18:31",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-21",
+   "sunrise": "05:36",
+   "sunset": "18:31",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-22",
+   "sunrise": "05:35",
+   "sunset": "18:32",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-23",
+   "sunrise": "05:34",
+   "sunset": "18:32",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-24",
+   "sunrise": "05:33",
+   "sunset": "18:33",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-25",
+   "sunrise": "05:32",
+   "sunset": "18:33",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-26",
+   "sunrise": "05:31",
+   "sunset": "18:34",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-27",
+   "sunrise": "05:30",
+   "sunset": "18:34",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-28",
+   "sunrise": "05:29",
+   "sunset": "18:35",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-29",
+   "sunrise": "05:29",
+   "sunset": "18:35",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-04-30",
+   "sunrise": "05:28",
+   "sunset": "18:36",
+   "page": 3
+  },
+  {
+   "gregorian": "2026-05-01",
+   "sunrise": "05:27",
+   "sunset": "18:37",
+   "page": 3
+  },
+  {
+   "gregorian": "2025-04-14",
+   "sunrise": "05:43",
+   "sunset": "18:28",
+   "page": 2
+  },
+  {
+   "gregorian": "2025-04-15",
+   "sunrise": "05:41",
+   "sunset": "18:28",
+   "page": 2
+  },
+  {
+   "gregorian": "2025-04-16",
+   "sunrise": "05:40",
+   "sunset": "18:29",
+   "page": 2
+  },
+  {
+   "gregorian": "2025-04-17",
+   "sunrise": "05:39",
+   "sunset": "18:29",
+   "page": 2
+  }
+ ],
+ "tithi_ends": [
+  {
+   "gregorian": "2025-04-14",
+   "tithi": "krishna 1",
+   "elongation_deg": 192,
+   "time": "06:59",
+   "page": 2
+  },
+  {
+   "gregorian": "2025-04-15",
+   "tithi": "krishna 2",
+   "elongation_deg": 204,
+   "time": "09:02",
+   "page": 2
+  },
+  {
+   "gregorian": "2025-04-16",
+   "tithi": "krishna 3",
+   "elongation_deg": 216,
+   "time": "10:55",
+   "page": 2
+  },
+  {
+   "gregorian": "2025-04-17",
+   "tithi": "krishna 4",
+   "elongation_deg": 228,
+   "time": "12:30",
+   "page": 2
+  },
+  {
+   "gregorian": "2026-04-14",
+   "tithi": "krishna 12",
+   "elongation_deg": 324,
+   "time": "21:32",
+   "page": 2
+  },
+  {
+   "gregorian": "2026-04-15",
+   "tithi": "krishna 13",
+   "elongation_deg": 336,
+   "time": "20:40",
+   "page": 2
+  },
+  {
+   "gregorian": "2026-04-16",
+   "tithi": "krishna 14",
+   "elongation_deg": 348,
+   "time": "19:22",
+   "page": 2
+  },
+  {
+   "gregorian": "2026-04-17",
+   "tithi": "amavasya",
+   "elongation_deg": 360,
+   "time": "17:42",
+   "page": 2
+  }
+ ]
+}

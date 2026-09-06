@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/report.schema.json",
+  "title": "A conformance report",
+  "description": "What a runner emits: one implementation's score against one version of this corpus. A report says which corpus, which implementation, which fields were compared and by how much each missed, so that a score can be argued with rather than only quoted.",
+  "type": "object",
+  "required": ["schema", "corpus", "implementation", "results"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "teistro-conformance/report/1" },
+    "corpus": {
+      "type": "object",
+      "required": ["version", "commit"],
+      "properties": {
+        "version": { "type": "string", "description": "The corpus release the run was made against." },
+        "commit": { "type": "string", "pattern": "^[0-9a-f]{7,40}$" }
+      }
+    },
+    "implementation": {
+      "type": "object",
+      "required": ["name", "version", "provider_class"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "binding": { "type": "string", "description": "Which binding was run, where an implementation has more than one." },
+        "provider_class": { "type": "string", "description": "A key of `provider_classes` in tolerances.json." },
+        "platform": { "type": "string" },
+        "settings_hash": { "type": "string" }
+      }
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["fixture", "outcome"],
+        "properties": {
+          "fixture": { "type": "string" },
+          "outcome": {
+            "enum": ["pass", "fail", "skip"],
+            "description": "`skip` needs a reason: an implementation that skips a fixture has not passed it."
+          },
+          "reason": { "type": "string" },
+          "fields": {
+            "type": "array",
+            "description": "Every field compared, and by how much it missed. A passing field is reported too: a report that lists only failures cannot be told from a report that compared nothing.",
+            "items": {
+              "type": "object",
+              "required": ["path", "expected", "found", "within"],
+              "properties": {
+                "path": { "type": "string" },
+                "expected": {},
+                "found": {},
+                "difference": { "type": "number" },
+                "tolerance": { "type": "number" },
+                "within": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "properties": {
+        "passed": { "type": "integer", "minimum": 0 },
+        "failed": { "type": "integer", "minimum": 0 },
+        "skipped": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

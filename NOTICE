@@ -1,0 +1,27 @@
+Teistro Conformance
+Copyright and related rights waived via CC0-1.0 (see LICENSE).
+
+The dedication covers this compilation: the arrangement, the schemas, the
+manifests, the tolerance bands and the prose. The recorded values
+themselves are measurements and dates — facts about where a body was and
+when a moment fell — which no one owns.
+
+Where each corpus came from is recorded in corpus.json and in each file's
+own `provenance`:
+
+- baseline/  Recorded from an established open-source astrology engine
+             (version 1.8.0) computing over Swiss Ephemeris 2.10.03 with
+             its public data files. The engine and the ephemeris library
+             are under their own terms and no part of either is
+             reproduced here: what is here is the numbers they produced
+             for the inputs stated beside them.
+
+- official/  Read from the Rashtriya Panchangam for BS 2082 and 2083
+             published by Nepal's national panchanga committee at
+             npns.gov.np. The file records the document URLs, the page
+             numbers and the date they were read. The published pages
+             carry no text layer, so each line was read at two
+             magnifications; the values are the committee's, transcribed.
+
+- teimeris/  Recorded from Teimeris 0.1.0, an implementation of the
+             Swiss Ephemeris algorithms, in its corrected profile.

@@ -1,0 +1,1936 @@
+{
+  "schema": "teistro-conformance/baseline-chart/1",
+  "id": "c009--fagan-bradley",
+  "chart": "c009",
+  "title": "Mumbai 1969-07-20 21:17:00",
+  "tags": ["india"],
+  "why": "an ordinary evening birth",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "ephemeris": {
+      "library": "Swiss Ephemeris",
+      "library_version": "2.10.03",
+      "binding": "sweph 2.10.3-5",
+      "files": {
+        "sepl_18.se1": "ca1393ceab3a44fbc895887cf789c68819ae6a1cbc9b22225872dbe4ccd99a66",
+        "semo_18.se1": "1ca07bd67c24374d77226180c20a4f9996cba013697894810518e7eb582ca4f7",
+        "seas_18.se1": "a2cd8fc33807c78ca9a700c91c2e042258b12fc4796519e00781440b5ad8b2e2"
+      },
+      "file_range_years": [1800, 2399],
+      "calc_flags": "SEFLG_SWIEPH | SEFLG_SPEED | SEFLG_SIDEREAL (+ SEFLG_TOPOCTR when topocentric)",
+      "delta_t": "library default (swe_deltat)"
+    },
+    "time_zones": {
+      "tzdb": "2026a",
+      "icu": "78.3",
+      "geo_tz": "8.1.8",
+      "date_fns_tz": "3.2.0"
+    },
+    "runtime": {
+      "node": "26.8.1",
+      "decimal_js": "10.6.0"
+    },
+    "conventions": {
+      "angles": "degrees, f64 as computed, no rounding; sidereal unless named tropical",
+      "instants": "Julian Day in UT (UT1 as the library defines it); dates as ISO-8601 UTC strings",
+      "sign_index": "0 = Aries",
+      "nakshatra_index": "0 = Ashwini",
+      "pada": "1 to 4",
+      "house": "1 to 12, whole-sign from the Lagna sign unless named",
+      "weekday_swe": "0 = Monday to 6 = Sunday (swe_day_of_week)",
+      "dasha_year_days": 365.25,
+      "classification": "decimal.js division of the f64 longitude, floor, lower-inclusive boundaries"
+    }
+  },
+  "input": {
+    "place": {
+      "name": "Mumbai",
+      "country": "IN",
+      "latitude": 19.076,
+      "longitude": 72.8777,
+      "altitude_m": 14
+    },
+    "local": {
+      "calendar": "gregorian",
+      "date": "1969-07-20",
+      "time": "21:17:00",
+      "is_lmt": false,
+      "dst_choice": null
+    },
+    "search": null,
+    "resolved": {
+      "utc": "1969-07-20T15:47:00.000Z",
+      "jd_ut": 2440423.157638889,
+      "tz_offset_min": 330,
+      "iana": "Asia/Kolkata",
+      "tz_source": "iana",
+      "tz_era": "current",
+      "warnings": []
+    }
+  },
+  "settings": {
+    "profile": "fagan-bradley",
+    "ayanamsha": "fagan-bradley",
+    "ayanamsha_id": 0,
+    "zodiac": "sidereal",
+    "house_system": "whole-sign",
+    "siddhanta": "drik",
+    "node": "mean",
+    "sunrise_mode": "apparent-refraction",
+    "dasha_balance": "spatial",
+    "dasha_max_level": 3,
+    "chara_karaka": 8,
+    "ekadhipatya": "classical",
+    "topocentric": true,
+    "surya_bija": null
+  },
+  "settings_hash": {
+    "algorithm": "sha256 of the canonical string, first 16 hex characters",
+    "canonical": "ayanamsaId=0|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=whole-sign|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+    "value": "67259a5f2043382a"
+  },
+  "sections": ["foundation", "positions", "houses", "vargas", "panchanga", "panchanga_day", "dashas"],
+  "foundation": {
+    "jd_ut": 2440423.157638889,
+    "delta_t_days": 0.00045990785783527836,
+    "ayanamsha": {
+      "id": 0,
+      "key": "fagan-bradley",
+      "value_deg": 24.315704672151664
+    },
+    "ephemeris_source": "swiss-ephemeris",
+    "tz_offset_min": 330,
+    "local_civil_date": "1969-07-20",
+    "sunrise": {
+      "sunrise_jd": 2440422.528353295,
+      "sunset_jd": 2440423.0753328027,
+      "day_duration_hours": 13.12750818952918,
+      "night_duration_hours": 10.87249181047082
+    },
+    "previous_day": {
+      "sunrise_jd": 2440421.528100571,
+      "sunset_jd": 2440422.075498742,
+      "day_duration_hours": 13.137556102126837,
+      "night_duration_hours": 10.862443897873163
+    },
+    "next_day": {
+      "sunrise_jd": 2440423.5286055417,
+      "sunset_jd": 2440424.0751544656,
+      "day_duration_hours": 13.117174174636602,
+      "night_duration_hours": 10.882825825363398
+    },
+    "lagna_sunrise_jd": 2440422.528353295,
+    "lagna": {
+      "sidereal_longitude_deg": 307.81560986392515,
+      "sign_index": 10
+    },
+    "panchanga_day": {
+      "kind": "post-sunset",
+      "arc_start_jd": 2440423.0753328027,
+      "arc_end_jd": 2440423.5286055417,
+      "weekday_swe": 6
+    },
+    "is_day_birth": false,
+    "hora_lord": "SUN",
+    "abda_lord": "MOON",
+    "upagrahas": [
+      {
+        "key": "DHUMA",
+        "sidereal_longitude_deg": 226.74780814002563,
+        "sign_index": 7,
+        "house": 10
+      },
+      {
+        "key": "VYATIPATA",
+        "sidereal_longitude_deg": 133.25219185997437,
+        "sign_index": 4,
+        "house": 7
+      },
+      {
+        "key": "PARIVESH",
+        "sidereal_longitude_deg": 313.25219185997435,
+        "sign_index": 10,
+        "house": 1
+      },
+      {
+        "key": "INDRACHAPA",
+        "sidereal_longitude_deg": 46.747808140025654,
+        "sign_index": 1,
+        "house": 4
+      },
+      {
+        "key": "UPAKETU",
+        "sidereal_longitude_deg": 63.41447480669265,
+        "sign_index": 2,
+        "house": 5
+      },
+      {
+        "key": "MANDI",
+        "sidereal_longitude_deg": 347.8528060893286,
+        "sign_index": 11,
+        "house": 2
+      },
+      {
+        "key": "GULIKA",
+        "sidereal_longitude_deg": 321.7314155125001,
+        "sign_index": 10,
+        "house": 1
+      }
+    ],
+    "arudha_lagna_sign_index": 2,
+    "navamsha_lagna_sign_index": 8,
+    "birth_timing": {
+      "ishtakaal": {
+        "civil": {
+          "ghati": 37,
+          "pala": 45
+        },
+        "proportional": {
+          "ghati": 35,
+          "pala": 27
+        },
+        "hours_after_sunrise": 15.102854255586863
+      },
+      "bhayat": {
+        "ghati": 3,
+        "pala": 35
+      },
+      "bhabhoga": {
+        "ghati": 62,
+        "pala": 35
+      },
+      "elapsed_fraction": 0.04323044223934858,
+      "day_duration_hours": 13.12750818952918,
+      "night_duration_hours": 10.87249181047082
+    },
+    "calculation_version": {
+      "engine_version": "1.8.0",
+      "swisseph_version": "2.10.03",
+      "ayanamsa_value": 24.315704672151664,
+      "ephemeris_source": "swiss-ephemeris",
+      "profile_hash": "67259a5f2043382a"
+    }
+  },
+  "positions": {
+    "bodies": {
+      "SUN": {
+        "sidereal_longitude_deg": 93.41447480669262,
+        "tropical_longitude_deg": 117.73017947884429,
+        "latitude_deg": -0.0016238043271113738,
+        "speed_deg_per_day": 0.9636643087418406,
+        "distance_au": 1.0161218458323311,
+        "degrees_in_sign": 3.41447480669262,
+        "sign_index": 3,
+        "house": 6,
+        "nakshatra_index": 7,
+        "nakshatra_lord": "SATURN",
+        "pada": 1,
+        "akshar": "Hu",
+        "is_retrograde": false,
+        "dignity": "GREAT_FRIEND",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": null,
+        "is_vargottama": false,
+        "natural_friendship": "friend",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "GREAT_FRIEND",
+        "avastha_baladi": "MRITA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "SWAPNA",
+          "deeptadi": "MUDITA",
+          "lajjitadi": [],
+          "planetary_war": null
+        }
+      },
+      "MOON": {
+        "sidereal_longitude_deg": 160.5764058965247,
+        "tropical_longitude_deg": 184.89211056867637,
+        "latitude_deg": -1.7732687711600383,
+        "speed_deg_per_day": 10.372648219458824,
+        "distance_au": 0.002592630140615032,
+        "degrees_in_sign": 10.5764058965247,
+        "sign_index": 5,
+        "house": 8,
+        "nakshatra_index": 12,
+        "nakshatra_lord": "MOON",
+        "pada": 1,
+        "akshar": "Pu",
+        "is_retrograde": false,
+        "dignity": "GREAT_FRIEND",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 67.16193108983208,
+        "is_vargottama": false,
+        "natural_friendship": "friend",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "GREAT_FRIEND",
+        "avastha_baladi": "VRIDDHA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "SWAPNA",
+          "deeptadi": "MUDITA",
+          "lajjitadi": ["MUDITA"],
+          "planetary_war": null
+        }
+      },
+      "MARS": {
+        "sidereal_longitude_deg": 218.42653851878987,
+        "tropical_longitude_deg": 242.74224319094154,
+        "latitude_deg": -3.3955274967014146,
+        "speed_deg_per_day": 0.14079373059416866,
+        "distance_au": 0.5903723711467657,
+        "degrees_in_sign": 8.42653851878987,
+        "sign_index": 7,
+        "house": 10,
+        "nakshatra_index": 16,
+        "nakshatra_lord": "SATURN",
+        "pada": 2,
+        "akshar": "Ni",
+        "is_retrograde": false,
+        "dignity": "OWN_SIGN",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 125.01206371209724,
+        "is_vargottama": false,
+        "natural_friendship": "friend",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "GREAT_FRIEND",
+        "avastha_baladi": "VRIDDHA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "JAGRAT",
+          "deeptadi": "SWASTHA",
+          "lajjitadi": [],
+          "planetary_war": null
+        }
+      },
+      "MERCURY": {
+        "sidereal_longitude_deg": 91.1256706620289,
+        "tropical_longitude_deg": 115.44137533418056,
+        "latitude_deg": 1.4402632932110755,
+        "speed_deg_per_day": 2.142769190953686,
+        "distance_au": 1.3266112796985348,
+        "degrees_in_sign": 1.1256706620289,
+        "sign_index": 3,
+        "house": 6,
+        "nakshatra_index": 6,
+        "nakshatra_lord": "JUPITER",
+        "pada": 4,
+        "akshar": "Hi",
+        "is_retrograde": false,
+        "dignity": "NEUTRAL",
+        "is_mooltrikona": false,
+        "combust": "deep-combust",
+        "degrees_from_sun": 2.28880414466372,
+        "is_vargottama": true,
+        "natural_friendship": "enemy",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "NEUTRAL",
+        "avastha_baladi": "MRITA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "SWAPNA",
+          "deeptadi": "SHANTA",
+          "lajjitadi": ["TRISHITA", "KSHOBHITA"],
+          "planetary_war": null
+        }
+      },
+      "JUPITER": {
+        "sidereal_longitude_deg": 156.40292394771055,
+        "tropical_longitude_deg": 180.71862861986222,
+        "latitude_deg": 1.2194679397152324,
+        "speed_deg_per_day": 0.1444147777363014,
+        "distance_au": 5.839021685798888,
+        "degrees_in_sign": 6.40292394771055,
+        "sign_index": 5,
+        "house": 8,
+        "nakshatra_index": 11,
+        "nakshatra_lord": "SUN",
+        "pada": 3,
+        "akshar": "Pa",
+        "is_retrograde": false,
+        "dignity": "NEUTRAL",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 62.98844914101793,
+        "is_vargottama": false,
+        "natural_friendship": "enemy",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "NEUTRAL",
+        "avastha_baladi": "VRIDDHA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "SWAPNA",
+          "deeptadi": "SHANTA",
+          "lajjitadi": [],
+          "planetary_war": null
+        }
+      },
+      "VENUS": {
+        "sidereal_longitude_deg": 50.514837898523396,
+        "tropical_longitude_deg": 74.83054257067505,
+        "latitude_deg": -2.4631306754628515,
+        "speed_deg_per_day": 1.1151612330806415,
+        "distance_au": 0.9631094439086624,
+        "degrees_in_sign": 20.514837898523396,
+        "sign_index": 1,
+        "house": 4,
+        "nakshatra_index": 3,
+        "nakshatra_lord": "MOON",
+        "pada": 4,
+        "akshar": "Vu",
+        "is_retrograde": false,
+        "dignity": "OWN_SIGN",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 42.89963690816922,
+        "is_vargottama": false,
+        "natural_friendship": "friend",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "GREAT_FRIEND",
+        "avastha_baladi": "KUMARA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "JAGRAT",
+          "deeptadi": "SWASTHA",
+          "lajjitadi": [],
+          "planetary_war": null
+        }
+      },
+      "SATURN": {
+        "sidereal_longitude_deg": 13.772364391352111,
+        "tropical_longitude_deg": 38.08806906350378,
+        "latitude_deg": -2.4278439802131415,
+        "speed_deg_per_day": 0.05467942007619797,
+        "distance_au": 9.385103070452008,
+        "degrees_in_sign": 13.772364391352111,
+        "sign_index": 0,
+        "house": 3,
+        "nakshatra_index": 1,
+        "nakshatra_lord": "VENUS",
+        "pada": 1,
+        "akshar": "Li",
+        "is_retrograde": false,
+        "dignity": "DEBILITATED",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 79.64211041534051,
+        "is_vargottama": false,
+        "natural_friendship": "enemy",
+        "temporary_friendship": "enemy",
+        "panchadha_maitri": "GREAT_ENEMY",
+        "avastha_baladi": "YUVA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": {
+          "jagradadi": "SUSHUPTI",
+          "deeptadi": "KHALA",
+          "lajjitadi": [],
+          "planetary_war": null
+        }
+      },
+      "RAHU": {
+        "sidereal_longitude_deg": 329.67318753099516,
+        "tropical_longitude_deg": 353.9888922031468,
+        "latitude_deg": 4.571253690120271e-16,
+        "speed_deg_per_day": -0.05299211721876418,
+        "distance_au": 0.0025695552897999903,
+        "degrees_in_sign": 29.67318753099516,
+        "sign_index": 10,
+        "house": 1,
+        "nakshatra_index": 24,
+        "nakshatra_lord": "JUPITER",
+        "pada": 3,
+        "akshar": "Da",
+        "is_retrograde": true,
+        "dignity": "NEUTRAL",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 123.74128727569746,
+        "is_vargottama": false,
+        "natural_friendship": "friend",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "GREAT_FRIEND",
+        "avastha_baladi": "MRITA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": null
+      },
+      "KETU": {
+        "sidereal_longitude_deg": 149.67318753099516,
+        "tropical_longitude_deg": 173.98889220314686,
+        "latitude_deg": -4.571253690120271e-16,
+        "speed_deg_per_day": -0.05299211721876418,
+        "distance_au": 0.0025695552897999903,
+        "degrees_in_sign": 29.67318753099516,
+        "sign_index": 4,
+        "house": 7,
+        "nakshatra_index": 11,
+        "nakshatra_lord": "SUN",
+        "pada": 1,
+        "akshar": "Te",
+        "is_retrograde": true,
+        "dignity": "NEUTRAL",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": 56.25871272430254,
+        "is_vargottama": false,
+        "natural_friendship": "enemy",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "NEUTRAL",
+        "avastha_baladi": "MRITA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": null
+      },
+      "LAGNA": {
+        "sidereal_longitude_deg": 307.81560986392515,
+        "tropical_longitude_deg": 332.13131453607684,
+        "latitude_deg": null,
+        "speed_deg_per_day": null,
+        "distance_au": null,
+        "degrees_in_sign": 7.81560986392515,
+        "sign_index": 10,
+        "house": 1,
+        "nakshatra_index": 23,
+        "nakshatra_lord": "RAHU",
+        "pada": 1,
+        "akshar": "Go",
+        "is_retrograde": false,
+        "dignity": "NEUTRAL",
+        "is_mooltrikona": false,
+        "combust": "none",
+        "degrees_from_sun": null,
+        "is_vargottama": false,
+        "natural_friendship": "neutral",
+        "temporary_friendship": "friend",
+        "panchadha_maitri": "NEUTRAL",
+        "avastha_baladi": "KUMARA",
+        "near_sign_boundary": false,
+        "near_nakshatra_boundary": false,
+        "near_pada_boundary": false,
+        "avasthas": null
+      }
+    },
+    "outer": {
+      "URANUS": {
+        "sidereal_longitude_deg": 156.367505249549,
+        "latitude_deg": 0.7108240779715301,
+        "speed_deg_per_day": 0.03625532081027412,
+        "frame": "geocentric"
+      },
+      "NEPTUNE": {
+        "sidereal_longitude_deg": 211.70896433081313,
+        "latitude_deg": 1.7300856175955475,
+        "speed_deg_per_day": -0.009375443014146376,
+        "frame": "geocentric"
+      },
+      "PLUTO": {
+        "sidereal_longitude_deg": 148.68702019846418,
+        "latitude_deg": 15.307152953051157,
+        "speed_deg_per_day": 0.023771457069150154,
+        "frame": "geocentric"
+      }
+    }
+  },
+  "houses": {
+    "selected": {
+      "system": "whole-sign",
+      "cusps": [300, 330, 0, 30, 60, 90, 120, 150, 180, 210, 240, 270],
+      "ascendant": 307.81560986392515,
+      "mc": 225.22827621248268,
+      "is_degenerate": false,
+      "cusp_sign_index": [10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    },
+    "all_systems": {
+      "whole-sign": {
+        "code": "W",
+        "cusps": [300, 330, 0, 30, 60, 90, 120, 150, 180, 210, 240, 270],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "placidus": {
+        "code": "P",
+        "cusps": [307.81560986392515, 345.2030003337202, 17.834365548968208, 45.22827621248268, 70.28283236838013, 96.52873543425176, 127.81560986392503, 165.20300033372018, 197.8343655489682, 225.22827621248268, 250.28283236838013, 276.52873543425176],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "koch": {
+        "code": "K",
+        "cusps": [307.81560986392515, 342.3612587827547, 15.926665259681045, 45.22827621248268, 69.90682794728707, 96.79657197314475, 127.81560986392503, 162.3612587827547, 195.92666525968104, 225.22827621248268, 249.90682794728707, 276.79657197314486],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "regiomontanus": {
+        "code": "R",
+        "cusps": [307.81560986392515, 345.5272462514804, 18.81358190399027, 45.22827621248268, 68.97157030319147, 95.0460818670357, 127.81560986392503, 165.5272462514804, 198.8135819039902, 225.22827621248268, 248.97157030319147, 275.0460818670358],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "campanus": {
+        "code": "C",
+        "cusps": [307.81560986392515, 347.2682813197081, 20.158705172775967, 45.22827621248268, 67.86569546420014, 93.68589252455831, 127.81560986392503, 167.26828131970808, 200.15870517277597, 225.22827621248268, 247.86569546420014, 273.6858925245583],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "equal": {
+        "code": "A",
+        "cusps": [307.81560986392515, 337.81560986392515, 7.81560986392509, 37.81560986392503, 67.81560986392503, 97.81560986392503, 127.81560986392503, 157.81560986392503, 187.81560986392503, 217.81560986392503, 247.81560986392503, 277.81560986392515],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "meridian": {
+        "code": "X",
+        "cusps": [311.78295161033157, 344.2572470029522, 15.974060977205056, 45.22827621248268, 72.91576808480465, 101.19397482429974, 131.78295161033145, 164.25724700295223, 195.9740609772051, 225.22827621248268, 252.91576808480465, 281.19397482429986],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "alcabitius": {
+        "code": "B",
+        "cusps": [307.81560986392515, 341.5368254450009, 14.698315823536063, 45.22827621248268, 71.76508497511543, 98.76134717851573, 127.81560986392503, 161.5368254450009, 194.69831582353606, 225.22827621248268, 251.76508497511543, 278.76134717851573],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "porphyry": {
+        "code": "O",
+        "cusps": [307.81560986392515, 340.28649864677755, 12.757387429630171, 45.22827621248268, 72.75738742963017, 100.28649864677755, 127.81560986392503, 160.28649864677755, 192.75738742963017, 225.22827621248268, 252.75738742963017, 280.28649864677755],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "topocentric": {
+        "code": "T",
+        "cusps": [307.81560986392515, 345.2029498144675, 17.831733381719573, 45.22827621248268, 70.29163572299103, 96.53596322261615, 127.81560986392503, 165.2029498144675, 197.83173338171957, 225.22827621248268, 250.29163572299103, 276.53596322261615],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "morinus": {
+        "code": "M",
+        "cusps": [315.2282762124827, 342.91576808480477, 11.1939748242998, 41.78295161033145, 74.25724700295223, 105.97406097720511, 135.22827621248257, 162.91576808480465, 191.19397482429986, 221.78295161033157, 254.25724700295223, 285.9740609772051],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "sripati": {
+        "code": "S",
+        "cusps": [294.05105425535135, 324.05105425535135, 356.521943038204, 28.992831821056427, 58.99283182105637, 86.52194303820386, 114.05105425535135, 144.05105425535135, 176.52194303820386, 208.99283182105637, 238.99283182105637, 266.521943038204],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "equal-mc": {
+        "code": "D",
+        "cusps": [315.2282762124828, 345.2282762124828, 15.22827621248274, 45.22827621248268, 75.22827621248268, 105.22827621248268, 135.22827621248268, 165.22827621248268, 195.22827621248268, 225.22827621248268, 255.22827621248268, 285.2282762124828],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "equal-aries": {
+        "code": "N",
+        "cusps": [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "vehlow": {
+        "code": "V",
+        "cusps": [292.81560986392515, 322.81560986392515, 352.81560986392515, 22.81560986392509, 52.81560986392503, 82.81560986392503, 112.81560986392503, 142.81560986392503, 172.81560986392503, 202.81560986392503, 232.81560986392503, 262.81560986392515],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "carter": {
+        "code": "F",
+        "cusps": [307.81560986392515, 340.1749359995573, 12.13272762033597, 41.69217171587616, 69.46628621413868, 97.55134268407198, 127.81560986392503, 160.1749359995573, 192.1327276203359, 221.69217171587616, 249.46628621413868, 277.5513426840721],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "horizon": {
+        "code": "H",
+        "cusps": [325.02163436286503, 1.4432077976330788, 25.475341926835824, 45.22827621248268, 67.51748139335007, 100.3088718804139, 145.02163436286492, 181.44320779763302, 205.47534192683577, 225.22827621248268, 247.51748139335007, 280.3088718804139],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "sunshine": {
+        "code": "I",
+        "cusps": [307.81560986392515, 343.5674354470656, 17.439500730225063, 45.22827621248268, 70.0931957549318, 96.58486693918672, 127.81560986392503, 167.23432414084914, 199.8977274398892, 225.22827621248268, 248.080887847575, 273.71236716244766],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "pullen-sd": {
+        "code": "L",
+        "cusps": [307.81560986392515, 339.66877645106456, 13.375109625343327, 45.22827621248268, 73.37510962534327, 99.66877645106445, 127.81560986392503, 159.66877645106445, 193.37510962534327, 225.22827621248268, 253.37510962534327, 279.66877645106456],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "pullen-sr": {
+        "code": "Q",
+        "cusps": [307.81560986392515, 339.6096368266284, 13.434249249779384, 45.22827621248268, 73.31951921795849, 99.72436685844923, 127.81560986392503, 159.6096368266284, 193.43424924977944, 225.22827621248268, 253.3195192179585, 279.72436685844923],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "krusinski": {
+        "code": "U",
+        "cusps": [307.8156098639249, 340.0670902324057, 13.992407968219084, 45.22827621248268, 72.8745083070155, 99.3579060706063, 127.81560986392492, 160.0670902324057, 193.99240796821903, 225.22827621248268, 252.8745083070155, 279.3579060706063],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      },
+      "apc": {
+        "code": "Y",
+        "cusps": [307.81560986392515, 346.41571499787665, 19.39099483290704, 45.22827621248268, 68.4978425370777, 94.35123043380088, 127.81560986392515, 164.57509467061118, 198.16335276427174, 225.22827621248268, 249.50331870819207, 275.7925842646116],
+        "ascendant": 307.81560986392515,
+        "mc": 225.22827621248268,
+        "is_degenerate": false
+      }
+    },
+    "bhava_chalit": {
+      "mode": "equal-house",
+      "bhava_madhya": [307.81560986392515, 337.81560986392515, 7.81560986392515, 37.81560986392515, 67.81560986392515, 97.81560986392515, 127.81560986392515, 157.8156098639251, 187.8156098639251, 217.8156098639251, 247.8156098639251, 277.8156098639251],
+      "bhava_sandhi": [292.81560986392515, 322.81560986392515, 352.81560986392515, 22.81560986392515, 52.81560986392515, 82.81560986392515, 112.81560986392515, 142.81560986392515, 172.8156098639251, 202.8156098639251, 232.8156098639251, 262.8156098639251],
+      "planet_houses": {
+        "SUN": 6,
+        "MOON": 8,
+        "MARS": 10,
+        "MERCURY": 6,
+        "JUPITER": 8,
+        "VENUS": 4,
+        "SATURN": 3,
+        "RAHU": 2,
+        "KETU": 8
+      },
+      "shifted": [
+        {
+          "planet": "RAHU",
+          "whole_sign_house": 1,
+          "chalit_house": 2
+        },
+        {
+          "planet": "KETU",
+          "whole_sign_house": 7,
+          "chalit_house": 8
+        }
+      ]
+    },
+    "special_lagnas": {
+      "hora_lagna_deg": 186.5001024742985,
+      "ghati_lagna_deg": 146.1285439757073,
+      "sree_lagna_deg": 323.37856907009206,
+      "yogi_point_deg": 347.32421403655064,
+      "yogi_nakshatra_index": 26,
+      "avayogi_point_deg": 173.9908807032173,
+      "pranapada_lagna_deg": 279.5857301419044,
+      "varnada_lagna_deg": 150
+    },
+    "arudha_padas": [
+      {
+        "house": 1,
+        "sign_index": 2,
+        "exception_applied": false,
+        "original_sign_index": 2
+      },
+      {
+        "house": 2,
+        "sign_index": 8,
+        "exception_applied": true,
+        "original_sign_index": 11
+      },
+      {
+        "house": 3,
+        "sign_index": 2,
+        "exception_applied": false,
+        "original_sign_index": 2
+      },
+      {
+        "house": 4,
+        "sign_index": 10,
+        "exception_applied": true,
+        "original_sign_index": 1
+      },
+      {
+        "house": 5,
+        "sign_index": 4,
+        "exception_applied": false,
+        "original_sign_index": 4
+      },
+      {
+        "house": 6,
+        "sign_index": 7,
+        "exception_applied": false,
+        "original_sign_index": 7
+      },
+      {
+        "house": 7,
+        "sign_index": 2,
+        "exception_applied": false,
+        "original_sign_index": 2
+      },
+      {
+        "house": 8,
+        "sign_index": 1,
+        "exception_applied": false,
+        "original_sign_index": 1
+      },
+      {
+        "house": 9,
+        "sign_index": 8,
+        "exception_applied": false,
+        "original_sign_index": 8
+      },
+      {
+        "house": 10,
+        "sign_index": 4,
+        "exception_applied": true,
+        "original_sign_index": 7
+      },
+      {
+        "house": 11,
+        "sign_index": 11,
+        "exception_applied": true,
+        "original_sign_index": 2
+      },
+      {
+        "house": 12,
+        "sign_index": 0,
+        "exception_applied": true,
+        "original_sign_index": 3
+      }
+    ],
+    "chara_karakas": {
+      "system7": {
+        "SUN": "GK",
+        "MOON": "BK",
+        "MARS": "MK",
+        "MERCURY": "DK",
+        "JUPITER": "PK",
+        "VENUS": "AK",
+        "SATURN": "AmK"
+      },
+      "system8": {
+        "SUN": "GK",
+        "MOON": "BK",
+        "MARS": "MK",
+        "MERCURY": "DK",
+        "JUPITER": "PK",
+        "VENUS": "AK",
+        "SATURN": "AmK",
+        "RAHU": "PiK"
+      }
+    }
+  },
+  "vargas": {
+    "D1": {
+      "division": 1,
+      "sign_index": {
+        "SUN": 3,
+        "MOON": 5,
+        "MARS": 7,
+        "MERCURY": 3,
+        "JUPITER": 5,
+        "VENUS": 1,
+        "SATURN": 0,
+        "RAHU": 10,
+        "KETU": 4,
+        "LAGNA": 10
+      }
+    },
+    "D2": {
+      "division": 2,
+      "sign_index": {
+        "SUN": 3,
+        "MOON": 3,
+        "MARS": 3,
+        "MERCURY": 3,
+        "JUPITER": 3,
+        "VENUS": 4,
+        "SATURN": 4,
+        "RAHU": 3,
+        "KETU": 3,
+        "LAGNA": 4
+      }
+    },
+    "D3": {
+      "division": 3,
+      "sign_index": {
+        "SUN": 3,
+        "MOON": 9,
+        "MARS": 7,
+        "MERCURY": 3,
+        "JUPITER": 5,
+        "VENUS": 9,
+        "SATURN": 4,
+        "RAHU": 6,
+        "KETU": 0,
+        "LAGNA": 10
+      }
+    },
+    "D4": {
+      "division": 4,
+      "sign_index": {
+        "SUN": 3,
+        "MOON": 8,
+        "MARS": 10,
+        "MERCURY": 3,
+        "JUPITER": 5,
+        "VENUS": 7,
+        "SATURN": 3,
+        "RAHU": 7,
+        "KETU": 1,
+        "LAGNA": 1
+      }
+    },
+    "D5": {
+      "division": 5,
+      "sign_index": {
+        "SUN": 1,
+        "MOON": 5,
+        "MARS": 5,
+        "MERCURY": 1,
+        "JUPITER": 5,
+        "VENUS": 9,
+        "SATURN": 8,
+        "RAHU": 6,
+        "KETU": 6,
+        "LAGNA": 10
+      }
+    },
+    "D6": {
+      "division": 6,
+      "sign_index": {
+        "SUN": 6,
+        "MOON": 8,
+        "MARS": 7,
+        "MERCURY": 6,
+        "JUPITER": 7,
+        "VENUS": 10,
+        "SATURN": 2,
+        "RAHU": 5,
+        "KETU": 5,
+        "LAGNA": 1
+      }
+    },
+    "D7": {
+      "division": 7,
+      "sign_index": {
+        "SUN": 9,
+        "MOON": 1,
+        "MARS": 2,
+        "MERCURY": 9,
+        "JUPITER": 0,
+        "VENUS": 11,
+        "SATURN": 3,
+        "RAHU": 4,
+        "KETU": 10,
+        "LAGNA": 11
+      }
+    },
+    "D8": {
+      "division": 8,
+      "sign_index": {
+        "SUN": 0,
+        "MOON": 10,
+        "MARS": 6,
+        "MERCURY": 0,
+        "JUPITER": 9,
+        "VENUS": 9,
+        "SATURN": 3,
+        "RAHU": 11,
+        "KETU": 11,
+        "LAGNA": 6
+      }
+    },
+    "D9": {
+      "division": 9,
+      "sign_index": {
+        "SUN": 4,
+        "MOON": 0,
+        "MARS": 5,
+        "MERCURY": 3,
+        "JUPITER": 10,
+        "VENUS": 3,
+        "SATURN": 4,
+        "RAHU": 2,
+        "KETU": 8,
+        "LAGNA": 8
+      }
+    },
+    "D10": {
+      "division": 10,
+      "sign_index": {
+        "SUN": 0,
+        "MOON": 4,
+        "MARS": 5,
+        "MERCURY": 11,
+        "JUPITER": 3,
+        "VENUS": 3,
+        "SATURN": 4,
+        "RAHU": 7,
+        "KETU": 1,
+        "LAGNA": 0
+      }
+    },
+    "D11": {
+      "division": 11,
+      "sign_index": {
+        "SUN": 2,
+        "MOON": 6,
+        "MARS": 8,
+        "MERCURY": 1,
+        "JUPITER": 5,
+        "VENUS": 6,
+        "SATURN": 5,
+        "RAHU": 8,
+        "KETU": 2,
+        "LAGNA": 0
+      }
+    },
+    "D12": {
+      "division": 12,
+      "sign_index": {
+        "SUN": 4,
+        "MOON": 9,
+        "MARS": 10,
+        "MERCURY": 3,
+        "JUPITER": 7,
+        "VENUS": 9,
+        "SATURN": 5,
+        "RAHU": 9,
+        "KETU": 3,
+        "LAGNA": 1
+      }
+    },
+    "D16": {
+      "division": 16,
+      "sign_index": {
+        "SUN": 1,
+        "MOON": 1,
+        "MARS": 8,
+        "MERCURY": 0,
+        "JUPITER": 11,
+        "VENUS": 2,
+        "SATURN": 7,
+        "RAHU": 7,
+        "KETU": 7,
+        "LAGNA": 8
+      }
+    },
+    "D20": {
+      "division": 20,
+      "sign_index": {
+        "SUN": 2,
+        "MOON": 11,
+        "MARS": 1,
+        "MERCURY": 0,
+        "JUPITER": 8,
+        "VENUS": 9,
+        "SATURN": 9,
+        "RAHU": 3,
+        "KETU": 3,
+        "LAGNA": 1
+      }
+    },
+    "D24": {
+      "division": 24,
+      "sign_index": {
+        "SUN": 5,
+        "MOON": 11,
+        "MARS": 9,
+        "MERCURY": 3,
+        "JUPITER": 8,
+        "VENUS": 7,
+        "SATURN": 3,
+        "RAHU": 3,
+        "KETU": 3,
+        "LAGNA": 10
+      }
+    },
+    "D27": {
+      "division": 27,
+      "sign_index": {
+        "SUN": 0,
+        "MOON": 0,
+        "MARS": 4,
+        "MERCURY": 10,
+        "JUPITER": 8,
+        "VENUS": 9,
+        "SATURN": 0,
+        "RAHU": 8,
+        "KETU": 2,
+        "LAGNA": 1
+      }
+    },
+    "D30": {
+      "division": 30,
+      "sign_index": {
+        "SUN": 1,
+        "MOON": 5,
+        "MARS": 5,
+        "MERCURY": 1,
+        "JUPITER": 5,
+        "VENUS": 9,
+        "SATURN": 8,
+        "RAHU": 6,
+        "KETU": 6,
+        "LAGNA": 10
+      }
+    },
+    "D40": {
+      "division": 40,
+      "sign_index": {
+        "SUN": 10,
+        "MOON": 8,
+        "MARS": 5,
+        "MERCURY": 7,
+        "JUPITER": 2,
+        "VENUS": 9,
+        "SATURN": 6,
+        "RAHU": 3,
+        "KETU": 3,
+        "LAGNA": 10
+      }
+    },
+    "D45": {
+      "division": 45,
+      "sign_index": {
+        "SUN": 5,
+        "MOON": 11,
+        "MARS": 4,
+        "MERCURY": 1,
+        "JUPITER": 5,
+        "VENUS": 10,
+        "SATURN": 8,
+        "RAHU": 0,
+        "KETU": 0,
+        "LAGNA": 3
+      }
+    },
+    "D60": {
+      "division": 60,
+      "sign_index": {
+        "SUN": 9,
+        "MOON": 2,
+        "MARS": 11,
+        "MERCURY": 5,
+        "JUPITER": 5,
+        "VENUS": 6,
+        "SATURN": 3,
+        "RAHU": 9,
+        "KETU": 3,
+        "LAGNA": 1
+      }
+    },
+    "D150": {
+      "division": 150,
+      "sign_index": {
+        "SUN": 8,
+        "MOON": 9,
+        "MARS": 1,
+        "MERCURY": 8,
+        "JUPITER": 1,
+        "VENUS": 7,
+        "SATURN": 8,
+        "RAHU": 2,
+        "KETU": 8,
+        "LAGNA": 1
+      }
+    }
+  },
+  "panchanga": {
+    "sun_sidereal_longitude_deg": 93.41447480669262,
+    "moon_sidereal_longitude_deg": 160.5764058965247,
+    "tithi": {
+      "number": 6,
+      "paksha": "shukla",
+      "group": "nanda"
+    },
+    "vara": "RAVIVARA",
+    "weekday_swe": 6,
+    "nakshatra_index": 12,
+    "yoga_index": 19,
+    "karana": {
+      "index": 3,
+      "is_vishti": false
+    }
+  },
+  "panchanga_day": {
+    "local_date": "1969-07-20",
+    "bs_date": "2026-04-05",
+    "tz_offset_hours": 5.5,
+    "sunrise_jd": 2440422.5283532953,
+    "sunset_jd": 2440423.075332803,
+    "day_duration_hours": 13.12750818952918,
+    "weekday_swe": 6,
+    "tithi": [
+      {
+        "index": 5,
+        "number": 6,
+        "paksha": "shukla",
+        "group": "nanda",
+        "start_jd": 2440422.5283532953,
+        "end_jd": 2440423.5178065216
+      },
+      {
+        "index": 6,
+        "number": 7,
+        "paksha": "shukla",
+        "group": "bhadra",
+        "start_jd": 2440423.5178066217,
+        "end_jd": 2440423.528605542
+      }
+    ],
+    "nakshatra": [
+      {
+        "index": 11,
+        "pada": 2,
+        "nature": "DHRUVA",
+        "start_jd": 2440422.5283532953,
+        "end_jd": 2440423.0646815207
+      },
+      {
+        "index": 12,
+        "pada": 1,
+        "nature": "KSHIPRA",
+        "start_jd": 2440423.064681621,
+        "end_jd": 2440423.528605542
+      }
+    ],
+    "yoga": [
+      {
+        "index": 18,
+        "nature": "inauspicious",
+        "start_jd": 2440422.5283532953,
+        "end_jd": 2440423.065150271
+      },
+      {
+        "index": 19,
+        "nature": "auspicious",
+        "start_jd": 2440423.0651503713,
+        "end_jd": 2440423.528605542
+      }
+    ],
+    "karana": [
+      {
+        "index": 2,
+        "is_vishti": false,
+        "start_jd": 2440422.5283532953,
+        "end_jd": 2440423.007103296
+      },
+      {
+        "index": 3,
+        "is_vishti": false,
+        "start_jd": 2440423.007103396,
+        "end_jd": 2440423.5178066213
+      },
+      {
+        "index": 4,
+        "is_vishti": false,
+        "start_jd": 2440423.5178067214,
+        "end_jd": 2440423.528605542
+      }
+    ],
+    "rahu_kaal": {
+      "start_jd": 2440423.0069603645,
+      "end_jd": 2440423.075332803
+    },
+    "yamaghanda": {
+      "start_jd": 2440422.801843049,
+      "end_jd": 2440422.8702154877
+    },
+    "gulika_kaal": {
+      "start_jd": 2440422.9385879263,
+      "end_jd": 2440423.006960365
+    },
+    "day_choghadiya": [
+      {
+        "quality": "udveg",
+        "lord": "SUN",
+        "start_jd": 2440422.5283532953,
+        "end_jd": 2440422.596725734
+      },
+      {
+        "quality": "char",
+        "lord": "VENUS",
+        "start_jd": 2440422.596725734,
+        "end_jd": 2440422.665098172
+      },
+      {
+        "quality": "laabh",
+        "lord": "MERCURY",
+        "start_jd": 2440422.665098172,
+        "end_jd": 2440422.733470611
+      },
+      {
+        "quality": "amrit",
+        "lord": "MOON",
+        "start_jd": 2440422.733470611,
+        "end_jd": 2440422.801843049
+      },
+      {
+        "quality": "kaal",
+        "lord": "SATURN",
+        "start_jd": 2440422.801843049,
+        "end_jd": 2440422.8702154877
+      },
+      {
+        "quality": "shubha",
+        "lord": "JUPITER",
+        "start_jd": 2440422.8702154877,
+        "end_jd": 2440422.9385879263
+      },
+      {
+        "quality": "rog",
+        "lord": "MARS",
+        "start_jd": 2440422.9385879263,
+        "end_jd": 2440423.0069603645
+      },
+      {
+        "quality": "udveg",
+        "lord": "SUN",
+        "start_jd": 2440423.0069603645,
+        "end_jd": 2440423.075332803
+      }
+    ],
+    "night_choghadiya": [
+      {
+        "quality": "shubha",
+        "lord": "JUPITER",
+        "start_jd": 2440423.075332803,
+        "end_jd": 2440423.1319918954
+      },
+      {
+        "quality": "amrit",
+        "lord": "MOON",
+        "start_jd": 2440423.1319918954,
+        "end_jd": 2440423.188650988
+      },
+      {
+        "quality": "char",
+        "lord": "VENUS",
+        "start_jd": 2440423.188650988,
+        "end_jd": 2440423.2453100802
+      },
+      {
+        "quality": "rog",
+        "lord": "MARS",
+        "start_jd": 2440423.2453100802,
+        "end_jd": 2440423.3019691724
+      },
+      {
+        "quality": "kaal",
+        "lord": "SATURN",
+        "start_jd": 2440423.3019691724,
+        "end_jd": 2440423.358628265
+      },
+      {
+        "quality": "laabh",
+        "lord": "MERCURY",
+        "start_jd": 2440423.358628265,
+        "end_jd": 2440423.4152873573
+      },
+      {
+        "quality": "udveg",
+        "lord": "SUN",
+        "start_jd": 2440423.4152873573,
+        "end_jd": 2440423.47194645
+      },
+      {
+        "quality": "shubha",
+        "lord": "JUPITER",
+        "start_jd": 2440423.47194645,
+        "end_jd": 2440423.528605542
+      }
+    ],
+    "hora": [
+      {
+        "number": 1,
+        "lord": "SUN",
+        "start_jd": 2440422.5283532953,
+        "end_jd": 2440422.573934921
+      },
+      {
+        "number": 2,
+        "lord": "VENUS",
+        "start_jd": 2440422.573934921,
+        "end_jd": 2440422.619516547
+      },
+      {
+        "number": 3,
+        "lord": "MERCURY",
+        "start_jd": 2440422.619516547,
+        "end_jd": 2440422.665098172
+      },
+      {
+        "number": 4,
+        "lord": "MOON",
+        "start_jd": 2440422.665098172,
+        "end_jd": 2440422.710679798
+      },
+      {
+        "number": 5,
+        "lord": "SATURN",
+        "start_jd": 2440422.710679798,
+        "end_jd": 2440422.7562614237
+      },
+      {
+        "number": 6,
+        "lord": "JUPITER",
+        "start_jd": 2440422.7562614237,
+        "end_jd": 2440422.801843049
+      },
+      {
+        "number": 7,
+        "lord": "MARS",
+        "start_jd": 2440422.801843049,
+        "end_jd": 2440422.847424675
+      },
+      {
+        "number": 8,
+        "lord": "SUN",
+        "start_jd": 2440422.847424675,
+        "end_jd": 2440422.8930063006
+      },
+      {
+        "number": 9,
+        "lord": "VENUS",
+        "start_jd": 2440422.8930063006,
+        "end_jd": 2440422.9385879263
+      },
+      {
+        "number": 10,
+        "lord": "MERCURY",
+        "start_jd": 2440422.9385879263,
+        "end_jd": 2440422.984169552
+      },
+      {
+        "number": 11,
+        "lord": "MOON",
+        "start_jd": 2440422.984169552,
+        "end_jd": 2440423.0297511774
+      },
+      {
+        "number": 12,
+        "lord": "SATURN",
+        "start_jd": 2440423.0297511774,
+        "end_jd": 2440423.075332803
+      },
+      {
+        "number": 13,
+        "lord": "JUPITER",
+        "start_jd": 2440423.075332803,
+        "end_jd": 2440423.1131055313
+      },
+      {
+        "number": 14,
+        "lord": "MARS",
+        "start_jd": 2440423.1131055313,
+        "end_jd": 2440423.15087826
+      },
+      {
+        "number": 15,
+        "lord": "SUN",
+        "start_jd": 2440423.15087826,
+        "end_jd": 2440423.188650988
+      },
+      {
+        "number": 16,
+        "lord": "VENUS",
+        "start_jd": 2440423.188650988,
+        "end_jd": 2440423.226423716
+      },
+      {
+        "number": 17,
+        "lord": "MERCURY",
+        "start_jd": 2440423.226423716,
+        "end_jd": 2440423.2641964443
+      },
+      {
+        "number": 18,
+        "lord": "MOON",
+        "start_jd": 2440423.2641964443,
+        "end_jd": 2440423.3019691724
+      },
+      {
+        "number": 19,
+        "lord": "SATURN",
+        "start_jd": 2440423.3019691724,
+        "end_jd": 2440423.339741901
+      },
+      {
+        "number": 20,
+        "lord": "JUPITER",
+        "start_jd": 2440423.339741901,
+        "end_jd": 2440423.377514629
+      },
+      {
+        "number": 21,
+        "lord": "MARS",
+        "start_jd": 2440423.377514629,
+        "end_jd": 2440423.4152873573
+      },
+      {
+        "number": 22,
+        "lord": "SUN",
+        "start_jd": 2440423.4152873573,
+        "end_jd": 2440423.453060086
+      },
+      {
+        "number": 23,
+        "lord": "VENUS",
+        "start_jd": 2440423.453060086,
+        "end_jd": 2440423.490832814
+      },
+      {
+        "number": 24,
+        "lord": "MERCURY",
+        "start_jd": 2440423.490832814,
+        "end_jd": 2440423.528605542
+      }
+    ],
+    "abhijit": {
+      "start_jd": 2440422.783610399,
+      "end_jd": 2440422.820075699,
+      "is_effective": true
+    },
+    "brahma_muhurta": {
+      "start_jd": 2440422.46791693,
+      "end_jd": 2440422.4981351127
+    },
+    "lunar_month": {
+      "key": "ASHADHA",
+      "system": "purnimanta",
+      "amanta_key": "ASHADHA",
+      "is_adhika": false
+    },
+    "panchaka": {
+      "is_active": false,
+      "type": ""
+    },
+    "moonrise_jd": 2440422.720457268,
+    "moonset_jd": 2440423.2299757535,
+    "moon_sign": {
+      "sign_index": 5,
+      "transition_jd": null
+    },
+    "sun_sign": {
+      "sign_index": 3,
+      "ayana": "dakshinayana"
+    },
+    "disha_shool": "west",
+    "muhurta_yogas": {
+      "amrit_siddhi": false,
+      "sarvartha_siddhi": false,
+      "siddha": false,
+      "dwipushkar": false,
+      "tripushkar": false,
+      "active_count": 0
+    }
+  },
+  "dashas": {
+    "system": "vimshottari",
+    "year_length_days": 365.25,
+    "total_years": 120,
+    "sequence": [
+      {
+        "lord": "KETU",
+        "years": 7
+      },
+      {
+        "lord": "VENUS",
+        "years": 20
+      },
+      {
+        "lord": "SUN",
+        "years": 6
+      },
+      {
+        "lord": "MOON",
+        "years": 10
+      },
+      {
+        "lord": "MARS",
+        "years": 7
+      },
+      {
+        "lord": "RAHU",
+        "years": 18
+      },
+      {
+        "lord": "JUPITER",
+        "years": 16
+      },
+      {
+        "lord": "SATURN",
+        "years": 19
+      },
+      {
+        "lord": "MERCURY",
+        "years": 17
+      }
+    ],
+    "moon_sidereal_longitude_deg": 160.5764058965247,
+    "moon_nakshatra_index": 12,
+    "moon_nakshatra_elapsed_fraction": 0.0432304422393525,
+    "starting_lord": "MOON",
+    "observer_frame": "topocentric",
+    "reference_instants_jd": [2450423.157638889, 2461287.5],
+    "methods": {
+      "spatial": {
+        "remaining_fraction": 0.9567695577606475,
+        "nakshatra_span": null,
+        "balance": {
+          "years": 9,
+          "months": 6,
+          "days": 24,
+          "hours": 17,
+          "minutes": 25,
+          "total_days": 3494.600809720765
+        },
+        "tree_depth": 2,
+        "row_format": ["path", "lord", "start_jd", "end_jd"],
+        "periods": [
+          ["0", "MOON", 2440423.157638889, 2443917.7584486096],
+          ["0/0", "MOON", 2440423.157638889, 2440714.3743730322],
+          ["0/1", "MARS", 2440714.3743730322, 2440918.2260869327],
+          ["0/2", "RAHU", 2440918.2260869327, 2441442.416208391],
+          ["0/3", "JUPITER", 2441442.416208391, 2441908.3629830205],
+          ["0/4", "SATURN", 2441908.3629830205, 2442461.674777893],
+          ["0/5", "MERCURY", 2442461.674777893, 2442956.743225937],
+          ["0/6", "KETU", 2442956.743225937, 2443160.5949398368],
+          ["0/7", "VENUS", 2443160.5949398368, 2443743.0284081236],
+          ["0/8", "SUN", 2443743.0284081236, 2443917.7584486096],
+          ["1", "MARS", 2443917.7584486096, 2446474.5084486096],
+          ["1/0", "MARS", 2443917.7584486096, 2444066.9021986094],
+          ["1/1", "RAHU", 2444066.9021986094, 2444450.4146986096],
+          ["1/2", "JUPITER", 2444450.4146986096, 2444791.3146986095],
+          ["1/3", "SATURN", 2444791.3146986095, 2445196.1334486096],
+          ["1/4", "MERCURY", 2445196.1334486096, 2445558.3396986094],
+          ["1/5", "KETU", 2445558.3396986094, 2445707.4834486097],
+          ["1/6", "VENUS", 2445707.4834486097, 2446133.6084486097],
+          ["1/7", "SUN", 2446133.6084486097, 2446261.4459486096],
+          ["1/8", "MOON", 2446261.4459486096, 2446474.5084486096],
+          ["2", "RAHU", 2446474.5084486096, 2453049.0084486096],
+          ["2/0", "RAHU", 2446474.5084486096, 2447460.6834486094],
+          ["2/1", "JUPITER", 2447460.6834486094, 2448337.2834486095],
+          ["2/2", "SATURN", 2448337.2834486095, 2449378.2459486094],
+          ["2/3", "MERCURY", 2449378.2459486094, 2450309.6334486096],
+          ["2/4", "KETU", 2450309.6334486096, 2450693.14594861],
+          ["2/5", "VENUS", 2450693.14594861, 2451788.89594861],
+          ["2/6", "SUN", 2451788.89594861, 2452117.6209486094],
+          ["2/7", "MOON", 2452117.6209486094, 2452665.4959486094],
+          ["2/8", "MARS", 2452665.4959486094, 2453049.0084486096],
+          ["3", "JUPITER", 2453049.0084486096, 2458893.0084486096],
+          ["3/0", "JUPITER", 2453049.0084486096, 2453828.20844861],
+          ["3/1", "SATURN", 2453828.20844861, 2454753.5084486096],
+          ["3/2", "MERCURY", 2454753.5084486096, 2455581.4084486095],
+          ["3/3", "KETU", 2455581.4084486095, 2455922.3084486094],
+          ["3/4", "VENUS", 2455922.3084486094, 2456896.3084486094],
+          ["3/5", "SUN", 2456896.3084486094, 2457188.5084486096],
+          ["3/6", "MOON", 2457188.5084486096, 2457675.5084486096],
+          ["3/7", "MARS", 2457675.5084486096, 2458016.4084486095],
+          ["3/8", "RAHU", 2458016.4084486095, 2458893.0084486096],
+          ["4", "SATURN", 2458893.0084486096, 2465832.7584486096],
+          ["4/0", "SATURN", 2458893.0084486096, 2459991.80219861],
+          ["4/1", "MERCURY", 2459991.80219861, 2460974.9334486094],
+          ["4/2", "KETU", 2460974.9334486094, 2461379.7521986095],
+          ["4/3", "VENUS", 2461379.7521986095, 2462536.3771986095],
+          ["4/4", "SUN", 2462536.3771986095, 2462883.36469861],
+          ["4/5", "MOON", 2462883.36469861, 2463461.67719861],
+          ["4/6", "MARS", 2463461.67719861, 2463866.4959486094],
+          ["4/7", "RAHU", 2463866.4959486094, 2464907.45844861],
+          ["4/8", "JUPITER", 2464907.45844861, 2465832.7584486096],
+          ["5", "MERCURY", 2465832.7584486096, 2472042.0084486096],
+          ["5/0", "MERCURY", 2465832.7584486096, 2466712.4021986094],
+          ["5/1", "KETU", 2466712.4021986094, 2467074.6084486097],
+          ["5/2", "VENUS", 2467074.6084486097, 2468109.4834486097],
+          ["5/3", "SUN", 2468109.4834486097, 2468419.9459486096],
+          ["5/4", "MOON", 2468419.9459486096, 2468937.3834486096],
+          ["5/5", "MARS", 2468937.3834486096, 2469299.5896986094],
+          ["5/6", "RAHU", 2469299.5896986094, 2470230.9771986096],
+          ["5/7", "JUPITER", 2470230.9771986096, 2471058.8771986095],
+          ["5/8", "SATURN", 2471058.8771986095, 2472042.0084486096],
+          ["6", "KETU", 2472042.0084486096, 2474598.7584486096],
+          ["6/0", "KETU", 2472042.0084486096, 2472191.1521986094],
+          ["6/1", "VENUS", 2472191.1521986094, 2472617.2771986094],
+          ["6/2", "SUN", 2472617.2771986094, 2472745.11469861],
+          ["6/3", "MOON", 2472745.11469861, 2472958.17719861],
+          ["6/4", "MARS", 2472958.17719861, 2473107.3209486096],
+          ["6/5", "RAHU", 2473107.3209486096, 2473490.83344861],
+          ["6/6", "JUPITER", 2473490.83344861, 2473831.7334486097],
+          ["6/7", "SATURN", 2473831.7334486097, 2474236.55219861],
+          ["6/8", "MERCURY", 2474236.55219861, 2474598.7584486096],
+          ["7", "VENUS", 2474598.7584486096, 2481903.7584486096],
+          ["7/0", "VENUS", 2474598.7584486096, 2475816.2584486096],
+          ["7/1", "SUN", 2475816.2584486096, 2476181.5084486096],
+          ["7/2", "MOON", 2476181.5084486096, 2476790.2584486096],
+          ["7/3", "MARS", 2476790.2584486096, 2477216.3834486096],
+          ["7/4", "RAHU", 2477216.3834486096, 2478312.1334486096],
+          ["7/5", "JUPITER", 2478312.1334486096, 2479286.1334486096],
+          ["7/6", "SATURN", 2479286.1334486096, 2480442.7584486096],
+          ["7/7", "MERCURY", 2480442.7584486096, 2481477.6334486096],
+          ["7/8", "KETU", 2481477.6334486096, 2481903.7584486096],
+          ["8", "SUN", 2481903.7584486096, 2484095.2584486096],
+          ["8/0", "SUN", 2481903.7584486096, 2482013.33344861],
+          ["8/1", "MOON", 2482013.33344861, 2482195.95844861],
+          ["8/2", "MARS", 2482195.95844861, 2482323.7959486097],
+          ["8/3", "RAHU", 2482323.7959486097, 2482652.52094861],
+          ["8/4", "JUPITER", 2482652.52094861, 2482944.7209486095],
+          ["8/5", "SATURN", 2482944.7209486095, 2483291.70844861],
+          ["8/6", "MERCURY", 2483291.70844861, 2483602.1709486097],
+          ["8/7", "KETU", 2483602.1709486097, 2483730.0084486096],
+          ["8/8", "VENUS", 2483730.0084486096, 2484095.2584486096]
+        ],
+        "children_row_format": ["index", "lord", "start_jd", "end_jd"],
+        "children_at_path": {
+          "0": [
+            [0, "MOON", 2440423.157638889, 2440714.3743730322],
+            [1, "MARS", 2440714.3743730322, 2440918.2260869327],
+            [2, "RAHU", 2440918.2260869327, 2441442.416208391],
+            [3, "JUPITER", 2441442.416208391, 2441908.3629830205],
+            [4, "SATURN", 2441908.3629830205, 2442461.674777893],
+            [5, "MERCURY", 2442461.674777893, 2442956.743225937],
+            [6, "KETU", 2442956.743225937, 2443160.5949398368],
+            [7, "VENUS", 2443160.5949398368, 2443743.0284081236],
+            [8, "SUN", 2443743.0284081236, 2443917.7584486096]
+          ],
+          "2": [
+            [0, "RAHU", 2446474.5084486096, 2447460.6834486094],
+            [1, "JUPITER", 2447460.6834486094, 2448337.2834486095],
+            [2, "SATURN", 2448337.2834486095, 2449378.2459486094],
+            [3, "MERCURY", 2449378.2459486094, 2450309.6334486096],
+            [4, "KETU", 2450309.6334486096, 2450693.14594861],
+            [5, "VENUS", 2450693.14594861, 2451788.89594861],
+            [6, "SUN", 2451788.89594861, 2452117.6209486094],
+            [7, "MOON", 2452117.6209486094, 2452665.4959486094],
+            [8, "MARS", 2452665.4959486094, 2453049.0084486096]
+          ],
+          "4": [
+            [0, "SATURN", 2458893.0084486096, 2459991.80219861],
+            [1, "MERCURY", 2459991.80219861, 2460974.9334486094],
+            [2, "KETU", 2460974.9334486094, 2461379.7521986095],
+            [3, "VENUS", 2461379.7521986095, 2462536.3771986095],
+            [4, "SUN", 2462536.3771986095, 2462883.36469861],
+            [5, "MOON", 2462883.36469861, 2463461.67719861],
+            [6, "MARS", 2463461.67719861, 2463866.4959486094],
+            [7, "RAHU", 2463866.4959486094, 2464907.45844861],
+            [8, "JUPITER", 2464907.45844861, 2465832.7584486096]
+          ],
+          "0/0": [
+            [0, "MOON", 2440423.157638889, 2440447.4257000675],
+            [1, "MARS", 2440447.4257000675, 2440464.4133428927],
+            [2, "RAHU", 2440464.4133428927, 2440508.0958530144],
+            [3, "JUPITER", 2440508.0958530144, 2440546.9247509],
+            [4, "SATURN", 2440546.9247509, 2440593.0340671395],
+            [5, "MERCURY", 2440593.0340671395, 2440634.289771143],
+            [6, "KETU", 2440634.289771143, 2440651.277413968],
+            [7, "VENUS", 2440651.277413968, 2440699.813536325],
+            [8, "SUN", 2440699.813536325, 2440714.3743730322]
+          ],
+          "0/0/0": [
+            [0, "MOON", 2440423.157638889, 2440425.1799773206],
+            [1, "MARS", 2440425.1799773206, 2440426.595614223],
+            [2, "RAHU", 2440426.595614223, 2440430.2358233994],
+            [3, "JUPITER", 2440430.2358233994, 2440433.47156489],
+            [4, "SATURN", 2440433.47156489, 2440437.31400791],
+            [5, "MERCURY", 2440437.31400791, 2440440.7519832435],
+            [6, "KETU", 2440440.7519832435, 2440442.1676201457],
+            [7, "VENUS", 2440442.1676201457, 2440446.212297009],
+            [8, "SUN", 2440446.212297009, 2440447.4257000675]
+          ],
+          "0/0/0/0": [
+            [0, "MOON", 2440423.157638889, 2440423.3261670917],
+            [1, "MARS", 2440423.3261670917, 2440423.4441368333],
+            [2, "RAHU", 2440423.4441368333, 2440423.747487598],
+            [3, "JUPITER", 2440423.747487598, 2440424.0171327223],
+            [4, "SATURN", 2440424.0171327223, 2440424.3373363074],
+            [5, "MERCURY", 2440424.3373363074, 2440424.623834252],
+            [6, "KETU", 2440424.623834252, 2440424.741803994],
+            [7, "VENUS", 2440424.741803994, 2440425.078860399],
+            [8, "SUN", 2440425.078860399, 2440425.1799773206]
+          ],
+          "2/4": [
+            [0, "KETU", 2450309.6334486096, 2450332.0050111096],
+            [1, "VENUS", 2450332.0050111096, 2450395.92376111],
+            [2, "SUN", 2450395.92376111, 2450415.0993861095],
+            [3, "MOON", 2450415.0993861095, 2450447.0587611096],
+            [4, "MARS", 2450447.0587611096, 2450469.4303236096],
+            [5, "RAHU", 2450469.4303236096, 2450526.9571986096],
+            [6, "JUPITER", 2450526.9571986096, 2450578.0921986094],
+            [7, "SATURN", 2450578.0921986094, 2450638.8150111097],
+            [8, "MERCURY", 2450638.8150111097, 2450693.14594861]
+          ],
+          "2/4/3": [
+            [0, "MOON", 2450415.0993861095, 2450417.7626673593],
+            [1, "MARS", 2450417.7626673593, 2450419.6269642343],
+            [2, "RAHU", 2450419.6269642343, 2450424.4208704843],
+            [3, "JUPITER", 2450424.4208704843, 2450428.6821204843],
+            [4, "SATURN", 2450428.6821204843, 2450433.7423548596],
+            [5, "MERCURY", 2450433.7423548596, 2450438.2699329844],
+            [6, "KETU", 2450438.2699329844, 2450440.1342298593],
+            [7, "VENUS", 2450440.1342298593, 2450445.4607923594],
+            [8, "SUN", 2450445.4607923594, 2450447.0587611096]
+          ],
+          "2/4/3/2": [
+            [0, "RAHU", 2450419.6269642343, 2450420.3460501716],
+            [1, "JUPITER", 2450420.3460501716, 2450420.985237672],
+            [2, "SATURN", 2450420.985237672, 2450421.744272828],
+            [3, "MERCURY", 2450421.744272828, 2450422.4234095467],
+            [4, "KETU", 2450422.4234095467, 2450422.703054078],
+            [5, "VENUS", 2450422.703054078, 2450423.5020384532],
+            [6, "SUN", 2450423.5020384532, 2450423.7417337657],
+            [7, "MOON", 2450423.7417337657, 2450424.141225953],
+            [8, "MARS", 2450424.141225953, 2450424.4208704843]
+          ],
+          "4/2": [
+            [0, "KETU", 2460974.9334486094, 2460998.5478756926],
+            [1, "VENUS", 2460998.5478756926, 2461066.017667359],
+            [2, "SUN", 2461066.017667359, 2461086.2586048595],
+            [3, "MOON", 2461086.2586048595, 2461119.993500693],
+            [4, "MARS", 2461119.993500693, 2461143.607927776],
+            [5, "RAHU", 2461143.607927776, 2461204.3307402763],
+            [6, "JUPITER", 2461204.3307402763, 2461258.3065736094],
+            [7, "SATURN", 2461258.3065736094, 2461322.4028756926],
+            [8, "MERCURY", 2461322.4028756926, 2461379.7521986095]
+          ],
+          "4/2/7": [
+            [0, "SATURN", 2461258.3065736094, 2461268.4551547724],
+            [1, "MERCURY", 2461268.4551547724, 2461277.535464234],
+            [2, "KETU", 2461277.535464234, 2461281.2744151894],
+            [3, "VENUS", 2461281.2744151894, 2461291.957132203],
+            [4, "SUN", 2461291.957132203, 2461295.161947307],
+            [5, "MOON", 2461295.161947307, 2461300.503305814],
+            [6, "MARS", 2461300.503305814, 2461304.242256769],
+            [7, "RAHU", 2461304.242256769, 2461313.8567020814],
+            [8, "JUPITER", 2461313.8567020814, 2461322.4028756926]
+          ],
+          "4/2/7/3": [
+            [0, "VENUS", 2461281.2744151894, 2461283.0548680252],
+            [1, "SUN", 2461283.0548680252, 2461283.589003876],
+            [2, "MOON", 2461283.589003876, 2461284.4792302935],
+            [3, "MARS", 2461284.4792302935, 2461285.102388786],
+            [4, "RAHU", 2461285.102388786, 2461286.704796338],
+            [5, "JUPITER", 2461286.704796338, 2461288.1291586068],
+            [6, "SATURN", 2461288.1291586068, 2461289.8205888006],
+            [7, "MERCURY", 2461289.8205888006, 2461291.333973711],
+            [8, "KETU", 2461291.333973711, 2461291.9571322035]
+          ]
+        },
+        "active_at": [
+          {
+            "jd": 2450423.157638889,
+            "chain": [
+              {
+                "level": 1,
+                "index": 2,
+                "lord": "RAHU",
+                "start_jd": 2446474.5084486096,
+                "end_jd": 2453049.0084486096
+              },
+              {
+                "level": 2,
+                "index": 4,
+                "lord": "KETU",
+                "start_jd": 2450309.6334486096,
+                "end_jd": 2450693.14594861
+              },
+              {
+                "level": 3,
+                "index": 3,
+                "lord": "MOON",
+                "start_jd": 2450415.0993861095,
+                "end_jd": 2450447.0587611096
+              },
+              {
+                "level": 4,
+                "index": 2,
+                "lord": "RAHU",
+                "start_jd": 2450419.6269642343,
+                "end_jd": 2450424.4208704843
+              },
+              {
+                "level": 5,
+                "index": 5,
+                "lord": "VENUS",
+                "start_jd": 2450422.703054078,
+                "end_jd": 2450423.5020384532
+              }
+            ]
+          },
+          {
+            "jd": 2461287.5,
+            "chain": [
+              {
+                "level": 1,
+                "index": 4,
+                "lord": "SATURN",
+                "start_jd": 2458893.0084486096,
+                "end_jd": 2465832.7584486096
+              },
+              {
+                "level": 2,
+                "index": 2,
+                "lord": "KETU",
+                "start_jd": 2460974.9334486094,
+                "end_jd": 2461379.7521986095
+              },
+              {
+                "level": 3,
+                "index": 7,
+                "lord": "SATURN",
+                "start_jd": 2461258.3065736094,
+                "end_jd": 2461322.4028756926
+              },
+              {
+                "level": 4,
+                "index": 3,
+                "lord": "VENUS",
+                "start_jd": 2461281.2744151894,
+                "end_jd": 2461291.957132203
+              },
+              {
+                "level": 5,
+                "index": 5,
+                "lord": "JUPITER",
+                "start_jd": 2461286.704796338,
+                "end_jd": 2461288.1291586068
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

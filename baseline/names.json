@@ -1,0 +1,8289 @@
+{
+  "schema": "teistro-conformance/baseline-names/1",
+  "tool": "baseline engine 0.1.0",
+  "exported": "2026-09-06",
+  "languages": [
+    "sa",
+    "ne",
+    "en",
+    "hi"
+  ],
+  "types": {
+    "GRAHA": [
+      {
+        "key": "SUN",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "सूर्य",
+            "abbreviation": "सू",
+            "transliteration": "Sūrya",
+            "synonyms": [
+              "रवि",
+              "भानु",
+              "अर्क",
+              "मित्र",
+              "आदित्य",
+              "सवित",
+              "पूष",
+              "भास्कर",
+              "दिवाकर",
+              "मार्तण्ड"
+            ]
+          },
+          "ne": {
+            "primary": "सूर्य",
+            "abbreviation": "सू",
+            "synonyms": [
+              "रवि"
+            ]
+          },
+          "en": {
+            "primary": "Sun",
+            "abbreviation": "Su",
+            "transliteration": "Sūrya"
+          },
+          "hi": {
+            "primary": "सूर्य",
+            "abbreviation": "सू",
+            "synonyms": [
+              "रवि"
+            ]
+          }
+        },
+        "symbol": "☉"
+      },
+      {
+        "key": "MOON",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "चन्द्र",
+            "abbreviation": "च",
+            "transliteration": "Candra",
+            "synonyms": [
+              "सोम",
+              "इन्दु",
+              "निशाकर",
+              "शशि",
+              "विधु",
+              "हिमांशु",
+              "ओषधिपति"
+            ]
+          },
+          "ne": {
+            "primary": "चन्द्र",
+            "abbreviation": "च",
+            "synonyms": [
+              "सोम"
+            ]
+          },
+          "en": {
+            "primary": "Moon",
+            "abbreviation": "Mo",
+            "transliteration": "Candra"
+          },
+          "hi": {
+            "primary": "चन्द्र",
+            "abbreviation": "च",
+            "synonyms": [
+              "सोम",
+              "चाँद"
+            ]
+          }
+        },
+        "symbol": "☽"
+      },
+      {
+        "key": "MARS",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "मंगल",
+            "abbreviation": "मं",
+            "transliteration": "Maṅgala",
+            "synonyms": [
+              "भौम",
+              "कुज",
+              "अंगारक",
+              "लोहितांग",
+              "भूमिपुत्र"
+            ]
+          },
+          "ne": {
+            "primary": "मंगल",
+            "abbreviation": "मं",
+            "synonyms": [
+              "भौम"
+            ]
+          },
+          "en": {
+            "primary": "Mars",
+            "abbreviation": "Ma",
+            "transliteration": "Maṅgala"
+          },
+          "hi": {
+            "primary": "मंगल",
+            "abbreviation": "मं",
+            "synonyms": [
+              "भौम",
+              "कुज"
+            ]
+          }
+        },
+        "symbol": "♂"
+      },
+      {
+        "key": "MERCURY",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "बुध",
+            "abbreviation": "बु",
+            "transliteration": "Budha",
+            "synonyms": [
+              "सौम्य",
+              "रौहिणेय",
+              "बोधन",
+              "चन्द्रपुत्र"
+            ]
+          },
+          "ne": {
+            "primary": "बुध",
+            "abbreviation": "बु"
+          },
+          "en": {
+            "primary": "Mercury",
+            "abbreviation": "Me",
+            "transliteration": "Budha"
+          },
+          "hi": {
+            "primary": "बुध",
+            "abbreviation": "बु"
+          }
+        },
+        "symbol": "☿"
+      },
+      {
+        "key": "JUPITER",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "गुरु",
+            "abbreviation": "गु",
+            "transliteration": "Guru",
+            "synonyms": [
+              "बृहस्पति",
+              "देवगुरु",
+              "जीव",
+              "सुराचार्य",
+              "अंगिरस",
+              "वाचस्पति"
+            ]
+          },
+          "ne": {
+            "primary": "गुरु",
+            "abbreviation": "गु",
+            "synonyms": [
+              "बृहस्पति"
+            ]
+          },
+          "en": {
+            "primary": "Jupiter",
+            "abbreviation": "Ju",
+            "transliteration": "Guru"
+          },
+          "hi": {
+            "primary": "गुरु",
+            "abbreviation": "गु",
+            "synonyms": [
+              "बृहस्पति"
+            ]
+          }
+        },
+        "symbol": "♃"
+      },
+      {
+        "key": "VENUS",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "शुक्र",
+            "abbreviation": "शु",
+            "transliteration": "Śukra",
+            "synonyms": [
+              "भृगु",
+              "कवि",
+              "सित",
+              "दैत्यगुरु",
+              "शुक्राचार्य"
+            ]
+          },
+          "ne": {
+            "primary": "शुक्र",
+            "abbreviation": "शु"
+          },
+          "en": {
+            "primary": "Venus",
+            "abbreviation": "Ve",
+            "transliteration": "Śukra"
+          },
+          "hi": {
+            "primary": "शुक्र",
+            "abbreviation": "शु"
+          }
+        },
+        "symbol": "♀"
+      },
+      {
+        "key": "SATURN",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "शनि",
+            "abbreviation": "शं",
+            "transliteration": "Śani",
+            "synonyms": [
+              "मन्द",
+              "सौर्य",
+              "यम",
+              "क्रूर",
+              "असित",
+              "सूर्यपुत्र"
+            ]
+          },
+          "ne": {
+            "primary": "शनि",
+            "abbreviation": "शं"
+          },
+          "en": {
+            "primary": "Saturn",
+            "abbreviation": "Sa",
+            "transliteration": "Śani"
+          },
+          "hi": {
+            "primary": "शनि",
+            "abbreviation": "शं"
+          }
+        },
+        "symbol": "♄"
+      },
+      {
+        "key": "RAHU",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "राहु",
+            "abbreviation": "रा",
+            "transliteration": "Rāhu",
+            "synonyms": [
+              "सर्पशीर्ष",
+              "तमस",
+              "स्वर्भानु"
+            ]
+          },
+          "ne": {
+            "primary": "राहु",
+            "abbreviation": "रा"
+          },
+          "en": {
+            "primary": "Rahu",
+            "abbreviation": "Ra",
+            "transliteration": "Rāhu"
+          },
+          "hi": {
+            "primary": "राहु",
+            "abbreviation": "रा"
+          }
+        },
+        "symbol": "☊"
+      },
+      {
+        "key": "KETU",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "केतु",
+            "abbreviation": "के",
+            "transliteration": "Ketu",
+            "synonyms": [
+              "सर्पपुच्छ",
+              "ध्वज",
+              "शिखिन",
+              "अनंग"
+            ]
+          },
+          "ne": {
+            "primary": "केतु",
+            "abbreviation": "के"
+          },
+          "en": {
+            "primary": "Ketu",
+            "abbreviation": "Ke",
+            "transliteration": "Ketu"
+          },
+          "hi": {
+            "primary": "केतु",
+            "abbreviation": "के"
+          }
+        },
+        "symbol": "☋"
+      },
+      {
+        "key": "LAGNA",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "लग्न",
+            "abbreviation": "ल",
+            "transliteration": "Lagna"
+          },
+          "ne": {
+            "primary": "लग्न",
+            "abbreviation": "ल"
+          },
+          "en": {
+            "primary": "Ascendant",
+            "abbreviation": "As",
+            "transliteration": "Lagna"
+          },
+          "hi": {
+            "primary": "लग्न",
+            "abbreviation": "ल"
+          }
+        },
+        "symbol": "Asc"
+      }
+    ],
+    "RASHI": [
+      {
+        "key": "ARIES",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "मेष",
+            "abbreviation": "मे",
+            "transliteration": "Meṣa"
+          },
+          "ne": {
+            "primary": "मेष",
+            "abbreviation": "मे"
+          },
+          "en": {
+            "primary": "Aries",
+            "abbreviation": "Ar"
+          },
+          "hi": {
+            "primary": "मेष",
+            "abbreviation": "मे"
+          }
+        },
+        "symbol": "♈"
+      },
+      {
+        "key": "TAURUS",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "वृषभ",
+            "abbreviation": "वृ",
+            "transliteration": "Vṛṣabha"
+          },
+          "ne": {
+            "primary": "वृषभ",
+            "abbreviation": "वृ"
+          },
+          "en": {
+            "primary": "Taurus",
+            "abbreviation": "Ta"
+          },
+          "hi": {
+            "primary": "वृषभ",
+            "abbreviation": "वृ"
+          }
+        },
+        "symbol": "♉"
+      },
+      {
+        "key": "GEMINI",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "मिथुन",
+            "abbreviation": "मि",
+            "transliteration": "Mithuna"
+          },
+          "ne": {
+            "primary": "मिथुन",
+            "abbreviation": "मि"
+          },
+          "en": {
+            "primary": "Gemini",
+            "abbreviation": "Ge"
+          },
+          "hi": {
+            "primary": "मिथुन",
+            "abbreviation": "मि"
+          }
+        },
+        "symbol": "♊"
+      },
+      {
+        "key": "CANCER",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "कर्क",
+            "abbreviation": "क",
+            "transliteration": "Karka"
+          },
+          "ne": {
+            "primary": "कर्कट",
+            "abbreviation": "क"
+          },
+          "en": {
+            "primary": "Cancer",
+            "abbreviation": "Cn"
+          },
+          "hi": {
+            "primary": "कर्क",
+            "abbreviation": "क"
+          }
+        },
+        "symbol": "♋"
+      },
+      {
+        "key": "LEO",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "सिंह",
+            "abbreviation": "सिं",
+            "transliteration": "Siṃha"
+          },
+          "ne": {
+            "primary": "सिंह",
+            "abbreviation": "सिं"
+          },
+          "en": {
+            "primary": "Leo",
+            "abbreviation": "Le"
+          },
+          "hi": {
+            "primary": "सिंह",
+            "abbreviation": "सिं"
+          }
+        },
+        "symbol": "♌"
+      },
+      {
+        "key": "VIRGO",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "कन्या",
+            "abbreviation": "कन्",
+            "transliteration": "Kanyā"
+          },
+          "ne": {
+            "primary": "कन्या",
+            "abbreviation": "कन्"
+          },
+          "en": {
+            "primary": "Virgo",
+            "abbreviation": "Vi"
+          },
+          "hi": {
+            "primary": "कन्या",
+            "abbreviation": "कन्"
+          }
+        },
+        "symbol": "♍"
+      },
+      {
+        "key": "LIBRA",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "तुला",
+            "abbreviation": "तु",
+            "transliteration": "Tulā"
+          },
+          "ne": {
+            "primary": "तुला",
+            "abbreviation": "तु"
+          },
+          "en": {
+            "primary": "Libra",
+            "abbreviation": "Li"
+          },
+          "hi": {
+            "primary": "तुला",
+            "abbreviation": "तु"
+          }
+        },
+        "symbol": "♎"
+      },
+      {
+        "key": "SCORPIO",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "वृश्चिक",
+            "abbreviation": "वृश्",
+            "transliteration": "Vṛścika"
+          },
+          "ne": {
+            "primary": "वृश्चिक",
+            "abbreviation": "वृश्"
+          },
+          "en": {
+            "primary": "Scorpio",
+            "abbreviation": "Sc"
+          },
+          "hi": {
+            "primary": "वृश्चिक",
+            "abbreviation": "वृश्"
+          }
+        },
+        "symbol": "♏"
+      },
+      {
+        "key": "SAGITTARIUS",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "धनु",
+            "abbreviation": "ध",
+            "transliteration": "Dhanu"
+          },
+          "ne": {
+            "primary": "धनु",
+            "abbreviation": "ध"
+          },
+          "en": {
+            "primary": "Sagittarius",
+            "abbreviation": "Sg"
+          },
+          "hi": {
+            "primary": "धनु",
+            "abbreviation": "ध"
+          }
+        },
+        "symbol": "♐"
+      },
+      {
+        "key": "CAPRICORN",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "मकर",
+            "abbreviation": "मक",
+            "transliteration": "Makara"
+          },
+          "ne": {
+            "primary": "मकर",
+            "abbreviation": "मक"
+          },
+          "en": {
+            "primary": "Capricorn",
+            "abbreviation": "Cp"
+          },
+          "hi": {
+            "primary": "मकर",
+            "abbreviation": "मक"
+          }
+        },
+        "symbol": "♑"
+      },
+      {
+        "key": "AQUARIUS",
+        "index": 10,
+        "names": {
+          "sa": {
+            "primary": "कुम्भ",
+            "abbreviation": "कुं",
+            "transliteration": "Kumbha"
+          },
+          "ne": {
+            "primary": "कुम्भ",
+            "abbreviation": "कुं"
+          },
+          "en": {
+            "primary": "Aquarius",
+            "abbreviation": "Aq"
+          },
+          "hi": {
+            "primary": "कुम्भ",
+            "abbreviation": "कुं"
+          }
+        },
+        "symbol": "♒"
+      },
+      {
+        "key": "PISCES",
+        "index": 11,
+        "names": {
+          "sa": {
+            "primary": "मीन",
+            "abbreviation": "मी",
+            "transliteration": "Mīna"
+          },
+          "ne": {
+            "primary": "मीन",
+            "abbreviation": "मी"
+          },
+          "en": {
+            "primary": "Pisces",
+            "abbreviation": "Pi"
+          },
+          "hi": {
+            "primary": "मीन",
+            "abbreviation": "मी"
+          }
+        },
+        "symbol": "♓"
+      }
+    ],
+    "NAKSHATRA": [
+      {
+        "key": "ASHWINI",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "अश्विनी",
+            "abbreviation": "अश्",
+            "transliteration": "Aśvinī"
+          },
+          "ne": {
+            "primary": "अश्विनी",
+            "abbreviation": "अश्"
+          },
+          "en": {
+            "primary": "Ashwini",
+            "abbreviation": "Ash",
+            "transliteration": "Aśvinī"
+          },
+          "hi": {
+            "primary": "अश्विनी",
+            "abbreviation": "अश्"
+          }
+        }
+      },
+      {
+        "key": "BHARANI",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "भरणी",
+            "abbreviation": "भर",
+            "transliteration": "Bharaṇī"
+          },
+          "ne": {
+            "primary": "भरणी",
+            "abbreviation": "भर"
+          },
+          "en": {
+            "primary": "Bharani",
+            "abbreviation": "Bha",
+            "transliteration": "Bharaṇī"
+          },
+          "hi": {
+            "primary": "भरणी",
+            "abbreviation": "भर"
+          }
+        }
+      },
+      {
+        "key": "KRITTIKA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "कृत्तिका",
+            "abbreviation": "कृ",
+            "transliteration": "Kṛttikā"
+          },
+          "ne": {
+            "primary": "कृत्तिका",
+            "abbreviation": "कृ"
+          },
+          "en": {
+            "primary": "Krittika",
+            "abbreviation": "Kri",
+            "transliteration": "Kṛttikā"
+          },
+          "hi": {
+            "primary": "कृत्तिका",
+            "abbreviation": "कृ"
+          }
+        }
+      },
+      {
+        "key": "ROHINI",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "रोहिणी",
+            "abbreviation": "रो",
+            "transliteration": "Rohiṇī"
+          },
+          "ne": {
+            "primary": "रोहिणी",
+            "abbreviation": "रो"
+          },
+          "en": {
+            "primary": "Rohini",
+            "abbreviation": "Roh",
+            "transliteration": "Rohiṇī"
+          },
+          "hi": {
+            "primary": "रोहिणी",
+            "abbreviation": "रो"
+          }
+        }
+      },
+      {
+        "key": "MRIGASHIRA",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "मृगशिरा",
+            "abbreviation": "मृ",
+            "transliteration": "Mṛgaśirā"
+          },
+          "ne": {
+            "primary": "मृगशिरा",
+            "abbreviation": "मृ"
+          },
+          "en": {
+            "primary": "Mrigashira",
+            "abbreviation": "Mri",
+            "transliteration": "Mṛgaśirā"
+          },
+          "hi": {
+            "primary": "मृगशिरा",
+            "abbreviation": "मृ"
+          }
+        }
+      },
+      {
+        "key": "ARDRA",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "आर्द्रा",
+            "abbreviation": "आ",
+            "transliteration": "Ārdrā"
+          },
+          "ne": {
+            "primary": "आर्द्रा",
+            "abbreviation": "आ"
+          },
+          "en": {
+            "primary": "Ardra",
+            "abbreviation": "Ard",
+            "transliteration": "Ārdrā"
+          },
+          "hi": {
+            "primary": "आर्द्रा",
+            "abbreviation": "आ"
+          }
+        }
+      },
+      {
+        "key": "PUNARVASU",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "पुनर्वसु",
+            "abbreviation": "पु",
+            "transliteration": "Punarvasu"
+          },
+          "ne": {
+            "primary": "पुनर्वसु",
+            "abbreviation": "पु"
+          },
+          "en": {
+            "primary": "Punarvasu",
+            "abbreviation": "Pun",
+            "transliteration": "Punarvasu"
+          },
+          "hi": {
+            "primary": "पुनर्वसु",
+            "abbreviation": "पु"
+          }
+        }
+      },
+      {
+        "key": "PUSHYA",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "पुष्य",
+            "abbreviation": "पुष्",
+            "transliteration": "Puṣya"
+          },
+          "ne": {
+            "primary": "पुष्य",
+            "abbreviation": "पुष्"
+          },
+          "en": {
+            "primary": "Pushya",
+            "abbreviation": "Pus",
+            "transliteration": "Puṣya"
+          },
+          "hi": {
+            "primary": "पुष्य",
+            "abbreviation": "पुष्"
+          }
+        }
+      },
+      {
+        "key": "ASHLESHA",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "आश्लेषा",
+            "abbreviation": "आश्",
+            "transliteration": "Āśleṣā"
+          },
+          "ne": {
+            "primary": "आश्लेषा",
+            "abbreviation": "आश्"
+          },
+          "en": {
+            "primary": "Ashlesha",
+            "abbreviation": "Asl",
+            "transliteration": "Āśleṣā"
+          },
+          "hi": {
+            "primary": "आश्लेषा",
+            "abbreviation": "आश्"
+          }
+        }
+      },
+      {
+        "key": "MAGHA",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "मघा",
+            "abbreviation": "म",
+            "transliteration": "Maghā"
+          },
+          "ne": {
+            "primary": "मघा",
+            "abbreviation": "म"
+          },
+          "en": {
+            "primary": "Magha",
+            "abbreviation": "Mag",
+            "transliteration": "Maghā"
+          },
+          "hi": {
+            "primary": "मघा",
+            "abbreviation": "म"
+          }
+        }
+      },
+      {
+        "key": "PURVA_PHALGUNI",
+        "index": 10,
+        "names": {
+          "sa": {
+            "primary": "पूर्वफाल्गुनी",
+            "abbreviation": "पूफा",
+            "transliteration": "Pūrvaphālgunī"
+          },
+          "ne": {
+            "primary": "पूर्वफाल्गुनी",
+            "abbreviation": "पूफा"
+          },
+          "en": {
+            "primary": "Purva Phalguni",
+            "abbreviation": "PPh",
+            "transliteration": "Pūrvaphālgunī"
+          },
+          "hi": {
+            "primary": "पूर्वफाल्गुनी",
+            "abbreviation": "पूफा"
+          }
+        }
+      },
+      {
+        "key": "UTTARA_PHALGUNI",
+        "index": 11,
+        "names": {
+          "sa": {
+            "primary": "उत्तरफाल्गुनी",
+            "abbreviation": "उफा",
+            "transliteration": "Uttaraphālgunī"
+          },
+          "ne": {
+            "primary": "उत्तरफाल्गुनी",
+            "abbreviation": "उफा"
+          },
+          "en": {
+            "primary": "Uttara Phalguni",
+            "abbreviation": "UPh",
+            "transliteration": "Uttaraphālgunī"
+          },
+          "hi": {
+            "primary": "उत्तरफाल्गुनी",
+            "abbreviation": "उफा"
+          }
+        }
+      },
+      {
+        "key": "HASTA",
+        "index": 12,
+        "names": {
+          "sa": {
+            "primary": "हस्त",
+            "abbreviation": "ह",
+            "transliteration": "Hasta"
+          },
+          "ne": {
+            "primary": "हस्त",
+            "abbreviation": "ह"
+          },
+          "en": {
+            "primary": "Hasta",
+            "abbreviation": "Has",
+            "transliteration": "Hasta"
+          },
+          "hi": {
+            "primary": "हस्त",
+            "abbreviation": "ह"
+          }
+        }
+      },
+      {
+        "key": "CHITRA",
+        "index": 13,
+        "names": {
+          "sa": {
+            "primary": "चित्रा",
+            "abbreviation": "चि",
+            "transliteration": "Citrā"
+          },
+          "ne": {
+            "primary": "चित्रा",
+            "abbreviation": "चि"
+          },
+          "en": {
+            "primary": "Chitra",
+            "abbreviation": "Chi",
+            "transliteration": "Citrā"
+          },
+          "hi": {
+            "primary": "चित्रा",
+            "abbreviation": "चि"
+          }
+        }
+      },
+      {
+        "key": "SWATI",
+        "index": 14,
+        "names": {
+          "sa": {
+            "primary": "स्वाती",
+            "abbreviation": "स्वा",
+            "transliteration": "Svātī"
+          },
+          "ne": {
+            "primary": "स्वाती",
+            "abbreviation": "स्वा"
+          },
+          "en": {
+            "primary": "Swati",
+            "abbreviation": "Swa",
+            "transliteration": "Svātī"
+          },
+          "hi": {
+            "primary": "स्वाती",
+            "abbreviation": "स्वा"
+          }
+        }
+      },
+      {
+        "key": "VISHAKHA",
+        "index": 15,
+        "names": {
+          "sa": {
+            "primary": "विशाखा",
+            "abbreviation": "वि",
+            "transliteration": "Viśākhā"
+          },
+          "ne": {
+            "primary": "विशाखा",
+            "abbreviation": "वि"
+          },
+          "en": {
+            "primary": "Vishakha",
+            "abbreviation": "Vis",
+            "transliteration": "Viśākhā"
+          },
+          "hi": {
+            "primary": "विशाखा",
+            "abbreviation": "वि"
+          }
+        }
+      },
+      {
+        "key": "ANURADHA",
+        "index": 16,
+        "names": {
+          "sa": {
+            "primary": "अनुराधा",
+            "abbreviation": "अनु",
+            "transliteration": "Anurādhā"
+          },
+          "ne": {
+            "primary": "अनुराधा",
+            "abbreviation": "अनु"
+          },
+          "en": {
+            "primary": "Anuradha",
+            "abbreviation": "Anu",
+            "transliteration": "Anurādhā"
+          },
+          "hi": {
+            "primary": "अनुराधा",
+            "abbreviation": "अनु"
+          }
+        }
+      },
+      {
+        "key": "JYESHTHA",
+        "index": 17,
+        "names": {
+          "sa": {
+            "primary": "ज्येष्ठा",
+            "abbreviation": "ज्ये",
+            "transliteration": "Jyeṣṭhā"
+          },
+          "ne": {
+            "primary": "ज्येष्ठा",
+            "abbreviation": "ज्ये"
+          },
+          "en": {
+            "primary": "Jyeshtha",
+            "abbreviation": "Jye",
+            "transliteration": "Jyeṣṭhā"
+          },
+          "hi": {
+            "primary": "ज्येष्ठा",
+            "abbreviation": "ज्ये"
+          }
+        }
+      },
+      {
+        "key": "MULA",
+        "index": 18,
+        "names": {
+          "sa": {
+            "primary": "मूल",
+            "abbreviation": "मू",
+            "transliteration": "Mūla"
+          },
+          "ne": {
+            "primary": "मूल",
+            "abbreviation": "मू"
+          },
+          "en": {
+            "primary": "Mula",
+            "abbreviation": "Mul",
+            "transliteration": "Mūla"
+          },
+          "hi": {
+            "primary": "मूल",
+            "abbreviation": "मू"
+          }
+        }
+      },
+      {
+        "key": "PURVA_ASHADHA",
+        "index": 19,
+        "names": {
+          "sa": {
+            "primary": "पूर्वाषाढा",
+            "abbreviation": "पूआ",
+            "transliteration": "Pūrvāṣāḍhā"
+          },
+          "ne": {
+            "primary": "पूर्वाषाढा",
+            "abbreviation": "पूआ"
+          },
+          "en": {
+            "primary": "Purva Ashadha",
+            "abbreviation": "PAs",
+            "transliteration": "Pūrvāṣāḍhā"
+          },
+          "hi": {
+            "primary": "पूर्वाषाढा",
+            "abbreviation": "पूआ"
+          }
+        }
+      },
+      {
+        "key": "UTTARA_ASHADHA",
+        "index": 20,
+        "names": {
+          "sa": {
+            "primary": "उत्तराषाढा",
+            "abbreviation": "उआ",
+            "transliteration": "Uttarāṣāḍhā"
+          },
+          "ne": {
+            "primary": "उत्तराषाढा",
+            "abbreviation": "उआ"
+          },
+          "en": {
+            "primary": "Uttara Ashadha",
+            "abbreviation": "UAs",
+            "transliteration": "Uttarāṣāḍhā"
+          },
+          "hi": {
+            "primary": "उत्तराषाढा",
+            "abbreviation": "उआ"
+          }
+        }
+      },
+      {
+        "key": "SHRAVANA",
+        "index": 21,
+        "names": {
+          "sa": {
+            "primary": "श्रवण",
+            "abbreviation": "श्र",
+            "transliteration": "Śravaṇa"
+          },
+          "ne": {
+            "primary": "श्रवण",
+            "abbreviation": "श्र"
+          },
+          "en": {
+            "primary": "Shravana",
+            "abbreviation": "Shr",
+            "transliteration": "Śravaṇa"
+          },
+          "hi": {
+            "primary": "श्रवण",
+            "abbreviation": "श्र"
+          }
+        }
+      },
+      {
+        "key": "DHANISHTHA",
+        "index": 22,
+        "names": {
+          "sa": {
+            "primary": "धनिष्ठा",
+            "abbreviation": "ध",
+            "transliteration": "Dhaniṣṭhā"
+          },
+          "ne": {
+            "primary": "धनिष्ठा",
+            "abbreviation": "ध"
+          },
+          "en": {
+            "primary": "Dhanishtha",
+            "abbreviation": "Dha",
+            "transliteration": "Dhaniṣṭhā"
+          },
+          "hi": {
+            "primary": "धनिष्ठा",
+            "abbreviation": "ध"
+          }
+        }
+      },
+      {
+        "key": "SHATABHISHA",
+        "index": 23,
+        "names": {
+          "sa": {
+            "primary": "शतभिषा",
+            "abbreviation": "शत",
+            "transliteration": "Śatabhiṣā"
+          },
+          "ne": {
+            "primary": "शतभिषा",
+            "abbreviation": "शत"
+          },
+          "en": {
+            "primary": "Shatabhisha",
+            "abbreviation": "Sha",
+            "transliteration": "Śatabhiṣā"
+          },
+          "hi": {
+            "primary": "शतभिषा",
+            "abbreviation": "शत"
+          }
+        }
+      },
+      {
+        "key": "PURVA_BHADRAPADA",
+        "index": 24,
+        "names": {
+          "sa": {
+            "primary": "पूर्वभाद्रपदा",
+            "abbreviation": "पूभा",
+            "transliteration": "Pūrvabhādrapadā"
+          },
+          "ne": {
+            "primary": "पूर्वभाद्रपदा",
+            "abbreviation": "पूभा"
+          },
+          "en": {
+            "primary": "Purva Bhadrapada",
+            "abbreviation": "PBh",
+            "transliteration": "Pūrvabhādrapadā"
+          },
+          "hi": {
+            "primary": "पूर्वभाद्रपदा",
+            "abbreviation": "पूभा"
+          }
+        }
+      },
+      {
+        "key": "UTTARA_BHADRAPADA",
+        "index": 25,
+        "names": {
+          "sa": {
+            "primary": "उत्तरभाद्रपदा",
+            "abbreviation": "उभा",
+            "transliteration": "Uttarabhādrapadā"
+          },
+          "ne": {
+            "primary": "उत्तरभाद्रपदा",
+            "abbreviation": "उभा"
+          },
+          "en": {
+            "primary": "Uttara Bhadrapada",
+            "abbreviation": "UBh",
+            "transliteration": "Uttarabhādrapadā"
+          },
+          "hi": {
+            "primary": "उत्तरभाद्रपदा",
+            "abbreviation": "उभा"
+          }
+        }
+      },
+      {
+        "key": "REVATI",
+        "index": 26,
+        "names": {
+          "sa": {
+            "primary": "रेवती",
+            "abbreviation": "रे",
+            "transliteration": "Revatī"
+          },
+          "ne": {
+            "primary": "रेवती",
+            "abbreviation": "रे"
+          },
+          "en": {
+            "primary": "Revati",
+            "abbreviation": "Rev",
+            "transliteration": "Revatī"
+          },
+          "hi": {
+            "primary": "रेवती",
+            "abbreviation": "रे"
+          }
+        }
+      }
+    ],
+    "TATWA": [
+      {
+        "key": "AGNI",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "अग्नि",
+            "transliteration": "Agni"
+          },
+          "ne": {
+            "primary": "अग्नि"
+          },
+          "en": {
+            "primary": "Agni",
+            "transliteration": "Agni"
+          },
+          "hi": {
+            "primary": "अग्नि"
+          }
+        }
+      },
+      {
+        "key": "PRITHVI",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "पृथ्वी",
+            "transliteration": "Pṛthvī"
+          },
+          "ne": {
+            "primary": "पृथ्वी"
+          },
+          "en": {
+            "primary": "Prithvi",
+            "transliteration": "Pṛthvī"
+          },
+          "hi": {
+            "primary": "पृथ्वी"
+          }
+        }
+      },
+      {
+        "key": "VAYU",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "वायु",
+            "transliteration": "Vāyu"
+          },
+          "ne": {
+            "primary": "वायु"
+          },
+          "en": {
+            "primary": "Vayu",
+            "transliteration": "Vāyu"
+          },
+          "hi": {
+            "primary": "वायु"
+          }
+        }
+      },
+      {
+        "key": "JALA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "जल",
+            "transliteration": "Jala"
+          },
+          "ne": {
+            "primary": "जल"
+          },
+          "en": {
+            "primary": "Jala",
+            "transliteration": "Jala"
+          },
+          "hi": {
+            "primary": "जल"
+          }
+        }
+      },
+      {
+        "key": "AKASHA",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "आकाश",
+            "transliteration": "Ākāśa"
+          },
+          "ne": {
+            "primary": "आकाश"
+          },
+          "en": {
+            "primary": "Akasha",
+            "transliteration": "Ākāśa"
+          },
+          "hi": {
+            "primary": "आकाश"
+          }
+        }
+      }
+    ],
+    "VARNA": [
+      {
+        "key": "BRAHMIN",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "ब्राह्मण",
+            "transliteration": "Brāhmaṇa Varṇa"
+          },
+          "ne": {
+            "primary": "ब्राह्मण"
+          },
+          "en": {
+            "primary": "Brahmin",
+            "transliteration": "Brāhmaṇa Varṇa"
+          },
+          "hi": {
+            "primary": "ब्राह्मण"
+          }
+        }
+      },
+      {
+        "key": "KSHATRIYA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "क्षत्रिय",
+            "transliteration": "Kṣatriya Varṇa"
+          },
+          "ne": {
+            "primary": "क्षत्रिय"
+          },
+          "en": {
+            "primary": "Kshatriya",
+            "transliteration": "Kṣatriya Varṇa"
+          },
+          "hi": {
+            "primary": "क्षत्रिय"
+          }
+        }
+      },
+      {
+        "key": "VAISHYA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "वैश्य",
+            "transliteration": "Vaiśya Varṇa"
+          },
+          "ne": {
+            "primary": "वैश्य"
+          },
+          "en": {
+            "primary": "Vaishya",
+            "transliteration": "Vaiśya Varṇa"
+          },
+          "hi": {
+            "primary": "वैश्य"
+          }
+        }
+      },
+      {
+        "key": "SHUDRA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "शूद्र",
+            "transliteration": "Śūdra Varṇa"
+          },
+          "ne": {
+            "primary": "शूद्र"
+          },
+          "en": {
+            "primary": "Shudra",
+            "transliteration": "Śūdra Varṇa"
+          },
+          "hi": {
+            "primary": "शूद्र"
+          }
+        }
+      },
+      {
+        "key": "MLECCHA",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "अन्त्यज",
+            "transliteration": "Antyaja Varṇa",
+            "synonyms": [
+              "Mleccha",
+              "Chandala"
+            ]
+          },
+          "ne": {
+            "primary": "अन्त्यज",
+            "synonyms": [
+              "म्लेच्छ",
+              "चाण्डाल"
+            ]
+          },
+          "en": {
+            "primary": "Antyaja",
+            "transliteration": "Antyaja Varṇa",
+            "synonyms": [
+              "Mleccha",
+              "Chandala"
+            ]
+          },
+          "hi": {
+            "primary": "अन्त्यज",
+            "synonyms": [
+              "म्लेच्छ",
+              "चाण्डाल"
+            ]
+          }
+        }
+      }
+    ],
+    "GANA": [
+      {
+        "key": "DEVA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "देव",
+            "transliteration": "Deva Gaṇa"
+          },
+          "ne": {
+            "primary": "देव"
+          },
+          "en": {
+            "primary": "Deva",
+            "transliteration": "Deva Gaṇa"
+          },
+          "hi": {
+            "primary": "देव"
+          }
+        }
+      },
+      {
+        "key": "MANUSHYA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "मनुष्य",
+            "transliteration": "Manuṣya Gaṇa"
+          },
+          "ne": {
+            "primary": "मनुष्य"
+          },
+          "en": {
+            "primary": "Manushya",
+            "transliteration": "Manuṣya Gaṇa"
+          },
+          "hi": {
+            "primary": "मनुष्य"
+          }
+        }
+      },
+      {
+        "key": "RAKSHASA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "राक्षस",
+            "transliteration": "Rākṣasa Gaṇa"
+          },
+          "ne": {
+            "primary": "राक्षस"
+          },
+          "en": {
+            "primary": "Rakshasa",
+            "transliteration": "Rākṣasa Gaṇa"
+          },
+          "hi": {
+            "primary": "राक्षस"
+          }
+        }
+      }
+    ],
+    "NADI": [
+      {
+        "key": "AADI",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "आदि",
+            "transliteration": "Ādi Nāḍī"
+          },
+          "ne": {
+            "primary": "आदि"
+          },
+          "en": {
+            "primary": "Aadi",
+            "transliteration": "Ādi Nāḍī"
+          },
+          "hi": {
+            "primary": "आदि नाड़ी"
+          }
+        }
+      },
+      {
+        "key": "MADHYA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "मध्य",
+            "transliteration": "Madhya Nāḍī"
+          },
+          "ne": {
+            "primary": "मध्य"
+          },
+          "en": {
+            "primary": "Madhya",
+            "transliteration": "Madhya Nāḍī"
+          },
+          "hi": {
+            "primary": "मध्य नाड़ी"
+          }
+        }
+      },
+      {
+        "key": "ANTYA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "अन्त्य",
+            "transliteration": "Antya Nāḍī"
+          },
+          "ne": {
+            "primary": "अन्त्य"
+          },
+          "en": {
+            "primary": "Antya",
+            "transliteration": "Antya Nāḍī"
+          },
+          "hi": {
+            "primary": "अन्त्य नाड़ी"
+          }
+        }
+      }
+    ],
+    "YONI": [
+      {
+        "key": "HORSE",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "अश्व",
+            "transliteration": "Aśva Yoni"
+          },
+          "ne": {
+            "primary": "अश्व"
+          },
+          "en": {
+            "primary": "Horse",
+            "transliteration": "Aśva Yoni"
+          },
+          "hi": {
+            "primary": "अश्व"
+          }
+        }
+      },
+      {
+        "key": "ELEPHANT",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "गज",
+            "transliteration": "Gaja Yoni"
+          },
+          "ne": {
+            "primary": "गज"
+          },
+          "en": {
+            "primary": "Elephant",
+            "transliteration": "Gaja Yoni"
+          },
+          "hi": {
+            "primary": "गज"
+          }
+        }
+      },
+      {
+        "key": "GOAT",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "मेष",
+            "transliteration": "Meṣa Yoni"
+          },
+          "ne": {
+            "primary": "मेष"
+          },
+          "en": {
+            "primary": "Goat",
+            "transliteration": "Meṣa Yoni"
+          },
+          "hi": {
+            "primary": "मेष"
+          }
+        }
+      },
+      {
+        "key": "SERPENT",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "सर्प",
+            "transliteration": "Sarpa Yoni"
+          },
+          "ne": {
+            "primary": "सर्प"
+          },
+          "en": {
+            "primary": "Serpent",
+            "transliteration": "Sarpa Yoni"
+          },
+          "hi": {
+            "primary": "सर्प"
+          }
+        }
+      },
+      {
+        "key": "DOG",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "श्वान",
+            "transliteration": "Śvāna Yoni"
+          },
+          "ne": {
+            "primary": "श्वान"
+          },
+          "en": {
+            "primary": "Dog",
+            "transliteration": "Śvāna Yoni"
+          },
+          "hi": {
+            "primary": "श्वान"
+          }
+        }
+      },
+      {
+        "key": "CAT",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "मार्जार",
+            "transliteration": "Mārjāra Yoni"
+          },
+          "ne": {
+            "primary": "मार्जार"
+          },
+          "en": {
+            "primary": "Cat",
+            "transliteration": "Mārjāra Yoni"
+          },
+          "hi": {
+            "primary": "मार्जार"
+          }
+        }
+      },
+      {
+        "key": "RAT",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "मूषक",
+            "transliteration": "Mūṣaka Yoni"
+          },
+          "ne": {
+            "primary": "मूषक"
+          },
+          "en": {
+            "primary": "Rat",
+            "transliteration": "Mūṣaka Yoni"
+          },
+          "hi": {
+            "primary": "मूषक"
+          }
+        }
+      },
+      {
+        "key": "COW",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "गो",
+            "transliteration": "Go Yoni"
+          },
+          "ne": {
+            "primary": "गो"
+          },
+          "en": {
+            "primary": "Cow",
+            "transliteration": "Go Yoni"
+          },
+          "hi": {
+            "primary": "गो"
+          }
+        }
+      },
+      {
+        "key": "BUFFALO",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "महिष",
+            "transliteration": "Mahiṣa Yoni"
+          },
+          "ne": {
+            "primary": "महिष"
+          },
+          "en": {
+            "primary": "Buffalo",
+            "transliteration": "Mahiṣa Yoni"
+          },
+          "hi": {
+            "primary": "महिष"
+          }
+        }
+      },
+      {
+        "key": "TIGER",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "व्याघ्र",
+            "transliteration": "Vyāghra Yoni"
+          },
+          "ne": {
+            "primary": "व्याघ्र"
+          },
+          "en": {
+            "primary": "Tiger",
+            "transliteration": "Vyāghra Yoni"
+          },
+          "hi": {
+            "primary": "व्याघ्र"
+          }
+        }
+      },
+      {
+        "key": "DEER",
+        "index": 10,
+        "names": {
+          "sa": {
+            "primary": "मृग",
+            "transliteration": "Mṛga Yoni"
+          },
+          "ne": {
+            "primary": "मृग"
+          },
+          "en": {
+            "primary": "Deer",
+            "transliteration": "Mṛga Yoni"
+          },
+          "hi": {
+            "primary": "मृग"
+          }
+        }
+      },
+      {
+        "key": "MONKEY",
+        "index": 11,
+        "names": {
+          "sa": {
+            "primary": "मर्कट",
+            "transliteration": "Markaṭa Yoni"
+          },
+          "ne": {
+            "primary": "मर्कट"
+          },
+          "en": {
+            "primary": "Monkey",
+            "transliteration": "Markaṭa Yoni"
+          },
+          "hi": {
+            "primary": "मर्कट"
+          }
+        }
+      },
+      {
+        "key": "MONGOOSE",
+        "index": 12,
+        "names": {
+          "sa": {
+            "primary": "नकुल",
+            "transliteration": "Nakula Yoni"
+          },
+          "ne": {
+            "primary": "नकुल"
+          },
+          "en": {
+            "primary": "Mongoose",
+            "transliteration": "Nakula Yoni"
+          },
+          "hi": {
+            "primary": "नकुल"
+          }
+        }
+      },
+      {
+        "key": "LION",
+        "index": 13,
+        "names": {
+          "sa": {
+            "primary": "सिंह",
+            "transliteration": "Siṁha Yoni"
+          },
+          "ne": {
+            "primary": "सिंह"
+          },
+          "en": {
+            "primary": "Lion",
+            "transliteration": "Siṁha Yoni"
+          },
+          "hi": {
+            "primary": "सिंह"
+          }
+        }
+      }
+    ],
+    "TITHI": [
+      {
+        "key": "SHUKLA_PRATIPADA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "प्रतिपदा",
+            "abbreviation": "प्र",
+            "transliteration": "Pratipadā"
+          },
+          "ne": {
+            "primary": "प्रतिपदा",
+            "abbreviation": "प्र"
+          },
+          "en": {
+            "primary": "Pratipada",
+            "abbreviation": "S1",
+            "transliteration": "Pratipadā"
+          },
+          "hi": {
+            "primary": "प्रतिपदा",
+            "abbreviation": "प्र"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_DVITIYA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "द्वितीया",
+            "abbreviation": "द्वि",
+            "transliteration": "Dvitīyā"
+          },
+          "ne": {
+            "primary": "द्वितीया",
+            "abbreviation": "द्वि"
+          },
+          "en": {
+            "primary": "Dvitiya",
+            "abbreviation": "S2",
+            "transliteration": "Dvitīyā"
+          },
+          "hi": {
+            "primary": "द्वितीया",
+            "abbreviation": "द्वि"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_TRITIYA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "तृतीया",
+            "abbreviation": "तृ",
+            "transliteration": "Tṛtīyā"
+          },
+          "ne": {
+            "primary": "तृतीया",
+            "abbreviation": "तृ"
+          },
+          "en": {
+            "primary": "Tritiya",
+            "abbreviation": "S3",
+            "transliteration": "Tṛtīyā"
+          },
+          "hi": {
+            "primary": "तृतीया",
+            "abbreviation": "तृ"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_CHATURTHI",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "चतुर्थी",
+            "abbreviation": "चतु",
+            "transliteration": "Caturthī"
+          },
+          "ne": {
+            "primary": "चतुर्थी",
+            "abbreviation": "चतु"
+          },
+          "en": {
+            "primary": "Chaturthi",
+            "abbreviation": "S4",
+            "transliteration": "Caturthī"
+          },
+          "hi": {
+            "primary": "चतुर्थी",
+            "abbreviation": "चतु"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_PANCHAMI",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "पञ्चमी",
+            "abbreviation": "पं",
+            "transliteration": "Pañcamī"
+          },
+          "ne": {
+            "primary": "पञ्चमी",
+            "abbreviation": "पं"
+          },
+          "en": {
+            "primary": "Panchami",
+            "abbreviation": "S5",
+            "transliteration": "Pañcamī"
+          },
+          "hi": {
+            "primary": "पञ्चमी",
+            "abbreviation": "पं"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_SHASHTHI",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "षष्ठी",
+            "abbreviation": "ष",
+            "transliteration": "Ṣaṣṭhī"
+          },
+          "ne": {
+            "primary": "षष्ठी",
+            "abbreviation": "ष"
+          },
+          "en": {
+            "primary": "Shashthi",
+            "abbreviation": "S6",
+            "transliteration": "Ṣaṣṭhī"
+          },
+          "hi": {
+            "primary": "षष्ठी",
+            "abbreviation": "ष"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_SAPTAMI",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "सप्तमी",
+            "abbreviation": "स",
+            "transliteration": "Saptamī"
+          },
+          "ne": {
+            "primary": "सप्तमी",
+            "abbreviation": "स"
+          },
+          "en": {
+            "primary": "Saptami",
+            "abbreviation": "S7",
+            "transliteration": "Saptamī"
+          },
+          "hi": {
+            "primary": "सप्तमी",
+            "abbreviation": "स"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_ASHTAMI",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "अष्टमी",
+            "abbreviation": "अ",
+            "transliteration": "Aṣṭamī"
+          },
+          "ne": {
+            "primary": "अष्टमी",
+            "abbreviation": "अ"
+          },
+          "en": {
+            "primary": "Ashtami",
+            "abbreviation": "S8",
+            "transliteration": "Aṣṭamī"
+          },
+          "hi": {
+            "primary": "अष्टमी",
+            "abbreviation": "अ"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_NAVAMI",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "नवमी",
+            "abbreviation": "न",
+            "transliteration": "Navamī"
+          },
+          "ne": {
+            "primary": "नवमी",
+            "abbreviation": "न"
+          },
+          "en": {
+            "primary": "Navami",
+            "abbreviation": "S9",
+            "transliteration": "Navamī"
+          },
+          "hi": {
+            "primary": "नवमी",
+            "abbreviation": "न"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_DASHAMI",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "दशमी",
+            "abbreviation": "द",
+            "transliteration": "Daśamī"
+          },
+          "ne": {
+            "primary": "दशमी",
+            "abbreviation": "द"
+          },
+          "en": {
+            "primary": "Dashami",
+            "abbreviation": "S10",
+            "transliteration": "Daśamī"
+          },
+          "hi": {
+            "primary": "दशमी",
+            "abbreviation": "द"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_EKADASHI",
+        "index": 10,
+        "names": {
+          "sa": {
+            "primary": "एकादशी",
+            "abbreviation": "ए",
+            "transliteration": "Ekādaśī"
+          },
+          "ne": {
+            "primary": "एकादशी",
+            "abbreviation": "ए"
+          },
+          "en": {
+            "primary": "Ekadashi",
+            "abbreviation": "S11",
+            "transliteration": "Ekādaśī"
+          },
+          "hi": {
+            "primary": "एकादशी",
+            "abbreviation": "ए"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_DWADASHI",
+        "index": 11,
+        "names": {
+          "sa": {
+            "primary": "द्वादशी",
+            "abbreviation": "द्वा",
+            "transliteration": "Dvādaśī"
+          },
+          "ne": {
+            "primary": "द्वादशी",
+            "abbreviation": "द्वा"
+          },
+          "en": {
+            "primary": "Dwadashi",
+            "abbreviation": "S12",
+            "transliteration": "Dvādaśī"
+          },
+          "hi": {
+            "primary": "द्वादशी",
+            "abbreviation": "द्वा"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_TRAYODASHI",
+        "index": 12,
+        "names": {
+          "sa": {
+            "primary": "त्रयोदशी",
+            "abbreviation": "त्र",
+            "transliteration": "Trayodaśī"
+          },
+          "ne": {
+            "primary": "त्रयोदशी",
+            "abbreviation": "त्र"
+          },
+          "en": {
+            "primary": "Trayodashi",
+            "abbreviation": "S13",
+            "transliteration": "Trayodaśī"
+          },
+          "hi": {
+            "primary": "त्रयोदशी",
+            "abbreviation": "त्र"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA_CHATURDASHI",
+        "index": 13,
+        "names": {
+          "sa": {
+            "primary": "चतुर्दशी",
+            "abbreviation": "चद",
+            "transliteration": "Caturdaśī"
+          },
+          "ne": {
+            "primary": "चतुर्दशी",
+            "abbreviation": "चद"
+          },
+          "en": {
+            "primary": "Chaturdashi",
+            "abbreviation": "S14",
+            "transliteration": "Caturdaśī"
+          },
+          "hi": {
+            "primary": "चतुर्दशी",
+            "abbreviation": "चद"
+          }
+        }
+      },
+      {
+        "key": "PURNIMA",
+        "index": 14,
+        "names": {
+          "sa": {
+            "primary": "पूर्णिमा",
+            "abbreviation": "पू",
+            "transliteration": "Pūrṇimā"
+          },
+          "ne": {
+            "primary": "पूर्णिमा",
+            "abbreviation": "पू"
+          },
+          "en": {
+            "primary": "Purnima",
+            "abbreviation": "Pur",
+            "transliteration": "Pūrṇimā"
+          },
+          "hi": {
+            "primary": "पूर्णिमा",
+            "abbreviation": "पू"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_PRATIPADA",
+        "index": 15,
+        "names": {
+          "sa": {
+            "primary": "प्रतिपदा",
+            "abbreviation": "प्र",
+            "transliteration": "Pratipadā"
+          },
+          "ne": {
+            "primary": "प्रतिपदा",
+            "abbreviation": "प्र"
+          },
+          "en": {
+            "primary": "Pratipada",
+            "abbreviation": "K1",
+            "transliteration": "Pratipadā"
+          },
+          "hi": {
+            "primary": "प्रतिपदा",
+            "abbreviation": "प्र"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_DVITIYA",
+        "index": 16,
+        "names": {
+          "sa": {
+            "primary": "द्वितीया",
+            "abbreviation": "द्वि",
+            "transliteration": "Dvitīyā"
+          },
+          "ne": {
+            "primary": "द्वितीया",
+            "abbreviation": "द्वि"
+          },
+          "en": {
+            "primary": "Dvitiya",
+            "abbreviation": "K2",
+            "transliteration": "Dvitīyā"
+          },
+          "hi": {
+            "primary": "द्वितीया",
+            "abbreviation": "द्वि"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_TRITIYA",
+        "index": 17,
+        "names": {
+          "sa": {
+            "primary": "तृतीया",
+            "abbreviation": "तृ",
+            "transliteration": "Tṛtīyā"
+          },
+          "ne": {
+            "primary": "तृतीया",
+            "abbreviation": "तृ"
+          },
+          "en": {
+            "primary": "Tritiya",
+            "abbreviation": "K3",
+            "transliteration": "Tṛtīyā"
+          },
+          "hi": {
+            "primary": "तृतीया",
+            "abbreviation": "तृ"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_CHATURTHI",
+        "index": 18,
+        "names": {
+          "sa": {
+            "primary": "चतुर्थी",
+            "abbreviation": "चतु",
+            "transliteration": "Caturthī"
+          },
+          "ne": {
+            "primary": "चतुर्थी",
+            "abbreviation": "चतु"
+          },
+          "en": {
+            "primary": "Chaturthi",
+            "abbreviation": "K4",
+            "transliteration": "Caturthī"
+          },
+          "hi": {
+            "primary": "चतुर्थी",
+            "abbreviation": "चतु"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_PANCHAMI",
+        "index": 19,
+        "names": {
+          "sa": {
+            "primary": "पञ्चमी",
+            "abbreviation": "पं",
+            "transliteration": "Pañcamī"
+          },
+          "ne": {
+            "primary": "पञ्चमी",
+            "abbreviation": "पं"
+          },
+          "en": {
+            "primary": "Panchami",
+            "abbreviation": "K5",
+            "transliteration": "Pañcamī"
+          },
+          "hi": {
+            "primary": "पञ्चमी",
+            "abbreviation": "पं"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_SHASHTHI",
+        "index": 20,
+        "names": {
+          "sa": {
+            "primary": "षष्ठी",
+            "abbreviation": "ष",
+            "transliteration": "Ṣaṣṭhī"
+          },
+          "ne": {
+            "primary": "षष्ठी",
+            "abbreviation": "ष"
+          },
+          "en": {
+            "primary": "Shashthi",
+            "abbreviation": "K6",
+            "transliteration": "Ṣaṣṭhī"
+          },
+          "hi": {
+            "primary": "षष्ठी",
+            "abbreviation": "ष"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_SAPTAMI",
+        "index": 21,
+        "names": {
+          "sa": {
+            "primary": "सप्तमी",
+            "abbreviation": "स",
+            "transliteration": "Saptamī"
+          },
+          "ne": {
+            "primary": "सप्तमी",
+            "abbreviation": "स"
+          },
+          "en": {
+            "primary": "Saptami",
+            "abbreviation": "K7",
+            "transliteration": "Saptamī"
+          },
+          "hi": {
+            "primary": "सप्तमी",
+            "abbreviation": "स"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_ASHTAMI",
+        "index": 22,
+        "names": {
+          "sa": {
+            "primary": "अष्टमी",
+            "abbreviation": "अ",
+            "transliteration": "Aṣṭamī"
+          },
+          "ne": {
+            "primary": "अष्टमी",
+            "abbreviation": "अ"
+          },
+          "en": {
+            "primary": "Ashtami",
+            "abbreviation": "K8",
+            "transliteration": "Aṣṭamī"
+          },
+          "hi": {
+            "primary": "अष्टमी",
+            "abbreviation": "अ"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_NAVAMI",
+        "index": 23,
+        "names": {
+          "sa": {
+            "primary": "नवमी",
+            "abbreviation": "न",
+            "transliteration": "Navamī"
+          },
+          "ne": {
+            "primary": "नवमी",
+            "abbreviation": "न"
+          },
+          "en": {
+            "primary": "Navami",
+            "abbreviation": "K9",
+            "transliteration": "Navamī"
+          },
+          "hi": {
+            "primary": "नवमी",
+            "abbreviation": "न"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_DASHAMI",
+        "index": 24,
+        "names": {
+          "sa": {
+            "primary": "दशमी",
+            "abbreviation": "द",
+            "transliteration": "Daśamī"
+          },
+          "ne": {
+            "primary": "दशमी",
+            "abbreviation": "द"
+          },
+          "en": {
+            "primary": "Dashami",
+            "abbreviation": "K10",
+            "transliteration": "Daśamī"
+          },
+          "hi": {
+            "primary": "दशमी",
+            "abbreviation": "द"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_EKADASHI",
+        "index": 25,
+        "names": {
+          "sa": {
+            "primary": "एकादशी",
+            "abbreviation": "ए",
+            "transliteration": "Ekādaśī"
+          },
+          "ne": {
+            "primary": "एकादशी",
+            "abbreviation": "ए"
+          },
+          "en": {
+            "primary": "Ekadashi",
+            "abbreviation": "K11",
+            "transliteration": "Ekādaśī"
+          },
+          "hi": {
+            "primary": "एकादशी",
+            "abbreviation": "ए"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_DWADASHI",
+        "index": 26,
+        "names": {
+          "sa": {
+            "primary": "द्वादशी",
+            "abbreviation": "द्वा",
+            "transliteration": "Dvādaśī"
+          },
+          "ne": {
+            "primary": "द्वादशी",
+            "abbreviation": "द्वा"
+          },
+          "en": {
+            "primary": "Dwadashi",
+            "abbreviation": "K12",
+            "transliteration": "Dvādaśī"
+          },
+          "hi": {
+            "primary": "द्वादशी",
+            "abbreviation": "द्वा"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_TRAYODASHI",
+        "index": 27,
+        "names": {
+          "sa": {
+            "primary": "त्रयोदशी",
+            "abbreviation": "त्र",
+            "transliteration": "Trayodaśī"
+          },
+          "ne": {
+            "primary": "त्रयोदशी",
+            "abbreviation": "त्र"
+          },
+          "en": {
+            "primary": "Trayodashi",
+            "abbreviation": "K13",
+            "transliteration": "Trayodaśī"
+          },
+          "hi": {
+            "primary": "त्रयोदशी",
+            "abbreviation": "त्र"
+          }
+        }
+      },
+      {
+        "key": "KRISHNA_CHATURDASHI",
+        "index": 28,
+        "names": {
+          "sa": {
+            "primary": "चतुर्दशी",
+            "abbreviation": "चद",
+            "transliteration": "Caturdaśī"
+          },
+          "ne": {
+            "primary": "चतुर्दशी",
+            "abbreviation": "चद"
+          },
+          "en": {
+            "primary": "Chaturdashi",
+            "abbreviation": "K14",
+            "transliteration": "Caturdaśī"
+          },
+          "hi": {
+            "primary": "चतुर्दशी",
+            "abbreviation": "चद"
+          }
+        }
+      },
+      {
+        "key": "AMAVASYA",
+        "index": 29,
+        "names": {
+          "sa": {
+            "primary": "अमावस्या",
+            "abbreviation": "अमा",
+            "transliteration": "Amāvasyā"
+          },
+          "ne": {
+            "primary": "अमावस्या",
+            "abbreviation": "अमा"
+          },
+          "en": {
+            "primary": "Amavasya",
+            "abbreviation": "Ama",
+            "transliteration": "Amāvasyā"
+          },
+          "hi": {
+            "primary": "अमावस्या",
+            "abbreviation": "अमा"
+          }
+        }
+      }
+    ],
+    "PANCHANGA_YOGA": [
+      {
+        "key": "VISHKAMBA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "विष्कम्भ",
+            "abbreviation": "विष्क",
+            "transliteration": "Viṣkambha"
+          },
+          "ne": {
+            "primary": "विष्कम्भ",
+            "abbreviation": "विष्क"
+          },
+          "en": {
+            "primary": "Vishkamba",
+            "abbreviation": "Vis",
+            "transliteration": "Viṣkambha"
+          },
+          "hi": {
+            "primary": "विष्कम्भ",
+            "abbreviation": "विष्क"
+          }
+        }
+      },
+      {
+        "key": "PRITI",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "प्रीति",
+            "abbreviation": "प्री",
+            "transliteration": "Prīti"
+          },
+          "ne": {
+            "primary": "प्रीति",
+            "abbreviation": "प्री"
+          },
+          "en": {
+            "primary": "Priti",
+            "abbreviation": "Pri",
+            "transliteration": "Prīti"
+          },
+          "hi": {
+            "primary": "प्रीति",
+            "abbreviation": "प्री"
+          }
+        }
+      },
+      {
+        "key": "AYUSHMAN",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "आयुष्मान्",
+            "abbreviation": "आयु",
+            "transliteration": "Āyuṣmān"
+          },
+          "ne": {
+            "primary": "आयुष्मान्",
+            "abbreviation": "आयु"
+          },
+          "en": {
+            "primary": "Ayushman",
+            "abbreviation": "Ayu",
+            "transliteration": "Āyuṣmān"
+          },
+          "hi": {
+            "primary": "आयुष्मान्",
+            "abbreviation": "आयु"
+          }
+        }
+      },
+      {
+        "key": "SAUBHAGYA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "सौभाग्य",
+            "abbreviation": "सौभा",
+            "transliteration": "Saubhāgya"
+          },
+          "ne": {
+            "primary": "सौभाग्य",
+            "abbreviation": "सौभा"
+          },
+          "en": {
+            "primary": "Saubhagya",
+            "abbreviation": "Sau",
+            "transliteration": "Saubhāgya"
+          },
+          "hi": {
+            "primary": "सौभाग्य",
+            "abbreviation": "सौभा"
+          }
+        }
+      },
+      {
+        "key": "SHOBHANA",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "शोभन",
+            "abbreviation": "शो",
+            "transliteration": "Śobhana"
+          },
+          "ne": {
+            "primary": "शोभन",
+            "abbreviation": "शो"
+          },
+          "en": {
+            "primary": "Shobhana",
+            "abbreviation": "Sho",
+            "transliteration": "Śobhana"
+          },
+          "hi": {
+            "primary": "शोभन",
+            "abbreviation": "शो"
+          }
+        }
+      },
+      {
+        "key": "ATIGANDA",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "अतिगण्ड",
+            "abbreviation": "अति",
+            "transliteration": "Atigaṇḍa"
+          },
+          "ne": {
+            "primary": "अतिगण्ड",
+            "abbreviation": "अति"
+          },
+          "en": {
+            "primary": "Atiganda",
+            "abbreviation": "Ati",
+            "transliteration": "Atigaṇḍa"
+          },
+          "hi": {
+            "primary": "अतिगण्ड",
+            "abbreviation": "अति"
+          }
+        }
+      },
+      {
+        "key": "SUKARMA",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "सुकर्मा",
+            "abbreviation": "सुक",
+            "transliteration": "Sukarmā"
+          },
+          "ne": {
+            "primary": "सुकर्मा",
+            "abbreviation": "सुक"
+          },
+          "en": {
+            "primary": "Sukarma",
+            "abbreviation": "Suk",
+            "transliteration": "Sukarmā"
+          },
+          "hi": {
+            "primary": "सुकर्मा",
+            "abbreviation": "सुक"
+          }
+        }
+      },
+      {
+        "key": "DHRITI",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "धृति",
+            "abbreviation": "धृ",
+            "transliteration": "Dhṛti"
+          },
+          "ne": {
+            "primary": "धृति",
+            "abbreviation": "धृ"
+          },
+          "en": {
+            "primary": "Dhriti",
+            "abbreviation": "Dhr",
+            "transliteration": "Dhṛti"
+          },
+          "hi": {
+            "primary": "धृति",
+            "abbreviation": "धृ"
+          }
+        }
+      },
+      {
+        "key": "SHOOLA",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "शूल",
+            "abbreviation": "शू",
+            "transliteration": "Śūla"
+          },
+          "ne": {
+            "primary": "शूल",
+            "abbreviation": "शू"
+          },
+          "en": {
+            "primary": "Shoola",
+            "abbreviation": "Shl",
+            "transliteration": "Śūla"
+          },
+          "hi": {
+            "primary": "शूल",
+            "abbreviation": "शू"
+          }
+        }
+      },
+      {
+        "key": "GANDA",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "गण्ड",
+            "abbreviation": "गं",
+            "transliteration": "Gaṇḍa"
+          },
+          "ne": {
+            "primary": "गण्ड",
+            "abbreviation": "गं"
+          },
+          "en": {
+            "primary": "Ganda",
+            "abbreviation": "Gan",
+            "transliteration": "Gaṇḍa"
+          },
+          "hi": {
+            "primary": "गण्ड",
+            "abbreviation": "गं"
+          }
+        }
+      },
+      {
+        "key": "VRIDDHI",
+        "index": 10,
+        "names": {
+          "sa": {
+            "primary": "वृद्धि",
+            "abbreviation": "वृ",
+            "transliteration": "Vṛddhi"
+          },
+          "ne": {
+            "primary": "वृद्धि",
+            "abbreviation": "वृ"
+          },
+          "en": {
+            "primary": "Vriddhi",
+            "abbreviation": "Vrd",
+            "transliteration": "Vṛddhi"
+          },
+          "hi": {
+            "primary": "वृद्धि",
+            "abbreviation": "वृ"
+          }
+        }
+      },
+      {
+        "key": "DHRUVA",
+        "index": 11,
+        "names": {
+          "sa": {
+            "primary": "ध्रुव",
+            "abbreviation": "ध्रु",
+            "transliteration": "Dhruva"
+          },
+          "ne": {
+            "primary": "ध्रुव",
+            "abbreviation": "ध्रु"
+          },
+          "en": {
+            "primary": "Dhruva",
+            "abbreviation": "Dhu",
+            "transliteration": "Dhruva"
+          },
+          "hi": {
+            "primary": "ध्रुव",
+            "abbreviation": "ध्रु"
+          }
+        }
+      },
+      {
+        "key": "VYAGHATA",
+        "index": 12,
+        "names": {
+          "sa": {
+            "primary": "व्याघात",
+            "abbreviation": "व्या",
+            "transliteration": "Vyāghāta"
+          },
+          "ne": {
+            "primary": "व्याघात",
+            "abbreviation": "व्या"
+          },
+          "en": {
+            "primary": "Vyaghata",
+            "abbreviation": "Vyg",
+            "transliteration": "Vyāghāta"
+          },
+          "hi": {
+            "primary": "व्याघात",
+            "abbreviation": "व्या"
+          }
+        }
+      },
+      {
+        "key": "HARSHANA",
+        "index": 13,
+        "names": {
+          "sa": {
+            "primary": "हर्षण",
+            "abbreviation": "हर्",
+            "transliteration": "Harṣaṇa"
+          },
+          "ne": {
+            "primary": "हर्षण",
+            "abbreviation": "हर्"
+          },
+          "en": {
+            "primary": "Harshana",
+            "abbreviation": "Har",
+            "transliteration": "Harṣaṇa"
+          },
+          "hi": {
+            "primary": "हर्षण",
+            "abbreviation": "हर्"
+          }
+        }
+      },
+      {
+        "key": "VAJRA",
+        "index": 14,
+        "names": {
+          "sa": {
+            "primary": "वज्र",
+            "abbreviation": "वज्",
+            "transliteration": "Vajra"
+          },
+          "ne": {
+            "primary": "वज्र",
+            "abbreviation": "वज्"
+          },
+          "en": {
+            "primary": "Vajra",
+            "abbreviation": "Vaj",
+            "transliteration": "Vajra"
+          },
+          "hi": {
+            "primary": "वज्र",
+            "abbreviation": "वज्"
+          }
+        }
+      },
+      {
+        "key": "SIDDHI",
+        "index": 15,
+        "names": {
+          "sa": {
+            "primary": "सिद्धि",
+            "abbreviation": "सिद्धि",
+            "transliteration": "Siddhi"
+          },
+          "ne": {
+            "primary": "सिद्धि",
+            "abbreviation": "सिद्धि"
+          },
+          "en": {
+            "primary": "Siddhi",
+            "abbreviation": "Sid",
+            "transliteration": "Siddhi"
+          },
+          "hi": {
+            "primary": "सिद्धि",
+            "abbreviation": "सिद्धि"
+          }
+        }
+      },
+      {
+        "key": "VYATIPATA",
+        "index": 16,
+        "names": {
+          "sa": {
+            "primary": "व्यतीपात",
+            "abbreviation": "व्यती",
+            "transliteration": "Vyatīpāta"
+          },
+          "ne": {
+            "primary": "व्यतीपात",
+            "abbreviation": "व्यती"
+          },
+          "en": {
+            "primary": "Vyatipata",
+            "abbreviation": "Vyt",
+            "transliteration": "Vyatīpāta"
+          },
+          "hi": {
+            "primary": "व्यतीपात",
+            "abbreviation": "व्यती"
+          }
+        }
+      },
+      {
+        "key": "VARIYANA",
+        "index": 17,
+        "names": {
+          "sa": {
+            "primary": "वरीयान्",
+            "abbreviation": "वरी",
+            "transliteration": "Varīyān"
+          },
+          "ne": {
+            "primary": "वरीयान्",
+            "abbreviation": "वरी"
+          },
+          "en": {
+            "primary": "Variyana",
+            "abbreviation": "Var",
+            "transliteration": "Varīyān"
+          },
+          "hi": {
+            "primary": "वरीयान्",
+            "abbreviation": "वरी"
+          }
+        }
+      },
+      {
+        "key": "PARIGHA",
+        "index": 18,
+        "names": {
+          "sa": {
+            "primary": "परिघ",
+            "abbreviation": "परि",
+            "transliteration": "Parigha"
+          },
+          "ne": {
+            "primary": "परिघ",
+            "abbreviation": "परि"
+          },
+          "en": {
+            "primary": "Parigha",
+            "abbreviation": "Par",
+            "transliteration": "Parigha"
+          },
+          "hi": {
+            "primary": "परिघ",
+            "abbreviation": "परि"
+          }
+        }
+      },
+      {
+        "key": "SHIVA",
+        "index": 19,
+        "names": {
+          "sa": {
+            "primary": "शिव",
+            "abbreviation": "शि",
+            "transliteration": "Śiva"
+          },
+          "ne": {
+            "primary": "शिव",
+            "abbreviation": "शि"
+          },
+          "en": {
+            "primary": "Shiva",
+            "abbreviation": "Shv",
+            "transliteration": "Śiva"
+          },
+          "hi": {
+            "primary": "शिव",
+            "abbreviation": "शि"
+          }
+        }
+      },
+      {
+        "key": "SIDDHA",
+        "index": 20,
+        "names": {
+          "sa": {
+            "primary": "सिद्ध",
+            "abbreviation": "सि",
+            "transliteration": "Siddha"
+          },
+          "ne": {
+            "primary": "सिद्ध",
+            "abbreviation": "सि"
+          },
+          "en": {
+            "primary": "Siddha",
+            "abbreviation": "Sda",
+            "transliteration": "Siddha"
+          },
+          "hi": {
+            "primary": "सिद्ध",
+            "abbreviation": "सि"
+          }
+        }
+      },
+      {
+        "key": "SADHYA",
+        "index": 21,
+        "names": {
+          "sa": {
+            "primary": "साध्य",
+            "abbreviation": "सा",
+            "transliteration": "Sādhya"
+          },
+          "ne": {
+            "primary": "साध्य",
+            "abbreviation": "सा"
+          },
+          "en": {
+            "primary": "Sadhya",
+            "abbreviation": "Sdh",
+            "transliteration": "Sādhya"
+          },
+          "hi": {
+            "primary": "साध्य",
+            "abbreviation": "सा"
+          }
+        }
+      },
+      {
+        "key": "SHUBHA",
+        "index": 22,
+        "names": {
+          "sa": {
+            "primary": "शुभ",
+            "abbreviation": "शु",
+            "transliteration": "Śubha"
+          },
+          "ne": {
+            "primary": "शुभ",
+            "abbreviation": "शु"
+          },
+          "en": {
+            "primary": "Shubha",
+            "abbreviation": "Shb",
+            "transliteration": "Śubha"
+          },
+          "hi": {
+            "primary": "शुभ",
+            "abbreviation": "शु"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA",
+        "index": 23,
+        "names": {
+          "sa": {
+            "primary": "शुक्ल",
+            "abbreviation": "शुक्",
+            "transliteration": "Śukla"
+          },
+          "ne": {
+            "primary": "शुक्ल",
+            "abbreviation": "शुक्"
+          },
+          "en": {
+            "primary": "Shukla",
+            "abbreviation": "Skl",
+            "transliteration": "Śukla"
+          },
+          "hi": {
+            "primary": "शुक्ल",
+            "abbreviation": "शुक्"
+          }
+        }
+      },
+      {
+        "key": "BRAHMA",
+        "index": 24,
+        "names": {
+          "sa": {
+            "primary": "ब्रह्म",
+            "abbreviation": "ब्र",
+            "transliteration": "Brahma"
+          },
+          "ne": {
+            "primary": "ब्रह्म",
+            "abbreviation": "ब्र"
+          },
+          "en": {
+            "primary": "Brahma",
+            "abbreviation": "Brh",
+            "transliteration": "Brahma"
+          },
+          "hi": {
+            "primary": "ब्रह्म",
+            "abbreviation": "ब्र"
+          }
+        }
+      },
+      {
+        "key": "INDRA",
+        "index": 25,
+        "names": {
+          "sa": {
+            "primary": "इन्द्र",
+            "abbreviation": "इ",
+            "transliteration": "Indra"
+          },
+          "ne": {
+            "primary": "इन्द्र",
+            "abbreviation": "इ"
+          },
+          "en": {
+            "primary": "Indra",
+            "abbreviation": "Ind",
+            "transliteration": "Indra"
+          },
+          "hi": {
+            "primary": "इन्द्र",
+            "abbreviation": "इ"
+          }
+        }
+      },
+      {
+        "key": "VAIDHRITI",
+        "index": 26,
+        "names": {
+          "sa": {
+            "primary": "वैधृति",
+            "abbreviation": "वै",
+            "transliteration": "Vaidhṛti"
+          },
+          "ne": {
+            "primary": "वैधृति",
+            "abbreviation": "वै"
+          },
+          "en": {
+            "primary": "Vaidhriti",
+            "abbreviation": "Vai",
+            "transliteration": "Vaidhṛti"
+          },
+          "hi": {
+            "primary": "वैधृति",
+            "abbreviation": "वै"
+          }
+        }
+      }
+    ],
+    "KARANA": [
+      {
+        "key": "BAVA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "बव",
+            "abbreviation": "ब",
+            "transliteration": "Bava"
+          },
+          "ne": {
+            "primary": "बव",
+            "abbreviation": "ब"
+          },
+          "en": {
+            "primary": "Bava",
+            "abbreviation": "Bav",
+            "transliteration": "Bava"
+          },
+          "hi": {
+            "primary": "बव",
+            "abbreviation": "ब"
+          }
+        }
+      },
+      {
+        "key": "BALAVA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "बालव",
+            "abbreviation": "बा",
+            "transliteration": "Bālava"
+          },
+          "ne": {
+            "primary": "बालव",
+            "abbreviation": "बा"
+          },
+          "en": {
+            "primary": "Balava",
+            "abbreviation": "Bal",
+            "transliteration": "Bālava"
+          },
+          "hi": {
+            "primary": "बालव",
+            "abbreviation": "बा"
+          }
+        }
+      },
+      {
+        "key": "KAULAVA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "कौलव",
+            "abbreviation": "कौ",
+            "transliteration": "Kaulava"
+          },
+          "ne": {
+            "primary": "कौलव",
+            "abbreviation": "कौ"
+          },
+          "en": {
+            "primary": "Kaulava",
+            "abbreviation": "Kau",
+            "transliteration": "Kaulava"
+          },
+          "hi": {
+            "primary": "कौलव",
+            "abbreviation": "कौ"
+          }
+        }
+      },
+      {
+        "key": "TAITILA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "तैतिल",
+            "abbreviation": "तै",
+            "transliteration": "Taitila"
+          },
+          "ne": {
+            "primary": "तैतिल",
+            "abbreviation": "तै"
+          },
+          "en": {
+            "primary": "Taitila",
+            "abbreviation": "Tai",
+            "transliteration": "Taitila"
+          },
+          "hi": {
+            "primary": "तैतिल",
+            "abbreviation": "तै"
+          }
+        }
+      },
+      {
+        "key": "GARIJA",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "गरिज",
+            "abbreviation": "ग",
+            "transliteration": "Garija"
+          },
+          "ne": {
+            "primary": "गरिज",
+            "abbreviation": "ग"
+          },
+          "en": {
+            "primary": "Garija",
+            "abbreviation": "Gar",
+            "transliteration": "Garija"
+          },
+          "hi": {
+            "primary": "गरिज",
+            "abbreviation": "ग"
+          }
+        }
+      },
+      {
+        "key": "VANIJA",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "वणिज",
+            "abbreviation": "व",
+            "transliteration": "Vaṇija"
+          },
+          "ne": {
+            "primary": "वणिज",
+            "abbreviation": "व"
+          },
+          "en": {
+            "primary": "Vanija",
+            "abbreviation": "Van",
+            "transliteration": "Vaṇija"
+          },
+          "hi": {
+            "primary": "वणिज",
+            "abbreviation": "व"
+          }
+        }
+      },
+      {
+        "key": "VISHTI",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "विष्टि",
+            "abbreviation": "वि",
+            "transliteration": "Viṣṭi"
+          },
+          "ne": {
+            "primary": "विष्टि",
+            "abbreviation": "वि"
+          },
+          "en": {
+            "primary": "Vishti",
+            "abbreviation": "Vis",
+            "transliteration": "Viṣṭi"
+          },
+          "hi": {
+            "primary": "विष्टि",
+            "abbreviation": "वि"
+          }
+        }
+      },
+      {
+        "key": "SHAKUNI",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "शकुनि",
+            "abbreviation": "शकु",
+            "transliteration": "Śakuni"
+          },
+          "ne": {
+            "primary": "शकुनि",
+            "abbreviation": "शकु"
+          },
+          "en": {
+            "primary": "Shakuni",
+            "abbreviation": "Shk",
+            "transliteration": "Śakuni"
+          },
+          "hi": {
+            "primary": "शकुनि",
+            "abbreviation": "शकु"
+          }
+        }
+      },
+      {
+        "key": "CHATUSHPADA",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "चतुष्पाद",
+            "abbreviation": "चतु",
+            "transliteration": "Catuṣpāda"
+          },
+          "ne": {
+            "primary": "चतुष्पाद",
+            "abbreviation": "चतु"
+          },
+          "en": {
+            "primary": "Chatushpada",
+            "abbreviation": "Cha",
+            "transliteration": "Catuṣpāda"
+          },
+          "hi": {
+            "primary": "चतुष्पाद",
+            "abbreviation": "चतु"
+          }
+        }
+      },
+      {
+        "key": "NAGA",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "नाग",
+            "abbreviation": "ना",
+            "transliteration": "Nāga"
+          },
+          "ne": {
+            "primary": "नाग",
+            "abbreviation": "ना"
+          },
+          "en": {
+            "primary": "Naga",
+            "abbreviation": "Nag",
+            "transliteration": "Nāga"
+          },
+          "hi": {
+            "primary": "नाग",
+            "abbreviation": "ना"
+          }
+        }
+      },
+      {
+        "key": "KIMSTUGHNA",
+        "index": 10,
+        "names": {
+          "sa": {
+            "primary": "किंस्तुघ्न",
+            "abbreviation": "किं",
+            "transliteration": "Kiṃstughna"
+          },
+          "ne": {
+            "primary": "किंस्तुघ्न",
+            "abbreviation": "किं"
+          },
+          "en": {
+            "primary": "Kimstughna",
+            "abbreviation": "Kim",
+            "transliteration": "Kiṃstughna"
+          },
+          "hi": {
+            "primary": "किंस्तुघ्न",
+            "abbreviation": "किं"
+          }
+        }
+      }
+    ],
+    "VARA": [
+      {
+        "key": "RAVIVARA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "रविवार",
+            "abbreviation": "रवि",
+            "transliteration": "Ravivāra"
+          },
+          "ne": {
+            "primary": "आइतबार",
+            "abbreviation": "आइत"
+          },
+          "en": {
+            "primary": "Sunday",
+            "abbreviation": "Sun",
+            "transliteration": "Ravivāra"
+          },
+          "hi": {
+            "primary": "रविवार",
+            "abbreviation": "रवि"
+          }
+        }
+      },
+      {
+        "key": "SOMAVARA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "सोमवार",
+            "abbreviation": "सोम",
+            "transliteration": "Somavāra"
+          },
+          "ne": {
+            "primary": "सोमबार",
+            "abbreviation": "सोम"
+          },
+          "en": {
+            "primary": "Monday",
+            "abbreviation": "Mon",
+            "transliteration": "Somavāra"
+          },
+          "hi": {
+            "primary": "सोमवार",
+            "abbreviation": "सोम"
+          }
+        }
+      },
+      {
+        "key": "MANGALAVARA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "मंगलवार",
+            "abbreviation": "मंगल",
+            "transliteration": "Maṅgalavāra"
+          },
+          "ne": {
+            "primary": "मंगलबार",
+            "abbreviation": "मंगल"
+          },
+          "en": {
+            "primary": "Tuesday",
+            "abbreviation": "Tue",
+            "transliteration": "Maṅgalavāra"
+          },
+          "hi": {
+            "primary": "मंगलवार",
+            "abbreviation": "मंगल"
+          }
+        }
+      },
+      {
+        "key": "BUDHAVARA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "बुधवार",
+            "abbreviation": "बुध",
+            "transliteration": "Budhavāra"
+          },
+          "ne": {
+            "primary": "बुधबार",
+            "abbreviation": "बुध"
+          },
+          "en": {
+            "primary": "Wednesday",
+            "abbreviation": "Wed",
+            "transliteration": "Budhavāra"
+          },
+          "hi": {
+            "primary": "बुधवार",
+            "abbreviation": "बुध"
+          }
+        }
+      },
+      {
+        "key": "GURUVARA",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "गुरुवार",
+            "abbreviation": "गुरु",
+            "transliteration": "Guruvāra"
+          },
+          "ne": {
+            "primary": "बिहीबार",
+            "abbreviation": "बिही"
+          },
+          "en": {
+            "primary": "Thursday",
+            "abbreviation": "Thu",
+            "transliteration": "Guruvāra"
+          },
+          "hi": {
+            "primary": "गुरुवार",
+            "abbreviation": "गुरु"
+          }
+        }
+      },
+      {
+        "key": "SHUKRAVARA",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "शुक्रवार",
+            "abbreviation": "शुक्र",
+            "transliteration": "Śukravāra"
+          },
+          "ne": {
+            "primary": "शुक्रबार",
+            "abbreviation": "शुक्र"
+          },
+          "en": {
+            "primary": "Friday",
+            "abbreviation": "Fri",
+            "transliteration": "Śukravāra"
+          },
+          "hi": {
+            "primary": "शुक्रवार",
+            "abbreviation": "शुक्र"
+          }
+        }
+      },
+      {
+        "key": "SHANIVARA",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "शनिवार",
+            "abbreviation": "शनि",
+            "transliteration": "Śanivāra"
+          },
+          "ne": {
+            "primary": "शनिबार",
+            "abbreviation": "शनि"
+          },
+          "en": {
+            "primary": "Saturday",
+            "abbreviation": "Sat",
+            "transliteration": "Śanivāra"
+          },
+          "hi": {
+            "primary": "शनिवार",
+            "abbreviation": "शनि"
+          }
+        }
+      }
+    ],
+    "DIGNITY": [
+      {
+        "key": "DEEP_EXALTED",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "परमोच्च",
+            "abbreviation": "पउ",
+            "transliteration": "Paramocca"
+          },
+          "ne": {
+            "primary": "परमोच्च",
+            "abbreviation": "पउ"
+          },
+          "en": {
+            "primary": "Deeply Exalted",
+            "abbreviation": "DEx"
+          },
+          "hi": {
+            "primary": "परमोच्च",
+            "abbreviation": "पउ"
+          }
+        }
+      },
+      {
+        "key": "EXALTED",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "उच्च",
+            "abbreviation": "उ",
+            "transliteration": "Ucca"
+          },
+          "ne": {
+            "primary": "उच्च",
+            "abbreviation": "उ"
+          },
+          "en": {
+            "primary": "Exalted",
+            "abbreviation": "Ex"
+          },
+          "hi": {
+            "primary": "उच्च",
+            "abbreviation": "उ"
+          }
+        }
+      },
+      {
+        "key": "MOOLTRIKONA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "मूलत्रिकोण",
+            "abbreviation": "मूत्रि",
+            "transliteration": "Mūlatrikoṇa"
+          },
+          "ne": {
+            "primary": "मूलत्रिकोण",
+            "abbreviation": "मूत्रि"
+          },
+          "en": {
+            "primary": "Mooltrikona",
+            "abbreviation": "MT"
+          },
+          "hi": {
+            "primary": "मूलत्रिकोण",
+            "abbreviation": "मूत्रि"
+          }
+        }
+      },
+      {
+        "key": "OWN_SIGN",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "स्वक्षेत्र",
+            "abbreviation": "स्व",
+            "transliteration": "Svakṣetra"
+          },
+          "ne": {
+            "primary": "स्वक्षेत्र",
+            "abbreviation": "स्व"
+          },
+          "en": {
+            "primary": "Own Sign",
+            "abbreviation": "Own"
+          },
+          "hi": {
+            "primary": "स्वक्षेत्र",
+            "abbreviation": "स्व"
+          }
+        }
+      },
+      {
+        "key": "GREAT_FRIEND",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "अधिमित्र",
+            "abbreviation": "अमि",
+            "transliteration": "Adhimitra"
+          },
+          "ne": {
+            "primary": "अधिमित्र",
+            "abbreviation": "अमि"
+          },
+          "en": {
+            "primary": "Great Friend",
+            "abbreviation": "GFr"
+          },
+          "hi": {
+            "primary": "अधिमित्र",
+            "abbreviation": "अमि"
+          }
+        }
+      },
+      {
+        "key": "FRIEND",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "मित्र",
+            "abbreviation": "मि",
+            "transliteration": "Mitra"
+          },
+          "ne": {
+            "primary": "मित्र",
+            "abbreviation": "मि"
+          },
+          "en": {
+            "primary": "Friend",
+            "abbreviation": "Fr"
+          },
+          "hi": {
+            "primary": "मित्र",
+            "abbreviation": "मि"
+          }
+        }
+      },
+      {
+        "key": "NEUTRAL",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "सम",
+            "abbreviation": "स",
+            "transliteration": "Sama"
+          },
+          "ne": {
+            "primary": "सम",
+            "abbreviation": "स"
+          },
+          "en": {
+            "primary": "Neutral",
+            "abbreviation": "Neu"
+          },
+          "hi": {
+            "primary": "सम",
+            "abbreviation": "स"
+          }
+        }
+      },
+      {
+        "key": "ENEMY",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "शत्रु",
+            "abbreviation": "श",
+            "transliteration": "Śatru"
+          },
+          "ne": {
+            "primary": "शत्रु",
+            "abbreviation": "श"
+          },
+          "en": {
+            "primary": "Enemy",
+            "abbreviation": "En"
+          },
+          "hi": {
+            "primary": "शत्रु",
+            "abbreviation": "श"
+          }
+        }
+      },
+      {
+        "key": "GREAT_ENEMY",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "अधिशत्रु",
+            "abbreviation": "अश",
+            "transliteration": "Adhiśatru"
+          },
+          "ne": {
+            "primary": "अधिशत्रु",
+            "abbreviation": "अश"
+          },
+          "en": {
+            "primary": "Great Enemy",
+            "abbreviation": "GEn"
+          },
+          "hi": {
+            "primary": "अधिशत्रु",
+            "abbreviation": "अश"
+          }
+        }
+      },
+      {
+        "key": "DEBILITATED",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "नीच",
+            "abbreviation": "नी",
+            "transliteration": "Nīca"
+          },
+          "ne": {
+            "primary": "नीच",
+            "abbreviation": "नी"
+          },
+          "en": {
+            "primary": "Debilitated",
+            "abbreviation": "Deb"
+          },
+          "hi": {
+            "primary": "नीच",
+            "abbreviation": "नी"
+          }
+        }
+      },
+      {
+        "key": "DEEP_DEBILITATED",
+        "index": 10,
+        "names": {
+          "sa": {
+            "primary": "परमनीच",
+            "abbreviation": "पनी",
+            "transliteration": "Paramanīca"
+          },
+          "ne": {
+            "primary": "परमनीच",
+            "abbreviation": "पनी"
+          },
+          "en": {
+            "primary": "Deeply Debilitated",
+            "abbreviation": "DDeb"
+          },
+          "hi": {
+            "primary": "परमनीच",
+            "abbreviation": "पनी"
+          }
+        }
+      }
+    ],
+    "AVASTHA_BALADI": [
+      {
+        "key": "BALA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "बाल",
+            "transliteration": "Bāla"
+          },
+          "ne": {
+            "primary": "बाल"
+          },
+          "en": {
+            "primary": "Infant"
+          },
+          "hi": {
+            "primary": "बाल"
+          }
+        }
+      },
+      {
+        "key": "KUMARA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "कुमार",
+            "transliteration": "Kumāra"
+          },
+          "ne": {
+            "primary": "कुमार"
+          },
+          "en": {
+            "primary": "Youth"
+          },
+          "hi": {
+            "primary": "कुमार"
+          }
+        }
+      },
+      {
+        "key": "YUVA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "युवा",
+            "transliteration": "Yuvā"
+          },
+          "ne": {
+            "primary": "युवा"
+          },
+          "en": {
+            "primary": "Adult"
+          },
+          "hi": {
+            "primary": "युवा"
+          }
+        }
+      },
+      {
+        "key": "VRIDDHA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "वृद्ध",
+            "transliteration": "Vṛddha"
+          },
+          "ne": {
+            "primary": "वृद्ध"
+          },
+          "en": {
+            "primary": "Old"
+          },
+          "hi": {
+            "primary": "वृद्ध"
+          }
+        }
+      },
+      {
+        "key": "MRITA",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "मृत",
+            "transliteration": "Mṛta"
+          },
+          "ne": {
+            "primary": "मृत"
+          },
+          "en": {
+            "primary": "Dead"
+          },
+          "hi": {
+            "primary": "मृत"
+          }
+        }
+      }
+    ],
+    "AVASTHA_JAGRADADI": [
+      {
+        "key": "JAGRAT",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "जाग्रत्",
+            "transliteration": "Jāgrat"
+          },
+          "ne": {
+            "primary": "जाग्रत्"
+          },
+          "en": {
+            "primary": "Awake"
+          },
+          "hi": {
+            "primary": "जाग्रत"
+          }
+        }
+      },
+      {
+        "key": "SWAPNA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "स्वप्न",
+            "transliteration": "Svapna"
+          },
+          "ne": {
+            "primary": "स्वप्न"
+          },
+          "en": {
+            "primary": "Dreaming"
+          },
+          "hi": {
+            "primary": "स्वप्न"
+          }
+        }
+      },
+      {
+        "key": "SUSHUPTI",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "सुषुप्ति",
+            "transliteration": "Suṣupti"
+          },
+          "ne": {
+            "primary": "सुषुप्ति"
+          },
+          "en": {
+            "primary": "Deep Sleep"
+          },
+          "hi": {
+            "primary": "सुषुप्ति"
+          }
+        }
+      }
+    ],
+    "AVASTHA_DEEPTADI": [
+      {
+        "key": "DEEPTA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "दीप्त",
+            "transliteration": "Dīpta"
+          },
+          "ne": {
+            "primary": "दीप्त"
+          },
+          "en": {
+            "primary": "Bright"
+          },
+          "hi": {
+            "primary": "दीप्त"
+          }
+        }
+      },
+      {
+        "key": "SWASTHA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "स्वस्थ",
+            "transliteration": "Svastha"
+          },
+          "ne": {
+            "primary": "स्वस्थ"
+          },
+          "en": {
+            "primary": "Healthy"
+          },
+          "hi": {
+            "primary": "स्वस्थ"
+          }
+        }
+      },
+      {
+        "key": "MUDITA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "मुदित",
+            "transliteration": "Mudita"
+          },
+          "ne": {
+            "primary": "मुदित"
+          },
+          "en": {
+            "primary": "Delighted"
+          },
+          "hi": {
+            "primary": "मुदित"
+          }
+        }
+      },
+      {
+        "key": "SHANTA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "शान्त",
+            "transliteration": "Śānta"
+          },
+          "ne": {
+            "primary": "शान्त"
+          },
+          "en": {
+            "primary": "Peaceful"
+          },
+          "hi": {
+            "primary": "शान्त"
+          }
+        }
+      },
+      {
+        "key": "DINA",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "दीन",
+            "transliteration": "Dīna"
+          },
+          "ne": {
+            "primary": "दीन"
+          },
+          "en": {
+            "primary": "Sorrowful"
+          },
+          "hi": {
+            "primary": "दीन"
+          }
+        }
+      },
+      {
+        "key": "DUKHI",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "दुःखी",
+            "transliteration": "Duḥkhī"
+          },
+          "ne": {
+            "primary": "दुःखी"
+          },
+          "en": {
+            "primary": "Distressed"
+          },
+          "hi": {
+            "primary": "दुःखी"
+          }
+        }
+      },
+      {
+        "key": "VIKALA",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "विकल",
+            "transliteration": "Vikala"
+          },
+          "ne": {
+            "primary": "विकल"
+          },
+          "en": {
+            "primary": "Agitated"
+          },
+          "hi": {
+            "primary": "विकल"
+          }
+        }
+      },
+      {
+        "key": "KHALA",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "खल",
+            "transliteration": "Khala"
+          },
+          "ne": {
+            "primary": "खल"
+          },
+          "en": {
+            "primary": "Mischievous"
+          },
+          "hi": {
+            "primary": "खल"
+          }
+        }
+      },
+      {
+        "key": "KOPA",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "कोप",
+            "transliteration": "Kopa"
+          },
+          "ne": {
+            "primary": "कोप"
+          },
+          "en": {
+            "primary": "Wrathful"
+          },
+          "hi": {
+            "primary": "कोप"
+          }
+        }
+      }
+    ],
+    "AVASTHA_LAJJITADI": [
+      {
+        "key": "LAJJITA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "लज्जित",
+            "transliteration": "Lajjita"
+          },
+          "ne": {
+            "primary": "लज्जित"
+          },
+          "en": {
+            "primary": "Ashamed"
+          },
+          "hi": {
+            "primary": "लज्जित"
+          }
+        }
+      },
+      {
+        "key": "GARVITA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "गर्वित",
+            "transliteration": "Garvita"
+          },
+          "ne": {
+            "primary": "गर्वित"
+          },
+          "en": {
+            "primary": "Proud"
+          },
+          "hi": {
+            "primary": "गर्वित"
+          }
+        }
+      },
+      {
+        "key": "KSHUDHA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "क्षुधित",
+            "transliteration": "Kṣudhita"
+          },
+          "ne": {
+            "primary": "क्षुधित"
+          },
+          "en": {
+            "primary": "Hungry"
+          },
+          "hi": {
+            "primary": "क्षुधित"
+          }
+        }
+      },
+      {
+        "key": "TRISHITA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "तृषित",
+            "transliteration": "Tṛṣita"
+          },
+          "ne": {
+            "primary": "तृषित"
+          },
+          "en": {
+            "primary": "Thirsty"
+          },
+          "hi": {
+            "primary": "तृषित"
+          }
+        }
+      },
+      {
+        "key": "MUDITA",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "मुदित",
+            "transliteration": "Mudita"
+          },
+          "ne": {
+            "primary": "मुदित"
+          },
+          "en": {
+            "primary": "Delighted"
+          },
+          "hi": {
+            "primary": "मुदित"
+          }
+        }
+      },
+      {
+        "key": "KSHOBHITA",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "क्षोभित",
+            "transliteration": "Kṣobhita"
+          },
+          "ne": {
+            "primary": "क्षोभित"
+          },
+          "en": {
+            "primary": "Agitated"
+          },
+          "hi": {
+            "primary": "क्षोभित"
+          }
+        }
+      }
+    ],
+    "SAMVATSAR": [
+      {
+        "key": "PRABHAVA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "प्रभव",
+            "transliteration": "Prabhava"
+          },
+          "ne": {
+            "primary": "प्रभव"
+          },
+          "en": {
+            "primary": "Prabhava"
+          },
+          "hi": {
+            "primary": "प्रभव"
+          }
+        }
+      },
+      {
+        "key": "VIBHAVA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "विभव",
+            "transliteration": "Vibhava"
+          },
+          "ne": {
+            "primary": "विभव"
+          },
+          "en": {
+            "primary": "Vibhava"
+          },
+          "hi": {
+            "primary": "विभव"
+          }
+        }
+      },
+      {
+        "key": "SHUKLA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "शुक्ल",
+            "transliteration": "Śukla"
+          },
+          "ne": {
+            "primary": "शुक्ल"
+          },
+          "en": {
+            "primary": "Shukla"
+          },
+          "hi": {
+            "primary": "शुक्ल"
+          }
+        }
+      },
+      {
+        "key": "PRAMODOOTA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "प्रमोदूत",
+            "transliteration": "Pramodūta"
+          },
+          "ne": {
+            "primary": "प्रमोदूत"
+          },
+          "en": {
+            "primary": "Pramoduta"
+          },
+          "hi": {
+            "primary": "प्रमोदूत"
+          }
+        }
+      },
+      {
+        "key": "PRAJOTPATTI",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "प्रजोत्पत्ति",
+            "transliteration": "Prajotpatti"
+          },
+          "ne": {
+            "primary": "प्रजोत्पत्ति"
+          },
+          "en": {
+            "primary": "Prajotpatti"
+          },
+          "hi": {
+            "primary": "प्रजोत्पत्ति"
+          }
+        }
+      },
+      {
+        "key": "ANGIRAS",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "आंगिरस",
+            "transliteration": "Āṅgiras"
+          },
+          "ne": {
+            "primary": "आंगिरस"
+          },
+          "en": {
+            "primary": "Angiras"
+          },
+          "hi": {
+            "primary": "आंगिरस"
+          }
+        }
+      },
+      {
+        "key": "SHRIMUKHA",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "श्रीमुख",
+            "transliteration": "Śrīmukha"
+          },
+          "ne": {
+            "primary": "श्रीमुख"
+          },
+          "en": {
+            "primary": "Shrimukha"
+          },
+          "hi": {
+            "primary": "श्रीमुख"
+          }
+        }
+      },
+      {
+        "key": "BHAVA",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "भाव",
+            "transliteration": "Bhāva"
+          },
+          "ne": {
+            "primary": "भाव"
+          },
+          "en": {
+            "primary": "Bhava"
+          },
+          "hi": {
+            "primary": "भाव"
+          }
+        }
+      },
+      {
+        "key": "YUVA",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "युवा",
+            "transliteration": "Yuvā"
+          },
+          "ne": {
+            "primary": "युवा"
+          },
+          "en": {
+            "primary": "Yuva"
+          },
+          "hi": {
+            "primary": "युवा"
+          }
+        }
+      },
+      {
+        "key": "DHAATA",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "धाता",
+            "transliteration": "Dhātā"
+          },
+          "ne": {
+            "primary": "धाता"
+          },
+          "en": {
+            "primary": "Dhata"
+          },
+          "hi": {
+            "primary": "धाता"
+          }
+        }
+      },
+      {
+        "key": "ISHVARA",
+        "index": 10,
+        "names": {
+          "sa": {
+            "primary": "ईश्वर",
+            "transliteration": "Īśvara"
+          },
+          "ne": {
+            "primary": "ईश्वर"
+          },
+          "en": {
+            "primary": "Ishvara"
+          },
+          "hi": {
+            "primary": "ईश्वर"
+          }
+        }
+      },
+      {
+        "key": "BAHUDHANYA",
+        "index": 11,
+        "names": {
+          "sa": {
+            "primary": "बहुधान्य",
+            "transliteration": "Bahudhānya"
+          },
+          "ne": {
+            "primary": "बहुधान्य"
+          },
+          "en": {
+            "primary": "Bahudhanya"
+          },
+          "hi": {
+            "primary": "बहुधान्य"
+          }
+        }
+      },
+      {
+        "key": "PRAMATHI",
+        "index": 12,
+        "names": {
+          "sa": {
+            "primary": "प्रमाथी",
+            "transliteration": "Pramāthī"
+          },
+          "ne": {
+            "primary": "प्रमाथी"
+          },
+          "en": {
+            "primary": "Pramathi"
+          },
+          "hi": {
+            "primary": "प्रमाथी"
+          }
+        }
+      },
+      {
+        "key": "VIKRAMA",
+        "index": 13,
+        "names": {
+          "sa": {
+            "primary": "विक्रम",
+            "transliteration": "Vikrama"
+          },
+          "ne": {
+            "primary": "विक्रम"
+          },
+          "en": {
+            "primary": "Vikrama"
+          },
+          "hi": {
+            "primary": "विक्रम"
+          }
+        }
+      },
+      {
+        "key": "VRISHA",
+        "index": 14,
+        "names": {
+          "sa": {
+            "primary": "वृष",
+            "transliteration": "Vṛṣa"
+          },
+          "ne": {
+            "primary": "वृष"
+          },
+          "en": {
+            "primary": "Vrisha"
+          },
+          "hi": {
+            "primary": "वृष"
+          }
+        }
+      },
+      {
+        "key": "CHITRABHANU",
+        "index": 15,
+        "names": {
+          "sa": {
+            "primary": "चित्रभानु",
+            "transliteration": "Citrabhānu"
+          },
+          "ne": {
+            "primary": "चित्रभानु"
+          },
+          "en": {
+            "primary": "Chitrabhanu"
+          },
+          "hi": {
+            "primary": "चित्रभानु"
+          }
+        }
+      },
+      {
+        "key": "SUBHANU",
+        "index": 16,
+        "names": {
+          "sa": {
+            "primary": "सुभानु",
+            "transliteration": "Subhānu"
+          },
+          "ne": {
+            "primary": "सुभानु"
+          },
+          "en": {
+            "primary": "Subhanu"
+          },
+          "hi": {
+            "primary": "सुभानु"
+          }
+        }
+      },
+      {
+        "key": "TAARANA",
+        "index": 17,
+        "names": {
+          "sa": {
+            "primary": "तारण",
+            "transliteration": "Tāraṇa"
+          },
+          "ne": {
+            "primary": "तारण"
+          },
+          "en": {
+            "primary": "Tarana"
+          },
+          "hi": {
+            "primary": "तारण"
+          }
+        }
+      },
+      {
+        "key": "PAARTHIVA",
+        "index": 18,
+        "names": {
+          "sa": {
+            "primary": "पार्थिव",
+            "transliteration": "Pārthiva"
+          },
+          "ne": {
+            "primary": "पार्थिव"
+          },
+          "en": {
+            "primary": "Parthiva"
+          },
+          "hi": {
+            "primary": "पार्थिव"
+          }
+        }
+      },
+      {
+        "key": "VYAYA",
+        "index": 19,
+        "names": {
+          "sa": {
+            "primary": "व्यय",
+            "transliteration": "Vyaya"
+          },
+          "ne": {
+            "primary": "व्यय"
+          },
+          "en": {
+            "primary": "Vyaya"
+          },
+          "hi": {
+            "primary": "व्यय"
+          }
+        }
+      },
+      {
+        "key": "SARVAJIT",
+        "index": 20,
+        "names": {
+          "sa": {
+            "primary": "सर्वजित्",
+            "transliteration": "Sarvajit"
+          },
+          "ne": {
+            "primary": "सर्वजित्"
+          },
+          "en": {
+            "primary": "Sarvajit"
+          },
+          "hi": {
+            "primary": "सर्वजित्"
+          }
+        }
+      },
+      {
+        "key": "SARVADHARI",
+        "index": 21,
+        "names": {
+          "sa": {
+            "primary": "सर्वधारी",
+            "transliteration": "Sarvadhārī"
+          },
+          "ne": {
+            "primary": "सर्वधारी"
+          },
+          "en": {
+            "primary": "Sarvadhari"
+          },
+          "hi": {
+            "primary": "सर्वधारी"
+          }
+        }
+      },
+      {
+        "key": "VIRODHI",
+        "index": 22,
+        "names": {
+          "sa": {
+            "primary": "विरोधी",
+            "transliteration": "Virodhī"
+          },
+          "ne": {
+            "primary": "विरोधी"
+          },
+          "en": {
+            "primary": "Virodhi"
+          },
+          "hi": {
+            "primary": "विरोधी"
+          }
+        }
+      },
+      {
+        "key": "VIKRITA",
+        "index": 23,
+        "names": {
+          "sa": {
+            "primary": "विकृति",
+            "transliteration": "Vikṛti"
+          },
+          "ne": {
+            "primary": "विकृति"
+          },
+          "en": {
+            "primary": "Vikrita"
+          },
+          "hi": {
+            "primary": "विकृति"
+          }
+        }
+      },
+      {
+        "key": "KHARA",
+        "index": 24,
+        "names": {
+          "sa": {
+            "primary": "खर",
+            "transliteration": "Khara"
+          },
+          "ne": {
+            "primary": "खर"
+          },
+          "en": {
+            "primary": "Khara"
+          },
+          "hi": {
+            "primary": "खर"
+          }
+        }
+      },
+      {
+        "key": "NANDANA",
+        "index": 25,
+        "names": {
+          "sa": {
+            "primary": "नन्दन",
+            "transliteration": "Nandana"
+          },
+          "ne": {
+            "primary": "नन्दन"
+          },
+          "en": {
+            "primary": "Nandana"
+          },
+          "hi": {
+            "primary": "नन्दन"
+          }
+        }
+      },
+      {
+        "key": "VIJAYA",
+        "index": 26,
+        "names": {
+          "sa": {
+            "primary": "विजय",
+            "transliteration": "Vijaya"
+          },
+          "ne": {
+            "primary": "विजय"
+          },
+          "en": {
+            "primary": "Vijaya"
+          },
+          "hi": {
+            "primary": "विजय"
+          }
+        }
+      },
+      {
+        "key": "JAYA",
+        "index": 27,
+        "names": {
+          "sa": {
+            "primary": "जय",
+            "transliteration": "Jaya"
+          },
+          "ne": {
+            "primary": "जय"
+          },
+          "en": {
+            "primary": "Jaya"
+          },
+          "hi": {
+            "primary": "जय"
+          }
+        }
+      },
+      {
+        "key": "MANMATHA",
+        "index": 28,
+        "names": {
+          "sa": {
+            "primary": "मन्मथ",
+            "transliteration": "Manmatha"
+          },
+          "ne": {
+            "primary": "मन्मथ"
+          },
+          "en": {
+            "primary": "Manmatha"
+          },
+          "hi": {
+            "primary": "मन्मथ"
+          }
+        }
+      },
+      {
+        "key": "DURMUKHI",
+        "index": 29,
+        "names": {
+          "sa": {
+            "primary": "दुर्मुखी",
+            "transliteration": "Durmukhī"
+          },
+          "ne": {
+            "primary": "दुर्मुखी"
+          },
+          "en": {
+            "primary": "Durmukhi"
+          },
+          "hi": {
+            "primary": "दुर्मुखी"
+          }
+        }
+      },
+      {
+        "key": "HEVILAMBI",
+        "index": 30,
+        "names": {
+          "sa": {
+            "primary": "हेविलम्बी",
+            "transliteration": "Hevilambī"
+          },
+          "ne": {
+            "primary": "हेविलम्बी"
+          },
+          "en": {
+            "primary": "Hevilambi"
+          },
+          "hi": {
+            "primary": "हेविलम्बी"
+          }
+        }
+      },
+      {
+        "key": "VILAMBI",
+        "index": 31,
+        "names": {
+          "sa": {
+            "primary": "विलम्बी",
+            "transliteration": "Vilambī"
+          },
+          "ne": {
+            "primary": "विलम्बी"
+          },
+          "en": {
+            "primary": "Vilambi"
+          },
+          "hi": {
+            "primary": "विलम्बी"
+          }
+        }
+      },
+      {
+        "key": "VIKARI",
+        "index": 32,
+        "names": {
+          "sa": {
+            "primary": "विकारी",
+            "transliteration": "Vikārī"
+          },
+          "ne": {
+            "primary": "विकारी"
+          },
+          "en": {
+            "primary": "Vikari"
+          },
+          "hi": {
+            "primary": "विकारी"
+          }
+        }
+      },
+      {
+        "key": "SHARVARI",
+        "index": 33,
+        "names": {
+          "sa": {
+            "primary": "शार्वरी",
+            "transliteration": "Śārvarī"
+          },
+          "ne": {
+            "primary": "शार्वरी"
+          },
+          "en": {
+            "primary": "Sharvari"
+          },
+          "hi": {
+            "primary": "शार्वरी"
+          }
+        }
+      },
+      {
+        "key": "PLAVA",
+        "index": 34,
+        "names": {
+          "sa": {
+            "primary": "प्लव",
+            "transliteration": "Plava"
+          },
+          "ne": {
+            "primary": "प्लव"
+          },
+          "en": {
+            "primary": "Plava"
+          },
+          "hi": {
+            "primary": "प्लव"
+          }
+        }
+      },
+      {
+        "key": "SHUBHAKRIT",
+        "index": 35,
+        "names": {
+          "sa": {
+            "primary": "शुभकृत्",
+            "transliteration": "Śubhakṛt"
+          },
+          "ne": {
+            "primary": "शुभकृत्"
+          },
+          "en": {
+            "primary": "Shubhakrit"
+          },
+          "hi": {
+            "primary": "शुभकृत्"
+          }
+        }
+      },
+      {
+        "key": "SHOBHAKRIT",
+        "index": 36,
+        "names": {
+          "sa": {
+            "primary": "शोभकृत्",
+            "transliteration": "Śobhakṛt"
+          },
+          "ne": {
+            "primary": "शोभकृत्"
+          },
+          "en": {
+            "primary": "Shobhakrit"
+          },
+          "hi": {
+            "primary": "शोभकृत्"
+          }
+        }
+      },
+      {
+        "key": "KRODHI",
+        "index": 37,
+        "names": {
+          "sa": {
+            "primary": "क्रोधी",
+            "transliteration": "Krodhī"
+          },
+          "ne": {
+            "primary": "क्रोधी"
+          },
+          "en": {
+            "primary": "Krodhi"
+          },
+          "hi": {
+            "primary": "क्रोधी"
+          }
+        }
+      },
+      {
+        "key": "VISHVAVASU",
+        "index": 38,
+        "names": {
+          "sa": {
+            "primary": "विश्वावसु",
+            "transliteration": "Viśvāvasu"
+          },
+          "ne": {
+            "primary": "विश्वावसु"
+          },
+          "en": {
+            "primary": "Vishvavasu"
+          },
+          "hi": {
+            "primary": "विश्वावसु"
+          }
+        }
+      },
+      {
+        "key": "PARABHAVA",
+        "index": 39,
+        "names": {
+          "sa": {
+            "primary": "पराभव",
+            "transliteration": "Parābhava"
+          },
+          "ne": {
+            "primary": "पराभव"
+          },
+          "en": {
+            "primary": "Parabhava"
+          },
+          "hi": {
+            "primary": "पराभव"
+          }
+        }
+      },
+      {
+        "key": "PLAVANGA",
+        "index": 40,
+        "names": {
+          "sa": {
+            "primary": "प्लवंग",
+            "transliteration": "Plavaṅga"
+          },
+          "ne": {
+            "primary": "प्लवंग"
+          },
+          "en": {
+            "primary": "Plavanga"
+          },
+          "hi": {
+            "primary": "प्लवंग"
+          }
+        }
+      },
+      {
+        "key": "KILAKA",
+        "index": 41,
+        "names": {
+          "sa": {
+            "primary": "कीलक",
+            "transliteration": "Kīlaka"
+          },
+          "ne": {
+            "primary": "कीलक"
+          },
+          "en": {
+            "primary": "Kilaka"
+          },
+          "hi": {
+            "primary": "कीलक"
+          }
+        }
+      },
+      {
+        "key": "SAUMYA",
+        "index": 42,
+        "names": {
+          "sa": {
+            "primary": "सौम्य",
+            "transliteration": "Saumya"
+          },
+          "ne": {
+            "primary": "सौम्य"
+          },
+          "en": {
+            "primary": "Saumya"
+          },
+          "hi": {
+            "primary": "सौम्य"
+          }
+        }
+      },
+      {
+        "key": "SADHARANA",
+        "index": 43,
+        "names": {
+          "sa": {
+            "primary": "साधारण",
+            "transliteration": "Sādhāraṇa"
+          },
+          "ne": {
+            "primary": "साधारण"
+          },
+          "en": {
+            "primary": "Sadharana"
+          },
+          "hi": {
+            "primary": "साधारण"
+          }
+        }
+      },
+      {
+        "key": "VIRODHIKRIT",
+        "index": 44,
+        "names": {
+          "sa": {
+            "primary": "विरोधिकृत्",
+            "transliteration": "Virodhikṛt"
+          },
+          "ne": {
+            "primary": "विरोधिकृत्"
+          },
+          "en": {
+            "primary": "Virodhikrit"
+          },
+          "hi": {
+            "primary": "विरोधिकृत्"
+          }
+        }
+      },
+      {
+        "key": "PARIDHAAVI",
+        "index": 45,
+        "names": {
+          "sa": {
+            "primary": "परिधावी",
+            "transliteration": "Paridhāvī"
+          },
+          "ne": {
+            "primary": "परिधावी"
+          },
+          "en": {
+            "primary": "Paridhavi"
+          },
+          "hi": {
+            "primary": "परिधावी"
+          }
+        }
+      },
+      {
+        "key": "PRAMADICHA",
+        "index": 46,
+        "names": {
+          "sa": {
+            "primary": "प्रमादीच",
+            "transliteration": "Pramādīca"
+          },
+          "ne": {
+            "primary": "प्रमादीच"
+          },
+          "en": {
+            "primary": "Pramadicha"
+          },
+          "hi": {
+            "primary": "प्रमादीच"
+          }
+        }
+      },
+      {
+        "key": "ANANDA",
+        "index": 47,
+        "names": {
+          "sa": {
+            "primary": "आनन्द",
+            "transliteration": "Ānanda"
+          },
+          "ne": {
+            "primary": "आनन्द"
+          },
+          "en": {
+            "primary": "Ananda"
+          },
+          "hi": {
+            "primary": "आनन्द"
+          }
+        }
+      },
+      {
+        "key": "RAKSHASA",
+        "index": 48,
+        "names": {
+          "sa": {
+            "primary": "राक्षस",
+            "transliteration": "Rākṣasa"
+          },
+          "ne": {
+            "primary": "राक्षस"
+          },
+          "en": {
+            "primary": "Rakshasa"
+          },
+          "hi": {
+            "primary": "राक्षस"
+          }
+        }
+      },
+      {
+        "key": "NALA",
+        "index": 49,
+        "names": {
+          "sa": {
+            "primary": "नल",
+            "transliteration": "Nala"
+          },
+          "ne": {
+            "primary": "नल"
+          },
+          "en": {
+            "primary": "Nala"
+          },
+          "hi": {
+            "primary": "नल"
+          }
+        }
+      },
+      {
+        "key": "PINGALA",
+        "index": 50,
+        "names": {
+          "sa": {
+            "primary": "पिंगल",
+            "transliteration": "Piṅgala"
+          },
+          "ne": {
+            "primary": "पिंगल"
+          },
+          "en": {
+            "primary": "Pingala"
+          },
+          "hi": {
+            "primary": "पिंगल"
+          }
+        }
+      },
+      {
+        "key": "KALAYUKTA",
+        "index": 51,
+        "names": {
+          "sa": {
+            "primary": "कालयुक्त",
+            "transliteration": "Kālayukta"
+          },
+          "ne": {
+            "primary": "कालयुक्त"
+          },
+          "en": {
+            "primary": "Kalayukta"
+          },
+          "hi": {
+            "primary": "कालयुक्त"
+          }
+        }
+      },
+      {
+        "key": "SIDDHARTHI",
+        "index": 52,
+        "names": {
+          "sa": {
+            "primary": "सिद्धार्थी",
+            "transliteration": "Siddhārthī"
+          },
+          "ne": {
+            "primary": "सिद्धार्थी"
+          },
+          "en": {
+            "primary": "Siddharthi"
+          },
+          "hi": {
+            "primary": "सिद्धार्थी"
+          }
+        }
+      },
+      {
+        "key": "RAUDRA",
+        "index": 53,
+        "names": {
+          "sa": {
+            "primary": "रौद्र",
+            "transliteration": "Raudra"
+          },
+          "ne": {
+            "primary": "रौद्र"
+          },
+          "en": {
+            "primary": "Raudra"
+          },
+          "hi": {
+            "primary": "रौद्र"
+          }
+        }
+      },
+      {
+        "key": "DURMATI",
+        "index": 54,
+        "names": {
+          "sa": {
+            "primary": "दुर्मति",
+            "transliteration": "Durmati"
+          },
+          "ne": {
+            "primary": "दुर्मति"
+          },
+          "en": {
+            "primary": "Durmati"
+          },
+          "hi": {
+            "primary": "दुर्मति"
+          }
+        }
+      },
+      {
+        "key": "DUNDUBHI",
+        "index": 55,
+        "names": {
+          "sa": {
+            "primary": "दुन्दुभि",
+            "transliteration": "Dundubhi"
+          },
+          "ne": {
+            "primary": "दुन्दुभि"
+          },
+          "en": {
+            "primary": "Dundubhi"
+          },
+          "hi": {
+            "primary": "दुन्दुभि"
+          }
+        }
+      },
+      {
+        "key": "RUDHIRODGARI",
+        "index": 56,
+        "names": {
+          "sa": {
+            "primary": "रुधिरोद्गारी",
+            "transliteration": "Rudhirodgārī"
+          },
+          "ne": {
+            "primary": "रुधिरोद्गारी"
+          },
+          "en": {
+            "primary": "Rudhirodgari"
+          },
+          "hi": {
+            "primary": "रुधिरोद्गारी"
+          }
+        }
+      },
+      {
+        "key": "RAKTAKSHI",
+        "index": 57,
+        "names": {
+          "sa": {
+            "primary": "रक्ताक्षी",
+            "transliteration": "Raktākṣī"
+          },
+          "ne": {
+            "primary": "रक्ताक्षी"
+          },
+          "en": {
+            "primary": "Raktakshi"
+          },
+          "hi": {
+            "primary": "रक्ताक्षी"
+          }
+        }
+      },
+      {
+        "key": "KRODHANA",
+        "index": 58,
+        "names": {
+          "sa": {
+            "primary": "क्रोधन",
+            "transliteration": "Krodhana"
+          },
+          "ne": {
+            "primary": "क्रोधन"
+          },
+          "en": {
+            "primary": "Krodhana"
+          },
+          "hi": {
+            "primary": "क्रोधन"
+          }
+        }
+      },
+      {
+        "key": "AKSHAYA",
+        "index": 59,
+        "names": {
+          "sa": {
+            "primary": "अक्षय",
+            "transliteration": "Akṣaya"
+          },
+          "ne": {
+            "primary": "अक्षय"
+          },
+          "en": {
+            "primary": "Akshaya"
+          },
+          "hi": {
+            "primary": "अक्षय"
+          }
+        }
+      }
+    ],
+    "CHARA_KARAKA": [
+      {
+        "key": "AK",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "आत्मकारक",
+            "transliteration": "Ātmakāraka"
+          },
+          "ne": {
+            "primary": "आत्मकारक"
+          },
+          "en": {
+            "primary": "Atmakaraka",
+            "abbreviation": "AK"
+          },
+          "hi": {
+            "primary": "आत्मकारक"
+          }
+        }
+      },
+      {
+        "key": "AmK",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "अमात्यकारक",
+            "transliteration": "Amātyakāraka"
+          },
+          "ne": {
+            "primary": "अमात्यकारक"
+          },
+          "en": {
+            "primary": "Amatyakaraka",
+            "abbreviation": "AmK"
+          },
+          "hi": {
+            "primary": "अमात्यकारक"
+          }
+        }
+      },
+      {
+        "key": "BK",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "भ्रातृकारक",
+            "transliteration": "Bhrātṛkāraka"
+          },
+          "ne": {
+            "primary": "भ्रातृकारक"
+          },
+          "en": {
+            "primary": "Bhratrikaraka",
+            "abbreviation": "BK"
+          },
+          "hi": {
+            "primary": "भ्रातृकारक"
+          }
+        }
+      },
+      {
+        "key": "MK",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "मातृकारक",
+            "transliteration": "Mātṛkāraka"
+          },
+          "ne": {
+            "primary": "मातृकारक"
+          },
+          "en": {
+            "primary": "Matrikaraka",
+            "abbreviation": "MK"
+          },
+          "hi": {
+            "primary": "मातृकारक"
+          }
+        }
+      },
+      {
+        "key": "PK",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "पुत्रकारक",
+            "transliteration": "Putrakāraka"
+          },
+          "ne": {
+            "primary": "पुत्रकारक"
+          },
+          "en": {
+            "primary": "Putrakaraka",
+            "abbreviation": "PK"
+          },
+          "hi": {
+            "primary": "पुत्रकारक"
+          }
+        }
+      },
+      {
+        "key": "GK",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "ज्ञातिकारक",
+            "transliteration": "Jñātikāraka"
+          },
+          "ne": {
+            "primary": "ज्ञातिकारक"
+          },
+          "en": {
+            "primary": "Gnatikaraka",
+            "abbreviation": "GK"
+          },
+          "hi": {
+            "primary": "ज्ञातिकारक"
+          }
+        }
+      },
+      {
+        "key": "DK",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "दारकारक",
+            "transliteration": "Dārakāraka"
+          },
+          "ne": {
+            "primary": "दारकारक"
+          },
+          "en": {
+            "primary": "Darakaraka",
+            "abbreviation": "DK"
+          },
+          "hi": {
+            "primary": "दारकारक"
+          }
+        }
+      },
+      {
+        "key": "PiK",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "पितृकारक",
+            "transliteration": "Pitṛkāraka"
+          },
+          "ne": {
+            "primary": "पितृकारक"
+          },
+          "en": {
+            "primary": "Pitrikaraka",
+            "abbreviation": "PiK"
+          },
+          "hi": {
+            "primary": "पितृकारक"
+          }
+        }
+      }
+    ],
+    "PAKSHA": [
+      {
+        "key": "shukla",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "शुक्ल",
+            "transliteration": "Śukla Pakṣa"
+          },
+          "ne": {
+            "primary": "शुक्ल"
+          },
+          "en": {
+            "primary": "Shukla Paksha",
+            "transliteration": "Śukla Pakṣa"
+          },
+          "hi": {
+            "primary": "शुक्ल"
+          }
+        }
+      },
+      {
+        "key": "krishna",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "कृष्ण",
+            "transliteration": "Kṛṣṇa Pakṣa"
+          },
+          "ne": {
+            "primary": "कृष्ण"
+          },
+          "en": {
+            "primary": "Krishna Paksha",
+            "transliteration": "Kṛṣṇa Pakṣa"
+          },
+          "hi": {
+            "primary": "कृष्ण"
+          }
+        }
+      }
+    ],
+    "YONI_GENDER": [
+      {
+        "key": "M",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "पुरुष",
+            "transliteration": "Puruṣa"
+          },
+          "ne": {
+            "primary": "पुरुष"
+          },
+          "en": {
+            "primary": "Male"
+          },
+          "hi": {
+            "primary": "पुरुष"
+          }
+        }
+      },
+      {
+        "key": "F",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "स्त्री",
+            "transliteration": "Strī"
+          },
+          "ne": {
+            "primary": "स्त्री"
+          },
+          "en": {
+            "primary": "Female"
+          },
+          "hi": {
+            "primary": "स्त्री"
+          }
+        }
+      }
+    ],
+    "ANGA_LABEL": [
+      {
+        "key": "tithi",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "तिथि",
+            "transliteration": "Tithi"
+          },
+          "ne": {
+            "primary": "तिथि"
+          },
+          "en": {
+            "primary": "Tithi"
+          },
+          "hi": {
+            "primary": "तिथि"
+          }
+        }
+      },
+      {
+        "key": "nakshatra",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "नक्षत्र",
+            "transliteration": "Nakṣatra"
+          },
+          "ne": {
+            "primary": "नक्षत्र"
+          },
+          "en": {
+            "primary": "Nakshatra"
+          },
+          "hi": {
+            "primary": "नक्षत्र"
+          }
+        }
+      },
+      {
+        "key": "yoga",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "योग",
+            "transliteration": "Yoga"
+          },
+          "ne": {
+            "primary": "योग"
+          },
+          "en": {
+            "primary": "Yoga"
+          },
+          "hi": {
+            "primary": "योग"
+          }
+        }
+      },
+      {
+        "key": "karana",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "करण",
+            "transliteration": "Karaṇa"
+          },
+          "ne": {
+            "primary": "करण"
+          },
+          "en": {
+            "primary": "Karana"
+          },
+          "hi": {
+            "primary": "करण"
+          }
+        }
+      },
+      {
+        "key": "vara",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "वार",
+            "transliteration": "Vāra"
+          },
+          "ne": {
+            "primary": "वार"
+          },
+          "en": {
+            "primary": "Vara"
+          },
+          "hi": {
+            "primary": "वार"
+          }
+        }
+      }
+    ],
+    "DEITY": [
+      {
+        "key": "Ashwini Kumars",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "अश्विनी कुमार",
+            "transliteration": "Aśvinī Kumāra"
+          },
+          "ne": {
+            "primary": "अश्विनी कुमार"
+          },
+          "en": {
+            "primary": "Ashwini Kumars"
+          },
+          "hi": {
+            "primary": "अश्विनी कुमार"
+          }
+        }
+      },
+      {
+        "key": "Yama",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "यम",
+            "transliteration": "Yama"
+          },
+          "ne": {
+            "primary": "यम"
+          },
+          "en": {
+            "primary": "Yama"
+          },
+          "hi": {
+            "primary": "यम"
+          }
+        }
+      },
+      {
+        "key": "Agni",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "अग्नि",
+            "transliteration": "Agni"
+          },
+          "ne": {
+            "primary": "अग्नि"
+          },
+          "en": {
+            "primary": "Agni"
+          },
+          "hi": {
+            "primary": "अग्नि"
+          }
+        }
+      },
+      {
+        "key": "Brahma",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "ब्रह्मा",
+            "transliteration": "Brahmā"
+          },
+          "ne": {
+            "primary": "ब्रह्मा"
+          },
+          "en": {
+            "primary": "Brahma"
+          },
+          "hi": {
+            "primary": "ब्रह्मा"
+          }
+        }
+      },
+      {
+        "key": "Soma",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "सोम",
+            "transliteration": "Soma"
+          },
+          "ne": {
+            "primary": "सोम"
+          },
+          "en": {
+            "primary": "Soma"
+          },
+          "hi": {
+            "primary": "सोम"
+          }
+        }
+      },
+      {
+        "key": "Rudra",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "रुद्र",
+            "transliteration": "Rudra"
+          },
+          "ne": {
+            "primary": "रुद्र"
+          },
+          "en": {
+            "primary": "Rudra"
+          },
+          "hi": {
+            "primary": "रुद्र"
+          }
+        }
+      },
+      {
+        "key": "Aditi",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "अदिति",
+            "transliteration": "Aditi"
+          },
+          "ne": {
+            "primary": "अदिति"
+          },
+          "en": {
+            "primary": "Aditi"
+          },
+          "hi": {
+            "primary": "अदिति"
+          }
+        }
+      },
+      {
+        "key": "Brihaspati",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "बृहस्पति",
+            "transliteration": "Bṛhaspati"
+          },
+          "ne": {
+            "primary": "बृहस्पति"
+          },
+          "en": {
+            "primary": "Brihaspati"
+          },
+          "hi": {
+            "primary": "बृहस्पति"
+          }
+        }
+      },
+      {
+        "key": "Nagas",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "नागगण",
+            "transliteration": "Nāga"
+          },
+          "ne": {
+            "primary": "नागगण"
+          },
+          "en": {
+            "primary": "Nagas"
+          },
+          "hi": {
+            "primary": "नागगण"
+          }
+        }
+      },
+      {
+        "key": "Pitru",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "पितृ",
+            "transliteration": "Pitṛ"
+          },
+          "ne": {
+            "primary": "पितृ"
+          },
+          "en": {
+            "primary": "Pitru"
+          },
+          "hi": {
+            "primary": "पितृ"
+          }
+        }
+      },
+      {
+        "key": "Bhaga",
+        "index": 10,
+        "names": {
+          "sa": {
+            "primary": "भग",
+            "transliteration": "Bhaga"
+          },
+          "ne": {
+            "primary": "भग"
+          },
+          "en": {
+            "primary": "Bhaga"
+          },
+          "hi": {
+            "primary": "भग"
+          }
+        }
+      },
+      {
+        "key": "Aryaman",
+        "index": 11,
+        "names": {
+          "sa": {
+            "primary": "अर्यमा",
+            "transliteration": "Aryaman"
+          },
+          "ne": {
+            "primary": "अर्यमा"
+          },
+          "en": {
+            "primary": "Aryaman"
+          },
+          "hi": {
+            "primary": "अर्यमा"
+          }
+        }
+      },
+      {
+        "key": "Savitru",
+        "index": 12,
+        "names": {
+          "sa": {
+            "primary": "सवितृ",
+            "transliteration": "Savitṛ"
+          },
+          "ne": {
+            "primary": "सवितृ"
+          },
+          "en": {
+            "primary": "Savitru"
+          },
+          "hi": {
+            "primary": "सवितृ"
+          }
+        }
+      },
+      {
+        "key": "Vishwakarma",
+        "index": 13,
+        "names": {
+          "sa": {
+            "primary": "विश्वकर्मा",
+            "transliteration": "Viśvakarmā"
+          },
+          "ne": {
+            "primary": "विश्वकर्मा"
+          },
+          "en": {
+            "primary": "Vishwakarma"
+          },
+          "hi": {
+            "primary": "विश्वकर्मा"
+          }
+        }
+      },
+      {
+        "key": "Vayu",
+        "index": 14,
+        "names": {
+          "sa": {
+            "primary": "वायु",
+            "transliteration": "Vāyu"
+          },
+          "ne": {
+            "primary": "वायु"
+          },
+          "en": {
+            "primary": "Vayu"
+          },
+          "hi": {
+            "primary": "वायु"
+          }
+        }
+      },
+      {
+        "key": "Indra-Agni",
+        "index": 15,
+        "names": {
+          "sa": {
+            "primary": "इन्द्र-अग्नि",
+            "transliteration": "Indrāgni"
+          },
+          "ne": {
+            "primary": "इन्द्र-अग्नि"
+          },
+          "en": {
+            "primary": "Indra-Agni"
+          },
+          "hi": {
+            "primary": "इन्द्र-अग्नि"
+          }
+        }
+      },
+      {
+        "key": "Mitra",
+        "index": 16,
+        "names": {
+          "sa": {
+            "primary": "मित्र",
+            "transliteration": "Mitra"
+          },
+          "ne": {
+            "primary": "मित्र"
+          },
+          "en": {
+            "primary": "Mitra"
+          },
+          "hi": {
+            "primary": "मित्र"
+          }
+        }
+      },
+      {
+        "key": "Indra",
+        "index": 17,
+        "names": {
+          "sa": {
+            "primary": "इन्द्र",
+            "transliteration": "Indra"
+          },
+          "ne": {
+            "primary": "इन्द्र"
+          },
+          "en": {
+            "primary": "Indra"
+          },
+          "hi": {
+            "primary": "इन्द्र"
+          }
+        }
+      },
+      {
+        "key": "Nirriti",
+        "index": 18,
+        "names": {
+          "sa": {
+            "primary": "निऋति",
+            "transliteration": "Nirṛti"
+          },
+          "ne": {
+            "primary": "निऋति"
+          },
+          "en": {
+            "primary": "Nirriti"
+          },
+          "hi": {
+            "primary": "निऋति"
+          }
+        }
+      },
+      {
+        "key": "Apas",
+        "index": 19,
+        "names": {
+          "sa": {
+            "primary": "अप",
+            "transliteration": "Āpaḥ"
+          },
+          "ne": {
+            "primary": "अप"
+          },
+          "en": {
+            "primary": "Apas"
+          },
+          "hi": {
+            "primary": "अप"
+          }
+        }
+      },
+      {
+        "key": "Vishwadevas",
+        "index": 20,
+        "names": {
+          "sa": {
+            "primary": "विश्वेदेव",
+            "transliteration": "Viśvedeva"
+          },
+          "ne": {
+            "primary": "विश्वेदेव"
+          },
+          "en": {
+            "primary": "Vishwadevas"
+          },
+          "hi": {
+            "primary": "विश्वेदेव"
+          }
+        }
+      },
+      {
+        "key": "Vishnu",
+        "index": 21,
+        "names": {
+          "sa": {
+            "primary": "विष्णु",
+            "transliteration": "Viṣṇu"
+          },
+          "ne": {
+            "primary": "विष्णु"
+          },
+          "en": {
+            "primary": "Vishnu"
+          },
+          "hi": {
+            "primary": "विष्णु"
+          }
+        }
+      },
+      {
+        "key": "Ashta Vasus",
+        "index": 22,
+        "names": {
+          "sa": {
+            "primary": "अष्ट वसु",
+            "transliteration": "Aṣṭa Vasu"
+          },
+          "ne": {
+            "primary": "अष्ट वसु"
+          },
+          "en": {
+            "primary": "Ashta Vasus"
+          },
+          "hi": {
+            "primary": "अष्ट वसु"
+          }
+        }
+      },
+      {
+        "key": "Varuna",
+        "index": 23,
+        "names": {
+          "sa": {
+            "primary": "वरुण",
+            "transliteration": "Varuṇa"
+          },
+          "ne": {
+            "primary": "वरुण"
+          },
+          "en": {
+            "primary": "Varuna"
+          },
+          "hi": {
+            "primary": "वरुण"
+          }
+        }
+      },
+      {
+        "key": "Aja Ekapada",
+        "index": 24,
+        "names": {
+          "sa": {
+            "primary": "अज एकपाद",
+            "transliteration": "Aja Ekapāda"
+          },
+          "ne": {
+            "primary": "अज एकपाद"
+          },
+          "en": {
+            "primary": "Aja Ekapada"
+          },
+          "hi": {
+            "primary": "अज एकपाद"
+          }
+        }
+      },
+      {
+        "key": "Ahir Budhnya",
+        "index": 25,
+        "names": {
+          "sa": {
+            "primary": "अहिर्बुध्न्य",
+            "transliteration": "Ahirbudhnya"
+          },
+          "ne": {
+            "primary": "अहिर्बुध्न्य"
+          },
+          "en": {
+            "primary": "Ahir Budhnya"
+          },
+          "hi": {
+            "primary": "अहिर्बुध्न्य"
+          }
+        }
+      },
+      {
+        "key": "Pusha",
+        "index": 26,
+        "names": {
+          "sa": {
+            "primary": "पूषा",
+            "transliteration": "Pūṣā"
+          },
+          "ne": {
+            "primary": "पूषा"
+          },
+          "en": {
+            "primary": "Pusha"
+          },
+          "hi": {
+            "primary": "पूषा"
+          }
+        }
+      }
+    ],
+    "AYANA": [
+      {
+        "key": "uttarayana",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "उत्तरायण",
+            "transliteration": "Uttarāyaṇa"
+          },
+          "ne": {
+            "primary": "उत्तरायण"
+          },
+          "en": {
+            "primary": "Uttarayana",
+            "transliteration": "Uttarāyaṇa"
+          },
+          "hi": {
+            "primary": "उत्तरायण"
+          }
+        }
+      },
+      {
+        "key": "dakshinayana",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "दक्षिणायन",
+            "transliteration": "Dakṣiṇāyana"
+          },
+          "ne": {
+            "primary": "दक्षिणायन"
+          },
+          "en": {
+            "primary": "Dakshinayana",
+            "transliteration": "Dakṣiṇāyana"
+          },
+          "hi": {
+            "primary": "दक्षिणायन"
+          }
+        }
+      }
+    ],
+    "PANCHADHA_MAITRI": [
+      {
+        "key": "GREAT_FRIEND",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "अधिमित्र",
+            "transliteration": "Adhimitra"
+          },
+          "ne": {
+            "primary": "अधिमित्र"
+          },
+          "en": {
+            "primary": "Great Friend"
+          },
+          "hi": {
+            "primary": "अधिमित्र"
+          }
+        }
+      },
+      {
+        "key": "FRIEND",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "मित्र",
+            "transliteration": "Mitra"
+          },
+          "ne": {
+            "primary": "मित्र"
+          },
+          "en": {
+            "primary": "Friend"
+          },
+          "hi": {
+            "primary": "मित्र"
+          }
+        }
+      },
+      {
+        "key": "NEUTRAL",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "सम",
+            "transliteration": "Sama"
+          },
+          "ne": {
+            "primary": "सम"
+          },
+          "en": {
+            "primary": "Neutral"
+          },
+          "hi": {
+            "primary": "सम"
+          }
+        }
+      },
+      {
+        "key": "ENEMY",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "शत्रु",
+            "transliteration": "Śatru"
+          },
+          "ne": {
+            "primary": "शत्रु"
+          },
+          "en": {
+            "primary": "Enemy"
+          },
+          "hi": {
+            "primary": "शत्रु"
+          }
+        }
+      },
+      {
+        "key": "GREAT_ENEMY",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "अधिशत्रु",
+            "transliteration": "Adhiśatru"
+          },
+          "ne": {
+            "primary": "अधिशत्रु"
+          },
+          "en": {
+            "primary": "Great Enemy"
+          },
+          "hi": {
+            "primary": "अधिशत्रु"
+          }
+        }
+      }
+    ],
+    "NATURAL_FRIENDSHIP": [
+      {
+        "key": "friend",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "मित्र",
+            "transliteration": "Mitra"
+          },
+          "ne": {
+            "primary": "मित्र"
+          },
+          "en": {
+            "primary": "Friend"
+          },
+          "hi": {
+            "primary": "मित्र"
+          }
+        }
+      },
+      {
+        "key": "neutral",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "सम",
+            "transliteration": "Sama"
+          },
+          "ne": {
+            "primary": "सम"
+          },
+          "en": {
+            "primary": "Neutral"
+          },
+          "hi": {
+            "primary": "सम"
+          }
+        }
+      },
+      {
+        "key": "enemy",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "शत्रु",
+            "transliteration": "Śatru"
+          },
+          "ne": {
+            "primary": "शत्रु"
+          },
+          "en": {
+            "primary": "Enemy"
+          },
+          "hi": {
+            "primary": "शत्रु"
+          }
+        }
+      }
+    ],
+    "TEMPORARY_FRIENDSHIP": [
+      {
+        "key": "friend",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "तत्कालिक मित्र",
+            "transliteration": "Tatkālika Mitra"
+          },
+          "ne": {
+            "primary": "तत्कालिक मित्र"
+          },
+          "en": {
+            "primary": "Temporary Friend"
+          },
+          "hi": {
+            "primary": "तत्कालिक मित्र"
+          }
+        }
+      },
+      {
+        "key": "enemy",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "तत्कालिक शत्रु",
+            "transliteration": "Tatkālika Śatru"
+          },
+          "ne": {
+            "primary": "तत्कालिक शत्रु"
+          },
+          "en": {
+            "primary": "Temporary Enemy"
+          },
+          "hi": {
+            "primary": "तत्कालिक शत्रु"
+          }
+        }
+      }
+    ],
+    "COMBUST_STATUS": [
+      {
+        "key": "none",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "अनस्त",
+            "transliteration": "Anasta"
+          },
+          "ne": {
+            "primary": "अनस्त"
+          },
+          "en": {
+            "primary": "Not Combust"
+          },
+          "hi": {
+            "primary": "अनस्त"
+          }
+        }
+      },
+      {
+        "key": "combust",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "अस्त",
+            "transliteration": "Asta"
+          },
+          "ne": {
+            "primary": "अस्त"
+          },
+          "en": {
+            "primary": "Combust"
+          },
+          "hi": {
+            "primary": "अस्त"
+          }
+        }
+      },
+      {
+        "key": "deep-combust",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "अत्यन्तास्त",
+            "transliteration": "Atyantāsta"
+          },
+          "ne": {
+            "primary": "अत्यन्तास्त"
+          },
+          "en": {
+            "primary": "Deeply Combust"
+          },
+          "hi": {
+            "primary": "अत्यन्तास्त"
+          }
+        }
+      }
+    ],
+    "AYURDAYA_METHOD": [
+      {
+        "key": "pindayu",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "पिण्डायु",
+            "transliteration": "Piṇḍāyu"
+          },
+          "ne": {
+            "primary": "पिण्डायु"
+          },
+          "en": {
+            "primary": "Pindayu"
+          },
+          "hi": {
+            "primary": "पिण्डायु"
+          }
+        }
+      },
+      {
+        "key": "amsayu",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "अंशायु",
+            "transliteration": "Aṃśāyu"
+          },
+          "ne": {
+            "primary": "अंशायु"
+          },
+          "en": {
+            "primary": "Amsayu"
+          },
+          "hi": {
+            "primary": "अंशायु"
+          }
+        }
+      },
+      {
+        "key": "nisargayu",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "निसर्गायु",
+            "transliteration": "Nisargāyu"
+          },
+          "ne": {
+            "primary": "निसर्गायु"
+          },
+          "en": {
+            "primary": "Nisargayu"
+          },
+          "hi": {
+            "primary": "निसर्गायु"
+          }
+        }
+      }
+    ],
+    "AYURDAYA_TIER": [
+      {
+        "key": "balarishta",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "बालारिष्ट",
+            "transliteration": "Bālāriṣṭa"
+          },
+          "ne": {
+            "primary": "बालारिष्ट"
+          },
+          "en": {
+            "primary": "Balarishta"
+          },
+          "hi": {
+            "primary": "बालारिष्ट"
+          }
+        }
+      },
+      {
+        "key": "alpayu",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "अल्पायु",
+            "transliteration": "Alpāyu"
+          },
+          "ne": {
+            "primary": "अल्पायु"
+          },
+          "en": {
+            "primary": "Alpayu"
+          },
+          "hi": {
+            "primary": "अल्पायु"
+          }
+        }
+      },
+      {
+        "key": "madhyayu",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "मध्यायु",
+            "transliteration": "Madhyāyu"
+          },
+          "ne": {
+            "primary": "मध्यायु"
+          },
+          "en": {
+            "primary": "Madhyayu"
+          },
+          "hi": {
+            "primary": "मध्यायु"
+          }
+        }
+      },
+      {
+        "key": "purnayu",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "पूर्णायु",
+            "transliteration": "Pūrṇāyu"
+          },
+          "ne": {
+            "primary": "पूर्णायु"
+          },
+          "en": {
+            "primary": "Purnayu"
+          },
+          "hi": {
+            "primary": "पूर्णायु"
+          }
+        }
+      }
+    ],
+    "MARAKA_TRIGGER": [
+      {
+        "key": "navamsha64-moon",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "चतुःषष्टितम नवांश",
+            "transliteration": "Catuḥṣaṣṭitama Navāṃśa (Candra)"
+          },
+          "ne": {
+            "primary": "६४औं नवांश"
+          },
+          "en": {
+            "primary": "64th Navamsha from Moon"
+          },
+          "hi": {
+            "primary": "64वाँ नवांश"
+          }
+        }
+      },
+      {
+        "key": "navamsha64-lagna",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "चतुःषष्टितम नवांश",
+            "transliteration": "Catuḥṣaṣṭitama Navāṃśa (Lagna)"
+          },
+          "ne": {
+            "primary": "६४औं नवांश"
+          },
+          "en": {
+            "primary": "64th Navamsha from Lagna"
+          },
+          "hi": {
+            "primary": "64वाँ नवांश"
+          }
+        }
+      },
+      {
+        "key": "drekkana22-lagna",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "द्वाविंशतितम द्रेष्काण",
+            "transliteration": "Dvāviṃśatitama Dreṣkāṇa (Lagna)"
+          },
+          "ne": {
+            "primary": "२२औं द्रेष्काण"
+          },
+          "en": {
+            "primary": "22nd Drekkana from Lagna"
+          },
+          "hi": {
+            "primary": "22वाँ द्रेष्काण"
+          }
+        }
+      }
+    ],
+    "DASHA_LEVEL": [
+      {
+        "key": "MD",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "महादशा",
+            "transliteration": "Mahādaśā"
+          },
+          "ne": {
+            "primary": "महादशा"
+          },
+          "en": {
+            "primary": "Mahadasha",
+            "abbreviation": "MD"
+          },
+          "hi": {
+            "primary": "महादशा"
+          }
+        }
+      },
+      {
+        "key": "AD",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "अन्तर्दशा",
+            "transliteration": "Antardaśā"
+          },
+          "ne": {
+            "primary": "अन्तर्दशा"
+          },
+          "en": {
+            "primary": "Antardasha",
+            "abbreviation": "AD"
+          },
+          "hi": {
+            "primary": "अन्तर्दशा"
+          }
+        }
+      },
+      {
+        "key": "PD",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "प्रत्यन्तर्दशा",
+            "transliteration": "Pratyantardaśā"
+          },
+          "ne": {
+            "primary": "प्रत्यन्तर्दशा"
+          },
+          "en": {
+            "primary": "Pratyantardasha",
+            "abbreviation": "PD"
+          },
+          "hi": {
+            "primary": "प्रत्यन्तर्दशा"
+          }
+        }
+      },
+      {
+        "key": "sookshma",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "सूक्ष्मदशा",
+            "transliteration": "Sūkṣmadaśā"
+          },
+          "ne": {
+            "primary": "सूक्ष्मदशा"
+          },
+          "en": {
+            "primary": "Sookshma Dasha",
+            "abbreviation": "SD"
+          },
+          "hi": {
+            "primary": "सूक्ष्मदशा"
+          }
+        }
+      },
+      {
+        "key": "prana",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "प्राणदशा",
+            "transliteration": "Prāṇadaśā"
+          },
+          "ne": {
+            "primary": "प्राणदशा"
+          },
+          "en": {
+            "primary": "Prana Dasha",
+            "abbreviation": "PD2"
+          },
+          "hi": {
+            "primary": "प्राणदशा"
+          }
+        }
+      }
+    ],
+    "MUHURTA": [
+      {
+        "key": "abhijit",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "अभिजित्",
+            "transliteration": "Abhijit"
+          },
+          "ne": {
+            "primary": "अभिजित्"
+          },
+          "en": {
+            "primary": "Abhijit Muhurta"
+          },
+          "hi": {
+            "primary": "अभिजित"
+          }
+        }
+      },
+      {
+        "key": "brahma",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "ब्राह्ममुहूर्त",
+            "transliteration": "Brāhmamuhūrta"
+          },
+          "ne": {
+            "primary": "ब्रह्म मुहूर्त"
+          },
+          "en": {
+            "primary": "Brahma Muhurta"
+          },
+          "hi": {
+            "primary": "ब्रह्म मुहूर्त"
+          }
+        }
+      }
+    ],
+    "VASHYA": [
+      {
+        "key": "manav",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "मानव",
+            "transliteration": "Mānava"
+          },
+          "ne": {
+            "primary": "मानव"
+          },
+          "en": {
+            "primary": "Manava",
+            "transliteration": "Mānava"
+          },
+          "hi": {
+            "primary": "मानव"
+          }
+        }
+      },
+      {
+        "key": "chatushpad",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "चतुष्पाद",
+            "transliteration": "Catuṣpāda"
+          },
+          "ne": {
+            "primary": "चतुष्पाद"
+          },
+          "en": {
+            "primary": "Chatushpada",
+            "transliteration": "Catuṣpāda"
+          },
+          "hi": {
+            "primary": "चतुष्पाद"
+          }
+        }
+      },
+      {
+        "key": "jalachar",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "जलचर",
+            "transliteration": "Jalacara"
+          },
+          "ne": {
+            "primary": "जलचर"
+          },
+          "en": {
+            "primary": "Jalachara",
+            "transliteration": "Jalacara"
+          },
+          "hi": {
+            "primary": "जलचर"
+          }
+        }
+      },
+      {
+        "key": "vanachar",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "वनचर",
+            "transliteration": "Vanacara"
+          },
+          "ne": {
+            "primary": "वनचर"
+          },
+          "en": {
+            "primary": "Vanachara",
+            "transliteration": "Vanacara"
+          },
+          "hi": {
+            "primary": "वनचर"
+          }
+        }
+      },
+      {
+        "key": "keeta",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "कीट",
+            "transliteration": "Kīṭa"
+          },
+          "ne": {
+            "primary": "कीट"
+          },
+          "en": {
+            "primary": "Keeta",
+            "transliteration": "Kīṭa"
+          },
+          "hi": {
+            "primary": "कीट"
+          }
+        }
+      }
+    ],
+    "PAYA": [
+      {
+        "key": "swarna",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "स्वर्ण",
+            "transliteration": "Svarṇa"
+          },
+          "ne": {
+            "primary": "सुन"
+          },
+          "en": {
+            "primary": "Swarna",
+            "transliteration": "Svarṇa"
+          },
+          "hi": {
+            "primary": "स्वर्ण"
+          }
+        }
+      },
+      {
+        "key": "rajata",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "रजत",
+            "transliteration": "Rajata"
+          },
+          "ne": {
+            "primary": "चाँदी"
+          },
+          "en": {
+            "primary": "Rajata",
+            "transliteration": "Rajata"
+          },
+          "hi": {
+            "primary": "रजत"
+          }
+        }
+      },
+      {
+        "key": "tamra",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "ताम्र",
+            "transliteration": "Tāmra"
+          },
+          "ne": {
+            "primary": "तामा"
+          },
+          "en": {
+            "primary": "Tamra",
+            "transliteration": "Tāmra"
+          },
+          "hi": {
+            "primary": "ताम्र"
+          }
+        }
+      },
+      {
+        "key": "lauha",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "लौह",
+            "transliteration": "Lauha"
+          },
+          "ne": {
+            "primary": "फलाम"
+          },
+          "en": {
+            "primary": "Lauha",
+            "transliteration": "Lauha"
+          },
+          "hi": {
+            "primary": "लौह"
+          }
+        }
+      }
+    ],
+    "DISHA": [
+      {
+        "key": "east",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "पूर्व",
+            "transliteration": "Pūrva"
+          },
+          "ne": {
+            "primary": "पूर्व"
+          },
+          "en": {
+            "primary": "East",
+            "transliteration": "Pūrva"
+          },
+          "hi": {
+            "primary": "पूर्व"
+          }
+        }
+      },
+      {
+        "key": "south-east",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "आग्नेय",
+            "transliteration": "Āgneya"
+          },
+          "ne": {
+            "primary": "आग्नेय"
+          },
+          "en": {
+            "primary": "South-East",
+            "transliteration": "Āgneya"
+          },
+          "hi": {
+            "primary": "आग्नेय"
+          }
+        }
+      },
+      {
+        "key": "south",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "दक्षिण",
+            "transliteration": "Dakṣiṇa"
+          },
+          "ne": {
+            "primary": "दक्षिण"
+          },
+          "en": {
+            "primary": "South",
+            "transliteration": "Dakṣiṇa"
+          },
+          "hi": {
+            "primary": "दक्षिण"
+          }
+        }
+      },
+      {
+        "key": "south-west",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "नैऋत्य",
+            "transliteration": "Nairṛtya"
+          },
+          "ne": {
+            "primary": "नैऋत्य"
+          },
+          "en": {
+            "primary": "South-West",
+            "transliteration": "Nairṛtya"
+          },
+          "hi": {
+            "primary": "नैऋत्य"
+          }
+        }
+      },
+      {
+        "key": "west",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "पश्चिम",
+            "transliteration": "Paścima"
+          },
+          "ne": {
+            "primary": "पश्चिम"
+          },
+          "en": {
+            "primary": "West",
+            "transliteration": "Paścima"
+          },
+          "hi": {
+            "primary": "पश्चिम"
+          }
+        }
+      },
+      {
+        "key": "north-west",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "वायव्य",
+            "transliteration": "Vāyavya"
+          },
+          "ne": {
+            "primary": "वायव्य"
+          },
+          "en": {
+            "primary": "North-West",
+            "transliteration": "Vāyavya"
+          },
+          "hi": {
+            "primary": "वायव्य"
+          }
+        }
+      },
+      {
+        "key": "north",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "उत्तर",
+            "transliteration": "Uttara"
+          },
+          "ne": {
+            "primary": "उत्तर"
+          },
+          "en": {
+            "primary": "North",
+            "transliteration": "Uttara"
+          },
+          "hi": {
+            "primary": "उत्तर"
+          }
+        }
+      },
+      {
+        "key": "north-east",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "ईशान",
+            "transliteration": "Īśāna"
+          },
+          "ne": {
+            "primary": "ईशान"
+          },
+          "en": {
+            "primary": "North-East",
+            "transliteration": "Īśāna"
+          },
+          "hi": {
+            "primary": "ईशान"
+          }
+        }
+      }
+    ],
+    "VARGA": [
+      {
+        "key": "GARUDA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "गरुड",
+            "transliteration": "Garuḍa Varga"
+          },
+          "ne": {
+            "primary": "गरुड"
+          },
+          "en": {
+            "primary": "Garuda",
+            "transliteration": "Garuḍa Varga"
+          },
+          "hi": {
+            "primary": "गरुड"
+          }
+        }
+      },
+      {
+        "key": "MARJARA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "मार्जार",
+            "transliteration": "Mārjāra Varga"
+          },
+          "ne": {
+            "primary": "मार्जार",
+            "synonyms": [
+              "बिरालो"
+            ]
+          },
+          "en": {
+            "primary": "Cat",
+            "transliteration": "Mārjāra Varga"
+          },
+          "hi": {
+            "primary": "मार्जार",
+            "synonyms": [
+              "बिल्ली"
+            ]
+          }
+        }
+      },
+      {
+        "key": "SIMHA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "सिंह",
+            "transliteration": "Siṁha Varga"
+          },
+          "ne": {
+            "primary": "सिंह"
+          },
+          "en": {
+            "primary": "Lion",
+            "transliteration": "Siṁha Varga"
+          },
+          "hi": {
+            "primary": "सिंह"
+          }
+        }
+      },
+      {
+        "key": "SHWANA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "श्वान",
+            "transliteration": "Śvāna Varga"
+          },
+          "ne": {
+            "primary": "श्वान",
+            "synonyms": [
+              "कुकुर"
+            ]
+          },
+          "en": {
+            "primary": "Dog",
+            "transliteration": "Śvāna Varga"
+          },
+          "hi": {
+            "primary": "श्वान",
+            "synonyms": [
+              "कुत्ता"
+            ]
+          }
+        }
+      },
+      {
+        "key": "SARPA",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "सर्प",
+            "transliteration": "Sarpa Varga"
+          },
+          "ne": {
+            "primary": "सर्प",
+            "synonyms": [
+              "साँप"
+            ]
+          },
+          "en": {
+            "primary": "Serpent",
+            "transliteration": "Sarpa Varga"
+          },
+          "hi": {
+            "primary": "सर्प",
+            "synonyms": [
+              "साँप"
+            ]
+          }
+        }
+      },
+      {
+        "key": "MUSHAKA",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "मूषक",
+            "transliteration": "Mūṣaka Varga"
+          },
+          "ne": {
+            "primary": "मूषक",
+            "synonyms": [
+              "मुसा"
+            ]
+          },
+          "en": {
+            "primary": "Rat",
+            "transliteration": "Mūṣaka Varga"
+          },
+          "hi": {
+            "primary": "मूषक",
+            "synonyms": [
+              "चूहा"
+            ]
+          }
+        }
+      },
+      {
+        "key": "MRIGA",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "मृग",
+            "transliteration": "Mṛga Varga"
+          },
+          "ne": {
+            "primary": "मृग",
+            "synonyms": [
+              "हरिण"
+            ]
+          },
+          "en": {
+            "primary": "Deer",
+            "transliteration": "Mṛga Varga"
+          },
+          "hi": {
+            "primary": "मृग",
+            "synonyms": [
+              "हिरण"
+            ]
+          }
+        }
+      },
+      {
+        "key": "MESHA",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "मेष",
+            "transliteration": "Meṣa Varga"
+          },
+          "ne": {
+            "primary": "मेष",
+            "synonyms": [
+              "भेडा"
+            ]
+          },
+          "en": {
+            "primary": "Ram",
+            "transliteration": "Meṣa Varga"
+          },
+          "hi": {
+            "primary": "मेष",
+            "synonyms": [
+              "भेड़"
+            ]
+          }
+        }
+      }
+    ],
+    "TRANSIT_EVENT": [
+      {
+        "key": "sign_ingress",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "संक्रान्ति",
+            "transliteration": "Saṅkrānti"
+          },
+          "ne": {
+            "primary": "राशि प्रवेश"
+          },
+          "en": {
+            "primary": "Sign Ingress",
+            "transliteration": "Saṅkrānti"
+          },
+          "hi": {
+            "primary": "राशि प्रवेश"
+          }
+        }
+      },
+      {
+        "key": "retrograde_station",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "वक्री",
+            "transliteration": "Vakrī"
+          },
+          "ne": {
+            "primary": "वक्री"
+          },
+          "en": {
+            "primary": "Retrograde Station",
+            "transliteration": "Vakrī"
+          },
+          "hi": {
+            "primary": "वक्री"
+          }
+        }
+      },
+      {
+        "key": "direct_station",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "मार्गी",
+            "transliteration": "Mārgī"
+          },
+          "ne": {
+            "primary": "मार्गी"
+          },
+          "en": {
+            "primary": "Direct Station",
+            "transliteration": "Mārgī"
+          },
+          "hi": {
+            "primary": "मार्गी"
+          }
+        }
+      },
+      {
+        "key": "sade_sati_start",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "साढेसाती आरम्भ",
+            "transliteration": "Sāḍhesātī Ārambha"
+          },
+          "ne": {
+            "primary": "साढेसाती सुरु"
+          },
+          "en": {
+            "primary": "Sade Sati Begins"
+          },
+          "hi": {
+            "primary": "साढ़ेसाती आरंभ"
+          }
+        }
+      },
+      {
+        "key": "sade_sati_end",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "साढेसाती समाप्ति",
+            "transliteration": "Sāḍhesātī Samāpti"
+          },
+          "ne": {
+            "primary": "साढेसाती अन्त्य"
+          },
+          "en": {
+            "primary": "Sade Sati Ends"
+          },
+          "hi": {
+            "primary": "साढ़ेसाती समाप्ति"
+          }
+        }
+      },
+      {
+        "key": "sade_sati_phase_change",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "साढेसाती चरण परिवर्तन",
+            "transliteration": "Caraṇa Parivartana"
+          },
+          "ne": {
+            "primary": "साढेसाती चरण परिवर्तन"
+          },
+          "en": {
+            "primary": "Sade Sati Phase Change"
+          },
+          "hi": {
+            "primary": "साढ़ेसाती चरण परिवर्तन"
+          }
+        }
+      },
+      {
+        "key": "dhaiyya_start",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "ढैय्या आरम्भ",
+            "transliteration": "Ḍhaiyyā Ārambha"
+          },
+          "ne": {
+            "primary": "ढैया सुरु"
+          },
+          "en": {
+            "primary": "Dhaiyya Begins"
+          },
+          "hi": {
+            "primary": "ढैय्या आरंभ"
+          }
+        }
+      },
+      {
+        "key": "dhaiyya_end",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "ढैय्या समाप्ति",
+            "transliteration": "Ḍhaiyyā Samāpti"
+          },
+          "ne": {
+            "primary": "ढैया अन्त्य"
+          },
+          "en": {
+            "primary": "Dhaiyya Ends"
+          },
+          "hi": {
+            "primary": "ढैय्या समाप्ति"
+          }
+        }
+      },
+      {
+        "key": "favorable_entry",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "शुभ गोचर",
+            "transliteration": "Śubha Gocara"
+          },
+          "ne": {
+            "primary": "शुभ गोचर प्रवेश"
+          },
+          "en": {
+            "primary": "Favourable Transit"
+          },
+          "hi": {
+            "primary": "शुभ गोचर"
+          }
+        }
+      },
+      {
+        "key": "unfavorable_entry",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "अशुभ गोचर",
+            "transliteration": "Aśubha Gocara"
+          },
+          "ne": {
+            "primary": "अशुभ गोचर प्रवेश"
+          },
+          "en": {
+            "primary": "Unfavourable Transit"
+          },
+          "hi": {
+            "primary": "अशुभ गोचर"
+          }
+        }
+      }
+    ],
+    "MUHURTA_ACTIVITY": [
+      {
+        "key": "marriage",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "विवाहः",
+            "transliteration": "Vivāha"
+          },
+          "ne": {
+            "primary": "विवाह"
+          },
+          "en": {
+            "primary": "Marriage",
+            "transliteration": "Vivāha"
+          },
+          "hi": {
+            "primary": "विवाह"
+          }
+        }
+      },
+      {
+        "key": "travel",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "यात्रा",
+            "transliteration": "Yātrā"
+          },
+          "ne": {
+            "primary": "यात्रा"
+          },
+          "en": {
+            "primary": "Travel",
+            "transliteration": "Yātrā"
+          },
+          "hi": {
+            "primary": "यात्रा"
+          }
+        }
+      },
+      {
+        "key": "business",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "व्यापारारम्भः",
+            "transliteration": "Vyāpāra"
+          },
+          "ne": {
+            "primary": "व्यापार"
+          },
+          "en": {
+            "primary": "Business",
+            "transliteration": "Vyāpāra"
+          },
+          "hi": {
+            "primary": "व्यापार"
+          }
+        }
+      },
+      {
+        "key": "education",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "शिक्षा",
+            "transliteration": "Śikṣā"
+          },
+          "ne": {
+            "primary": "शिक्षा"
+          },
+          "en": {
+            "primary": "Education",
+            "transliteration": "Śikṣā"
+          },
+          "hi": {
+            "primary": "शिक्षा"
+          }
+        }
+      },
+      {
+        "key": "property",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "भूमिक्रयः",
+            "transliteration": "Bhūmi"
+          },
+          "ne": {
+            "primary": "सम्पत्ति"
+          },
+          "en": {
+            "primary": "Property",
+            "transliteration": "Bhūmi"
+          },
+          "hi": {
+            "primary": "संपत्ति"
+          }
+        }
+      },
+      {
+        "key": "medical",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "चिकित्सा",
+            "transliteration": "Cikitsā"
+          },
+          "ne": {
+            "primary": "चिकित्सा"
+          },
+          "en": {
+            "primary": "Medical",
+            "transliteration": "Cikitsā"
+          },
+          "hi": {
+            "primary": "चिकित्सा"
+          }
+        }
+      },
+      {
+        "key": "naming",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "नामकरणम्",
+            "transliteration": "Nāmakaraṇa"
+          },
+          "ne": {
+            "primary": "नामकरण"
+          },
+          "en": {
+            "primary": "Naming",
+            "transliteration": "Nāmakaraṇa"
+          },
+          "hi": {
+            "primary": "नामकरण"
+          }
+        }
+      },
+      {
+        "key": "grihapravesh",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "गृहप्रवेशः",
+            "transliteration": "Gṛhapraveśa"
+          },
+          "ne": {
+            "primary": "गृहप्रवेश"
+          },
+          "en": {
+            "primary": "Griha Pravesh",
+            "transliteration": "Gṛhapraveśa"
+          },
+          "hi": {
+            "primary": "गृहप्रवेश"
+          }
+        }
+      },
+      {
+        "key": "vehicle",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "वाहनक्रयः",
+            "transliteration": "Vāhana"
+          },
+          "ne": {
+            "primary": "सवारी खरिद"
+          },
+          "en": {
+            "primary": "Vehicle",
+            "transliteration": "Vāhana"
+          },
+          "hi": {
+            "primary": "वाहन"
+          }
+        }
+      },
+      {
+        "key": "general",
+        "index": 9,
+        "names": {
+          "sa": {
+            "primary": "सामान्यकार्यम्",
+            "transliteration": "Sāmānya"
+          },
+          "ne": {
+            "primary": "सामान्य"
+          },
+          "en": {
+            "primary": "General",
+            "transliteration": "Sāmānya"
+          },
+          "hi": {
+            "primary": "सामान्य"
+          }
+        }
+      },
+      {
+        "key": "upanayana",
+        "index": 10,
+        "names": {
+          "sa": {
+            "primary": "उपनयनम्",
+            "transliteration": "Upanayana"
+          },
+          "ne": {
+            "primary": "व्रतबन्ध"
+          },
+          "en": {
+            "primary": "Upanayana",
+            "transliteration": "Upanayana"
+          },
+          "hi": {
+            "primary": "उपनयन"
+          }
+        }
+      },
+      {
+        "key": "annaprashana",
+        "index": 11,
+        "names": {
+          "sa": {
+            "primary": "अन्नप्राशनम्",
+            "transliteration": "Annaprāśana"
+          },
+          "ne": {
+            "primary": "अन्नप्राशन"
+          },
+          "en": {
+            "primary": "Annaprashana",
+            "transliteration": "Annaprāśana"
+          },
+          "hi": {
+            "primary": "अन्नप्राशन"
+          }
+        }
+      },
+      {
+        "key": "chudakarana",
+        "index": 12,
+        "names": {
+          "sa": {
+            "primary": "चूडाकरणम्",
+            "transliteration": "Cūḍākaraṇa"
+          },
+          "ne": {
+            "primary": "चूडाकर्म"
+          },
+          "en": {
+            "primary": "Chudakarana",
+            "transliteration": "Cūḍākaraṇa"
+          },
+          "hi": {
+            "primary": "चूड़ाकरण"
+          }
+        }
+      },
+      {
+        "key": "karnavedha",
+        "index": 13,
+        "names": {
+          "sa": {
+            "primary": "कर्णवेधः",
+            "transliteration": "Karṇavedha"
+          },
+          "ne": {
+            "primary": "कर्णवेध"
+          },
+          "en": {
+            "primary": "Karnavedha",
+            "transliteration": "Karṇavedha"
+          },
+          "hi": {
+            "primary": "कर्णवेध"
+          }
+        }
+      },
+      {
+        "key": "vidyarambha",
+        "index": 14,
+        "names": {
+          "sa": {
+            "primary": "विद्यारम्भः",
+            "transliteration": "Vidyārambha"
+          },
+          "ne": {
+            "primary": "विद्यारम्भ"
+          },
+          "en": {
+            "primary": "Vidyarambha",
+            "transliteration": "Vidyārambha"
+          },
+          "hi": {
+            "primary": "विद्यारंभ"
+          }
+        }
+      }
+    ],
+    "SAAIT_EVENT": [
+      {
+        "key": "BIBAHA",
+        "index": 0,
+        "names": {
+          "sa": {
+            "primary": "विवाहः",
+            "transliteration": "Vivāha"
+          },
+          "ne": {
+            "primary": "विवाह"
+          },
+          "en": {
+            "primary": "Marriage",
+            "transliteration": "Vivāha"
+          },
+          "hi": {
+            "primary": "विवाह"
+          }
+        }
+      },
+      {
+        "key": "BRATABANDHA",
+        "index": 1,
+        "names": {
+          "sa": {
+            "primary": "उपनयनम्",
+            "transliteration": "Upanayana"
+          },
+          "ne": {
+            "primary": "व्रतबन्ध"
+          },
+          "en": {
+            "primary": "Bratabandha",
+            "transliteration": "Vratabandha"
+          },
+          "hi": {
+            "primary": "व्रतबंध"
+          }
+        }
+      },
+      {
+        "key": "ANNAPRASHANA",
+        "index": 2,
+        "names": {
+          "sa": {
+            "primary": "अन्नप्राशनम्",
+            "transliteration": "Annaprāśana"
+          },
+          "ne": {
+            "primary": "अन्नप्राशन (पास्नी)"
+          },
+          "en": {
+            "primary": "First Feeding",
+            "transliteration": "Annaprāśana"
+          },
+          "hi": {
+            "primary": "अन्नप्राशन"
+          }
+        }
+      },
+      {
+        "key": "NAVANNAPRASHANA",
+        "index": 3,
+        "names": {
+          "sa": {
+            "primary": "नवान्नप्राशनम्",
+            "transliteration": "Navānnaprāśana"
+          },
+          "ne": {
+            "primary": "नवान्नप्राशन (न्वागी खाने)"
+          },
+          "en": {
+            "primary": "First Harvest Rice",
+            "transliteration": "Navānnaprāśana"
+          },
+          "hi": {
+            "primary": "नवान्नप्राशन"
+          }
+        }
+      },
+      {
+        "key": "GRIHA_PRAVESH",
+        "index": 4,
+        "names": {
+          "sa": {
+            "primary": "गृहप्रवेशः",
+            "transliteration": "Gṛhapraveśa"
+          },
+          "ne": {
+            "primary": "गृह प्रवेश (घर सर्ने)"
+          },
+          "en": {
+            "primary": "House Warming",
+            "transliteration": "Gṛhapraveśa"
+          },
+          "hi": {
+            "primary": "गृह प्रवेश"
+          }
+        }
+      },
+      {
+        "key": "GRIHARAMBHA",
+        "index": 5,
+        "names": {
+          "sa": {
+            "primary": "गृहारम्भः",
+            "transliteration": "Gṛhārambha"
+          },
+          "ne": {
+            "primary": "गृहारम्भ (जग राख्ने)"
+          },
+          "en": {
+            "primary": "Foundation Laying",
+            "transliteration": "Gṛhārambha"
+          },
+          "hi": {
+            "primary": "गृहारंभ"
+          }
+        }
+      },
+      {
+        "key": "DHANYACCHEDAN",
+        "index": 6,
+        "names": {
+          "sa": {
+            "primary": "धान्यच्छेदनम्",
+            "transliteration": "Dhānyacchedana"
+          },
+          "ne": {
+            "primary": "धान्यच्छेदन (मुठी लिने)"
+          },
+          "en": {
+            "primary": "First Harvest Cut",
+            "transliteration": "Dhānyacchedana"
+          },
+          "hi": {
+            "primary": "धान्यच्छेदन"
+          }
+        }
+      },
+      {
+        "key": "RUDRI",
+        "index": 7,
+        "names": {
+          "sa": {
+            "primary": "रुद्रीपाठः",
+            "transliteration": "Rudrī"
+          },
+          "ne": {
+            "primary": "रुद्रि जुर्ने"
+          },
+          "en": {
+            "primary": "Rudri Recitation",
+            "transliteration": "Rudrī"
+          },
+          "hi": {
+            "primary": "रुद्री"
+          }
+        }
+      },
+      {
+        "key": "AGNI",
+        "index": 8,
+        "names": {
+          "sa": {
+            "primary": "अग्निकार्यम्",
+            "transliteration": "Agni"
+          },
+          "ne": {
+            "primary": "अग्नि जुर्ने"
+          },
+          "en": {
+            "primary": "Fire Rite",
+            "transliteration": "Agni"
+          },
+          "hi": {
+            "primary": "अग्नि"
+          }
+        }
+      }
+    ]
+  }
+}

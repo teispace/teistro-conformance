@@ -1,0 +1,395 @@
+{
+  "schema": "teistro-conformance/baseline-chart/1",
+  "id": "c018--placidus",
+  "chart": "c018",
+  "title": "Sydney 2000-09-15 20:00:00",
+  "tags": ["southern"],
+  "why": "southern hemisphere, standard time",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "ephemeris": {
+      "library": "Swiss Ephemeris",
+      "library_version": "2.10.03",
+      "binding": "sweph 2.10.3-5",
+      "files": {
+        "sepl_18.se1": "ca1393ceab3a44fbc895887cf789c68819ae6a1cbc9b22225872dbe4ccd99a66",
+        "semo_18.se1": "1ca07bd67c24374d77226180c20a4f9996cba013697894810518e7eb582ca4f7",
+        "seas_18.se1": "a2cd8fc33807c78ca9a700c91c2e042258b12fc4796519e00781440b5ad8b2e2"
+      },
+      "file_range_years": [1800, 2399],
+      "calc_flags": "SEFLG_SWIEPH | SEFLG_SPEED | SEFLG_SIDEREAL (+ SEFLG_TOPOCTR when topocentric)",
+      "delta_t": "library default (swe_deltat)"
+    },
+    "time_zones": {
+      "tzdb": "2026a",
+      "icu": "78.3",
+      "geo_tz": "8.1.8",
+      "date_fns_tz": "3.2.0"
+    },
+    "runtime": {
+      "node": "26.8.1",
+      "decimal_js": "10.6.0"
+    },
+    "conventions": {
+      "angles": "degrees, f64 as computed, no rounding; sidereal unless named tropical",
+      "instants": "Julian Day in UT (UT1 as the library defines it); dates as ISO-8601 UTC strings",
+      "sign_index": "0 = Aries",
+      "nakshatra_index": "0 = Ashwini",
+      "pada": "1 to 4",
+      "house": "1 to 12, whole-sign from the Lagna sign unless named",
+      "weekday_swe": "0 = Monday to 6 = Sunday (swe_day_of_week)",
+      "dasha_year_days": 365.25,
+      "classification": "decimal.js division of the f64 longitude, floor, lower-inclusive boundaries"
+    }
+  },
+  "input": {
+    "place": {
+      "name": "Sydney",
+      "country": "AU",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "altitude_m": 58
+    },
+    "local": {
+      "calendar": "gregorian",
+      "date": "2000-09-15",
+      "time": "20:00:00",
+      "is_lmt": false,
+      "dst_choice": null
+    },
+    "search": null,
+    "resolved": {
+      "utc": "2000-09-15T09:00:00.000Z",
+      "jd_ut": 2451802.875,
+      "tz_offset_min": 660,
+      "iana": "Australia/Sydney",
+      "tz_source": "iana",
+      "tz_era": "historical",
+      "warnings": ["OFFSET_DIFFERS_FROM_CURRENT_RULES"]
+    }
+  },
+  "settings": {
+    "profile": "placidus",
+    "ayanamsha": "lahiri",
+    "ayanamsha_id": 1,
+    "zodiac": "sidereal",
+    "house_system": "placidus",
+    "siddhanta": "drik",
+    "node": "mean",
+    "sunrise_mode": "apparent-refraction",
+    "dasha_balance": "spatial",
+    "dasha_max_level": 3,
+    "chara_karaka": 8,
+    "ekadhipatya": "classical",
+    "topocentric": true,
+    "surya_bija": null
+  },
+  "settings_hash": {
+    "algorithm": "sha256 of the canonical string, first 16 hex characters",
+    "canonical": "ayanamsaId=1|dashaBalanceMethod=spatial|ekadhipatyaMethod=classical|engineVersion=1.8.0|houseSystem=placidus|nodeType=mean|siddhanta=drik|sunriseMode=apparent-refraction|swissephVersion=2.10.03|useTopocentric=true|zodiacMode=sidereal",
+    "value": "4ae30710c4c7e7eb"
+  },
+  "sections": ["houses"],
+  "houses": {
+    "selected": {
+      "system": "placidus",
+      "cusps": [345.28357393389297, 12.987618499512791, 43.647231213731345, 76.10145236893794, 108.48504762013295, 138.6971672685346, 165.28357393389297, 192.9876184995128, 223.6472312137314, 256.101452368938, 288.48504762013295, 318.6971672685346],
+      "ascendant": 345.28357393389297,
+      "mc": 256.101452368938,
+      "is_degenerate": false,
+      "cusp_sign_index": [11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    "all_systems": {
+      "whole-sign": {
+        "code": "W",
+        "cusps": [330, 0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "placidus": {
+        "code": "P",
+        "cusps": [345.28357393389297, 12.987618499512791, 43.647231213731345, 76.10145236893794, 108.48504762013295, 138.6971672685346, 165.28357393389297, 192.9876184995128, 223.6472312137314, 256.101452368938, 288.48504762013295, 318.6971672685346],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "koch": {
+        "code": "K",
+        "cusps": [345.28357393389297, 14.947902311608061, 44.332934212410464, 76.10145236893794, 105.90978369858033, 135.3493025084466, 165.28357393389297, 194.947902311608, 224.33293421241046, 256.101452368938, 285.9097836985803, 315.3493025084466],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "regiomontanus": {
+        "code": "R",
+        "cusps": [345.28357393389297, 11.38711426061326, 41.43008266191339, 76.10145236893794, 110.25042905206436, 139.4931940270776, 165.28357393389297, 191.38711426061332, 221.4300826619134, 256.101452368938, 290.2504290520644, 319.4931940270776],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "campanus": {
+        "code": "C",
+        "cusps": [345.28357393389297, 15.864424743099391, 46.27305976539992, 76.10145236893794, 105.53004593034478, 135.12089849059225, 165.28357393389297, 195.86442474309933, 226.27305976539992, 256.101452368938, 285.53004593034484, 315.12089849059225],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "equal": {
+        "code": "A",
+        "cusps": [345.28357393389297, 15.283573933892967, 45.28357393389297, 75.28357393389297, 105.28357393389297, 135.28357393389297, 165.28357393389297, 195.28357393389297, 225.28357393389297, 255.28357393389297, 285.28357393389297, 315.28357393389297],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "meridian": {
+        "code": "X",
+        "cusps": [347.9257893382712, 19.430500177381987, 48.45567175202763, 76.10145236893794, 104.55413271803747, 135.39536342116457, 167.92578933827133, 199.430500177382, 228.45567175202768, 256.101452368938, 284.5541327180374, 315.3953634211646],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "alcabitius": {
+        "code": "B",
+        "cusps": [345.28357393389297, 17.78746824805819, 47.69690206342102, 76.10145236893794, 103.75569129288044, 133.66260477614583, 165.28357393389297, 197.7874682480582, 227.69690206342102, 256.101452368938, 283.75569129288044, 313.6626047761458],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "porphyry": {
+        "code": "O",
+        "cusps": [345.28357393389297, 15.556200078907978, 45.82882622392299, 76.10145236893794, 105.82882622392293, 135.55620007890798, 165.28357393389297, 195.55620007890798, 225.828826223923, 256.101452368938, 285.828826223923, 315.556200078908],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "topocentric": {
+        "code": "T",
+        "cusps": [345.28357393389297, 13.001906071172073, 43.6968385586988, 76.10145236893794, 108.46134560601644, 138.69548406980357, 165.28357393389297, 193.00190607117202, 223.6968385586988, 256.101452368938, 288.4613456060165, 318.69548406980357],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "morinus": {
+        "code": "M",
+        "cusps": [346.101452368938, 14.554132718037465, 45.39536342116452, 77.92578933827127, 109.43050017738199, 138.45567175202768, 166.101452368938, 194.5541327180374, 225.39536342116457, 257.9257893382712, 289.430500177382, 318.4556717520277],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "sripati": {
+        "code": "S",
+        "cusps": [330.4198870064005, 0.4198870064004723, 30.692513151415483, 60.965139296430436, 90.96513929643044, 120.69251315141543, 150.41988700640047, 180.41988700640047, 210.69251315141548, 240.96513929643038, 270.9651392964304, 300.69251315141537],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "equal-mc": {
+        "code": "D",
+        "cusps": [346.101452368938, 16.10145236893794, 46.10145236893794, 76.10145236893794, 106.10145236893794, 136.101452368938, 166.101452368938, 196.101452368938, 226.101452368938, 256.101452368938, 286.101452368938, 316.101452368938],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "equal-aries": {
+        "code": "N",
+        "cusps": [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "vehlow": {
+        "code": "V",
+        "cusps": [330.28357393389297, 0.28357393389296703, 30.283573933892967, 60.28357393389297, 90.28357393389297, 120.28357393389297, 150.28357393389297, 180.28357393389297, 210.28357393389297, 240.28357393389297, 270.28357393389297, 300.28357393389297],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "carter": {
+        "code": "F",
+        "cusps": [345.28357393389297, 16.962952481945536, 46.17597960687755, 73.85556503375824, 102.16444543466724, 132.7984444632766, 165.28357393389297, 196.96295248194554, 226.1759796068775, 253.85556503375824, 282.1644454346672, 312.7984444632766],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "horizon": {
+        "code": "H",
+        "cusps": [7.505058874028123, 59.995487570921284, 70.15812206560867, 76.10145236893794, 82.5686334397742, 96.56868698833267, 187.50505887402812, 239.99548757092134, 250.15812206560872, 256.101452368938, 262.5686334397742, 276.56868698833273],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": true
+      },
+      "sunshine": {
+        "code": "I",
+        "cusps": [345.28357393389297, 11.732278372619646, 41.76858025862407, 76.10145236893794, 109.92080399605436, 139.15573304059387, 165.28357393389297, 191.03090090332853, 221.07203080628847, 256.101452368938, 290.5990527017037, 319.8415319658361],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "pullen-sd": {
+        "code": "L",
+        "cusps": [345.28357393389297, 15.488043542654225, 45.896982760176684, 76.10145236893794, 105.89698276017668, 135.48804354265417, 165.28357393389297, 195.48804354265417, 225.89698276017668, 256.101452368938, 285.8969827601767, 315.48804354265417],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "pullen-sr": {
+        "code": "Q",
+        "cusps": [345.28357393389297, 15.487344352082744, 45.897681950748165, 76.10145236893794, 105.89628831895294, 135.48873798387785, 165.28357393389297, 195.4873443520828, 225.89768195074817, 256.101452368938, 285.8962883189529, 315.48873798387785],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "krusinski": {
+        "code": "U",
+        "cusps": [345.28357393389297, 12.977747315930117, 43.25568976657155, 76.101452368938, 108.47217412923868, 137.9386313759777, 165.28357393389297, 192.97774731593017, 223.25568976657155, 256.101452368938, 288.47217412923874, 317.9386313759777],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      },
+      "apc": {
+        "code": "Y",
+        "cusps": [345.28357393389297, 11.824543920087876, 41.857649076973075, 76.10145236893794, 109.83406306976775, 139.06553846853285, 165.28357393389297, 190.93178145180423, 220.97082898785425, 256.101452368938, 290.69758183438114, 319.938473595597],
+        "ascendant": 345.28357393389297,
+        "mc": 256.101452368938,
+        "is_degenerate": false
+      }
+    },
+    "bhava_chalit": {
+      "mode": "cusp-based",
+      "bhava_madhya": [359.1355962167029, 28.31742485662207, 59.87434179133464, 92.29324999453544, 123.59110744433377, 151.99037060121378, 179.13559621670288, 208.3174248566221, 239.8743417913347, 272.2932499945355, 303.5911074443338, 331.9903706012138],
+      "bhava_sandhi": [345.28357393389297, 12.987618499512791, 43.647231213731345, 76.10145236893794, 108.48504762013295, 138.6971672685346, 165.28357393389297, 192.9876184995128, 223.6472312137314, 256.101452368938, 288.48504762013295, 318.6971672685346],
+      "planet_houses": {
+        "SUN": 6,
+        "MOON": 1,
+        "MARS": 5,
+        "MERCURY": 7,
+        "JUPITER": 3,
+        "VENUS": 7,
+        "SATURN": 2,
+        "RAHU": 4,
+        "KETU": 10
+      },
+      "shifted": [
+        {
+          "planet": "MARS",
+          "whole_sign_house": 6,
+          "chalit_house": 5
+        },
+        {
+          "planet": "SATURN",
+          "whole_sign_house": 3,
+          "chalit_house": 2
+        }
+      ]
+    },
+    "special_lagnas": {
+      "hora_lagna_deg": 181.616428170104,
+      "ghati_lagna_deg": 50.6083269899082,
+      "sree_lagna_deg": 31.11710814678895,
+      "yogi_point_deg": 230.6527005944159,
+      "yogi_nakshatra_index": 17,
+      "avayogi_point_deg": 57.3193672610826,
+      "pranapada_lagna_deg": 94.2776940499734,
+      "varnada_lagna_deg": 120
+    },
+    "arudha_padas": [
+      {
+        "house": 1,
+        "sign_index": 3,
+        "exception_applied": false,
+        "original_sign_index": 3
+      },
+      {
+        "house": 2,
+        "sign_index": 8,
+        "exception_applied": false,
+        "original_sign_index": 8
+      },
+      {
+        "house": 3,
+        "sign_index": 9,
+        "exception_applied": false,
+        "original_sign_index": 9
+      },
+      {
+        "house": 4,
+        "sign_index": 5,
+        "exception_applied": true,
+        "original_sign_index": 8
+      },
+      {
+        "house": 5,
+        "sign_index": 7,
+        "exception_applied": false,
+        "original_sign_index": 7
+      },
+      {
+        "house": 6,
+        "sign_index": 1,
+        "exception_applied": true,
+        "original_sign_index": 4
+      },
+      {
+        "house": 7,
+        "sign_index": 2,
+        "exception_applied": true,
+        "original_sign_index": 5
+      },
+      {
+        "house": 8,
+        "sign_index": 4,
+        "exception_applied": false,
+        "original_sign_index": 4
+      },
+      {
+        "house": 9,
+        "sign_index": 10,
+        "exception_applied": true,
+        "original_sign_index": 1
+      },
+      {
+        "house": 10,
+        "sign_index": 6,
+        "exception_applied": false,
+        "original_sign_index": 6
+      },
+      {
+        "house": 11,
+        "sign_index": 5,
+        "exception_applied": false,
+        "original_sign_index": 5
+      },
+      {
+        "house": 12,
+        "sign_index": 1,
+        "exception_applied": true,
+        "original_sign_index": 4
+      }
+    ],
+    "chara_karakas": {
+      "system7": {
+        "SUN": "AK",
+        "MOON": "BK",
+        "MARS": "DK",
+        "MERCURY": "MK",
+        "JUPITER": "PK",
+        "VENUS": "AmK",
+        "SATURN": "GK"
+      },
+      "system8": {
+        "SUN": "AK",
+        "MOON": "BK",
+        "MARS": "DK",
+        "MERCURY": "MK",
+        "JUPITER": "PK",
+        "VENUS": "AmK",
+        "SATURN": "GK",
+        "RAHU": "PiK"
+      }
+    }
+  }
+}

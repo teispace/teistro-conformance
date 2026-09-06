@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-manifest.schema.json",
+  "title": "A corpus manifest",
+  "description": "What one export produced: every fixture in it, the settings profile each was computed under, and what the export refused to produce. A fixture that is not listed here is not part of the corpus.",
+  "type": "object",
+  "required": ["schema", "provenance", "profiles", "fixtures"],
+  "additionalProperties": true,
+  "properties": {
+    "schema": { "const": "teistro-conformance/baseline-manifest/1" },
+    "exported_on": { "type": "string", "format": "date" },
+    "provenance": {
+      "type": "object",
+      "required": ["engine_version"],
+      "additionalProperties": true,
+      "properties": { "engine_version": { "type": "string" } }
+    },
+    "profiles": {
+      "type": "object",
+      "description": "Every settings profile the export used, by name, each with the hash its fixtures assert.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["settings_hash"],
+        "properties": {
+          "settings_hash": {
+            "type": "object",
+            "required": ["value"],
+            "properties": { "value": { "type": "string", "pattern": "^[0-9a-f]{16}$" } }
+          }
+        }
+      }
+    },
+    "fixtures": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "profile", "file", "settings_hash"],
+        "properties": {
+          "id": { "type": "string" },
+          "chart": { "type": "string" },
+          "profile": { "type": "string" },
+          "file": { "type": "string", "pattern": "^[a-z]+/[A-Za-z0-9._-]+\\.json$" },
+          "title": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "sections": { "type": "array", "items": { "type": "string" } },
+          "settings_hash": { "type": "string", "pattern": "^[0-9a-f]{16}$" }
+        }
+      }
+    },
+    "failures": {
+      "type": "array",
+      "description": "What the export asked for and did not get, kept because an absence with a reason is evidence and an absence without one is a gap nobody can see.",
+      "items": { "type": "object" }
+    },
+    "counts": { "type": "object" }
+  }
+}
