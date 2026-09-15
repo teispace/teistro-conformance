@@ -9,6 +9,23 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.10.0 — 2026-09-15
+
+**Values:** none moved; the yogas of 93 charts and the 605 rules that decide
+them are new.
+
+`baseline/yogas/`: the engine's yoga evaluator run on each of the 93 fixtures
+that record their positions, over the recorded chart repeated as `inputs` —
+the nine grahas' and the lagna's sign, house, dignity, longitude, motion,
+combustion, vargottama and baladi avastha, with the chara karakas the engine
+derives from the longitudes. `present` records each present rule's planets,
+houses and fired cancellations; 5552 presences in all. `rules.json` holds every
+rule's key, category, citation, conditions and cancellations in the engine's
+condition language, so another implementation can evaluate the same rules.
+`validate.py` checks the inputs against each fixture, both karaka schemes
+against the degrees, every presence against the rules, and each presence's
+houses against its planets'.
+
 ## 0.9.0 — 2026-09-15
 
 **Values:** none moved; PyJHora's Vimshottari for 53 charts is new, at

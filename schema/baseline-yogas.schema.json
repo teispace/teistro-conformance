@@ -1,0 +1,653 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-yogas.schema.json",
+  "title": "The yogas of one baseline fixture",
+  "description": "The engine's yoga evaluator run on the fixture's recorded chart, repeated as `inputs`: the nine grahas' and the lagna's recorded sign, house, dignity, longitude, motion, combustion, vargottama and baladi avastha, and the seven- and eight-karaka chara karakas the engine derives from those longitudes. `present` records every rule of `rules.json` that is present, with the planets and houses involved and the cancellations that fired; a rule not listed is absent.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "fixture",
+    "provenance",
+    "inputs",
+    "present"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-yogas/1"
+    },
+    "fixture": {
+      "type": "string",
+      "pattern": "^(charts|variants)/[^/]+\\.json$"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "evidence_rank",
+        "engine_version",
+        "exporter_version",
+        "inputs"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "evidence_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "string"
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bodies",
+        "chara_karaka_7",
+        "chara_karaka_8"
+      ],
+      "properties": {
+        "bodies": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN",
+            "RAHU",
+            "KETU",
+            "LAGNA"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sidereal_longitude_deg",
+                "degrees_in_sign",
+                "sign_index",
+                "house",
+                "dignity",
+                "is_retrograde",
+                "combust",
+                "is_vargottama",
+                "avastha_baladi"
+              ],
+              "properties": {
+                "sidereal_longitude_deg": {
+                  "type": "number"
+                },
+                "degrees_in_sign": {
+                  "type": "number"
+                },
+                "sign_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "house": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "dignity": {
+                  "type": "string"
+                },
+                "is_retrograde": {
+                  "type": "boolean"
+                },
+                "combust": {
+                  "enum": [
+                    "none",
+                    "combust",
+                    "deep-combust"
+                  ]
+                },
+                "is_vargottama": {
+                  "type": "boolean"
+                },
+                "avastha_baladi": {
+                  "type": "string"
+                }
+              }
+            },
+            "MOON": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sidereal_longitude_deg",
+                "degrees_in_sign",
+                "sign_index",
+                "house",
+                "dignity",
+                "is_retrograde",
+                "combust",
+                "is_vargottama",
+                "avastha_baladi"
+              ],
+              "properties": {
+                "sidereal_longitude_deg": {
+                  "type": "number"
+                },
+                "degrees_in_sign": {
+                  "type": "number"
+                },
+                "sign_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "house": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "dignity": {
+                  "type": "string"
+                },
+                "is_retrograde": {
+                  "type": "boolean"
+                },
+                "combust": {
+                  "enum": [
+                    "none",
+                    "combust",
+                    "deep-combust"
+                  ]
+                },
+                "is_vargottama": {
+                  "type": "boolean"
+                },
+                "avastha_baladi": {
+                  "type": "string"
+                }
+              }
+            },
+            "MARS": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sidereal_longitude_deg",
+                "degrees_in_sign",
+                "sign_index",
+                "house",
+                "dignity",
+                "is_retrograde",
+                "combust",
+                "is_vargottama",
+                "avastha_baladi"
+              ],
+              "properties": {
+                "sidereal_longitude_deg": {
+                  "type": "number"
+                },
+                "degrees_in_sign": {
+                  "type": "number"
+                },
+                "sign_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "house": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "dignity": {
+                  "type": "string"
+                },
+                "is_retrograde": {
+                  "type": "boolean"
+                },
+                "combust": {
+                  "enum": [
+                    "none",
+                    "combust",
+                    "deep-combust"
+                  ]
+                },
+                "is_vargottama": {
+                  "type": "boolean"
+                },
+                "avastha_baladi": {
+                  "type": "string"
+                }
+              }
+            },
+            "MERCURY": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sidereal_longitude_deg",
+                "degrees_in_sign",
+                "sign_index",
+                "house",
+                "dignity",
+                "is_retrograde",
+                "combust",
+                "is_vargottama",
+                "avastha_baladi"
+              ],
+              "properties": {
+                "sidereal_longitude_deg": {
+                  "type": "number"
+                },
+                "degrees_in_sign": {
+                  "type": "number"
+                },
+                "sign_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "house": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "dignity": {
+                  "type": "string"
+                },
+                "is_retrograde": {
+                  "type": "boolean"
+                },
+                "combust": {
+                  "enum": [
+                    "none",
+                    "combust",
+                    "deep-combust"
+                  ]
+                },
+                "is_vargottama": {
+                  "type": "boolean"
+                },
+                "avastha_baladi": {
+                  "type": "string"
+                }
+              }
+            },
+            "JUPITER": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sidereal_longitude_deg",
+                "degrees_in_sign",
+                "sign_index",
+                "house",
+                "dignity",
+                "is_retrograde",
+                "combust",
+                "is_vargottama",
+                "avastha_baladi"
+              ],
+              "properties": {
+                "sidereal_longitude_deg": {
+                  "type": "number"
+                },
+                "degrees_in_sign": {
+                  "type": "number"
+                },
+                "sign_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "house": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "dignity": {
+                  "type": "string"
+                },
+                "is_retrograde": {
+                  "type": "boolean"
+                },
+                "combust": {
+                  "enum": [
+                    "none",
+                    "combust",
+                    "deep-combust"
+                  ]
+                },
+                "is_vargottama": {
+                  "type": "boolean"
+                },
+                "avastha_baladi": {
+                  "type": "string"
+                }
+              }
+            },
+            "VENUS": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sidereal_longitude_deg",
+                "degrees_in_sign",
+                "sign_index",
+                "house",
+                "dignity",
+                "is_retrograde",
+                "combust",
+                "is_vargottama",
+                "avastha_baladi"
+              ],
+              "properties": {
+                "sidereal_longitude_deg": {
+                  "type": "number"
+                },
+                "degrees_in_sign": {
+                  "type": "number"
+                },
+                "sign_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "house": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "dignity": {
+                  "type": "string"
+                },
+                "is_retrograde": {
+                  "type": "boolean"
+                },
+                "combust": {
+                  "enum": [
+                    "none",
+                    "combust",
+                    "deep-combust"
+                  ]
+                },
+                "is_vargottama": {
+                  "type": "boolean"
+                },
+                "avastha_baladi": {
+                  "type": "string"
+                }
+              }
+            },
+            "SATURN": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sidereal_longitude_deg",
+                "degrees_in_sign",
+                "sign_index",
+                "house",
+                "dignity",
+                "is_retrograde",
+                "combust",
+                "is_vargottama",
+                "avastha_baladi"
+              ],
+              "properties": {
+                "sidereal_longitude_deg": {
+                  "type": "number"
+                },
+                "degrees_in_sign": {
+                  "type": "number"
+                },
+                "sign_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "house": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "dignity": {
+                  "type": "string"
+                },
+                "is_retrograde": {
+                  "type": "boolean"
+                },
+                "combust": {
+                  "enum": [
+                    "none",
+                    "combust",
+                    "deep-combust"
+                  ]
+                },
+                "is_vargottama": {
+                  "type": "boolean"
+                },
+                "avastha_baladi": {
+                  "type": "string"
+                }
+              }
+            },
+            "RAHU": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sidereal_longitude_deg",
+                "degrees_in_sign",
+                "sign_index",
+                "house",
+                "dignity",
+                "is_retrograde",
+                "combust",
+                "is_vargottama",
+                "avastha_baladi"
+              ],
+              "properties": {
+                "sidereal_longitude_deg": {
+                  "type": "number"
+                },
+                "degrees_in_sign": {
+                  "type": "number"
+                },
+                "sign_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "house": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "dignity": {
+                  "type": "string"
+                },
+                "is_retrograde": {
+                  "type": "boolean"
+                },
+                "combust": {
+                  "enum": [
+                    "none",
+                    "combust",
+                    "deep-combust"
+                  ]
+                },
+                "is_vargottama": {
+                  "type": "boolean"
+                },
+                "avastha_baladi": {
+                  "type": "string"
+                }
+              }
+            },
+            "KETU": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sidereal_longitude_deg",
+                "degrees_in_sign",
+                "sign_index",
+                "house",
+                "dignity",
+                "is_retrograde",
+                "combust",
+                "is_vargottama",
+                "avastha_baladi"
+              ],
+              "properties": {
+                "sidereal_longitude_deg": {
+                  "type": "number"
+                },
+                "degrees_in_sign": {
+                  "type": "number"
+                },
+                "sign_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "house": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "dignity": {
+                  "type": "string"
+                },
+                "is_retrograde": {
+                  "type": "boolean"
+                },
+                "combust": {
+                  "enum": [
+                    "none",
+                    "combust",
+                    "deep-combust"
+                  ]
+                },
+                "is_vargottama": {
+                  "type": "boolean"
+                },
+                "avastha_baladi": {
+                  "type": "string"
+                }
+              }
+            },
+            "LAGNA": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sidereal_longitude_deg",
+                "degrees_in_sign",
+                "sign_index",
+                "house",
+                "dignity",
+                "is_retrograde",
+                "combust",
+                "is_vargottama",
+                "avastha_baladi"
+              ],
+              "properties": {
+                "sidereal_longitude_deg": {
+                  "type": "number"
+                },
+                "degrees_in_sign": {
+                  "type": "number"
+                },
+                "sign_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "house": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "dignity": {
+                  "type": "string"
+                },
+                "is_retrograde": {
+                  "type": "boolean"
+                },
+                "combust": {
+                  "enum": [
+                    "none",
+                    "combust",
+                    "deep-combust"
+                  ]
+                },
+                "is_vargottama": {
+                  "type": "boolean"
+                },
+                "avastha_baladi": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "chara_karaka_7": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "chara_karaka_8": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "present": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "planets",
+          "houses",
+          "cancelled",
+          "cancellations"
+        ],
+        "properties": {
+          "planets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "houses": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            }
+          },
+          "cancelled": {
+            "type": "boolean"
+          },
+          "cancellations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

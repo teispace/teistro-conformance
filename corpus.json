@@ -1,6 +1,6 @@
 {
   "schema": "teistro-conformance/corpus/1",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "released": "2026-09-15",
   "licence": "CC0-1.0",
   "repository": "https://github.com/teispace/teistro-conformance",
@@ -86,6 +86,15 @@
       "recorded": "2026-09-15"
     },
     {
+      "path": "baseline/yogas",
+      "source": "the same engine's yoga evaluator and its 605 rules, run on each fixture's recorded chart",
+      "evidence_rank": 2,
+      "schema": "teistro-conformance/baseline-yogas/1",
+      "manifest": "baseline/yogas/manifest.json",
+      "counts": { "files": 93, "rules": 605, "presences": 5552 },
+      "recorded": "2026-09-15"
+    },
+    {
       "path": "pyjhora/vimshottari",
       "source": "PyJHora 4.8.7 over pyswisseph 2.10.3.2 (Moshier), run as a black box",
       "evidence_rank": 3,
@@ -127,6 +136,9 @@
     "schema/baseline-shadbala-manifest.schema.json",
     "schema/baseline-bhava-bala.schema.json",
     "schema/baseline-bhava-bala-manifest.schema.json",
+    "schema/baseline-yogas.schema.json",
+    "schema/baseline-yogas-manifest.schema.json",
+    "schema/baseline-yoga-rules.schema.json",
     "schema/pyjhora-vimshottari.schema.json",
     "schema/pyjhora-vimshottari-manifest.schema.json",
     "schema/tolerances.schema.json",

@@ -1,0 +1,530 @@
+{
+  "schema": "teistro-conformance/baseline-yogas/1",
+  "fixture": "charts/c050-kathmandu-2015-03-01.json",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "inputs": "the fixture's positions.bodies for the nine grahas and the lagna, with the chara karakas derived from their longitudes"
+  },
+  "inputs": {
+    "bodies": {
+      "SUN": {
+        "sidereal_longitude_deg": 316.1914745919659,
+        "degrees_in_sign": 16.1914745919659,
+        "sign_index": 10,
+        "house": 11,
+        "dignity": "NEUTRAL",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": true,
+        "avastha_baladi": "YUVA"
+      },
+      "MOON": {
+        "sidereal_longitude_deg": 86.66677422599358,
+        "degrees_in_sign": 26.66677422599358,
+        "sign_index": 2,
+        "house": 3,
+        "dignity": "NEUTRAL",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": true,
+        "avastha_baladi": "MRITA"
+      },
+      "MARS": {
+        "sidereal_longitude_deg": 342.96826473785717,
+        "degrees_in_sign": 12.96826473785717,
+        "sign_index": 11,
+        "house": 12,
+        "dignity": "NEUTRAL",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "YUVA"
+      },
+      "MERCURY": {
+        "sidereal_longitude_deg": 289.85559954533954,
+        "degrees_in_sign": 19.85559954533954,
+        "sign_index": 9,
+        "house": 10,
+        "dignity": "FRIEND",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "KUMARA"
+      },
+      "JUPITER": {
+        "sidereal_longitude_deg": 110.7623342143473,
+        "degrees_in_sign": 20.7623342143473,
+        "sign_index": 3,
+        "house": 4,
+        "dignity": "EXALTED",
+        "is_retrograde": true,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "KUMARA"
+      },
+      "VENUS": {
+        "sidereal_longitude_deg": 346.18408724577614,
+        "degrees_in_sign": 16.18408724577614,
+        "sign_index": 11,
+        "house": 12,
+        "dignity": "EXALTED",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "YUVA"
+      },
+      "SATURN": {
+        "sidereal_longitude_deg": 220.70733315220468,
+        "degrees_in_sign": 10.70733315220468,
+        "sign_index": 7,
+        "house": 8,
+        "dignity": "GREAT_ENEMY",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "VRIDDHA"
+      },
+      "RAHU": {
+        "sidereal_longitude_deg": 167.7342983018778,
+        "degrees_in_sign": 17.7342983018778,
+        "sign_index": 5,
+        "house": 6,
+        "dignity": "NEUTRAL",
+        "is_retrograde": true,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "YUVA"
+      },
+      "KETU": {
+        "sidereal_longitude_deg": 347.7342983018778,
+        "degrees_in_sign": 17.7342983018778,
+        "sign_index": 11,
+        "house": 12,
+        "dignity": "NEUTRAL",
+        "is_retrograde": true,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "YUVA"
+      },
+      "LAGNA": {
+        "sidereal_longitude_deg": 29.84103411829335,
+        "degrees_in_sign": 29.84103411829335,
+        "sign_index": 0,
+        "house": 1,
+        "dignity": "NEUTRAL",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "MRITA"
+      }
+    },
+    "chara_karaka_7": {
+      "MOON": "AK",
+      "JUPITER": "AmK",
+      "MERCURY": "BK",
+      "SUN": "MK",
+      "VENUS": "PK",
+      "MARS": "GK",
+      "SATURN": "DK"
+    },
+    "chara_karaka_8": {
+      "MOON": "AK",
+      "JUPITER": "AmK",
+      "MERCURY": "BK",
+      "SUN": "MK",
+      "VENUS": "PK",
+      "MARS": "GK",
+      "RAHU": "DK",
+      "SATURN": "PiK"
+    }
+  },
+  "present": {
+    "HAMSA": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "HAMSA_EXALTED": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "HAMSA_BHANGA": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "MALAVYA_FROM_MOON": {
+      "planets": ["VENUS", "MOON"],
+      "houses": [3, 12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SUNAPHA": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SUNAPHA_JUPITER": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "VESI_BROAD": {
+      "planets": ["MARS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "VOSI_BROAD": {
+      "planets": ["MERCURY"],
+      "houses": [10],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "UBHAYACHARI_BROAD": {
+      "planets": ["MARS", "MERCURY"],
+      "houses": [10, 12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SHAKATA": {
+      "planets": ["MOON"],
+      "houses": [3],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "RAJA_JUPITER_AND_L9": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "AMALA": {
+      "planets": ["MERCURY"],
+      "houses": [10],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "UBHAYACHARI": {
+      "planets": ["VENUS", "MERCURY"],
+      "houses": [10, 12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SUBHA_KARTARI_SUN": {
+      "planets": ["VENUS", "MERCURY"],
+      "houses": [10, 12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "DAMA": {
+      "planets": ["SUN", "MOON", "MARS", "MERCURY", "JUPITER", "VENUS", "SATURN"],
+      "houses": [3, 4, 8, 10, 11, 12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "DARIDRA_11_8": {
+      "planets": ["SATURN"],
+      "houses": [8],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "LAGNA_LORD_12": {
+      "planets": ["MARS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "MADHYARISHTA_LAGNA_8_LORDS_DUSTHANA": {
+      "planets": ["MARS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "NETRA_ARISHTA": {
+      "planets": ["MARS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "L5_IN_11": {
+      "planets": ["SUN"],
+      "houses": [11],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "L9_IN_4": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "JUP_IN_4": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "MER_IN_10": {
+      "planets": ["MERCURY"],
+      "houses": [10],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SUN_IN_11": {
+      "planets": ["SUN"],
+      "houses": [11],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "RAHU_IN_6": {
+      "planets": ["RAHU"],
+      "houses": [6],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "KETU_IN_12": {
+      "planets": ["KETU"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "RAJA_KT_9_4": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "L3_IN_10": {
+      "planets": ["MERCURY"],
+      "houses": [10],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "L6_IN_10": {
+      "planets": ["MERCURY"],
+      "houses": [10],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "L8_IN_12": {
+      "planets": ["MARS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "MARS_VEN_CONJ": {
+      "planets": ["MARS", "VENUS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "MARS_KETU_CONJ": {
+      "planets": ["MARS", "KETU"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "PAPA_KARTARI_7": {
+      "planets": ["RAHU", "SATURN"],
+      "houses": [6, 8],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "MALEFIC_IN_6_11": {
+      "planets": ["RAHU", "SUN"],
+      "houses": [6, 11],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SUNAPHA_STRICT": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "VIPARITA_RAJA_8_12": {
+      "planets": ["MARS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "DARIDRA_2_LORD_DUSTHANA": {
+      "planets": ["VENUS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "DARIDRA_2_LORD_WITH_8_LORD": {
+      "planets": ["VENUS", "MARS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "DARIDRA_11_LORD_DUSTHANA": {
+      "planets": ["SATURN"],
+      "houses": [8],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "MARKESHA_2_7_DUSTHANA": {
+      "planets": ["VENUS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SARALA": {
+      "planets": ["MARS"],
+      "houses": [12],
+      "cancelled": true,
+      "cancellations": ["lord-conjunct-lord", "lord-conjunct-lord", "lord-conjunct-lord"]
+    },
+    "DUR_SAMBANDHA_7_LORD_DUSTHANA": {
+      "planets": ["VENUS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "DUR_SAMBANDHA_VENUS_DEBIL_OR_DUSTHANA": {
+      "planets": ["VENUS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "DUR_SAMBANDHA_7_HEMMED_MALEFICS": {
+      "planets": ["RAHU", "SATURN"],
+      "houses": [6, 8],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "DUR_KARMA_10_LORD_DUSTHANA": {
+      "planets": ["SATURN"],
+      "houses": [8],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "BHAGYA_9_LORD_KENDRA": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "BHAGYA_9_LORD_OWN_EXALT": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "MAHA_BHAGYA_DAY_OR_NIGHT_BIRTH": {
+      "planets": ["LAGNA", "SUN", "MOON"],
+      "houses": [3, 11],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SAHAJA_3_LORD_KENDRA": {
+      "planets": ["MERCURY"],
+      "houses": [10],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SAHAJA_3_LORD_OWN_EXALT": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "BHATR_SUKHA_BENEFIC_3": {
+      "planets": ["MOON"],
+      "houses": [3],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "VIKRAMA_3_BENEFIC_AND_3LORD_KENDRA": {
+      "planets": ["MOON", "MERCURY"],
+      "houses": [3, 10],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "KARMA_10_LORD_OWN_EXALT": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SUKARMA_BENEFIC_10": {
+      "planets": ["MERCURY"],
+      "houses": [10],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "KARMA_KARAKA_MERCURY_10": {
+      "planets": ["MERCURY"],
+      "houses": [10],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "AMALA_KIRTI_BENEFIC_10_FROM_MOON": {
+      "planets": ["VENUS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "VIDYA_4_LORD_OWN_EXALT": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "MATR_SUKHA_BENEFIC_4": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "GURU_VIDYA_JUPITER_4": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "BHARATI_BENEFIC_KENDRA_FROM_MERCURY": {
+      "planets": ["MERCURY"],
+      "houses": [10],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "SANTANA_5_LORD_OWN_EXALT": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "JAIMINI_GK_DUSTHANA_VIPAREETA": {
+      "planets": ["MARS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "TAJIK_IQBALA_JUPITER_KENDRA": {
+      "planets": ["JUPITER"],
+      "houses": [4],
+      "cancelled": false,
+      "cancellations": []
+    },
+    "TAJIK_INKILAB_LAGNA_LORD_DUSTHANA": {
+      "planets": ["MARS"],
+      "houses": [12],
+      "cancelled": false,
+      "cancellations": []
+    }
+  }
+}

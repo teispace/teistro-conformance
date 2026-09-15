@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-yoga-rules.schema.json",
+  "title": "The engine's yoga rules",
+  "description": "Every yoga rule the engine ships, in its evaluation order: its key, its category, its citation, and its conditions and cancellations in the engine's condition language, each condition an object whose `type` names the predicate. A rule with no conditions is one the engine evaluates outside that language (the Neecha Bhanga family).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "rules"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-yoga-rules/1"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "category",
+          "source",
+          "conditions",
+          "cancellations"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Za-z0-9_]*$"
+          },
+          "category": {
+            "type": "string"
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "text"
+            ],
+            "properties": {
+              "text": {
+                "type": "string"
+              }
+            }
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/condition"
+            }
+          },
+          "cancellations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/condition"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "condition": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

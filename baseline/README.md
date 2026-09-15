@@ -309,3 +309,30 @@ sign class makes weakest; `drishti`, a quarter of `dig` added when only
 benefics aspect it and taken away when only malefics do, with Jupiter's and
 Mercury's Drik added when they aspect it; and `total`, the three together.
 
+## The yogas (`teistro-conformance/baseline-yogas/1`)
+
+`yogas/` holds the engine's yoga evaluator run on each of the 93 fixtures
+that record their positions: every rule it ships, over the fixture's
+**recorded** chart and nothing else. `inputs.bodies` repeats, for the nine
+grahas and the lagna, the recorded sidereal longitude, degrees in sign, sign,
+house, dignity, retrograde flag, combustion, vargottama flag and baladi
+avastha; `inputs.chara_karaka_7` and `chara_karaka_8` hold the chara karakas
+the engine derives from those longitudes (the grahas ranked by degrees in
+sign, Rahu by thirty less; the engine's eight-karaka order ends
+`…, DK, PiK`). `present` records every rule that is present, with the planets
+it involved, their houses (distinct, ascending, the lagna left out) and the
+cancellations that fired; a rule that is not listed is absent.
+
+`yogas/rules.json` holds all 605 rules in the engine's evaluation order: each
+key, category, citation, and its conditions and cancellations in the engine's
+condition language, a tree of objects whose `type` names the predicate. The
+rules use 22 of its types: 19 predicates and `and`, `or` and `not`. The eight
+Neecha Bhanga rules carry no conditions, because the engine evaluates them
+outside that language. Five keys, the Jaimini `AmK` rules, contain lowercase
+letters as the engine spells them.
+
+`validate.py` checks each file's inputs against its fixture, both karaka
+schemes against the degrees, every present rule against `rules.json`, every
+presence's houses against its planets' recorded houses, and the manifest's
+counts.
+
