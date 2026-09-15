@@ -9,6 +9,23 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.9.0 — 2026-09-15
+
+**Values:** none moved; PyJHora's Vimshottari for 53 charts is new, at
+evidence rank 3.
+
+`pyjhora/vimshottari/`: PyJHora 4.8.7 over pyswisseph 2.10.3.2 (Moshier, no
+data files), Lahiri, for each chart of `baseline/charts/`: the tool's own
+geocentric Moon, and under its mean sidereal, mean tropical, savana, mean
+lunar and Gregorian years each year's length, the balance at birth written in
+years, months and days, and all 81 mahadashas and antardashas with their UT
+starts and lengths. The tool is run as a black box and its outputs recorded
+with its version. Its default year, the true sidereal one, measures 0.0 days
+in this version and its periods cannot be computed, and it refuses the two
+Tromsø charts; both absences are recorded. `validate.py` checks the inputs
+against each fixture, the lords' order, and that every period ends where the
+next begins.
+
 ## 0.8.0 — 2026-09-15
 
 **Values:** none moved; the Bhava bala of 71 charts is new.

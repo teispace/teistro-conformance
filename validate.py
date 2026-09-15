@@ -457,6 +457,72 @@ def rashi_dashas(failures: list[str]) -> int:
     )
 
 
+VIMSHOTTARI = ("KETU", "VENUS", "SUN", "MOON", "MARS", "RAHU", "JUPITER", "SATURN", "MERCURY")
+
+
+def pyjhora_vimshottari(failures: list[str]) -> int:
+    """PyJHora's Vimshottari, rank 3: every file against its schema and its
+    hash, its inputs its fixture's instant and place, its periods the nine
+    lords in Vimshottari's order each divided in that order from itself, each
+    starting where the one before ended, and every chart fixture either
+    answered or listed with the tool's refusal."""
+    root = ROOT / "pyjhora" / "vimshottari"
+    manifest = against_schema("pyjhora-vimshottari-manifest", root / "manifest.json", failures)
+    if manifest is None:
+        return 0
+    listed = set()
+    for entry in manifest.get("files", []):
+        name = entry.get("file", "")
+        path = ROOT / "pyjhora" / name
+        listed.add(entry.get("fixture"))
+        if not path.is_file():
+            failures.append(f"the PyJHora manifest lists a missing file: {name}")
+            continue
+        if hashlib.sha256(path.read_bytes()).hexdigest() != entry.get("sha256"):
+            failures.append(f"pyjhora/{name}: the sha256 differs from the manifest")
+        document = against_schema("pyjhora-vimshottari", path, failures)
+        fixture = load(ROOT / "baseline" / entry.get("fixture", ""))
+        if document is None or not isinstance(fixture, dict):
+            continue
+        resolved, place = fixture["input"]["resolved"], fixture["input"]["place"]
+        wanted = {
+            "jd_ut": resolved["jd_ut"],
+            "latitude_deg": place["latitude"],
+            "longitude_deg": place["longitude"],
+            "tz_offset_min": resolved["tz_offset_min"],
+        }
+        if document.get("inputs") != wanted or document.get("fixture") != entry.get("fixture"):
+            failures.append(f"pyjhora/{name}: the inputs differ from the fixture's")
+        if sorted(document.get("durations", {})) != sorted(manifest.get("durations", [])):
+            failures.append(f"pyjhora/{name}: the durations differ from the manifest's")
+        for duration, answer in document.get("durations", {}).items():
+            periods = answer.get("periods", [])
+            first = VIMSHOTTARI.index(periods[0][0]) if periods else 0
+            for k, (maha, antara, start, years) in enumerate(periods):
+                m, a = divmod(k, 9)
+                lord = VIMSHOTTARI[(first + m) % 9]
+                if (maha, antara) != (lord, VIMSHOTTARI[(first + m + a) % 9]):
+                    failures.append(f"pyjhora/{name} {duration}: period {k} is not Vimshottari's order")
+                    break
+                if k + 1 < len(periods):
+                    end = start + years * answer["year_days"]
+                    if abs(end - periods[k + 1][2]) > 1e-3:
+                        failures.append(f"pyjhora/{name} {duration}: period {k} does not end where the next starts")
+                        break
+    refused = {entry.get("fixture") for entry in manifest.get("refused", [])}
+    for path in sorted((ROOT / "baseline" / "charts").glob("*.json")):
+        fixture = f"charts/{path.name}"
+        if (fixture in listed) == (fixture in refused):
+            failures.append(f"pyjhora: {fixture} is neither answered nor refused, or both")
+    counts = {"files": len(listed), "durations": len(manifest.get("durations", [])), "refused": len(refused)}
+    if manifest.get("counts") != counts:
+        failures.append(f"the PyJHora manifest's counts {manifest.get('counts')} disagree with its files")
+    for path in sorted((root / "charts").glob("*.json")):
+        if f"charts/{path.name}" not in listed:
+            failures.append(f"a PyJHora file the manifest does not list: {path.name}")
+    return len(listed)
+
+
 def tables(failures: list[str]) -> int:
     """The recorded tables: readable, and each says what it is."""
     count = 0
@@ -492,6 +558,7 @@ def main() -> int:
     fixtures = baseline(failures)
     systems = dasha_systems(failures) + rashi_dashas(failures) + kalachakra(failures)
     systems += ashtakavarga(failures) + vimshopaka(failures) + shadbala(failures) + bhava_bala(failures)
+    systems += pyjhora_vimshottari(failures)
     against_schema("tolerances", ROOT / "tolerances.json", failures)
     recorded = tables(failures)
 

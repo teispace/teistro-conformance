@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/pyjhora-vimshottari-manifest.schema.json",
+  "title": "The manifest of the PyJHora Vimshottari corpus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "provenance",
+    "durations",
+    "note",
+    "files",
+    "refused",
+    "counts"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/pyjhora-vimshottari-manifest/1"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "evidence_rank",
+        "tool_version",
+        "swisseph_version",
+        "ephemeris",
+        "ayanamsha",
+        "exporter_version"
+      ],
+      "properties": {
+        "source": {
+          "const": "PyJHora"
+        },
+        "evidence_rank": {
+          "const": 3
+        },
+        "tool_version": {
+          "type": "string"
+        },
+        "swisseph_version": {
+          "type": "string"
+        },
+        "ephemeris": {
+          "enum": [
+            "MOSHIER",
+            "SWIEPH"
+          ]
+        },
+        "ayanamsha": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        }
+      }
+    },
+    "durations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "note": {
+      "type": "string"
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "file",
+          "fixture",
+          "sha256"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "fixture": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "refused": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "fixture",
+          "refusal"
+        ],
+        "properties": {
+          "fixture": {
+            "type": "string"
+          },
+          "refusal": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "files",
+        "durations",
+        "refused"
+      ],
+      "properties": {
+        "files": {
+          "type": "integer"
+        },
+        "durations": {
+          "type": "integer"
+        },
+        "refused": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema": "teistro-conformance/corpus/1",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "released": "2026-09-15",
   "licence": "CC0-1.0",
   "repository": "https://github.com/teispace/teistro-conformance",
@@ -86,6 +86,15 @@
       "recorded": "2026-09-15"
     },
     {
+      "path": "pyjhora/vimshottari",
+      "source": "PyJHora 4.8.7 over pyswisseph 2.10.3.2 (Moshier), run as a black box",
+      "evidence_rank": 3,
+      "schema": "teistro-conformance/pyjhora-vimshottari/1",
+      "manifest": "pyjhora/vimshottari/manifest.json",
+      "counts": { "files": 53, "durations": 5, "refused": 2 },
+      "recorded": "2026-09-15"
+    },
+    {
       "path": "official",
       "source": "Nepal's national panchanga committee (npns.gov.np), read from its published Rashtriya Panchangam for BS 2082 and 2083",
       "evidence_rank": 1,
@@ -118,6 +127,8 @@
     "schema/baseline-shadbala-manifest.schema.json",
     "schema/baseline-bhava-bala.schema.json",
     "schema/baseline-bhava-bala-manifest.schema.json",
+    "schema/pyjhora-vimshottari.schema.json",
+    "schema/pyjhora-vimshottari-manifest.schema.json",
     "schema/tolerances.schema.json",
     "schema/report.schema.json"
   ]

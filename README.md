@@ -22,6 +22,7 @@ standard nobody can use freely is not a standard.
 | [`baseline/shadbala/`](baseline/shadbala) | the same engine's Shadbala for each of the 71 fixtures that record their chart, day, houses and divisional charts, computed from those recorded values | 2 |
 | [`baseline/bhava-bala/`](baseline/bhava-bala) | the same engine's Bhava bala for the same 71 charts, computed from the recorded lagna and houses and its Shadbala of each | 2 |
 | [`baseline/names.json`](baseline/names.json) | the same engine's entity name tables: 40 types, 383 entities, four languages | 2 |
+| [`pyjhora/vimshottari/`](pyjhora) | PyJHora 4.8.7's Vimshottari for 53 of the 55 charts, run as a black box: its Moon, and every mahadasha and antardasha under five year durations, with the two charts it refuses listed. [What to know before comparing](pyjhora/README.md) | 3 |
 | [`official/`](official) | what Nepal's national panchanga committee printed in its Rashtriya Panchangam for BS 2082 and 2083 — 24 sankranti instants, four rows of places at sunrise, 22 days of sunrise and sunset, eight tithi ends — read from the published page images, with the file URLs and page numbers | 1 |
 | [`teimeris/`](teimeris) | Teimeris 0.1.0 in its corrected profile: 1044 ayanamsha rows, 1260 house rows, 128 star records, 176 phenomena rows, 49 sidereal-time rows, each with the geometry it was read from | 2 |
 

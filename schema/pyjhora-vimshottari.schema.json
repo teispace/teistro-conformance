@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/pyjhora-vimshottari.schema.json",
+  "title": "PyJHora's Vimshottari for one baseline chart",
+  "description": "PyJHora's Vimshottari mahadashas and antardashas for the chart of the baseline fixture it names, run as a black box in the Lahiri ayanamsha under each year duration it offers that it answers: the chart's instant and place repeated as `inputs`, the tool's own sidereal Moon, and for each duration the year's length in days, the balance at birth written in years, months and days, and every period as its mahadasha lord, its antardasha lord, its start as a Julian day (UT) and its length in the duration's years.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "fixture",
+    "provenance",
+    "inputs",
+    "moon_sidereal_deg",
+    "durations"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/pyjhora-vimshottari/1"
+    },
+    "fixture": {
+      "type": "string",
+      "pattern": "^charts/[^/]+\\.json$"
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "jd_ut",
+        "latitude_deg",
+        "longitude_deg",
+        "tz_offset_min"
+      ],
+      "properties": {
+        "jd_ut": {
+          "type": "number"
+        },
+        "latitude_deg": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude_deg": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "tz_offset_min": {
+          "type": "integer"
+        }
+      }
+    },
+    "moon_sidereal_deg": {
+      "type": "number",
+      "minimum": 0,
+      "exclusiveMaximum": 360
+    },
+    "durations": {
+      "type": "object",
+      "propertyNames": {
+        "enum": [
+          "MEAN_SIDEREAL_YEAR",
+          "MEAN_TROPICAL_YEAR",
+          "SAVANA_YEAR",
+          "MEAN_LUNAR_YEAR",
+          "GREGORIAN_YEAR"
+        ]
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "year_days",
+          "balance_ymd",
+          "periods"
+        ],
+        "properties": {
+          "year_days": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "balance_ymd": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "periods": {
+            "type": "array",
+            "minItems": 81,
+            "maxItems": 81,
+            "items": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "$ref": "#/$defs/graha"
+                },
+                {
+                  "$ref": "#/$defs/graha"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              ],
+              "items": false,
+              "minItems": 4
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "graha": {
+      "enum": [
+        "SUN",
+        "MOON",
+        "MARS",
+        "MERCURY",
+        "JUPITER",
+        "VENUS",
+        "SATURN",
+        "RAHU",
+        "KETU"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "evidence_rank",
+        "tool_version",
+        "swisseph_version",
+        "ephemeris",
+        "ayanamsha",
+        "exporter_version"
+      ],
+      "properties": {
+        "source": {
+          "const": "PyJHora"
+        },
+        "evidence_rank": {
+          "const": 3
+        },
+        "tool_version": {
+          "type": "string"
+        },
+        "swisseph_version": {
+          "type": "string"
+        },
+        "ephemeris": {
+          "enum": [
+            "MOSHIER",
+            "SWIEPH"
+          ]
+        },
+        "ayanamsha": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

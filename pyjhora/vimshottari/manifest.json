@@ -1,0 +1,302 @@
+{
+  "schema": "teistro-conformance/pyjhora-vimshottari-manifest/1",
+  "provenance": {
+    "source": "PyJHora",
+    "evidence_rank": 3,
+    "tool_version": "4.8.7",
+    "swisseph_version": "2.10.3.2",
+    "ephemeris": "MOSHIER",
+    "ayanamsha": "LAHIRI",
+    "exporter_version": "1.0.0"
+  },
+  "durations": [
+    "MEAN_SIDEREAL_YEAR",
+    "MEAN_TROPICAL_YEAR",
+    "SAVANA_YEAR",
+    "MEAN_LUNAR_YEAR",
+    "GREGORIAN_YEAR"
+  ],
+  "note": "The tool's default year, the true sidereal one, measures 0.0 days in this version and its periods raise a division by zero, so it is not recorded. A chart the tool refuses is listed with the refusal.",
+  "files": [
+    {
+      "file": "vimshottari/charts/c001-kathmandu-1990-04-14.json",
+      "fixture": "charts/c001-kathmandu-1990-04-14.json",
+      "sha256": "9dfe5d061637804727322bc23970644b42113c1ae17eba8b8b61cd50963f8c5a"
+    },
+    {
+      "file": "vimshottari/charts/c002-kathmandu-1985-12-25.json",
+      "fixture": "charts/c002-kathmandu-1985-12-25.json",
+      "sha256": "79d32b414f11cf77ecb439c54af4fd8ad9e348c007ef22520a9684a971223119"
+    },
+    {
+      "file": "vimshottari/charts/c003-kathmandu-1986-01-01.json",
+      "fixture": "charts/c003-kathmandu-1986-01-01.json",
+      "sha256": "4395ea58bd07e1148c58e824fc957fb9c6d0d48793a4b95ebc6de1f18f07a9f0"
+    },
+    {
+      "file": "vimshottari/charts/c004-kathmandu-2000-02-29.json",
+      "fixture": "charts/c004-kathmandu-2000-02-29.json",
+      "sha256": "3fa77a0df04731e497f74af7de1eb5801d7a515913844687ea4302be4f973d09"
+    },
+    {
+      "file": "vimshottari/charts/c005-kathmandu-1910-03-21.json",
+      "fixture": "charts/c005-kathmandu-1910-03-21.json",
+      "sha256": "c025da24d805d16561318e4c0d6b69d2c3efd6a04c34207741680de0262c19f1"
+    },
+    {
+      "file": "vimshottari/charts/c006-pokhara-2012-07-15.json",
+      "fixture": "charts/c006-pokhara-2012-07-15.json",
+      "sha256": "0495099ac4acd8d02aaced0e6e57a9da395d02a8fecf0d32387b4df355cf656b"
+    },
+    {
+      "file": "vimshottari/charts/c007-biratnagar-1975-11-02.json",
+      "fixture": "charts/c007-biratnagar-1975-11-02.json",
+      "sha256": "fbbaacaadab9c68712c2c374577bb9b663811e7871aba005cafc99bed36e352a"
+    },
+    {
+      "file": "vimshottari/charts/c008-delhi-1947-08-15.json",
+      "fixture": "charts/c008-delhi-1947-08-15.json",
+      "sha256": "f6d5f517c412c0b78bb274cd6a5cf7bab6fb614b4dfcaf47e00d98279020232e"
+    },
+    {
+      "file": "vimshottari/charts/c009-mumbai-1969-07-20.json",
+      "fixture": "charts/c009-mumbai-1969-07-20.json",
+      "sha256": "e424d74c4045cd29fcc600afd913e1556e817722f82948a9eea07c9a85004eda"
+    },
+    {
+      "file": "vimshottari/charts/c010-chennai-2023-01-14.json",
+      "fixture": "charts/c010-chennai-2023-01-14.json",
+      "sha256": "0ba74be9581293dd6b108e742acd3742d5026bb911cef173bf13242f59c9bcdb"
+    },
+    {
+      "file": "vimshottari/charts/c011-kolkata-1880-06-10.json",
+      "fixture": "charts/c011-kolkata-1880-06-10.json",
+      "sha256": "a2bcaec06a69202de018299b6868ea210a90c3c88913b20c66fc2b691d8f9422"
+    },
+    {
+      "file": "vimshottari/charts/c012-varanasi-1850-02-05.json",
+      "fixture": "charts/c012-varanasi-1850-02-05.json",
+      "sha256": "9d31d4b6ee3edb987f1b37e1040cfc1a548339123177c842f94952ad9de86aae"
+    },
+    {
+      "file": "vimshottari/charts/c013-colombo-1996-08-01.json",
+      "fixture": "charts/c013-colombo-1996-08-01.json",
+      "sha256": "f223105b31ccf043e0c7995f550cba4c303eec32519c66b3e3b0eee4ae86948d"
+    },
+    {
+      "file": "vimshottari/charts/c014-dhaka-2009-06-20.json",
+      "fixture": "charts/c014-dhaka-2009-06-20.json",
+      "sha256": "cbee5b27b052dc5324b363774af4211d5b6138006fa4518cc44a6c9a4b251617"
+    },
+    {
+      "file": "vimshottari/charts/c015-kabul-1999-09-09.json",
+      "fixture": "charts/c015-kabul-1999-09-09.json",
+      "sha256": "7ea55c2ae1d638fc8acef85e9ec6592f6fa1f88082baf357ebeb05a893f97b3d"
+    },
+    {
+      "file": "vimshottari/charts/c016-tokyo-2011-03-11.json",
+      "fixture": "charts/c016-tokyo-2011-03-11.json",
+      "sha256": "4f2f38a1658f6aa6751d5c9fc29f00358cb1f061cd528d1f09b0c224d92c4ba9"
+    },
+    {
+      "file": "vimshottari/charts/c017-singapore-1965-08-09.json",
+      "fixture": "charts/c017-singapore-1965-08-09.json",
+      "sha256": "fc5bfbce3d31bc953d7934f7a5e3f31ae25b38ae04623ab6ef372711156b94fa"
+    },
+    {
+      "file": "vimshottari/charts/c018-sydney-2000-09-15.json",
+      "fixture": "charts/c018-sydney-2000-09-15.json",
+      "sha256": "d23c13e0b1545c3af2afd9577b0e9f334d9cbcfb387a22a16755751d25cfa27b"
+    },
+    {
+      "file": "vimshottari/charts/c019-auckland-2019-12-31.json",
+      "fixture": "charts/c019-auckland-2019-12-31.json",
+      "sha256": "8be757d631e7654c6523e5a96754ff1d2a625df64e33baa0bab5100fc265c4ac"
+    },
+    {
+      "file": "vimshottari/charts/c020-apia-2011-12-31.json",
+      "fixture": "charts/c020-apia-2011-12-31.json",
+      "sha256": "7e11f1ae85be8364eb747207fa4f6ae9d64ae363296899f468ebfe8415adcdcf"
+    },
+    {
+      "file": "vimshottari/charts/c021-kiritimati-2000-01-01.json",
+      "fixture": "charts/c021-kiritimati-2000-01-01.json",
+      "sha256": "0782ea1509b48171f0aa95617267ede63a3822ef23c4a4df650ef7e61075efa0"
+    },
+    {
+      "file": "vimshottari/charts/c022-honolulu-1941-12-07.json",
+      "fixture": "charts/c022-honolulu-1941-12-07.json",
+      "sha256": "0ceb659807a04e4b00e79dcfa710b7cee31d4dc505bff2d5aa6ded7776b94f66"
+    },
+    {
+      "file": "vimshottari/charts/c023-london-1830-06-26.json",
+      "fixture": "charts/c023-london-1830-06-26.json",
+      "sha256": "4c5561bed45a9e8826baadb3b780d64505a42d5c5b932d0d0998ef2a09af0162"
+    },
+    {
+      "file": "vimshottari/charts/c024-london-1947-05-18.json",
+      "fixture": "charts/c024-london-1947-05-18.json",
+      "sha256": "176858f0f329a3795a772d32542a8709689c7933e02d2b77179341126d32b235"
+    },
+    {
+      "file": "vimshottari/charts/c025-paris-1900-01-01.json",
+      "fixture": "charts/c025-paris-1900-01-01.json",
+      "sha256": "fa3cebc2e53cf98c865ba989b67a39bcc565be70c938d495fb7a2642fb5c72e8"
+    },
+    {
+      "file": "vimshottari/charts/c026-berlin-1945-05-08.json",
+      "fixture": "charts/c026-berlin-1945-05-08.json",
+      "sha256": "3473e9311afc5ad34a909ebf2e10650845aa315456ad84e0119742915177d14b"
+    },
+    {
+      "file": "vimshottari/charts/c027-reykjavik-1975-06-21.json",
+      "fixture": "charts/c027-reykjavik-1975-06-21.json",
+      "sha256": "ddbce8d84f1b465178f63a105566331325e7e38a65922d63820fc25fcd309f88"
+    },
+    {
+      "file": "vimshottari/charts/c030-istanbul-2016-09-07.json",
+      "fixture": "charts/c030-istanbul-2016-09-07.json",
+      "sha256": "00574cca9292455083759eb834671728d10211b78b9db27e08dbb54554721cfa"
+    },
+    {
+      "file": "vimshottari/charts/c031-cairo-2023-04-28.json",
+      "fixture": "charts/c031-cairo-2023-04-28.json",
+      "sha256": "b4a84fd3ade747f6b823ff1978176bbb7d7c9331f81ad5d16bd57d8ad1555c1e"
+    },
+    {
+      "file": "vimshottari/charts/c032-nairobi-1963-12-12.json",
+      "fixture": "charts/c032-nairobi-1963-12-12.json",
+      "sha256": "3f81987ef06e174c3112f837ed840f0b75e4686f93a631ee687756211e977160"
+    },
+    {
+      "file": "vimshottari/charts/c033-cape-town-1990-02-11.json",
+      "fixture": "charts/c033-cape-town-1990-02-11.json",
+      "sha256": "17bf3132f40455d8b44cb3ed624d8ff028e10f7ce82d3032715aa5c03db22800"
+    },
+    {
+      "file": "vimshottari/charts/c034-tehran-1979-02-11.json",
+      "fixture": "charts/c034-tehran-1979-02-11.json",
+      "sha256": "001008c6befa266d6f65d83ff0f5a1b97984e4a318b6bea24f0f19d26cc01c87"
+    },
+    {
+      "file": "vimshottari/charts/c035-new-york-2021-03-14.json",
+      "fixture": "charts/c035-new-york-2021-03-14.json",
+      "sha256": "16c3fec0ee03b6360d3ce563bacb47f7dc9ffef6cbe523f937b6c4aecdb9e9e3"
+    },
+    {
+      "file": "vimshottari/charts/c036-new-york-2021-11-07.json",
+      "fixture": "charts/c036-new-york-2021-11-07.json",
+      "sha256": "ff4e96533e799a6428ec45030dca608728f9f556f93dd4b7e0c4b8591a049cf2"
+    },
+    {
+      "file": "vimshottari/charts/c037-new-york-2021-11-07.json",
+      "fixture": "charts/c037-new-york-2021-11-07.json",
+      "sha256": "19e226abf24f6f6a2aafc229f2d702c4e7f94571e14017e9ea8ab9923e86255b"
+    },
+    {
+      "file": "vimshottari/charts/c038-new-york-1880-04-01.json",
+      "fixture": "charts/c038-new-york-1880-04-01.json",
+      "sha256": "c0efa3ed9ed57a8fdee0a1853f394e9da6f9d22b7c54f2628d82529889941bc4"
+    },
+    {
+      "file": "vimshottari/charts/c039-mexico-city-1985-09-19.json",
+      "fixture": "charts/c039-mexico-city-1985-09-19.json",
+      "sha256": "1da1db2f8831b710137e5c68910118f6ef66dc5c55b461ca54f072078fe9d05d"
+    },
+    {
+      "file": "vimshottari/charts/c040-buenos-aires-1986-06-22.json",
+      "fixture": "charts/c040-buenos-aires-1986-06-22.json",
+      "sha256": "2d66895b2c134bb8e6308855bc431211eaa86d4adbaab01c092a9928ecc7e301"
+    },
+    {
+      "file": "vimshottari/charts/c041-la-paz-2010-07-10.json",
+      "fixture": "charts/c041-la-paz-2010-07-10.json",
+      "sha256": "f87151af1ef5738c40afacef53826091613bdc4d7d3a4019c965877c66707a56"
+    },
+    {
+      "file": "vimshottari/charts/c042-quito-2001-01-01.json",
+      "fixture": "charts/c042-quito-2001-01-01.json",
+      "sha256": "6a3942b63b9d0867d28415651c56d82bad482d655e082509e4603ef144dae86d"
+    },
+    {
+      "file": "vimshottari/charts/c043-fairbanks-2015-06-21.json",
+      "fixture": "charts/c043-fairbanks-2015-06-21.json",
+      "sha256": "0d5a0a85027f8ea074031f76a560a021288ff104d19449ca616d3229a3ebf270"
+    },
+    {
+      "file": "vimshottari/charts/c044-ushuaia-1995-12-22.json",
+      "fixture": "charts/c044-ushuaia-1995-12-22.json",
+      "sha256": "f70152f7f76abc9dbd1929184404d1e729996fa5314bd305d1bb9f443be59c96"
+    },
+    {
+      "file": "vimshottari/charts/c045-sao-paulo-2019-02-16.json",
+      "fixture": "charts/c045-sao-paulo-2019-02-16.json",
+      "sha256": "49081bd92328b883e0e0f39887ed5291578f0e236123a581002de68b38fd0e57"
+    },
+    {
+      "file": "vimshottari/charts/c046-kathmandu-2350-01-01.json",
+      "fixture": "charts/c046-kathmandu-2350-01-01.json",
+      "sha256": "7b6d0584d4eeaaf21e0ace039f9fddbdf843cc50511b4d62e49b0cb5008f6504"
+    },
+    {
+      "file": "vimshottari/charts/c047-london-1800-01-02.json",
+      "fixture": "charts/c047-london-1800-01-02.json",
+      "sha256": "57f57afa4ee784fc84e98e6f4138f12b3622b47dbfc00330bb52d1115e2713d1"
+    },
+    {
+      "file": "vimshottari/charts/c048-kathmandu-2399-12-30.json",
+      "fixture": "charts/c048-kathmandu-2399-12-30.json",
+      "sha256": "50f01504e52e64a7ed863a1d10623fa30d4f25a0b67716bb44d0de43d9aad5b3"
+    },
+    {
+      "file": "vimshottari/charts/c049-kathmandu-2010-06-01.json",
+      "fixture": "charts/c049-kathmandu-2010-06-01.json",
+      "sha256": "28e8fc7f5c176a12690087385bf61087948071d995abf43ee5563c4273bb9a53"
+    },
+    {
+      "file": "vimshottari/charts/c050-kathmandu-2015-03-01.json",
+      "fixture": "charts/c050-kathmandu-2015-03-01.json",
+      "sha256": "8cdb65ba36482d97832e18e10705b6abe40d7e546ee676de85d669fae889a7e7"
+    },
+    {
+      "file": "vimshottari/charts/c051-kathmandu-2020-04-13.json",
+      "fixture": "charts/c051-kathmandu-2020-04-13.json",
+      "sha256": "105a39b4b5555db7baf0228b4b926dc2581445905af3a26f695d21e20fe9ec26"
+    },
+    {
+      "file": "vimshottari/charts/c052-kathmandu-2020-04-13.json",
+      "fixture": "charts/c052-kathmandu-2020-04-13.json",
+      "sha256": "e42b2c098955d17e13d25cc7707341a1ad615af3103dd93751dfe5639dd08d79"
+    },
+    {
+      "file": "vimshottari/charts/c053-kathmandu-2021-01-30.json",
+      "fixture": "charts/c053-kathmandu-2021-01-30.json",
+      "sha256": "ae273f9dc4623e0dc09fceda29b1efcdb87239c77e927a47f3c4db2af246afdc"
+    },
+    {
+      "file": "vimshottari/charts/c054-kathmandu-2020-05-05.json",
+      "fixture": "charts/c054-kathmandu-2020-05-05.json",
+      "sha256": "03752a64f75890c18cdd853bea01b569453e300f31c757727c17a38048d67c43"
+    },
+    {
+      "file": "vimshottari/charts/c055-kathmandu-2024-04-09.json",
+      "fixture": "charts/c055-kathmandu-2024-04-09.json",
+      "sha256": "f04f1d5e4720722d908c427f0295cdde3c3060db393429fd5e212e6d2fdbd74e"
+    }
+  ],
+  "refused": [
+    {
+      "fixture": "charts/c028-troms-1988-06-21.json",
+      "refusal": "Error: swisseph.houses_ex: error"
+    },
+    {
+      "fixture": "charts/c029-troms-1988-12-21.json",
+      "refusal": "Error: swisseph.houses_ex: error"
+    }
+  ],
+  "counts": {
+    "files": 53,
+    "durations": 5,
+    "refused": 2
+  }
+}
