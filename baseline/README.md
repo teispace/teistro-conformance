@@ -271,3 +271,23 @@ four schemes: the sum over the scheme's vargas of that dignity's Saptavargaja
 virupas (45, 30, 22.5, 15, 7.5, 3.75, 1.875, 0) over 45 times the varga's
 weight, rounded to hundredths. `vimshopaka/manifest.json` carries the weights.
 
+## The Shadbala (`teistro-conformance/baseline-shadbala/1`)
+
+`shadbala/charts/` and `shadbala/variants/` hold one file for each fixture that
+records its foundation, positions, houses and divisional charts, written by
+`export-shadbala-vectors.mjs --corpus <this directory>` from the recorded
+chart, repeated as `inputs`: each of the seven grahas' sidereal longitude,
+speed, house, sign and degrees in the sign; their signs in the D1, D2, D3, D7,
+D9, D12 and D30; the birth instant and whether the engine counted it a day
+birth; the weekday (`weekday_swe`, Monday 0); the day's sunrise and sunset and
+the next day's sunrise; the ayanamsha; the hora and abda lords; the lagna's
+longitude; and the house system, with the first, fourth, seventh and tenth
+cusps unless it is whole-sign.
+
+`shadbala` holds, for each graha, in shashtiamshas: `sthana` by component
+(uccha, saptavargiya, ojayugma, kendra, drekkana) and in total, `dig`, `kaala`
+by component (nathonnatha, paksha, tribhaga, abda, masa, vara, hora, ayana)
+and in total, `cheshta`, `naisargika` and `drik`; then the sum of the six in
+shashtiamshas and in rupas (over 60), the rupas the engine requires, and
+whether the sum reaches them. `shadbala/manifest.json` carries the natural
+strengths, the required rupas and the Saptavargaja's vargas.

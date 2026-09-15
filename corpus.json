@@ -1,6 +1,6 @@
 {
   "schema": "teistro-conformance/corpus/1",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "released": "2026-09-15",
   "licence": "CC0-1.0",
   "repository": "https://github.com/teispace/teistro-conformance",
@@ -68,6 +68,15 @@
       "recorded": "2026-09-15"
     },
     {
+      "path": "baseline/shadbala",
+      "source": "the same engine's Shadbala, computed from each fixture's recorded chart, day and houses, with its natural strengths and required rupas in the manifest",
+      "evidence_rank": 2,
+      "schema": "teistro-conformance/baseline-shadbala/1",
+      "manifest": "baseline/shadbala/manifest.json",
+      "counts": { "files": 71 },
+      "recorded": "2026-09-15"
+    },
+    {
       "path": "official",
       "source": "Nepal's national panchanga committee (npns.gov.np), read from its published Rashtriya Panchangam for BS 2082 and 2083",
       "evidence_rank": 1,
@@ -96,6 +105,8 @@
     "schema/baseline-ashtakavarga-manifest.schema.json",
     "schema/baseline-vimshopaka.schema.json",
     "schema/baseline-vimshopaka-manifest.schema.json",
+    "schema/baseline-shadbala.schema.json",
+    "schema/baseline-shadbala-manifest.schema.json",
     "schema/tolerances.schema.json",
     "schema/report.schema.json"
   ]

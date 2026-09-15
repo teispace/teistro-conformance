@@ -1,0 +1,346 @@
+{
+  "schema": "teistro-conformance/baseline-shadbala/1",
+  "fixture": "charts/c009-mumbai-1969-07-20.json",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "inputs": "the fixture's positions.bodies (longitude, speed, house, sign), vargas D1 D2 D3 D7 D9 D12 D30, foundation (jd, day or night, weekday, sunrise, sunset, next sunrise, ayanamsha, hora and abda lords, lagna) and houses.selected (system, kendra cusps)"
+  },
+  "inputs": {
+    "grahas": {
+      "SUN": {
+        "longitude_deg": 94.29768244269478,
+        "speed_deg_per_day": 0.9636643083865692,
+        "house": 6,
+        "sign_index": 3,
+        "degrees_in_sign": 4.29768244269478
+      },
+      "MOON": {
+        "longitude_deg": 161.4596135325269,
+        "speed_deg_per_day": 10.37264821604822,
+        "house": 8,
+        "sign_index": 5,
+        "degrees_in_sign": 11.4596135325269
+      },
+      "MARS": {
+        "longitude_deg": 219.30974615479207,
+        "speed_deg_per_day": 0.14079372988362593,
+        "house": 10,
+        "sign_index": 7,
+        "degrees_in_sign": 9.30974615479207
+      },
+      "MERCURY": {
+        "longitude_deg": 92.00887829803106,
+        "speed_deg_per_day": 2.142769190669469,
+        "house": 6,
+        "sign_index": 3,
+        "degrees_in_sign": 2.00887829803106
+      },
+      "JUPITER": {
+        "longitude_deg": 157.28613158371272,
+        "speed_deg_per_day": 0.14441477702575867,
+        "house": 8,
+        "sign_index": 5,
+        "degrees_in_sign": 7.28613158371272
+      },
+      "VENUS": {
+        "longitude_deg": 51.39804553452556,
+        "speed_deg_per_day": 1.115161232938533,
+        "house": 4,
+        "sign_index": 1,
+        "degrees_in_sign": 21.39804553452556
+      },
+      "SATURN": {
+        "longitude_deg": 14.65557202735428,
+        "speed_deg_per_day": 0.054679419854153366,
+        "house": 3,
+        "sign_index": 0,
+        "degrees_in_sign": 14.65557202735428
+      }
+    },
+    "varga_sign_index": {
+      "D1": {
+        "SUN": 3,
+        "MOON": 5,
+        "MARS": 7,
+        "MERCURY": 3,
+        "JUPITER": 5,
+        "VENUS": 1,
+        "SATURN": 0
+      },
+      "D2": {
+        "SUN": 3,
+        "MOON": 3,
+        "MARS": 3,
+        "MERCURY": 3,
+        "JUPITER": 3,
+        "VENUS": 4,
+        "SATURN": 4
+      },
+      "D3": {
+        "SUN": 3,
+        "MOON": 9,
+        "MARS": 7,
+        "MERCURY": 3,
+        "JUPITER": 5,
+        "VENUS": 9,
+        "SATURN": 4
+      },
+      "D7": {
+        "SUN": 10,
+        "MOON": 1,
+        "MARS": 3,
+        "MERCURY": 9,
+        "JUPITER": 0,
+        "VENUS": 11,
+        "SATURN": 3
+      },
+      "D9": {
+        "SUN": 4,
+        "MOON": 0,
+        "MARS": 5,
+        "MERCURY": 3,
+        "JUPITER": 11,
+        "VENUS": 3,
+        "SATURN": 4
+      },
+      "D12": {
+        "SUN": 4,
+        "MOON": 9,
+        "MARS": 10,
+        "MERCURY": 3,
+        "JUPITER": 7,
+        "VENUS": 9,
+        "SATURN": 5
+      },
+      "D30": {
+        "SUN": 1,
+        "MOON": 5,
+        "MARS": 5,
+        "MERCURY": 1,
+        "JUPITER": 5,
+        "VENUS": 9,
+        "SATURN": 8
+      }
+    },
+    "jd_ut": 2440423.157638889,
+    "is_day_birth": false,
+    "weekday_swe": 6,
+    "sunrise_jd": 2440422.528353295,
+    "sunset_jd": 2440423.0753328027,
+    "next_sunrise_jd": 2440423.5286055417,
+    "ayanamsha_deg": 23.432497036149496,
+    "hora_lord": "SUN",
+    "abda_lord": "SUN",
+    "lagna_longitude_deg": 308.69881749992726,
+    "house_system": "whole-sign",
+    "kendra_cusps_deg": null
+  },
+  "shadbala": {
+    "SUN": {
+      "sthana": {
+        "uccha": 31.90077251910174,
+        "saptavargiya": 112.5,
+        "ojayugma": 15,
+        "kendra": 15,
+        "drekkana": 15,
+        "total": 189.40077251910174
+      },
+      "dig": 18.532954980922508,
+      "kaala": {
+        "nathonnatha": 0,
+        "paksha": 37.61268963672262,
+        "tribhaga": 0,
+        "abda": 15,
+        "masa": 0,
+        "vara": 45,
+        "hora": 60,
+        "ayana": 0,
+        "total": 157.61268963672262
+      },
+      "cheshta": 56.38559238632367,
+      "naisargika": 60,
+      "drik": -60,
+      "total_shashtiamshas": 421.9320095230705,
+      "total_rupas": 7.032200158717842,
+      "minimum_rupas": 5,
+      "is_sufficient": true
+    },
+    "MOON": {
+      "sthana": {
+        "uccha": 17.18012882249103,
+        "saptavargiya": 127.5,
+        "ojayugma": 15,
+        "kendra": 30,
+        "drekkana": 15,
+        "total": 204.68012882249104
+      },
+      "dig": 19.07973465580012,
+      "kaala": {
+        "nathonnatha": 21.789817655828276,
+        "paksha": 44.77462072655475,
+        "tribhaga": 60,
+        "abda": 0,
+        "masa": 30,
+        "vara": 0,
+        "hora": 0,
+        "ayana": 32.48810315710391,
+        "total": 189.05254153948692
+      },
+      "cheshta": 22.387310363277376,
+      "naisargika": 51.43,
+      "drik": 0,
+      "total_shashtiamshas": 486.62971538105546,
+      "total_rupas": 8.110495256350925,
+      "minimum_rupas": 6,
+      "is_sufficient": true
+    },
+    "MARS": {
+      "sthana": {
+        "uccha": 33.76991538493069,
+        "saptavargiya": 75,
+        "ojayugma": 0,
+        "kendra": 60,
+        "drekkana": 15,
+        "total": 183.7699153849307
+      },
+      "dig": 59.79635711504506,
+      "kaala": {
+        "nathonnatha": 21.789817655828276,
+        "paksha": 37.61268963672262,
+        "tribhaga": 0,
+        "abda": 0,
+        "masa": 0,
+        "vara": 0,
+        "hora": 0,
+        "ayana": 3.4957388327609564,
+        "total": 62.89824612531185
+      },
+      "cheshta": 45.44761400516001,
+      "naisargika": 17.14,
+      "drik": -15,
+      "total_shashtiamshas": 354.0521326304476,
+      "total_rupas": 5.900868877174127,
+      "minimum_rupas": 5,
+      "is_sufficient": true
+    },
+    "MERCURY": {
+      "sthana": {
+        "uccha": 35.66962609934369,
+        "saptavargiya": 41.25,
+        "ojayugma": 0,
+        "kendra": 15,
+        "drekkana": 0,
+        "total": 91.91962609934369
+      },
+      "dig": 12.2299797339654,
+      "kaala": {
+        "nathonnatha": 60,
+        "paksha": 22.387310363277376,
+        "tribhaga": 0,
+        "abda": 0,
+        "masa": 0,
+        "vara": 0,
+        "hora": 0,
+        "ayana": 56.94353788826513,
+        "total": 139.3308482515425
+      },
+      "cheshta": 3.2756874209093403,
+      "naisargika": 25.71,
+      "drik": -60,
+      "total_shashtiamshas": 212.46614150576096,
+      "total_rupas": 3.5411023584293493,
+      "minimum_rupas": 7,
+      "is_sufficient": false
+    },
+    "JUPITER": {
+      "sthana": {
+        "uccha": 39.23795613876243,
+        "saptavargiya": 116.25,
+        "ojayugma": 0,
+        "kendra": 30,
+        "drekkana": 15,
+        "total": 200.48795613876243
+      },
+      "dig": 9.529104694595153,
+      "kaala": {
+        "nathonnatha": 0,
+        "paksha": 22.387310363277376,
+        "tribhaga": 60,
+        "abda": 0,
+        "masa": 0,
+        "vara": 0,
+        "hora": 0,
+        "ayana": 29.634142860106994,
+        "total": 112.02145322338437
+      },
+      "cheshta": 22.37325248452343,
+      "naisargika": 34.29,
+      "drik": 0,
+      "total_shashtiamshas": 378.70176654126544,
+      "total_rupas": 6.31169610902109,
+      "minimum_rupas": 6.5,
+      "is_sufficient": false
+    },
+    "VENUS": {
+      "sthana": {
+        "uccha": 41.86731815515815,
+        "saptavargiya": 127.5,
+        "ojayugma": 30,
+        "kendra": 60,
+        "drekkana": 0,
+        "total": 259.36731815515816
+      },
+      "dig": 55.766923988467234,
+      "kaala": {
+        "nathonnatha": 0,
+        "paksha": 22.387310363277376,
+        "tribhaga": 0,
+        "abda": 0,
+        "masa": 0,
+        "vara": 0,
+        "hora": 0,
+        "ayana": 58.89574537892437,
+        "total": 81.28305574220174
+      },
+      "cheshta": 12.142513099294925,
+      "naisargika": 42.86,
+      "drik": 30,
+      "total_shashtiamshas": 481.41981098512207,
+      "total_rupas": 8.0236635164187,
+      "minimum_rupas": 5.5,
+      "is_sufficient": true
+    },
+    "SATURN": {
+      "sthana": {
+        "uccha": 1.781475990881906,
+        "saptavargiya": 37.5,
+        "ojayugma": 30,
+        "kendra": 15,
+        "drekkana": 0,
+        "total": 84.28147599088192
+      },
+      "dig": 21.985584842475674,
+      "kaala": {
+        "nathonnatha": 21.789817655828276,
+        "paksha": 37.61268963672262,
+        "tribhaga": 0,
+        "abda": 0,
+        "masa": 0,
+        "vara": 0,
+        "hora": 0,
+        "ayana": 11.820078750258306,
+        "total": 71.2225860428092
+      },
+      "cheshta": 27.003768044544884,
+      "naisargika": 8.57,
+      "drik": 60,
+      "total_shashtiamshas": 273.06341492071164,
+      "total_rupas": 4.551056915345194,
+      "minimum_rupas": 5,
+      "is_sufficient": false
+    }
+  }
+}

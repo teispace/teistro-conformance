@@ -1,0 +1,465 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-shadbala.schema.json",
+  "title": "The Shadbala of one baseline fixture",
+  "description": "The engine's Shadbala computed from the recorded chart of the fixture it names, repeated as `inputs`: each graha's six strengths in shashtiamshas (virupas), the Sthana and Kaala strengths by component, the total in shashtiamshas and rupas, and the rupas the engine requires.",
+  "$defs": {
+    "graha_input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "longitude_deg",
+        "speed_deg_per_day",
+        "house",
+        "sign_index",
+        "degrees_in_sign"
+      ],
+      "properties": {
+        "longitude_deg": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMaximum": 360
+        },
+        "speed_deg_per_day": {
+          "type": "number"
+        },
+        "house": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "sign_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "degrees_in_sign": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMaximum": 30
+        }
+      }
+    },
+    "signs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "SUN",
+        "MOON",
+        "MARS",
+        "MERCURY",
+        "JUPITER",
+        "VENUS",
+        "SATURN"
+      ],
+      "properties": {
+        "SUN": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "MOON": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "MARS": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "MERCURY": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "JUPITER": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "VENUS": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "SATURN": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        }
+      }
+    },
+    "strength": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sthana",
+        "dig",
+        "kaala",
+        "cheshta",
+        "naisargika",
+        "drik",
+        "total_shashtiamshas",
+        "total_rupas",
+        "minimum_rupas",
+        "is_sufficient"
+      ],
+      "properties": {
+        "sthana": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "uccha",
+            "saptavargiya",
+            "ojayugma",
+            "kendra",
+            "drekkana",
+            "total"
+          ],
+          "properties": {
+            "uccha": {
+              "type": "number"
+            },
+            "saptavargiya": {
+              "type": "number"
+            },
+            "ojayugma": {
+              "type": "number"
+            },
+            "kendra": {
+              "type": "number"
+            },
+            "drekkana": {
+              "type": "number"
+            },
+            "total": {
+              "type": "number"
+            }
+          }
+        },
+        "dig": {
+          "type": "number"
+        },
+        "kaala": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "nathonnatha",
+            "paksha",
+            "tribhaga",
+            "abda",
+            "masa",
+            "vara",
+            "hora",
+            "ayana",
+            "total"
+          ],
+          "properties": {
+            "nathonnatha": {
+              "type": "number"
+            },
+            "paksha": {
+              "type": "number"
+            },
+            "tribhaga": {
+              "type": "number"
+            },
+            "abda": {
+              "type": "number"
+            },
+            "masa": {
+              "type": "number"
+            },
+            "vara": {
+              "type": "number"
+            },
+            "hora": {
+              "type": "number"
+            },
+            "ayana": {
+              "type": "number"
+            },
+            "total": {
+              "type": "number"
+            }
+          }
+        },
+        "cheshta": {
+          "type": "number"
+        },
+        "naisargika": {
+          "type": "number"
+        },
+        "drik": {
+          "type": "number"
+        },
+        "total_shashtiamshas": {
+          "type": "number"
+        },
+        "total_rupas": {
+          "type": "number"
+        },
+        "minimum_rupas": {
+          "type": "number"
+        },
+        "is_sufficient": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "fixture",
+    "provenance",
+    "inputs",
+    "shadbala"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-shadbala/1"
+    },
+    "fixture": {
+      "type": "string",
+      "pattern": "^(charts|variants)/[^/]+\\.json$"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "evidence_rank",
+        "engine_version",
+        "exporter_version",
+        "inputs"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "evidence_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "string"
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "grahas",
+        "varga_sign_index",
+        "jd_ut",
+        "is_day_birth",
+        "weekday_swe",
+        "sunrise_jd",
+        "sunset_jd",
+        "next_sunrise_jd",
+        "ayanamsha_deg",
+        "hora_lord",
+        "abda_lord",
+        "lagna_longitude_deg",
+        "house_system",
+        "kendra_cusps_deg"
+      ],
+      "properties": {
+        "grahas": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "$ref": "#/$defs/graha_input"
+            },
+            "MOON": {
+              "$ref": "#/$defs/graha_input"
+            },
+            "MARS": {
+              "$ref": "#/$defs/graha_input"
+            },
+            "MERCURY": {
+              "$ref": "#/$defs/graha_input"
+            },
+            "JUPITER": {
+              "$ref": "#/$defs/graha_input"
+            },
+            "VENUS": {
+              "$ref": "#/$defs/graha_input"
+            },
+            "SATURN": {
+              "$ref": "#/$defs/graha_input"
+            }
+          }
+        },
+        "varga_sign_index": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "D1",
+            "D2",
+            "D3",
+            "D7",
+            "D9",
+            "D12",
+            "D30"
+          ],
+          "properties": {
+            "D1": {
+              "$ref": "#/$defs/signs"
+            },
+            "D2": {
+              "$ref": "#/$defs/signs"
+            },
+            "D3": {
+              "$ref": "#/$defs/signs"
+            },
+            "D7": {
+              "$ref": "#/$defs/signs"
+            },
+            "D9": {
+              "$ref": "#/$defs/signs"
+            },
+            "D12": {
+              "$ref": "#/$defs/signs"
+            },
+            "D30": {
+              "$ref": "#/$defs/signs"
+            }
+          }
+        },
+        "jd_ut": {
+          "type": "number"
+        },
+        "is_day_birth": {
+          "type": "boolean"
+        },
+        "weekday_swe": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6
+        },
+        "sunrise_jd": {
+          "type": "number"
+        },
+        "sunset_jd": {
+          "type": "number"
+        },
+        "next_sunrise_jd": {
+          "type": "number"
+        },
+        "ayanamsha_deg": {
+          "type": "number"
+        },
+        "hora_lord": {
+          "enum": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ]
+        },
+        "abda_lord": {
+          "anyOf": [
+            {
+              "enum": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lagna_longitude_deg": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMaximum": 360
+        },
+        "house_system": {
+          "type": "string"
+        },
+        "kendra_cusps_deg": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 4,
+              "maxItems": 4
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "shadbala": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "SUN",
+        "MOON",
+        "MARS",
+        "MERCURY",
+        "JUPITER",
+        "VENUS",
+        "SATURN"
+      ],
+      "properties": {
+        "SUN": {
+          "$ref": "#/$defs/strength"
+        },
+        "MOON": {
+          "$ref": "#/$defs/strength"
+        },
+        "MARS": {
+          "$ref": "#/$defs/strength"
+        },
+        "MERCURY": {
+          "$ref": "#/$defs/strength"
+        },
+        "JUPITER": {
+          "$ref": "#/$defs/strength"
+        },
+        "VENUS": {
+          "$ref": "#/$defs/strength"
+        },
+        "SATURN": {
+          "$ref": "#/$defs/strength"
+        }
+      }
+    }
+  }
+}

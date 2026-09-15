@@ -9,6 +9,26 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.7.0 — 2026-09-15
+
+**Values:** none moved; the Shadbala of 71 charts is new.
+
+`baseline/shadbala/`: the engine's Shadbala for each of the 71 fixtures that
+record their foundation, positions, houses and divisional charts, computed
+from the recorded chart and repeated as `inputs`: each graha's longitude,
+speed, house and sign, its signs in the seven Saptavargaja vargas, the birth
+instant, whether it fell by day, the weekday, the day's sunrise and sunset
+and the next sunrise, the ayanamsha, the hora and abda lords, the lagna, and
+the house system with its kendra cusps. `shadbala` holds each graha's six
+strengths in shashtiamshas with the Sthana and Kaala strengths by component,
+the total in shashtiamshas and rupas, and the engine's requirement. The
+manifest carries the natural strengths and the required rupas.
+`validate.py` checks the inputs against the fixture, every total against its
+parts, and the rupas, requirement and natural strengths against the manifest.
+
+The engine departs from BPHS ch. 27 at several components, so these files
+record the engine's reading and not the text's.
+
 ## 0.6.0 — 2026-09-15
 
 **Values:** none moved; the Vimshopaka of 93 charts is new.

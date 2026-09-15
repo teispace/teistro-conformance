@@ -285,6 +285,85 @@ def vimshopaka(failures: list[str]) -> int:
     )
 
 
+SAPTAVARGAJA_VARGAS = ("D1", "D2", "D3", "D7", "D9", "D12", "D30")
+SHADBALA_SECTIONS = ("foundation", "positions", "houses", "vargas")
+
+
+def shadbala(failures: list[str]) -> int:
+    """The Shadbala: each file's inputs are its fixture's recorded chart,
+    field for field; every group total is its components' sum and the whole
+    the six groups'; the rupas are the shashtiamshas over 60 and sufficiency
+    their comparison with the manifest's requirement; and each natural
+    strength is the manifest's."""
+    manifest = load(ROOT / "baseline" / "shadbala" / "manifest.json")
+    manifest = manifest if isinstance(manifest, dict) else {}
+
+    def close(a, b) -> bool:
+        return abs(a - b) <= 1e-9 * max(1.0, abs(a), abs(b))
+
+    def check(name, entry, document, fixture, systems):
+        found = []
+        foundation, houses = fixture["foundation"], fixture["houses"]
+        bodies = fixture["positions"]["bodies"]
+        selected = houses["selected"]
+        whole = selected["system"] == "whole-sign"
+        wanted = {
+            "grahas": {
+                g: {
+                    "longitude_deg": bodies[g]["sidereal_longitude_deg"],
+                    "speed_deg_per_day": bodies[g]["speed_deg_per_day"],
+                    "house": bodies[g]["house"],
+                    "sign_index": bodies[g]["sign_index"],
+                    "degrees_in_sign": bodies[g]["degrees_in_sign"],
+                }
+                for g in SEVEN
+            },
+            "varga_sign_index": {v: {g: fixture["vargas"][v]["sign_index"][g] for g in SEVEN} for v in SAPTAVARGAJA_VARGAS},
+            "jd_ut": foundation["jd_ut"],
+            "is_day_birth": foundation["is_day_birth"],
+            "weekday_swe": foundation["panchanga_day"]["weekday_swe"],
+            "sunrise_jd": foundation["sunrise"]["sunrise_jd"],
+            "sunset_jd": foundation["sunrise"]["sunset_jd"],
+            "next_sunrise_jd": foundation["next_day"]["sunrise_jd"],
+            "ayanamsha_deg": foundation["ayanamsha"]["value_deg"],
+            "hora_lord": foundation["hora_lord"],
+            "abda_lord": foundation.get("abda_lord"),
+            "lagna_longitude_deg": foundation["lagna"]["sidereal_longitude_deg"],
+            "house_system": selected["system"],
+            "kendra_cusps_deg": None if whole else [selected["cusps"][i] for i in (0, 3, 6, 9)],
+        }
+        if document.get("inputs") != wanted:
+            found.append(f"{name}: the inputs differ from the fixture's")
+        for g, strength in document.get("shadbala", {}).items():
+            sthana, kaala = strength["sthana"], strength["kaala"]
+            parts = {k: v for k, v in sthana.items() if k != "total"}
+            if not close(sum(parts.values()), sthana["total"]):
+                found.append(f"{name}: {g}'s sthana total is not its components' sum")
+            parts = {k: v for k, v in kaala.items() if k != "total"}
+            if not close(sum(parts.values()), kaala["total"]):
+                found.append(f"{name}: {g}'s kaala total is not its components' sum")
+            six = sthana["total"] + strength["dig"] + kaala["total"] + strength["cheshta"] + strength["naisargika"] + strength["drik"]
+            if not close(six, strength["total_shashtiamshas"]):
+                found.append(f"{name}: {g}'s total is not the six strengths' sum")
+            if not close(strength["total_shashtiamshas"] / 60, strength["total_rupas"]):
+                found.append(f"{name}: {g}'s rupas are not its shashtiamshas over 60")
+            required = manifest.get("minimum_rupas", {}).get(g)
+            if strength["minimum_rupas"] != required or strength["is_sufficient"] != (strength["total_rupas"] >= required):
+                found.append(f"{name}: {g}'s requirement or sufficiency differs from the manifest's")
+            if strength["naisargika"] != manifest.get("naisargika", {}).get(g):
+                found.append(f"{name}: {g}'s natural strength differs from the manifest's")
+        return found, 1
+
+    return derived(
+        failures,
+        "shadbala",
+        "baseline-shadbala",
+        lambda fixture: all(s in fixture.get("sections", []) for s in SHADBALA_SECTIONS) and "next_day" in fixture.get("foundation", {}),
+        check,
+        lambda files, systems, answers: {"files": files},
+    )
+
+
 GRAHAS = ("SUN", "MOON", "MARS", "MERCURY", "JUPITER", "VENUS", "SATURN", "RAHU", "KETU")
 
 
@@ -353,7 +432,7 @@ def main() -> int:
     corpus(failures)
     fixtures = baseline(failures)
     systems = dasha_systems(failures) + rashi_dashas(failures) + kalachakra(failures)
-    systems += ashtakavarga(failures) + vimshopaka(failures)
+    systems += ashtakavarga(failures) + vimshopaka(failures) + shadbala(failures)
     against_schema("tolerances", ROOT / "tolerances.json", failures)
     recorded = tables(failures)
 
