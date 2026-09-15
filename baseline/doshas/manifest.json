@@ -1,0 +1,575 @@
+{
+  "schema": "teistro-conformance/baseline-doshas-manifest/1",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0"
+  },
+  "rules": "doshas/rules.json",
+  "files": [
+    {
+      "file": "doshas/charts/c001-kathmandu-1990-04-14.json",
+      "fixture": "charts/c001-kathmandu-1990-04-14.json",
+      "sha256": "026a1622a106204084a412a88974c5666151c16fb338f6b3673753b483a9302e",
+      "present": 16
+    },
+    {
+      "file": "doshas/charts/c002-kathmandu-1985-12-25.json",
+      "fixture": "charts/c002-kathmandu-1985-12-25.json",
+      "sha256": "7ca8c2f96e76f1422ee0c09c38bfc63649713ed263441fa023e4ca69a5655767",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c003-kathmandu-1986-01-01.json",
+      "fixture": "charts/c003-kathmandu-1986-01-01.json",
+      "sha256": "101583f486c1bc13199f9e1d7bf9d3090f72de5f36cbf67691d55ec2195e2e4d",
+      "present": 12
+    },
+    {
+      "file": "doshas/charts/c004-kathmandu-2000-02-29.json",
+      "fixture": "charts/c004-kathmandu-2000-02-29.json",
+      "sha256": "21014f3b0412c78d7c4a3e585e8bb2f841d32b05cc0c73dc2029b97c55e374a7",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c005-kathmandu-1910-03-21.json",
+      "fixture": "charts/c005-kathmandu-1910-03-21.json",
+      "sha256": "881c703d11cc4b394ad73468a78a650fd06f21f85a11f8072c881d675263347e",
+      "present": 7
+    },
+    {
+      "file": "doshas/charts/c006-pokhara-2012-07-15.json",
+      "fixture": "charts/c006-pokhara-2012-07-15.json",
+      "sha256": "085a92dec9156ccec3fd4f8d83b4a59e5cb07793c92a202a054ee48d5cee1622",
+      "present": 10
+    },
+    {
+      "file": "doshas/charts/c007-biratnagar-1975-11-02.json",
+      "fixture": "charts/c007-biratnagar-1975-11-02.json",
+      "sha256": "8cd2be3433c1ed5d212f5ac696eb64fb079860d0b9ad4bfe13e7b8554a760f85",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c008-delhi-1947-08-15.json",
+      "fixture": "charts/c008-delhi-1947-08-15.json",
+      "sha256": "dbe2e68605367b73995034e9d019d8ba9abbc6c2ce77778193dd157a5881bbb6",
+      "present": 12
+    },
+    {
+      "file": "doshas/charts/c009-mumbai-1969-07-20.json",
+      "fixture": "charts/c009-mumbai-1969-07-20.json",
+      "sha256": "e4d6a8a95767d2aa8a1a8cc3cc78f17aefd91913d1e83d0ecf8dd1a3be76884d",
+      "present": 12
+    },
+    {
+      "file": "doshas/charts/c010-chennai-2023-01-14.json",
+      "fixture": "charts/c010-chennai-2023-01-14.json",
+      "sha256": "f7c153ff8db2a84f26805f80012c74c97b851a33a97745278b6e8f1ac9b78c61",
+      "present": 5
+    },
+    {
+      "file": "doshas/charts/c011-kolkata-1880-06-10.json",
+      "fixture": "charts/c011-kolkata-1880-06-10.json",
+      "sha256": "97ccb62aaa35cf820b23d762ac9f8350311c51d2dadb4737fdd71755775277cd",
+      "present": 10
+    },
+    {
+      "file": "doshas/charts/c012-varanasi-1850-02-05.json",
+      "fixture": "charts/c012-varanasi-1850-02-05.json",
+      "sha256": "b51a0a82a91a906ef2db108428765e3bcefefb243a7d3ac592e3611af919e4f4",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c013-colombo-1996-08-01.json",
+      "fixture": "charts/c013-colombo-1996-08-01.json",
+      "sha256": "07e96ce9e99cb7b688e25e6bad374767840a38e4939a51aa423e278063b24f2b",
+      "present": 8
+    },
+    {
+      "file": "doshas/charts/c014-dhaka-2009-06-20.json",
+      "fixture": "charts/c014-dhaka-2009-06-20.json",
+      "sha256": "66880c92a76f393942c4b9367c4689acd53847d2b41b9f0843b7ee2248b23db4",
+      "present": 7
+    },
+    {
+      "file": "doshas/charts/c015-kabul-1999-09-09.json",
+      "fixture": "charts/c015-kabul-1999-09-09.json",
+      "sha256": "b818e1402aa61710ca7a652c75a7a1e515a183003c2b4ed8b4795ad6dda4971a",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c016-tokyo-2011-03-11.json",
+      "fixture": "charts/c016-tokyo-2011-03-11.json",
+      "sha256": "8225e2e8dc2adff94892f2cd9491ac7f63ba68f3f3e248f4757ab3ceb44fdb6d",
+      "present": 7
+    },
+    {
+      "file": "doshas/charts/c017-singapore-1965-08-09.json",
+      "fixture": "charts/c017-singapore-1965-08-09.json",
+      "sha256": "6362d4012f7064499fc3cbddef53bed741e397094349d37d5938979a90775f66",
+      "present": 8
+    },
+    {
+      "file": "doshas/charts/c018-sydney-2000-09-15.json",
+      "fixture": "charts/c018-sydney-2000-09-15.json",
+      "sha256": "0683620c161c793dfcdf9e2056537d8127d4a3734d50673abf8688ff5ca12e1f",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c019-auckland-2019-12-31.json",
+      "fixture": "charts/c019-auckland-2019-12-31.json",
+      "sha256": "4e1fb6cf7fbb12fd5e9fc572fdcb36876d01c9bb8734bd1827546c4e7e8be95b",
+      "present": 9
+    },
+    {
+      "file": "doshas/charts/c020-apia-2011-12-31.json",
+      "fixture": "charts/c020-apia-2011-12-31.json",
+      "sha256": "793201040c0b0c35848accc321e496fb0cd6dba77c32deb1ca173b7be2926af5",
+      "present": 9
+    },
+    {
+      "file": "doshas/charts/c021-kiritimati-2000-01-01.json",
+      "fixture": "charts/c021-kiritimati-2000-01-01.json",
+      "sha256": "84135b58733b969f6518fc0f316e75a38bc03afdc0eb3c66afe7558441506664",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c022-honolulu-1941-12-07.json",
+      "fixture": "charts/c022-honolulu-1941-12-07.json",
+      "sha256": "7e58cc2d3f4a79fc720e0189bea42d355cceadeb96e8aaebde415eed38723004",
+      "present": 13
+    },
+    {
+      "file": "doshas/charts/c023-london-1830-06-26.json",
+      "fixture": "charts/c023-london-1830-06-26.json",
+      "sha256": "7582507b0ae563be89ad70f9e5cc8d94f04acf0a57e07234162cbd5a4950ebf5",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c024-london-1947-05-18.json",
+      "fixture": "charts/c024-london-1947-05-18.json",
+      "sha256": "27c56dcd54277d9f79edb48ed9c2d7287a94c1643f46d2708b4155a5d2f4ee5d",
+      "present": 12
+    },
+    {
+      "file": "doshas/charts/c025-paris-1900-01-01.json",
+      "fixture": "charts/c025-paris-1900-01-01.json",
+      "sha256": "7f177b020a480b1a6c35ace3c5d673718b76e42f39df8e9bff0fc8b8ce599390",
+      "present": 13
+    },
+    {
+      "file": "doshas/charts/c026-berlin-1945-05-08.json",
+      "fixture": "charts/c026-berlin-1945-05-08.json",
+      "sha256": "95d6e6a80c29f4cbd66a980f3e50ff70351a0e05136c7e0c41aaa103c18a8338",
+      "present": 8
+    },
+    {
+      "file": "doshas/charts/c027-reykjavik-1975-06-21.json",
+      "fixture": "charts/c027-reykjavik-1975-06-21.json",
+      "sha256": "0b000b1609aa17d596c0cdebddca3f806b70b1a7b02c2ac048e1bc52826f34af",
+      "present": 15
+    },
+    {
+      "file": "doshas/charts/c028-troms-1988-06-21.json",
+      "fixture": "charts/c028-troms-1988-06-21.json",
+      "sha256": "32491177ec6f993f104d343178a174e0ca610fdf0472e9871e962f38d49d3af0",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c029-troms-1988-12-21.json",
+      "fixture": "charts/c029-troms-1988-12-21.json",
+      "sha256": "d2cfbe126f4972fac139f6a7fa1ac75518a468187579e5fee83d2e2264609696",
+      "present": 6
+    },
+    {
+      "file": "doshas/charts/c030-istanbul-2016-09-07.json",
+      "fixture": "charts/c030-istanbul-2016-09-07.json",
+      "sha256": "95875b8212be4a9734813f058f5ea4d75551548fba836e4b328cde2e44c94bca",
+      "present": 10
+    },
+    {
+      "file": "doshas/charts/c031-cairo-2023-04-28.json",
+      "fixture": "charts/c031-cairo-2023-04-28.json",
+      "sha256": "f24abbde0cc154fb9d55c6d30562fcae214017705ac84f8e2bb615885ea173e9",
+      "present": 13
+    },
+    {
+      "file": "doshas/charts/c032-nairobi-1963-12-12.json",
+      "fixture": "charts/c032-nairobi-1963-12-12.json",
+      "sha256": "93bed4151e1ba369ae515b0bf0ade028cc64eb7a932e9e37f201a2c4661258a3",
+      "present": 9
+    },
+    {
+      "file": "doshas/charts/c033-cape-town-1990-02-11.json",
+      "fixture": "charts/c033-cape-town-1990-02-11.json",
+      "sha256": "45ddd557aa367239290832abd1d5dfe47a8378cfaf8bfa01df94640860890c41",
+      "present": 14
+    },
+    {
+      "file": "doshas/charts/c034-tehran-1979-02-11.json",
+      "fixture": "charts/c034-tehran-1979-02-11.json",
+      "sha256": "e2247fbf7f30c8450955a3aec9ba0c0ace230a9b4226b75333922301517d9422",
+      "present": 13
+    },
+    {
+      "file": "doshas/charts/c035-new-york-2021-03-14.json",
+      "fixture": "charts/c035-new-york-2021-03-14.json",
+      "sha256": "d35bdafa3477a5362d0257c26a0f182361f2c71fa5043fc76448bd125ea7a75b",
+      "present": 9
+    },
+    {
+      "file": "doshas/charts/c036-new-york-2021-11-07.json",
+      "fixture": "charts/c036-new-york-2021-11-07.json",
+      "sha256": "0ac3f514a01aa37e46c4cca2b5cee2eae68b8c5aea9d49a3e59f9ac3b480a673",
+      "present": 12
+    },
+    {
+      "file": "doshas/charts/c037-new-york-2021-11-07.json",
+      "fixture": "charts/c037-new-york-2021-11-07.json",
+      "sha256": "7869b602f08656d5e2fc73a3bc99194b8e19ba6023f926d2e4ea1961f7af9b6f",
+      "present": 12
+    },
+    {
+      "file": "doshas/charts/c038-new-york-1880-04-01.json",
+      "fixture": "charts/c038-new-york-1880-04-01.json",
+      "sha256": "4b3ebb52e6ac8f0f39f38795e6e864881fb08be246b98928f0d47462b9f190c2",
+      "present": 19
+    },
+    {
+      "file": "doshas/charts/c039-mexico-city-1985-09-19.json",
+      "fixture": "charts/c039-mexico-city-1985-09-19.json",
+      "sha256": "bee61456f157b429f5d367efe1264e9c72f03de40c31a1a14f71846e20758ace",
+      "present": 10
+    },
+    {
+      "file": "doshas/charts/c040-buenos-aires-1986-06-22.json",
+      "fixture": "charts/c040-buenos-aires-1986-06-22.json",
+      "sha256": "c6b97e0b40910d99140c7840926f11fd23ebe0559aef93756a1ec84384e2518a",
+      "present": 8
+    },
+    {
+      "file": "doshas/charts/c041-la-paz-2010-07-10.json",
+      "fixture": "charts/c041-la-paz-2010-07-10.json",
+      "sha256": "5dc15bdf269fce36a536b4137d16c9c2c765782d11d46e89346c1967745fb4b7",
+      "present": 13
+    },
+    {
+      "file": "doshas/charts/c042-quito-2001-01-01.json",
+      "fixture": "charts/c042-quito-2001-01-01.json",
+      "sha256": "36efe183c1f9da3570988dfae861196d0fde0f291fcb81f56a4e6d6b4a9addbb",
+      "present": 10
+    },
+    {
+      "file": "doshas/charts/c043-fairbanks-2015-06-21.json",
+      "fixture": "charts/c043-fairbanks-2015-06-21.json",
+      "sha256": "a26e7c7fd4086ace59c2796284c81e8637c4fd43fd4466b0f0e6eff6d360efe1",
+      "present": 14
+    },
+    {
+      "file": "doshas/charts/c044-ushuaia-1995-12-22.json",
+      "fixture": "charts/c044-ushuaia-1995-12-22.json",
+      "sha256": "5d43b955a5ea243dbe6cfc929e72a4d66c446cd3d61d60267ba0bf7d7516a137",
+      "present": 10
+    },
+    {
+      "file": "doshas/charts/c045-sao-paulo-2019-02-16.json",
+      "fixture": "charts/c045-sao-paulo-2019-02-16.json",
+      "sha256": "08cb93622fcd1b17cc2314dbca1f37f558c90b5ec8db3af07fa535d6286fd359",
+      "present": 7
+    },
+    {
+      "file": "doshas/charts/c046-kathmandu-2350-01-01.json",
+      "fixture": "charts/c046-kathmandu-2350-01-01.json",
+      "sha256": "4a1b44a8efc6233327c49d9f8347d3a52ee965e22009a15017c6b794cc37f2ab",
+      "present": 16
+    },
+    {
+      "file": "doshas/charts/c047-london-1800-01-02.json",
+      "fixture": "charts/c047-london-1800-01-02.json",
+      "sha256": "c2e42ea01178bfb6fac9be90731d79906ad9ea04e177ec34e158d5b85bef4b07",
+      "present": 13
+    },
+    {
+      "file": "doshas/charts/c048-kathmandu-2399-12-30.json",
+      "fixture": "charts/c048-kathmandu-2399-12-30.json",
+      "sha256": "bd60921943bed24c79bf722cfe69ca9f0012d8817174ae72c2444abc72ada0d9",
+      "present": 10
+    },
+    {
+      "file": "doshas/charts/c049-kathmandu-2010-06-01.json",
+      "fixture": "charts/c049-kathmandu-2010-06-01.json",
+      "sha256": "575095b610fa4f44c2a133b8d175d369665de1d0c0114cd3e0969cff7d31d11b",
+      "present": 9
+    },
+    {
+      "file": "doshas/charts/c050-kathmandu-2015-03-01.json",
+      "fixture": "charts/c050-kathmandu-2015-03-01.json",
+      "sha256": "6dbe0a7087ebebe036f5860e75db9dab6f47300155188e10276f9d8292ee10b3",
+      "present": 8
+    },
+    {
+      "file": "doshas/charts/c051-kathmandu-2020-04-13.json",
+      "fixture": "charts/c051-kathmandu-2020-04-13.json",
+      "sha256": "f45e073fe7886d51e792524adc9db3b21d7639878d164ffc8a6f0a2b74865906",
+      "present": 18
+    },
+    {
+      "file": "doshas/charts/c052-kathmandu-2020-04-13.json",
+      "fixture": "charts/c052-kathmandu-2020-04-13.json",
+      "sha256": "ea413645da2d334ebf490a9e7b7bb9d54b09dd646d63b27d7986441fadf6c1f2",
+      "present": 16
+    },
+    {
+      "file": "doshas/charts/c053-kathmandu-2021-01-30.json",
+      "fixture": "charts/c053-kathmandu-2021-01-30.json",
+      "sha256": "e4dc758963a2c915c8c35e0b632291f4bb7e2fd9cfc69562753b4b9e77eb9b2f",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c054-kathmandu-2020-05-05.json",
+      "fixture": "charts/c054-kathmandu-2020-05-05.json",
+      "sha256": "54a35089074b57ccfdf56b909ec3859d7492b3dc9af41318a0aad107e4c096c0",
+      "present": 11
+    },
+    {
+      "file": "doshas/charts/c055-kathmandu-2024-04-09.json",
+      "fixture": "charts/c055-kathmandu-2024-04-09.json",
+      "sha256": "a390f9f88c8a4697da3c210fc4127f1796af787774244b6f41800e78497aa405",
+      "present": 11
+    },
+    {
+      "file": "doshas/variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "sha256": "fc95f203c345671153cfd5712c874ac28ef47694d26294fb91fac293f58ad031",
+      "present": 15
+    },
+    {
+      "file": "doshas/variants/c001-kathmandu-1990-04-14--geocentric.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--geocentric.json",
+      "sha256": "bef5b3251455a888238260e1913070b6f33ef7f12b6b8d74df323dda62fe9e6c",
+      "present": 12
+    },
+    {
+      "file": "doshas/variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "sha256": "84d36a2513288d9c0b8373c19858f63698cacfbcec47a6a09da358aafbe55056",
+      "present": 16
+    },
+    {
+      "file": "doshas/variants/c001-kathmandu-1990-04-14--raman.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--raman.json",
+      "sha256": "a9a7663fdb2f5545114997526cf98017b4ee35f8bf80f2dde69bf2c4ed358c41",
+      "present": 16
+    },
+    {
+      "file": "doshas/variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "sha256": "0d3fc40781db33735952ca38c12bba68b82125e99071d5126a97d030740bd0d2",
+      "present": 15
+    },
+    {
+      "file": "doshas/variants/c001-kathmandu-1990-04-14--surya.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--surya.json",
+      "sha256": "f4177ebda373dd064d997183a711fe7fb2fb4ea69cebdd7e769222df35070015",
+      "present": 13
+    },
+    {
+      "file": "doshas/variants/c001-kathmandu-1990-04-14--tropical.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--tropical.json",
+      "sha256": "5205544663a3e88b762e167eda3e001f1b5317ee4ba79abc06b4a721ebd4cb8e",
+      "present": 12
+    },
+    {
+      "file": "doshas/variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "sha256": "f124089be1cf1c227061505f7c0b616a42db84742c6b8ef1abc95dc143c5f097",
+      "present": 16
+    },
+    {
+      "file": "doshas/variants/c001-kathmandu-1990-04-14--true-node.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--true-node.json",
+      "sha256": "df6bcfa99df9424bd20d9ba0b255693e1b3b548b9392393be56a46369cb7b501",
+      "present": 12
+    },
+    {
+      "file": "doshas/variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "fixture": "variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "sha256": "bf824882c96e36857fafa49ef860b65782a749e42a0adabdd23db5dd976b17a3",
+      "present": 11
+    },
+    {
+      "file": "doshas/variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "sha256": "0bcf63f3c749b7ce4f3eb8ee579dc1b43d0611580cfb065d0dd1c81f74f95bc5",
+      "present": 10
+    },
+    {
+      "file": "doshas/variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "sha256": "0a7f1d8092fbe358054fe18c908f06eef256cef523f5f421ac90d4dd8e71ef54",
+      "present": 12
+    },
+    {
+      "file": "doshas/variants/c009-mumbai-1969-07-20--raman.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--raman.json",
+      "sha256": "26bc436fb2a6007a6429b95e009d74567d8f7c66ca2774eef5577fc3696b0237",
+      "present": 13
+    },
+    {
+      "file": "doshas/variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "sha256": "47a24c0fd1d94a7d67f0b1e534b505535fd6c7bb2a363442b0ddf9002d443a06",
+      "present": 12
+    },
+    {
+      "file": "doshas/variants/c009-mumbai-1969-07-20--surya.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--surya.json",
+      "sha256": "f2126c71dca89997c13a22648702239c9ae4e5864605b3f2e604820d49bf6a4d",
+      "present": 12
+    },
+    {
+      "file": "doshas/variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "sha256": "c99452bf34cd7c3094840e0664d0f2b2d60acd1c5db11c0e1b8918e421ab6c25",
+      "present": 12
+    },
+    {
+      "file": "doshas/variants/c009-mumbai-1969-07-20--true-node.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--true-node.json",
+      "sha256": "1cc1ab2cf576d02b5ab6915226354b587d06ff2f247369be76c2fee22e194645",
+      "present": 8
+    },
+    {
+      "file": "doshas/variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "fixture": "variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "sha256": "55f0f7709de6515a53c919264b702a94d96ae284eb716f15bcc2cdab79bf9213",
+      "present": 11
+    },
+    {
+      "file": "doshas/variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "fixture": "variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "sha256": "981a72edcf02b5a777a5e7be6f648f9f18c179f9fb05e00a6691d6445a58feb1",
+      "present": 11
+    },
+    {
+      "file": "doshas/variants/c018-sydney-2000-09-15--raman.json",
+      "fixture": "variants/c018-sydney-2000-09-15--raman.json",
+      "sha256": "9119d6047a2ae9993cc763912eca3c697d527331c21485e6cf213cbe3d70be81",
+      "present": 10
+    },
+    {
+      "file": "doshas/variants/c018-sydney-2000-09-15--tropical.json",
+      "fixture": "variants/c018-sydney-2000-09-15--tropical.json",
+      "sha256": "06ade6dfb5fd870e4fe74be4b46caf8093bc6c1377182a1d4035cdd984699473",
+      "present": 8
+    },
+    {
+      "file": "doshas/variants/c018-sydney-2000-09-15--true-chitra.json",
+      "fixture": "variants/c018-sydney-2000-09-15--true-chitra.json",
+      "sha256": "f2d3f587c29b5860bb34d346b850d171efb2575278a0f35f710473d3501b0ec8",
+      "present": 11
+    },
+    {
+      "file": "doshas/variants/c018-sydney-2000-09-15--true-node.json",
+      "fixture": "variants/c018-sydney-2000-09-15--true-node.json",
+      "sha256": "0e9ebdd054820fe2230b268fa3d7bbd9d0ebfc2211f8a7ff7ba1656f6ba23429",
+      "present": 8
+    },
+    {
+      "file": "doshas/variants/c027-reykjavik-1975-06-21--tropical.json",
+      "fixture": "variants/c027-reykjavik-1975-06-21--tropical.json",
+      "sha256": "8a9d3af52b3e38ddc92783fadf447f904a3b81a66f77d043fb11603c293decb6",
+      "present": 13
+    },
+    {
+      "file": "doshas/variants/c033-cape-town-1990-02-11--tropical.json",
+      "fixture": "variants/c033-cape-town-1990-02-11--tropical.json",
+      "sha256": "87588d0925adc85a6f541668e26baed964d644bddc64215d99294fd223990901",
+      "present": 12
+    },
+    {
+      "file": "doshas/variants/c033-cape-town-1990-02-11--true-node.json",
+      "fixture": "variants/c033-cape-town-1990-02-11--true-node.json",
+      "sha256": "855a41281fce5e369301fc08299a77b7f41e840e6df325b6ba8421dfed51ebf9",
+      "present": 12
+    },
+    {
+      "file": "doshas/variants/c040-buenos-aires-1986-06-22--true-node.json",
+      "fixture": "variants/c040-buenos-aires-1986-06-22--true-node.json",
+      "sha256": "1c55b257321463effc2b3b3fa58da1983cadd4bba9f13e497c8fac18d319c4c1",
+      "present": 7
+    },
+    {
+      "file": "doshas/variants/c041-la-paz-2010-07-10--geocentric.json",
+      "fixture": "variants/c041-la-paz-2010-07-10--geocentric.json",
+      "sha256": "9ae9ca77871bc4ad8c152363e1f49549d418c2a20c0f6c7ebd07781c954de58a",
+      "present": 9
+    },
+    {
+      "file": "doshas/variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "sha256": "2a81b9d533c1e45f9c541ed8b2f875327d42359a2b5e34257854c6339a4ded8e",
+      "present": 8
+    },
+    {
+      "file": "doshas/variants/c049-kathmandu-2010-06-01--geocentric.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--geocentric.json",
+      "sha256": "87b06f3afd87bef729a2c6cfbd740d198431b16f44799e969a114fbdd435159d",
+      "present": 7
+    },
+    {
+      "file": "doshas/variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "sha256": "67c04a6b45f3532b606e0873fc13143c807dde8cd67e1525954a12b5dd0c125f",
+      "present": 9
+    },
+    {
+      "file": "doshas/variants/c049-kathmandu-2010-06-01--raman.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--raman.json",
+      "sha256": "0d2f66524c4b933edfa07238b55ac0d9cd3bf1c3b21079bd09e15be79cc3cca7",
+      "present": 8
+    },
+    {
+      "file": "doshas/variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "sha256": "9d8f08a7e45904b4f1b76af0b0088d89449907ce7573207130d5f761398cbbe2",
+      "present": 9
+    },
+    {
+      "file": "doshas/variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "sha256": "12ce9d2744cc40816d05d58dbf145c11c6e18d91c50dff5f2f1481d09e71af5b",
+      "present": 9
+    },
+    {
+      "file": "doshas/variants/c050-kathmandu-2015-03-01--geocentric.json",
+      "fixture": "variants/c050-kathmandu-2015-03-01--geocentric.json",
+      "sha256": "261b7c49036efff78ed7d8f2e312e49128c4fe7361847c565fc91a8f2a185465",
+      "present": 6
+    },
+    {
+      "file": "doshas/variants/c052-kathmandu-2020-04-13--geocentric.json",
+      "fixture": "variants/c052-kathmandu-2020-04-13--geocentric.json",
+      "sha256": "19f6549c923bae0538a929d07c98797f291d1cf93358c7d73ee09e6118dac34d",
+      "present": 13
+    },
+    {
+      "file": "doshas/variants/c052-kathmandu-2020-04-13--true-node.json",
+      "fixture": "variants/c052-kathmandu-2020-04-13--true-node.json",
+      "sha256": "a8d24bedf557faf96bf793a2e346d6eeb8091b963fec0e700ffdad264be546b7",
+      "present": 13
+    },
+    {
+      "file": "doshas/variants/c055-kathmandu-2024-04-09--geocentric.json",
+      "fixture": "variants/c055-kathmandu-2024-04-09--geocentric.json",
+      "sha256": "6fa1cfe01a5a228c391f6d7658ee78f0d0d044aabfce611019f9c92eeb81401c",
+      "present": 9
+    }
+  ],
+  "counts": {
+    "files": 93,
+    "rules": 52,
+    "presences": 1024
+  }
+}

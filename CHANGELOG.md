@@ -9,6 +9,23 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.11.0 — 2026-09-15
+
+**Values:** none moved; the doshas of 93 charts and the 52 rules that decide
+them are new.
+
+`baseline/doshas/` holds the engine's natal dosha evaluator run on each of the
+93 fixtures that record their positions. It reads the recorded chart and, for
+77 of them, the recorded panchanga at birth with the Moon's pada, both
+repeated as `inputs`. `present` records each present dosha's references,
+planets, houses, severity, fired cancellations and net status, 1024
+presences in all. `rules.json` holds every rule in the engine's own shape: its
+conditions or reference groups, cancellations, severity rule,
+full-cancellation threshold and remedy keys, and the custom hook for the
+sixteen rules the engine computes in code. `validate.py` checks the inputs,
+every presence against the rules, its houses against its planets', and each
+net status against its cancellations and threshold.
+
 ## 0.10.0 — 2026-09-15
 
 **Values:** none moved; the yogas of 93 charts and the 605 rules that decide

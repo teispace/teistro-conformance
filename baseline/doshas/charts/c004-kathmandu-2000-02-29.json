@@ -1,0 +1,243 @@
+{
+  "schema": "teistro-conformance/baseline-doshas/1",
+  "fixture": "charts/c004-kathmandu-2000-02-29.json",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "inputs": "the fixture's positions.bodies for the nine grahas and the lagna, with the chara karakas derived from their longitudes, and its panchanga at birth with the Moon's pada where the fixture records one (no sankranti or eclipse flag)"
+  },
+  "inputs": {
+    "bodies": {
+      "SUN": {
+        "sidereal_longitude_deg": 316.1094303283201,
+        "degrees_in_sign": 16.1094303283201,
+        "sign_index": 10,
+        "house": 10,
+        "dignity": "NEUTRAL",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": true,
+        "avastha_baladi": "YUVA"
+      },
+      "MOON": {
+        "sidereal_longitude_deg": 248.11416948904204,
+        "degrees_in_sign": 8.11416948904204,
+        "sign_index": 8,
+        "house": 8,
+        "dignity": "ENEMY",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "KUMARA"
+      },
+      "MARS": {
+        "sidereal_longitude_deg": 349.1863080811719,
+        "degrees_in_sign": 19.1863080811719,
+        "sign_index": 11,
+        "house": 11,
+        "dignity": "GREAT_FRIEND",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "KUMARA"
+      },
+      "MERCURY": {
+        "sidereal_longitude_deg": 318.8903474999928,
+        "degrees_in_sign": 18.8903474999928,
+        "sign_index": 10,
+        "house": 10,
+        "dignity": "FRIEND",
+        "is_retrograde": true,
+        "combust": "deep-combust",
+        "is_vargottama": false,
+        "avastha_baladi": "VRIDDHA"
+      },
+      "JUPITER": {
+        "sidereal_longitude_deg": 8.67660130413262,
+        "degrees_in_sign": 8.67660130413262,
+        "sign_index": 0,
+        "house": 12,
+        "dignity": "GREAT_FRIEND",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "KUMARA"
+      },
+      "VENUS": {
+        "sidereal_longitude_deg": 289.80428060227797,
+        "degrees_in_sign": 19.80428060227797,
+        "sign_index": 9,
+        "house": 9,
+        "dignity": "GREAT_FRIEND",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "KUMARA"
+      },
+      "SATURN": {
+        "sidereal_longitude_deg": 18.490985077682218,
+        "degrees_in_sign": 18.490985077682218,
+        "sign_index": 0,
+        "house": 12,
+        "dignity": "DEBILITATED",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "VRIDDHA"
+      },
+      "RAHU": {
+        "sidereal_longitude_deg": 98.07359089679632,
+        "degrees_in_sign": 8.07359089679632,
+        "sign_index": 3,
+        "house": 3,
+        "dignity": "NEUTRAL",
+        "is_retrograde": true,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "VRIDDHA"
+      },
+      "KETU": {
+        "sidereal_longitude_deg": 278.0735908967963,
+        "degrees_in_sign": 8.0735908967963,
+        "sign_index": 9,
+        "house": 9,
+        "dignity": "NEUTRAL",
+        "is_retrograde": true,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "VRIDDHA"
+      },
+      "LAGNA": {
+        "sidereal_longitude_deg": 57.348999392561666,
+        "degrees_in_sign": 27.348999392561666,
+        "sign_index": 1,
+        "house": 1,
+        "dignity": "NEUTRAL",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "BALA"
+      }
+    },
+    "chara_karaka_7": {
+      "VENUS": "AK",
+      "MARS": "AmK",
+      "MERCURY": "BK",
+      "SATURN": "MK",
+      "SUN": "PK",
+      "JUPITER": "GK",
+      "MOON": "DK"
+    },
+    "chara_karaka_8": {
+      "RAHU": "AK",
+      "VENUS": "AmK",
+      "MARS": "BK",
+      "MERCURY": "MK",
+      "SATURN": "PK",
+      "SUN": "GK",
+      "JUPITER": "DK",
+      "MOON": "PiK"
+    },
+    "panchanga": {
+      "tithi_number": 25,
+      "paksha": "krishna",
+      "vara": "MANGALAVARA",
+      "nakshatra_index": 18,
+      "moon_pada": 3,
+      "yoga_index": 15,
+      "karana_index": 5
+    }
+  },
+  "present": {
+    "MANGAL_DOSHA": {
+      "present_from": ["Moon"],
+      "planets": ["MARS"],
+      "houses": [11],
+      "severity": 50,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "PITRA_DOSHA": {
+      "present_from": ["9th lord in 6th/8th/12th"],
+      "planets": ["SATURN"],
+      "houses": [12],
+      "severity": 25,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "BRAHMA_DOSHA": {
+      "present_from": ["9th lord debilitated"],
+      "planets": [],
+      "houses": [],
+      "severity": 25,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "MOOL_DOSHA": {
+      "present_from": ["Birth in Mool nakshatras (Mool/Jyeshtha/Ashlesha/Magha/Revati)"],
+      "planets": [],
+      "houses": [],
+      "severity": 70,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "KRISHNA_PAKSHA_DOSHA": {
+      "present_from": ["Lagna"],
+      "planets": [],
+      "houses": [],
+      "severity": 30,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "YAMAGHANTA_DOSHA": {
+      "present_from": ["Lagna"],
+      "planets": [],
+      "houses": [],
+      "severity": 40,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "CHANDRA_DOSHA": {
+      "present_from": ["Moon in dusthana (6/8/12)"],
+      "planets": ["MOON"],
+      "houses": [8],
+      "severity": 20,
+      "cancellations": ["Jupiter aspects Moon"],
+      "net_status": "fully-cancelled"
+    },
+    "DARIDRA_DOSHA": {
+      "present_from": ["11th lord in 6th/8th/12th"],
+      "planets": ["JUPITER"],
+      "houses": [12],
+      "severity": 30,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "PUTRA_DOSHA": {
+      "present_from": ["Jupiter combust"],
+      "planets": [],
+      "houses": [],
+      "severity": 25,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "MATRI_DOSHA": {
+      "present_from": ["Moon in 6th/8th/12th"],
+      "planets": ["MOON"],
+      "houses": [8],
+      "severity": 25,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "BADHAKA_DOSHA": {
+      "present_from": ["Ketu in badhaka-sthana (9th house)", "Badhakesh (Saturn, lord of 9th) in dusthana 12th"],
+      "planets": ["KETU", "SATURN"],
+      "houses": [9, 12],
+      "severity": 80,
+      "cancellations": [],
+      "net_status": "active"
+    }
+  }
+}

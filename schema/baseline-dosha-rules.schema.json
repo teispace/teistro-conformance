@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-dosha-rules.schema.json",
+  "title": "The engine's natal dosha rules",
+  "description": "Every rule the engine's natal dosha evaluator reads, in its evaluation order and its own shape, without names, commentary or tags: its key, category, scope, citation, its conditions or reference-point condition groups (at least one group must hold, each adding its label), cancellations, severity rule, full-cancellation threshold, remedy keys, and the custom severity or result hook the engine computes it with where it has one.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "rules"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-dosha-rules/1"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "category",
+          "source",
+          "severityRule",
+          "remedyKeys"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Za-z0-9_]*$"
+          },
+          "category": {
+            "type": "string"
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "text"
+            ],
+            "properties": {
+              "text": {
+                "type": "string"
+              }
+            }
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/condition"
+            }
+          },
+          "cancellations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/condition"
+            }
+          },
+          "applicableTo": {
+            "enum": [
+              "natal",
+              "all"
+            ]
+          },
+          "referenceConditions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "reference",
+                "label",
+                "conditions"
+              ],
+              "properties": {
+                "reference": {
+                  "enum": [
+                    "lagna",
+                    "moon",
+                    "venus"
+                  ]
+                },
+                "label": {
+                  "type": "string"
+                },
+                "conditions": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/condition"
+                  }
+                }
+              }
+            }
+          },
+          "severityRule": {
+            "type": "object",
+            "required": [
+              "type"
+            ],
+            "properties": {
+              "type": {
+                "enum": [
+                  "fixed",
+                  "house-weighted",
+                  "planet-strength-inverse",
+                  "count-based",
+                  "koot-shortfall"
+                ]
+              }
+            }
+          },
+          "fullCancellationThreshold": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "remedyKeys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "customSeverityKey": {
+            "type": "string"
+          },
+          "customResultKey": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "condition": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

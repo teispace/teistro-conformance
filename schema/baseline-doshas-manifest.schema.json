@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-doshas-manifest.schema.json",
+  "title": "The manifest of the dosha corpus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "provenance",
+    "rules",
+    "files",
+    "counts"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-doshas-manifest/1"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "evidence_rank",
+        "engine_version",
+        "exporter_version"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "evidence_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "string"
+        }
+      }
+    },
+    "rules": {
+      "const": "doshas/rules.json"
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "file",
+          "fixture",
+          "sha256",
+          "present"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "fixture": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "present": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "files",
+        "rules",
+        "presences"
+      ],
+      "properties": {
+        "files": {
+          "type": "integer"
+        },
+        "rules": {
+          "type": "integer"
+        },
+        "presences": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

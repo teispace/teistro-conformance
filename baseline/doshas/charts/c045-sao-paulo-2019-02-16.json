@@ -1,0 +1,211 @@
+{
+  "schema": "teistro-conformance/baseline-doshas/1",
+  "fixture": "charts/c045-sao-paulo-2019-02-16.json",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "inputs": "the fixture's positions.bodies for the nine grahas and the lagna, with the chara karakas derived from their longitudes, and its panchanga at birth with the Moon's pada where the fixture records one (no sankranti or eclipse flag)"
+  },
+  "inputs": {
+    "bodies": {
+      "SUN": {
+        "sidereal_longitude_deg": 304.00636428907524,
+        "degrees_in_sign": 4.00636428907524,
+        "sign_index": 10,
+        "house": 4,
+        "dignity": "NEUTRAL",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "BALA"
+      },
+      "MOON": {
+        "sidereal_longitude_deg": 87.4225546461837,
+        "degrees_in_sign": 27.4225546461837,
+        "sign_index": 2,
+        "house": 8,
+        "dignity": "NEUTRAL",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": true,
+        "avastha_baladi": "MRITA"
+      },
+      "MARS": {
+        "sidereal_longitude_deg": 7.670344890496466,
+        "degrees_in_sign": 7.670344890496466,
+        "sign_index": 0,
+        "house": 6,
+        "dignity": "MOOLTRIKONA",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "KUMARA"
+      },
+      "MERCURY": {
+        "sidereal_longitude_deg": 317.7709031720986,
+        "degrees_in_sign": 17.7709031720986,
+        "sign_index": 10,
+        "house": 4,
+        "dignity": "FRIEND",
+        "is_retrograde": false,
+        "combust": "combust",
+        "is_vargottama": false,
+        "avastha_baladi": "YUVA"
+      },
+      "JUPITER": {
+        "sidereal_longitude_deg": 236.20340783569998,
+        "degrees_in_sign": 26.20340783569998,
+        "sign_index": 7,
+        "house": 1,
+        "dignity": "NEUTRAL",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "BALA"
+      },
+      "VENUS": {
+        "sidereal_longitude_deg": 261.07650185731075,
+        "degrees_in_sign": 21.07650185731075,
+        "sign_index": 8,
+        "house": 2,
+        "dignity": "FRIEND",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "VRIDDHA"
+      },
+      "SATURN": {
+        "sidereal_longitude_deg": 262.51778525846953,
+        "degrees_in_sign": 22.51778525846953,
+        "sign_index": 8,
+        "house": 2,
+        "dignity": "FRIEND",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "VRIDDHA"
+      },
+      "RAHU": {
+        "sidereal_longitude_deg": 90.95327962572219,
+        "degrees_in_sign": 0.95327962572219,
+        "sign_index": 3,
+        "house": 9,
+        "dignity": "NEUTRAL",
+        "is_retrograde": true,
+        "combust": "none",
+        "is_vargottama": true,
+        "avastha_baladi": "MRITA"
+      },
+      "KETU": {
+        "sidereal_longitude_deg": 270.9532796257222,
+        "degrees_in_sign": 0.9532796257222,
+        "sign_index": 9,
+        "house": 3,
+        "dignity": "NEUTRAL",
+        "is_retrograde": true,
+        "combust": "none",
+        "is_vargottama": true,
+        "avastha_baladi": "MRITA"
+      },
+      "LAGNA": {
+        "sidereal_longitude_deg": 214.8431925853398,
+        "degrees_in_sign": 4.8431925853398,
+        "sign_index": 7,
+        "house": 1,
+        "dignity": "NEUTRAL",
+        "is_retrograde": false,
+        "combust": "none",
+        "is_vargottama": false,
+        "avastha_baladi": "MRITA"
+      }
+    },
+    "chara_karaka_7": {
+      "MOON": "AK",
+      "JUPITER": "AmK",
+      "SATURN": "BK",
+      "VENUS": "MK",
+      "MERCURY": "PK",
+      "MARS": "GK",
+      "SUN": "DK"
+    },
+    "chara_karaka_8": {
+      "RAHU": "AK",
+      "MOON": "AmK",
+      "JUPITER": "BK",
+      "SATURN": "MK",
+      "VENUS": "PK",
+      "MERCURY": "GK",
+      "MARS": "DK",
+      "SUN": "PiK"
+    },
+    "panchanga": {
+      "tithi_number": 12,
+      "paksha": "shukla",
+      "vara": "SHANIVARA",
+      "nakshatra_index": 6,
+      "moon_pada": 3,
+      "yoga_index": 2,
+      "karana_index": 1
+    }
+  },
+  "present": {
+    "PITRA_DOSHA": {
+      "present_from": ["9th lord in 6th/8th/12th", "Rahu in 9th house"],
+      "planets": ["MOON", "RAHU"],
+      "houses": [8, 9],
+      "severity": 50,
+      "cancellations": ["Jupiter aspects 9th house"],
+      "net_status": "partially-cancelled"
+    },
+    "KEMDRUM_DOSHA": {
+      "present_from": ["Lagna"],
+      "planets": [],
+      "houses": [],
+      "severity": 70,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "CHANDRA_DOSHA": {
+      "present_from": ["Moon in dusthana (6/8/12)"],
+      "planets": ["MOON"],
+      "houses": [8],
+      "severity": 20,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "KENDRADHIPATI_DOSHA": {
+      "present_from": ["Natural benefic owns the 7th house"],
+      "planets": [],
+      "houses": [],
+      "severity": 40,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "DARIDRA_DOSHA": {
+      "present_from": ["Lagna lord in 6th/8th/12th"],
+      "planets": ["MARS"],
+      "houses": [6],
+      "severity": 30,
+      "cancellations": ["planet-in-kendra"],
+      "net_status": "fully-cancelled"
+    },
+    "MATRI_DOSHA": {
+      "present_from": ["Moon in 6th/8th/12th"],
+      "planets": ["MOON"],
+      "houses": [8],
+      "severity": 25,
+      "cancellations": [],
+      "net_status": "active"
+    },
+    "BADHAKA_DOSHA": {
+      "present_from": ["Rahu in badhaka-sthana (9th house)", "Badhakesh (Moon, lord of 9th) in dusthana 8th"],
+      "planets": ["RAHU", "MOON"],
+      "houses": [8, 9],
+      "severity": 80,
+      "cancellations": [],
+      "net_status": "active"
+    }
+  }
+}

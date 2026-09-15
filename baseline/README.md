@@ -336,3 +336,49 @@ schemes against the degrees, every present rule against `rules.json`, every
 presence's houses against its planets' recorded houses, and the manifest's
 counts.
 
+## The doshas (`teistro-conformance/baseline-doshas/1`)
+
+`doshas/` holds the engine's natal dosha evaluator run on each of the 93
+fixtures that record their positions: every rule it evaluates for a birth
+chart, over the fixture's **recorded** chart and, for the 77 that record one,
+its **recorded** panchanga at birth. `inputs.bodies` and the chara karakas are
+the yogas' inputs. `inputs.panchanga` repeats the recorded tithi number and
+paksha, vara, nakshatra, yoga and karana indices, and the Moon's recorded
+pada; it is null where the fixture records no panchanga. No sankranti or
+eclipse flag is passed, as the engine's own charts pass none, so those two
+doshas are never present.
+
+`present` records every dosha that is present:
+- `present_from`: the references it was found from (`Lagna` for a rule with
+  plain conditions; `Lagna`, `Moon` or `Venus` for a reference group; or a
+  custom hook's own descriptions);
+- `planets` and `houses`: the planets involved and their houses;
+- `severity`: its severity out of 100;
+- `cancellations`: the cancellations that fired, by the engine's labels;
+- `net_status`: `active`, `partially-cancelled` or `fully-cancelled`.
+
+A dosha that is not listed is absent.
+
+`doshas/rules.json` holds the 52 rules in the engine's evaluation
+order and its own shape, without names, commentary or tags. Each rule has:
+- its key, category, scope and citation;
+- `conditions` or `referenceConditions`, at least one group of which must
+  hold;
+- `cancellations`;
+- `severityRule`, one of `fixed`, `house-weighted`, `planet-strength-inverse`,
+  `count-based` or `koot-shortfall`;
+- `fullCancellationThreshold` and `remedyKeys`.
+
+Sixteen rules name a `customResultKey`: Kalsarpa, its twelve named forms,
+Kala Amrita, Mrityu Bhaga, Dagdha Rashi and Badhaka. The engine computes these
+in code rather than from their conditions.
+
+`validate.py` checks:
+- each file's chart inputs, the same way as the yogas';
+- its panchanga against the fixture;
+- that every present dosha is in `rules.json` and has at least one reference;
+- every presence's houses against its planets';
+- every net status against the cancellations that fired and the rule's
+  threshold (or, where the rule gives none, the number of references);
+- the manifest's counts.
+

@@ -465,41 +465,59 @@ YOGA_BODY_FIELDS = (
 )
 
 
-def yogas(failures: list[str]) -> int:
-    """The yogas: each file's inputs are its fixture's recorded bodies, its
-    chara karakas rank the grahas by degrees in sign (Rahu by thirty less),
-    every present rule is one `rules.json` ships, and each presence's houses
-    are its planets' recorded houses, distinct and ascending."""
-    rules_path = ROOT / "baseline" / "yogas" / "rules.json"
-    rules = against_schema("baseline-yoga-rules", rules_path, failures)
-    keys = [rule["key"] for rule in (rules or {}).get("rules", [])]
+def recorded_chart(name: str, inputs: dict, fixture: dict) -> list[str]:
+    """What a rule corpus repeats of a fixture's chart: its bodies as
+    recorded, and chara karakas that rank the grahas by degrees in sign (Rahu
+    by thirty less)."""
+    found = []
+    recorded = fixture["positions"]["bodies"]
+    bodies = inputs.get("bodies", {})
+    for body, fields in bodies.items():
+        if any(fields.get(f) != recorded[body].get(f) for f in YOGA_BODY_FIELDS):
+            found.append(f"{name}: inputs.bodies.{body} differs from the fixture's")
+    degrees = {g: bodies[g]["degrees_in_sign"] for g in SEVEN}
+    by_degree = sorted(SEVEN, key=lambda g: -degrees[g])
+    if inputs.get("chara_karaka_7") != dict(zip(by_degree, SEVEN_KARAKAS)):
+        found.append(f"{name}: the seven chara karakas do not rank the grahas by degree")
+    degrees["RAHU"] = 30 - bodies["RAHU"]["degrees_in_sign"]
+    by_degree = sorted(degrees, key=lambda g: -degrees[g])
+    if inputs.get("chara_karaka_8") != dict(zip(by_degree, EIGHT_KARAKAS)):
+        found.append(f"{name}: the eight chara karakas do not rank the grahas by degree")
+    return found
+
+
+def rule_keys(directory: str, schema: str, failures: list[str]) -> list[dict]:
+    """A rule corpus's `rules.json`, against its schema, each key once."""
+    path = ROOT / "baseline" / directory / "rules.json"
+    rules = (against_schema(schema, path, failures) or {}).get("rules", [])
+    keys = [rule["key"] for rule in rules]
     if len(keys) != len(set(keys)):
-        failures.append("baseline/yogas/rules.json: a rule key repeats")
-    known = set(keys)
+        failures.append(f"baseline/{directory}/rules.json: a rule key repeats")
+    return rules
+
+
+def presence_houses(name: str, key: str, presence: dict, bodies: dict) -> list[str]:
+    """A presence's houses are its planets' recorded houses, distinct and
+    ascending, the lagna left out."""
+    houses = sorted({bodies[g]["house"] for g in presence["planets"] if g in bodies and g != "LAGNA"})
+    return [] if presence["houses"] == houses else [f"{name}: {key}'s houses are not its planets' houses"]
+
+
+def yogas(failures: list[str]) -> int:
+    """The yogas: each file's inputs are its fixture's recorded chart, every
+    present rule is one `rules.json` ships, and each presence's houses are
+    its planets' recorded houses."""
+    rules = rule_keys("yogas", "baseline-yoga-rules", failures)
+    known = {rule["key"] for rule in rules}
 
     def check(name, entry, document, fixture, systems):
-        found = []
-        recorded = fixture["positions"]["bodies"]
         inputs = document.get("inputs", {})
-        bodies = inputs.get("bodies", {})
-        for body, fields in bodies.items():
-            if any(fields.get(f) != recorded[body].get(f) for f in YOGA_BODY_FIELDS):
-                found.append(f"{name}: inputs.bodies.{body} differs from the fixture's")
-        degrees = {g: bodies[g]["degrees_in_sign"] for g in SEVEN}
-        by_degree = sorted(SEVEN, key=lambda g: -degrees[g])
-        if inputs.get("chara_karaka_7") != dict(zip(by_degree, SEVEN_KARAKAS)):
-            found.append(f"{name}: the seven chara karakas do not rank the grahas by degree")
-        degrees["RAHU"] = 30 - bodies["RAHU"]["degrees_in_sign"]
-        by_degree = sorted(degrees, key=lambda g: -degrees[g])
-        if inputs.get("chara_karaka_8") != dict(zip(by_degree, EIGHT_KARAKAS)):
-            found.append(f"{name}: the eight chara karakas do not rank the grahas by degree")
+        found = recorded_chart(name, inputs, fixture)
         present = document.get("present", {})
         for key, presence in present.items():
             if key not in known:
                 found.append(f"{name}: {key} is not a rule rules.json ships")
-            houses = sorted({bodies[g]["house"] for g in presence["planets"] if g in bodies and g != "LAGNA"})
-            if presence["houses"] != houses:
-                found.append(f"{name}: {key}'s houses are not its planets' houses")
+            found += presence_houses(name, key, presence, inputs.get("bodies", {}))
         if entry.get("present") != len(present):
             found.append(f"{name}: the manifest's presence count differs")
         return found, len(present)
@@ -510,7 +528,66 @@ def yogas(failures: list[str]) -> int:
         "baseline-yogas",
         lambda fixture: "positions" in fixture.get("sections", []),
         check,
-        lambda files, systems, answers: {"files": files, "rules": len(keys), "presences": answers},
+        lambda files, systems, answers: {"files": files, "rules": len(rules), "presences": answers},
+    )
+
+
+def doshas(failures: list[str]) -> int:
+    """The doshas: each file's inputs are its fixture's recorded chart and,
+    where it records one, its panchanga with the Moon's pada; every present
+    dosha is a rule `rules.json` ships, found from at least one reference,
+    with its planets' houses; and each net status is what its cancellations
+    and the rule's threshold make it (the threshold, when a rule gives none,
+    the number of references it was found from)."""
+    rules = {rule["key"]: rule for rule in rule_keys("doshas", "baseline-dosha-rules", failures)}
+
+    def check(name, entry, document, fixture, systems):
+        inputs = document.get("inputs", {})
+        found = recorded_chart(name, inputs, fixture)
+        recorded = fixture.get("panchanga")
+        if recorded is None:
+            expected = None
+        else:
+            expected = {
+                "tithi_number": recorded["tithi"]["number"],
+                "paksha": recorded["tithi"]["paksha"],
+                "vara": recorded["vara"],
+                "nakshatra_index": recorded["nakshatra_index"],
+                "moon_pada": fixture["positions"]["bodies"]["MOON"]["pada"],
+                "yoga_index": recorded["yoga_index"],
+                "karana_index": recorded["karana"]["index"],
+            }
+        if inputs.get("panchanga") != expected:
+            found.append(f"{name}: inputs.panchanga differs from the fixture's")
+        present = document.get("present", {})
+        for key, presence in present.items():
+            rule = rules.get(key)
+            if rule is None:
+                found.append(f"{name}: {key} is not a rule rules.json ships")
+                continue
+            found += presence_houses(name, key, presence, inputs.get("bodies", {}))
+            if not presence["present_from"]:
+                found.append(f"{name}: {key} is present from no reference")
+            cancelled = len(presence["cancellations"])
+            threshold = rule.get("fullCancellationThreshold", max(1, len(presence["present_from"])))
+            status = (
+                "fully-cancelled" if cancelled >= threshold
+                else "partially-cancelled" if cancelled
+                else "active"
+            )
+            if presence["net_status"] != status:
+                found.append(f"{name}: {key}'s net status is not what its cancellations make it")
+        if entry.get("present") != len(present):
+            found.append(f"{name}: the manifest's presence count differs")
+        return found, len(present)
+
+    return derived(
+        failures,
+        "doshas",
+        "baseline-doshas",
+        lambda fixture: "positions" in fixture.get("sections", []),
+        check,
+        lambda files, systems, answers: {"files": files, "rules": len(rules), "presences": answers},
     )
 
 
@@ -615,7 +692,7 @@ def main() -> int:
     fixtures = baseline(failures)
     systems = dasha_systems(failures) + rashi_dashas(failures) + kalachakra(failures)
     systems += ashtakavarga(failures) + vimshopaka(failures) + shadbala(failures) + bhava_bala(failures)
-    systems += yogas(failures) + pyjhora_vimshottari(failures)
+    systems += yogas(failures) + doshas(failures) + pyjhora_vimshottari(failures)
     against_schema("tolerances", ROOT / "tolerances.json", failures)
     recorded = tables(failures)
 

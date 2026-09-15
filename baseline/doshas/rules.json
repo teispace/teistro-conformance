@@ -1,0 +1,2237 @@
+{
+  "schema": "teistro-conformance/baseline-dosha-rules/1",
+  "rules": [
+    {
+      "key": "MANGAL_DOSHA",
+      "category": "planetary",
+      "source": {
+        "text": "BPHS",
+        "chapter": "21",
+        "note": "Mars in 1/2/4/7/8/12 from Lagna, Moon, or Venus. Cancellations follow BPHS Ch.80 and Phaladeepika Ch.9."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Lagna",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "MARS",
+              "houses": [1, 2, 4, 7, 8, 12]
+            }
+          ]
+        },
+        {
+          "reference": "moon",
+          "label": "Moon",
+          "conditions": [
+            {
+              "type": "planet-in-house-from",
+              "planet": "MARS",
+              "reference": "MOON",
+              "houses": [1, 2, 4, 7, 8, 12]
+            }
+          ]
+        },
+        {
+          "reference": "venus",
+          "label": "Venus",
+          "conditions": [
+            {
+              "type": "planet-in-house-from",
+              "planet": "MARS",
+              "reference": "VENUS",
+              "houses": [1, 2, 4, 7, 8, 12]
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-dignity",
+          "planet": "MARS",
+          "dignities": ["EXALTED", "OWN_SIGN", "MOOLTRIKONA"]
+        },
+        {
+          "type": "planet-aspects-planet",
+          "from": "JUPITER",
+          "target": "MARS",
+          "label": "Jupiter aspects Mars"
+        },
+        {
+          "type": "lagna-in-sign",
+          "signs": ["ARIES", "SCORPIO"],
+          "label": "Lagna in Mars-ruled sign (Aries/Scorpio)"
+        },
+        {
+          "type": "planet-conjunct",
+          "planets": ["VENUS", "MARS"]
+        },
+        {
+          "type": "planet-conjunct",
+          "planets": ["MOON", "MARS"]
+        },
+        {
+          "type": "planet-conjunct",
+          "planets": ["JUPITER", "MARS"]
+        },
+        {
+          "type": "planet-in-house-and-sign",
+          "planet": "MARS",
+          "houses": [2],
+          "signs": ["GEMINI", "VIRGO"],
+          "label": "Mars in 2nd house in Mercury sign"
+        },
+        {
+          "type": "planet-in-house-and-sign",
+          "planet": "MARS",
+          "houses": [12],
+          "signs": ["TAURUS", "LIBRA"],
+          "label": "Mars in 12th house in Venus sign"
+        },
+        {
+          "type": "planet-in-house-and-sign",
+          "planet": "MARS",
+          "houses": [7],
+          "signs": ["CANCER", "CAPRICORN"],
+          "label": "Mars in 7th in Cancer/Capricorn"
+        }
+      ],
+      "severityRule": {
+        "type": "house-weighted",
+        "weights": {
+          "1": 70,
+          "2": 60,
+          "4": 50,
+          "7": 100,
+          "8": 90,
+          "12": 50
+        },
+        "default": 50
+      },
+      "remedyKeys": ["MANGAL_REMEDY_HANUMAN_CHALISA", "MANGAL_REMEDY_TUESDAY_FAST", "MANGAL_REMEDY_KUMBH_VIVAH"],
+      "fullCancellationThreshold": 3
+    },
+    {
+      "key": "KALSARPA",
+      "category": "nodal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "All seven planets between Rahu and Ketu in the natural zodiacal direction. Phase 1.3 splits this into 12 named axis-position variants per Mansagari."
+      },
+      "customResultKey": "KALSARPA",
+      "severityRule": {
+        "type": "fixed",
+        "value": 100
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"]
+    },
+    {
+      "key": "PITRA_DOSHA",
+      "category": "nodal",
+      "source": {
+        "text": "PHALADEEPIKA",
+        "chapter": "15",
+        "note": "Sun afflicted by Rahu/Ketu/Saturn in 9th house or its lord; ancestral karma carryover."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Sun conjunct Rahu",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["SUN", "RAHU"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Sun in 9th house",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "SUN",
+              "houses": [9]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "9th lord in 6th/8th/12th",
+          "conditions": [
+            {
+              "type": "lord-of-house-in-house",
+              "houseRuled": 9,
+              "houseOccupied": 6
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "9th lord in 6th/8th/12th",
+          "conditions": [
+            {
+              "type": "lord-of-house-in-house",
+              "houseRuled": 9,
+              "houseOccupied": 8
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "9th lord in 6th/8th/12th",
+          "conditions": [
+            {
+              "type": "lord-of-house-in-house",
+              "houseRuled": 9,
+              "houseOccupied": 12
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Saturn in 9th house",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "SATURN",
+              "houses": [9]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Sun debilitated",
+          "conditions": [
+            {
+              "type": "planet-dignity",
+              "planet": "SUN",
+              "dignities": ["DEBILITATED"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Rahu in 9th house",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "RAHU",
+              "houses": [9]
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-in-house",
+          "planet": "JUPITER",
+          "houses": [9]
+        },
+        {
+          "type": "planet-aspects-house",
+          "from": "JUPITER",
+          "houseRuled": 9,
+          "label": "Jupiter aspects 9th house"
+        },
+        {
+          "type": "planet-dignity",
+          "planet": "SUN",
+          "dignities": ["OWN_SIGN", "EXALTED"]
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 25,
+        "cap": 100
+      },
+      "customSeverityKey": "COUNT_TIMES_25_CAP_100",
+      "remedyKeys": ["PITRA_REMEDY_SHRADDHA", "PITRA_REMEDY_GAYA_TARPANA", "PITRA_REMEDY_PITRU_PAKSHA"]
+    },
+    {
+      "key": "SHANI_DOSHA",
+      "category": "planetary",
+      "source": {
+        "text": "BPHS",
+        "chapter": "47",
+        "note": "Saturn in malefic placement (lagna/moon-axis 1/4/7/10) without dignity. Sade Sati overlap is computed separately in `gochar` module."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Saturn in afflicted house",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "SATURN",
+              "houses": [1, 4, 7, 8, 10]
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-dignity",
+          "planet": "SATURN",
+          "dignities": ["OWN_SIGN", "EXALTED", "MOOLTRIKONA"]
+        },
+        {
+          "type": "planet-aspects-planet",
+          "from": "JUPITER",
+          "target": "SATURN",
+          "label": "Jupiter aspects Saturn"
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 50
+      },
+      "remedyKeys": ["SHANI_REMEDY_SATURDAY_FAST", "SHANI_REMEDY_HANUMAN_CHALISA", "SHANI_REMEDY_PIPAL_TREE"],
+      "customSeverityKey": "SHANI_HOUSE_8_ESCALATION",
+      "fullCancellationThreshold": 3
+    },
+    {
+      "key": "GURU_CHANDAL",
+      "category": "planetary",
+      "source": {
+        "text": "SARAVALI",
+        "chapter": "34",
+        "note": "Jupiter conjunct Rahu (Chandal) or Ketu — wisdom corrupted by shadow planet."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Jupiter conjunct Rahu",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["JUPITER", "RAHU"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Jupiter conjunct Ketu",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["JUPITER", "KETU"]
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-dignity",
+          "planet": "JUPITER",
+          "dignities": ["OWN_SIGN", "EXALTED", "MOOLTRIKONA"]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 60
+      },
+      "remedyKeys": ["GURU_CHANDAL_REMEDY_GURU_BEEJ", "GURU_CHANDAL_REMEDY_THURSDAY_FAST"],
+      "fullCancellationThreshold": 2
+    },
+    {
+      "key": "GRAHAN_DOSHA",
+      "category": "nodal",
+      "source": {
+        "text": "PHALADEEPIKA",
+        "chapter": "6",
+        "note": "Sun or Moon conjunct Rahu/Ketu in same sign — eclipse imprint at birth. Distinct from `ECLIPSE_DOSHA` (which is birth during an actual eclipse)."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Sun conjunct Rahu (Surya Grahan)",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["SUN", "RAHU"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Sun conjunct Ketu",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["SUN", "KETU"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon conjunct Rahu (Chandra Grahan)",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["MOON", "RAHU"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon conjunct Ketu",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["MOON", "KETU"]
+            }
+          ]
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 35,
+        "cap": 100
+      },
+      "remedyKeys": ["GRAHAN_REMEDY_SURYA_NAMASKAR", "GRAHAN_REMEDY_CHANDRA_BEEJ"]
+    },
+    {
+      "key": "KEMDRUM_DOSHA",
+      "category": "lunar",
+      "source": {
+        "text": "BPHS",
+        "chapter": "34",
+        "verse": "5",
+        "note": "No planet (other than Sun and nodes) in 2nd or 12th from Moon, and no planet conjunct Moon — isolation of mind."
+      },
+      "conditions": [
+        {
+          "type": "no-planet-in-houses-from",
+          "reference": "MOON",
+          "houses": [2],
+          "except": ["SUN", "RAHU", "KETU"]
+        },
+        {
+          "type": "no-planet-in-houses-from",
+          "reference": "MOON",
+          "houses": [12],
+          "except": ["SUN", "RAHU", "KETU"]
+        },
+        {
+          "type": "no-planet-in-houses-from",
+          "reference": "MOON",
+          "houses": [1],
+          "except": ["SUN", "RAHU", "KETU"]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-in-house",
+          "planet": "MOON",
+          "houses": [1, 4, 7, 10]
+        },
+        {
+          "type": "planet-dignity",
+          "planet": "MOON",
+          "dignities": ["OWN_SIGN", "EXALTED"]
+        },
+        {
+          "type": "planet-aspects-planet",
+          "from": "JUPITER",
+          "target": "MOON",
+          "label": "Jupiter aspects Moon"
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 70
+      },
+      "remedyKeys": ["KEMDRUM_REMEDY_MOON_MANTRA", "KEMDRUM_REMEDY_SILVER"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "NAGA_DOSHA",
+      "category": "nodal",
+      "source": {
+        "text": "TRADITIONAL",
+        "note": "Affliction to 5th house lord by Rahu/Ketu, indicating Naga (serpent deity) propitiation pending — primarily affects progeny. Drawn from regional South Indian tradition; no single canonical text."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Rahu in 5th house",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "RAHU",
+              "houses": [5]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Ketu in 5th house",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "KETU",
+              "houses": [5]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "5th lord conjunct Rahu",
+          "conditions": [
+            {
+              "type": "lord-of-house-conjunct-planet",
+              "houseRuled": 5,
+              "withPlanet": "RAHU"
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "5th lord conjunct Ketu",
+          "conditions": [
+            {
+              "type": "lord-of-house-conjunct-planet",
+              "houseRuled": 5,
+              "withPlanet": "KETU"
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-in-house",
+          "planet": "JUPITER",
+          "houses": [5]
+        },
+        {
+          "type": "planet-aspects-house",
+          "from": "JUPITER",
+          "houseRuled": 5,
+          "label": "Jupiter aspects 5th house"
+        },
+        {
+          "type": "lord-of-house-strong",
+          "houseRuled": 5,
+          "label": "5th lord in own/exalted/mooltrikona sign"
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 30,
+        "cap": 100
+      },
+      "remedyKeys": ["NAGA_REMEDY_NAG_PANCHAMI", "NAGA_REMEDY_SARPA_DOSHA_PUJA"],
+      "fullCancellationThreshold": 2
+    },
+    {
+      "key": "BRAHMA_DOSHA",
+      "category": "planetary",
+      "source": {
+        "text": "TRADITIONAL",
+        "note": "Severe affliction to Jupiter (combust + debilitated, or in 6/8/12 with malefics) — corrupted dharma karaka. Synthesized from BPHS Ch.7 affliction principles applied to Jupiter as Brahma-karaka."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Sun conjunct Ketu without benefic aspect",
+          "conditions": [
+            {
+              "type": "dosha-and",
+              "conditions": [
+                {
+                  "type": "planet-conjunct",
+                  "planets": ["SUN", "KETU"]
+                },
+                {
+                  "type": "dosha-not",
+                  "condition": {
+                    "type": "dosha-or",
+                    "conditions": [
+                      {
+                        "type": "planet-aspects-planet",
+                        "from": "JUPITER",
+                        "target": "SUN"
+                      },
+                      {
+                        "type": "planet-aspects-planet",
+                        "from": "VENUS",
+                        "target": "SUN"
+                      },
+                      {
+                        "type": "planet-aspects-planet",
+                        "from": "MERCURY",
+                        "target": "SUN"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "9th lord debilitated",
+          "conditions": [
+            {
+              "type": "lord-of-house-debilitated",
+              "houseRuled": 9
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "9th lord combust",
+          "conditions": [
+            {
+              "type": "lord-of-house-combust",
+              "houseRuled": 9
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-aspects-house",
+          "from": "JUPITER",
+          "houseRuled": 9,
+          "label": "Jupiter aspects 9th house"
+        },
+        {
+          "type": "lord-of-house-strong",
+          "houseRuled": 9,
+          "label": "9th lord in own/exalted/mooltrikona sign"
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 25,
+        "cap": 100
+      },
+      "customSeverityKey": "COUNT_TIMES_25_CAP_100",
+      "remedyKeys": ["BRAHMA_REMEDY_GURU_GAYATRI", "BRAHMA_REMEDY_DAKSHINA"],
+      "fullCancellationThreshold": 2
+    },
+    {
+      "key": "MOOL_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "NARADA_SAMHITA",
+        "note": "Birth in Mool/Jyeshtha/Ashlesha/Magha/Revati nakshatras — the five \"mool\" (root) nakshatras. Mandatory check in Nepali tradition; severity grades by pada (1st pada most severe; later padas progressively milder per Narada Samhita)."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Birth in Mool nakshatras (Mool/Jyeshtha/Ashlesha/Magha/Revati)",
+          "conditions": [
+            {
+              "type": "panchanga-nakshatra",
+              "nakshatras": ["MULA", "JYESHTHA", "ASHLESHA", "MAGHA", "REVATI"]
+            }
+          ]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 70
+      },
+      "remedyKeys": ["MOOL_REMEDY_SHANTI_PUJA", "MOOL_REMEDY_NAKSHATRA_DAAN", "MOOL_REMEDY_27_DAY_WAIT"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "GANDANTA_DOSHA",
+      "category": "positional",
+      "applicableTo": "natal",
+      "source": {
+        "text": "BPHS",
+        "chapter": "6",
+        "note": "Sun or Moon at sign-junction within 3°20' (200 arc-minutes) of Pisces→Aries, Cancer→Leo, or Scorpio→Sagittarius. The water-fire transitions are doctrinally most severe; affects health and longevity at birth. Detection is longitude-based, not panchanga-tabular."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Moon at gandanta sign-junction",
+          "conditions": [
+            {
+              "type": "planet-at-gandanta",
+              "planet": "MOON"
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Sun at gandanta sign-junction",
+          "conditions": [
+            {
+              "type": "planet-at-gandanta",
+              "planet": "SUN"
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Lagna at gandanta sign-junction",
+          "conditions": [
+            {
+              "type": "planet-at-gandanta",
+              "planet": "LAGNA"
+            }
+          ]
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 35,
+        "cap": 100
+      },
+      "remedyKeys": ["GANDANTA_REMEDY_SHANTI_PUJA", "GANDANTA_REMEDY_27_DAY_WAIT"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "BHADRA_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MUHURTA_CHINTAMANI",
+        "note": "Birth during Vishti (Bhadra) karana. Vishti is the 7th of the seven movable karanas; presence at birth threatens stability of activities undertaken in early life."
+      },
+      "conditions": [
+        {
+          "type": "panchanga-karana",
+          "karanas": ["VISHTI"]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 50
+      },
+      "remedyKeys": ["BHADRA_REMEDY_RUDRABHISHEK"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "SANKRANTI_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MUHURTA_GANAPATI",
+        "note": "Birth on a sankranti day (the Sun crossing a sign boundary, ±6 hours). Considered inauspicious by Muhurta Ganapati; affects status of the early life. Window configurable via `PanchangaSnapshot.onSankranti`."
+      },
+      "conditions": [
+        {
+          "type": "birth-on-sankranti"
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 50
+      },
+      "remedyKeys": ["SANKRANTI_REMEDY_DAAN", "SANKRANTI_REMEDY_SURYA_NAMASKAR"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "AMAVASYA_DOSHA",
+      "category": "lunar",
+      "applicableTo": "natal",
+      "source": {
+        "text": "BPHS",
+        "chapter": "6",
+        "note": "Birth on Amavasya (new moon). The Moon is at minimum strength (combust with Sun); affects emotional stability and mother. Distinct from Krishna-Paksha Dosha which fires for any waning-moon birth."
+      },
+      "conditions": [
+        {
+          "type": "panchanga-tithi",
+          "tithis": ["AMAVASYA"]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 60
+      },
+      "remedyKeys": ["AMAVASYA_REMEDY_PITRU_TARPANA", "AMAVASYA_REMEDY_SOMVAR_VRAT"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KRISHNA_PAKSHA_DOSHA",
+      "category": "lunar",
+      "applicableTo": "natal",
+      "source": {
+        "text": "BPHS",
+        "note": "Birth in Krishna Paksha (waning lunar fortnight, post-Purnima through Amavasya). The Moon's natural strength wanes; mild psychological vulnerability. Distinct from Amavasya Dosha (specific to new-moon day) and Vish Yoga (Saturn+Moon affliction)."
+      },
+      "conditions": [
+        {
+          "type": "panchanga-paksha",
+          "paksha": "krishna"
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "panchanga-tithi",
+          "tithis": ["AMAVASYA"]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 30
+      },
+      "remedyKeys": ["KRISHNA_PAKSHA_REMEDY_CHANDRA_BEEJ"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "TITHI_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MUHURTA_CHINTAMANI",
+        "note": "Birth on Rikta tithis (4th, 9th, 14th of either paksha — Chaturthi, Navami, Chaturdashi). These are doctrinally inauspicious tithis for new beginnings; presence at birth carries a mild affliction."
+      },
+      "conditions": [
+        {
+          "type": "panchanga-tithi",
+          "tithis": ["SHUKLA_CHATURTHI", "SHUKLA_NAVAMI", "SHUKLA_CHATURDASHI", "KRISHNA_CHATURTHI", "KRISHNA_NAVAMI", "KRISHNA_CHATURDASHI"]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 35
+      },
+      "remedyKeys": ["TITHI_REMEDY_GANESHA_PUJA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "YAMAGHANTA_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "NARADA_SAMHITA",
+        "note": "Specific vara-nakshatra combinations (e.g. Sunday + Magha, Monday + Vishakha, etc.) form Yamaghanta — a \"death-bell\" yoga inauspicious for any major life beginning. Phase 1.2 currently flags only the nakshatra side; full vara-nakshatra pair table will land in Phase 1.2 addendum."
+      },
+      "conditions": [
+        {
+          "type": "panchanga-nakshatra",
+          "nakshatras": ["MAGHA", "VISHAKHA", "ARDRA", "MULA", "KRITTIKA", "ROHINI", "HASTA"]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 40
+      },
+      "remedyKeys": ["YAMAGHANTA_REMEDY_MAHAMRITYUNJAYA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "VYATIPATA_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MUHURTA_CHINTAMANI",
+        "note": "Birth during Vyatipata yoga (17th of the 27 panchanga yogas). Doctrinally inauspicious for any auspicious activity; presence at birth threatens stability of fortune."
+      },
+      "conditions": [
+        {
+          "type": "panchanga-yoga",
+          "yogas": ["VYATIPATA"]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 55
+      },
+      "remedyKeys": ["VYATIPATA_REMEDY_VISHNU_SAHASRANAMA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "VAIDHRITI_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MUHURTA_CHINTAMANI",
+        "note": "Birth during Vaidhriti yoga (27th and last of the panchanga yogas). Like Vyatipata, doctrinally inauspicious; presence at birth threatens stability of important undertakings."
+      },
+      "conditions": [
+        {
+          "type": "panchanga-yoga",
+          "yogas": ["VAIDHRITI"]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 55
+      },
+      "remedyKeys": ["VAIDHRITI_REMEDY_VISHNU_SAHASRANAMA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "ECLIPSE_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "TRADITIONAL",
+        "note": "Birth during a solar or lunar eclipse window — distinct from `GRAHAN_DOSHA` (Sun/Moon conjunct Rahu/Ketu in the natal chart). Eclipse-time birth is doctrinally one of the most inauspicious conditions; severe lifelong remedial work is recommended. Sources: traditional Nepali/Indian astrologer practice; not a single canonical text."
+      },
+      "conditions": [
+        {
+          "type": "birth-during-eclipse"
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 90
+      },
+      "remedyKeys": ["ECLIPSE_REMEDY_MAHAMRITYUNJAYA", "ECLIPSE_REMEDY_GAYATRI_PURASCHARANA", "ECLIPSE_REMEDY_KASHI_VISHWANATH"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "VISHA_KANYA_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "BPHS",
+        "note": "Parashara visha-kanya matrix — a vara + tithi + nakshatra coincidence: Sunday + Dvitiya + Ashlesha, Saturday + Saptami + Krittika, or Tuesday + Dvadashi + Shatabhisha. The tithi rule is by number within the fortnight (both pakshas). Cancellation (Parashara): a benefic in the 7th from Lagna or the 7th-lord in own/exalted sign. A marital-harmony affliction; surfaced for both natal reading and Milan."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Sunday + Dvitiya + Ashlesha",
+          "conditions": [
+            {
+              "type": "dosha-and",
+              "conditions": [
+                {
+                  "type": "panchanga-vara",
+                  "varas": ["RAVIVARA"]
+                },
+                {
+                  "type": "panchanga-tithi",
+                  "tithis": ["SHUKLA_DVITIYA", "KRISHNA_DVITIYA"]
+                },
+                {
+                  "type": "panchanga-nakshatra",
+                  "nakshatras": ["ASHLESHA"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Saturday + Saptami + Krittika",
+          "conditions": [
+            {
+              "type": "dosha-and",
+              "conditions": [
+                {
+                  "type": "panchanga-vara",
+                  "varas": ["SHANIVARA"]
+                },
+                {
+                  "type": "panchanga-tithi",
+                  "tithis": ["SHUKLA_SAPTAMI", "KRISHNA_SAPTAMI"]
+                },
+                {
+                  "type": "panchanga-nakshatra",
+                  "nakshatras": ["KRITTIKA"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Tuesday + Dvadashi + Shatabhisha",
+          "conditions": [
+            {
+              "type": "dosha-and",
+              "conditions": [
+                {
+                  "type": "panchanga-vara",
+                  "varas": ["MANGALAVARA"]
+                },
+                {
+                  "type": "panchanga-tithi",
+                  "tithis": ["SHUKLA_DWADASHI", "KRISHNA_DWADASHI"]
+                },
+                {
+                  "type": "panchanga-nakshatra",
+                  "nakshatras": ["SHATABHISHA"]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-aspects-house",
+          "from": "JUPITER",
+          "houseRuled": 7,
+          "label": "Jupiter aspects/occupies 7th"
+        },
+        {
+          "type": "lord-of-house-strong",
+          "houseRuled": 7,
+          "label": "7th lord in own/exalted sign"
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 75
+      },
+      "remedyKeys": ["VISHA_KANYA_REMEDY_KUMBH_VIVAH", "VISHA_KANYA_REMEDY_VISHNU_PUJA", "VISHA_KANYA_REMEDY_MAHAMRITYUNJAYA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "ABHUKTA_MOOLA_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "NARADA_SAMHITA",
+        "note": "Birth in the last pada of Jyeshtha or the first pada of Moola — the exact Jyeshtha-Moola junction at the Scorpio→Sagittarius water-fire boundary. The most severe variant of Gandanta/Mool per Narada (and Vashistha/Brhaspati on the ghatika-extent). Indicates acute early-childhood survival/health sensitivities and a transformational family crisis; mandatory shanti within 27 days."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Jyeshtha 4th pada (Abhukta-Moola junction)",
+          "conditions": [
+            {
+              "type": "panchanga-nakshatra",
+              "nakshatras": ["JYESHTHA"],
+              "padas": [4]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moola 1st pada (Abhukta-Moola junction)",
+          "conditions": [
+            {
+              "type": "panchanga-nakshatra",
+              "nakshatras": ["MULA"],
+              "padas": [1]
+            }
+          ]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 90
+      },
+      "remedyKeys": ["ABHUKTA_MOOLA_REMEDY_27_DAY_SHANTI", "ABHUKTA_MOOLA_REMEDY_MOOL_SHANTI_PUJA", "ABHUKTA_MOOLA_REMEDY_NAKSHATRA_DAAN"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "DAGDHA_RASHI_DOSHA",
+      "category": "panchanga",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MUHURTA_CHINTAMANI",
+        "note": "Jyotirvidyabharanam (carried in Muhurta Chintamani): the birth tithi 'burns' specific signs (e.g. Pratipada → Libra & Capricorn; Shashthi → Aries & Leo). Any of the seven true grahas in a burnt sign has its significations scorched. Detection needs the tithi-to-sign table; owned by the DAGDHA_RASHI custom result hook."
+      },
+      "customResultKey": "DAGDHA_RASHI",
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 25,
+        "cap": 100
+      },
+      "remedyKeys": ["DAGDHA_RASHI_REMEDY_SIGN_LORD_PROPITIATION", "DAGDHA_RASHI_REMEDY_NAVAGRAHA_SHANTI"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "MRITYU_BHAGA_DOSHA",
+      "category": "positional",
+      "applicableTo": "natal",
+      "source": {
+        "text": "JATAKA_PARIJATA",
+        "chapter": "2",
+        "note": "Per Jataka Parijata, each graha has a fatal 'death-portion' degree in each sign; a graha within ~1° of its Mrityu Bhaga turns its significations toward affliction (Mrityu = death-like). Luminaries and the Lagna at Mrityu Bhaga are the classical arishta trigger. Detection is degree-table-based; owned by the MRITYU_BHAGA custom result hook."
+      },
+      "customResultKey": "MRITYU_BHAGA",
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 30,
+        "cap": 100
+      },
+      "remedyKeys": ["MRITYU_BHAGA_REMEDY_MAHAMRITYUNJAYA", "MRITYU_BHAGA_REMEDY_PLANET_PROPITIATION"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_ANANT",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 1. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Anant Kalsarpa Dosha variant is comparatively milder (early-life houses)."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 80
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_KULIK",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 2. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Kulik Kalsarpa Dosha variant is comparatively milder (early-life houses)."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 75
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_VASUKI",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 3. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Vasuki Kalsarpa Dosha variant is comparatively milder (early-life houses)."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 70
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_SHANKHPAL",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 4. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Shankhpal Kalsarpa Dosha variant has moderate severity per the classical commentary."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 80
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_PADMA",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 5. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Padma Kalsarpa Dosha variant has moderate severity per the classical commentary."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 85
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_MAHAPADMA",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 6. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Mahapadma Kalsarpa Dosha variant has moderate severity per the classical commentary."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 70
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_TAKSHAK",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 7. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Takshak Kalsarpa Dosha variant is among the most severe (kendra/mortality axis)."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 95
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_KARKOTAK",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 8. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Karkotak Kalsarpa Dosha variant is among the most severe (kendra/mortality axis)."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 100
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_SHANKHACHUD",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 9. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Shankhachud Kalsarpa Dosha variant has moderate severity per the classical commentary."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 85
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_GHATAK",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 10. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Ghatak Kalsarpa Dosha variant has moderate severity per the classical commentary."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 90
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_VISHDHAR",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 11. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Vishdhar Kalsarpa Dosha variant has moderate severity per the classical commentary."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 70
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALSARPA_SHESHNAG",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Kalsarpa axis-position variant: Rahu in house 12. Each of the 12 Mansagari named variants carries doctrinally distinct effects — Sheshnag Kalsarpa Dosha variant has moderate severity per the classical commentary."
+      },
+      "customResultKey": "KALSARPA_VARIANT",
+      "severityRule": {
+        "type": "fixed",
+        "value": 90
+      },
+      "remedyKeys": ["KALSARPA_REMEDY_TRIMBAKESHWAR", "KALSARPA_REMEDY_NAGAPANCHAMI", "KALSARPA_REMEDY_RAHU_BEEJ_MANTRA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KALA_AMRITA_YOGA",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "MANSAGARI",
+        "chapter": "4",
+        "note": "Auspicious mirror of Kalsarpa: all seven planets between Ketu and Rahu (the reverse arc). Confers gradual prosperity and protection — classical Mansagari distinguishes this from Kalsarpa, where the same arc-direction ascension is malefic and the descent (Ketu-side dominance) is the auspicious form."
+      },
+      "customResultKey": "KALA_AMRITA",
+      "severityRule": {
+        "type": "fixed",
+        "value": 0
+      },
+      "remedyKeys": [],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "VISH_YOGA_DOSHA",
+      "category": "lunar",
+      "applicableTo": "natal",
+      "source": {
+        "text": "PHALADEEPIKA",
+        "chapter": "13",
+        "note": "Saturn conjunct Moon — \"poison\" yoga. Saturnine restriction blocks the Moon's emotional flow; threatens depression, isolation, and chronic mental fatigue. Distinct from `SHANI_DOSHA` (Saturn in house-axis affliction) — Vish requires same-sign Moon-Saturn conjunction. Companion to the yoga-corpus `VISH` rule, which scores strength rather than severity."
+      },
+      "conditions": [
+        {
+          "type": "planet-conjunct",
+          "planets": ["SATURN", "MOON"]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-in-kendra",
+          "planet": "JUPITER"
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 65
+      },
+      "remedyKeys": ["VISH_REMEDY_SHANI_BEEJ", "VISH_REMEDY_CHANDRA_BEEJ", "VISH_REMEDY_MAHAMRITYUNJAYA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "CHANDRA_DOSHA",
+      "category": "lunar",
+      "applicableTo": "natal",
+      "source": {
+        "text": "BPHS",
+        "chapter": "34",
+        "note": "Moon afflicted by malefic conjunction (Sun, Mars, Saturn, Rahu, Ketu) AND debilitated/in-dusthana. Distinct from Kemdrum (Moon's isolation), distinct from Vish Yoga (specifically Saturn+Moon). General \"Moon affliction\" diagnosis used by classical practitioners as a category-level flag."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Moon conjunct Sun (combust)",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["MOON", "SUN"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon conjunct Mars",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["MOON", "MARS"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon conjunct Rahu",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["MOON", "RAHU"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon conjunct Ketu",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["MOON", "KETU"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon debilitated",
+          "conditions": [
+            {
+              "type": "planet-dignity",
+              "planet": "MOON",
+              "dignities": ["DEBILITATED", "DEEP_DEBILITATED"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon in dusthana (6/8/12)",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "MOON",
+              "houses": [6, 8, 12]
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-dignity",
+          "planet": "MOON",
+          "dignities": ["OWN_SIGN", "EXALTED"]
+        },
+        {
+          "type": "planet-aspects-planet",
+          "from": "JUPITER",
+          "target": "MOON",
+          "label": "Jupiter aspects Moon"
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 20,
+        "cap": 80
+      },
+      "remedyKeys": ["CHANDRA_REMEDY_MOON_MANTRA", "CHANDRA_REMEDY_SOMVAR_VRAT", "CHANDRA_REMEDY_SILVER"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "SHRAPIT_DOSHA",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "LAL_KITAB",
+        "note": "Saturn conjunct Rahu — the \"cursed\" yoga. Threatens chronic obstacles, ancestral karma carryover, and isolation. Distinct from `PITRA_DOSHA` (Sun-affliction by Rahu/Saturn in 9th-axis) and from `GURU_CHANDAL` (Jupiter+Rahu/Ketu). Severity heightened when in lagna, 5th, or 8th house. Also recognized in traditional Vedic practice; Lal Kitab gives it the most formal treatment."
+      },
+      "conditions": [
+        {
+          "type": "planet-conjunct",
+          "planets": ["SATURN", "RAHU"]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-aspects-planet",
+          "from": "JUPITER",
+          "target": "SATURN",
+          "label": "Jupiter aspects Saturn"
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 70
+      },
+      "remedyKeys": ["SHRAPIT_REMEDY_SHANI_BEEJ", "SHRAPIT_REMEDY_RAHU_BEEJ", "SHRAPIT_REMEDY_PITRU_TARPANA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "ANGARAK_DOSHA",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "TRADITIONAL",
+        "note": "Mars conjunct Rahu — the \"burning coal\" yoga (Angarak = \"burning coal\" in Sanskrit). Threatens accidents, surgeries, sudden anger, and impulsive disputes. The yoga-corpus `MARS_RAHU_CONJ` rule shares this condition and scores strength; `ANGARAK_DOSHA` surfaces the same as a severity-shape dosha. Distinct from `GURU_CHANDAL` (Jupiter+Rahu/Ketu) and `SHRAPIT_DOSHA` (Saturn+Rahu). Drawn from regional traditional usage; not a single canonical text."
+      },
+      "conditions": [
+        {
+          "type": "planet-conjunct",
+          "planets": ["MARS", "RAHU"]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-aspects-planet",
+          "from": "JUPITER",
+          "target": "MARS",
+          "label": "Jupiter aspects Mars"
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 65
+      },
+      "remedyKeys": ["ANGARAK_REMEDY_HANUMAN_CHALISA", "ANGARAK_REMEDY_MANGAL_BEEJ", "ANGARAK_REMEDY_TUESDAY_FAST"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "CHANDAL_DOSHA",
+      "category": "nodal",
+      "applicableTo": "natal",
+      "source": {
+        "text": "TRADITIONAL",
+        "note": "Generic Chandal-form yoga: Rahu conjunct any classical planet other than Jupiter (which is the canonical `GURU_CHANDAL` case). When Rahu meets Sun (royal authority), Moon (mind), Mercury (intellect), or Venus (refinement), each carries the Chandal \"shadow-pollution\" theme. Distinct from named-specific doshas (Angarak=Mars+Rahu, Shrapit=Saturn+Rahu, Guru-Chandal=Jupiter+Rahu/Ketu); this rule covers the remaining Sun/Moon/Mercury/Venus combinations."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Sun conjunct Rahu (Surya-Chandal)",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["SUN", "RAHU"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon conjunct Rahu (Chandra-Chandal)",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["MOON", "RAHU"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Mercury conjunct Rahu (Budha-Chandal)",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["MERCURY", "RAHU"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Venus conjunct Rahu (Shukra-Chandal)",
+          "conditions": [
+            {
+              "type": "planet-conjunct",
+              "planets": ["VENUS", "RAHU"]
+            }
+          ]
+        }
+      ],
+      "cancellations": [],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 30,
+        "cap": 80
+      },
+      "remedyKeys": ["CHANDAL_REMEDY_RAHU_BEEJ", "CHANDAL_REMEDY_DURGA_PUJA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "KENDRADHIPATI_DOSHA",
+      "category": "house-based",
+      "applicableTo": "natal",
+      "source": {
+        "text": "BPHS",
+        "chapter": "34",
+        "note": "Benefic planets owning a kendra (1/4/7/10) lose their natural benefic potency. Detection: any natural benefic (Jupiter, Venus, Mercury, Moon) is the lord of a kendra. Cancellation: the same benefic also rules a trikona (1/5/9) — the trikona ownership preserves benefic effect (Lagna-lord excepted; Lagna IS both kendra and trikona, so 1st-lord benefics carry no Kendradhipati taint). The doctrinal nuance is rich; Phase 1.4 captures the canonical \"any benefic owns a pure kendra\" trigger."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Natural benefic owns the 4th house",
+          "conditions": [
+            {
+              "type": "lord-of-house-is",
+              "houseRuled": 4,
+              "planets": ["JUPITER", "VENUS", "MERCURY", "MOON"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Natural benefic owns the 7th house",
+          "conditions": [
+            {
+              "type": "lord-of-house-is",
+              "houseRuled": 7,
+              "planets": ["JUPITER", "VENUS", "MERCURY", "MOON"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Natural benefic owns the 10th house",
+          "conditions": [
+            {
+              "type": "lord-of-house-is",
+              "houseRuled": 10,
+              "planets": ["JUPITER", "VENUS", "MERCURY", "MOON"]
+            }
+          ]
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 40
+      },
+      "remedyKeys": ["KENDRADHIPATI_REMEDY_BHAGYA_SUKTA", "KENDRADHIPATI_REMEDY_VISHNU_SAHASRANAMA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "DARIDRA_DOSHA",
+      "category": "house-based",
+      "applicableTo": "natal",
+      "source": {
+        "text": "PHALADEEPIKA",
+        "chapter": "13",
+        "note": "Severe poverty pattern: Lagna-lord in dusthana (6/8/12) AND 11th-lord in dusthana — combined affliction of self and gain. Distinct from the yoga-corpus `DARIDRA_*` rules which are single-condition strength yogas. The dosha shape surfaces severity (a stronger flag for chart-output prominence) and accumulates remedies."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Lagna lord in 6th/8th/12th",
+          "conditions": [
+            {
+              "type": "dosha-or",
+              "conditions": [
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 1,
+                  "houseOccupied": 6
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 1,
+                  "houseOccupied": 8
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 1,
+                  "houseOccupied": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "11th lord in 6th/8th/12th",
+          "conditions": [
+            {
+              "type": "dosha-or",
+              "conditions": [
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 11,
+                  "houseOccupied": 6
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 11,
+                  "houseOccupied": 8
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 11,
+                  "houseOccupied": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "2nd lord (dhana) in 6th/8th/12th",
+          "conditions": [
+            {
+              "type": "dosha-or",
+              "conditions": [
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 2,
+                  "houseOccupied": 6
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 2,
+                  "houseOccupied": 8
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 2,
+                  "houseOccupied": 12
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-in-kendra",
+          "planet": "JUPITER"
+        },
+        {
+          "type": "planet-dignity",
+          "planet": "LAGNA",
+          "dignities": ["OWN_SIGN", "EXALTED"]
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 30,
+        "cap": 90
+      },
+      "remedyKeys": ["DARIDRA_REMEDY_LAKSHMI_SUKTA", "DARIDRA_REMEDY_KUBERA_PUJA", "DARIDRA_REMEDY_FRIDAY_DAAN"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "PUTRA_DOSHA",
+      "category": "house-based",
+      "applicableTo": "natal",
+      "source": {
+        "text": "SARAVALI",
+        "chapter": "18",
+        "note": "5th-house affliction indicating progeny challenges: 5th-lord debilitated, in dusthana, OR Jupiter (putra-karaka) afflicted. Distinct from `NAGA_DOSHA` which targets 5th via Rahu/Ketu specifically. Putra Dosha is a broader bhava-affliction reading."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "5th lord debilitated",
+          "conditions": [
+            {
+              "type": "lord-of-house-debilitated",
+              "houseRuled": 5
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "5th lord in 6th/8th/12th",
+          "conditions": [
+            {
+              "type": "dosha-or",
+              "conditions": [
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 5,
+                  "houseOccupied": 6
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 5,
+                  "houseOccupied": 8
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 5,
+                  "houseOccupied": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Jupiter (putra-karaka) debilitated",
+          "conditions": [
+            {
+              "type": "planet-dignity",
+              "planet": "JUPITER",
+              "dignities": ["DEBILITATED", "DEEP_DEBILITATED"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Jupiter combust",
+          "conditions": [
+            {
+              "type": "lord-of-house-combust",
+              "houseRuled": 5
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-in-kendra",
+          "planet": "JUPITER"
+        },
+        {
+          "type": "planet-in-trikona",
+          "planet": "JUPITER"
+        },
+        {
+          "type": "lord-of-house-strong",
+          "houseRuled": 5
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 25,
+        "cap": 80
+      },
+      "remedyKeys": ["PUTRA_REMEDY_SANTAN_GOPAL", "PUTRA_REMEDY_GURU_BEEJ", "PUTRA_REMEDY_5TH_HOUSE_DAAN"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "MATRI_DOSHA",
+      "category": "house-based",
+      "applicableTo": "natal",
+      "source": {
+        "text": "SARAVALI",
+        "chapter": "13",
+        "note": "4th-house affliction indicating mother's health/longevity challenges: 4th-lord debilitated/in dusthana, OR Moon (matri-karaka) afflicted. Distinct from Chandra Dosha which evaluates Moon affliction across multiple triggers without 4th-house focus."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "4th lord debilitated",
+          "conditions": [
+            {
+              "type": "lord-of-house-debilitated",
+              "houseRuled": 4
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "4th lord in 6th/8th/12th",
+          "conditions": [
+            {
+              "type": "dosha-or",
+              "conditions": [
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 4,
+                  "houseOccupied": 6
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 4,
+                  "houseOccupied": 8
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 4,
+                  "houseOccupied": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon (matri-karaka) debilitated",
+          "conditions": [
+            {
+              "type": "planet-dignity",
+              "planet": "MOON",
+              "dignities": ["DEBILITATED", "DEEP_DEBILITATED"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon in 6th/8th/12th",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "MOON",
+              "houses": [6, 8, 12]
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "lord-of-house-strong",
+          "houseRuled": 4
+        },
+        {
+          "type": "planet-dignity",
+          "planet": "MOON",
+          "dignities": ["OWN_SIGN", "EXALTED"]
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 25,
+        "cap": 80
+      },
+      "remedyKeys": ["MATRI_REMEDY_DURGA_PUJA", "MATRI_REMEDY_MOON_MANTRA", "MATRI_REMEDY_MOTHER_SEVA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "PATNI_DOSHA",
+      "category": "house-based",
+      "applicableTo": "natal",
+      "source": {
+        "text": "BPHS",
+        "chapter": "30",
+        "note": "7th-house affliction indicating spouse health/marital harmony challenges: 7th-lord debilitated/in dusthana, OR Venus (kalatra-karaka) afflicted. Distinct from MANGAL_DOSHA which is Mars-specific. PATNI_DOSHA is the broader 7th-house bhava-affliction reading from BPHS Ch.30."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "7th lord debilitated",
+          "conditions": [
+            {
+              "type": "lord-of-house-debilitated",
+              "houseRuled": 7
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "7th lord in 6th/8th/12th",
+          "conditions": [
+            {
+              "type": "dosha-or",
+              "conditions": [
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 7,
+                  "houseOccupied": 6
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 7,
+                  "houseOccupied": 8
+                },
+                {
+                  "type": "lord-of-house-in-house",
+                  "houseRuled": 7,
+                  "houseOccupied": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Venus (kalatra-karaka) debilitated",
+          "conditions": [
+            {
+              "type": "planet-dignity",
+              "planet": "VENUS",
+              "dignities": ["DEBILITATED", "DEEP_DEBILITATED"]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Venus combust",
+          "conditions": [
+            {
+              "type": "lord-of-house-combust",
+              "houseRuled": 7
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-in-kendra",
+          "planet": "JUPITER"
+        },
+        {
+          "type": "planet-dignity",
+          "planet": "VENUS",
+          "dignities": ["OWN_SIGN", "EXALTED"]
+        },
+        {
+          "type": "lord-of-house-strong",
+          "houseRuled": 7
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 25,
+        "cap": 80
+      },
+      "remedyKeys": ["PATNI_REMEDY_SHIVA_PARVATI_PUJA", "PATNI_REMEDY_VENUS_BEEJ", "PATNI_REMEDY_FRIDAY_VRAT"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "BANDHU_DOSHA",
+      "category": "house-based",
+      "applicableTo": "natal",
+      "source": {
+        "text": "TRADITIONAL",
+        "note": "Family / relatives affliction synthesis: 4th-lord (immediate family/home) AND 11th-lord (elder siblings/community) both in dusthana. Indicates strain in relationships with relatives, family disputes, or estrangement. Drawn from regional traditional usage as a category-level flag; no single canonical text — uses 4th + 11th double-affliction pattern from BPHS Ch.24 read as a compound dosha."
+      },
+      "conditions": [
+        {
+          "type": "dosha-or",
+          "conditions": [
+            {
+              "type": "lord-of-house-in-house",
+              "houseRuled": 4,
+              "houseOccupied": 6
+            },
+            {
+              "type": "lord-of-house-in-house",
+              "houseRuled": 4,
+              "houseOccupied": 8
+            },
+            {
+              "type": "lord-of-house-in-house",
+              "houseRuled": 4,
+              "houseOccupied": 12
+            }
+          ]
+        },
+        {
+          "type": "dosha-or",
+          "conditions": [
+            {
+              "type": "lord-of-house-in-house",
+              "houseRuled": 11,
+              "houseOccupied": 6
+            },
+            {
+              "type": "lord-of-house-in-house",
+              "houseRuled": 11,
+              "houseOccupied": 8
+            },
+            {
+              "type": "lord-of-house-in-house",
+              "houseRuled": 11,
+              "houseOccupied": 12
+            }
+          ]
+        }
+      ],
+      "cancellations": [
+        {
+          "type": "planet-in-kendra",
+          "planet": "JUPITER"
+        },
+        {
+          "type": "lord-of-house-strong",
+          "houseRuled": 4
+        },
+        {
+          "type": "lord-of-house-strong",
+          "houseRuled": 11
+        }
+      ],
+      "severityRule": {
+        "type": "fixed",
+        "value": 50
+      },
+      "remedyKeys": ["BANDHU_REMEDY_VISHNU_SAHASRANAMA", "BANDHU_REMEDY_FAMILY_HARMONY_HOMA"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "RIN_DOSHA_PITRI",
+      "category": "lal-kitab",
+      "applicableTo": "natal",
+      "source": {
+        "text": "LAL_KITAB",
+        "note": "Lal Kitab Pitri Rina (ancestral karmic debt) surfaced as a dosha. Conditions mirror `LalkitabRinaService.detectAll()` for the pitri rina type: Sun-Rahu conjunction in 2/5/9, Sun in 6/8/12, or Jupiter in 10. Same conditions, different shape — the rina-shape carries Lal Kitab specific affliction trace; the dosha-shape feeds unified chart-output rendering alongside Pitra Dosha (which is BPHS-derived)."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Sun-Rahu conjunction in 2nd/5th/9th house",
+          "conditions": [
+            {
+              "type": "dosha-and",
+              "conditions": [
+                {
+                  "type": "planet-in-house",
+                  "planet": "SUN",
+                  "houses": [2, 5, 9]
+                },
+                {
+                  "type": "planet-conjunct",
+                  "planets": ["SUN", "RAHU"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Sun in dusthana (6th/8th/12th house)",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "SUN",
+              "houses": [6, 8, 12]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Jupiter afflicted in 10th house",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "JUPITER",
+              "houses": [10]
+            }
+          ]
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 35,
+        "cap": 100
+      },
+      "remedyKeys": ["PITRI_RINA_REMEDY_PITRI_TARPANA", "PITRI_RINA_REMEDY_GAYA_SHRADDHA", "PITRI_RINA_REMEDY_LAL_KITAB_UPAY"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "RIN_DOSHA_STRI",
+      "category": "lal-kitab",
+      "applicableTo": "natal",
+      "source": {
+        "text": "LAL_KITAB",
+        "note": "Lal Kitab Stri Rina (spousal/female karmic debt) surfaced as a dosha. Conditions mirror the Lal Kitab rina detector for stri rina: Venus-Rahu in 4/7, Moon-Ketu in 2/7, Venus in 1/8."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Venus-Rahu conjunction in 4th/7th house",
+          "conditions": [
+            {
+              "type": "dosha-and",
+              "conditions": [
+                {
+                  "type": "planet-in-house",
+                  "planet": "VENUS",
+                  "houses": [4, 7]
+                },
+                {
+                  "type": "planet-conjunct",
+                  "planets": ["VENUS", "RAHU"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Moon-Ketu conjunction in 2nd/7th house",
+          "conditions": [
+            {
+              "type": "dosha-and",
+              "conditions": [
+                {
+                  "type": "planet-in-house",
+                  "planet": "MOON",
+                  "houses": [2, 7]
+                },
+                {
+                  "type": "planet-conjunct",
+                  "planets": ["MOON", "KETU"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Venus afflicted in 1st/8th house",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "VENUS",
+              "houses": [1, 8]
+            }
+          ]
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 35,
+        "cap": 100
+      },
+      "remedyKeys": ["STRI_RINA_REMEDY_LAKSHMI_PUJA", "STRI_RINA_REMEDY_VENUS_BEEJ", "STRI_RINA_REMEDY_LAL_KITAB_UPAY"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "RIN_DOSHA_SWAJAN",
+      "category": "lal-kitab",
+      "applicableTo": "natal",
+      "source": {
+        "text": "LAL_KITAB",
+        "note": "Lal Kitab Swajan Rina (relative/self karmic debt) surfaced as a dosha. Conditions mirror the Lal Kitab rina detector for swajan rina: Mercury-Ketu in 1/6/8, Saturn in 1/4, Mars-Saturn in 6/8."
+      },
+      "referenceConditions": [
+        {
+          "reference": "lagna",
+          "label": "Mercury-Ketu conjunction in 1st/6th/8th house",
+          "conditions": [
+            {
+              "type": "dosha-and",
+              "conditions": [
+                {
+                  "type": "planet-in-house",
+                  "planet": "MERCURY",
+                  "houses": [1, 6, 8]
+                },
+                {
+                  "type": "planet-conjunct",
+                  "planets": ["MERCURY", "KETU"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Saturn in 1st/4th house",
+          "conditions": [
+            {
+              "type": "planet-in-house",
+              "planet": "SATURN",
+              "houses": [1, 4]
+            }
+          ]
+        },
+        {
+          "reference": "lagna",
+          "label": "Mars-Saturn conjunction in 6th/8th house",
+          "conditions": [
+            {
+              "type": "dosha-and",
+              "conditions": [
+                {
+                  "type": "planet-in-house",
+                  "planet": "MARS",
+                  "houses": [6, 8]
+                },
+                {
+                  "type": "planet-conjunct",
+                  "planets": ["MARS", "SATURN"]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 35,
+        "cap": 100
+      },
+      "remedyKeys": ["SWAJAN_RINA_REMEDY_HANUMAN_CHALISA", "SWAJAN_RINA_REMEDY_SATURN_BEEJ", "SWAJAN_RINA_REMEDY_LAL_KITAB_UPAY"],
+      "fullCancellationThreshold": 1
+    },
+    {
+      "key": "BADHAKA_DOSHA",
+      "category": "house-based",
+      "applicableTo": "natal",
+      "source": {
+        "text": "BPHS",
+        "chapter": "5",
+        "note": "BPHS badhaka-sthana: the 11th from a movable Lagna, the 9th from a fixed Lagna, the 7th from a dual Lagna. The dosha fires when a natural malefic occupies the badhaka-sthana or the Badhakesh (its lord) sits in a dusthana (6/8/12). Cancellation: Badhakesh in own/exalted/mooltrikona or in an upachaya (3/6/11). Detection needs the Lagna-modality lookup; owned by the BADHAKA custom result hook."
+      },
+      "customResultKey": "BADHAKA",
+      "severityRule": {
+        "type": "count-based",
+        "perOccurrence": 40,
+        "cap": 100
+      },
+      "remedyKeys": ["BADHAKA_REMEDY_BADHAKESH_PROPITIATION", "BADHAKA_REMEDY_GANESHA_PUJA"],
+      "fullCancellationThreshold": 1
+    }
+  ]
+}

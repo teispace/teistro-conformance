@@ -1,6 +1,6 @@
 {
   "schema": "teistro-conformance/corpus/1",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "released": "2026-09-15",
   "licence": "CC0-1.0",
   "repository": "https://github.com/teispace/teistro-conformance",
@@ -95,6 +95,15 @@
       "recorded": "2026-09-15"
     },
     {
+      "path": "baseline/doshas",
+      "source": "the same engine's natal dosha evaluator and its 52 rules, run on each fixture's recorded chart and panchanga",
+      "evidence_rank": 2,
+      "schema": "teistro-conformance/baseline-doshas/1",
+      "manifest": "baseline/doshas/manifest.json",
+      "counts": { "files": 93, "rules": 52, "presences": 1024 },
+      "recorded": "2026-09-15"
+    },
+    {
       "path": "pyjhora/vimshottari",
       "source": "PyJHora 4.8.7 over pyswisseph 2.10.3.2 (Moshier), run as a black box",
       "evidence_rank": 3,
@@ -139,6 +148,9 @@
     "schema/baseline-yogas.schema.json",
     "schema/baseline-yogas-manifest.schema.json",
     "schema/baseline-yoga-rules.schema.json",
+    "schema/baseline-doshas.schema.json",
+    "schema/baseline-doshas-manifest.schema.json",
+    "schema/baseline-dosha-rules.schema.json",
     "schema/pyjhora-vimshottari.schema.json",
     "schema/pyjhora-vimshottari-manifest.schema.json",
     "schema/tolerances.schema.json",
