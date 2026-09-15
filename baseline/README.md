@@ -221,3 +221,21 @@ and every antardasha, name the first lord. Drig appends, in the zodiac's
 order, any sign its houses and their aspects leave out.
 `rashi-dashas/manifest.json` lists every file with its SHA-256.
 
+## The Kalachakra (`teistro-conformance/baseline-kalachakra/1`)
+
+`kalachakra/charts/` and `kalachakra/variants/` hold one file for each
+fixture that records `dashas`, written by `export-kalachakra-vectors.mjs
+--corpus <this directory>` from the same recorded inputs the dasha systems
+read. Each records the Moon's longitude, nakshatra and pada, then per
+recorded balance method the balance, the tree to antardashas as `[path,
+sign_index, lord, start_jd, end_jd]` rows, and the periods running at the
+two reference instants as `[level, index, sign_index, lord, start_jd,
+end_jd]`.
+
+`kalachakra/manifest.json` carries the rules once: `sign_years` (Aries to
+Pisces) and four `tables`, each with the nakshatras it serves and its four
+padas' nine signs. The Moon's nakshatra picks a table and its pada a row;
+the first sign runs the unelapsed part of the pada of its years; after the
+nine, the same nine run reversed, three cycles in all; each mahadasha's nine
+antardashas begin from its own place and share it by their signs' years.
+

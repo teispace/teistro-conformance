@@ -145,7 +145,7 @@ def derived(
             continue
         if document.get("fixture") != entry.get("fixture"):
             failures.append(f"{name}: the fixture differs from the manifest")
-        if sorted(document.get("systems", {})) != sorted(systems):
+        if "systems" in manifest and sorted(document.get("systems", {})) != sorted(systems):
             failures.append(f"{name}: the systems differ from the manifest's")
         found, held = check(name, entry, document, fixture, systems)
         failures.extend(found)
@@ -189,6 +189,39 @@ def dasha_systems(failures: list[str]) -> int:
         lambda fixture: isinstance(fixture.get("dashas"), dict),
         check,
         lambda files, systems, answers: {"files": files, "systems": systems, "methods": answers},
+    )
+
+
+def kalachakra(failures: list[str]) -> int:
+    """The Kalachakra dasha: each file answers the methods its fixture
+    records, from the Moon's nakshatra and pada it says, and the manifest's
+    tables serve every nakshatra exactly once."""
+    manifest = load(ROOT / "baseline" / "kalachakra" / "manifest.json")
+    if isinstance(manifest, dict):
+        served = sorted(n for table in manifest.get("rules", {}).get("tables", []) for n in table.get("nakshatras", []))
+        if served != list(range(27)):
+            failures.append("kalachakra/manifest.json: the tables do not serve every nakshatra exactly once")
+
+    def check(name, entry, document, fixture, systems):
+        found = []
+        recorded = sorted(fixture["dashas"].get("methods", {}))
+        if sorted(entry.get("methods", [])) != recorded or sorted(document.get("methods", {})) != recorded:
+            found.append(f"{name}: the methods differ from the fixture's")
+        longitude = fixture["dashas"]["moon_sidereal_longitude_deg"]
+        if document.get("moon_sidereal_longitude_deg") != longitude:
+            found.append(f"{name}: the Moon differs from the fixture's")
+        in_nakshatra = (longitude % (360 / 27)) / (360 / 108)
+        if document.get("nakshatra_index") != int(longitude // (360 / 27)) or document.get("pada_index") != int(in_nakshatra):
+            found.append(f"{name}: the nakshatra or pada is not the Moon's")
+        return found, len(document.get("methods", {}))
+
+    return derived(
+        failures,
+        "kalachakra",
+        "baseline-kalachakra",
+        lambda fixture: isinstance(fixture.get("dashas"), dict),
+        check,
+        lambda files, systems, answers: {"files": files, "methods": answers},
     )
 
 
@@ -259,7 +292,7 @@ def main() -> int:
     failures: list[str] = []
     corpus(failures)
     fixtures = baseline(failures)
-    systems = dasha_systems(failures) + rashi_dashas(failures)
+    systems = dasha_systems(failures) + rashi_dashas(failures) + kalachakra(failures)
     against_schema("tolerances", ROOT / "tolerances.json", failures)
     recorded = tables(failures)
 

@@ -9,6 +9,25 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.4.0 — 2026-09-15
+
+**Values:** none moved; 148 are new.
+
+`baseline/kalachakra/`: the engine's Kalachakra dasha for each of the 93
+fixtures that record a dasha, under each balance method recorded — the
+balance, the tree of 27 mahadashas and their antardashas as `[path,
+sign_index, lord, start_jd, end_jd]` rows, and the periods running at the
+fixture's two reference instants. The manifest carries the rule data the
+engine ran once: every sign's years and the four pada tables with the
+nakshatras each serves. Computed from the fixtures' recorded Moon and
+nakshatra span, as the dasha systems were; `validate.py` checks each file
+against its fixture's Moon, nakshatra and pada, and that the tables serve
+every nakshatra once.
+
+The engine's Kalachakra is one reading at several forks where the sources
+differ — which table five nakshatras take, the balance, and what follows
+the ninth mahadasha — and these files record what it does.
+
 ## 0.3.0 — 2026-09-15
 
 **Values:** none moved; 616 are new.

@@ -1,6 +1,6 @@
 {
   "schema": "teistro-conformance/corpus/1",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "released": "2026-09-15",
   "licence": "CC0-1.0",
   "repository": "https://github.com/teispace/teistro-conformance",
@@ -41,6 +41,15 @@
       "recorded": "2026-09-15"
     },
     {
+      "path": "baseline/kalachakra",
+      "source": "the same engine's Kalachakra dasha, computed from each fixture's recorded Moon, birth instant and nakshatra span; the manifest carries its sign years and pada tables",
+      "evidence_rank": 2,
+      "schema": "teistro-conformance/baseline-kalachakra/1",
+      "manifest": "baseline/kalachakra/manifest.json",
+      "counts": { "files": 93, "answers": 148 },
+      "recorded": "2026-09-15"
+    },
+    {
       "path": "official",
       "source": "Nepal's national panchanga committee (npns.gov.np), read from its published Rashtriya Panchangam for BS 2082 and 2083",
       "evidence_rank": 1,
@@ -63,6 +72,8 @@
     "schema/baseline-dasha-systems-manifest.schema.json",
     "schema/baseline-rashi-dashas.schema.json",
     "schema/baseline-rashi-dashas-manifest.schema.json",
+    "schema/baseline-kalachakra.schema.json",
+    "schema/baseline-kalachakra-manifest.schema.json",
     "schema/tolerances.schema.json",
     "schema/report.schema.json"
   ]

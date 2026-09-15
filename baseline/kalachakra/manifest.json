@@ -1,0 +1,618 @@
+{
+  "schema": "teistro-conformance/baseline-kalachakra-manifest/1",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0"
+  },
+  "rules": {
+    "sign_years": [7, 16, 9, 21, 5, 9, 16, 7, 10, 4, 4, 10],
+    "tables": [
+      {
+        "key": "savya_1",
+        "nakshatras": [0, 2, 6, 8, 12, 14, 18, 20, 24],
+        "padas": [
+          [0, 1, 2, 3, 4, 5, 6, 7, 8],
+          [9, 10, 11, 7, 6, 5, 3, 4, 2],
+          [1, 0, 11, 10, 9, 8, 0, 1, 2],
+          [3, 4, 5, 6, 7, 8, 9, 10, 11]
+        ]
+      },
+      {
+        "key": "savya_2",
+        "nakshatras": [1, 7, 13, 19, 25, 26],
+        "padas": [
+          [7, 6, 5, 3, 4, 2, 1, 0, 11],
+          [10, 9, 8, 0, 1, 2, 3, 4, 5],
+          [6, 7, 8, 9, 10, 11, 7, 6, 5],
+          [3, 4, 2, 1, 0, 11, 10, 9, 8]
+        ]
+      },
+      {
+        "key": "apasavya_1",
+        "nakshatras": [3, 9, 15, 21],
+        "padas": [
+          [8, 9, 10, 11, 0, 1, 2, 4, 3],
+          [5, 6, 7, 11, 10, 9, 8, 7, 6],
+          [5, 4, 3, 2, 1, 0, 8, 9, 10],
+          [11, 0, 1, 2, 4, 3, 5, 6, 7]
+        ]
+      },
+      {
+        "key": "apasavya_2",
+        "nakshatras": [4, 5, 10, 11, 16, 17, 22, 23],
+        "padas": [
+          [11, 10, 9, 8, 7, 6, 5, 4, 3],
+          [2, 1, 0, 8, 9, 10, 11, 0, 1],
+          [2, 4, 3, 5, 6, 7, 11, 10, 9],
+          [8, 7, 6, 5, 4, 3, 2, 1, 0]
+        ]
+      }
+    ]
+  },
+  "files": [
+    {
+      "file": "kalachakra/charts/c001-kathmandu-1990-04-14.json",
+      "fixture": "charts/c001-kathmandu-1990-04-14.json",
+      "sha256": "959e4317764ffa70e55fca9a55dc0af6586389983ea47b7b0118e34d57c191f5",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c002-kathmandu-1985-12-25.json",
+      "fixture": "charts/c002-kathmandu-1985-12-25.json",
+      "sha256": "7898a93e16a629d189dbb51f4956831618ff91ee79f700155d1ca90956079d5b",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c003-kathmandu-1986-01-01.json",
+      "fixture": "charts/c003-kathmandu-1986-01-01.json",
+      "sha256": "8c9ecbcd1d16e9d3880d4ee865d443449e3f4b1ec939969c4ee8d4eb64de09f3",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c004-kathmandu-2000-02-29.json",
+      "fixture": "charts/c004-kathmandu-2000-02-29.json",
+      "sha256": "b6a084dfe9f9c42e35789e152be37abd659a0a087beb6ddaf8dde50cc43751c1",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c005-kathmandu-1910-03-21.json",
+      "fixture": "charts/c005-kathmandu-1910-03-21.json",
+      "sha256": "77b05bd856c276cf00c777e32a3cfd9b7063af914b2a8723b055bf822ee7024a",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c006-pokhara-2012-07-15.json",
+      "fixture": "charts/c006-pokhara-2012-07-15.json",
+      "sha256": "307c42d717b4e5189fc15be161d4ac90629596a4283514eca5d3fd2b6b107af0",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c007-biratnagar-1975-11-02.json",
+      "fixture": "charts/c007-biratnagar-1975-11-02.json",
+      "sha256": "5534ca4b44297e7df34429a8b8c1163bf05f5b0ce98790cbb8d6e91fb22380f7",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c008-delhi-1947-08-15.json",
+      "fixture": "charts/c008-delhi-1947-08-15.json",
+      "sha256": "f576e884586c48dfd28a651768b796d3b80ed3d92110c99e672f22e2c50d2d16",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c009-mumbai-1969-07-20.json",
+      "fixture": "charts/c009-mumbai-1969-07-20.json",
+      "sha256": "21968094e72b0bf0ad3cf1df3326ec4842f9ac14b7153abc0136b21afde61083",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c010-chennai-2023-01-14.json",
+      "fixture": "charts/c010-chennai-2023-01-14.json",
+      "sha256": "30356b569de0e6ad43a68c7db79ef862e0cc965f5cb8a3ca3b6878a9441b864f",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c011-kolkata-1880-06-10.json",
+      "fixture": "charts/c011-kolkata-1880-06-10.json",
+      "sha256": "4c8000937543d3b385f63c232421ef06f676b93618f15d6bf091136291fd2ea5",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c012-varanasi-1850-02-05.json",
+      "fixture": "charts/c012-varanasi-1850-02-05.json",
+      "sha256": "2cf8550cc0129cfca82d2c3ffc1a71f2fa8fdf97a319a19a97a0a9fb8a1d05d2",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c013-colombo-1996-08-01.json",
+      "fixture": "charts/c013-colombo-1996-08-01.json",
+      "sha256": "f7a4cc1fb27eaa76e26ee0d6c28354d02b26a853cc6b5157749eb4b6c2b40fe9",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c014-dhaka-2009-06-20.json",
+      "fixture": "charts/c014-dhaka-2009-06-20.json",
+      "sha256": "20d1d0d987984468ccc536f3e0cead02cee57b39fe90c3e0a716247179805066",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c015-kabul-1999-09-09.json",
+      "fixture": "charts/c015-kabul-1999-09-09.json",
+      "sha256": "7daf4d9a368ef6b7b5a8d3460bbc1def8344ac0c5918442818529fe8d135e4b4",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c016-tokyo-2011-03-11.json",
+      "fixture": "charts/c016-tokyo-2011-03-11.json",
+      "sha256": "24a19db049f8f149f35b428c3e9e4ba3b0cfd0a018222490e36552e0763949f1",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c017-singapore-1965-08-09.json",
+      "fixture": "charts/c017-singapore-1965-08-09.json",
+      "sha256": "50c4647945b8549870cd2704876c11cbf0fd785764be78dff724df3e4d6266af",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c018-sydney-2000-09-15.json",
+      "fixture": "charts/c018-sydney-2000-09-15.json",
+      "sha256": "bc3247f430dd29b6ec0f5dc15fc2ae96dfbd1f85a8c40921a1e1cbf83c7ef05a",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c019-auckland-2019-12-31.json",
+      "fixture": "charts/c019-auckland-2019-12-31.json",
+      "sha256": "d325b318868d0afc801d8da4f148cf5a9aab8b68e0a2a5289f147834d8cd0471",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c020-apia-2011-12-31.json",
+      "fixture": "charts/c020-apia-2011-12-31.json",
+      "sha256": "d80e71a4cad30f6c3ff12ce4cb0e27c32b2d0d9861f03a0f4ce20f0c069600bf",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c021-kiritimati-2000-01-01.json",
+      "fixture": "charts/c021-kiritimati-2000-01-01.json",
+      "sha256": "731be8219aec9ddba1f49454d43fe0bd050f360d5ed3c9bebc391952e79cd0f4",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c022-honolulu-1941-12-07.json",
+      "fixture": "charts/c022-honolulu-1941-12-07.json",
+      "sha256": "69a006fe89836e7ebe102acae4ae17332d21668fb6b46145aecf02adc72d80fc",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c023-london-1830-06-26.json",
+      "fixture": "charts/c023-london-1830-06-26.json",
+      "sha256": "e23b06b6e8dd2ef424031a30ea637ef79b8bf24c04b17c68feb8a317286777fb",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c024-london-1947-05-18.json",
+      "fixture": "charts/c024-london-1947-05-18.json",
+      "sha256": "3a80176068727104000ce29a7b9a91e5c4006397aba412e18e72fadc2dda18e5",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c025-paris-1900-01-01.json",
+      "fixture": "charts/c025-paris-1900-01-01.json",
+      "sha256": "2b5564eb51ff0efaa55153f91975b8cf7a2682e5eba1ce68483f6fcf046724dd",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c026-berlin-1945-05-08.json",
+      "fixture": "charts/c026-berlin-1945-05-08.json",
+      "sha256": "ba2f01e6d03c6a4a690d7f68ec25be4a7b3518d291af220b14489544cd1782c0",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c027-reykjavik-1975-06-21.json",
+      "fixture": "charts/c027-reykjavik-1975-06-21.json",
+      "sha256": "64b320e09852d8b65bbf7bcd7ecffdf7dd1854c7d6287a1915d6f33777e2a234",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c028-troms-1988-06-21.json",
+      "fixture": "charts/c028-troms-1988-06-21.json",
+      "sha256": "5399da0c6c210d65fc996ee6fe75c8f88736246d13d69f37289daf50a31a6d78",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c029-troms-1988-12-21.json",
+      "fixture": "charts/c029-troms-1988-12-21.json",
+      "sha256": "8b7b0db0912a12d0ae9da461cbd1922b6cb01fefa0322d30c72c915342ba17ec",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c030-istanbul-2016-09-07.json",
+      "fixture": "charts/c030-istanbul-2016-09-07.json",
+      "sha256": "9a244063b9d9c6e7511bec4f70027eca6bbdcb8b922a16eb058bd0cb31beb2c3",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c031-cairo-2023-04-28.json",
+      "fixture": "charts/c031-cairo-2023-04-28.json",
+      "sha256": "5a2a575d61c9798b9bafa98b45035d4e38be069996aa25636c4f6ca40ac50b5c",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c032-nairobi-1963-12-12.json",
+      "fixture": "charts/c032-nairobi-1963-12-12.json",
+      "sha256": "e55f5201436ee62051647917c1228a58e4527cb9db6c3727543f913db4cef4b1",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c033-cape-town-1990-02-11.json",
+      "fixture": "charts/c033-cape-town-1990-02-11.json",
+      "sha256": "50aadd77047406c65f6873b2e806828877d5017001607bab70bf9e6d921b6f87",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c034-tehran-1979-02-11.json",
+      "fixture": "charts/c034-tehran-1979-02-11.json",
+      "sha256": "67bceaeaf09a83120d3df85540947f2878e6b4150d44720fcdfb3db19fc3bd86",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c035-new-york-2021-03-14.json",
+      "fixture": "charts/c035-new-york-2021-03-14.json",
+      "sha256": "f2cc820bba73b0d86405190732086efa04f7e74c56c5ffb9fc324694de81a2e5",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c036-new-york-2021-11-07.json",
+      "fixture": "charts/c036-new-york-2021-11-07.json",
+      "sha256": "a51e222e6a7034ad9b4a1e8202089a62bcd0258e431f3b027241ceb77460033e",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c037-new-york-2021-11-07.json",
+      "fixture": "charts/c037-new-york-2021-11-07.json",
+      "sha256": "595c4e0849e521fe3f00b0f539110b3ace8a75cb0bcd7e77096c743ad1e65a30",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c038-new-york-1880-04-01.json",
+      "fixture": "charts/c038-new-york-1880-04-01.json",
+      "sha256": "fb0f1ddb04c8d041179bf1834fe1c1e8a40f8221844347ab914194a39507c796",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c039-mexico-city-1985-09-19.json",
+      "fixture": "charts/c039-mexico-city-1985-09-19.json",
+      "sha256": "9c11eb70cf87a654d6691ca461c2d87680025f3cebd1ab9781ce29d3b8741eea",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c040-buenos-aires-1986-06-22.json",
+      "fixture": "charts/c040-buenos-aires-1986-06-22.json",
+      "sha256": "31f80d2300d13391f6098f37bd41653011d48382135242dae5d57454aea2788d",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c041-la-paz-2010-07-10.json",
+      "fixture": "charts/c041-la-paz-2010-07-10.json",
+      "sha256": "cc973daa653022414f09f4277577eefb63c4a99dbc9390d3a8e8f8d09bd0d88e",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c042-quito-2001-01-01.json",
+      "fixture": "charts/c042-quito-2001-01-01.json",
+      "sha256": "7059c574752ffe009c83674d1f0ced51a4e336189bc54c7e269d20b452d4082e",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c043-fairbanks-2015-06-21.json",
+      "fixture": "charts/c043-fairbanks-2015-06-21.json",
+      "sha256": "9a0985b30b1d3c1af2359de486b981ab50a39054f93f152da2affa224cfee406",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c044-ushuaia-1995-12-22.json",
+      "fixture": "charts/c044-ushuaia-1995-12-22.json",
+      "sha256": "423677d4be33cfddd6c50f627d29a13ca75d42e553f72f4cdf7a10d2410f9648",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c045-sao-paulo-2019-02-16.json",
+      "fixture": "charts/c045-sao-paulo-2019-02-16.json",
+      "sha256": "07cfa690f9f66fec91d41df34d29f310c7344cb7f98bbd24f8490b9dd7da2563",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c046-kathmandu-2350-01-01.json",
+      "fixture": "charts/c046-kathmandu-2350-01-01.json",
+      "sha256": "9d96a7fe9445e058a0791fc2e55c299745de97cfb92cd7c0d83c9473da3c8eab",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c047-london-1800-01-02.json",
+      "fixture": "charts/c047-london-1800-01-02.json",
+      "sha256": "893cdff9d127af83542059dd8ae161c10c0f43ba05d22674523be6bd856032df",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c048-kathmandu-2399-12-30.json",
+      "fixture": "charts/c048-kathmandu-2399-12-30.json",
+      "sha256": "7efeddaadb339542a519a691484a63f82a6d5738834e3339611e88299d39b093",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c049-kathmandu-2010-06-01.json",
+      "fixture": "charts/c049-kathmandu-2010-06-01.json",
+      "sha256": "ef8648f42fc729ac2b297b6eb818d05c26c3945729e83179bb02596b2b8dc109",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c050-kathmandu-2015-03-01.json",
+      "fixture": "charts/c050-kathmandu-2015-03-01.json",
+      "sha256": "caad492c41f3b7c6526218b18f37e1e27beabc28f300d358d76901a559164281",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c051-kathmandu-2020-04-13.json",
+      "fixture": "charts/c051-kathmandu-2020-04-13.json",
+      "sha256": "7173b15e28467f21d558e013de4b0b848953a30e6cd1f12baaf01d23fc3c6834",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c052-kathmandu-2020-04-13.json",
+      "fixture": "charts/c052-kathmandu-2020-04-13.json",
+      "sha256": "8e1a38dc54b0d433e32e74c4989b54d3ada11c1e4b9118162bf4c70ca3fdc83c",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c053-kathmandu-2021-01-30.json",
+      "fixture": "charts/c053-kathmandu-2021-01-30.json",
+      "sha256": "56d31df7afd3067edc7de427dc503e8437fdb4322a9a99349be7896cfcf5ac43",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c054-kathmandu-2020-05-05.json",
+      "fixture": "charts/c054-kathmandu-2020-05-05.json",
+      "sha256": "d1016f84376b9b0d3493d6b81f3eb991bfed919dbafcf0276d816f21a820d556",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/charts/c055-kathmandu-2024-04-09.json",
+      "fixture": "charts/c055-kathmandu-2024-04-09.json",
+      "sha256": "762896d7be2fc5e4d44170139080bef50d3bda9bbbcb1aac8a836acccc3aab3a",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "sha256": "5072164b107191467d4d8c21229e9806e8ffd7c395f90b1511bf83b3f8ef862a",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c001-kathmandu-1990-04-14--geocentric.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--geocentric.json",
+      "sha256": "6c21fa7baf0ebff044dd9137b62656757c50647cc3ac6cf66da55d9a13553028",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "sha256": "9f2b49abd42c80867d476714dbf30685a2a1d835e3a26d9330ecc587e5344ab8",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c001-kathmandu-1990-04-14--raman.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--raman.json",
+      "sha256": "50612e4fdf43fdbe7588eb194e1af1519e123e45be134a93b60725387d8b5289",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "sha256": "bbfbf736e447329769ce7ba85b33c292109bda92f8459a58ce9f275adbf1cfb6",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c001-kathmandu-1990-04-14--surya.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--surya.json",
+      "sha256": "64d31049d5f085d054013182d080c4f64b66592e27e6c230b0a819a0ae1f9a16",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c001-kathmandu-1990-04-14--temporal.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--temporal.json",
+      "sha256": "a462c7f20823c74d2f99d3bbd9c67478ca818bc20384a5c548da5b52d6c58d12",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "sha256": "173b6ab44a7fa07e58c76d6a1c63acd9a35ffd4f1e9dc1f6111f17c8dd118e2c",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "fixture": "variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "sha256": "ef8c455b77f94d4a29bfab208bf5d227dae11759abdad212c5bf32718cf1856a",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c007-biratnagar-1975-11-02--temporal.json",
+      "fixture": "variants/c007-biratnagar-1975-11-02--temporal.json",
+      "sha256": "71864338876bbb7064998409aeaaef387e4f79f4bd2ffd3b65a1c2286030894f",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "sha256": "3d3a5fb8d2802a7a834016293ea02913df04c751e7d4052a4a83312dee66eda3",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "sha256": "fe49c77e4218bd038ad2986964225f16a8d07c352a061e2c4a47b2cd173c9890",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c009-mumbai-1969-07-20--raman.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--raman.json",
+      "sha256": "619b39066ce5d403e9e1a6707bee9f9656bce56494fb3e4ffb359ee11ac34c9a",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "sha256": "35e72830bf32324c2a7ff18b6cfbb903ebddc5334517268d7a5a588f9685aa70",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c009-mumbai-1969-07-20--surya.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--surya.json",
+      "sha256": "9158e05722be4d7dd12154aedf68720ffb2b86fc711e1cd5e8c393bb3eaf4768",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "sha256": "a7490be98c0f4cfc41c8e49c4f2d2833c8d6e57497dce1f49750219a3aa1bc95",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c010-chennai-2023-01-14--temporal.json",
+      "fixture": "variants/c010-chennai-2023-01-14--temporal.json",
+      "sha256": "f634131d062befcbe56275c51bc0b2f974dd4c655ca31c43b052d276ac4c4695",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "fixture": "variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "sha256": "3af136bcbae9fc52f4e532f70bb56de9436746edb5a9a4a290e79140f74b0d94",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "fixture": "variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "sha256": "fb47051941c0ff7a371f18e47c749766d25f0bf7d45c8e83c7c4b213b4b342f6",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c018-sydney-2000-09-15--raman.json",
+      "fixture": "variants/c018-sydney-2000-09-15--raman.json",
+      "sha256": "211ebfdb42a717a4c56f761530817a40ee7d603fcd4838c20f1050fb87c5c981",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c018-sydney-2000-09-15--true-chitra.json",
+      "fixture": "variants/c018-sydney-2000-09-15--true-chitra.json",
+      "sha256": "43e651b96caf9ad8d2d49f88cbcb3a35e59c803e832e144cdb6ffb1ebdc1b9e7",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c019-auckland-2019-12-31--temporal.json",
+      "fixture": "variants/c019-auckland-2019-12-31--temporal.json",
+      "sha256": "ad7a5adaee7345f8b019ee596c3d84ec85d00ca0edc754d1dc46e77bbb5235c0",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c027-reykjavik-1975-06-21--temporal.json",
+      "fixture": "variants/c027-reykjavik-1975-06-21--temporal.json",
+      "sha256": "6c816e0554bdf258ca3e3264b511fa342f696741c73e4c34d985761e0c0bd199",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c041-la-paz-2010-07-10--geocentric.json",
+      "fixture": "variants/c041-la-paz-2010-07-10--geocentric.json",
+      "sha256": "66ffd21cb7fe70f361925cb64dcb937f2c9e984416868cb0f001eadee7eb1515",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c041-la-paz-2010-07-10--temporal.json",
+      "fixture": "variants/c041-la-paz-2010-07-10--temporal.json",
+      "sha256": "7a28d0d4e3394418f71ef0f1e2cc3a32381367ee6319111b98ad4a61ab444416",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "sha256": "66c635c8d47a7967a9e20ca84d04606301e59ee3220cb7bbf2783140cfe2ce38",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c049-kathmandu-2010-06-01--geocentric.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--geocentric.json",
+      "sha256": "01f0399f0fb12492d97ea001eef9c2a04119ce393d7d0dc9c65d57889a77040b",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "sha256": "e7d981ad1fc22ad19d70c2cfe351c34a7bf22b2ebb6eb5f3083e4df9161bb5bc",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c049-kathmandu-2010-06-01--raman.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--raman.json",
+      "sha256": "fec0122eec3938f5ac805902ac407c1a6e7e1d721509b32c87be845da71f47a4",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "sha256": "e1ac4fa82ec1f0e41b13e768ace710467209bd5d5cf63e3885915b958e3d32b9",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c049-kathmandu-2010-06-01--temporal.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--temporal.json",
+      "sha256": "67e6e2ac9f4500ff9cd85904b904989a9b63199b47bef0653f104746bbea9749",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "sha256": "f933dddb45b8fb2f4f1f214b7871329f1fc2857fa366f806a18a6f89146aeb97",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c050-kathmandu-2015-03-01--geocentric.json",
+      "fixture": "variants/c050-kathmandu-2015-03-01--geocentric.json",
+      "sha256": "7ecc8481ac98ef1cdcd0472ad91ad2ae5e6e7c7e2315e70a0657b20b0b676023",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c050-kathmandu-2015-03-01--temporal.json",
+      "fixture": "variants/c050-kathmandu-2015-03-01--temporal.json",
+      "sha256": "d237f127a91d76d6bd777148a638f721a71a040422f477edc2f650d864f6db46",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c052-kathmandu-2020-04-13--geocentric.json",
+      "fixture": "variants/c052-kathmandu-2020-04-13--geocentric.json",
+      "sha256": "28089b917567c47ed1c157117e8984a7bb08f5662a2f8663443bd7f1fa793ed4",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "kalachakra/variants/c052-kathmandu-2020-04-13--temporal.json",
+      "fixture": "variants/c052-kathmandu-2020-04-13--temporal.json",
+      "sha256": "2a07f301c1a3e8147775c189f3527efb44aaa16c81e414b5413cf1cf448a6abf",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c054-kathmandu-2020-05-05--temporal.json",
+      "fixture": "variants/c054-kathmandu-2020-05-05--temporal.json",
+      "sha256": "246ed074934caf20c7f5f8439c9575b8ed7be4326dc55981b7ee588ecb320e78",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "kalachakra/variants/c055-kathmandu-2024-04-09--geocentric.json",
+      "fixture": "variants/c055-kathmandu-2024-04-09--geocentric.json",
+      "sha256": "ff73f85aea7191da76ba4f596bfc8cde51d9a1cecc5f6b7857001e1ce2fb1485",
+      "methods": ["spatial"]
+    }
+  ],
+  "counts": {
+    "files": 93,
+    "methods": 148
+  }
+}

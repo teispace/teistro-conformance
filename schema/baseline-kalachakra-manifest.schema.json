@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-kalachakra-manifest.schema.json",
+  "title": "The manifest of the Kalachakra corpus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "provenance",
+    "rules",
+    "files",
+    "counts"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-kalachakra-manifest/1"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "evidence_rank",
+        "engine_version",
+        "exporter_version"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "evidence_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        }
+      }
+    },
+    "rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sign_years",
+        "tables"
+      ],
+      "properties": {
+        "sign_years": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "minItems": 12,
+          "maxItems": 12,
+          "description": "Each sign's years, Aries to Pisces."
+        },
+        "tables": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "key",
+              "nakshatras",
+              "padas"
+            ],
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "nakshatras": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 26
+                },
+                "uniqueItems": true
+              },
+              "padas": {
+                "type": "array",
+                "minItems": 4,
+                "maxItems": 4,
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 11
+                  },
+                  "minItems": 9,
+                  "maxItems": 9
+                },
+                "description": "Each pada's nine signs in dasha order."
+              }
+            }
+          }
+        }
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "file",
+          "fixture",
+          "sha256",
+          "methods"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "fixture": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "methods": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "spatial",
+                "temporal"
+              ]
+            },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "files",
+        "methods"
+      ],
+      "properties": {
+        "files": {
+          "type": "integer"
+        },
+        "methods": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
