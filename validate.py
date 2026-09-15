@@ -225,6 +225,38 @@ def kalachakra(failures: list[str]) -> int:
     )
 
 
+SEVEN = ("SUN", "MOON", "MARS", "MERCURY", "JUPITER", "VENUS", "SATURN")
+
+
+def ashtakavarga(failures: list[str]) -> int:
+    """The Ashtakavarga: each file's inputs are its fixture's recorded
+    signs, and its sums are the sums of its own bindus."""
+
+    def check(name, entry, document, fixture, systems):
+        found = []
+        bodies = fixture["positions"]["bodies"]
+        wanted = {
+            "lagna_sign_index": fixture["foundation"]["lagna"]["sign_index"],
+            "graha_sign_index": {g: bodies[g]["sign_index"] for g in SEVEN},
+        }
+        if document.get("inputs") != wanted:
+            found.append(f"{name}: the inputs differ from the fixture's")
+        bav = document.get("bav", {})
+        sav = [sum(bav.get(g, [0] * 12)[i] for g in SEVEN) for i in range(12)]
+        if sav != document.get("sav"):
+            found.append(f"{name}: the sav is not the sum of the bav")
+        return found, 1
+
+    return derived(
+        failures,
+        "ashtakavarga",
+        "baseline-ashtakavarga",
+        lambda fixture: "foundation" in fixture.get("sections", []) and "positions" in fixture.get("sections", []),
+        check,
+        lambda files, systems, answers: {"files": files},
+    )
+
+
 GRAHAS = ("SUN", "MOON", "MARS", "MERCURY", "JUPITER", "VENUS", "SATURN", "RAHU", "KETU")
 
 
@@ -293,13 +325,14 @@ def main() -> int:
     corpus(failures)
     fixtures = baseline(failures)
     systems = dasha_systems(failures) + rashi_dashas(failures) + kalachakra(failures)
+    systems += ashtakavarga(failures)
     against_schema("tolerances", ROOT / "tolerances.json", failures)
     recorded = tables(failures)
 
     for failure in failures:
         print(f"FAIL  {failure}")
     print(
-        f"checked {fixtures} fixtures, {systems} derived dasha files and {recorded} recorded tables: "
+        f"checked {fixtures} fixtures, {systems} derived files and {recorded} recorded tables: "
         f"{len(failures)} failure(s)"
     )
     return 1 if failures else 0

@@ -1,6 +1,6 @@
 {
   "schema": "teistro-conformance/corpus/1",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "released": "2026-09-15",
   "licence": "CC0-1.0",
   "repository": "https://github.com/teispace/teistro-conformance",
@@ -50,6 +50,15 @@
       "recorded": "2026-09-15"
     },
     {
+      "path": "baseline/ashtakavarga",
+      "source": "the same engine's Ashtakavarga, computed from each fixture's recorded lagna and seven grahas' signs under each of its three Ekadhipatya methods",
+      "evidence_rank": 2,
+      "schema": "teistro-conformance/baseline-ashtakavarga/1",
+      "manifest": "baseline/ashtakavarga/manifest.json",
+      "counts": { "files": 77 },
+      "recorded": "2026-09-15"
+    },
+    {
       "path": "official",
       "source": "Nepal's national panchanga committee (npns.gov.np), read from its published Rashtriya Panchangam for BS 2082 and 2083",
       "evidence_rank": 1,
@@ -74,6 +83,8 @@
     "schema/baseline-rashi-dashas-manifest.schema.json",
     "schema/baseline-kalachakra.schema.json",
     "schema/baseline-kalachakra-manifest.schema.json",
+    "schema/baseline-ashtakavarga.schema.json",
+    "schema/baseline-ashtakavarga-manifest.schema.json",
     "schema/tolerances.schema.json",
     "schema/report.schema.json"
   ]

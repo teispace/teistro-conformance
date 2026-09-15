@@ -239,3 +239,20 @@ the first sign runs the unelapsed part of the pada of its years; after the
 nine, the same nine run reversed, three cycles in all; each mahadasha's nine
 antardashas begin from its own place and share it by their signs' years.
 
+## The Ashtakavarga (`teistro-conformance/baseline-ashtakavarga/1`)
+
+`ashtakavarga/charts/` and `ashtakavarga/variants/` hold one file for each
+fixture that records its `foundation` and `positions`, written by
+`export-ashtakavarga-vectors.mjs --corpus <this directory>` from the recorded
+lagna and seven grahas' signs, repeated as `inputs`. Signs index from Aries.
+
+`bav` holds each graha's bindus by sign, `sav` their sum and `sav_trikona` the
+sum after the trine reduction (the least of each trine taken from all three).
+`ekadhipatya` holds, for each of the engine's three methods, `sav_reduced`
+(the sum after the Ekadhipatya reduction as well), `rashi_pinda` (the reduced
+sum times each sign's measure, Virgo's 8) and each graha's `graha_pinda` (its
+raw bindus times its measure) and `yoga_pinda` (that plus the rashi pinda of
+its sign). The engine makes both reductions on the sum of the seven; BPHS
+makes them in each graha's own Ashtakavarga, so these are the engine's values
+and not the text's.
+

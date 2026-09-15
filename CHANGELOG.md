@@ -9,6 +9,23 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.5.0 — 2026-09-15
+
+**Values:** none moved; the Ashtakavarga of 77 charts is new.
+
+`baseline/ashtakavarga/`: the engine's Ashtakavarga for each of the 77
+fixtures that record their foundation and positions, computed from the
+recorded lagna and seven grahas' signs, which each file repeats as `inputs`:
+each graha's bindus by sign, their sum, the sum after the trine reduction,
+and under each of the engine's three Ekadhipatya methods (`classical`,
+`zero`, `transfer`) the fully reduced sum, the rashi pinda by sign and each
+graha's graha and yoga pindas. `validate.py` checks the inputs against the
+fixture and the sum against the bindus.
+
+The engine's reductions and pindas are its reading: it reduces the sum of the
+seven where BPHS reduces each graha's own Ashtakavarga, and these files record
+what it does.
+
 ## 0.4.0 — 2026-09-15
 
 **Values:** none moved; 148 are new.

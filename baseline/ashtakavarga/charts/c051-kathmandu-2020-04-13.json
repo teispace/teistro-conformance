@@ -1,0 +1,102 @@
+{
+  "schema": "teistro-conformance/baseline-ashtakavarga/1",
+  "fixture": "charts/c051-kathmandu-2020-04-13.json",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "inputs": "the fixture's foundation.lagna.sign_index and positions.bodies.*.sign_index for the seven grahas"
+  },
+  "inputs": {
+    "lagna_sign_index": 6,
+    "graha_sign_index": {
+      "SUN": 11,
+      "MOON": 8,
+      "MARS": 9,
+      "MERCURY": 11,
+      "JUPITER": 9,
+      "VENUS": 1,
+      "SATURN": 9
+    }
+  },
+  "bav": {
+    "SUN": [4, 3, 2, 4, 4, 6, 5, 6, 3, 5, 4, 2],
+    "MOON": [1, 5, 4, 4, 4, 5, 5, 4, 5, 4, 3, 5],
+    "MARS": [3, 3, 1, 5, 5, 1, 6, 3, 4, 4, 2, 2],
+    "MERCURY": [2, 4, 2, 7, 7, 4, 4, 6, 3, 7, 4, 4],
+    "JUPITER": [6, 2, 6, 4, 5, 2, 6, 5, 3, 7, 4, 6],
+    "VENUS": [2, 6, 3, 3, 6, 4, 5, 6, 4, 5, 4, 4],
+    "SATURN": [2, 4, 4, 1, 2, 1, 6, 4, 5, 3, 2, 5]
+  },
+  "sav": [20, 27, 22, 28, 33, 23, 37, 34, 27, 35, 23, 28],
+  "sav_trikona": [0, 4, 0, 0, 13, 0, 15, 6, 7, 12, 1, 0],
+  "ekadhipatya": {
+    "classical": {
+      "sav_reduced": [0, 4, 0, 0, 13, 0, 0, 6, 7, 12, 0, 0],
+      "rashi_pinda": [0, 40, 0, 0, 130, 0, 0, 48, 63, 60, 0, 0],
+      "graha_pinda": {
+        "SUN": 240,
+        "MOON": 245,
+        "MARS": 312,
+        "MERCURY": 270,
+        "JUPITER": 560,
+        "VENUS": 364,
+        "SATURN": 195
+      },
+      "yoga_pinda": {
+        "SUN": 240,
+        "MOON": 308,
+        "MARS": 372,
+        "MERCURY": 270,
+        "JUPITER": 620,
+        "VENUS": 404,
+        "SATURN": 255
+      }
+    },
+    "zero": {
+      "sav_reduced": [0, 0, 0, 0, 13, 0, 15, 6, 7, 12, 0, 0],
+      "rashi_pinda": [0, 0, 0, 0, 130, 0, 105, 48, 63, 60, 0, 0],
+      "graha_pinda": {
+        "SUN": 240,
+        "MOON": 245,
+        "MARS": 312,
+        "MERCURY": 270,
+        "JUPITER": 560,
+        "VENUS": 364,
+        "SATURN": 195
+      },
+      "yoga_pinda": {
+        "SUN": 240,
+        "MOON": 308,
+        "MARS": 372,
+        "MERCURY": 270,
+        "JUPITER": 620,
+        "VENUS": 364,
+        "SATURN": 255
+      }
+    },
+    "transfer": {
+      "sav_reduced": [0, 0, 0, 0, 13, 0, 19, 6, 7, 13, 0, 0],
+      "rashi_pinda": [0, 0, 0, 0, 130, 0, 133, 48, 63, 65, 0, 0],
+      "graha_pinda": {
+        "SUN": 240,
+        "MOON": 245,
+        "MARS": 312,
+        "MERCURY": 270,
+        "JUPITER": 560,
+        "VENUS": 364,
+        "SATURN": 195
+      },
+      "yoga_pinda": {
+        "SUN": 240,
+        "MOON": 308,
+        "MARS": 377,
+        "MERCURY": 270,
+        "JUPITER": 625,
+        "VENUS": 364,
+        "SATURN": 260
+      }
+    }
+  }
+}

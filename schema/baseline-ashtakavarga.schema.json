@@ -1,0 +1,589 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-ashtakavarga.schema.json",
+  "title": "The Ashtakavarga of one baseline fixture",
+  "description": "The engine's Ashtakavarga computed from the recorded signs of the fixture it names, repeated as `inputs`: each graha's bindus by sign, their sum, the sum after the trine reduction, and, per Ekadhipatya method, the fully reduced sum and the pindas. Signs index from Aries.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "fixture",
+    "provenance",
+    "inputs",
+    "bav",
+    "sav",
+    "sav_trikona",
+    "ekadhipatya"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-ashtakavarga/1"
+    },
+    "fixture": {
+      "type": "string",
+      "pattern": "^(charts|variants)/[^/]+\\.json$"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "evidence_rank",
+        "engine_version",
+        "exporter_version",
+        "inputs"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "evidence_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "string"
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lagna_sign_index",
+        "graha_sign_index"
+      ],
+      "properties": {
+        "lagna_sign_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "graha_sign_index": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "MOON": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "MARS": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "MERCURY": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "JUPITER": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "VENUS": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "SATURN": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            }
+          }
+        }
+      }
+    },
+    "bav": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "SUN",
+        "MOON",
+        "MARS",
+        "MERCURY",
+        "JUPITER",
+        "VENUS",
+        "SATURN"
+      ],
+      "properties": {
+        "SUN": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8
+          },
+          "minItems": 12,
+          "maxItems": 12
+        },
+        "MOON": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8
+          },
+          "minItems": 12,
+          "maxItems": 12
+        },
+        "MARS": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8
+          },
+          "minItems": 12,
+          "maxItems": 12
+        },
+        "MERCURY": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8
+          },
+          "minItems": 12,
+          "maxItems": 12
+        },
+        "JUPITER": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8
+          },
+          "minItems": 12,
+          "maxItems": 12
+        },
+        "VENUS": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8
+          },
+          "minItems": 12,
+          "maxItems": 12
+        },
+        "SATURN": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 8
+          },
+          "minItems": 12,
+          "maxItems": 12
+        }
+      }
+    },
+    "sav": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 56
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "sav_trikona": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 56
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "ekadhipatya": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "classical",
+        "zero",
+        "transfer"
+      ],
+      "properties": {
+        "classical": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sav_reduced",
+            "rashi_pinda",
+            "graha_pinda",
+            "yoga_pinda"
+          ],
+          "properties": {
+            "sav_reduced": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000
+              },
+              "minItems": 12,
+              "maxItems": 12
+            },
+            "rashi_pinda": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "minItems": 12,
+              "maxItems": 12
+            },
+            "graha_pinda": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "yoga_pinda": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        },
+        "zero": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sav_reduced",
+            "rashi_pinda",
+            "graha_pinda",
+            "yoga_pinda"
+          ],
+          "properties": {
+            "sav_reduced": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000
+              },
+              "minItems": 12,
+              "maxItems": 12
+            },
+            "rashi_pinda": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "minItems": 12,
+              "maxItems": 12
+            },
+            "graha_pinda": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "yoga_pinda": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        },
+        "transfer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sav_reduced",
+            "rashi_pinda",
+            "graha_pinda",
+            "yoga_pinda"
+          ],
+          "properties": {
+            "sav_reduced": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000
+              },
+              "minItems": 12,
+              "maxItems": 12
+            },
+            "rashi_pinda": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "minItems": 12,
+              "maxItems": 12
+            },
+            "graha_pinda": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "yoga_pinda": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

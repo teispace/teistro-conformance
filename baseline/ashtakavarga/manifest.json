@@ -1,0 +1,400 @@
+{
+  "schema": "teistro-conformance/baseline-ashtakavarga-manifest/1",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0"
+  },
+  "methods": ["classical", "zero", "transfer"],
+  "files": [
+    {
+      "file": "ashtakavarga/charts/c001-kathmandu-1990-04-14.json",
+      "fixture": "charts/c001-kathmandu-1990-04-14.json",
+      "sha256": "41dc582fda50c91a6df839bdfa397a40957a24487f0834f24fb5d10292f133e6"
+    },
+    {
+      "file": "ashtakavarga/charts/c002-kathmandu-1985-12-25.json",
+      "fixture": "charts/c002-kathmandu-1985-12-25.json",
+      "sha256": "d4b3fca4288d7a3ecea902426ab24fd66e3fd0b3f97c58661dabc3f393a20bf7"
+    },
+    {
+      "file": "ashtakavarga/charts/c003-kathmandu-1986-01-01.json",
+      "fixture": "charts/c003-kathmandu-1986-01-01.json",
+      "sha256": "8db9aba708a184ca74abf5542dc4178fa7a75b2a10760b50400d53f5dd5218fa"
+    },
+    {
+      "file": "ashtakavarga/charts/c004-kathmandu-2000-02-29.json",
+      "fixture": "charts/c004-kathmandu-2000-02-29.json",
+      "sha256": "c1654d1b5d240b7a0c8e375d19dd22f2fe3baaefb6da00c9cfffa29ae272c4d8"
+    },
+    {
+      "file": "ashtakavarga/charts/c005-kathmandu-1910-03-21.json",
+      "fixture": "charts/c005-kathmandu-1910-03-21.json",
+      "sha256": "c69c8601d508eeb6aaf7d20c3ba109598dfe118c1d02deb1eb5ea613f973f665"
+    },
+    {
+      "file": "ashtakavarga/charts/c006-pokhara-2012-07-15.json",
+      "fixture": "charts/c006-pokhara-2012-07-15.json",
+      "sha256": "79e93ce53d971cbf0bc44e20f4005e0e17694bedec61f13a00e57866fa11d699"
+    },
+    {
+      "file": "ashtakavarga/charts/c007-biratnagar-1975-11-02.json",
+      "fixture": "charts/c007-biratnagar-1975-11-02.json",
+      "sha256": "916c899437672344403f8c93d9b36bb36590932908b04570b6085de24864b5d7"
+    },
+    {
+      "file": "ashtakavarga/charts/c008-delhi-1947-08-15.json",
+      "fixture": "charts/c008-delhi-1947-08-15.json",
+      "sha256": "10ee122a42da626e8f36392572ad72ce2341577259e39ed0cf75054a614aeeb5"
+    },
+    {
+      "file": "ashtakavarga/charts/c009-mumbai-1969-07-20.json",
+      "fixture": "charts/c009-mumbai-1969-07-20.json",
+      "sha256": "5f9e7283824be3af3edad74a455e46f45a37302576c5c0b572cf1a45427eecf0"
+    },
+    {
+      "file": "ashtakavarga/charts/c010-chennai-2023-01-14.json",
+      "fixture": "charts/c010-chennai-2023-01-14.json",
+      "sha256": "d8669ab956cf92240b86cf23f69d5328a8becfc7d255b41386be265c2a19de61"
+    },
+    {
+      "file": "ashtakavarga/charts/c011-kolkata-1880-06-10.json",
+      "fixture": "charts/c011-kolkata-1880-06-10.json",
+      "sha256": "d57ff00263332731859fe6439994a2aad256867cbfeb6068d67daaae4071546d"
+    },
+    {
+      "file": "ashtakavarga/charts/c012-varanasi-1850-02-05.json",
+      "fixture": "charts/c012-varanasi-1850-02-05.json",
+      "sha256": "7f09598421c028f824b826c6c04e467b2a2def2901ddc8d4666847d1ea41a803"
+    },
+    {
+      "file": "ashtakavarga/charts/c013-colombo-1996-08-01.json",
+      "fixture": "charts/c013-colombo-1996-08-01.json",
+      "sha256": "b5d4d754b110eba23b93da8d5f212e94b62ceeecccffdeaebe8bb722a2a3cc85"
+    },
+    {
+      "file": "ashtakavarga/charts/c014-dhaka-2009-06-20.json",
+      "fixture": "charts/c014-dhaka-2009-06-20.json",
+      "sha256": "b044c5ca8e3ec0b4c924d7f946422228a30e229da5978172678d57b79aacaa7a"
+    },
+    {
+      "file": "ashtakavarga/charts/c015-kabul-1999-09-09.json",
+      "fixture": "charts/c015-kabul-1999-09-09.json",
+      "sha256": "9089bf17a6e6ef36d43dc2b6f1da62d863cc87d3ba8d81d1dbe48e5c45765269"
+    },
+    {
+      "file": "ashtakavarga/charts/c016-tokyo-2011-03-11.json",
+      "fixture": "charts/c016-tokyo-2011-03-11.json",
+      "sha256": "e27cd5128d3361f70eb13f293f061fc1af3c7b73d5e388e2efb1600b7576b80d"
+    },
+    {
+      "file": "ashtakavarga/charts/c017-singapore-1965-08-09.json",
+      "fixture": "charts/c017-singapore-1965-08-09.json",
+      "sha256": "f51daa102fc01046af2c4b7067ea6f2c6ac9204d82a5fa21c9d878cdf5077c1c"
+    },
+    {
+      "file": "ashtakavarga/charts/c018-sydney-2000-09-15.json",
+      "fixture": "charts/c018-sydney-2000-09-15.json",
+      "sha256": "6a2f521ffb4f15c959f48948728eb309845fbc6991c0349f6f42af97c8803af9"
+    },
+    {
+      "file": "ashtakavarga/charts/c019-auckland-2019-12-31.json",
+      "fixture": "charts/c019-auckland-2019-12-31.json",
+      "sha256": "2b1bbd1f48fe2ee52f41e2923a0ab60198b12e5a761f3287c0b3f4c4f8ce206a"
+    },
+    {
+      "file": "ashtakavarga/charts/c020-apia-2011-12-31.json",
+      "fixture": "charts/c020-apia-2011-12-31.json",
+      "sha256": "cdf9718c992400af29839e6f368f470fe66326c91bf27c400f359afbcc3799f9"
+    },
+    {
+      "file": "ashtakavarga/charts/c021-kiritimati-2000-01-01.json",
+      "fixture": "charts/c021-kiritimati-2000-01-01.json",
+      "sha256": "51b81888e038df03650e09a6fcd068dabaaebed8040de0859fc00bcc93142c3a"
+    },
+    {
+      "file": "ashtakavarga/charts/c022-honolulu-1941-12-07.json",
+      "fixture": "charts/c022-honolulu-1941-12-07.json",
+      "sha256": "d437131344ce07e7c2e5e9d29f5db80c85c44161363cf2174db27879580e6895"
+    },
+    {
+      "file": "ashtakavarga/charts/c023-london-1830-06-26.json",
+      "fixture": "charts/c023-london-1830-06-26.json",
+      "sha256": "0ddbb9de564484c5478df6aedb58715a09280163925e8e37e2b4d63c7d1e149f"
+    },
+    {
+      "file": "ashtakavarga/charts/c024-london-1947-05-18.json",
+      "fixture": "charts/c024-london-1947-05-18.json",
+      "sha256": "137195d40c2e9255a97ebbd9c4ba6b0778226cbb2ae6bd6625a7190c3c095fa0"
+    },
+    {
+      "file": "ashtakavarga/charts/c025-paris-1900-01-01.json",
+      "fixture": "charts/c025-paris-1900-01-01.json",
+      "sha256": "379ac6f3e7b1a43faa650930fd7c46000cf25939caf323ea5a548f170bee6eb7"
+    },
+    {
+      "file": "ashtakavarga/charts/c026-berlin-1945-05-08.json",
+      "fixture": "charts/c026-berlin-1945-05-08.json",
+      "sha256": "ef5203c31f3ff456fbbcffe3a487b2595c2e669c578ddd280224432484f334b9"
+    },
+    {
+      "file": "ashtakavarga/charts/c027-reykjavik-1975-06-21.json",
+      "fixture": "charts/c027-reykjavik-1975-06-21.json",
+      "sha256": "3cff2a86dba851f16d4e218595214985394e279cc79de7288f8bd01c79aa3b52"
+    },
+    {
+      "file": "ashtakavarga/charts/c028-troms-1988-06-21.json",
+      "fixture": "charts/c028-troms-1988-06-21.json",
+      "sha256": "9b71457e7a588d2ff93a7c0b95104fd21b4b2f2fa545a65e63341c5edc4f9852"
+    },
+    {
+      "file": "ashtakavarga/charts/c029-troms-1988-12-21.json",
+      "fixture": "charts/c029-troms-1988-12-21.json",
+      "sha256": "9876ce26c50fdf30920a443e158530c596709e2aee0aa4216c36fa9d45478ca4"
+    },
+    {
+      "file": "ashtakavarga/charts/c030-istanbul-2016-09-07.json",
+      "fixture": "charts/c030-istanbul-2016-09-07.json",
+      "sha256": "0f8fa2a916e67965c5573659a85d77d14b8acfbc0a775bfbfea5e2a60e726010"
+    },
+    {
+      "file": "ashtakavarga/charts/c031-cairo-2023-04-28.json",
+      "fixture": "charts/c031-cairo-2023-04-28.json",
+      "sha256": "ed27f79ca4d2bbb7d0dd8f523bcd77065fde8e497b8b784de14e4b1aff76eb0b"
+    },
+    {
+      "file": "ashtakavarga/charts/c032-nairobi-1963-12-12.json",
+      "fixture": "charts/c032-nairobi-1963-12-12.json",
+      "sha256": "44eb590f01d67336c261201f954a01b4b112c07ded9755e30584aea064d32977"
+    },
+    {
+      "file": "ashtakavarga/charts/c033-cape-town-1990-02-11.json",
+      "fixture": "charts/c033-cape-town-1990-02-11.json",
+      "sha256": "d1b23ea87df1a6da07609f8f947dcc6f1c06db4806a7ca04d2c13605ff36b373"
+    },
+    {
+      "file": "ashtakavarga/charts/c034-tehran-1979-02-11.json",
+      "fixture": "charts/c034-tehran-1979-02-11.json",
+      "sha256": "d4fc3a10509ba791cd0e2e0a40c443647873b10c11d1d56c9f6ac2cdc9ea5941"
+    },
+    {
+      "file": "ashtakavarga/charts/c035-new-york-2021-03-14.json",
+      "fixture": "charts/c035-new-york-2021-03-14.json",
+      "sha256": "59ad9ca78f2961ebeed02efffd84f5330a85310e98eac6a9e07567c3e365cab6"
+    },
+    {
+      "file": "ashtakavarga/charts/c036-new-york-2021-11-07.json",
+      "fixture": "charts/c036-new-york-2021-11-07.json",
+      "sha256": "2f39613da16b7a769faec4c33ef00ccb89213cf2ea98c8e74ba0768abff5ffdb"
+    },
+    {
+      "file": "ashtakavarga/charts/c037-new-york-2021-11-07.json",
+      "fixture": "charts/c037-new-york-2021-11-07.json",
+      "sha256": "9a93c8b6baa65e5644ebecb88eb2f05062c998ad9e1f3e85f6d6484bb6c6b26f"
+    },
+    {
+      "file": "ashtakavarga/charts/c038-new-york-1880-04-01.json",
+      "fixture": "charts/c038-new-york-1880-04-01.json",
+      "sha256": "00d658db4a50e5a7bf1e6609c4a5f13c869944c80f9af2eae8b45333ce3c4e04"
+    },
+    {
+      "file": "ashtakavarga/charts/c039-mexico-city-1985-09-19.json",
+      "fixture": "charts/c039-mexico-city-1985-09-19.json",
+      "sha256": "774b307c4d978f737ef557771ee6149474aaaed979ccfba2c8549a9be49ba43d"
+    },
+    {
+      "file": "ashtakavarga/charts/c040-buenos-aires-1986-06-22.json",
+      "fixture": "charts/c040-buenos-aires-1986-06-22.json",
+      "sha256": "cfc05595702941f733e80dccc679557fe215bedb3194d3e8fcbc0240f4779c2f"
+    },
+    {
+      "file": "ashtakavarga/charts/c041-la-paz-2010-07-10.json",
+      "fixture": "charts/c041-la-paz-2010-07-10.json",
+      "sha256": "cd1ce22be87781f28ff3521528ebfdbc7a862157e86ab81954888bd329ab1a5b"
+    },
+    {
+      "file": "ashtakavarga/charts/c042-quito-2001-01-01.json",
+      "fixture": "charts/c042-quito-2001-01-01.json",
+      "sha256": "f7b47a2764fb2300f36a697d2961bb47a309a224ec0e3f74331ad56d949b1e71"
+    },
+    {
+      "file": "ashtakavarga/charts/c043-fairbanks-2015-06-21.json",
+      "fixture": "charts/c043-fairbanks-2015-06-21.json",
+      "sha256": "8e52ed47937827497f966ff2480f0415fdf78943ed7430686a9e273df88e586d"
+    },
+    {
+      "file": "ashtakavarga/charts/c044-ushuaia-1995-12-22.json",
+      "fixture": "charts/c044-ushuaia-1995-12-22.json",
+      "sha256": "cb7fd48cb167f72ea71d219a4334bc96050acaeaebc6b2e047d4e2fc755bba7b"
+    },
+    {
+      "file": "ashtakavarga/charts/c045-sao-paulo-2019-02-16.json",
+      "fixture": "charts/c045-sao-paulo-2019-02-16.json",
+      "sha256": "94a2e062a28160333f2121ac0d55127be9e4c61b7c731724cc3e3b8d9f238acf"
+    },
+    {
+      "file": "ashtakavarga/charts/c046-kathmandu-2350-01-01.json",
+      "fixture": "charts/c046-kathmandu-2350-01-01.json",
+      "sha256": "581cba9bd79ecba199df39ad0e8c90ef9fd90d6782e78fefd6f3c6cf88f8f3c2"
+    },
+    {
+      "file": "ashtakavarga/charts/c047-london-1800-01-02.json",
+      "fixture": "charts/c047-london-1800-01-02.json",
+      "sha256": "390f70ac525794dddf6dd0322ed210d37ffceff7294d0e98f01a191f906af985"
+    },
+    {
+      "file": "ashtakavarga/charts/c048-kathmandu-2399-12-30.json",
+      "fixture": "charts/c048-kathmandu-2399-12-30.json",
+      "sha256": "4f981ab58c705f68a34eebfabb824e973b8e26142c0a48f7db4f717664040c11"
+    },
+    {
+      "file": "ashtakavarga/charts/c049-kathmandu-2010-06-01.json",
+      "fixture": "charts/c049-kathmandu-2010-06-01.json",
+      "sha256": "aa2583549b0e66c43b3752fb6e8f9a6d1f18938003183b452dcad954a15fc678"
+    },
+    {
+      "file": "ashtakavarga/charts/c050-kathmandu-2015-03-01.json",
+      "fixture": "charts/c050-kathmandu-2015-03-01.json",
+      "sha256": "49d6ed7493361bd22ddb8593e10e8bf34cc8033d467fdec973df35e43a897e9a"
+    },
+    {
+      "file": "ashtakavarga/charts/c051-kathmandu-2020-04-13.json",
+      "fixture": "charts/c051-kathmandu-2020-04-13.json",
+      "sha256": "167352ef068e24e6efcc75f20fe476de753bce20ee358fe2d6786502cb67505b"
+    },
+    {
+      "file": "ashtakavarga/charts/c052-kathmandu-2020-04-13.json",
+      "fixture": "charts/c052-kathmandu-2020-04-13.json",
+      "sha256": "867504d2e25f4ce29a307288010c6845e6cce8333515e12cf3d9b870cc8fbfde"
+    },
+    {
+      "file": "ashtakavarga/charts/c053-kathmandu-2021-01-30.json",
+      "fixture": "charts/c053-kathmandu-2021-01-30.json",
+      "sha256": "f1df975126a3dc351b535cf12ef7cd67bace6470faa288f0a25e60d02c400e32"
+    },
+    {
+      "file": "ashtakavarga/charts/c054-kathmandu-2020-05-05.json",
+      "fixture": "charts/c054-kathmandu-2020-05-05.json",
+      "sha256": "fb3207c3608564eeb3edc4a49315294c04fa083b0c5b7f0f6342ca2a4199f452"
+    },
+    {
+      "file": "ashtakavarga/charts/c055-kathmandu-2024-04-09.json",
+      "fixture": "charts/c055-kathmandu-2024-04-09.json",
+      "sha256": "3cc0b82712b6632795f64ee18ee3983d3520b33244469186e780ccea0986e0a4"
+    },
+    {
+      "file": "ashtakavarga/variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "sha256": "d50b95da3cf34b08077f2d6198ec72477d8302eefb57f1b9c3b1334cafdfb83b"
+    },
+    {
+      "file": "ashtakavarga/variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "sha256": "66a5b7dcb029b7cb238df642b213db73440d07431eb03e1a188bb9a5ada2e114"
+    },
+    {
+      "file": "ashtakavarga/variants/c001-kathmandu-1990-04-14--raman.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--raman.json",
+      "sha256": "c1eb52832be24ec40bef967e0096aeb86242e1f31e7483b5adf5ed876e20eb13"
+    },
+    {
+      "file": "ashtakavarga/variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "sha256": "9c40124c80e7ebc152723be26c4132db050e04339d3adedad58af9af270e529a"
+    },
+    {
+      "file": "ashtakavarga/variants/c001-kathmandu-1990-04-14--surya.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--surya.json",
+      "sha256": "f08bb85746af5d53cd8f5b4410d7fbd522df424de53305db73c2547026223e3f"
+    },
+    {
+      "file": "ashtakavarga/variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "sha256": "fdd1e27f48e04ca8a1eddd49e09f106b66acc659e3d76de2d70363d9e4200bc1"
+    },
+    {
+      "file": "ashtakavarga/variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "fixture": "variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "sha256": "93fa902d85454a0952a62287a5fa5997894b23c6abce83db5a4e308eb6363713"
+    },
+    {
+      "file": "ashtakavarga/variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "sha256": "f867623476ad4c0c8ba3b9ba5a163bbe0984d83c11c0a43edc3ef37e504182af"
+    },
+    {
+      "file": "ashtakavarga/variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "sha256": "abeed85bd3cac400426ebefe64a23e00a69cba73d8a4fe03a490feb650f4dfc4"
+    },
+    {
+      "file": "ashtakavarga/variants/c009-mumbai-1969-07-20--raman.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--raman.json",
+      "sha256": "3d1fdd8a2fe4f98513d2aa6fea756c8f2a88e61c30890c372aca11f84cf129ee"
+    },
+    {
+      "file": "ashtakavarga/variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "sha256": "e35ffa5e39834154281762d3a1914bb4a63d646992ea478d49b3b8ca04df62d8"
+    },
+    {
+      "file": "ashtakavarga/variants/c009-mumbai-1969-07-20--surya.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--surya.json",
+      "sha256": "8a876b2a5f0eab2990259b866261f2e2aa08ee5431e6fe8644cbd65fd4375e3d"
+    },
+    {
+      "file": "ashtakavarga/variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "sha256": "3cc3235cee01dd97a67c542f8ef970c485eb1f9579a449124de61aaedf41713e"
+    },
+    {
+      "file": "ashtakavarga/variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "fixture": "variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "sha256": "fe85bd1b0867a239634d5b25e6dcb0bb9a8d5cedbc73d7d39f3b6f0205eafdd0"
+    },
+    {
+      "file": "ashtakavarga/variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "fixture": "variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "sha256": "52b9c85b0629ba4b1f1bd9ef9dc7170ff674831dae1550946eb9459a9a07a267"
+    },
+    {
+      "file": "ashtakavarga/variants/c018-sydney-2000-09-15--raman.json",
+      "fixture": "variants/c018-sydney-2000-09-15--raman.json",
+      "sha256": "b75e72ab5f565da3e134adf53eb710cbfe366ed6db9dd58e2278ca8e9a0d7743"
+    },
+    {
+      "file": "ashtakavarga/variants/c018-sydney-2000-09-15--true-chitra.json",
+      "fixture": "variants/c018-sydney-2000-09-15--true-chitra.json",
+      "sha256": "a38b8c25d8bdf91c2e2b39a8db57572d47903d3e7ebb9ee90c365a062183daba"
+    },
+    {
+      "file": "ashtakavarga/variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "sha256": "149f66748d40e22eed473742ea7ee0b2f1f27720980380e502562a36af70cbcd"
+    },
+    {
+      "file": "ashtakavarga/variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "sha256": "3068ecb685c742f5d6d8d5bd9ed43c4bc6bee7295c45825f93aeadcdf7acb49a"
+    },
+    {
+      "file": "ashtakavarga/variants/c049-kathmandu-2010-06-01--raman.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--raman.json",
+      "sha256": "895fefee6551cd68d7dc584db23313200ea85d6f8540f1e31ac3d04485276ca8"
+    },
+    {
+      "file": "ashtakavarga/variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "sha256": "172cb32c05fb837d5a4a6187a2f9a9fcecdefa98eac2483b667ee85f185f5513"
+    },
+    {
+      "file": "ashtakavarga/variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "sha256": "c6fda2cae907728ec272c15d793f8fa433dbc383a38a73e98736c483de78295c"
+    }
+  ],
+  "counts": {
+    "files": 77
+  }
+}
