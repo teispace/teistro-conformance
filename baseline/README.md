@@ -291,3 +291,21 @@ and in total, `cheshta`, `naisargika` and `drik`; then the sum of the six in
 shashtiamshas and in rupas (over 60), the rupas the engine requires, and
 whether the sum reaches them. `shadbala/manifest.json` carries the natural
 strengths, the required rupas and the Saptavargaja's vargas.
+
+## The Bhava bala (`teistro-conformance/baseline-bhava-bala/1`)
+
+`bhava-bala/charts/` and `bhava-bala/variants/` hold one file for each fixture
+the Shadbala corpus holds, written by
+`export-bhava-bala-vectors.mjs --corpus <this directory>` from the recorded
+lagna's sign, the nine grahas' recorded houses and the engine's Shadbala of
+the same recorded chart (each graha's total and Drik), repeated as `inputs`.
+
+`aspected_by` names, for each house, the grahas the engine counts as
+aspecting it: every graha's seventh house, and Mars's fourth and eighth,
+Jupiter's fifth and ninth and Saturn's third and tenth. `bhavas` holds the
+twelve houses in order, each in virupas rounded to hundredths: `bhavadhipati`,
+the lord's Shadbala; `dig`, ten virupas a house from the house the bhava's
+sign class makes weakest; `drishti`, a quarter of `dig` added when only
+benefics aspect it and taken away when only malefics do, with Jupiter's and
+Mercury's Drik added when they aspect it; and `total`, the three together.
+

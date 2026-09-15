@@ -367,6 +367,65 @@ def shadbala(failures: list[str]) -> int:
 GRAHAS = ("SUN", "MOON", "MARS", "MERCURY", "JUPITER", "VENUS", "SATURN", "RAHU", "KETU")
 
 
+def bhava_bala(failures: list[str]) -> int:
+    """The Bhava bala: each file's inputs are its fixture's recorded lagna and
+    houses and its Shadbala file's strengths; the aspects are the seventh and
+    the special aspects from those houses; the lord's strength is the lord's
+    Shadbala; and each house's total is its components', all in hundredths."""
+    special = {"MARS": (4, 8), "JUPITER": (5, 9), "SATURN": (3, 10)}
+
+    def check(name, entry, document, fixture, systems):
+        found = []
+        bodies = fixture["positions"]["bodies"]
+        strength = load(ROOT / "baseline" / "shadbala" / entry["fixture"])
+        inputs = document.get("inputs", {})
+        wanted = {
+            "lagna_sign_index": fixture["foundation"]["lagna"]["sign_index"],
+            "graha_house": {g: bodies[g]["house"] for g in GRAHAS},
+            "shadbala": {
+                g: {
+                    "total_shashtiamshas": strength["shadbala"][g]["total_shashtiamshas"],
+                    "drik": strength["shadbala"][g]["drik"],
+                }
+                for g in SEVEN
+            }
+            if isinstance(strength, dict)
+            else None,
+        }
+        if inputs != wanted:
+            found.append(f"{name}: the inputs differ from the fixture's and its Shadbala's")
+            return found, 1
+        aspected = {str(h): [] for h in range(1, 13)}
+        for g in GRAHAS:
+            at = inputs["graha_house"][g]
+            for count in (7, *special.get(g, ())):
+                aspected[str((at + count - 2) % 12 + 1)].append(g)
+        if document.get("aspected_by") != aspected:
+            found.append(f"{name}: the aspects are not the seventh and special aspects of the recorded houses")
+        for index, bhava in enumerate(document.get("bhavas", [])):
+            sign = (inputs["lagna_sign_index"] + index) % 12
+            lord = RASHI_LORDS[sign]
+            if round(inputs["shadbala"][lord]["total_shashtiamshas"] * 100) / 100 != bhava["bhavadhipati"]:
+                found.append(f"{name}: house {index + 1}'s lord's strength is not {lord}'s Shadbala")
+            if abs(bhava["bhavadhipati"] + bhava["dig"] + bhava["drishti"] - bhava["total"]) > 0.015:
+                found.append(f"{name}: house {index + 1}'s total is not its components'")
+        return found, 1
+
+    return derived(
+        failures,
+        "bhava-bala",
+        "baseline-bhava-bala",
+        lambda fixture: all(s in fixture.get("sections", []) for s in SHADBALA_SECTIONS) and "next_day" in fixture.get("foundation", {}),
+        check,
+        lambda files, systems, answers: {"files": files},
+    )
+
+
+RASHI_LORDS = ("MARS", "VENUS", "MERCURY", "MOON", "SUN", "MERCURY", "VENUS", "MARS", "JUPITER", "SATURN", "SATURN", "JUPITER")
+
+
+
+
 def rashi_dashas(failures: list[str]) -> int:
     """The sign-based dashas: each file's inputs are its fixture's recorded
     chart, field for field."""
@@ -432,7 +491,7 @@ def main() -> int:
     corpus(failures)
     fixtures = baseline(failures)
     systems = dasha_systems(failures) + rashi_dashas(failures) + kalachakra(failures)
-    systems += ashtakavarga(failures) + vimshopaka(failures) + shadbala(failures)
+    systems += ashtakavarga(failures) + vimshopaka(failures) + shadbala(failures) + bhava_bala(failures)
     against_schema("tolerances", ROOT / "tolerances.json", failures)
     recorded = tables(failures)
 

@@ -1,0 +1,515 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-bhava-bala.schema.json",
+  "title": "The Bhava bala of one baseline fixture",
+  "description": "The engine's Bhava bala computed from the recorded chart of the fixture it names, repeated as `inputs`: the lagna's sign, the nine grahas' houses, and the engine's Shadbala of the same chart; which grahas the engine counts as aspecting each house; and each of the twelve houses' strength by component, in virupas rounded to hundredths.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "fixture",
+    "provenance",
+    "inputs",
+    "aspected_by",
+    "bhavas"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-bhava-bala/1"
+    },
+    "fixture": {
+      "type": "string",
+      "pattern": "^(charts|variants)/[^/]+\\.json$"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "evidence_rank",
+        "engine_version",
+        "exporter_version",
+        "inputs"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "evidence_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "string"
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lagna_sign_index",
+        "graha_house",
+        "shadbala"
+      ],
+      "properties": {
+        "lagna_sign_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "graha_house": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN",
+            "RAHU",
+            "KETU"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "MOON": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "MARS": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "MERCURY": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "JUPITER": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "VENUS": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "SATURN": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "RAHU": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "KETU": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            }
+          }
+        },
+        "shadbala": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "total_shashtiamshas",
+                "drik"
+              ],
+              "properties": {
+                "total_shashtiamshas": {
+                  "type": "number"
+                },
+                "drik": {
+                  "type": "number"
+                }
+              }
+            },
+            "MOON": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "total_shashtiamshas",
+                "drik"
+              ],
+              "properties": {
+                "total_shashtiamshas": {
+                  "type": "number"
+                },
+                "drik": {
+                  "type": "number"
+                }
+              }
+            },
+            "MARS": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "total_shashtiamshas",
+                "drik"
+              ],
+              "properties": {
+                "total_shashtiamshas": {
+                  "type": "number"
+                },
+                "drik": {
+                  "type": "number"
+                }
+              }
+            },
+            "MERCURY": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "total_shashtiamshas",
+                "drik"
+              ],
+              "properties": {
+                "total_shashtiamshas": {
+                  "type": "number"
+                },
+                "drik": {
+                  "type": "number"
+                }
+              }
+            },
+            "JUPITER": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "total_shashtiamshas",
+                "drik"
+              ],
+              "properties": {
+                "total_shashtiamshas": {
+                  "type": "number"
+                },
+                "drik": {
+                  "type": "number"
+                }
+              }
+            },
+            "VENUS": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "total_shashtiamshas",
+                "drik"
+              ],
+              "properties": {
+                "total_shashtiamshas": {
+                  "type": "number"
+                },
+                "drik": {
+                  "type": "number"
+                }
+              }
+            },
+            "SATURN": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "total_shashtiamshas",
+                "drik"
+              ],
+              "properties": {
+                "total_shashtiamshas": {
+                  "type": "number"
+                },
+                "drik": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "aspected_by": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "properties": {
+        "1": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "2": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "3": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "4": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "5": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "6": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "7": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "8": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "9": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "10": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "11": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "12": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "SUN",
+              "MOON",
+              "MARS",
+              "MERCURY",
+              "JUPITER",
+              "VENUS",
+              "SATURN",
+              "RAHU",
+              "KETU"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "bhavas": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bhavadhipati",
+          "dig",
+          "drishti",
+          "total"
+        ],
+        "properties": {
+          "bhavadhipati": {
+            "type": "number"
+          },
+          "dig": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 60
+          },
+          "drishti": {
+            "type": "number"
+          },
+          "total": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

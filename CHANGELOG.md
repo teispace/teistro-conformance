@@ -9,6 +9,24 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.8.0 — 2026-09-15
+
+**Values:** none moved; the Bhava bala of 71 charts is new.
+
+`baseline/bhava-bala/`: the engine's Bhava bala for each of the 71 fixtures
+the Shadbala corpus holds, computed from the recorded lagna's sign, the nine
+grahas' recorded houses and the engine's Shadbala of the same chart, repeated
+as `inputs`. `aspected_by` records which grahas the engine counts as aspecting
+each house, and `bhavas` each of the twelve houses' strength from its lord,
+its direction and the drishtis it receives, with the total, in virupas
+rounded to hundredths as the engine returns them. `validate.py` checks the
+inputs against the fixture and its Shadbala file, the aspects against the
+recorded houses, the lord's strength against its Shadbala, and each total
+against its parts.
+
+The engine follows BPHS ch. 27 vv. 26 to 29 in whole-sign steps and omits the
+special rules of vv. 30 and 31, so these files record the engine's reading.
+
 ## 0.7.0 — 2026-09-15
 
 **Values:** none moved; the Shadbala of 71 charts is new.

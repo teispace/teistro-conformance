@@ -1,0 +1,143 @@
+{
+  "schema": "teistro-conformance/baseline-bhava-bala/1",
+  "fixture": "charts/c045-sao-paulo-2019-02-16.json",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "inputs": "the fixture's foundation.lagna.sign_index, positions.bodies.*.house for the nine grahas, and the engine's Shadbala of the recorded chart (baseline/shadbala's file for the same fixture)"
+  },
+  "inputs": {
+    "lagna_sign_index": 7,
+    "graha_house": {
+      "SUN": 4,
+      "MOON": 8,
+      "MARS": 6,
+      "MERCURY": 4,
+      "JUPITER": 1,
+      "VENUS": 2,
+      "SATURN": 2,
+      "RAHU": 9,
+      "KETU": 3
+    },
+    "shadbala": {
+      "SUN": {
+        "total_shashtiamshas": 421.2069866028758,
+        "drik": 30
+      },
+      "MOON": {
+        "total_shashtiamshas": 392.2958597940966,
+        "drik": -30
+      },
+      "MARS": {
+        "total_shashtiamshas": 329.6736225644989,
+        "drik": -30
+      },
+      "MERCURY": {
+        "total_shashtiamshas": 446.2034912877646,
+        "drik": 30
+      },
+      "JUPITER": {
+        "total_shashtiamshas": 362.5934321413988,
+        "drik": -60
+      },
+      "VENUS": {
+        "total_shashtiamshas": 368.1834478571984,
+        "drik": 30
+      },
+      "SATURN": {
+        "total_shashtiamshas": 499.39164382699164,
+        "drik": 30
+      }
+    }
+  },
+  "aspected_by": {
+    "1": ["MARS"],
+    "2": ["MOON"],
+    "3": ["RAHU"],
+    "4": ["SATURN"],
+    "5": ["JUPITER"],
+    "6": [],
+    "7": ["JUPITER"],
+    "8": ["VENUS", "SATURN"],
+    "9": ["MARS", "JUPITER", "KETU"],
+    "10": ["SUN", "MERCURY"],
+    "11": ["SATURN"],
+    "12": ["MARS"]
+  },
+  "bhavas": [
+    {
+      "bhavadhipati": 329.67,
+      "dig": 0,
+      "drishti": 0,
+      "total": 329.67
+    },
+    {
+      "bhavadhipati": 362.59,
+      "dig": 50,
+      "drishti": 12.5,
+      "total": 425.09
+    },
+    {
+      "bhavadhipati": 499.39,
+      "dig": 10,
+      "drishti": -2.5,
+      "total": 506.89
+    },
+    {
+      "bhavadhipati": 499.39,
+      "dig": 30,
+      "drishti": -7.5,
+      "total": 521.89
+    },
+    {
+      "bhavadhipati": 362.59,
+      "dig": 50,
+      "drishti": -47.5,
+      "total": 365.09
+    },
+    {
+      "bhavadhipati": 329.67,
+      "dig": 20,
+      "drishti": 0,
+      "total": 349.67
+    },
+    {
+      "bhavadhipati": 368.18,
+      "dig": 30,
+      "drishti": -52.5,
+      "total": 345.68
+    },
+    {
+      "bhavadhipati": 446.2,
+      "dig": 10,
+      "drishti": 0,
+      "total": 456.2
+    },
+    {
+      "bhavadhipati": 392.3,
+      "dig": 40,
+      "drishti": -60,
+      "total": 372.3
+    },
+    {
+      "bhavadhipati": 421.21,
+      "dig": 60,
+      "drishti": 30,
+      "total": 511.21
+    },
+    {
+      "bhavadhipati": 446.2,
+      "dig": 40,
+      "drishti": -10,
+      "total": 476.2
+    },
+    {
+      "bhavadhipati": 368.18,
+      "dig": 50,
+      "drishti": -12.5,
+      "total": 405.68
+    }
+  ]
+}
