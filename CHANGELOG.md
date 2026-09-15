@@ -9,6 +9,25 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.3.0 — 2026-09-15
+
+**Values:** none moved; 616 are new.
+
+`baseline/rashi-dashas/`: the engine's eight sign-based (Jaimini) dashas —
+Chara, Narayana, Padanadhamsa, Trikona, Drig, Shoola, Niryana Shoola and
+Mandooka — for each of the 77 fixtures that record their foundation and
+positions: the tree to antardashas as `[path, sign_index, lord, start_jd,
+end_jd]` rows and the chain of three levels at two reference instants.
+
+Each was computed **from the fixture's recorded chart** — the lagna's sign,
+the nine grahas' signs and dignities, and the arudha and navamsha lagnas —
+which every file repeats as `inputs`, and `validate.py` checks field by
+field against the fixture as well as by hash and schema. The engine's
+rules are one reading among several schools for most of these systems;
+the files record what it does, not what a text says.
+
+`validate.py`'s two derived corpora now share one checker.
+
 ## 0.2.0 — 2026-09-15
 
 **Values:** none moved; 1184 are new.

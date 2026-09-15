@@ -183,3 +183,41 @@ end_jd]`, empty once the cycle has ended.
 
 `dasha-systems/manifest.json` lists every file with its SHA-256, its fixture
 and the methods it answers.
+
+## The rashi dashas (`teistro-conformance/baseline-rashi-dashas/1`)
+
+`rashi-dashas/charts/` and `rashi-dashas/variants/` hold one file for each
+fixture that records its `foundation` and `positions`, under the fixture's
+own file name, written by `export-rashi-dasha-vectors.mjs --corpus <this
+directory>`. Each answers the engine's eight sign-based dashas from the
+fixture's recorded chart, which the file repeats as `inputs`: the birth
+instant, the lagna's sign, the arudha and navamsha lagnas' signs, and each
+graha's sign and dignity. No year length is chosen per system: every one
+uses 365.25 days (`year_length_days`), and none has a balance at birth.
+
+Per system: the tree as pre-order rows `[path, sign_index, lord, start_jd,
+end_jd]` to depth 2, and the chain of three levels at each of the
+fixture's `reference_instants_jd` (the dasha fixtures' own, otherwise birth
+plus 10 000 days and 2026-09-04T00:00:00Z) as rows `[level, index,
+sign_index, lord, start_jd, end_jd]`, empty past the end of the cycle.
+
+| system | starts from | order | years a sign |
+|---|---|---|---|
+| Chara | lagna | through the signs, forward for an odd lagna | the footed count to the stronger Jaimini lord |
+| Narayana | lagna | as Chara | as Chara, one more for an exalted lord and one fewer for a debilitated one |
+| Padanadhamsa | arudha lagna | as Chara, by the arudha lagna's parity | as Chara |
+| Trikona | lagna | the trine groups from the lagna's, each group reversed for an even lagna | as Chara |
+| Drig | the ninth house | the ninth, tenth and eleventh houses, each followed by the signs it aspects | as Chara |
+| Shoola | lagna | as Chara | 9 |
+| Niryana Shoola | navamsha lagna | as Chara, by its parity | 9 |
+| Mandooka | lagna | back two signs at a time from the lagna, then from the sign before it | 7 movable, 8 fixed, 9 dual |
+
+Every mahadasha divides into twelve equal antardashas starting from its own
+sign, forward for an odd sign and back for an even one. Where a period is
+counted to its lord, and in Mandooka, a mahadasha names the stronger of
+Scorpio's or Aquarius's two lords (the one in a kendra from the sign when
+only one is, else Ketu or Rahu); Shoola's and Niryana Shoola's mahadashas,
+and every antardasha, name the first lord. Drig appends, in the zodiac's
+order, any sign its houses and their aspects leave out.
+`rashi-dashas/manifest.json` lists every file with its SHA-256.
+

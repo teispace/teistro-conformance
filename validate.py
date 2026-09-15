@@ -101,15 +101,27 @@ def baseline(failures: list[str]) -> int:
     return len(listed)
 
 
-def dasha_systems(failures: list[str]) -> int:
-    """The dasha systems corpus: its manifest, every file it lists against
-    its schema and its hash, and every fixture that records a dasha has its
-    file, answering the same balance methods."""
+def derived(
+    failures: list[str],
+    directory: str,
+    schema: str,
+    eligible,
+    check,
+    counts,
+) -> int:
+    """A corpus computed from the chart fixtures' recorded values: its
+    manifest, every file it lists against its schema and its hash, the
+    fixture each names, and a file for exactly the fixtures that hold what
+    it reads.
+
+    `eligible(fixture)` says whether a fixture should have a file;
+    `check(name, entry, document, fixture, systems)` returns the file's
+    own failures and how many answers it holds; `counts(listed, systems,
+    answers)` is what the manifest's counts must be.
+    """
     base = ROOT / "baseline"
-    directory = base / "dasha-systems"
-    manifest = against_schema(
-        "baseline-dasha-systems-manifest", directory / "manifest.json", failures
-    )
+    root = base / directory
+    manifest = against_schema(f"{schema}-manifest", root / "manifest.json", failures)
     if manifest is None:
         return 0
     systems = manifest.get("systems", [])
@@ -120,42 +132,98 @@ def dasha_systems(failures: list[str]) -> int:
         listed.add(name)
         path = base / name
         if not path.is_file():
-            failures.append(f"the dasha systems manifest lists a missing file: {name}")
+            failures.append(f"the {directory} manifest lists a missing file: {name}")
             continue
         if hashlib.sha256(path.read_bytes()).hexdigest() != entry.get("sha256"):
             failures.append(f"{name}: the sha256 differs from the manifest")
-        document = against_schema("baseline-dasha-systems", path, failures)
+        document = against_schema(schema, path, failures)
         if document is None:
             continue
         fixture = load(base / entry.get("fixture", ""))
-        if not isinstance(fixture, dict) or not isinstance(fixture.get("dashas"), dict):
-            failures.append(f"{name}: the fixture it names records no dasha")
+        if not isinstance(fixture, dict) or not eligible(fixture):
+            failures.append(f"{name}: the fixture it names does not hold what it reads")
             continue
-        recorded = sorted(fixture["dashas"].get("methods", {}))
-        if document.get("fixture") != entry.get("fixture") or sorted(entry.get("methods", [])) != recorded:
-            failures.append(f"{name}: the fixture or its methods differ from the manifest")
+        if document.get("fixture") != entry.get("fixture"):
+            failures.append(f"{name}: the fixture differs from the manifest")
         if sorted(document.get("systems", {})) != sorted(systems):
             failures.append(f"{name}: the systems differ from the manifest's")
-        for system, answer in document.get("systems", {}).items():
-            if sorted(answer.get("methods", {})) != recorded:
-                failures.append(f"{name}: {system} answers methods the fixture does not record")
-            answers += len(answer.get("methods", {}))
+        found, held = check(name, entry, document, fixture, systems)
+        failures.extend(found)
+        answers += held
 
     for sub in ("charts", "variants"):
         for path in sorted((base / sub).glob("*.json")):
-            if isinstance(load(path), dict) and load(path).get("dashas") is not None:
-                name = f"dasha-systems/{sub}/{path.name}"
-                if name not in listed:
-                    failures.append(f"a fixture records a dasha and has no dasha systems file: {sub}/{path.name}")
-        for path in sorted((directory / sub).glob("*.json")):
-            name = f"dasha-systems/{sub}/{path.name}"
-            if name not in listed:
-                failures.append(f"a dasha systems file the manifest does not list: {name}")
+            fixture = load(path)
+            if isinstance(fixture, dict) and eligible(fixture):
+                if f"{directory}/{sub}/{path.name}" not in listed:
+                    failures.append(f"a fixture holds what {directory} reads and has no file: {sub}/{path.name}")
+        for path in sorted((root / sub).glob("*.json")):
+            if f"{directory}/{sub}/{path.name}" not in listed:
+                failures.append(f"a {directory} file the manifest does not list: {directory}/{sub}/{path.name}")
 
-    counts = manifest.get("counts", {})
-    if counts != {"files": len(listed), "systems": len(systems), "methods": answers}:
-        failures.append(f"the dasha systems manifest's counts {counts} disagree with its files")
+    if manifest.get("counts") != counts(len(listed), len(systems), answers):
+        failures.append(f"the {directory} manifest's counts {manifest.get('counts')} disagree with its files")
     return len(listed)
+
+
+def dasha_systems(failures: list[str]) -> int:
+    """The nakshatra-seeded systems beside Vimshottari: each answers exactly
+    the balance methods its fixture records."""
+
+    def check(name, entry, document, fixture, systems):
+        found = []
+        recorded = sorted(fixture["dashas"].get("methods", {}))
+        if sorted(entry.get("methods", [])) != recorded:
+            found.append(f"{name}: the methods differ from the fixture's")
+        held = 0
+        for system, answer in document.get("systems", {}).items():
+            if sorted(answer.get("methods", {})) != recorded:
+                found.append(f"{name}: {system} answers methods the fixture does not record")
+            held += len(answer.get("methods", {}))
+        return found, held
+
+    return derived(
+        failures,
+        "dasha-systems",
+        "baseline-dasha-systems",
+        lambda fixture: isinstance(fixture.get("dashas"), dict),
+        check,
+        lambda files, systems, answers: {"files": files, "systems": systems, "methods": answers},
+    )
+
+
+GRAHAS = ("SUN", "MOON", "MARS", "MERCURY", "JUPITER", "VENUS", "SATURN", "RAHU", "KETU")
+
+
+def rashi_dashas(failures: list[str]) -> int:
+    """The sign-based dashas: each file's inputs are its fixture's recorded
+    chart, field for field."""
+
+    def check(name, entry, document, fixture, systems):
+        foundation = fixture["foundation"]
+        bodies = fixture["positions"]["bodies"]
+        wanted = {
+            "jd_ut": fixture["input"]["resolved"]["jd_ut"],
+            "lagna_sign_index": foundation["lagna"]["sign_index"],
+            "arudha_lagna_sign_index": foundation["arudha_lagna_sign_index"],
+            "navamsha_lagna_sign_index": foundation["navamsha_lagna_sign_index"],
+            "graha_sign_index": {g: bodies[g]["sign_index"] for g in GRAHAS},
+            "graha_dignity": {g: bodies[g]["dignity"] for g in GRAHAS},
+        }
+        found = []
+        for field, value in wanted.items():
+            if document.get("inputs", {}).get(field) != value:
+                found.append(f"{name}: inputs.{field} differs from the fixture's")
+        return found, len(document.get("systems", {}))
+
+    return derived(
+        failures,
+        "rashi-dashas",
+        "baseline-rashi-dashas",
+        lambda fixture: "foundation" in fixture.get("sections", []) and "positions" in fixture.get("sections", []),
+        check,
+        lambda files, systems, answers: {"files": files, "systems": systems, "answers": answers},
+    )
 
 
 def tables(failures: list[str]) -> int:
@@ -191,14 +259,14 @@ def main() -> int:
     failures: list[str] = []
     corpus(failures)
     fixtures = baseline(failures)
-    systems = dasha_systems(failures)
+    systems = dasha_systems(failures) + rashi_dashas(failures)
     against_schema("tolerances", ROOT / "tolerances.json", failures)
     recorded = tables(failures)
 
     for failure in failures:
         print(f"FAIL  {failure}")
     print(
-        f"checked {fixtures} fixtures, {systems} dasha systems files and {recorded} recorded tables: "
+        f"checked {fixtures} fixtures, {systems} derived dasha files and {recorded} recorded tables: "
         f"{len(failures)} failure(s)"
     )
     return 1 if failures else 0

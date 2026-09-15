@@ -15,6 +15,7 @@ standard nobody can use freely is not a standard.
 |---|---|---|
 | [`baseline/`](baseline) | 115 fixtures over 55 charts under 13 settings profiles, from an established open-source engine over Swiss Ephemeris 2.10.03: positions, houses, vargas, panchanga and dashas, each with the complete profile and its hash. [What each chart is for, what each profile changes and what every section holds](baseline/README.md) | 2 |
 | [`baseline/dasha-systems/`](baseline/dasha-systems) | the same engine's eight other nakshatra-seeded dasha systems for each of the 93 fixtures that record a dasha, computed from the fixture's recorded Moon and nakshatra span: 1184 answers | 2 |
+| [`baseline/rashi-dashas/`](baseline/rashi-dashas) | the same engine's eight sign-based (Jaimini) dashas for each of the 77 fixtures that record their foundation and positions, computed from the fixture's recorded chart: 616 answers | 2 |
 | [`baseline/names.json`](baseline/names.json) | the same engine's entity name tables: 40 types, 383 entities, four languages | 2 |
 | [`official/`](official) | what Nepal's national panchanga committee printed in its Rashtriya Panchangam for BS 2082 and 2083 — 24 sankranti instants, four rows of places at sunrise, 22 days of sunrise and sunset, eight tithi ends — read from the published page images, with the file URLs and page numbers | 1 |
 | [`teimeris/`](teimeris) | Teimeris 0.1.0 in its corrected profile: 1044 ayanamsha rows, 1260 house rows, 128 star records, 176 phenomena rows, 49 sidereal-time rows, each with the geometry it was read from | 2 |

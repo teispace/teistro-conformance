@@ -1,0 +1,471 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-rashi-dashas.schema.json",
+  "title": "The sign-based dashas of one baseline fixture",
+  "description": "Every rashi (Jaimini) dasha the baseline engine implements, computed from the recorded chart of the fixture it names: the lagna's sign, each graha's sign and dignity, and the arudha and navamsha lagnas, repeated here as `inputs`. Nothing astronomical is recomputed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "fixture",
+    "provenance",
+    "year_length_days",
+    "inputs",
+    "reference_instants_jd",
+    "systems"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-rashi-dashas/1"
+    },
+    "fixture": {
+      "type": "string",
+      "pattern": "^(charts|variants)/[^/]+\\.json$"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "evidence_rank",
+        "engine_version",
+        "exporter_version",
+        "inputs"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "evidence_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "string"
+        }
+      }
+    },
+    "year_length_days": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "jd_ut",
+        "lagna_sign_index",
+        "arudha_lagna_sign_index",
+        "navamsha_lagna_sign_index",
+        "graha_sign_index",
+        "graha_dignity"
+      ],
+      "properties": {
+        "jd_ut": {
+          "type": "number"
+        },
+        "lagna_sign_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "arudha_lagna_sign_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "navamsha_lagna_sign_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "graha_sign_index": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN",
+            "RAHU",
+            "KETU"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "MOON": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "MARS": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "MERCURY": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "JUPITER": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "VENUS": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "SATURN": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "RAHU": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            },
+            "KETU": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 11
+            }
+          }
+        },
+        "graha_dignity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN",
+            "RAHU",
+            "KETU"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "RAHU": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "KETU": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "reference_instants_jd": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1
+    },
+    "systems": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "$ref": "#/$defs/system"
+      }
+    }
+  },
+  "$defs": {
+    "system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tree_depth",
+        "row_format",
+        "periods",
+        "chain_depth",
+        "chain_format",
+        "active_at"
+      ],
+      "properties": {
+        "tree_depth": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "row_format": {
+          "const": [
+            "path",
+            "sign_index",
+            "lord",
+            "start_jd",
+            "end_jd"
+          ]
+        },
+        "periods": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(/[0-9]+)*$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 11
+              },
+              {
+                "type": "string",
+                "enum": [
+                  "SUN",
+                  "MOON",
+                  "MARS",
+                  "MERCURY",
+                  "JUPITER",
+                  "VENUS",
+                  "SATURN",
+                  "RAHU",
+                  "KETU"
+                ]
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "items": false,
+            "minItems": 5
+          }
+        },
+        "chain_depth": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "chain_format": {
+          "const": [
+            "level",
+            "index",
+            "sign_index",
+            "lord",
+            "start_jd",
+            "end_jd"
+          ]
+        },
+        "active_at": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "jd",
+              "chain"
+            ],
+            "properties": {
+              "jd": {
+                "type": "number"
+              },
+              "chain": {
+                "type": "array",
+                "description": "Empty past the end of the cycle.",
+                "items": {
+                  "type": "array",
+                  "prefixItems": [
+                    {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 11
+                    },
+                    {
+                      "type": "string",
+                      "enum": [
+                        "SUN",
+                        "MOON",
+                        "MARS",
+                        "MERCURY",
+                        "JUPITER",
+                        "VENUS",
+                        "SATURN",
+                        "RAHU",
+                        "KETU"
+                      ]
+                    },
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "number"
+                    }
+                  ],
+                  "items": false,
+                  "minItems": 6
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

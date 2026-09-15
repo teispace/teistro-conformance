@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-rashi-dashas-manifest.schema.json",
+  "title": "The manifest of the rashi dashas corpus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "provenance",
+    "systems",
+    "files",
+    "counts"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-rashi-dashas-manifest/1"
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source",
+        "evidence_rank",
+        "engine_version",
+        "exporter_version"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "evidence_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        }
+      }
+    },
+    "systems": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "file",
+          "fixture",
+          "sha256"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "fixture": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "files",
+        "systems",
+        "answers"
+      ],
+      "properties": {
+        "files": {
+          "type": "integer"
+        },
+        "systems": {
+          "type": "integer"
+        },
+        "answers": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
