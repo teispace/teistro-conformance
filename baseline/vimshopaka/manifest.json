@@ -1,0 +1,540 @@
+{
+  "schema": "teistro-conformance/baseline-vimshopaka-manifest/1",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0"
+  },
+  "schemes": [
+    {
+      "key": "shadvarga",
+      "weights": {
+        "D1": 6,
+        "D2": 2,
+        "D3": 4,
+        "D9": 5,
+        "D12": 2,
+        "D30": 1
+      }
+    },
+    {
+      "key": "saptavarga",
+      "weights": {
+        "D1": 5,
+        "D2": 2,
+        "D3": 3,
+        "D7": 2.5,
+        "D9": 4.5,
+        "D12": 2,
+        "D30": 1
+      }
+    },
+    {
+      "key": "dashavarga",
+      "weights": {
+        "D1": 3,
+        "D2": 1.5,
+        "D3": 1.5,
+        "D7": 1.5,
+        "D9": 1.5,
+        "D10": 1.5,
+        "D12": 1.5,
+        "D16": 1.5,
+        "D30": 1.5,
+        "D60": 5
+      }
+    },
+    {
+      "key": "shodashavarga",
+      "weights": {
+        "D1": 3.5,
+        "D2": 1,
+        "D3": 1,
+        "D4": 0.5,
+        "D7": 0.5,
+        "D9": 3,
+        "D10": 0.5,
+        "D12": 0.5,
+        "D16": 2,
+        "D20": 0.5,
+        "D24": 0.5,
+        "D27": 0.5,
+        "D30": 1,
+        "D40": 0.5,
+        "D45": 0.5,
+        "D60": 4
+      }
+    }
+  ],
+  "files": [
+    {
+      "file": "vimshopaka/charts/c001-kathmandu-1990-04-14.json",
+      "fixture": "charts/c001-kathmandu-1990-04-14.json",
+      "sha256": "123571c2640f85c44f7a67e578805dbe474fea7c03c99cb419ec08b946b265b5"
+    },
+    {
+      "file": "vimshopaka/charts/c002-kathmandu-1985-12-25.json",
+      "fixture": "charts/c002-kathmandu-1985-12-25.json",
+      "sha256": "2a9ab395bb7873ea1274b188a5cefbce507768d3696c18ef0215854a454bd386"
+    },
+    {
+      "file": "vimshopaka/charts/c003-kathmandu-1986-01-01.json",
+      "fixture": "charts/c003-kathmandu-1986-01-01.json",
+      "sha256": "3eb4dbe94ceccfe511e579ba77b6996c8055d2bc0bed5bb31e79f275a32b0ad9"
+    },
+    {
+      "file": "vimshopaka/charts/c004-kathmandu-2000-02-29.json",
+      "fixture": "charts/c004-kathmandu-2000-02-29.json",
+      "sha256": "fb4e5da5889db1167b733e80873902a39583bdac8c6a42142c867602e2de409d"
+    },
+    {
+      "file": "vimshopaka/charts/c005-kathmandu-1910-03-21.json",
+      "fixture": "charts/c005-kathmandu-1910-03-21.json",
+      "sha256": "599460be68862097e5c249fc18f54052ebf2544b3c70ed1f2e683618e0cc82c0"
+    },
+    {
+      "file": "vimshopaka/charts/c006-pokhara-2012-07-15.json",
+      "fixture": "charts/c006-pokhara-2012-07-15.json",
+      "sha256": "c8a8f6ed84399251d79694984bccdf70e5ea1dd3345360150520a7b89d1ee001"
+    },
+    {
+      "file": "vimshopaka/charts/c007-biratnagar-1975-11-02.json",
+      "fixture": "charts/c007-biratnagar-1975-11-02.json",
+      "sha256": "4ae0d6c47194e37384f463e82e0e2ca91b099f1accb6b835129294814d64ca59"
+    },
+    {
+      "file": "vimshopaka/charts/c008-delhi-1947-08-15.json",
+      "fixture": "charts/c008-delhi-1947-08-15.json",
+      "sha256": "a0a316d9f03049a9ae69f40e282480e1f9b4108b8bb5cee3ce113a23c825a04c"
+    },
+    {
+      "file": "vimshopaka/charts/c009-mumbai-1969-07-20.json",
+      "fixture": "charts/c009-mumbai-1969-07-20.json",
+      "sha256": "3e1264fa88835ea126412ac2cc7c36f3296578168074222876e881e83bedd454"
+    },
+    {
+      "file": "vimshopaka/charts/c010-chennai-2023-01-14.json",
+      "fixture": "charts/c010-chennai-2023-01-14.json",
+      "sha256": "10a02bf5a356155a404db02cb941e1c219b35727ae65f0434c8ae521e3fa9730"
+    },
+    {
+      "file": "vimshopaka/charts/c011-kolkata-1880-06-10.json",
+      "fixture": "charts/c011-kolkata-1880-06-10.json",
+      "sha256": "1f70c1d1429fe7e33388270e94d3ad0bec0b4da8da98f0bfd49369e5dd964d60"
+    },
+    {
+      "file": "vimshopaka/charts/c012-varanasi-1850-02-05.json",
+      "fixture": "charts/c012-varanasi-1850-02-05.json",
+      "sha256": "f565064433120792cd388ddf1505bc8485be85a6c3d215f9e45bc3590045d7ef"
+    },
+    {
+      "file": "vimshopaka/charts/c013-colombo-1996-08-01.json",
+      "fixture": "charts/c013-colombo-1996-08-01.json",
+      "sha256": "aae294723b60fbbb6b2cfd64a42d3006d4ee259b2e76bee9005a6e25d9675d4f"
+    },
+    {
+      "file": "vimshopaka/charts/c014-dhaka-2009-06-20.json",
+      "fixture": "charts/c014-dhaka-2009-06-20.json",
+      "sha256": "59c99b9682a99ec8c97c8e91387dd7bb712b9ce5666b84bfed6104e21f0be6db"
+    },
+    {
+      "file": "vimshopaka/charts/c015-kabul-1999-09-09.json",
+      "fixture": "charts/c015-kabul-1999-09-09.json",
+      "sha256": "faa8c2dda0ec79249f333b54be5e4580cef8df97efab9a5447a88a5febb9c1ba"
+    },
+    {
+      "file": "vimshopaka/charts/c016-tokyo-2011-03-11.json",
+      "fixture": "charts/c016-tokyo-2011-03-11.json",
+      "sha256": "019d09d2a131b77cb85df90a763c91fd42770d4bcaadaa42fb7bc488a9f090e6"
+    },
+    {
+      "file": "vimshopaka/charts/c017-singapore-1965-08-09.json",
+      "fixture": "charts/c017-singapore-1965-08-09.json",
+      "sha256": "b7877a2bdf02b1df53b3a977d1324105e29e7d27fc9d1153835c11a5bccc1713"
+    },
+    {
+      "file": "vimshopaka/charts/c018-sydney-2000-09-15.json",
+      "fixture": "charts/c018-sydney-2000-09-15.json",
+      "sha256": "2bf251d3ecc132e99529ff2f587c0ee7dd2e1c738368f5e85c0bacf0380701cc"
+    },
+    {
+      "file": "vimshopaka/charts/c019-auckland-2019-12-31.json",
+      "fixture": "charts/c019-auckland-2019-12-31.json",
+      "sha256": "da1f52ddf140c77e47e6ca211d66dc671e6f27d5008d7858d35ef620c30c05e0"
+    },
+    {
+      "file": "vimshopaka/charts/c020-apia-2011-12-31.json",
+      "fixture": "charts/c020-apia-2011-12-31.json",
+      "sha256": "d4cba521b36bcc78673438afc6a7a6a4406d489d005478811e17f2f5d6fb336c"
+    },
+    {
+      "file": "vimshopaka/charts/c021-kiritimati-2000-01-01.json",
+      "fixture": "charts/c021-kiritimati-2000-01-01.json",
+      "sha256": "e43c32922099e986698935910afbdc5af96ba9a73cd13c09be2c7b92ddbf654a"
+    },
+    {
+      "file": "vimshopaka/charts/c022-honolulu-1941-12-07.json",
+      "fixture": "charts/c022-honolulu-1941-12-07.json",
+      "sha256": "5734ec47f77929cc91a91d847ed48f2ef51da74a5007e2e39cde57bdfdc862c7"
+    },
+    {
+      "file": "vimshopaka/charts/c023-london-1830-06-26.json",
+      "fixture": "charts/c023-london-1830-06-26.json",
+      "sha256": "9e221d5da14db792d5377202bef1ce15a7234e2edb7faa9da807fb0ac2cb74f6"
+    },
+    {
+      "file": "vimshopaka/charts/c024-london-1947-05-18.json",
+      "fixture": "charts/c024-london-1947-05-18.json",
+      "sha256": "97b32b89ef8e8f95bf63987739214101fd6bece0021813da66a39ac8d3280d6f"
+    },
+    {
+      "file": "vimshopaka/charts/c025-paris-1900-01-01.json",
+      "fixture": "charts/c025-paris-1900-01-01.json",
+      "sha256": "7f177bc97ba1f9e4ea22508a3d89bbb5e4f8d2d4bfdff157118e2163b65976d1"
+    },
+    {
+      "file": "vimshopaka/charts/c026-berlin-1945-05-08.json",
+      "fixture": "charts/c026-berlin-1945-05-08.json",
+      "sha256": "d19f613713806fdf3fed06884b2cb475ad1cd097fbd65af18b8c2a0a94c98c41"
+    },
+    {
+      "file": "vimshopaka/charts/c027-reykjavik-1975-06-21.json",
+      "fixture": "charts/c027-reykjavik-1975-06-21.json",
+      "sha256": "1aaf1a95d1615c646dbf90125848ef75c5238b0eaff769d86184db900eaba2cd"
+    },
+    {
+      "file": "vimshopaka/charts/c028-troms-1988-06-21.json",
+      "fixture": "charts/c028-troms-1988-06-21.json",
+      "sha256": "7dd147c866a94057d68576d8a62161c9826e6d7013b7f6de5e1b1919bc5d9b12"
+    },
+    {
+      "file": "vimshopaka/charts/c029-troms-1988-12-21.json",
+      "fixture": "charts/c029-troms-1988-12-21.json",
+      "sha256": "0ce6f3c87132a28515c08b10b5757130774e260fb981968eb051e399cc4914a6"
+    },
+    {
+      "file": "vimshopaka/charts/c030-istanbul-2016-09-07.json",
+      "fixture": "charts/c030-istanbul-2016-09-07.json",
+      "sha256": "032e8c483164ab7779127dfe319fb0261a9b53c8db144a3b547328e01b600920"
+    },
+    {
+      "file": "vimshopaka/charts/c031-cairo-2023-04-28.json",
+      "fixture": "charts/c031-cairo-2023-04-28.json",
+      "sha256": "a090a21e57bc07764f8f76736f76ce140f63a03f1a4d639f560a14a9be3ed8d8"
+    },
+    {
+      "file": "vimshopaka/charts/c032-nairobi-1963-12-12.json",
+      "fixture": "charts/c032-nairobi-1963-12-12.json",
+      "sha256": "1c1848d334b0273a7b37a7d8d8b1ee009cce33228961d67cc119410cf5be84b7"
+    },
+    {
+      "file": "vimshopaka/charts/c033-cape-town-1990-02-11.json",
+      "fixture": "charts/c033-cape-town-1990-02-11.json",
+      "sha256": "c2419d127d14bee0d2c46be9af534bf8bf0c7d14764a0ece5f9a3254066d7857"
+    },
+    {
+      "file": "vimshopaka/charts/c034-tehran-1979-02-11.json",
+      "fixture": "charts/c034-tehran-1979-02-11.json",
+      "sha256": "315e913ac76be09b6a6a0cfa802dad4ebb7e573ce58ec09883dcd2cfa51039d1"
+    },
+    {
+      "file": "vimshopaka/charts/c035-new-york-2021-03-14.json",
+      "fixture": "charts/c035-new-york-2021-03-14.json",
+      "sha256": "fa0537bec414ebc4f72222d1c1124880a10ce3084ef6360934e9d39e4858c4d0"
+    },
+    {
+      "file": "vimshopaka/charts/c036-new-york-2021-11-07.json",
+      "fixture": "charts/c036-new-york-2021-11-07.json",
+      "sha256": "38dc96e5e1705aff24fba511d788055fcadf3de9c9455700951cfa86788a21d0"
+    },
+    {
+      "file": "vimshopaka/charts/c037-new-york-2021-11-07.json",
+      "fixture": "charts/c037-new-york-2021-11-07.json",
+      "sha256": "ec1c49012e863f53f55dbfa7725e43c0c043768c07a68e43d43050368c8c4726"
+    },
+    {
+      "file": "vimshopaka/charts/c038-new-york-1880-04-01.json",
+      "fixture": "charts/c038-new-york-1880-04-01.json",
+      "sha256": "0d3e5d07ef9fa6e115809e20a51a0f12e67f3bd540ed828259953fe27e2661dc"
+    },
+    {
+      "file": "vimshopaka/charts/c039-mexico-city-1985-09-19.json",
+      "fixture": "charts/c039-mexico-city-1985-09-19.json",
+      "sha256": "47c256c51ba3edf3df04c81610a2c4417a6902e6b8b6acf78b1230a9148dbb16"
+    },
+    {
+      "file": "vimshopaka/charts/c040-buenos-aires-1986-06-22.json",
+      "fixture": "charts/c040-buenos-aires-1986-06-22.json",
+      "sha256": "67f39ff9f9ad64d3968983f8529b27ffd70b0c0ed4751df0f9c383f98ea32db0"
+    },
+    {
+      "file": "vimshopaka/charts/c041-la-paz-2010-07-10.json",
+      "fixture": "charts/c041-la-paz-2010-07-10.json",
+      "sha256": "c940e4f2c7bf248b2a57aa941dc2627eb483cf58c4a6d91cb28873e16e278268"
+    },
+    {
+      "file": "vimshopaka/charts/c042-quito-2001-01-01.json",
+      "fixture": "charts/c042-quito-2001-01-01.json",
+      "sha256": "6142e1f30d20a97f25219bb5d23d47af06738e767f3335782144ef8118f1c68e"
+    },
+    {
+      "file": "vimshopaka/charts/c043-fairbanks-2015-06-21.json",
+      "fixture": "charts/c043-fairbanks-2015-06-21.json",
+      "sha256": "8053d661faac54c182812bdb552b8606d798aefce42e3f67eedb7474f9b36de5"
+    },
+    {
+      "file": "vimshopaka/charts/c044-ushuaia-1995-12-22.json",
+      "fixture": "charts/c044-ushuaia-1995-12-22.json",
+      "sha256": "2f640f124eeb840b1fe29530749b68f7fa899107c4682c6c33be4934db574b4c"
+    },
+    {
+      "file": "vimshopaka/charts/c045-sao-paulo-2019-02-16.json",
+      "fixture": "charts/c045-sao-paulo-2019-02-16.json",
+      "sha256": "c26a765f8810e4e0d4a1c42304c0107bde31b6979301c60499881ba9610e6e3b"
+    },
+    {
+      "file": "vimshopaka/charts/c046-kathmandu-2350-01-01.json",
+      "fixture": "charts/c046-kathmandu-2350-01-01.json",
+      "sha256": "4509faa05c541143920a5d08156e3a96ed86bf683881148bb7994f7d079299a0"
+    },
+    {
+      "file": "vimshopaka/charts/c047-london-1800-01-02.json",
+      "fixture": "charts/c047-london-1800-01-02.json",
+      "sha256": "08166850452c393bf7b3b5c1ab724a0bf19bbbc0a9f67fc0c0bf85402a24e19d"
+    },
+    {
+      "file": "vimshopaka/charts/c048-kathmandu-2399-12-30.json",
+      "fixture": "charts/c048-kathmandu-2399-12-30.json",
+      "sha256": "1ee0096381bd081e117299266b5075bae370c391aa56ea343e4b0d4ccd3a28f9"
+    },
+    {
+      "file": "vimshopaka/charts/c049-kathmandu-2010-06-01.json",
+      "fixture": "charts/c049-kathmandu-2010-06-01.json",
+      "sha256": "34f99c83c7da08ad91a091cfe43ad3d8ef5319d3658898a476195a31c6c2099f"
+    },
+    {
+      "file": "vimshopaka/charts/c050-kathmandu-2015-03-01.json",
+      "fixture": "charts/c050-kathmandu-2015-03-01.json",
+      "sha256": "35aa69e80f10428d600e10b1d90c1ae02d80b2cc7579aed677dc5ba2f5abee4a"
+    },
+    {
+      "file": "vimshopaka/charts/c051-kathmandu-2020-04-13.json",
+      "fixture": "charts/c051-kathmandu-2020-04-13.json",
+      "sha256": "bc346ae248345bad404815bf4cf7683da00062f7f812e7ccb3335163d8781d27"
+    },
+    {
+      "file": "vimshopaka/charts/c052-kathmandu-2020-04-13.json",
+      "fixture": "charts/c052-kathmandu-2020-04-13.json",
+      "sha256": "22579a1ec5c0e0df7777fdd49615fcb8d8ccb8d3753eb503ed51ade684d1fff9"
+    },
+    {
+      "file": "vimshopaka/charts/c053-kathmandu-2021-01-30.json",
+      "fixture": "charts/c053-kathmandu-2021-01-30.json",
+      "sha256": "7d418e90e765ffd96d7b7266416ae59b6a23d19a94cd0212ab263cd381004fee"
+    },
+    {
+      "file": "vimshopaka/charts/c054-kathmandu-2020-05-05.json",
+      "fixture": "charts/c054-kathmandu-2020-05-05.json",
+      "sha256": "e080b26f90cd1241b9abb7623d4f85772847cea7d7b8a3c0f59330de81a8810d"
+    },
+    {
+      "file": "vimshopaka/charts/c055-kathmandu-2024-04-09.json",
+      "fixture": "charts/c055-kathmandu-2024-04-09.json",
+      "sha256": "835c4b80268668d938d06e6e6d0a79120e3ddcf9e748695284c29ee47bace73e"
+    },
+    {
+      "file": "vimshopaka/variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "sha256": "3063d98a77984ec69e6f41c911e187caddb8934151a9ad87d85dd4846c9bb2eb"
+    },
+    {
+      "file": "vimshopaka/variants/c001-kathmandu-1990-04-14--geocentric.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--geocentric.json",
+      "sha256": "30614e58b8e82931dc0032296d2bfc32a9aac542eb726b25af05d02a0757a027"
+    },
+    {
+      "file": "vimshopaka/variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "sha256": "78995f18b8444b2030ddd4847119328e8d2b90a9e0974a9d16596d2e8e1f7010"
+    },
+    {
+      "file": "vimshopaka/variants/c001-kathmandu-1990-04-14--raman.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--raman.json",
+      "sha256": "2e5c8f5bd7cf7c361745d7b5a66959b453781cbe6f696f52cbc3a57245ae08cc"
+    },
+    {
+      "file": "vimshopaka/variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "sha256": "de844c6c6922b2b652ba9e4a7aa22a178da356225a940b33139e597e22a699a8"
+    },
+    {
+      "file": "vimshopaka/variants/c001-kathmandu-1990-04-14--surya.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--surya.json",
+      "sha256": "64c7e7f6b09613806ae041cc825d2bf0ba901cf82dd92980fea915cb52e7a872"
+    },
+    {
+      "file": "vimshopaka/variants/c001-kathmandu-1990-04-14--tropical.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--tropical.json",
+      "sha256": "fa344e628ad0d98014b52d417dbd1e7b4d6f81e927c97b16fffe8eae24f9614a"
+    },
+    {
+      "file": "vimshopaka/variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "sha256": "c21cb78bb0684daa904d9c673648ca9d35117b29dfae7e627b6c400c51d86781"
+    },
+    {
+      "file": "vimshopaka/variants/c001-kathmandu-1990-04-14--true-node.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--true-node.json",
+      "sha256": "da02a428a1b52f395ac8f7e486f80e04af64d0a34b7dec415d819711da0e6e5a"
+    },
+    {
+      "file": "vimshopaka/variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "fixture": "variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "sha256": "19a8f280864af4680f4b3a1951f31a50264dfeb444dd9a0e66202cced211f386"
+    },
+    {
+      "file": "vimshopaka/variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "sha256": "43c62b6f459d980dbf905b5d4edb07178564ec7d80d3f9bebfe787967fff3db8"
+    },
+    {
+      "file": "vimshopaka/variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "sha256": "6bd49bdff555c3cf534a95e4814d1644010ba41e48114adb88b5e543db8b8564"
+    },
+    {
+      "file": "vimshopaka/variants/c009-mumbai-1969-07-20--raman.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--raman.json",
+      "sha256": "da71d027a7f3d40caaa1073d5f8e75901257c41aa7bba2e51868bc4a53862580"
+    },
+    {
+      "file": "vimshopaka/variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "sha256": "7b1edef4bfc44cfc25f6d4f8a7565260fc2105cae79b97a1e718e5d62cb47669"
+    },
+    {
+      "file": "vimshopaka/variants/c009-mumbai-1969-07-20--surya.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--surya.json",
+      "sha256": "ae966c6a1f23cf0c4a2e83c4f13b37f6cf3ab42cc2999e5fa6bc065c348dea8c"
+    },
+    {
+      "file": "vimshopaka/variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "sha256": "aee6c04e1fd5e532307090de9b2f2bf6c6b4db83d46509a2c6bece1aa6fe23e8"
+    },
+    {
+      "file": "vimshopaka/variants/c009-mumbai-1969-07-20--true-node.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--true-node.json",
+      "sha256": "5da215536fb7935a521f6ba4ee625d0cf1d9a0ce7705274d7e87b6d1f1ebb990"
+    },
+    {
+      "file": "vimshopaka/variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "fixture": "variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "sha256": "b8a941b37f27433ca299d72a52f887679eb2bae6da44cf9c1d1ff20917d3dd20"
+    },
+    {
+      "file": "vimshopaka/variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "fixture": "variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "sha256": "02996dea2a2a012bd7a05f1b760879e2ca95127b986d51a740d3ffc66f071d11"
+    },
+    {
+      "file": "vimshopaka/variants/c018-sydney-2000-09-15--raman.json",
+      "fixture": "variants/c018-sydney-2000-09-15--raman.json",
+      "sha256": "40ee468f7f95199c300f845efebff29dab2245729d6e7bf3799cb60cedb209ce"
+    },
+    {
+      "file": "vimshopaka/variants/c018-sydney-2000-09-15--tropical.json",
+      "fixture": "variants/c018-sydney-2000-09-15--tropical.json",
+      "sha256": "97434415915cafbaa5cdc8f2b8c20897417a535d58be72a0e3dd34856765ba7f"
+    },
+    {
+      "file": "vimshopaka/variants/c018-sydney-2000-09-15--true-chitra.json",
+      "fixture": "variants/c018-sydney-2000-09-15--true-chitra.json",
+      "sha256": "2cb070f7b03eeb2d0af46b79504b232caa4bca7648082e89b8631bb73c40e616"
+    },
+    {
+      "file": "vimshopaka/variants/c018-sydney-2000-09-15--true-node.json",
+      "fixture": "variants/c018-sydney-2000-09-15--true-node.json",
+      "sha256": "fc554ec78a3c383497a4ef430a5cc79c3f963b90c3664945f5d190f50b9547a2"
+    },
+    {
+      "file": "vimshopaka/variants/c027-reykjavik-1975-06-21--tropical.json",
+      "fixture": "variants/c027-reykjavik-1975-06-21--tropical.json",
+      "sha256": "103db8c629ba1a606b2ffcb89f7e17e8f4ef73664ac85ed05def89da3a2a7603"
+    },
+    {
+      "file": "vimshopaka/variants/c033-cape-town-1990-02-11--tropical.json",
+      "fixture": "variants/c033-cape-town-1990-02-11--tropical.json",
+      "sha256": "462dfa9fdb66c7a5d38eb744c226407cb03ef13925bdb50c9292538b3e71cbe6"
+    },
+    {
+      "file": "vimshopaka/variants/c033-cape-town-1990-02-11--true-node.json",
+      "fixture": "variants/c033-cape-town-1990-02-11--true-node.json",
+      "sha256": "c600740eb33c65dc95b0d4e36a9ceecd5352967f06457825f4175e4f12c99a08"
+    },
+    {
+      "file": "vimshopaka/variants/c040-buenos-aires-1986-06-22--true-node.json",
+      "fixture": "variants/c040-buenos-aires-1986-06-22--true-node.json",
+      "sha256": "33299ddb0ee6af15c78d238cc81bf744afd14696c3a984fadb9b0be1bc4874ec"
+    },
+    {
+      "file": "vimshopaka/variants/c041-la-paz-2010-07-10--geocentric.json",
+      "fixture": "variants/c041-la-paz-2010-07-10--geocentric.json",
+      "sha256": "c18a24df4142bba77e9b2953fa848109297c60acdd92d36ac7809cc0f9256dc8"
+    },
+    {
+      "file": "vimshopaka/variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "sha256": "e44f4ac3b65bdf2feb0fb027459d054399ece9c2e30f6d8fc67d92d9c692050b"
+    },
+    {
+      "file": "vimshopaka/variants/c049-kathmandu-2010-06-01--geocentric.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--geocentric.json",
+      "sha256": "ee5f64dd8d8128408d32085362dbe739541bc2dc78cd02a9afd7d705a3c2e94d"
+    },
+    {
+      "file": "vimshopaka/variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "sha256": "790b61cd2d4397d42468624b531c28d49ea0909b67ea6c716283bc1a2a5bc494"
+    },
+    {
+      "file": "vimshopaka/variants/c049-kathmandu-2010-06-01--raman.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--raman.json",
+      "sha256": "f807cef84d5b0f4df59742c217d5eb78521ebeddfef2c6dcb40817ca9f2fcd55"
+    },
+    {
+      "file": "vimshopaka/variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "sha256": "381010720cd68478c857cc7340de9875a8c9d9e160f633e05253e406814e5d6a"
+    },
+    {
+      "file": "vimshopaka/variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "sha256": "c1eed43e39540390c278e086fd729d099959be5ba258bceb68f62a16f6334faf"
+    },
+    {
+      "file": "vimshopaka/variants/c050-kathmandu-2015-03-01--geocentric.json",
+      "fixture": "variants/c050-kathmandu-2015-03-01--geocentric.json",
+      "sha256": "bbf0ce8913c937f6bb894a6e6b2ae84e942844eaa406906e942a894f6a87d465"
+    },
+    {
+      "file": "vimshopaka/variants/c052-kathmandu-2020-04-13--geocentric.json",
+      "fixture": "variants/c052-kathmandu-2020-04-13--geocentric.json",
+      "sha256": "b8ae7fb5162e93f90cc4427751cc30b7371738c73635f62afa8024e3388bb29b"
+    },
+    {
+      "file": "vimshopaka/variants/c052-kathmandu-2020-04-13--true-node.json",
+      "fixture": "variants/c052-kathmandu-2020-04-13--true-node.json",
+      "sha256": "f552e5c849d93cc0557d2edf121f6da921bc26f4f50afe239bd9839624962de0"
+    },
+    {
+      "file": "vimshopaka/variants/c055-kathmandu-2024-04-09--geocentric.json",
+      "fixture": "variants/c055-kathmandu-2024-04-09--geocentric.json",
+      "sha256": "efacf3db42735f0856d4ab08e3adc3342c1f1bb8d3f2dd5947a388893b1b93a7"
+    }
+  ],
+  "counts": {
+    "files": 93
+  }
+}

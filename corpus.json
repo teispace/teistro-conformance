@@ -1,6 +1,6 @@
 {
   "schema": "teistro-conformance/corpus/1",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "released": "2026-09-15",
   "licence": "CC0-1.0",
   "repository": "https://github.com/teispace/teistro-conformance",
@@ -59,6 +59,15 @@
       "recorded": "2026-09-15"
     },
     {
+      "path": "baseline/vimshopaka",
+      "source": "the same engine's Vimshopaka, computed from each fixture's recorded divisional charts, with its four schemes' weights in the manifest",
+      "evidence_rank": 2,
+      "schema": "teistro-conformance/baseline-vimshopaka/1",
+      "manifest": "baseline/vimshopaka/manifest.json",
+      "counts": { "files": 93 },
+      "recorded": "2026-09-15"
+    },
+    {
       "path": "official",
       "source": "Nepal's national panchanga committee (npns.gov.np), read from its published Rashtriya Panchangam for BS 2082 and 2083",
       "evidence_rank": 1,
@@ -85,6 +94,8 @@
     "schema/baseline-kalachakra-manifest.schema.json",
     "schema/baseline-ashtakavarga.schema.json",
     "schema/baseline-ashtakavarga-manifest.schema.json",
+    "schema/baseline-vimshopaka.schema.json",
+    "schema/baseline-vimshopaka-manifest.schema.json",
     "schema/tolerances.schema.json",
     "schema/report.schema.json"
   ]

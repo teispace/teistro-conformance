@@ -9,6 +9,22 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.6.0 — 2026-09-15
+
+**Values:** none moved; the Vimshopaka of 93 charts is new.
+
+`baseline/vimshopaka/`: the engine's Vimshopaka for each of the 93 fixtures
+that record their divisional charts through the D60, computed from the seven
+grahas' recorded signs in the sixteen vargas the schemes read, repeated as
+`inputs`: the dignity the engine scores each graha by in each varga, and each
+graha's score under the shadvarga, saptavarga, dashavarga and shodashavarga
+schemes, whose weights the manifest carries. `validate.py` checks the inputs
+against the fixture and that each scheme's weights sum to twenty.
+
+The engine scores a varga by its Saptavargaja virupas over 45 and by natural
+friendship; BPHS scores it 20, 18, 15, 10, 7 or 5 by the compound
+relationship, so these files record the engine's reading.
+
 ## 0.5.0 — 2026-09-15
 
 **Values:** none moved; the Ashtakavarga of 77 charts is new.

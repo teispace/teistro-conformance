@@ -1,0 +1,349 @@
+{
+  "schema": "teistro-conformance/baseline-vimshopaka/1",
+  "fixture": "variants/c050-kathmandu-2015-03-01--geocentric.json",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0",
+    "inputs": "the fixture's vargas.<D>.sign_index for the seven grahas in the sixteen vargas the schemes read"
+  },
+  "inputs": {
+    "sign_index": {
+      "D1": {
+        "SUN": 10,
+        "MOON": 2,
+        "MARS": 11,
+        "MERCURY": 9,
+        "JUPITER": 3,
+        "VENUS": 11,
+        "SATURN": 7
+      },
+      "D2": {
+        "SUN": 3,
+        "MOON": 3,
+        "MARS": 3,
+        "MERCURY": 4,
+        "JUPITER": 4,
+        "VENUS": 4,
+        "SATURN": 3
+      },
+      "D3": {
+        "SUN": 2,
+        "MOON": 10,
+        "MARS": 3,
+        "MERCURY": 1,
+        "JUPITER": 11,
+        "VENUS": 3,
+        "SATURN": 11
+      },
+      "D4": {
+        "SUN": 4,
+        "MOON": 11,
+        "MARS": 2,
+        "MERCURY": 3,
+        "JUPITER": 9,
+        "VENUS": 5,
+        "SATURN": 10
+      },
+      "D7": {
+        "SUN": 1,
+        "MOON": 8,
+        "MARS": 8,
+        "MERCURY": 7,
+        "JUPITER": 1,
+        "VENUS": 8,
+        "SATURN": 3
+      },
+      "D9": {
+        "SUN": 10,
+        "MOON": 1,
+        "MARS": 6,
+        "MERCURY": 2,
+        "JUPITER": 9,
+        "VENUS": 7,
+        "SATURN": 6
+      },
+      "D10": {
+        "SUN": 3,
+        "MOON": 10,
+        "MARS": 11,
+        "MERCURY": 11,
+        "JUPITER": 5,
+        "VENUS": 0,
+        "SATURN": 6
+      },
+      "D12": {
+        "SUN": 4,
+        "MOON": 0,
+        "MARS": 4,
+        "MERCURY": 4,
+        "JUPITER": 11,
+        "VENUS": 5,
+        "SATURN": 11
+      },
+      "D16": {
+        "SUN": 0,
+        "MOON": 10,
+        "MARS": 2,
+        "MERCURY": 10,
+        "JUPITER": 11,
+        "VENUS": 4,
+        "SATURN": 9
+      },
+      "D20": {
+        "SUN": 6,
+        "MOON": 9,
+        "MARS": 0,
+        "MERCURY": 1,
+        "JUPITER": 1,
+        "VENUS": 2,
+        "SATURN": 3
+      },
+      "D24": {
+        "SUN": 4,
+        "MOON": 1,
+        "MARS": 1,
+        "MERCURY": 6,
+        "JUPITER": 7,
+        "VENUS": 3,
+        "SATURN": 11
+      },
+      "D27": {
+        "SUN": 8,
+        "MOON": 5,
+        "MARS": 8,
+        "MERCURY": 8,
+        "JUPITER": 3,
+        "VENUS": 11,
+        "SATURN": 6
+      },
+      "D30": {
+        "SUN": 8,
+        "MOON": 6,
+        "MARS": 11,
+        "MERCURY": 11,
+        "JUPITER": 9,
+        "VENUS": 11,
+        "SATURN": 5
+      },
+      "D40": {
+        "SUN": 9,
+        "MOON": 11,
+        "MARS": 11,
+        "MERCURY": 8,
+        "JUPITER": 9,
+        "VENUS": 3,
+        "SATURN": 8
+      },
+      "D45": {
+        "SUN": 4,
+        "MOON": 11,
+        "MARS": 3,
+        "MERCURY": 5,
+        "JUPITER": 7,
+        "VENUS": 8,
+        "SATURN": 8
+      },
+      "D60": {
+        "SUN": 6,
+        "MOON": 6,
+        "MARS": 0,
+        "MERCURY": 0,
+        "JUPITER": 8,
+        "VENUS": 7,
+        "SATURN": 4
+      }
+    }
+  },
+  "dignity": {
+    "D1": {
+      "SUN": "ENEMY",
+      "MOON": "FRIEND",
+      "MARS": "FRIEND",
+      "MERCURY": "NEUTRAL",
+      "JUPITER": "EXALTED",
+      "VENUS": "EXALTED",
+      "SATURN": "ENEMY"
+    },
+    "D2": {
+      "SUN": "FRIEND",
+      "MOON": "OWN_SIGN",
+      "MARS": "DEBILITATED",
+      "MERCURY": "FRIEND",
+      "JUPITER": "FRIEND",
+      "VENUS": "ENEMY",
+      "SATURN": "ENEMY"
+    },
+    "D3": {
+      "SUN": "NEUTRAL",
+      "MOON": "NEUTRAL",
+      "MARS": "DEBILITATED",
+      "MERCURY": "FRIEND",
+      "JUPITER": "OWN_SIGN",
+      "VENUS": "ENEMY",
+      "SATURN": "NEUTRAL"
+    },
+    "D4": {
+      "SUN": "MOOLTRIKONA",
+      "MOON": "NEUTRAL",
+      "MARS": "ENEMY",
+      "MERCURY": "ENEMY",
+      "JUPITER": "DEBILITATED",
+      "VENUS": "DEBILITATED",
+      "SATURN": "MOOLTRIKONA"
+    },
+    "D7": {
+      "SUN": "ENEMY",
+      "MOON": "NEUTRAL",
+      "MARS": "FRIEND",
+      "MERCURY": "NEUTRAL",
+      "JUPITER": "ENEMY",
+      "VENUS": "NEUTRAL",
+      "SATURN": "ENEMY"
+    },
+    "D9": {
+      "SUN": "ENEMY",
+      "MOON": "EXALTED",
+      "MARS": "NEUTRAL",
+      "MERCURY": "OWN_SIGN",
+      "JUPITER": "DEBILITATED",
+      "VENUS": "NEUTRAL",
+      "SATURN": "EXALTED"
+    },
+    "D10": {
+      "SUN": "FRIEND",
+      "MOON": "NEUTRAL",
+      "MARS": "FRIEND",
+      "MERCURY": "DEBILITATED",
+      "JUPITER": "ENEMY",
+      "VENUS": "NEUTRAL",
+      "SATURN": "EXALTED"
+    },
+    "D12": {
+      "SUN": "MOOLTRIKONA",
+      "MOON": "NEUTRAL",
+      "MARS": "FRIEND",
+      "MERCURY": "FRIEND",
+      "JUPITER": "OWN_SIGN",
+      "VENUS": "DEBILITATED",
+      "SATURN": "NEUTRAL"
+    },
+    "D16": {
+      "SUN": "EXALTED",
+      "MOON": "NEUTRAL",
+      "MARS": "ENEMY",
+      "MERCURY": "NEUTRAL",
+      "JUPITER": "OWN_SIGN",
+      "VENUS": "ENEMY",
+      "SATURN": "OWN_SIGN"
+    },
+    "D20": {
+      "SUN": "DEBILITATED",
+      "MOON": "NEUTRAL",
+      "MARS": "MOOLTRIKONA",
+      "MERCURY": "FRIEND",
+      "JUPITER": "ENEMY",
+      "VENUS": "FRIEND",
+      "SATURN": "ENEMY"
+    },
+    "D24": {
+      "SUN": "MOOLTRIKONA",
+      "MOON": "EXALTED",
+      "MARS": "NEUTRAL",
+      "MERCURY": "FRIEND",
+      "JUPITER": "FRIEND",
+      "VENUS": "ENEMY",
+      "SATURN": "NEUTRAL"
+    },
+    "D27": {
+      "SUN": "FRIEND",
+      "MOON": "FRIEND",
+      "MARS": "FRIEND",
+      "MERCURY": "NEUTRAL",
+      "JUPITER": "EXALTED",
+      "VENUS": "EXALTED",
+      "SATURN": "EXALTED"
+    },
+    "D30": {
+      "SUN": "FRIEND",
+      "MOON": "NEUTRAL",
+      "MARS": "FRIEND",
+      "MERCURY": "DEBILITATED",
+      "JUPITER": "DEBILITATED",
+      "VENUS": "EXALTED",
+      "SATURN": "FRIEND"
+    },
+    "D40": {
+      "SUN": "ENEMY",
+      "MOON": "NEUTRAL",
+      "MARS": "FRIEND",
+      "MERCURY": "NEUTRAL",
+      "JUPITER": "DEBILITATED",
+      "VENUS": "ENEMY",
+      "SATURN": "NEUTRAL"
+    },
+    "D45": {
+      "SUN": "MOOLTRIKONA",
+      "MOON": "NEUTRAL",
+      "MARS": "DEBILITATED",
+      "MERCURY": "EXALTED",
+      "JUPITER": "FRIEND",
+      "VENUS": "NEUTRAL",
+      "SATURN": "NEUTRAL"
+    },
+    "D60": {
+      "SUN": "DEBILITATED",
+      "MOON": "NEUTRAL",
+      "MARS": "MOOLTRIKONA",
+      "MERCURY": "NEUTRAL",
+      "JUPITER": "MOOLTRIKONA",
+      "VENUS": "NEUTRAL",
+      "SATURN": "ENEMY"
+    }
+  },
+  "scores": {
+    "SUN": {
+      "shadvarga": 3.92,
+      "saptavarga": 3.83,
+      "dashavarga": 4.75,
+      "shodashavarga": 5.13
+    },
+    "MOON": {
+      "shadvarga": 9.5,
+      "saptavarga": 8.92,
+      "dashavarga": 5.83,
+      "shodashavarga": 7.42
+    },
+    "MARS": {
+      "shadvarga": 3.83,
+      "saptavarga": 4.25,
+      "dashavarga": 6.71,
+      "shodashavarga": 6.13
+    },
+    "MERCURY": {
+      "shadvarga": 7,
+      "saptavarga": 6.58,
+      "dashavarga": 4.33,
+      "shodashavarga": 5.54
+    },
+    "JUPITER": {
+      "shadvarga": 10.67,
+      "saptavarga": 9.21,
+      "dashavarga": 10.08,
+      "shodashavarga": 9.79
+    },
+    "VENUS": {
+      "shadvarga": 8.33,
+      "saptavarga": 7.58,
+      "dashavarga": 6.46,
+      "shodashavarga": 7
+    },
+    "SATURN": {
+      "shadvarga": 7,
+      "saptavarga": 6.46,
+      "dashavarga": 5.92,
+      "shodashavarga": 7.29
+    }
+  }
+}

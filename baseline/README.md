@@ -256,3 +256,18 @@ its sign). The engine makes both reductions on the sum of the seven; BPHS
 makes them in each graha's own Ashtakavarga, so these are the engine's values
 and not the text's.
 
+## The Vimshopaka (`teistro-conformance/baseline-vimshopaka/1`)
+
+`vimshopaka/charts/` and `vimshopaka/variants/` hold one file for each fixture
+that records its divisional charts through the D60, written by
+`export-vimshopaka-vectors.mjs --corpus <this directory>` from the seven
+grahas' recorded signs in the sixteen vargas (D1, D2, D3, D4, D7, D9, D10,
+D12, D16, D20, D24, D27, D30, D40, D45, D60), repeated as `inputs`.
+
+`dignity` is what the engine scores each graha by in each varga: exaltation,
+debilitation, moolatrikona and own sign by sign alone, then the natural
+friendship with the sign's lord. `scores` holds each graha's score under the
+four schemes: the sum over the scheme's vargas of that dignity's Saptavargaja
+virupas (45, 30, 22.5, 15, 7.5, 3.75, 1.875, 0) over 45 times the varga's
+weight, rounded to hundredths. `vimshopaka/manifest.json` carries the weights.
+

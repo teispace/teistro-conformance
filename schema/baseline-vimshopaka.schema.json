@@ -1,0 +1,3183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-vimshopaka.schema.json",
+  "title": "The Vimshopaka of one baseline fixture",
+  "description": "The engine's Vimshopaka computed from the seven grahas' recorded signs in the sixteen vargas of the fixture it names, repeated as `inputs`: the dignity the engine scores each graha by in each varga, and each graha's score under each of the four schemes, whose weights are in the manifest.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "fixture",
+    "provenance",
+    "inputs",
+    "dignity",
+    "scores"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-vimshopaka/1"
+    },
+    "fixture": {
+      "type": "string",
+      "pattern": "^(charts|variants)/[^/]+\\.json$"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "evidence_rank",
+        "engine_version",
+        "exporter_version",
+        "inputs"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "evidence_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "string"
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sign_index"
+      ],
+      "properties": {
+        "sign_index": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "D1",
+            "D2",
+            "D3",
+            "D4",
+            "D7",
+            "D9",
+            "D10",
+            "D12",
+            "D16",
+            "D20",
+            "D24",
+            "D27",
+            "D30",
+            "D40",
+            "D45",
+            "D60"
+          ],
+          "properties": {
+            "D1": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D2": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D3": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D4": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D7": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D9": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D10": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D12": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D16": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D20": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D24": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D27": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D30": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D40": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D45": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            },
+            "D60": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "SUN",
+                "MOON",
+                "MARS",
+                "MERCURY",
+                "JUPITER",
+                "VENUS",
+                "SATURN"
+              ],
+              "properties": {
+                "SUN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MOON": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MARS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "MERCURY": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "JUPITER": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "VENUS": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                },
+                "SATURN": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 11
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "dignity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D7",
+        "D9",
+        "D10",
+        "D12",
+        "D16",
+        "D20",
+        "D24",
+        "D27",
+        "D30",
+        "D40",
+        "D45",
+        "D60"
+      ],
+      "properties": {
+        "D1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D4": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D7": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D9": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D10": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D12": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D16": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D20": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D24": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D27": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D30": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D40": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D45": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        },
+        "D60": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN"
+          ],
+          "properties": {
+            "SUN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MOON": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MARS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "MERCURY": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "JUPITER": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "VENUS": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            },
+            "SATURN": {
+              "type": "string",
+              "enum": [
+                "DEEP_EXALTED",
+                "EXALTED",
+                "MOOLTRIKONA",
+                "OWN_SIGN",
+                "GREAT_FRIEND",
+                "FRIEND",
+                "NEUTRAL",
+                "ENEMY",
+                "GREAT_ENEMY",
+                "DEBILITATED",
+                "DEEP_DEBILITATED"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "SUN",
+        "MOON",
+        "MARS",
+        "MERCURY",
+        "JUPITER",
+        "VENUS",
+        "SATURN"
+      ],
+      "properties": {
+        "SUN": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "shadvarga",
+            "saptavarga",
+            "dashavarga",
+            "shodashavarga"
+          ],
+          "properties": {
+            "shadvarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "saptavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "dashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "shodashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            }
+          }
+        },
+        "MOON": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "shadvarga",
+            "saptavarga",
+            "dashavarga",
+            "shodashavarga"
+          ],
+          "properties": {
+            "shadvarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "saptavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "dashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "shodashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            }
+          }
+        },
+        "MARS": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "shadvarga",
+            "saptavarga",
+            "dashavarga",
+            "shodashavarga"
+          ],
+          "properties": {
+            "shadvarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "saptavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "dashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "shodashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            }
+          }
+        },
+        "MERCURY": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "shadvarga",
+            "saptavarga",
+            "dashavarga",
+            "shodashavarga"
+          ],
+          "properties": {
+            "shadvarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "saptavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "dashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "shodashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            }
+          }
+        },
+        "JUPITER": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "shadvarga",
+            "saptavarga",
+            "dashavarga",
+            "shodashavarga"
+          ],
+          "properties": {
+            "shadvarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "saptavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "dashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "shodashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            }
+          }
+        },
+        "VENUS": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "shadvarga",
+            "saptavarga",
+            "dashavarga",
+            "shodashavarga"
+          ],
+          "properties": {
+            "shadvarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "saptavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "dashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "shodashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            }
+          }
+        },
+        "SATURN": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "shadvarga",
+            "saptavarga",
+            "dashavarga",
+            "shodashavarga"
+          ],
+          "properties": {
+            "shadvarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "saptavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "dashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "shodashavarga": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -257,6 +257,34 @@ def ashtakavarga(failures: list[str]) -> int:
     )
 
 
+VIMSHOPAKA_VARGAS = ("D1", "D2", "D3", "D4", "D7", "D9", "D10", "D12", "D16", "D20", "D24", "D27", "D30", "D40", "D45", "D60")
+
+
+def vimshopaka(failures: list[str]) -> int:
+    """The Vimshopaka: each file's inputs are its fixture's recorded varga
+    signs, and every scheme's weights sum to twenty."""
+    manifest = load(ROOT / "baseline" / "vimshopaka" / "manifest.json")
+    if isinstance(manifest, dict):
+        for scheme in manifest.get("schemes", []):
+            if sum(scheme.get("weights", {}).values()) != 20:
+                failures.append(f"vimshopaka/manifest.json: the {scheme.get('key')} weights do not sum to 20")
+
+    def check(name, entry, document, fixture, systems):
+        wanted = {v: {g: fixture["vargas"][v]["sign_index"][g] for g in SEVEN} for v in VIMSHOPAKA_VARGAS}
+        if document.get("inputs", {}).get("sign_index") != wanted:
+            return [f"{name}: the inputs differ from the fixture's"], 1
+        return [], 1
+
+    return derived(
+        failures,
+        "vimshopaka",
+        "baseline-vimshopaka",
+        lambda fixture: "vargas" in fixture.get("sections", []) and "D60" in fixture.get("vargas", {}),
+        check,
+        lambda files, systems, answers: {"files": files},
+    )
+
+
 GRAHAS = ("SUN", "MOON", "MARS", "MERCURY", "JUPITER", "VENUS", "SATURN", "RAHU", "KETU")
 
 
@@ -325,7 +353,7 @@ def main() -> int:
     corpus(failures)
     fixtures = baseline(failures)
     systems = dasha_systems(failures) + rashi_dashas(failures) + kalachakra(failures)
-    systems += ashtakavarga(failures)
+    systems += ashtakavarga(failures) + vimshopaka(failures)
     against_schema("tolerances", ROOT / "tolerances.json", failures)
     recorded = tables(failures)
 
