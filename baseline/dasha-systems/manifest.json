@@ -1,0 +1,575 @@
+{
+  "schema": "teistro-conformance/baseline-dasha-systems-manifest/1",
+  "provenance": {
+    "source": "baseline-engine",
+    "evidence_rank": 2,
+    "engine_version": "1.8.0",
+    "exporter_version": "1.0.0"
+  },
+  "systems": ["ashtottari", "yogini", "dwadashottari", "panchottari", "shatabdika", "chaturashiti_sama", "dwisaptati_sama", "tribhagi"],
+  "files": [
+    {
+      "file": "dasha-systems/charts/c001-kathmandu-1990-04-14.json",
+      "fixture": "charts/c001-kathmandu-1990-04-14.json",
+      "sha256": "a1af48cbbe41a9558158cc158a91e813a53503b8ab539c3dd817e832efaef41b",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c002-kathmandu-1985-12-25.json",
+      "fixture": "charts/c002-kathmandu-1985-12-25.json",
+      "sha256": "5dc6601012edce7a48d95009f14dd811a8130be4073feb033e594051ede97bec",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c003-kathmandu-1986-01-01.json",
+      "fixture": "charts/c003-kathmandu-1986-01-01.json",
+      "sha256": "5b1b16af36b2699f6a369529c6a5d9deadfb53cd77d620afeb68882aad9e9f7e",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c004-kathmandu-2000-02-29.json",
+      "fixture": "charts/c004-kathmandu-2000-02-29.json",
+      "sha256": "9094195b97e2db2f841509e327e08a9c34252cb4ea8acd67af696c75aee36434",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c005-kathmandu-1910-03-21.json",
+      "fixture": "charts/c005-kathmandu-1910-03-21.json",
+      "sha256": "6ccac51a730f80993fb6033b33e3f73e6208b49ea172d7b217bd7294705e0d85",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c006-pokhara-2012-07-15.json",
+      "fixture": "charts/c006-pokhara-2012-07-15.json",
+      "sha256": "775fd78430a0fbbe1394c594914fe931641d6d9f5037b1a1e2bd77896d02d4c3",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c007-biratnagar-1975-11-02.json",
+      "fixture": "charts/c007-biratnagar-1975-11-02.json",
+      "sha256": "8283de2e656eb9dc84cc802926d2a4742400da74fdf91fc274838851bb1aabec",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c008-delhi-1947-08-15.json",
+      "fixture": "charts/c008-delhi-1947-08-15.json",
+      "sha256": "ce4650d5ea24aa40090cc6e9fe91fb33c820b773c7bfbdf4f5e063b33fa371be",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c009-mumbai-1969-07-20.json",
+      "fixture": "charts/c009-mumbai-1969-07-20.json",
+      "sha256": "05fbc90956fe907176de8312adf914be8a88de43f61290d0a30835917146d64a",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c010-chennai-2023-01-14.json",
+      "fixture": "charts/c010-chennai-2023-01-14.json",
+      "sha256": "fe76f8e5e26bbc15a7a3854cfd8d3f4d04ff607134b7bda347a799af088d7dbf",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c011-kolkata-1880-06-10.json",
+      "fixture": "charts/c011-kolkata-1880-06-10.json",
+      "sha256": "9cc8eeda33c723eeaa4258fad4d69774c66e269f1b9cfe16fea5034d78af73e5",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c012-varanasi-1850-02-05.json",
+      "fixture": "charts/c012-varanasi-1850-02-05.json",
+      "sha256": "9a0a85ef1eaa07384d97ebbfe8ffc76f34c21e991094bf82298fee8dbec73a9a",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c013-colombo-1996-08-01.json",
+      "fixture": "charts/c013-colombo-1996-08-01.json",
+      "sha256": "11a12dea7fd5ac90a9052fb7b8500c72de4639696095fa7044599a68125527f1",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c014-dhaka-2009-06-20.json",
+      "fixture": "charts/c014-dhaka-2009-06-20.json",
+      "sha256": "b44acb385e0623e3b0bef95715f3fba6c2453fdb4d85d19805f8b72222f29e6c",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c015-kabul-1999-09-09.json",
+      "fixture": "charts/c015-kabul-1999-09-09.json",
+      "sha256": "d024919ac23b4c44f93c62512ef25488e2fa4d0478a4e47ad2f2c154e869d915",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c016-tokyo-2011-03-11.json",
+      "fixture": "charts/c016-tokyo-2011-03-11.json",
+      "sha256": "8859477f8ccff4f6bafb0936e6e86a70f03e9545ededfd85a8b5a709e8a51a24",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c017-singapore-1965-08-09.json",
+      "fixture": "charts/c017-singapore-1965-08-09.json",
+      "sha256": "b44f99d88b4874a9a682404ea00d1cce3086ca88bdb4d8d494a3a32169afe6d5",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c018-sydney-2000-09-15.json",
+      "fixture": "charts/c018-sydney-2000-09-15.json",
+      "sha256": "2c59f9625c3a0c2457a98c688ec6735fccbc2fc5f67cf25034aa864b027766c6",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c019-auckland-2019-12-31.json",
+      "fixture": "charts/c019-auckland-2019-12-31.json",
+      "sha256": "f332d2cf0ff3dcb9500932831d9a96f305f1f48dabf1517266fae223ce4a51e4",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c020-apia-2011-12-31.json",
+      "fixture": "charts/c020-apia-2011-12-31.json",
+      "sha256": "773b90f6ee505e4ae30648e71643944ef38bb750358df65eb89835a5a1be1f10",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c021-kiritimati-2000-01-01.json",
+      "fixture": "charts/c021-kiritimati-2000-01-01.json",
+      "sha256": "2924ce1180961cbc9cf5498096b3f0deea62c97a72308725b049b04e30c16dd0",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c022-honolulu-1941-12-07.json",
+      "fixture": "charts/c022-honolulu-1941-12-07.json",
+      "sha256": "21478247896580bfe6b238a3997a3eb8403a81b16660c7a38aa0a49a8543faac",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c023-london-1830-06-26.json",
+      "fixture": "charts/c023-london-1830-06-26.json",
+      "sha256": "1a0deb48f25cd9913ac53cb56d6d805115dcf0f40e3d5002415f8ffec3909871",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c024-london-1947-05-18.json",
+      "fixture": "charts/c024-london-1947-05-18.json",
+      "sha256": "a54f00a9ee3a126b3f2ff6c7d4f119b55218c981b87e07106d2025cc2397ae46",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c025-paris-1900-01-01.json",
+      "fixture": "charts/c025-paris-1900-01-01.json",
+      "sha256": "4c51d0950d240482bb701ea1527275318b268e17bef1d98d2e97616f353495c9",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c026-berlin-1945-05-08.json",
+      "fixture": "charts/c026-berlin-1945-05-08.json",
+      "sha256": "e8606e1d9db65c45d44104ff555104b131e93ed18f81f2235a1e1bff92a802d8",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c027-reykjavik-1975-06-21.json",
+      "fixture": "charts/c027-reykjavik-1975-06-21.json",
+      "sha256": "76157d8f5c5d767cb7990dd22954818e788e7af59370801c95ae36c5e1f14a83",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c028-troms-1988-06-21.json",
+      "fixture": "charts/c028-troms-1988-06-21.json",
+      "sha256": "38e780eda131eab706ac41b12fe1fe7816e2c6a241383af65dd75b63a389fc01",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c029-troms-1988-12-21.json",
+      "fixture": "charts/c029-troms-1988-12-21.json",
+      "sha256": "9bbbe50ae6c86f96affbd5f9ebdff5d4934d93a3069b7ee860b7e80b4a3edf47",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c030-istanbul-2016-09-07.json",
+      "fixture": "charts/c030-istanbul-2016-09-07.json",
+      "sha256": "7c12a2d014e20527e265463baaff6aea0ff114bbf702f0bd0735c2ac43be89c2",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c031-cairo-2023-04-28.json",
+      "fixture": "charts/c031-cairo-2023-04-28.json",
+      "sha256": "303ad070698e75964e6596aefd002ffdc37de3643b0e4339f6b19f1f335c5c53",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c032-nairobi-1963-12-12.json",
+      "fixture": "charts/c032-nairobi-1963-12-12.json",
+      "sha256": "44cb8e1551b9a1690e718b8c3560a0f683abf66b9a6cdd060cd0a083ceaea54b",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c033-cape-town-1990-02-11.json",
+      "fixture": "charts/c033-cape-town-1990-02-11.json",
+      "sha256": "e11dd523bd5bf3857c9a7b02dd95f0769d779a089f0b1feadc4663e05a994ad1",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c034-tehran-1979-02-11.json",
+      "fixture": "charts/c034-tehran-1979-02-11.json",
+      "sha256": "9b3be723a7fe0da824236844f075714531a5e700f8a8728e694de8730f0c4830",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c035-new-york-2021-03-14.json",
+      "fixture": "charts/c035-new-york-2021-03-14.json",
+      "sha256": "8222b6a3e34cf016c9ec71ecbd9379484167aaa6976431445ca8e58d6a74e315",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c036-new-york-2021-11-07.json",
+      "fixture": "charts/c036-new-york-2021-11-07.json",
+      "sha256": "f2816975f5404ee2b64ecc321cf85c0a16405fad56d7961cdae4dc9cc30ce01f",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c037-new-york-2021-11-07.json",
+      "fixture": "charts/c037-new-york-2021-11-07.json",
+      "sha256": "d1e83f29164d3fca7269aff3d1b9dfa9314515afb1e3e6ac0488e5a72feb0e96",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c038-new-york-1880-04-01.json",
+      "fixture": "charts/c038-new-york-1880-04-01.json",
+      "sha256": "5e12de459d66cf471a04f7c709c7d7378c850961c216e9b25231e429ebe264c9",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c039-mexico-city-1985-09-19.json",
+      "fixture": "charts/c039-mexico-city-1985-09-19.json",
+      "sha256": "b5060a60edaf740e7ed2d56afe15a654d07451fcbcc0837cfc65b416b218e0ce",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c040-buenos-aires-1986-06-22.json",
+      "fixture": "charts/c040-buenos-aires-1986-06-22.json",
+      "sha256": "949d21fe15f3d4eef592ffed019bf88e9df92bbed41e100bbb6562c4763a911c",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c041-la-paz-2010-07-10.json",
+      "fixture": "charts/c041-la-paz-2010-07-10.json",
+      "sha256": "0e81a4d31b810938fb3e38511fc44cee75e5f7aee5b254126f26906524872f3c",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c042-quito-2001-01-01.json",
+      "fixture": "charts/c042-quito-2001-01-01.json",
+      "sha256": "defb291148b3b31ca9b28b06ae80e082cba89f2b60dd72c089415cf5b675c053",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c043-fairbanks-2015-06-21.json",
+      "fixture": "charts/c043-fairbanks-2015-06-21.json",
+      "sha256": "a8438f3bedc376e93ded8419efa636907a2cb7e98cf88c1fc1b835037135123f",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c044-ushuaia-1995-12-22.json",
+      "fixture": "charts/c044-ushuaia-1995-12-22.json",
+      "sha256": "62bd731dcbaee5d14e47060a521c67613a4532519fc8b5219f852d5ae2c4f279",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c045-sao-paulo-2019-02-16.json",
+      "fixture": "charts/c045-sao-paulo-2019-02-16.json",
+      "sha256": "7caeb56dc74c5ba31317220749a25d09638f5e5e89abd340ebe7133f37bca637",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c046-kathmandu-2350-01-01.json",
+      "fixture": "charts/c046-kathmandu-2350-01-01.json",
+      "sha256": "c4a6713f6e1393e928ba5dfdf3bcd997b04c833901ab25d9866a44f15c4cc041",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c047-london-1800-01-02.json",
+      "fixture": "charts/c047-london-1800-01-02.json",
+      "sha256": "4514ae5765617b5d18846ceaf852efcf26b7db6bae7a487b988f09c42d603577",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c048-kathmandu-2399-12-30.json",
+      "fixture": "charts/c048-kathmandu-2399-12-30.json",
+      "sha256": "734f34dec8179fde9d95a5ac993ef28873b0ae7d0227b2ef87cd0355bbb22d3d",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c049-kathmandu-2010-06-01.json",
+      "fixture": "charts/c049-kathmandu-2010-06-01.json",
+      "sha256": "1d23769fc4b00d7f7186f9d7a70ef3bb2b3661187c10db91464023a73dde50e1",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c050-kathmandu-2015-03-01.json",
+      "fixture": "charts/c050-kathmandu-2015-03-01.json",
+      "sha256": "261e20cccdf2e5860c603877ff23c7f2a0e66c284411c2a08e0258774ad21bc0",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c051-kathmandu-2020-04-13.json",
+      "fixture": "charts/c051-kathmandu-2020-04-13.json",
+      "sha256": "ddc1cc3e80ed8042e3236d2986cc231a5821ec6ea30c29334d159fe1e61ca260",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c052-kathmandu-2020-04-13.json",
+      "fixture": "charts/c052-kathmandu-2020-04-13.json",
+      "sha256": "00e063c94fa985412f9f1836709b742a69f0217b839148c7831dd893f2414f42",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c053-kathmandu-2021-01-30.json",
+      "fixture": "charts/c053-kathmandu-2021-01-30.json",
+      "sha256": "9231ebdd9abb1a006209ffac94a3bd026e258f90396101c314e59f045a3d25f3",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c054-kathmandu-2020-05-05.json",
+      "fixture": "charts/c054-kathmandu-2020-05-05.json",
+      "sha256": "81ad9bccfedda7379db1d0cd4b73e93bae1ce66da89bae7462e4c0206c66f365",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/charts/c055-kathmandu-2024-04-09.json",
+      "fixture": "charts/c055-kathmandu-2024-04-09.json",
+      "sha256": "256a264e598794433569dab9196076bf0b88e2477f7704832f87e32a04475469",
+      "methods": ["spatial", "temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--fagan-bradley.json",
+      "sha256": "2d4c9202f10f72fc2f9e6d5b82d0e9075854e89b4c21df238d2ce4be751124c2",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c001-kathmandu-1990-04-14--geocentric.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--geocentric.json",
+      "sha256": "760cd7d3818d2bf8bc9fe56c45055d3cfaee5522f91438bddbd66ce3f29cb9f7",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--krishnamurti.json",
+      "sha256": "d40030d9e8ad88afe82d3b4d76e6f741c5de7c3658d92569092f230effedff1f",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c001-kathmandu-1990-04-14--raman.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--raman.json",
+      "sha256": "b908d7e83207c23a176ebcffa5252bcec1a9a0d02435074f77c6a10e564748b4",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--surya-bija.json",
+      "sha256": "faa42a58ca1ee8791b17b35529094a0c2d4452a9dad51a5595f7f023f1be4329",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c001-kathmandu-1990-04-14--surya.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--surya.json",
+      "sha256": "209bc61c1d31c3e0e7b72894e84e4c899fb2ae4c9b0030b4b95b9cb6e3f8c46a",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c001-kathmandu-1990-04-14--temporal.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--temporal.json",
+      "sha256": "c12242f44a173ad7381195b4747fd227754ade46feef4e9983c0809de3651b83",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "fixture": "variants/c001-kathmandu-1990-04-14--true-chitra.json",
+      "sha256": "5aaafb42cb010fb33e16bf48c3d7aad096708081562453dc49033c487d722072",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "fixture": "variants/c004-kathmandu-2000-02-29--surya-bija.json",
+      "sha256": "d303e212df66906624a978b07cf9d03327d2ec8016c6fbbd9b7c7cc8ecb24ae3",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c007-biratnagar-1975-11-02--temporal.json",
+      "fixture": "variants/c007-biratnagar-1975-11-02--temporal.json",
+      "sha256": "a998fe640291c4c828abf5cf32049428aca4a44cd84c933c9d64bbbddc5574c9",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--fagan-bradley.json",
+      "sha256": "28ee05171a52aad3e76c11a342118d4568e0dbeec2ed9f1e98d3761d444dab25",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--krishnamurti.json",
+      "sha256": "cc8c7bd019f1fa22569517aced2fdf3a354ad5ba2b3048c04900aa5301c614ee",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c009-mumbai-1969-07-20--raman.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--raman.json",
+      "sha256": "d29d2c2c0c275561b57f68192291b9e7559b89ea5af05d5fabac971f23b5fd91",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--surya-bija.json",
+      "sha256": "bc92a3cdb5b826795a43bfb6f9b7193abf6f4443e9d60addeeb295f5787d59a4",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c009-mumbai-1969-07-20--surya.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--surya.json",
+      "sha256": "f24dd8270958a41f51dbbf0d3bcfe9493488274ffa06c43d364fed70a4f0c874",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "fixture": "variants/c009-mumbai-1969-07-20--true-chitra.json",
+      "sha256": "2bbdc37d1f28c7d7a17feefff1545e156c625a7fb0303b47f58a572e1d740038",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c010-chennai-2023-01-14--temporal.json",
+      "fixture": "variants/c010-chennai-2023-01-14--temporal.json",
+      "sha256": "e48403070e043db4aef1919eb69fbc5277a2d945858b17b6c8527542f1ce64f7",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "fixture": "variants/c018-sydney-2000-09-15--fagan-bradley.json",
+      "sha256": "f753dabbaaca08fd4705fbf5d77bd0b91772490f99b7ffaabdfe60010d6dc026",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "fixture": "variants/c018-sydney-2000-09-15--krishnamurti.json",
+      "sha256": "907ee0d5650e014ec52a1c570b08b13640051ebb59ab3281a2cd58ad82cbf600",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c018-sydney-2000-09-15--raman.json",
+      "fixture": "variants/c018-sydney-2000-09-15--raman.json",
+      "sha256": "4311e1b5f4640ed37b9e4ee290cd5eb8570ba15c634f964976272b710013d204",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c018-sydney-2000-09-15--true-chitra.json",
+      "fixture": "variants/c018-sydney-2000-09-15--true-chitra.json",
+      "sha256": "324cb21129c5e2b64e52873d504337eea578d2917b4cc4282d94eaf0ad72e0c9",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c019-auckland-2019-12-31--temporal.json",
+      "fixture": "variants/c019-auckland-2019-12-31--temporal.json",
+      "sha256": "c5c8b13c7da9221a2324cf38b1a25144f2b7b549e063bad7a109297431d94243",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c027-reykjavik-1975-06-21--temporal.json",
+      "fixture": "variants/c027-reykjavik-1975-06-21--temporal.json",
+      "sha256": "f6bfff9854f88991879809eb1dc8234d86babb804555f76f1605a7122096f2b5",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c041-la-paz-2010-07-10--geocentric.json",
+      "fixture": "variants/c041-la-paz-2010-07-10--geocentric.json",
+      "sha256": "877cef64973d9c045e8c49af27af445ea05b8cbf4ac2942b894b759769b02731",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c041-la-paz-2010-07-10--temporal.json",
+      "fixture": "variants/c041-la-paz-2010-07-10--temporal.json",
+      "sha256": "f48b441ca3b0110886b8f631745e804124159c521faffd5b2e35560266b06572",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--fagan-bradley.json",
+      "sha256": "7e89b9d963cc44d8d0102aaaa08d29e7324e03281f3407ca5df1f2812b2f6afb",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c049-kathmandu-2010-06-01--geocentric.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--geocentric.json",
+      "sha256": "30ad67aa4d4ccd9e9ef2de36c99dad09511c184051d9ccb7872650819d3986a3",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--krishnamurti.json",
+      "sha256": "c7a67f019aa066e5ecf92aa1759d83316363c3c199eecc8a6f2384c9f31fd09f",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c049-kathmandu-2010-06-01--raman.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--raman.json",
+      "sha256": "ea019ad40f3009d5034869f3e7bce4a3249f18470c2a82d4c2e9f2ff11aef8ff",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--surya-bija.json",
+      "sha256": "8214dfd116fb437b3586834a458642d4a934e6eeab9c26020109be194fb066d5",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c049-kathmandu-2010-06-01--temporal.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--temporal.json",
+      "sha256": "a4022a0e9c42be3114d22516a6de4e729d4caddb828def2bd542844e6c4fbde5",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "fixture": "variants/c049-kathmandu-2010-06-01--true-chitra.json",
+      "sha256": "82d8f3fb272bf7da2bfd1f675ed1087f99ab660bd3012c123a481c292da7e817",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c050-kathmandu-2015-03-01--geocentric.json",
+      "fixture": "variants/c050-kathmandu-2015-03-01--geocentric.json",
+      "sha256": "dbc42f6116ba322453acbc827d3320f59cf80dafde094672f148afe372620d05",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c050-kathmandu-2015-03-01--temporal.json",
+      "fixture": "variants/c050-kathmandu-2015-03-01--temporal.json",
+      "sha256": "8fea55c2f649c5d6043a43465a0eef920f8f938fa549be98233b854f753ec8cd",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c052-kathmandu-2020-04-13--geocentric.json",
+      "fixture": "variants/c052-kathmandu-2020-04-13--geocentric.json",
+      "sha256": "d6f22a9320c3e0242c03ce10e6c180cda8393f83c3a14880115c49eecee044a9",
+      "methods": ["spatial"]
+    },
+    {
+      "file": "dasha-systems/variants/c052-kathmandu-2020-04-13--temporal.json",
+      "fixture": "variants/c052-kathmandu-2020-04-13--temporal.json",
+      "sha256": "8a9c90294f1b8a7601cbbcc5fb0da170bbbccbf1dbdbf0d5317a0473ac19dbb8",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c054-kathmandu-2020-05-05--temporal.json",
+      "fixture": "variants/c054-kathmandu-2020-05-05--temporal.json",
+      "sha256": "c2cfcec09f605f22031eaffb1b09ae2ca5f85d8dbe4205123c582d499c6aa816",
+      "methods": ["temporal"]
+    },
+    {
+      "file": "dasha-systems/variants/c055-kathmandu-2024-04-09--geocentric.json",
+      "fixture": "variants/c055-kathmandu-2024-04-09--geocentric.json",
+      "sha256": "ffb0b852b02a3e575aa167de5b071ec05e2a6b8009b18362941aa693d11d1c5d",
+      "methods": ["spatial"]
+    }
+  ],
+  "counts": {
+    "files": 93,
+    "systems": 8,
+    "methods": 1184
+  }
+}

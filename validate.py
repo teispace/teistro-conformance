@@ -17,6 +17,7 @@ every one of them makes a consumer's score meaningless.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -100,6 +101,63 @@ def baseline(failures: list[str]) -> int:
     return len(listed)
 
 
+def dasha_systems(failures: list[str]) -> int:
+    """The dasha systems corpus: its manifest, every file it lists against
+    its schema and its hash, and every fixture that records a dasha has its
+    file, answering the same balance methods."""
+    base = ROOT / "baseline"
+    directory = base / "dasha-systems"
+    manifest = against_schema(
+        "baseline-dasha-systems-manifest", directory / "manifest.json", failures
+    )
+    if manifest is None:
+        return 0
+    systems = manifest.get("systems", [])
+    listed: set[str] = set()
+    answers = 0
+    for entry in manifest.get("files", []):
+        name = entry.get("file", "")
+        listed.add(name)
+        path = base / name
+        if not path.is_file():
+            failures.append(f"the dasha systems manifest lists a missing file: {name}")
+            continue
+        if hashlib.sha256(path.read_bytes()).hexdigest() != entry.get("sha256"):
+            failures.append(f"{name}: the sha256 differs from the manifest")
+        document = against_schema("baseline-dasha-systems", path, failures)
+        if document is None:
+            continue
+        fixture = load(base / entry.get("fixture", ""))
+        if not isinstance(fixture, dict) or not isinstance(fixture.get("dashas"), dict):
+            failures.append(f"{name}: the fixture it names records no dasha")
+            continue
+        recorded = sorted(fixture["dashas"].get("methods", {}))
+        if document.get("fixture") != entry.get("fixture") or sorted(entry.get("methods", [])) != recorded:
+            failures.append(f"{name}: the fixture or its methods differ from the manifest")
+        if sorted(document.get("systems", {})) != sorted(systems):
+            failures.append(f"{name}: the systems differ from the manifest's")
+        for system, answer in document.get("systems", {}).items():
+            if sorted(answer.get("methods", {})) != recorded:
+                failures.append(f"{name}: {system} answers methods the fixture does not record")
+            answers += len(answer.get("methods", {}))
+
+    for sub in ("charts", "variants"):
+        for path in sorted((base / sub).glob("*.json")):
+            if isinstance(load(path), dict) and load(path).get("dashas") is not None:
+                name = f"dasha-systems/{sub}/{path.name}"
+                if name not in listed:
+                    failures.append(f"a fixture records a dasha and has no dasha systems file: {sub}/{path.name}")
+        for path in sorted((directory / sub).glob("*.json")):
+            name = f"dasha-systems/{sub}/{path.name}"
+            if name not in listed:
+                failures.append(f"a dasha systems file the manifest does not list: {name}")
+
+    counts = manifest.get("counts", {})
+    if counts != {"files": len(listed), "systems": len(systems), "methods": answers}:
+        failures.append(f"the dasha systems manifest's counts {counts} disagree with its files")
+    return len(listed)
+
+
 def tables(failures: list[str]) -> int:
     """The recorded tables: readable, and each says what it is."""
     count = 0
@@ -133,12 +191,16 @@ def main() -> int:
     failures: list[str] = []
     corpus(failures)
     fixtures = baseline(failures)
+    systems = dasha_systems(failures)
     against_schema("tolerances", ROOT / "tolerances.json", failures)
     recorded = tables(failures)
 
     for failure in failures:
         print(f"FAIL  {failure}")
-    print(f"checked {fixtures} fixtures and {recorded} recorded tables: {len(failures)} failure(s)")
+    print(
+        f"checked {fixtures} fixtures, {systems} dasha systems files and {recorded} recorded tables: "
+        f"{len(failures)} failure(s)"
+    )
     return 1 if failures else 0
 
 

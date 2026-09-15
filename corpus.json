@@ -1,7 +1,7 @@
 {
   "schema": "teistro-conformance/corpus/1",
-  "version": "0.1.1",
-  "released": "2026-09-06",
+  "version": "0.2.0",
+  "released": "2026-09-15",
   "licence": "CC0-1.0",
   "repository": "https://github.com/teispace/teistro-conformance",
   "note": "The corpus a conformance report cites. Its version is its own: it moves when the corpus moves, never because a consumer released.",
@@ -23,6 +23,15 @@
       "recorded": "2026-09-06"
     },
     {
+      "path": "baseline/dasha-systems",
+      "source": "the same engine's nakshatra-seeded dasha systems beside Vimshottari, computed from each fixture's recorded Moon, birth instant and nakshatra span",
+      "evidence_rank": 2,
+      "schema": "teistro-conformance/baseline-dasha-systems/1",
+      "manifest": "baseline/dasha-systems/manifest.json",
+      "counts": { "files": 93, "systems": 8, "answers": 1184 },
+      "recorded": "2026-09-15"
+    },
+    {
       "path": "official",
       "source": "Nepal's national panchanga committee (npns.gov.np), read from its published Rashtriya Panchangam for BS 2082 and 2083",
       "evidence_rank": 1,
@@ -41,6 +50,8 @@
   "schemas": [
     "schema/baseline-chart.schema.json",
     "schema/baseline-manifest.schema.json",
+    "schema/baseline-dasha-systems.schema.json",
+    "schema/baseline-dasha-systems-manifest.schema.json",
     "schema/tolerances.schema.json",
     "schema/report.schema.json"
   ]

@@ -9,6 +9,27 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.2.0 — 2026-09-15
+
+**Values:** none moved; 1184 are new.
+
+`baseline/dasha-systems/`: the eight nakshatra-seeded dasha systems beside
+Vimshottari — Ashtottari, Yogini, Dwadashottari, Panchottari, Shatabdika,
+Chaturashiti-sama, Dwisaptati-sama and Tribhagi — for every one of the 93
+fixtures that records a dasha, under each balance method that fixture
+records: 1184 answers. Each holds the system's rule data (the sequence, the
+reference nakshatra, the count's direction, the window, the offset and, for
+Tribhagi, the scale and rounds), the first lord, the balance, the tree to
+antardashas and the chain of four levels at the fixture's two reference
+instants.
+
+They were computed **from each fixture's recorded inputs** — the Moon's
+sidereal longitude, the birth instant and the recorded nakshatra span — by
+the same engine version that recorded the charts, so no astronomy was
+recomputed and no existing value could move. Two schemas describe the files
+and their manifest, and `validate.py` checks every file's hash, its schema,
+and that it answers exactly the methods its fixture records.
+
 ## 0.1.1 — 2026-09-06
 
 **Values:** none. Documentation only.

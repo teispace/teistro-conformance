@@ -24,6 +24,10 @@ and `manifest.json` here, and run `python validate.py`. A
 regeneration under a newer engine version is a corpus version bump, never
 a silent overwrite (ADR-0022).
 
+`dasha-systems/` is written by a third exporter beside those
+(`export-dasha-vectors.mjs --corpus <this directory>`), which reads the
+fixtures here rather than the ephemeris; see "The dasha systems" below.
+
 ## Provenance
 
 Recorded in `manifest.json` and repeated in every fixture:
@@ -142,3 +146,40 @@ nakshatra, pada and sign in the fixture are the engine's classification
 of its own `f64`, made with decimal arithmetic and lower-inclusive
 boundaries; the harness classifies the same `f64` with the SDK's integer
 path (ADR-0016) and expects the same answer.
+
+## The dasha systems (`teistro-conformance/baseline-dasha-systems/1`)
+
+`dasha-systems/charts/` and `dasha-systems/variants/` hold one file for each
+fixture that records `dashas`, under the fixture's own file name. Each file
+answers the eight nakshatra-seeded systems beside Vimshottari from **the
+fixture's recorded inputs**: the Moon's sidereal longitude
+(`dashas.moon_sidereal_longitude_deg`), the birth instant
+(`input.resolved.jd_ut`) and, for a temporal balance, the Moon's recorded
+span in its nakshatra (`dashas.methods.temporal.nakshatra_span`). The
+engine's balance service is replaced by one that answers from those values
+with the engine's own formula, so these files are a property of the dasha
+arithmetic and cannot drift with the ephemeris.
+
+Per system: the rule data (`sequence` of lords and years, `total_years` the
+sub-period shares are over, `reference_nakshatra`, `count` from or to it,
+the `span` of nakshatras a lord covers, the `offset` added before taking the
+group round the sequence, and Tribhagi's `scale`: two thirds, twice round);
+then per recorded balance method the `first_lord`, the `balance` written as
+the chart fixtures write it, the tree as pre-order rows `[path, lord,
+start_jd, end_jd]` to depth 2, and the chain of four levels at each of the
+fixture's `reference_instants_jd` as rows `[level, index, lord, start_jd,
+end_jd]`, empty once the cycle has ended.
+
+| system | lords | years | reference | count | span | offset |
+|---|---|---|---|---|---|---|
+| Ashtottari | 8 | 108 | Ardra | from | 3 | 0 |
+| Yogini | 8 | 36 | Ashwini | from | 1 | 3 |
+| Dwadashottari | 8 | 112 | Revati | to | 1 | 0 |
+| Panchottari | 7 | 105 | Anuradha | from | 1 | 0 |
+| Shatabdika | 7 | 100 | Revati | from | 1 | 0 |
+| Chaturashiti-sama | 7 | 84 | Swati | from | 1 | 0 |
+| Dwisaptati-sama | 8 | 72 | Mula | from | 1 | 0 |
+| Tribhagi | 9 | 120 × 2/3, twice | Ashwini | from | 1 | 0 |
+
+`dasha-systems/manifest.json` lists every file with its SHA-256, its fixture
+and the methods it answers.

@@ -1,0 +1,375 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/baseline-dasha-systems.schema.json",
+  "title": "The nakshatra-seeded dasha systems of one baseline fixture",
+  "description": "Every nakshatra-seeded dasha system beside Vimshottari, computed by the baseline engine from the recorded inputs of the fixture it names: the Moon's sidereal longitude, the birth instant and, for a temporal balance, the Moon's recorded span in its nakshatra. Nothing astronomical is recomputed, so these values move only when the dasha arithmetic does.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "fixture",
+    "provenance",
+    "year_length_days",
+    "reference_instants_jd",
+    "systems"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/baseline-dasha-systems/1"
+    },
+    "fixture": {
+      "type": "string",
+      "pattern": "^(charts|variants)/[^/]+\\.json$",
+      "description": "The fixture whose recorded inputs these were computed from, relative to baseline/."
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source",
+        "evidence_rank",
+        "engine_version",
+        "exporter_version",
+        "inputs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "evidence_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "engine_version": {
+          "type": "string"
+        },
+        "exporter_version": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "string",
+          "description": "Which recorded fields were read."
+        }
+      }
+    },
+    "year_length_days": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "reference_instants_jd": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "description": "The instants each system's active chain is recorded at: the fixture's own."
+    },
+    "systems": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/system"
+      },
+      "minProperties": 1
+    }
+  },
+  "$defs": {
+    "system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total_years",
+        "sequence",
+        "reference_nakshatra",
+        "count",
+        "span",
+        "offset",
+        "methods"
+      ],
+      "properties": {
+        "total_years": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "The years the sub-period shares are taken over."
+        },
+        "sequence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "lord",
+              "years"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "lord": {
+                "type": "string",
+                "enum": [
+                  "SUN",
+                  "MOON",
+                  "MARS",
+                  "MERCURY",
+                  "JUPITER",
+                  "VENUS",
+                  "SATURN",
+                  "RAHU",
+                  "KETU"
+                ]
+              },
+              "years": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "yogini": {
+                "type": "string",
+                "description": "The yogini a Yogini period is named for."
+              }
+            }
+          }
+        },
+        "reference_nakshatra": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 26,
+          "description": "The nakshatra (0 Ashwini) the count starts from or runs to."
+        },
+        "count": {
+          "enum": [
+            "from_reference",
+            "to_reference"
+          ]
+        },
+        "span": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "How many nakshatras each lord covers."
+        },
+        "offset": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Added to the counted group before taking it round the sequence."
+        },
+        "scale": {
+          "type": "object",
+          "required": [
+            "numerator",
+            "denominator",
+            "rounds"
+          ],
+          "additionalProperties": false,
+          "description": "A mahadasha's length is its lord's years times numerator/denominator, and the sequence runs `rounds` times.",
+          "properties": {
+            "numerator": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "denominator": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "rounds": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "methods": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": false,
+          "properties": {
+            "spatial": {
+              "$ref": "#/$defs/method"
+            },
+            "temporal": {
+              "$ref": "#/$defs/method"
+            }
+          }
+        }
+      }
+    },
+    "method": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "first_lord",
+        "balance",
+        "tree_depth",
+        "row_format",
+        "periods",
+        "chain_depth",
+        "chain_format",
+        "active_at"
+      ],
+      "properties": {
+        "first_lord": {
+          "type": "string",
+          "enum": [
+            "SUN",
+            "MOON",
+            "MARS",
+            "MERCURY",
+            "JUPITER",
+            "VENUS",
+            "SATURN",
+            "RAHU",
+            "KETU"
+          ]
+        },
+        "balance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "years",
+            "months",
+            "days",
+            "hours",
+            "minutes",
+            "total_days"
+          ],
+          "properties": {
+            "years": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "months": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "days": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "hours": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "minutes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "total_days": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "tree_depth": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "row_format": {
+          "const": [
+            "path",
+            "lord",
+            "start_jd",
+            "end_jd"
+          ]
+        },
+        "periods": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(/[0-9]+)*$"
+              },
+              {
+                "type": "string",
+                "enum": [
+                  "SUN",
+                  "MOON",
+                  "MARS",
+                  "MERCURY",
+                  "JUPITER",
+                  "VENUS",
+                  "SATURN",
+                  "RAHU",
+                  "KETU"
+                ]
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "items": false,
+            "minItems": 4
+          }
+        },
+        "chain_depth": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "chain_format": {
+          "const": [
+            "level",
+            "index",
+            "lord",
+            "start_jd",
+            "end_jd"
+          ]
+        },
+        "active_at": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "jd",
+              "chain"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "jd": {
+                "type": "number"
+              },
+              "chain": {
+                "type": "array",
+                "description": "Empty past the end of the cycle.",
+                "items": {
+                  "type": "array",
+                  "prefixItems": [
+                    {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "string",
+                      "enum": [
+                        "SUN",
+                        "MOON",
+                        "MARS",
+                        "MERCURY",
+                        "JUPITER",
+                        "VENUS",
+                        "SATURN",
+                        "RAHU",
+                        "KETU"
+                      ]
+                    },
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "number"
+                    }
+                  ],
+                  "items": false,
+                  "minItems": 5
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
