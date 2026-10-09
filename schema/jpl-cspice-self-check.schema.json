@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/jpl-cspice-self-check.schema.json",
+  "title": "CSPICE over DE440 and DE441 measured against itself",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "recorded",
+    "note",
+    "rungs",
+    "rotations"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/jpl-cspice-self-check/1"
+    },
+    "recorded": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "note": {
+      "type": "string"
+    },
+    "rungs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rung",
+          "unit",
+          "what",
+          "bodies"
+        ],
+        "properties": {
+          "rung": {
+            "type": "string"
+          },
+          "unit": {
+            "const": "arcsec"
+          },
+          "what": {
+            "type": "string"
+          },
+          "bodies": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "target",
+                "name",
+                "compared",
+                "worst",
+                "at_jd",
+                "position_km",
+                "correction"
+              ],
+              "properties": {
+                "target": {
+                  "type": "string",
+                  "enum": [
+                    "10",
+                    "301",
+                    "199",
+                    "299",
+                    "399",
+                    "499",
+                    "599",
+                    "699",
+                    "799",
+                    "899",
+                    "999",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                  ]
+                },
+                "name": {
+                  "type": "string"
+                },
+                "compared": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "worst": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "at_jd": {
+                  "type": "number"
+                },
+                "position_km": {
+                  "type": "number"
+                },
+                "correction": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rotations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rotation",
+          "rows",
+          "worst_departure_from_orthonormal",
+          "at_jd"
+        ],
+        "properties": {
+          "rotation": {
+            "enum": [
+              "tod",
+              "mecl"
+            ]
+          },
+          "rows": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "worst_departure_from_orthonormal": {
+            "type": "number"
+          },
+          "at_jd": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

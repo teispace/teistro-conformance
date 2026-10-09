@@ -25,3 +25,16 @@ own `provenance`:
 
 - teimeris/  Recorded from Teimeris 0.1.0, an implementation of the
              Swiss Ephemeris algorithms, in its corrected profile.
+
+- jpl/       Values computed by CSPICE over DE440 and DE441
+             (NASA/JPL-Caltech); no endorsement implied. They were computed
+             with spiceypy (Annex et al. 2020, Journal of Open Source
+             Software 5(46), 2050, doi 10.21105/joss.02050), which bundles
+             NAIF's CSPICE Toolkit, over NAIF's kernels. DE440 and DE441 are
+             Park et al. 2021, The Astronomical Journal 161:105, doi
+             10.3847/1538-3881/abd414. NAIF's rules
+             (https://naif.jpl.nasa.gov/naif/rules.html) let anyone use its
+             kernels and redistribute them unmodified. This corpus
+             redistributes no kernel and no SPICE code, only the states
+             computed from them; the manifest names each kernel by URL and
+             SHA-256.

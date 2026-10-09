@@ -1,0 +1,312 @@
+{
+  "schema": "teistro-conformance/jpl-cspice-self-check/1",
+  "recorded": "2026-10-09",
+  "note": "CSPICE measured against itself, from cspice/states.json alone, so --verify reproduces it without kernels. A rung is the worst angular separation of two directions over every instant, with the instant and the distance between the two positions. Nothing here alters a recorded value.",
+  "rungs": [
+    {
+      "rung": "de441_against_de440",
+      "unit": "arcsec",
+      "what": "the geocentric direction over DE441 against DE440, for geometric (NONE, at the TDB epoch), converged light time (CN) and CN+S (at the TT epoch), in J2000; the worst over the three, with the correction it falls under",
+      "bodies": [
+        {
+          "target": "10",
+          "name": "Sun",
+          "compared": 543,
+          "worst": 7.862779079646934e-06,
+          "at_jd": 2305522.396484375,
+          "position_km": 0.005783497475426623,
+          "correction": "CN+S at TT"
+        },
+        {
+          "target": "301",
+          "name": "Moon",
+          "compared": 543,
+          "worst": 0.27438872988123947,
+          "at_jd": 2305522.396484375,
+          "position_km": 0.4761173612741814,
+          "correction": "NONE at TDB"
+        },
+        {
+          "target": "199",
+          "name": "Mercury",
+          "compared": 543,
+          "worst": 8.43963553986286e-06,
+          "at_jd": 2312797.931640625,
+          "position_km": 0.004682829249341832,
+          "correction": "CN at TT"
+        },
+        {
+          "target": "299",
+          "name": "Venus",
+          "compared": 543,
+          "worst": 2.3134855841593594e-05,
+          "at_jd": 2305447.5,
+          "position_km": 0.005416484082257183,
+          "correction": "CN+S at TT"
+        },
+        {
+          "target": "4",
+          "name": "Mars barycentre",
+          "compared": 543,
+          "worst": 1.0753892234417581e-05,
+          "at_jd": 2305462.712890625,
+          "position_km": 0.005542555965487623,
+          "correction": "CN at TT"
+        },
+        {
+          "target": "5",
+          "name": "Jupiter barycentre",
+          "compared": 543,
+          "worst": 1.6035853512362687e-06,
+          "at_jd": 2305462.712890625,
+          "position_km": 0.0055426068418948345,
+          "correction": "CN at TT"
+        },
+        {
+          "target": "6",
+          "name": "Saturn barycentre",
+          "compared": 543,
+          "worst": 8.347064466017636e-07,
+          "at_jd": 2305522.396484375,
+          "position_km": 0.005781948709987461,
+          "correction": "CN at TT"
+        },
+        {
+          "target": "7",
+          "name": "Uranus barycentre",
+          "compared": 543,
+          "worst": 3.635428989782987e-07,
+          "at_jd": 2312797.931640625,
+          "position_km": 0.004682951146128154,
+          "correction": "CN at TT"
+        },
+        {
+          "target": "8",
+          "name": "Neptune barycentre",
+          "compared": 543,
+          "worst": 2.2720409343825857e-07,
+          "at_jd": 2305462.712890625,
+          "position_km": 0.005542544486371326,
+          "correction": "NONE at TDB"
+        },
+        {
+          "target": "9",
+          "name": "Pluto barycentre",
+          "compared": 543,
+          "worst": 1.5591937013227097e-07,
+          "at_jd": 2305522.396484375,
+          "position_km": 0.005782058922610752,
+          "correction": "CN at TT"
+        }
+      ]
+    },
+    {
+      "rung": "one_iteration_against_converged",
+      "unit": "arcsec",
+      "what": "spkezr LT (one Newtonian light-time iteration) against CN (converged), and LT+S against CN+S, over DE440 in J2000: what the single iteration costs",
+      "bodies": [
+        {
+          "target": "10",
+          "name": "Sun",
+          "compared": 362,
+          "worst": 2.764285492734664e-10,
+          "at_jd": 2416208.357421875,
+          "position_km": 2.612222859003873e-07,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "301",
+          "name": "Moon",
+          "compared": 362,
+          "worst": 0.0010949514263399666,
+          "at_jd": 2560094.015625,
+          "position_km": 0.0028105267917612757,
+          "correction": "LT at TT"
+        },
+        {
+          "target": "199",
+          "name": "Mercury",
+          "compared": 362,
+          "worst": 0.003908178765596105,
+          "at_jd": 2464695.494140625,
+          "position_km": 3.333638269892542,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "299",
+          "name": "Venus",
+          "compared": 362,
+          "worst": 0.0014252033904566634,
+          "at_jd": 2305456.5,
+          "position_km": 0.506163374437011,
+          "correction": "LT at TT"
+        },
+        {
+          "target": "4",
+          "name": "Mars barycentre",
+          "compared": 362,
+          "worst": 0.00080167269028242,
+          "at_jd": 2469353.462890625,
+          "position_km": 0.8344693754041678,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "5",
+          "name": "Jupiter barycentre",
+          "compared": 362,
+          "worst": 9.548881888201835e-05,
+          "at_jd": 2551511.357421875,
+          "position_km": 0.35100949695781397,
+          "correction": "LT at TT"
+        },
+        {
+          "target": "6",
+          "name": "Saturn barycentre",
+          "compared": 362,
+          "worst": 3.450564807529092e-05,
+          "at_jd": 2580123.755859375,
+          "position_km": 0.2334856197711813,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "7",
+          "name": "Uranus barycentre",
+          "compared": 362,
+          "worst": 1.0539566533805076e-05,
+          "at_jd": 2464032.564453125,
+          "position_km": 0.14375775703437224,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "8",
+          "name": "Neptune barycentre",
+          "compared": 362,
+          "worst": 2.827597430583584e-06,
+          "at_jd": 2543540.373046875,
+          "position_km": 0.0616332085931397,
+          "correction": "LT at TT"
+        },
+        {
+          "target": "9",
+          "name": "Pluto barycentre",
+          "compared": 362,
+          "worst": 1.567945694614368e-05,
+          "at_jd": 2344650.876953125,
+          "position_km": 0.4091755402781645,
+          "correction": "LT+S at TT"
+        }
+      ]
+    },
+    {
+      "rung": "ecliptic_against_equator",
+      "unit": "arcsec",
+      "what": "each J2000 state turned about x by 84381.448 arcsec against the ECLIPJ2000 state SPICE gives for the same correction and epoch: a frame round trip, which agrees to rounding",
+      "bodies": [
+        {
+          "target": "10",
+          "name": "Sun",
+          "compared": 543,
+          "worst": 4.6483057235964616e-11,
+          "at_jd": 2411473.490234375,
+          "position_km": 3.0357790942210756e-08,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "301",
+          "name": "Moon",
+          "compared": 543,
+          "worst": 1.194555613496667e-08,
+          "at_jd": 2459180.78515625,
+          "position_km": 2.7576409451287137e-08,
+          "correction": "LT at TT"
+        },
+        {
+          "target": "199",
+          "name": "Mercury",
+          "compared": 543,
+          "worst": 3.5702434656472325e-11,
+          "at_jd": 2523270.28515625,
+          "position_km": 3.122362236350814e-08,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "299",
+          "name": "Venus",
+          "compared": 543,
+          "worst": 4.6095348426627833e-11,
+          "at_jd": 2597431.6484375,
+          "position_km": 1.501712528671799e-08,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "4",
+          "name": "Mars barycentre",
+          "compared": 543,
+          "worst": 8.01560303048723e-11,
+          "at_jd": 2459180.78515625,
+          "position_km": 3.3530088441437684e-08,
+          "correction": "LT at TT"
+        },
+        {
+          "target": "5",
+          "name": "Jupiter barycentre",
+          "compared": 543,
+          "worst": 3.4735457851222354e-11,
+          "at_jd": 2588325.4296875,
+          "position_km": 1.2013700229374393e-07,
+          "correction": "LT at TT"
+        },
+        {
+          "target": "6",
+          "name": "Saturn barycentre",
+          "compared": 543,
+          "worst": 4.652111669689375e-11,
+          "at_jd": 2597143.70703125,
+          "position_km": 4.805480091749757e-07,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "7",
+          "name": "Uranus barycentre",
+          "compared": 543,
+          "worst": 3.551727438552708e-11,
+          "at_jd": 2560094.015625,
+          "position_km": 4.915124923727108e-07,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "8",
+          "name": "Neptune barycentre",
+          "compared": 543,
+          "worst": 4.660360588638082e-11,
+          "at_jd": 2319866.787109375,
+          "position_km": 5.204751848153168e-07,
+          "correction": "LT+S at TT"
+        },
+        {
+          "target": "9",
+          "name": "Pluto barycentre",
+          "compared": 543,
+          "worst": 4.6023076835468095e-11,
+          "at_jd": 2461068.220703125,
+          "position_km": 1.9073486328125e-06,
+          "correction": "LT+S at TT"
+        }
+      ]
+    }
+  ],
+  "rotations": [
+    {
+      "rotation": "tod",
+      "rows": 181,
+      "worst_departure_from_orthonormal": 6.661338147750939e-16,
+      "at_jd": 2470541.3125
+    },
+    {
+      "rotation": "mecl",
+      "rows": 181,
+      "worst_departure_from_orthonormal": 4.440892098500626e-16,
+      "at_jd": 2305522.396484375
+    }
+  ]
+}

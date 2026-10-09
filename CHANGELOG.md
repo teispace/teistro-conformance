@@ -9,6 +9,31 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.12.0 — 2026-10-09
+
+**Values:** none moved; states computed by CSPICE over JPL's DE440 and DE441
+are new, at evidence rank 1.
+
+`jpl/` holds geocentric `spkezr` states from CSPICE over DE440 and DE441 at a
+stratified grid across 1600 to 2400 and at adversarial instants: lunar
+perigees and apogees, stations of Mercury and Mars, Sun–Moon conjunctions, a
+superior conjunction of Mercury, DE440 record boundaries and the DE441 file
+split. The instants were chosen with CSPICE over DE440. Each state is
+geometric, or carries one-iteration or converged light time with or without
+stellar aberration. Each is given in J2000, and some also in ECLIPJ2000. The
+file adds SPICE's IAU 1976/1980 of-date rotations at every instant, and
+`cspice/self-check.json` measures CSPICE against itself. The kernels are named
+by URL and SHA-256 and are not redistributed. `tools/record_jpl.py` (CC0)
+records the states, rebuilds the self-check and verifies both offline.
+`validate.py` checks the new files against their schemas and hashes, one row
+per chosen instant, and the self-check byte for byte. `tolerances.json`
+widens the `de` class to comparisons against DE440 and adds geometric and
+astrometric bands. NOTICE cites DE440 and spiceypy and states NAIF's terms.
+
+A Horizons half, JPL Horizons' own states and places at the same instants
+with every raw response, has been recorded and is withheld until JPL has
+given permission to republish it.
+
 ## 0.11.0 — 2026-09-15
 
 **Values:** none moved; the doshas of 93 charts and the 52 rules that decide

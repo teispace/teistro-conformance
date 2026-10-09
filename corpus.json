@@ -1,7 +1,7 @@
 {
   "schema": "teistro-conformance/corpus/1",
-  "version": "0.11.0",
-  "released": "2026-09-15",
+  "version": "0.12.0",
+  "released": "2026-10-09",
   "licence": "CC0-1.0",
   "repository": "https://github.com/teispace/teistro-conformance",
   "note": "The corpus a conformance report cites. Its version is its own: it moves when the corpus moves, never because a consumer released.",
@@ -125,6 +125,14 @@
       "evidence_rank": 2,
       "counts": { "ayanamsha_rows": 1044, "house_rows": 1260, "star_rows": 128, "phenomena_rows": 176, "sidereal_rows": 49 },
       "recorded": "2026-09-05, re-recorded 2026-09-06 after the engine's own corrections"
+    },
+    {
+      "path": "jpl",
+      "source": "CSPICE N0067 through spiceypy 8.2.0 over NAIF's DE440 and DE441 kernels (NASA/JPL-Caltech), recorded by tools/record_jpl.py: geocentric states and SPICE's of-date rotations, and CSPICE measured against itself",
+      "evidence_rank": 1,
+      "manifest": "jpl/manifest.json",
+      "counts": { "instants": 181, "cspice_rows": 19910 },
+      "recorded": "2026-10-09"
     }
   ],
   "tolerances": "tolerances.json",
@@ -153,6 +161,9 @@
     "schema/baseline-dosha-rules.schema.json",
     "schema/pyjhora-vimshottari.schema.json",
     "schema/pyjhora-vimshottari-manifest.schema.json",
+    "schema/jpl-manifest.schema.json",
+    "schema/jpl-cspice-states.schema.json",
+    "schema/jpl-cspice-self-check.schema.json",
     "schema/tolerances.schema.json",
     "schema/report.schema.json"
   ]

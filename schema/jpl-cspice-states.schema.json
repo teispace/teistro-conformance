@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/jpl-cspice-states.schema.json",
+  "title": "Geocentric states from CSPICE over DE440 and DE441",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "source",
+    "evidence_rank",
+    "recorded",
+    "observer",
+    "units",
+    "columns",
+    "epochs",
+    "corrections",
+    "targets",
+    "kernels",
+    "instants",
+    "of_date",
+    "series"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/jpl-cspice-states/1"
+    },
+    "source": {
+      "type": "string"
+    },
+    "evidence_rank": {
+      "const": 1
+    },
+    "recorded": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "observer": {
+      "type": "string"
+    },
+    "units": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "position",
+        "velocity",
+        "light_time"
+      ],
+      "properties": {
+        "position": {
+          "const": "km"
+        },
+        "velocity": {
+          "const": "km per s"
+        },
+        "light_time": {
+          "const": "s"
+        }
+      }
+    },
+    "columns": {
+      "const": [
+        "x_km",
+        "y_km",
+        "z_km",
+        "vx_km_per_s",
+        "vy_km_per_s",
+        "vz_km_per_s",
+        "light_time_s"
+      ]
+    },
+    "epochs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tdb",
+        "tt"
+      ],
+      "properties": {
+        "tdb": {
+          "type": "string"
+        },
+        "tt": {
+          "type": "string"
+        }
+      }
+    },
+    "corrections": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "targets": {
+      "type": "string"
+    },
+    "kernels": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "instants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "jd",
+          "et_tdb",
+          "et_from_tt"
+        ],
+        "properties": {
+          "jd": {
+            "type": "number"
+          },
+          "et_tdb": {
+            "type": "number"
+          },
+          "et_from_tt": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "of_date": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "note",
+        "definitions",
+        "tod",
+        "mecl"
+      ],
+      "properties": {
+        "note": {
+          "type": "string"
+        },
+        "definitions": {
+          "type": "object"
+        },
+        "tod": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 9,
+            "maxItems": 9,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "mecl": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 9,
+            "maxItems": 9,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "series": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "target",
+          "name",
+          "kind",
+          "kernel",
+          "epoch",
+          "frame",
+          "correction",
+          "rows"
+        ],
+        "properties": {
+          "target": {
+            "type": "string",
+            "enum": [
+              "10",
+              "301",
+              "199",
+              "299",
+              "399",
+              "499",
+              "599",
+              "699",
+              "799",
+              "899",
+              "999",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "body",
+              "barycentre"
+            ]
+          },
+          "kernel": {
+            "enum": [
+              "de440",
+              "de441"
+            ]
+          },
+          "epoch": {
+            "enum": [
+              "tdb",
+              "tt"
+            ]
+          },
+          "frame": {
+            "enum": [
+              "J2000",
+              "ECLIPJ2000"
+            ]
+          },
+          "correction": {
+            "enum": [
+              "NONE",
+              "LT",
+              "LT+S",
+              "CN",
+              "CN+S"
+            ]
+          },
+          "rows": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "array",
+              "minItems": 7,
+              "maxItems": 7,
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

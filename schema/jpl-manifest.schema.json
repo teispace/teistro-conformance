@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/teispace/teistro-conformance/schema/jpl-manifest.schema.json",
+  "title": "The manifest of the JPL recording's CSPICE half",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "recorded",
+    "recorder",
+    "kernels",
+    "kernel_notes",
+    "instants",
+    "files",
+    "counts"
+  ],
+  "properties": {
+    "schema": {
+      "const": "teistro-conformance/jpl-manifest/1"
+    },
+    "recorded": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "recorder": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "script",
+        "version",
+        "python",
+        "spiceypy",
+        "cspice"
+      ],
+      "properties": {
+        "script": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "python": {
+          "type": "string"
+        },
+        "spiceypy": {
+          "type": "string"
+        },
+        "cspice": {
+          "type": "string"
+        }
+      }
+    },
+    "kernels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "file",
+          "url",
+          "bytes",
+          "sha256",
+          "used_for"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "bytes": {
+            "type": "integer"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "used_for": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "kernel_notes": {
+      "type": "string"
+    },
+    "instants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "jd",
+          "kind",
+          "why"
+        ],
+        "properties": {
+          "jd": {
+            "type": "number"
+          },
+          "kind": {
+            "enum": [
+              "grid",
+              "adversarial"
+            ]
+          },
+          "why": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cspice/states.json",
+        "cspice/self-check.json"
+      ],
+      "properties": {
+        "cspice/states.json": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "cspice/self-check.json": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "instants",
+        "cspice_series",
+        "cspice_rows"
+      ],
+      "properties": {
+        "instants": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cspice_series": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cspice_rows": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

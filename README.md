@@ -4,7 +4,7 @@ A corpus of recorded astrological and astronomical answers, with the
 settings each was computed under, so that an implementation can be
 measured against something other than its own opinion.
 
-Version 0.1.1. Dedicated to the public domain under
+Version 0.12.0. Dedicated to the public domain under
 [CC0-1.0](LICENSE) — there is no attribution requirement, because
 attribution is friction for an implementation checking itself, and a
 standard nobody can use freely is not a standard.
@@ -27,6 +27,7 @@ standard nobody can use freely is not a standard.
 | [`pyjhora/vimshottari/`](pyjhora) | PyJHora 4.8.7's Vimshottari for 53 of the 55 charts, run as a black box: its Moon, and every mahadasha and antardasha under five year durations, with the two charts it refuses listed. [What to know before comparing](pyjhora/README.md) | 3 |
 | [`official/`](official) | what Nepal's national panchanga committee printed in its Rashtriya Panchangam for BS 2082 and 2083 — 24 sankranti instants, four rows of places at sunrise, 22 days of sunrise and sunset, eight tithi ends — read from the published page images, with the file URLs and page numbers | 1 |
 | [`teimeris/`](teimeris) | Teimeris 0.1.0 in its corrected profile: 1044 ayanamsha rows, 1260 house rows, 128 star records, 176 phenomena rows, 49 sidereal-time rows, each with the geometry it was read from | 2 |
+| [`jpl/`](#the-jpl-recording) | JPL's ephemeris itself: geocentric states computed by CSPICE over DE440 and DE441 over a stratified grid across 1600 to 2400 and a set of adversarial instants, with SPICE's of-date rotations, and CSPICE measured against itself. The counts are in `corpus.json` and `jpl/manifest.json` | 1 |
 
 **Evidence rank** is how much weight an answer carries when two sources
 disagree: **1** a classical text or an institution's own publication,
@@ -34,6 +35,67 @@ disagree: **1** a classical text or an institution's own publication,
 anything else. A rank is a claim about provenance, not about accuracy: a
 committee's printed sunrise is rank 1 even where a modern ephemeris
 disagrees with it, and the disagreement is the interesting part.
+
+## The JPL recording
+
+`jpl/` is the corpus's truth rung. ADR-0021 in the Teistro SDK makes JPL's
+ephemeris the final authority, because agreement with another
+implementation proves consistency, not correctness. What is published here
+is computed from JPL's own files: NAIF's CSPICE Toolkit reading DE440 and
+DE441.
+
+- `cspice/states.json`: `spkezr` states of the Sun, the Moon, Mercury,
+  Venus and the system barycentres of Mars to Pluto, from the geocentre.
+  Over `de440.bsp` they are geometric, with one-iteration and converged
+  light time, with and without stellar aberration, in J2000 and
+  ECLIPJ2000. The same geometric and converged states are given over
+  DE441, together with SPICE's IAU 1976/1980 of-date rotations at each
+  instant.
+- `cspice/self-check.json`: CSPICE measured against itself, from the states
+  alone. It gives DE441 against DE440 per body, one-iteration light time
+  against converged, ECLIPJ2000 against J2000 turned by the fixed
+  obliquity, and how far each of-date rotation departs from orthonormal.
+  Each is the worst over every instant, with the instant it falls at.
+- `manifest.json`: the recording date, the versions, the kernels by URL and
+  SHA-256, the instants with the reason each was chosen, and the files'
+  hashes.
+
+What to know before comparing:
+
+- **The geometric rung isolates the ephemeris.** A geometric state carries
+  no light time, aberration or deflection, and an instant is read as TDB.
+  A converged-light-time state (`CN`) is the astrometric place, with the
+  instant read as TT and converted by SPICE.
+- **CSPICE's `LT` is one iteration.** It costs milliarcseconds against
+  converged light time (`CN`) for the inner planets. Both are recorded.
+- **SPICE applies no gravitational deflection**, so a `CN+S` state is not an
+  apparent place. No band in `tolerances.json` holds an apparent place
+  against this half.
+- **DE441 is not DE440.** Over DE441 the Moon departs from DE440 by a
+  fraction of an arcsecond at the ends of the range. The self-check shows it
+  per body, so a comparison can say which ephemeris it was made against.
+- **A Horizons half has been recorded and is withheld.** JPL Horizons'
+  geometric states and astrometric and apparent places at the same
+  instants, with every raw response, have been recorded and measured
+  against these states. They stay out of the corpus until JPL has given
+  permission to republish what Horizons serves. The recorder keeps the
+  code that records them, behind `--horizons`, which is off by default.
+
+To rerun or check the recording:
+
+```sh
+python3 -m venv .venv && .venv/bin/pip install spiceypy==8.2.0
+.venv/bin/python -I tools/record_jpl.py --kernels KERNELS --de441 DE441
+python3 -I tools/record_jpl.py --verify
+.venv/bin/python -I tools/record_jpl.py --verify --kernels KERNELS --de441 DE441
+```
+
+`KERNELS` holds `de440.bsp` and `naif0012.tls`, and `DE441` holds
+`de441_part-1.bsp` and `de441_part-2.bsp`, all from NAIF at the URLs in the
+manifest. Recording asks no web service. `--verify` needs only the standard
+library: it checks every hash, and checks byte for byte that the self-check
+is what the states produce. Given the kernels, it also recomputes the
+states byte for byte. `validate.py` runs the same offline checks.
 
 ## The contract
 
@@ -62,7 +124,7 @@ Pin it. As a submodule:
 
 ```sh
 git submodule add https://github.com/teispace/teistro-conformance fixtures
-git -C fixtures checkout v0.1.1
+git -C fixtures checkout v0.12.0
 ```
 
 or read [`corpus.json`](corpus.json), which names the version, what each

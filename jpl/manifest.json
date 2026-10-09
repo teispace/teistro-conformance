@@ -1,0 +1,958 @@
+{
+  "schema": "teistro-conformance/jpl-manifest/1",
+  "recorded": "2026-10-09",
+  "recorder": {
+    "script": "tools/record_jpl.py",
+    "version": "1.0.0",
+    "python": "3.14.7",
+    "spiceypy": "8.2.0",
+    "cspice": "CSPICE_N0067"
+  },
+  "kernels": [
+    {
+      "file": "de440.bsp",
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de440.bsp",
+      "bytes": 119799808,
+      "sha256": "a4ce9bf9b3282becc9f4b2ac3cebe03a2ae7599981aabd7265fd8482fff7c4b5",
+      "used_for": "the DE440 states"
+    },
+    {
+      "file": "naif0012.tls",
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/lsk/naif0012.tls",
+      "bytes": 5257,
+      "sha256": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+      "used_for": "the TT to TDB conversion (DELTET)"
+    },
+    {
+      "file": "de441_part-1.bsp",
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de441_part-1.bsp",
+      "bytes": 1651119104,
+      "sha256": "13757827f5db41b835a24bbd637488636ce79a8ca754062fed17844f7d5b618e",
+      "used_for": "the DE441 states, which are what Horizons reads"
+    },
+    {
+      "file": "de441_part-2.bsp",
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de441_part-2.bsp",
+      "bytes": 1656830976,
+      "sha256": "3abb17dae2d78dd34880377544aacb54892104a0d4462b322cb9f4454d4887f6",
+      "used_for": "the DE441 states, which are what Horizons reads"
+    }
+  ],
+  "kernel_notes": "Kernels are not kept here: they are NAIF's files, at the URLs given, identified by SHA-256. No planetary constants kernel is loaded, because no body-fixed frame enters a geocentric state.",
+  "instants": [
+    {
+      "jd": 2305447.5,
+      "kind": "adversarial",
+      "why": "the start of the range, 1600-01-01 0h"
+    },
+    {
+      "jd": 2305456.5,
+      "kind": "adversarial",
+      "why": "the first after 1600 of the DE440 record boundaries every body shares"
+    },
+    {
+      "jd": 2305462.712890625,
+      "kind": "adversarial",
+      "why": "the first Sun-Moon conjunction in apparent J2000 ecliptic longitude after 1600 (DE440)"
+    },
+    {
+      "jd": 2305509.83984375,
+      "kind": "adversarial",
+      "why": "the first lunar apogee after 1600-03-01 (DE440 geocentric distance)"
+    },
+    {
+      "jd": 2305522.396484375,
+      "kind": "adversarial",
+      "why": "the first lunar perigee after 1600-03-01 (DE440 geocentric distance)"
+    },
+    {
+      "jd": 2305619.525390625,
+      "kind": "adversarial",
+      "why": "the first station of Mercury after 1600 (DE440 apparent ecliptic longitude, J2000 ecliptic)"
+    },
+    {
+      "jd": 2307029.890625,
+      "kind": "grid",
+      "why": "the stratum 1600 to 1605"
+    },
+    {
+      "jd": 2308353.0,
+      "kind": "grid",
+      "why": "the stratum 1605 to 1610"
+    },
+    {
+      "jd": 2309753.525390625,
+      "kind": "grid",
+      "why": "the stratum 1610 to 1615"
+    },
+    {
+      "jd": 2311246.310546875,
+      "kind": "grid",
+      "why": "the stratum 1615 to 1620"
+    },
+    {
+      "jd": 2312797.931640625,
+      "kind": "grid",
+      "why": "the stratum 1620 to 1625"
+    },
+    {
+      "jd": 2314989.791015625,
+      "kind": "grid",
+      "why": "the stratum 1625 to 1630"
+    },
+    {
+      "jd": 2317804.279296875,
+      "kind": "grid",
+      "why": "the stratum 1630 to 1635"
+    },
+    {
+      "jd": 2319866.787109375,
+      "kind": "grid",
+      "why": "the stratum 1635 to 1640"
+    },
+    {
+      "jd": 2321693.431640625,
+      "kind": "grid",
+      "why": "the stratum 1640 to 1645"
+    },
+    {
+      "jd": 2323073.634765625,
+      "kind": "grid",
+      "why": "the stratum 1645 to 1650"
+    },
+    {
+      "jd": 2324429.6640625,
+      "kind": "grid",
+      "why": "the stratum 1650 to 1655"
+    },
+    {
+      "jd": 2325771.833984375,
+      "kind": "grid",
+      "why": "the stratum 1655 to 1660"
+    },
+    {
+      "jd": 2328720.298828125,
+      "kind": "grid",
+      "why": "the stratum 1660 to 1665"
+    },
+    {
+      "jd": 2329435.490234375,
+      "kind": "grid",
+      "why": "the stratum 1665 to 1670"
+    },
+    {
+      "jd": 2331655.775390625,
+      "kind": "grid",
+      "why": "the stratum 1670 to 1675"
+    },
+    {
+      "jd": 2332885.509765625,
+      "kind": "grid",
+      "why": "the stratum 1675 to 1680"
+    },
+    {
+      "jd": 2335588.75,
+      "kind": "grid",
+      "why": "the stratum 1680 to 1685"
+    },
+    {
+      "jd": 2337299.3125,
+      "kind": "grid",
+      "why": "the stratum 1685 to 1690"
+    },
+    {
+      "jd": 2338760.876953125,
+      "kind": "grid",
+      "why": "the stratum 1690 to 1695"
+    },
+    {
+      "jd": 2340527.048828125,
+      "kind": "grid",
+      "why": "the stratum 1695 to 1700"
+    },
+    {
+      "jd": 2342046.12890625,
+      "kind": "grid",
+      "why": "the stratum 1700 to 1705"
+    },
+    {
+      "jd": 2344650.876953125,
+      "kind": "grid",
+      "why": "the stratum 1705 to 1710"
+    },
+    {
+      "jd": 2346115.021484375,
+      "kind": "grid",
+      "why": "the stratum 1710 to 1715"
+    },
+    {
+      "jd": 2349208.806640625,
+      "kind": "grid",
+      "why": "the stratum 1715 to 1720"
+    },
+    {
+      "jd": 2351064.037109375,
+      "kind": "grid",
+      "why": "the stratum 1720 to 1725"
+    },
+    {
+      "jd": 2351577.18359375,
+      "kind": "grid",
+      "why": "the stratum 1725 to 1730"
+    },
+    {
+      "jd": 2353088.220703125,
+      "kind": "grid",
+      "why": "the stratum 1730 to 1735"
+    },
+    {
+      "jd": 2355157.1640625,
+      "kind": "grid",
+      "why": "the stratum 1735 to 1740"
+    },
+    {
+      "jd": 2358101.220703125,
+      "kind": "grid",
+      "why": "the stratum 1740 to 1745"
+    },
+    {
+      "jd": 2359646.66796875,
+      "kind": "grid",
+      "why": "the stratum 1745 to 1750"
+    },
+    {
+      "jd": 2360251.228515625,
+      "kind": "grid",
+      "why": "the stratum 1750 to 1755"
+    },
+    {
+      "jd": 2362221.501953125,
+      "kind": "grid",
+      "why": "the stratum 1755 to 1760"
+    },
+    {
+      "jd": 2364597.197265625,
+      "kind": "grid",
+      "why": "the stratum 1760 to 1765"
+    },
+    {
+      "jd": 2366353.5625,
+      "kind": "grid",
+      "why": "the stratum 1765 to 1770"
+    },
+    {
+      "jd": 2368808.201171875,
+      "kind": "grid",
+      "why": "the stratum 1770 to 1775"
+    },
+    {
+      "jd": 2369723.66015625,
+      "kind": "grid",
+      "why": "the stratum 1775 to 1780"
+    },
+    {
+      "jd": 2372818.693359375,
+      "kind": "grid",
+      "why": "the stratum 1780 to 1785"
+    },
+    {
+      "jd": 2374731.072265625,
+      "kind": "grid",
+      "why": "the stratum 1785 to 1790"
+    },
+    {
+      "jd": 2376187.388671875,
+      "kind": "grid",
+      "why": "the stratum 1790 to 1795"
+    },
+    {
+      "jd": 2378241.85546875,
+      "kind": "grid",
+      "why": "the stratum 1795 to 1800"
+    },
+    {
+      "jd": 2379401.216796875,
+      "kind": "grid",
+      "why": "the stratum 1800 to 1805"
+    },
+    {
+      "jd": 2381737.353515625,
+      "kind": "grid",
+      "why": "the stratum 1805 to 1810"
+    },
+    {
+      "jd": 2383451.27734375,
+      "kind": "grid",
+      "why": "the stratum 1810 to 1815"
+    },
+    {
+      "jd": 2384984.65234375,
+      "kind": "grid",
+      "why": "the stratum 1815 to 1820"
+    },
+    {
+      "jd": 2386123.560546875,
+      "kind": "grid",
+      "why": "the stratum 1820 to 1825"
+    },
+    {
+      "jd": 2389110.23828125,
+      "kind": "grid",
+      "why": "the stratum 1825 to 1830"
+    },
+    {
+      "jd": 2389917.404296875,
+      "kind": "grid",
+      "why": "the stratum 1830 to 1835"
+    },
+    {
+      "jd": 2391539.873046875,
+      "kind": "grid",
+      "why": "the stratum 1835 to 1840"
+    },
+    {
+      "jd": 2393408.189453125,
+      "kind": "grid",
+      "why": "the stratum 1840 to 1845"
+    },
+    {
+      "jd": 2395029.794921875,
+      "kind": "grid",
+      "why": "the stratum 1845 to 1850"
+    },
+    {
+      "jd": 2396777.876953125,
+      "kind": "grid",
+      "why": "the stratum 1850 to 1855"
+    },
+    {
+      "jd": 2399547.634765625,
+      "kind": "grid",
+      "why": "the stratum 1855 to 1860"
+    },
+    {
+      "jd": 2400734.060546875,
+      "kind": "grid",
+      "why": "the stratum 1860 to 1865"
+    },
+    {
+      "jd": 2403565.84375,
+      "kind": "grid",
+      "why": "the stratum 1865 to 1870"
+    },
+    {
+      "jd": 2405587.92578125,
+      "kind": "grid",
+      "why": "the stratum 1870 to 1875"
+    },
+    {
+      "jd": 2407407.93359375,
+      "kind": "grid",
+      "why": "the stratum 1875 to 1880"
+    },
+    {
+      "jd": 2408108.19921875,
+      "kind": "grid",
+      "why": "the stratum 1880 to 1885"
+    },
+    {
+      "jd": 2411059.900390625,
+      "kind": "grid",
+      "why": "the stratum 1885 to 1890"
+    },
+    {
+      "jd": 2411473.490234375,
+      "kind": "grid",
+      "why": "the stratum 1890 to 1895"
+    },
+    {
+      "jd": 2414765.2734375,
+      "kind": "grid",
+      "why": "the stratum 1895 to 1900"
+    },
+    {
+      "jd": 2416208.357421875,
+      "kind": "grid",
+      "why": "the stratum 1900 to 1905"
+    },
+    {
+      "jd": 2417616.5703125,
+      "kind": "grid",
+      "why": "the stratum 1905 to 1910"
+    },
+    {
+      "jd": 2419584.822265625,
+      "kind": "grid",
+      "why": "the stratum 1910 to 1915"
+    },
+    {
+      "jd": 2422072.71484375,
+      "kind": "grid",
+      "why": "the stratum 1915 to 1920"
+    },
+    {
+      "jd": 2424064.6171875,
+      "kind": "grid",
+      "why": "the stratum 1920 to 1925"
+    },
+    {
+      "jd": 2425163.017578125,
+      "kind": "grid",
+      "why": "the stratum 1925 to 1930"
+    },
+    {
+      "jd": 2427372.1875,
+      "kind": "grid",
+      "why": "the stratum 1930 to 1935"
+    },
+    {
+      "jd": 2428794.470703125,
+      "kind": "grid",
+      "why": "the stratum 1935 to 1940"
+    },
+    {
+      "jd": 2431362.685546875,
+      "kind": "grid",
+      "why": "the stratum 1940 to 1945"
+    },
+    {
+      "jd": 2431604.33984375,
+      "kind": "grid",
+      "why": "the stratum 1945 to 1950"
+    },
+    {
+      "jd": 2433540.537109375,
+      "kind": "grid",
+      "why": "the stratum 1950 to 1955"
+    },
+    {
+      "jd": 2435267.681640625,
+      "kind": "grid",
+      "why": "the stratum 1955 to 1960"
+    },
+    {
+      "jd": 2437492.212890625,
+      "kind": "grid",
+      "why": "the stratum 1960 to 1965"
+    },
+    {
+      "jd": 2439862.595703125,
+      "kind": "grid",
+      "why": "the stratum 1965 to 1970"
+    },
+    {
+      "jd": 2440432.5,
+      "kind": "adversarial",
+      "why": "the end of de441_part-1.bsp, inside the overlap with part-2, and a DE440 record boundary of every body"
+    },
+    {
+      "jd": 2441119.82421875,
+      "kind": "grid",
+      "why": "the stratum 1970 to 1975"
+    },
+    {
+      "jd": 2443066.193359375,
+      "kind": "grid",
+      "why": "the stratum 1975 to 1980"
+    },
+    {
+      "jd": 2445632.796875,
+      "kind": "grid",
+      "why": "the stratum 1980 to 1985"
+    },
+    {
+      "jd": 2447542.1484375,
+      "kind": "grid",
+      "why": "the stratum 1985 to 1990"
+    },
+    {
+      "jd": 2448840.71875,
+      "kind": "grid",
+      "why": "the stratum 1990 to 1995"
+    },
+    {
+      "jd": 2450445.484375,
+      "kind": "grid",
+      "why": "the stratum 1995 to 2000"
+    },
+    {
+      "jd": 2451545.0,
+      "kind": "adversarial",
+      "why": "J2000.0"
+    },
+    {
+      "jd": 2451548.015625,
+      "kind": "adversarial",
+      "why": "the first lunar apogee after 2000-01-01 (DE440 geocentric distance)"
+    },
+    {
+      "jd": 2451550.259765625,
+      "kind": "adversarial",
+      "why": "the first Sun-Moon conjunction in apparent J2000 ecliptic longitude after 2000 (DE440)"
+    },
+    {
+      "jd": 2451559.5546875,
+      "kind": "adversarial",
+      "why": "the first superior conjunction of Mercury after 2000 (DE440): light passing close to the Sun"
+    },
+    {
+      "jd": 2451563.451171875,
+      "kind": "adversarial",
+      "why": "the first lunar perigee after 2000-01-01 (DE440 geocentric distance)"
+    },
+    {
+      "jd": 2451568.5,
+      "kind": "adversarial",
+      "why": "the first after J2000.0 of the DE440 record boundaries every body shares"
+    },
+    {
+      "jd": 2451596.033203125,
+      "kind": "adversarial",
+      "why": "the first station of Mercury after 2000 (DE440 apparent ecliptic longitude, J2000 ecliptic)"
+    },
+    {
+      "jd": 2452041.16796875,
+      "kind": "adversarial",
+      "why": "the first station of Mars after 2000 (DE440 apparent ecliptic longitude, J2000 ecliptic)"
+    },
+    {
+      "jd": 2452656.796875,
+      "kind": "grid",
+      "why": "the stratum 2000 to 2005"
+    },
+    {
+      "jd": 2454343.240234375,
+      "kind": "grid",
+      "why": "the stratum 2005 to 2010"
+    },
+    {
+      "jd": 2456982.53515625,
+      "kind": "grid",
+      "why": "the stratum 2010 to 2015"
+    },
+    {
+      "jd": 2458042.623046875,
+      "kind": "grid",
+      "why": "the stratum 2015 to 2020"
+    },
+    {
+      "jd": 2459180.78515625,
+      "kind": "grid",
+      "why": "the stratum 2020 to 2025"
+    },
+    {
+      "jd": 2461068.220703125,
+      "kind": "grid",
+      "why": "the stratum 2025 to 2030"
+    },
+    {
+      "jd": 2464032.564453125,
+      "kind": "grid",
+      "why": "the stratum 2030 to 2035"
+    },
+    {
+      "jd": 2464695.494140625,
+      "kind": "grid",
+      "why": "the stratum 2035 to 2040"
+    },
+    {
+      "jd": 2466903.5546875,
+      "kind": "grid",
+      "why": "the stratum 2040 to 2045"
+    },
+    {
+      "jd": 2469353.462890625,
+      "kind": "grid",
+      "why": "the stratum 2045 to 2050"
+    },
+    {
+      "jd": 2470541.3125,
+      "kind": "grid",
+      "why": "the stratum 2050 to 2055"
+    },
+    {
+      "jd": 2472029.814453125,
+      "kind": "grid",
+      "why": "the stratum 2055 to 2060"
+    },
+    {
+      "jd": 2473552.462890625,
+      "kind": "grid",
+      "why": "the stratum 2060 to 2065"
+    },
+    {
+      "jd": 2475946.173828125,
+      "kind": "grid",
+      "why": "the stratum 2065 to 2070"
+    },
+    {
+      "jd": 2477857.884765625,
+      "kind": "grid",
+      "why": "the stratum 2070 to 2075"
+    },
+    {
+      "jd": 2480633.8515625,
+      "kind": "grid",
+      "why": "the stratum 2075 to 2080"
+    },
+    {
+      "jd": 2481091.333984375,
+      "kind": "grid",
+      "why": "the stratum 2080 to 2085"
+    },
+    {
+      "jd": 2483234.12109375,
+      "kind": "grid",
+      "why": "the stratum 2085 to 2090"
+    },
+    {
+      "jd": 2484522.291015625,
+      "kind": "grid",
+      "why": "the stratum 2090 to 2095"
+    },
+    {
+      "jd": 2486637.3828125,
+      "kind": "grid",
+      "why": "the stratum 2095 to 2100"
+    },
+    {
+      "jd": 2488459.001953125,
+      "kind": "grid",
+      "why": "the stratum 2100 to 2105"
+    },
+    {
+      "jd": 2490795.591796875,
+      "kind": "grid",
+      "why": "the stratum 2105 to 2110"
+    },
+    {
+      "jd": 2492804.865234375,
+      "kind": "grid",
+      "why": "the stratum 2110 to 2115"
+    },
+    {
+      "jd": 2493786.564453125,
+      "kind": "grid",
+      "why": "the stratum 2115 to 2120"
+    },
+    {
+      "jd": 2496254.234375,
+      "kind": "grid",
+      "why": "the stratum 2120 to 2125"
+    },
+    {
+      "jd": 2498914.50390625,
+      "kind": "grid",
+      "why": "the stratum 2125 to 2130"
+    },
+    {
+      "jd": 2499329.73046875,
+      "kind": "grid",
+      "why": "the stratum 2130 to 2135"
+    },
+    {
+      "jd": 2502074.283203125,
+      "kind": "grid",
+      "why": "the stratum 2135 to 2140"
+    },
+    {
+      "jd": 2503576.64453125,
+      "kind": "grid",
+      "why": "the stratum 2140 to 2145"
+    },
+    {
+      "jd": 2505356.052734375,
+      "kind": "grid",
+      "why": "the stratum 2145 to 2150"
+    },
+    {
+      "jd": 2507657.673828125,
+      "kind": "grid",
+      "why": "the stratum 2150 to 2155"
+    },
+    {
+      "jd": 2508874.89453125,
+      "kind": "grid",
+      "why": "the stratum 2155 to 2160"
+    },
+    {
+      "jd": 2510528.650390625,
+      "kind": "grid",
+      "why": "the stratum 2160 to 2165"
+    },
+    {
+      "jd": 2511872.478515625,
+      "kind": "grid",
+      "why": "the stratum 2165 to 2170"
+    },
+    {
+      "jd": 2515274.37109375,
+      "kind": "grid",
+      "why": "the stratum 2170 to 2175"
+    },
+    {
+      "jd": 2515543.546875,
+      "kind": "grid",
+      "why": "the stratum 2175 to 2180"
+    },
+    {
+      "jd": 2518709.025390625,
+      "kind": "grid",
+      "why": "the stratum 2180 to 2185"
+    },
+    {
+      "jd": 2519991.361328125,
+      "kind": "grid",
+      "why": "the stratum 2185 to 2190"
+    },
+    {
+      "jd": 2522112.333984375,
+      "kind": "grid",
+      "why": "the stratum 2190 to 2195"
+    },
+    {
+      "jd": 2523270.28515625,
+      "kind": "grid",
+      "why": "the stratum 2195 to 2200"
+    },
+    {
+      "jd": 2525140.662109375,
+      "kind": "grid",
+      "why": "the stratum 2200 to 2205"
+    },
+    {
+      "jd": 2527204.146484375,
+      "kind": "grid",
+      "why": "the stratum 2205 to 2210"
+    },
+    {
+      "jd": 2529117.916015625,
+      "kind": "grid",
+      "why": "the stratum 2210 to 2215"
+    },
+    {
+      "jd": 2530509.18359375,
+      "kind": "grid",
+      "why": "the stratum 2215 to 2220"
+    },
+    {
+      "jd": 2532898.2578125,
+      "kind": "grid",
+      "why": "the stratum 2220 to 2225"
+    },
+    {
+      "jd": 2534821.79296875,
+      "kind": "grid",
+      "why": "the stratum 2225 to 2230"
+    },
+    {
+      "jd": 2537185.3359375,
+      "kind": "grid",
+      "why": "the stratum 2230 to 2235"
+    },
+    {
+      "jd": 2537858.177734375,
+      "kind": "grid",
+      "why": "the stratum 2235 to 2240"
+    },
+    {
+      "jd": 2540437.396484375,
+      "kind": "grid",
+      "why": "the stratum 2240 to 2245"
+    },
+    {
+      "jd": 2541319.970703125,
+      "kind": "grid",
+      "why": "the stratum 2245 to 2250"
+    },
+    {
+      "jd": 2543540.373046875,
+      "kind": "grid",
+      "why": "the stratum 2250 to 2255"
+    },
+    {
+      "jd": 2546114.77734375,
+      "kind": "grid",
+      "why": "the stratum 2255 to 2260"
+    },
+    {
+      "jd": 2547652.52734375,
+      "kind": "grid",
+      "why": "the stratum 2260 to 2265"
+    },
+    {
+      "jd": 2549551.603515625,
+      "kind": "grid",
+      "why": "the stratum 2265 to 2270"
+    },
+    {
+      "jd": 2551511.357421875,
+      "kind": "grid",
+      "why": "the stratum 2270 to 2275"
+    },
+    {
+      "jd": 2553722.0234375,
+      "kind": "grid",
+      "why": "the stratum 2275 to 2280"
+    },
+    {
+      "jd": 2554916.1171875,
+      "kind": "grid",
+      "why": "the stratum 2280 to 2285"
+    },
+    {
+      "jd": 2556281.951171875,
+      "kind": "grid",
+      "why": "the stratum 2285 to 2290"
+    },
+    {
+      "jd": 2559094.5546875,
+      "kind": "grid",
+      "why": "the stratum 2290 to 2295"
+    },
+    {
+      "jd": 2560094.015625,
+      "kind": "grid",
+      "why": "the stratum 2295 to 2300"
+    },
+    {
+      "jd": 2562142.365234375,
+      "kind": "grid",
+      "why": "the stratum 2300 to 2305"
+    },
+    {
+      "jd": 2564529.224609375,
+      "kind": "grid",
+      "why": "the stratum 2305 to 2310"
+    },
+    {
+      "jd": 2565040.41015625,
+      "kind": "grid",
+      "why": "the stratum 2310 to 2315"
+    },
+    {
+      "jd": 2566795.4375,
+      "kind": "grid",
+      "why": "the stratum 2315 to 2320"
+    },
+    {
+      "jd": 2569987.826171875,
+      "kind": "grid",
+      "why": "the stratum 2320 to 2325"
+    },
+    {
+      "jd": 2571611.75390625,
+      "kind": "grid",
+      "why": "the stratum 2325 to 2330"
+    },
+    {
+      "jd": 2572193.5390625,
+      "kind": "grid",
+      "why": "the stratum 2330 to 2335"
+    },
+    {
+      "jd": 2574164.197265625,
+      "kind": "grid",
+      "why": "the stratum 2335 to 2340"
+    },
+    {
+      "jd": 2576269.220703125,
+      "kind": "grid",
+      "why": "the stratum 2340 to 2345"
+    },
+    {
+      "jd": 2578525.64453125,
+      "kind": "grid",
+      "why": "the stratum 2345 to 2350"
+    },
+    {
+      "jd": 2580123.755859375,
+      "kind": "grid",
+      "why": "the stratum 2350 to 2355"
+    },
+    {
+      "jd": 2582959.865234375,
+      "kind": "grid",
+      "why": "the stratum 2355 to 2360"
+    },
+    {
+      "jd": 2583451.478515625,
+      "kind": "grid",
+      "why": "the stratum 2360 to 2365"
+    },
+    {
+      "jd": 2586231.80078125,
+      "kind": "grid",
+      "why": "the stratum 2365 to 2370"
+    },
+    {
+      "jd": 2588325.4296875,
+      "kind": "grid",
+      "why": "the stratum 2370 to 2375"
+    },
+    {
+      "jd": 2589884.849609375,
+      "kind": "grid",
+      "why": "the stratum 2375 to 2380"
+    },
+    {
+      "jd": 2590772.376953125,
+      "kind": "grid",
+      "why": "the stratum 2380 to 2385"
+    },
+    {
+      "jd": 2593695.53515625,
+      "kind": "grid",
+      "why": "the stratum 2385 to 2390"
+    },
+    {
+      "jd": 2594912.904296875,
+      "kind": "grid",
+      "why": "the stratum 2390 to 2395"
+    },
+    {
+      "jd": 2596732.640625,
+      "kind": "grid",
+      "why": "the stratum 2395 to 2400"
+    },
+    {
+      "jd": 2597143.70703125,
+      "kind": "adversarial",
+      "why": "the first station of Mars after 2398 (DE440 apparent ecliptic longitude, J2000 ecliptic)"
+    },
+    {
+      "jd": 2597284.6796875,
+      "kind": "adversarial",
+      "why": "the first lunar apogee after 2399-01-01 (DE440 geocentric distance)"
+    },
+    {
+      "jd": 2597298.2890625,
+      "kind": "adversarial",
+      "why": "the first lunar perigee after 2399-01-01 (DE440 geocentric distance)"
+    },
+    {
+      "jd": 2597431.6484375,
+      "kind": "adversarial",
+      "why": "the first Sun-Moon conjunction in apparent J2000 ecliptic longitude after 2399 (DE440)"
+    },
+    {
+      "jd": 2597616.5,
+      "kind": "adversarial",
+      "why": "the last before 2400 of the DE440 record boundaries every body shares"
+    },
+    {
+      "jd": 2597641.5,
+      "kind": "adversarial",
+      "why": "the end of the range, 2400-01-01 0h"
+    }
+  ],
+  "files": {
+    "cspice/states.json": "8313c0c21353bf0463d50aa0a1d72808b810d51e1e00ee98c5ef43937dae1f13",
+    "cspice/self-check.json": "49e76d29ae94c9652b156d66c24867d97e317fd83a87f5eb8695e5c8815b74b7"
+  },
+  "counts": {
+    "instants": 181,
+    "cspice_series": 110,
+    "cspice_rows": 19910
+  }
+}

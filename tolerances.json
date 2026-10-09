@@ -4,7 +4,7 @@
   "note": "The one central tolerance file (ADR-0022): keyed by field pattern and provider class, never per fixture. Provisional until the harness exists and the bands are measured; every change is a corpus version bump. A field not listed is compared exactly.",
   "provider_classes": {
     "same-ephemeris": "the SDK over an adapter to the same ephemeris library and data files the fixture was produced with (Swiss Ephemeris, or Teimeris in its compatible profile)",
-    "de": "the SDK over a JPL DE file reader (ADR-0021), target 0.001 arcsecond",
+    "de": "the SDK over a JPL DE file reader (ADR-0021), target 0.001 arcsecond; also the class of any comparison against DE440 itself, the `jpl/` recording",
     "reference": "the built-in reference tier, a DE440 refit (ADR-0021), target 0.005 arcsecond for the Sun, Moon and inner planets and 0.02 arcsecond for the outer planets",
     "builtin-full": "the built-in analytic ephemeris, full tier (ADR-0008), about an arcsecond",
     "builtin-standard": "the built-in analytic ephemeris, standard tier (the default), a few arcseconds",
@@ -14,7 +14,8 @@
     "deg": "degrees of arc",
     "deg_per_day": "degrees of arc per day",
     "au": "astronomical units",
-    "day": "days (a Julian Day difference); 1e-5 day is 0.864 seconds"
+    "day": "days (a Julian Day difference); 1e-5 day is 0.864 seconds",
+    "km": "kilometres"
   },
   "edge_policy": "A classification field (sign, nakshatra, pada, house, tithi, yoga, karana, dasha lord) must match exactly, except when the angle it derives from lies within the longitude tolerance of the class of a classification boundary; then a mismatch is reported as an edge case, not a failure, and the fixture's `input.search` block says when the edge is deliberate.",
   "fields": {
@@ -49,6 +50,11 @@
     "dashas.methods.*.balance.total_days": { "unit": "day", "same-ephemeris": 1e-3, "de": 1e-3, "reference": 1e-3, "builtin-full": 0.3, "builtin-standard": 1.0, "builtin-compact": 10.0 },
     "dashas.methods.*.periods[*][2..3]": { "unit": "day", "same-ephemeris": 1e-3, "de": 1e-3, "reference": 1e-3, "builtin-full": 0.3, "builtin-standard": 1.0, "builtin-compact": 10.0 },
     "dashas.methods.*.children_at_path.*[*][2..3]": { "unit": "day", "same-ephemeris": 1e-3, "de": 1e-3, "reference": 1e-3, "builtin-full": 0.3, "builtin-standard": 1.0, "builtin-compact": 10.0 },
-    "dashas.methods.*.active_at[*].chain[*].*_jd": { "unit": "day", "same-ephemeris": 1e-3, "de": 1e-3, "reference": 1e-3, "builtin-full": 0.3, "builtin-standard": 1.0, "builtin-compact": 10.0 }
+    "dashas.methods.*.active_at[*].chain[*].*_jd": { "unit": "day", "same-ephemeris": 1e-3, "de": 1e-3, "reference": 1e-3, "builtin-full": 0.3, "builtin-standard": 1.0, "builtin-compact": 10.0 },
+    "jpl.geometric.*.direction_deg": { "unit": "deg", "same-ephemeris": 3e-09, "de": 2.8e-07, "reference": 1.4e-06, "builtin-full": 0.0003, "builtin-standard": 0.001, "builtin-compact": 0.01 },
+    "jpl.geometric.outer.*.direction_deg": { "unit": "deg", "same-ephemeris": 3e-09, "de": 2.8e-07, "reference": 5.6e-06, "builtin-full": 0.001, "builtin-standard": 0.003, "builtin-compact": 0.03 },
+    "jpl.geometric.*.distance_km": { "unit": "km", "same-ephemeris": 0.001, "de": 0.15, "reference": 1.5, "builtin-full": 150.0, "builtin-standard": 1500.0, "builtin-compact": 15000.0 },
+    "jpl.astrometric.*.direction_deg": { "unit": "deg", "same-ephemeris": 3e-09, "de": 2.8e-07, "reference": 1.4e-06, "builtin-full": 0.0003, "builtin-standard": 0.001, "builtin-compact": 0.01 },
+    "jpl.astrometric.outer.*.direction_deg": { "unit": "deg", "same-ephemeris": 3e-09, "de": 2.8e-07, "reference": 5.6e-06, "builtin-full": 0.001, "builtin-standard": 0.003, "builtin-compact": 0.03 }
   }
 }

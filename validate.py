@@ -18,6 +18,7 @@ every one of them makes a consumer's score meaningless.
 from __future__ import annotations
 
 import hashlib
+import importlib.util
 import json
 import sys
 from pathlib import Path
@@ -671,6 +672,125 @@ def tables(failures: list[str]) -> int:
     return count
 
 
+CSPICE_FILES = {
+    "cspice/states.json": "jpl-cspice-states",
+    "cspice/self-check.json": "jpl-cspice-self-check",
+}
+HORIZONS_FILES = {
+    "horizons/vectors.json": "jpl-horizons-vectors",
+    "horizons/observer.json": "jpl-horizons-observer",
+    "self-check.json": "jpl-self-check",
+}
+
+
+def recorder():
+    """tools/record_jpl.py, which rebuilds the derived files with the
+    standard library alone."""
+    spec = importlib.util.spec_from_file_location("record_jpl", ROOT / "tools" / "record_jpl.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def hashed(root: Path, files: dict, manifest: dict, failures: list[str]) -> dict:
+    """Each file against its schema and the manifest's hash."""
+    documents = {}
+    for name, schema in files.items():
+        path = root / name
+        if not path.is_file():
+            failures.append(f"the JPL recording lacks {name}")
+            continue
+        if hashlib.sha256(path.read_bytes()).hexdigest() != manifest.get("files", {}).get(name):
+            failures.append(f"jpl/{name}: the sha256 differs from its manifest")
+        documents[name] = against_schema(schema, path, failures)
+    return documents
+
+
+def jpl(failures: list[str]) -> int:
+    """The JPL recording, rank 1. The CSPICE half: the manifest and every file
+    against its schema and its hash, one row per chosen instant, and the
+    self-check rebuilt byte for byte from the states. The Horizons half, when
+    present: every raw response listed and unaltered, every row at a chosen
+    instant, every site one of the corpus's own chart places, and the
+    Horizons files and their self-check rebuilt byte for byte from the kept
+    responses. The rebuilds are the recorder's own (tools/record_jpl.py),
+    which needs only the standard library for them."""
+    root = ROOT / "jpl"
+    manifest = against_schema("jpl-manifest", root / "manifest.json", failures)
+    if manifest is None:
+        return 0
+    horizons_path = root / "horizons" / "manifest.json"
+    hmanifest = against_schema("jpl-horizons-manifest", horizons_path, failures) if horizons_path.is_file() else None
+    expected = {"manifest.json"} | set(CSPICE_FILES)
+    if hmanifest is not None:
+        expected |= {"horizons/manifest.json"} | set(HORIZONS_FILES) | {q.get("file") for q in hmanifest.get("queries", [])}
+    for path in sorted(root.rglob("*")):
+        if path.is_file() and path.relative_to(root).as_posix() not in expected:
+            failures.append(f"a JPL file no manifest lists: jpl/{path.relative_to(root).as_posix()}")
+    documents = hashed(root, CSPICE_FILES, manifest, failures)
+    if len(documents) != len(CSPICE_FILES) or any(d is None for d in documents.values()):
+        return len(documents)
+    states = documents["cspice/states.json"]
+    chosen = [entry["jd"] for entry in manifest["instants"]]
+    if chosen != sorted(set(chosen)):
+        failures.append("jpl: the manifest's instants are not distinct and in order")
+    if [entry["jd"] for entry in states["instants"]] != chosen:
+        failures.append("jpl/cspice/states.json: the instants differ from the manifest's")
+    for series in states["series"]:
+        if len(series["rows"]) != len(chosen):
+            failures.append(f"jpl/cspice/states.json {series['target']} {series['correction']}: not one row per instant")
+    for name in ("tod", "mecl"):
+        if len(states["of_date"][name]) != len(chosen):
+            failures.append(f"jpl/cspice/states.json: not one {name} rotation per instant")
+    tool = recorder()
+    if (tool.dumps(tool.cspice_self_check(states)) + "\n").encode("utf-8") != (root / "cspice/self-check.json").read_bytes():
+        failures.append("jpl/cspice/self-check.json: not what cspice/states.json produces")
+    if manifest.get("counts") != tool.counts_cspice(manifest, states):
+        failures.append(f"the JPL manifest's counts {manifest.get('counts')} disagree with cspice/states.json")
+    if hmanifest is None:
+        return len(documents)
+
+    for query in hmanifest.get("queries", []):
+        path = root / query.get("file", "")
+        if not path.is_file():
+            failures.append(f"the Horizons manifest lists a missing response: {query.get('file')}")
+        elif hashlib.sha256(path.read_bytes()).hexdigest() != query.get("sha256"):
+            failures.append(f"jpl/{query.get('file')}: the sha256 differs from the Horizons manifest")
+    hdocs = hashed(root, HORIZONS_FILES, hmanifest, failures)
+    if len(hdocs) != len(HORIZONS_FILES) or any(d is None for d in hdocs.values()):
+        return len(documents) + len(hdocs)
+    vectors, observer = hdocs["horizons/vectors.json"], hdocs["horizons/observer.json"]
+    allowed = set(chosen)
+    for name, document in (("horizons/vectors.json", vectors), ("horizons/observer.json", observer)):
+        for series in document["series"]:
+            times = [row[0] for row in series["rows"]]
+            if not set(times) <= allowed or times != sorted(times):
+                failures.append(f"jpl/{name} {series['target']}: a row at an instant the manifest did not choose")
+    for series in observer["series"]:
+        site = series["site"]
+        if site["centre"] == "500@399":
+            continue
+        fixture = load(ROOT / "baseline" / site["fixture"])
+        place = fixture.get("input", {}).get("place", {}) if isinstance(fixture, dict) else {}
+        if (place.get("name"), place.get("latitude"), place.get("longitude")) != (site["name"], site["latitude_deg"], site["longitude_deg"]):
+            failures.append(f"jpl/horizons/observer.json: the site {site['name']} is not its fixture's place")
+    try:
+        grouped = tool.load_answers(hmanifest["queries"])
+        inputs = tool.horizons_inputs(manifest, hmanifest)
+        rebuilt = {"horizons/vectors.json": tool.build_vectors(inputs, grouped),
+                   "horizons/observer.json": tool.build_observer(inputs, grouped)}
+    except (OSError, ValueError, KeyError) as error:
+        failures.append(f"jpl: the raw responses do not rebuild: {error}")
+        return len(documents) + len(hdocs)
+    rebuilt["self-check.json"] = tool.self_check(rebuilt["horizons/vectors.json"], rebuilt["horizons/observer.json"], states)
+    for name, document in rebuilt.items():
+        if (tool.dumps(document) + "\n").encode("utf-8") != (root / name).read_bytes():
+            failures.append(f"jpl/{name}: not what the kept responses produce")
+    if hmanifest.get("counts") != tool.counts_horizons(hmanifest, vectors, observer):
+        failures.append(f"the Horizons manifest's counts {hmanifest.get('counts')} disagree with its files")
+    return len(documents) + len(hdocs)
+
+
 def corpus(failures: list[str]) -> None:
     """The top-level manifest: it exists, and it names files that exist."""
     document = load(ROOT / "corpus.json")
@@ -681,6 +801,18 @@ def corpus(failures: list[str]) -> None:
         path = ROOT / entry.get("path", "")
         if not path.exists():
             failures.append(f"corpus.json names a missing path: {entry.get('path')}")
+        wanted_of = {
+            "jpl": lambda c: {"instants": c.get("instants"), "cspice_rows": c.get("cspice_rows")},
+            "jpl/horizons": lambda c: {"queries": c.get("queries"), "horizons_vector_rows": c.get("vector_rows"),
+                                       "horizons_observer_rows": c.get("observer_rows")},
+        }
+        manifest = load(ROOT / entry["manifest"]) if entry.get("path") in wanted_of and entry.get("manifest") else None
+        if isinstance(manifest, dict):
+            wanted = wanted_of[entry["path"]](manifest.get("counts", {}))
+            if entry.get("counts") != wanted:
+                failures.append(f"corpus.json's {entry['path']} counts {entry.get('counts')} disagree with its manifest {wanted}")
+            if entry.get("recorded") != manifest.get("recorded"):
+                failures.append(f"corpus.json's {entry['path']} recording date differs from its manifest's")
     for name in document.get("schemas", []) + [document.get("tolerances", "")]:
         if not (ROOT / name).is_file():
             failures.append(f"corpus.json names a missing file: {name}")
@@ -694,7 +826,7 @@ def main() -> int:
     systems += ashtakavarga(failures) + vimshopaka(failures) + shadbala(failures) + bhava_bala(failures)
     systems += yogas(failures) + doshas(failures) + pyjhora_vimshottari(failures)
     against_schema("tolerances", ROOT / "tolerances.json", failures)
-    recorded = tables(failures)
+    recorded = tables(failures) + jpl(failures)
 
     for failure in failures:
         print(f"FAIL  {failure}")
