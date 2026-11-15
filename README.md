@@ -4,7 +4,7 @@ A corpus of recorded astrological and astronomical answers, with the
 settings each was computed under, so that an implementation can be
 measured against something other than its own opinion.
 
-Version 0.12.0. Dedicated to the public domain under
+Version 0.12.1. Dedicated to the public domain under
 [CC0-1.0](LICENSE) — there is no attribution requirement, because
 attribution is friction for an implementation checking itself, and a
 standard nobody can use freely is not a standard.
@@ -124,7 +124,7 @@ Pin it. As a submodule:
 
 ```sh
 git submodule add https://github.com/teispace/teistro-conformance fixtures
-git -C fixtures checkout v0.12.0
+git -C fixtures checkout v0.12.1
 ```
 
 or read [`corpus.json`](corpus.json), which names the version, what each

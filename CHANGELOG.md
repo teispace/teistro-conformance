@@ -9,6 +9,18 @@ A consumer measures itself against these numbers and may have published a
 score. So each entry begins with **Values**, and "none" is an answer that
 has to be earned by having looked.
 
+## 0.12.1 — 2026-11-15
+
+**Values:** one moved. `official/npns-2082-2083.json`'s sunset of
+2026-04-29 (BS 2083, page 3, row 12) is 18:36, not 18:35: one printed minute.
+
+The value was misread from the page image. A second, complete reading of
+both editions found it: every glyph was read from the PDF's own outlines,
+not from an image. That reading agrees with all 79 of this file's other
+values. On that row the printed day length, 32 ghatis 48 palas
+(13 h 07.2 min), fits 05:29 to 18:36 within 0.2 minutes and 18:35 only
+within 1.2.
+
 ## 0.12.0 — 2026-10-09
 
 **Values:** none moved; states computed by CSPICE over JPL's DE440 and DE441
